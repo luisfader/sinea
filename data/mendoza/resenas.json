@@ -424,6 +424,20 @@
    "s": 4,
    "es": "El símbolo del cuadro solo aparece desde cierto ángulo. Me torcí el cuello, pero lo vi.",
    "ru": "Символ на картине виден только под определённым углом. Чуть шею не свернула, но увидела."
+  },
+  {
+   "a": "Don Sergio Fader",
+   "ar": "Дон Серхио Фадер",
+   "s": 5,
+   "es": "Cuarenta años restaurando cuadros y ahora hago de guía gratis. Es el mejor trabajo de mi vida. Miren las garzas de Fernando en la pileta: de noche parecen a punto de volar.",
+   "ru": "Сорок лет реставрировал картины, а теперь вожу экскурсии бесплатно. Лучшая работа в моей жизни. Посмотрите на цапель Фернандо в бассейне: ночью кажется, что они вот-вот взлетят."
+  },
+  {
+   "a": "Alessio",
+   "ar": "Алессио",
+   "s": 4,
+   "es": "Pasé un jueves a la noche escondido en una pileta vacía. Excelente acústica: el celular de Laura vibró y sonó como un trueno. Los murales, únicos. Las garzas, testigos.",
+   "ru": "Провёл ночь с четверга на пятницу, прячась в пустом бассейне. Отличная акустика: телефон Лауры завибрировал и прогремел, как гром. Фрески уникальные. Цапли — свидетели."
   }
  ],
  "md-lujan": [
@@ -506,6 +520,77 @@
    "s": 4,
    "es": "Cuarenta cabras, un perro que se llama Presidente y un hilo negro que bajó del cielo. Lindo lugar, poca visita.",
    "ru": "Сорок коз, пёс по кличке Президент и чёрная нить, спустившаяся с неба. Красивое место, гостей мало."
+  }
+ ],
+ "md-villa-adriana": [
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 5,
+   "es": "Crucé medio mundo para encontrar a mi familia y me abrió una mujer con camisa de lino manchada de pintura. «Tenés los ojos de mi madre». Lloré antes del Malbec.",
+   "ru": "Я пересекла полмира, чтобы найти семью, и мне открыла женщина в льняной рубашке в пятнах краски. «У тебя глаза моей мамы». Я расплакалась ещё до мальбека."
+  },
+  {
+   "a": "Adriana",
+   "ar": "Адриана",
+   "s": 5,
+   "es": "Pasando la iglesia, la segunda a la derecha, la casa de las buganvillas. Medialunas a la mañana. Los cuadros no se tocan, sobre todo el corazón de la chimenea.",
+   "ru": "После церкви вторая направо, дом с бугенвиллеями. По утрам круассаны. Картины не трогать, особенно сердце над камином."
+  },
+  {
+   "a": "Enrico",
+   "ar": "Энрико",
+   "s": 4,
+   "es": "Llegué con alfajores y sin dormir hace dos días. Me sirvieron Malbec a las once de la mañana. De los nombres de los dos turistas italianos, lamentablemente, no me acuerdo.",
+   "ru": "Приехал с альфахорами и без сна двое суток. Мне налили мальбек в одиннадцать утра. Имён двух итальянских туристов, к сожалению, не помню."
+  }
+ ],
+ "md-vinedos-drummond": [
+  {
+   "a": "Alessio",
+   "ar": "Алессио",
+   "s": 4,
+   "es": "Media hora a pie entre las viñas, a las dos de la mañana, con una linterna chica. Estrellas mucho más brillantes que en Europa. Un gato negro casi me arruina la carrera.",
+   "ru": "Полчаса пешком между лозами в два часа ночи с маленьким фонариком. Звёзды куда ярче, чем в Европе. Чёрный кот чуть не испортил мне всю карьеру."
+  },
+  {
+   "a": "Hugo",
+   "ar": "Уго",
+   "s": 1,
+   "es": "Busqué al ladrón media hora entre las viñas. Volví lleno de tierra. Era un gato.",
+   "ru": "Полчаса искал вора среди лоз. Вернулся весь в земле. Это был кот."
+  }
+ ],
+ "md-laberinto-fader": [
+  {
+   "a": "Don Sergio Fader",
+   "ar": "Дон Серхио Фадер",
+   "s": 5,
+   "es": "Después de tres curvas nadie te escucha. Ideal para confesiones, planes y para descubrir que el gato negro era un ladrón italiano.",
+   "ru": "После трёх поворотов тебя никто не слышит. Идеально для признаний, планов и для того, чтобы узнать, что чёрный кот был итальянским вором."
+  },
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 4,
+   "es": "Todos los senderos son iguales. Entramos a hablar de un robo y salimos con un plan. Las estatuas no dijeron nada.",
+   "ru": "Все дорожки одинаковые. Зашли поговорить о краже — вышли с планом. Статуи промолчали."
+  }
+ ],
+ "md-fattoria": [
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 5,
+   "es": "Seis gallinas, dos cabras, tres huevos debajo del heno y el atardecer más grande del mundo. Volver, siempre volver.",
+   "ru": "Шесть кур, две козы, три яйца под сеном и самый большой закат на свете. Volver — всегда возвращаться."
+  },
+  {
+   "a": "Alessio",
+   "ar": "Алессио",
+   "s": 3,
+   "es": "Tranquilo. Quizás demasiado. Mi enemigo más peligroso es una cabra que se come las camisas tendidas al sol.",
+   "ru": "Спокойно. Может, даже слишком. Мой самый опасный враг — коза, которая ест рубашки, развешанные на солнце."
   }
  ]
 }

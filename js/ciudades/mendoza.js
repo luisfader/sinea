@@ -142,7 +142,9 @@ export const PARQUES = [
   // las plazas del centro están llenas de árboles
   { nombre: '', den: 340, pol: grilla(-0.92, -0.92, 0.92, 0.92) },
   ...[[2.5, -2.5], [-2.5, -2.5], [-2.5, 2.5], [2.5, 2.5]].map(([e, n]) => ({ nombre: '', den: 300, pol: grilla(e - 0.42, n - 0.42, e + 0.42, n + 0.42) })),
-  { nombre: 'Parque Central', pol: [G(5, 10.2), G(8.6, 10.2), G(8.6, 13.4), G(5, 13.4)] }
+  { nombre: 'Parque Central', pol: [G(5, 10.2), G(8.6, 10.2), G(8.6, 13.4), G(5, 13.4)] },
+  // el parque a la francesa de la Casa de Fader, con su laberinto de cipreses («Ladro di cuori 3»)
+  { nombre: '', den: 700, pol: [LL(-33.0045, -68.8677), LL(-33.0045, -68.8653), LL(-33.0063, -68.8653), LL(-33.0063, -68.8677)] }
 ];
 
 export const BORDES = [

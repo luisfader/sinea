@@ -15463,9 +15463,9 @@ export const CIUDADES = {
 "x": -2086,
 "y": -12815,
 "modelo": "villa",
-"desc": "La casona de la familia Fader en Mayor Drummond, Luján de Cuyo, cuyas paredes pintó al fresco Fernando Fader. Hoy es el Museo Provincial de Bellas Artes Emiliano Guiñazú, la «Casa de Fader», con jardín y una colección de pintura argentina. En «El misterio de los Fader», en una sala del museo dos hombres intercambian maletines; para Luis es un lugar especial y no del todo grato: a los quince años participó ahí de un concurso de pintura, y en «Operación Londres» recuerda la cara del jurado rechazando su pastel del árbol solitario. Al final, Karl anuncia que el museo ahora es de Sergio. En «Дикий час: Духи гор» Luis y Natasha van en el Gordini a buscar un símbolo escondido en un cuadro, que solo aparece desde cierto ángulo.",
+"desc": "La casona de la familia Fader en Mayor Drummond, Luján de Cuyo, cuyas paredes pintó al fresco Fernando Fader. Hoy es el Museo Provincial de Bellas Artes Emiliano Guiñazú, la «Casa de Fader», con jardín y una colección de pintura argentina. En «El misterio de los Fader», en una sala del museo dos hombres intercambian maletines; para Luis es un lugar especial y no del todo grato: a los quince años participó ahí de un concurso de pintura, y en «Operación Londres» recuerda la cara del jurado rechazando su pastel del árbol solitario. Al final, Karl anuncia que el museo ahora es de Sergio. En «Дикий час: Духи гор» Luis y Natasha van en el Gordini a buscar un símbolo escondido en un cuadro, que solo aparece desde cierto ángulo. En «Ladro di cuori 3» es el corazón de la novela: Don Sergio Fader, restaurador jubilado y guía voluntario, les muestra a Alessio y Laura los únicos murales que pintó Fernando Fader y las garzas de la pileta vacía; ahí, una noche de jueves, Ignacio esconde los «Corazones de Diamante» robados en Amberes dentro del marco del corazón rojo de Adriana, rumbo a Burdeos, y el Fantasma deja de ser un fantasma.",
 "nombre_ru": "Музей Эмилиано Гиньясу — Дом Фадера",
-"desc_ru": "Особняк семьи Фадер в Майор-Драммонде (Лухан-де-Куйо), стены которого расписал фресками Фернандо Фадер. Сегодня это Провинциальный музей изящных искусств имени Эмилиано Гиньясу, «Дом Фадера», с садом и коллекцией аргентинской живописи. В «Тайне семьи Фадер» в одном из залов двое мужчин обмениваются чемоданчиками; для Луиса это особое и не слишком приятное место: в пятнадцать лет он участвовал здесь в конкурсе живописи, а в «Операции „Лондон“» вспоминает лицо жюри, отвергшего его пастель с одиноким деревом. В финале Карл объявляет, что музей теперь принадлежит Серхио. В «Диком часе: Духах гор» Луис и Наташа едут на «Гордини» искать символ, спрятанный в картине, — он виден только под определённым углом.",
+"desc_ru": "Особняк семьи Фадер в Майор-Драммонде (Лухан-де-Куйо), стены которого расписал фресками Фернандо Фадер. Сегодня это Провинциальный музей изящных искусств имени Эмилиано Гиньясу, «Дом Фадера», с садом и коллекцией аргентинской живописи. В «Тайне семьи Фадер» в одном из залов двое мужчин обмениваются чемоданчиками; для Луиса это особое и не слишком приятное место: в пятнадцать лет он участвовал здесь в конкурсе живописи, а в «Операции „Лондон“» вспоминает лицо жюри, отвергшего его пастель с одиноким деревом. В финале Карл объявляет, что музей теперь принадлежит Серхио. В «Диком часе: Духах гор» Луис и Наташа едут на «Гордини» искать символ, спрятанный в картине, — он виден только под определённым углом. В «Ladro di cuori 3» это сердце романа: Дон Серхио Фадер, реставратор на пенсии и добровольный гид, показывает Алессио и Лауре единственные фрески Фернандо Фадера и цапель в пустом бассейне; здесь в ночь на пятницу Игнасио прячет украденные в Антверпене «Бриллиантовые сердца» в раму красного сердца Адрианы, чтобы отправить их в Бордо, — и Призрак перестаёт быть призраком.",
 "apar": [
 {
 "n": "tajna-semi-fader",
@@ -15615,8 +15615,27 @@ export const CIUDADES = {
 "s": 4,
 "es": "El símbolo del cuadro solo aparece desde cierto ángulo. Me torcí el cuello, pero lo vi.",
 "ru": "Символ на картине виден только под определённым углом. Чуть шею не свернула, но увидела."
+},
+{
+"a": "Don Sergio Fader",
+"ar": "Дон Серхио Фадер",
+"s": 5,
+"es": "Cuarenta años restaurando cuadros y ahora hago de guía gratis. Es el mejor trabajo de mi vida. Miren las garzas de Fernando en la pileta: de noche parecen a punto de volar.",
+"ru": "Сорок лет реставрировал картины, а теперь вожу экскурсии бесплатно. Лучшая работа в моей жизни. Посмотрите на цапель Фернандо в бассейне: ночью кажется, что они вот-вот взлетят."
+},
+{
+"a": "Alessio",
+"ar": "Алессио",
+"s": 4,
+"es": "Pasé un jueves a la noche escondido en una pileta vacía. Excelente acústica: el celular de Laura vibró y sonó como un trueno. Los murales, únicos. Las garzas, testigos.",
+"ru": "Провёл ночь с четверга на пятницу, прячась в пустом бассейне. Отличная акустика: телефон Лауры завибрировал и прогремел, как гром. Фрески уникальные. Цапли — свидетели."
 }
-]
+],
+"img": {
+"src": "img/lugares/md-museo-fader.webp",
+"n": "ladro-di-cuori-3",
+"c": "5"
+}
 },
 {
 "id": "md-lujan",
@@ -16843,27 +16862,6 @@ export const CIUDADES = {
 ]
 },
 {
-"n": "ladro-di-cuori-3",
-"c": [
-[
-"5",
-"La casa di Fader"
-],
-[
-"6",
-"Una notte tra i vigneti"
-],
-[
-"7",
-"I fratelli di Adriana"
-],
-[
-"extra-2",
-"Soluzioni"
-]
-]
-},
-{
 "n": "anomalia",
 "c": [
 [
@@ -17330,6 +17328,249 @@ export const CIUDADES = {
 ]
 }
 ]
+},
+{
+"id": "md-villa-adriana",
+"nombre": "La casa de Adriana (Luján de Cuyo)",
+"cat": "casa",
+"x": -2898,
+"y": -13652,
+"modelo": "casa",
+"desc": "Ubicación aproximada: la novela solo da las señas de Adriana, «pasando la iglesia, la segunda a la derecha, la casa de las buganvillas violetas», a pocos minutos de la Casa de Fader. Es una villa blanca con galería de madera y un jardín lleno de rosas, y adentro parece una galería de arte: montañas, viñas de otoño, retratos de campesinos con sombrero. En «Ladro di cuori 3» Laura conoce acá a Adriana, la prima pintora que buscó durante meses («tenés los ojos de mi madre»), y Alessio no puede dejar de mirar el cuadro chico sobre la chimenea: un corazón rojo granate, tallado como un diamante. Con medialunas y mermelada de damasco, Adriana cuenta la historia de sus cuatro hermanos y de Ignacio, el marchand que volvió pidiendo perdón y le compró toda la serie de los corazones.",
+"nombre_ru": "Дом Адрианы (Лухан-де-Куйо)",
+"desc_ru": "Местоположение приблизительное: в романе есть только приметы Адрианы — «после церкви вторая улица направо, дом с фиолетовыми бугенвиллеями», в нескольких минутах от Дома Фадера. Белая вилла с деревянной галереей и садом, полным роз, а внутри — настоящая картинная галерея: горы, осенние виноградники, портреты крестьян в шляпах. В «Ladro di cuori 3» Лаура знакомится здесь с Адрианой, кузиной-художницей, которую искала много месяцев («у тебя глаза моей мамы»), а Алессио не может оторвать взгляд от маленькой картины над камином: гранатово-красное сердце с гранями, как у бриллианта. За круассанами и абрикосовым джемом Адриана рассказывает о четырёх братьях и об Игнасио — арт-дилере, который вернулся просить прощения и купил всю её серию сердец.",
+"apar": [
+{
+"n": "ladro-di-cuori-3",
+"c": [
+[
+"4",
+"Il segreto nel quadro"
+],
+[
+"5",
+"La casa di Fader"
+],
+[
+"6",
+"Una notte tra i vigneti"
+],
+[
+"7",
+"I fratelli di Adriana"
+],
+[
+"10",
+"Volver"
+],
+[
+"extra-1",
+"Test finale"
+],
+[
+"extra-2",
+"Soluzioni"
+]
+]
+}
+],
+"res": [
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 5,
+"es": "Crucé medio mundo para encontrar a mi familia y me abrió una mujer con camisa de lino manchada de pintura. «Tenés los ojos de mi madre». Lloré antes del Malbec.",
+"ru": "Я пересекла полмира, чтобы найти семью, и мне открыла женщина в льняной рубашке в пятнах краски. «У тебя глаза моей мамы». Я расплакалась ещё до мальбека."
+},
+{
+"a": "Adriana",
+"ar": "Адриана",
+"s": 5,
+"es": "Pasando la iglesia, la segunda a la derecha, la casa de las buganvillas. Medialunas a la mañana. Los cuadros no se tocan, sobre todo el corazón de la chimenea.",
+"ru": "После церкви вторая направо, дом с бугенвиллеями. По утрам круассаны. Картины не трогать, особенно сердце над камином."
+},
+{
+"a": "Enrico",
+"ar": "Энрико",
+"s": 4,
+"es": "Llegué con alfajores y sin dormir hace dos días. Me sirvieron Malbec a las once de la mañana. De los nombres de los dos turistas italianos, lamentablemente, no me acuerdo.",
+"ru": "Приехал с альфахорами и без сна двое суток. Мне налили мальбек в одиннадцать утра. Имён двух итальянских туристов, к сожалению, не помню."
+}
+],
+"img": {
+"src": "img/lugares/md-villa-adriana.webp",
+"n": "ladro-di-cuori-3",
+"c": "4"
+}
+},
+{
+"id": "md-vinedos-drummond",
+"nombre": "Los viñedos de Mayor Drummond",
+"cat": "parque",
+"x": -2496,
+"y": -13252,
+"modelo": "ninguno",
+"desc": "Las hileras de viñas entre la casa de Adriana y la Casa de Fader: tierra seca y polvorienta, cielo lleno de estrellas y algún perro que ladra a lo lejos. En «Ladro di cuori 3» Alessio sale a las dos de la mañana por la puerta de la cocina y cruza los viñedos a pie, media hora con una linterna chica, porque el Torino hace demasiado ruido. Detrás del parque del museo encuentra la camioneta blanca de «Transportes Aconcagua» y, en la ventana del depósito, dos sombras. Después Hugo lo busca media hora entre las viñas y vuelve lleno de tierra.",
+"nombre_ru": "Виноградники Майор-Драммонда",
+"desc_ru": "Ряды лоз между домом Адрианы и Домом Фадера: сухая пыльная земля, небо в звёздах и где-то далеко лающая собака. В «Ladro di cuori 3» Алессио в два часа ночи выходит через кухонную дверь и полчаса идёт пешком через виноградники с маленьким фонариком, потому что «Торино» слишком шумит. За парком музея он находит белый фургон «Transportes Aconcagua», а в окне склада — две тени. Потом Уго полчаса ищет его среди лоз и возвращается весь в земле.",
+"apar": [
+{
+"n": "ladro-di-cuori-3",
+"c": [
+[
+"3",
+"Le radici di Laura e l'ombra di Don Sergio"
+],
+[
+"6",
+"Una notte tra i vigneti"
+],
+[
+"8",
+"Il labirinto di cipressi"
+],
+[
+"extra-2",
+"Soluzioni"
+]
+]
+}
+],
+"res": [
+{
+"a": "Alessio",
+"ar": "Алессио",
+"s": 4,
+"es": "Media hora a pie entre las viñas, a las dos de la mañana, con una linterna chica. Estrellas mucho más brillantes que en Europa. Un gato negro casi me arruina la carrera.",
+"ru": "Полчаса пешком между лозами в два часа ночи с маленьким фонариком. Звёзды куда ярче, чем в Европе. Чёрный кот чуть не испортил мне всю карьеру."
+},
+{
+"a": "Hugo",
+"ar": "Уго",
+"s": 1,
+"es": "Busqué al ladrón media hora entre las viñas. Volví lleno de tierra. Era un gato.",
+"ru": "Полчаса искал вора среди лоз. Вернулся весь в земле. Это был кот."
+}
+],
+"img": {
+"src": "img/lugares/md-vinedos-drummond.webp",
+"n": "ladro-di-cuori-3",
+"c": "6"
+}
+},
+{
+"id": "md-laberinto-fader",
+"nombre": "El laberinto de cipreses (Casa de Fader)",
+"cat": "parque",
+"x": -2024,
+"y": -12870,
+"modelo": "fuente",
+"desc": "El parque a la francesa de la Casa de Fader, con cipreses podados en formas geométricas que arman pequeños laberintos verdes y estatuas blancas entre los setos: diosas, ninfas, un muchacho con un ánfora. En «Ladro di cuori 3», después de tres curvas los ruidos del jardín desaparecen: en la placita redonda del centro, junto a una fuente seca, Don Sergio confiesa que su firma era falsa, que la policía le dijo «abuelo, usted lee demasiadas novelas policiales», y que decidió hacer de cebo él solo. Ahí nace el plan para esperar al Fantasma.",
+"nombre_ru": "Кипарисовый лабиринт (Дом Фадера)",
+"desc_ru": "Французский парк Дома Фадера: кипарисы, подстриженные в геометрические формы, складываются в маленькие зелёные лабиринты, а между изгородями стоят белые статуи — богини, нимфы, юноша с амфорой. В «Ladro di cuori 3» после трёх поворотов звуки сада исчезают: на круглой площадке в центре, у сухого фонтана, Дон Серхио признаётся, что его подпись подделали, что в полиции ему сказали «дедушка, вы читаете слишком много детективов», и что он решил сам стать приманкой. Здесь рождается план — дождаться Призрака.",
+"apar": [
+{
+"n": "ladro-di-cuori-3",
+"c": [
+[
+"5",
+"La casa di Fader"
+],
+[
+"8",
+"Il labirinto di cipressi"
+],
+[
+"9",
+"Il Fantasma"
+],
+[
+"extra-2",
+"Soluzioni"
+]
+]
+}
+],
+"res": [
+{
+"a": "Don Sergio Fader",
+"ar": "Дон Серхио Фадер",
+"s": 5,
+"es": "Después de tres curvas nadie te escucha. Ideal para confesiones, planes y para descubrir que el gato negro era un ladrón italiano.",
+"ru": "После трёх поворотов тебя никто не слышит. Идеально для признаний, планов и для того, чтобы узнать, что чёрный кот был итальянским вором."
+},
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 4,
+"es": "Todos los senderos son iguales. Entramos a hablar de un robo y salimos con un plan. Las estatuas no dijeron nada.",
+"ru": "Все дорожки одинаковые. Зашли поговорить о краже — вышли с планом. Статуи промолчали."
+}
+],
+"img": {
+"src": "img/lugares/md-laberinto-fader.webp",
+"n": "ladro-di-cuori-3",
+"c": "8"
+}
+},
+{
+"id": "md-fattoria",
+"nombre": "La granja en la pampa (provincia de Buenos Aires)",
+"cat": "casa",
+"x": 744500,
+"y": -282877,
+"modelo": "ninguno",
+"desc": "La novela no dice dónde queda: solo que está en la provincia de Buenos Aires, lejos de la ciudad, a dos días de ruta de Mendoza con una noche en un motel de San Luis. Una casa blanca de techo rojo, campos verdes y un cielo enorme. En «Ladro di cuori 3» Alessio y Laura viven acá con documentos nuevos después del golpe del violín de oro: seis gallinas, dos cabras y un perro viejo y vago que se llama Tango. Laura canta «Volver» en los escalones de la galería; Alessio ceba mate y lee en una revista de don Ramón que en Amberes desaparecieron los «Corazones de Diamante»… y que la pista lleva a Mendoza.",
+"nombre_ru": "Ферма в пампе (провинция Буэнос-Айрес)",
+"desc_ru": "Где она, роман не говорит: только что в провинции Буэнос-Айрес, далеко от города, в двух днях пути от Мендосы с ночёвкой в мотеле в Сан-Луисе. Белый дом с красной крышей, зелёные поля и огромное небо. В «Ladro di cuori 3» Алессио и Лаура живут здесь с новыми документами после истории с золотой скрипкой: шесть кур, две козы и старый ленивый пёс по кличке Танго. Лаура поёт «Volver» на ступеньках веранды; Алессио заваривает мате и читает в журнале дона Рамона, что в Антверпене пропали «Бриллиантовые сердца»… а след ведёт в Мендосу.",
+"apar": [
+{
+"n": "ladro-di-cuori-3",
+"c": [
+[
+"1",
+"Si torna sempre al primo amore"
+],
+[
+"2",
+"La strada per Mendoza"
+],
+[
+"10",
+"Volver"
+],
+[
+"extra-1",
+"Test finale"
+],
+[
+"extra-2",
+"Soluzioni"
+]
+]
+}
+],
+"res": [
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 5,
+"es": "Seis gallinas, dos cabras, tres huevos debajo del heno y el atardecer más grande del mundo. Volver, siempre volver.",
+"ru": "Шесть кур, две козы, три яйца под сеном и самый большой закат на свете. Volver — всегда возвращаться."
+},
+{
+"a": "Alessio",
+"ar": "Алессио",
+"s": 3,
+"es": "Tranquilo. Quizás demasiado. Mi enemigo más peligroso es una cabra que se come las camisas tendidas al sol.",
+"ru": "Спокойно. Может, даже слишком. Мой самый опасный враг — коза, которая ест рубашки, развешанные на солнце."
+}
+],
+"img": {
+"src": "img/lugares/md-fattoria.webp",
+"n": "ladro-di-cuori-3",
+"c": "1"
+}
 }
 ],
 "venezia": [
@@ -21590,121 +21831,6 @@ export const CIUDADES = {
 ]
 };
 export const NOVELAS = {
-"grustnyj-gorod": {
-"t": "Грустный город",
-"es": "La ciudad triste",
-"l": "ru",
-"y": 2026,
-"ru": "Грустный город",
-"p": "img/portadas/grustnyj-gorod.webp",
-"tr": {
-"it": "la-citta-triste"
-}
-},
-"golos": {
-"t": "Голос",
-"es": "La voz",
-"l": "ru",
-"y": 2026,
-"ru": "Голос",
-"p": "img/portadas/golos.webp",
-"tr": {
-"fr": "la-voix"
-}
-},
-"divlji-chas-malbec": {
-"t": "Дивљи час: Љубав укуса малбека",
-"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
-"p": "img/portadas/divlji-chas-malbec.webp",
-"tr": {}
-},
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви (ит.)",
-"p": "img/portadas/onde-d-amore.webp",
-"tr": {
-"es": "ondas-de-amor"
-}
-},
-"lluvia-de-meteoritos": {
-"t": "Lluvia de meteoritos",
-"es": "Lluvia de meteoritos",
-"l": "es",
-"y": null,
-"ru": "Метеоритный дождь (исп.)",
-"p": "img/portadas/lluvia-de-meteoritos.webp",
-"tr": {
-"ru": "meteoritnyj-dozhd"
-}
-},
-"venecianskaya-maska": {
-"t": "Венецианская маска",
-"es": "La máscara de Venecia (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Венецианская маска",
-"p": "img/portadas/venecianskaya-maska.webp",
-"tr": {
-"it": "maschera-di-venezia"
-}
-},
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
-"l": "ru",
-"y": 2026,
-"ru": "Тихая любовь",
-"p": "img/portadas/tikhaya-lyubov.webp",
-"tr": {
-"it": "ti-amo-in-silenzio"
-}
-},
-"tajna-semi-fader": {
-"t": "Тайна семьи Фадер",
-"es": "El misterio de los Fader (ru.)",
-"l": "ru",
-"y": null,
-"ru": "Тайна семьи Фадер",
-"p": "img/portadas/tajna-semi-fader.webp",
-"tr": {
-"es": "el-misterio-de-los-fader"
-}
-},
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
-"tr": {}
-},
-"anomalia": {
-"t": "Anomalía",
-"es": "Anomalía",
-"l": "es",
-"y": null,
-"ru": "Аномалия (исп.)",
-"p": "img/portadas/anomalia.webp",
-"tr": {}
-},
-"divlji-chas": {
-"t": "Дивљи час",
-"es": "La hora salvaje (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час (серб.)",
-"p": "img/portadas/divlji-chas.webp",
-"tr": {
-"ru": "dikij-chas"
-}
-},
 "predchuvstvie": {
 "t": "Предчувствие",
 "es": "El presentimiento",
@@ -21728,80 +21854,14 @@ export const NOVELAS = {
 "pl": "przeczucie"
 }
 },
-"el-tren-fantasma": {
-"t": "El tren fantasma",
-"es": "El tren fantasma",
-"l": "es",
-"y": null,
-"ru": "Призрачный поезд (исп.)",
-"p": "img/portadas/el-tren-fantasma.webp",
-"tr": {
-"it": "il-treno-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"ladro-di-cuori-3": {
-"t": "Ladro di cuori 3",
-"es": "Ladrón de corazones 3 (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Похититель сердец 3 (ит.)",
-"p": "img/portadas/ladro-di-cuori-3.webp",
-"tr": {}
-},
-"la-voix": {
-"t": "La voix",
-"es": "La voz (fr.)",
-"l": "fr",
-"y": null,
-"ru": "Голос (фр.)",
-"p": "img/portadas/la-voix.webp",
-"tr": {
-"ru": "golos"
-}
-},
-"rezonans-lyubvi": {
-"t": "Резонанс любви",
-"es": "Resonancia del amor",
+"predchuvstvie-2-3": {
+"t": "Предчувствие 2.3",
+"es": "El presentimiento 2.3",
 "l": "ru",
-"y": null,
-"ru": "Резонанс любви",
-"p": "img/portadas/rezonans-lyubvi.webp",
-"tr": {}
-},
-"la-citta-triste": {
-"t": "La città triste",
-"es": "La ciudad triste (it.)",
-"l": "it",
 "y": 2025,
-"ru": "Грустный город (ит.)",
-"p": "img/portadas/la-citta-triste.webp",
-"tr": {
-"ru": "grustnyj-gorod"
-}
-},
-"ondas-de-amor": {
-"t": "Ondas de amor",
-"es": "Ondas de amor",
-"l": "es",
-"y": 2026,
-"ru": "Волны любви (исп.)",
-"p": "img/portadas/ondas-de-amor.webp",
-"tr": {
-"it": "onde-d-amore"
-}
-},
-"il-treno-fantasma": {
-"t": "Il treno fantasma",
-"es": "El tren fantasma (it.)",
-"l": "it",
-"y": null,
-"ru": "Призрачный поезд (ит.)",
-"p": "img/portadas/il-treno-fantasma.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"ru": "prizrachnyj-poezd"
-}
+"ru": "Предчувствие 2.3",
+"p": "img/portadas/predchuvstvie-2-3.webp",
+"tr": {}
 },
 "ti-amo-in-silenzio": {
 "t": "Ti amo in silenzio",
@@ -21814,78 +21874,62 @@ export const NOVELAS = {
 "ru": "tikhaya-lyubov"
 }
 },
-"operacion-londres": {
-"t": "El misterio de los Fader: Operación Londres",
-"es": "El misterio de los Fader: Operación Londres",
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
+"tr": {}
+},
+"golos": {
+"t": "Голос",
+"es": "La voz",
+"l": "ru",
+"y": 2026,
+"ru": "Голос",
+"p": "img/portadas/golos.webp",
+"tr": {
+"fr": "la-voix"
+}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
 "l": "es",
 "y": 2026,
-"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
-"p": "img/portadas/operacion-londres.webp",
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
 "tr": {}
 },
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
-"l": "ru",
-"y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
-"tr": {}
-},
-"predchuvstvie-2-3": {
-"t": "Предчувствие 2.3",
-"es": "El presentimiento 2.3",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.3",
-"p": "img/portadas/predchuvstvie-2-3.webp",
-"tr": {}
-},
-"predchuvstvie-2-2": {
-"t": "Предчувствие 2.2",
-"es": "El presentimiento 2.2",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.2",
-"p": "img/portadas/predchuvstvie-2-2.webp",
-"tr": {}
-},
-"27-ocak": {
-"t": "27 Ocak",
-"es": "27 de enero",
-"l": "tr",
-"y": 2026,
-"ru": "27 января",
-"p": "img/portadas/27-ocak.webp",
-"tr": {}
-},
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
+"ladro-di-cuori-3": {
+"t": "Ladro di cuori 3",
+"es": "Ladrón de corazones 3 (it.)",
 "l": "it",
 "y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
+"ru": "Похититель сердец 3 (ит.)",
+"p": "img/portadas/ladro-di-cuori-3.webp",
 "tr": {}
 },
-"tajna-v-biblioteke": {
-"t": "Тайна в библиотеке",
-"es": "El misterio de la biblioteca",
+"divlji-chas-malbec": {
+"t": "Дивљи час: Љубав укуса малбека",
+"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
+"p": "img/portadas/divlji-chas-malbec.webp",
+"tr": {}
+},
+"grustnyj-gorod": {
+"t": "Грустный город",
+"es": "La ciudad triste",
 "l": "ru",
 "y": 2026,
-"ru": "Тайна в библиотеке",
-"p": "img/portadas/tajna-v-biblioteke.webp",
-"tr": {}
-},
-"la-reina-de-la-vendimia": {
-"t": "La reina de la Vendimia",
-"es": "La reina de la Vendimia",
-"l": "es",
-"y": 2026,
-"ru": "Королева Вендимии (исп.)",
-"p": "img/portadas/la-reina-de-la-vendimia.webp",
+"ru": "Грустный город",
+"p": "img/portadas/grustnyj-gorod.webp",
 "tr": {
-"cs": "kralovna-vinobrani"
+"it": "la-citta-triste"
 }
 },
 "maschera-di-venezia": {
@@ -21899,22 +21943,13 @@ export const NOVELAS = {
 "ru": "venecianskaya-maska"
 }
 },
-"znak": {
-"t": "Знак",
-"es": "El signo",
+"predchuvstvie-2": {
+"t": "Предчувствие 2",
+"es": "El presentimiento 2",
 "l": "ru",
 "y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
-"tr": {}
-},
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
-"l": "es",
-"y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
+"ru": "Предчувствие 2",
+"p": "img/portadas/predchuvstvie-2.webp",
 "tr": {}
 },
 "volny-lyubvi-narisovannyj-mir": {
@@ -21926,51 +21961,22 @@ export const NOVELAS = {
 "p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
 "tr": {}
 },
-"el-misterio-de-los-fader": {
-"t": "El misterio de los Fader",
-"es": "El misterio de los Fader",
-"l": "es",
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
 "y": 2025,
-"ru": "Тайна семьи Фадер (исп.)",
-"p": "img/portadas/el-misterio-de-los-fader.webp",
-"tr": {
-"ru": "tajna-semi-fader"
-}
-},
-"pokhititel-serdec-portret-osnovatelya": {
-"t": "Похититель сердец: Портрет основателя",
-"es": "Ladrón de corazones: El retrato del fundador",
-"l": "ru",
-"y": 2026,
-"ru": "Похититель сердец: Портрет основателя",
-"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
-"tr": {}
-},
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
-"tr": {}
-},
-"predchuvstvie-2": {
-"t": "Предчувствие 2",
-"es": "El presentimiento 2",
-"l": "ru",
-"y": 2024,
-"ru": "Предчувствие 2",
-"p": "img/portadas/predchuvstvie-2.webp",
-"tr": {}
-},
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
-"l": "ru",
-"y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
 "tr": {}
 },
 "karnaval-sinei": {
@@ -21982,23 +21988,25 @@ export const NOVELAS = {
 "p": "img/portadas/karnaval-sinei.webp",
 "tr": {}
 },
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
 "l": "es",
 "y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
 "tr": {}
 },
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
-"l": "ru",
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
+"l": "it",
 "y": 2026,
-"ru": "Алмазный дождь",
-"p": "img/portadas/almaznyj-dozhd.webp",
-"tr": {}
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
+"tr": {
+"es": "ondas-de-amor"
+}
 },
 "prizrachnyj-poezd": {
 "t": "Призрачный поезд",
@@ -22012,71 +22020,13 @@ export const NOVELAS = {
 "it": "il-treno-fantasma"
 }
 },
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
-},
-"dikij-chas": {
-"t": "Дикий час",
-"es": "La hora salvaje",
-"l": "ru",
-"y": null,
-"ru": "Дикий час",
-"p": "img/portadas/dikij-chas.webp",
-"tr": {
-"sr": "divlji-chas"
-}
-},
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
 "l": "ru",
 "y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
-"tr": {
-"en": "the-date"
-}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
-"l": "es",
-"y": 2026,
-"ru": "Любовь в космосе",
-"p": "img/portadas/amor-en-el-cosmos.webp",
-"tr": {}
-},
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"dikij-chas-2": {
-"t": "Дикий час: Духи гор",
-"es": "La hora salvaje: Los espíritus de la montaña",
-"l": "ru",
-"y": null,
-"ru": "Дикий час: Духи гор",
-"p": "img/portadas/dikij-chas-2.webp",
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
 "tr": {}
 },
 "el-impostor": {
@@ -22088,31 +22038,71 @@ export const NOVELAS = {
 "p": "img/portadas/el-impostor.webp",
 "tr": {}
 },
-"predchuvstvie-2-4": {
-"t": "Предчувствие 2.4",
-"es": "El presentimiento 2.4",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.4",
-"p": "img/portadas/predchuvstvie-2-4.webp",
-"tr": {}
-},
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
 "tr": {}
 },
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
+"ondas-de-amor": {
+"t": "Ondas de amor",
+"es": "Ondas de amor",
+"l": "es",
+"y": 2026,
+"ru": "Волны любви (исп.)",
+"p": "img/portadas/ondas-de-amor.webp",
+"tr": {
+"it": "onde-d-amore"
+}
+},
+"tajna-v-biblioteke": {
+"t": "Тайна в библиотеке",
+"es": "El misterio de la biblioteca",
 "l": "ru",
 "y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
+"ru": "Тайна в библиотеке",
+"p": "img/portadas/tajna-v-biblioteke.webp",
+"tr": {}
+},
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
+"tr": {}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"venecianskaya-maska": {
+"t": "Венецианская маска",
+"es": "La máscara de Venecia (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Венецианская маска",
+"p": "img/portadas/venecianskaya-maska.webp",
+"tr": {
+"it": "maschera-di-venezia"
+}
+},
+"27-ocak": {
+"t": "27 Ocak",
+"es": "27 de enero",
+"l": "tr",
+"y": 2026,
+"ru": "27 января",
+"p": "img/portadas/27-ocak.webp",
 "tr": {}
 },
 "kralovna-vinobrani": {
@@ -22126,6 +22116,89 @@ export const NOVELAS = {
 "es": "la-reina-de-la-vendimia"
 }
 },
+"divlji-chas": {
+"t": "Дивљи час",
+"es": "La hora salvaje (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час (серб.)",
+"p": "img/portadas/divlji-chas.webp",
+"tr": {
+"ru": "dikij-chas"
+}
+},
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
+"l": "ru",
+"y": 2026,
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
+"tr": {
+"it": "ti-amo-in-silenzio"
+}
+},
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
+"tr": {}
+},
+"rezonans-lyubvi": {
+"t": "Резонанс любви",
+"es": "Resonancia del amor",
+"l": "ru",
+"y": null,
+"ru": "Резонанс любви",
+"p": "img/portadas/rezonans-lyubvi.webp",
+"tr": {}
+},
+"tajna-semi-fader": {
+"t": "Тайна семьи Фадер",
+"es": "El misterio de los Fader (ru.)",
+"l": "ru",
+"y": null,
+"ru": "Тайна семьи Фадер",
+"p": "img/portadas/tajna-semi-fader.webp",
+"tr": {
+"es": "el-misterio-de-los-fader"
+}
+},
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
+"l": "ru",
+"y": 2026,
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
+"tr": {}
+},
+"el-tren-fantasma": {
+"t": "El tren fantasma",
+"es": "El tren fantasma",
+"l": "es",
+"y": null,
+"ru": "Призрачный поезд (исп.)",
+"p": "img/portadas/el-tren-fantasma.webp",
+"tr": {
+"it": "il-treno-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"la-reina-de-la-vendimia": {
+"t": "La reina de la Vendimia",
+"es": "La reina de la Vendimia",
+"l": "es",
+"y": 2026,
+"ru": "Королева Вендимии (исп.)",
+"p": "img/portadas/la-reina-de-la-vendimia.webp",
+"tr": {
+"cs": "kralovna-vinobrani"
+}
+},
 "dikij-chas-karnaval-razdora": {
 "t": "Дикий час: Карнавал раздора",
 "es": "La hora salvaje: El carnaval de la discordia",
@@ -22135,13 +22208,181 @@ export const NOVELAS = {
 "p": "img/portadas/dikij-chas-karnaval-razdora.webp",
 "tr": {}
 },
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
+"tr": {}
+},
+"el-misterio-de-los-fader": {
+"t": "El misterio de los Fader",
+"es": "El misterio de los Fader",
+"l": "es",
+"y": 2025,
+"ru": "Тайна семьи Фадер (исп.)",
+"p": "img/portadas/el-misterio-de-los-fader.webp",
+"tr": {
+"ru": "tajna-semi-fader"
+}
+},
+"predchuvstvie-2-2": {
+"t": "Предчувствие 2.2",
+"es": "El presentimiento 2.2",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.2",
+"p": "img/portadas/predchuvstvie-2-2.webp",
+"tr": {}
+},
+"pokhititel-serdec-portret-osnovatelya": {
+"t": "Похититель сердец: Портрет основателя",
+"es": "Ladrón de corazones: El retrato del fundador",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви",
-"p": "img/portadas/volny-lyubvi.webp",
+"ru": "Похититель сердец: Портрет основателя",
+"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
+"tr": {}
+},
+"la-voix": {
+"t": "La voix",
+"es": "La voz (fr.)",
+"l": "fr",
+"y": null,
+"ru": "Голос (фр.)",
+"p": "img/portadas/la-voix.webp",
+"tr": {
+"ru": "golos"
+}
+},
+"dikij-chas": {
+"t": "Дикий час",
+"es": "La hora salvaje",
+"l": "ru",
+"y": null,
+"ru": "Дикий час",
+"p": "img/portadas/dikij-chas.webp",
+"tr": {
+"sr": "divlji-chas"
+}
+},
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"tr": {}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"la-citta-triste": {
+"t": "La città triste",
+"es": "La ciudad triste (it.)",
+"l": "it",
+"y": 2025,
+"ru": "Грустный город (ит.)",
+"p": "img/portadas/la-citta-triste.webp",
+"tr": {
+"ru": "grustnyj-gorod"
+}
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
+},
+"dikij-chas-2": {
+"t": "Дикий час: Духи гор",
+"es": "La hora salvaje: Los espíritus de la montaña",
+"l": "ru",
+"y": null,
+"ru": "Дикий час: Духи гор",
+"p": "img/portadas/dikij-chas-2.webp",
+"tr": {}
+},
+"lluvia-de-meteoritos": {
+"t": "Lluvia de meteoritos",
+"es": "Lluvia de meteoritos",
+"l": "es",
+"y": null,
+"ru": "Метеоритный дождь (исп.)",
+"p": "img/portadas/lluvia-de-meteoritos.webp",
+"tr": {
+"ru": "meteoritnyj-dozhd"
+}
+},
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
+"l": "ru",
+"y": 2026,
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
+"tr": {}
+},
+"il-treno-fantasma": {
+"t": "Il treno fantasma",
+"es": "El tren fantasma (it.)",
+"l": "it",
+"y": null,
+"ru": "Призрачный поезд (ит.)",
+"p": "img/portadas/il-treno-fantasma.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"anomalia": {
+"t": "Anomalía",
+"es": "Anomalía",
+"l": "es",
+"y": null,
+"ru": "Аномалия (исп.)",
+"p": "img/portadas/anomalia.webp",
+"tr": {}
+},
+"predchuvstvie-2-4": {
+"t": "Предчувствие 2.4",
+"es": "El presentimiento 2.4",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.4",
+"p": "img/portadas/predchuvstvie-2-4.webp",
+"tr": {}
+},
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
+"l": "ru",
+"y": 2026,
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
+},
+"operacion-londres": {
+"t": "El misterio de los Fader: Operación Londres",
+"es": "El misterio de los Fader: Operación Londres",
+"l": "es",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
+"p": "img/portadas/operacion-londres.webp",
 "tr": {}
 }
 };

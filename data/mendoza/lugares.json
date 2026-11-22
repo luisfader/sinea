@@ -740,7 +740,7 @@
     -68.8668086
    ],
    "modelo": "villa",
-   "desc": "La casona de la familia Fader en Mayor Drummond, Luján de Cuyo, cuyas paredes pintó al fresco Fernando Fader. Hoy es el Museo Provincial de Bellas Artes Emiliano Guiñazú, la «Casa de Fader», con jardín y una colección de pintura argentina. En «El misterio de los Fader», en una sala del museo dos hombres intercambian maletines; para Luis es un lugar especial y no del todo grato: a los quince años participó ahí de un concurso de pintura, y en «Operación Londres» recuerda la cara del jurado rechazando su pastel del árbol solitario. Al final, Karl anuncia que el museo ahora es de Sergio. En «Дикий час: Духи гор» Luis y Natasha van en el Gordini a buscar un símbolo escondido en un cuadro, que solo aparece desde cierto ángulo.",
+   "desc": "La casona de la familia Fader en Mayor Drummond, Luján de Cuyo, cuyas paredes pintó al fresco Fernando Fader. Hoy es el Museo Provincial de Bellas Artes Emiliano Guiñazú, la «Casa de Fader», con jardín y una colección de pintura argentina. En «El misterio de los Fader», en una sala del museo dos hombres intercambian maletines; para Luis es un lugar especial y no del todo grato: a los quince años participó ahí de un concurso de pintura, y en «Operación Londres» recuerda la cara del jurado rechazando su pastel del árbol solitario. Al final, Karl anuncia que el museo ahora es de Sergio. En «Дикий час: Духи гор» Luis y Natasha van en el Gordini a buscar un símbolo escondido en un cuadro, que solo aparece desde cierto ángulo. En «Ladro di cuori 3» es el corazón de la novela: Don Sergio Fader, restaurador jubilado y guía voluntario, les muestra a Alessio y Laura los únicos murales que pintó Fernando Fader y las garzas de la pileta vacía; ahí, una noche de jueves, Ignacio esconde los «Corazones de Diamante» robados en Amberes dentro del marco del corazón rojo de Adriana, rumbo a Burdeos, y el Fantasma deja de ser un fantasma.",
    "buscar": "Museo Fader|museo Fader|Guiñazú|Гиньясу|музе\\w* Фадера|Casa di Fader|casa di Fernando Fader|Museo Provinciale|Casa de Fader|casa de Fader",
    "extra": {
     "el-misterio-de-los-fader": [
@@ -760,7 +760,10 @@
      31
     ]
    },
-   "sin_ilustracion": true
+   "ilustracion": [
+    "ladro-di-cuori-3",
+    "05.jpg"
+   ]
   },
   {
    "id": "md-lujan",
@@ -1065,6 +1068,9 @@
    "ilustracion": [
     "el-misterio-de-los-fader",
     "04.jpg"
+   ],
+   "excluir": [
+    "ladro-di-cuori-3"
    ]
   },
   {
@@ -1185,6 +1191,82 @@
     ]
    },
    "sin_ilustracion": true
+  },
+  {
+   "id": "md-villa-adriana",
+   "nombre": "La casa de Adriana (Luján de Cuyo)",
+   "cat": "casa",
+   "ll": [
+    -33.0128,
+    -68.8755
+   ],
+   "modelo": "casa",
+   "desc": "Ubicación aproximada: la novela solo da las señas de Adriana, «pasando la iglesia, la segunda a la derecha, la casa de las buganvillas violetas», a pocos minutos de la Casa de Fader. Es una villa blanca con galería de madera y un jardín lleno de rosas, y adentro parece una galería de arte: montañas, viñas de otoño, retratos de campesinos con sombrero. En «Ladro di cuori 3» Laura conoce acá a Adriana, la prima pintora que buscó durante meses («tenés los ojos de mi madre»), y Alessio no puede dejar de mirar el cuadro chico sobre la chimenea: un corazón rojo granate, tallado como un diamante. Con medialunas y mermelada de damasco, Adriana cuenta la historia de sus cuatro hermanos y de Ignacio, el marchand que volvió pidiendo perdón y le compró toda la serie de los corazones.",
+   "buscar": "villa di Adriana|casa di Adriana|bouganville|alla villa",
+   "solo": [
+    "ladro-di-cuori-3"
+   ],
+   "ilustracion": [
+    "ladro-di-cuori-3",
+    "04.jpg"
+   ]
+  },
+  {
+   "id": "md-vinedos-drummond",
+   "nombre": "Los viñedos de Mayor Drummond",
+   "cat": "parque",
+   "ll": [
+    -33.0092,
+    -68.8712
+   ],
+   "modelo": "ninguno",
+   "desc": "Las hileras de viñas entre la casa de Adriana y la Casa de Fader: tierra seca y polvorienta, cielo lleno de estrellas y algún perro que ladra a lo lejos. En «Ladro di cuori 3» Alessio sale a las dos de la mañana por la puerta de la cocina y cruza los viñedos a pie, media hora con una linterna chica, porque el Torino hace demasiado ruido. Detrás del parque del museo encuentra la camioneta blanca de «Transportes Aconcagua» y, en la ventana del depósito, dos sombras. Después Hugo lo busca media hora entre las viñas y vuelve lleno de tierra.",
+   "buscar": "tra i vigneti|attraverso i vigneti|tra le vigne|tra le file di viti",
+   "solo": [
+    "ladro-di-cuori-3"
+   ],
+   "ilustracion": [
+    "ladro-di-cuori-3",
+    "06.jpg"
+   ]
+  },
+  {
+   "id": "md-laberinto-fader",
+   "nombre": "El laberinto de cipreses (Casa de Fader)",
+   "cat": "parque",
+   "ll": [
+    -33.00575,
+    -68.86615
+   ],
+   "modelo": "fuente",
+   "desc": "El parque a la francesa de la Casa de Fader, con cipreses podados en formas geométricas que arman pequeños laberintos verdes y estatuas blancas entre los setos: diosas, ninfas, un muchacho con un ánfora. En «Ladro di cuori 3», después de tres curvas los ruidos del jardín desaparecen: en la placita redonda del centro, junto a una fuente seca, Don Sergio confiesa que su firma era falsa, que la policía le dijo «abuelo, usted lee demasiadas novelas policiales», y que decidió hacer de cebo él solo. Ahí nace el plan para esperar al Fantasma.",
+   "buscar": "labirint",
+   "solo": [
+    "ladro-di-cuori-3"
+   ],
+   "ilustracion": [
+    "ladro-di-cuori-3",
+    "08.jpg"
+   ]
+  },
+  {
+   "id": "md-fattoria",
+   "nombre": "La granja en la pampa (provincia de Buenos Aires)",
+   "cat": "casa",
+   "ll": [
+    -35.44,
+    -60.88
+   ],
+   "modelo": "ninguno",
+   "desc": "La novela no dice dónde queda: solo que está en la provincia de Buenos Aires, lejos de la ciudad, a dos días de ruta de Mendoza con una noche en un motel de San Luis. Una casa blanca de techo rojo, campos verdes y un cielo enorme. En «Ladro di cuori 3» Alessio y Laura viven acá con documentos nuevos después del golpe del violín de oro: seis gallinas, dos cabras y un perro viejo y vago que se llama Tango. Laura canta «Volver» en los escalones de la galería; Alessio ceba mate y lee en una revista de don Ramón que en Amberes desaparecieron los «Corazones de Diamante»… y que la pista lleva a Mendoza.",
+   "buscar": "fattoria",
+   "solo": [
+    "ladro-di-cuori-3"
+   ],
+   "ilustracion": [
+    "ladro-di-cuori-3",
+    "01.jpg"
+   ]
   }
  ]
 }
