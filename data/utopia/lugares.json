@@ -1,0 +1,338 @@
+{
+ "_info": "Lugares de «Наша Утопия» (Предчувствие). (0,0) es la torre principal; los anillos de murallas tienen 190 y 120 m de circunradio. Mismo formato que data/lugares.json.",
+ "lugares": [
+  {
+   "id": "ut-torre-principal",
+   "nombre": "La torre principal y el mirador",
+   "otros": [
+    "Главная башня",
+    "Смотровая площадка"
+   ],
+   "cat": "monumento",
+   "x": 0,
+   "y": 10,
+   "modelo": "utopia-fortaleza",
+   "desc": "El corazón de Nuestra Utopía: más alta y esbelta que las demás, en el centro de la fortaleza, junto a la plaza central. Desde arriba se ve todo el valle y las tierras de alrededor. En la plataforma de observación Robert se queda solo, con los prismáticos, mientras se prepara la defensa. Abajo, en los sótanos, se improvisaron los calabozos donde se encerró a Martin, a Zheni y a los demás conspiradores. Todo el fuerte es pentagonal y turquesa —«para que se vea de lejos y sirva de faro a quien busca refugio»— y tiene dos anillos de murallas.",
+   "buscar": "главн\\w+ башн\\w*|смотров\\w+ площадк\\w*|подземель\\w*|Наша Утопия|Нашей Утопии",
+   "excluir_caps": {
+    "predchuvstvie-2": [
+     63,
+     64
+    ]
+   }
+  },
+  {
+   "id": "ut-plaza",
+   "nombre": "La plaza central",
+   "otros": [
+    "Центральная площадь"
+   ],
+   "cat": "plaza",
+   "x": 0,
+   "y": -32,
+   "modelo": "plaza",
+   "desc": "Junto a la torre principal: «un lugar de encuentro lleno de vida», donde los habitantes se juntan para compartir ideas, celebrar las fiestas y fortalecer los lazos de la comunidad (así la describe «Предчувствие», cap. 4).",
+   "buscar": "центральн\\w+ площад\\w*"
+  },
+  {
+   "id": "ut-consejo",
+   "nombre": "La Sala del Consejo",
+   "otros": [
+    "Зал Совета"
+   ],
+   "cat": "edificio",
+   "x": 0,
+   "y": 62,
+   "modelo": "salon",
+   "desc": "Sofocante de aire viciado y de pasiones encendidas: Robert de pie a la cabeza de la mesa, con los dedos sobre un mapa lleno de marcas, cuando el enemigo ya está dentro de las fronteras. De mañana, a la luz parpadeante de las antorchas, aquí se decide la guerra, se juzga a los traidores y se vota el «impeachment». En «Предчувствие 2.4» nace aquí el Consejo de tres: Natalia para la defensa y lo de afuera, Oxana para la vida dentro de los muros —pan, agua, escuelas, talleres—, y las decisiones, en común.",
+   "buscar": "Зал\\w* (с|С)овета|Военный совет|Совет ярости|Совет трёх|Последний Совет|Импичмент",
+   "excluir_caps": {
+    "predchuvstvie-2-4": [
+     1
+    ],
+    "predchuvstvie-2": [
+     29
+    ]
+   }
+  },
+  {
+   "id": "ut-hospital",
+   "nombre": "El hospital de la fortaleza",
+   "otros": [
+    "Больница крепости"
+   ],
+   "cat": "edificio",
+   "x": -64,
+   "y": 8,
+   "modelo": "hotelito",
+   "desc": "Aquí yace Robert, agotado, con el cuerpo y la cabeza llenos de dudas, y en sueños se le aparece Natalia. En «Предчувствие 2», en «Revelaciones de hospital», la doctora revisa con frialdad las heridas de un prisionero que intentó tomar la fortaleza mientras, por la ventana, se juntan nubes sobre el bosque.",
+   "buscar": "больниц\\w*|Больничн\\w*",
+   "excluir_caps": {
+    "predchuvstvie-2-4": [
+     10,
+     13
+    ]
+   }
+  },
+  {
+   "id": "ut-alye-rozy",
+   "nombre": "Café «Las Rosas Escarlata»",
+   "otros": [
+    "Кафе «Алые розы»"
+   ],
+   "cat": "restaurante",
+   "x": 56,
+   "y": -30,
+   "modelo": "cafe",
+   "desc": "Un café acogedor y solo para mujeres: a los hombres se les prohíbe estrictamente la entrada. Huele a masas recién horneadas y a lavanda; Sasha sirve té de hierbas en tazas de porcelana mientras Natalia retuerce el borde de una servilleta de encaje. Aquí se cuentan los secretos de la fortaleza, desde «Предчувствие 2» hasta «Разговор в „Алых розах“», en la 2.4.",
+   "buscar": "Алые розы|Алых роз"
+  },
+  {
+   "id": "ut-bar",
+   "nombre": "El bar de la fortaleza",
+   "otros": [
+    "Бар"
+   ],
+   "cat": "restaurante",
+   "x": 42,
+   "y": 32,
+   "modelo": "cafe",
+   "desc": "En «Предчувствие 2», Luis se toma una copa de un trago y se desploma con la cara sobre la barra. «Bueno. Otro “romántico” en el piso», suspira Kenneth, y Robert se queda mirando su vaso, mientras detrás de las paredes del bar, en la parte nueva de la fortaleza que nunca se terminó, el viento anda entre los muros sin acabar.",
+   "buscar": "за стойкой|рухнул лицом на стойку|в баре|бара\\b"
+  },
+  {
+   "id": "ut-arsenal",
+   "nombre": "El viejo arsenal y el depósito",
+   "otros": [
+    "Старый арсенал",
+    "Старый склад за арсеналом"
+   ],
+   "cat": "edificio",
+   "x": -50,
+   "y": -58,
+   "modelo": "hotelito",
+   "desc": "En el patio interior, junto al viejo arsenal, donde Luis suele revisar las reservas de armas. Natalia pasa por aquí retorciendo el borde del vestido, preguntándose por qué él la ignora. En el viejo depósito de atrás, Vasia ve a Luis hablando por un smartphone sobre Necrología.",
+   "buscar": "арсенал\\w*",
+   "excluir_caps": {
+    "predchuvstvie-2": [
+     18
+    ]
+   }
+  },
+  {
+   "id": "ut-torre-luis",
+   "nombre": "La torre de Luis",
+   "otros": [
+    "Башня Луиса",
+    "Башня секретов"
+   ],
+   "cat": "casa",
+   "x": 114,
+   "y": 37,
+   "modelo": "ninguno",
+   "desc": "La torre del arquitecto Luis, el que construye los muros nuevos de la fortaleza. En «Предчувствие 2», en el capítulo «La torre de los secretos», una luna roja sale de entre las nubes y tiñe la torre de un color de sangre mientras Oxana y Vasia deciden tener más cuidado.",
+   "buscar": "башн\\w* Луиса|Башня секретов"
+  },
+  {
+   "id": "ut-torre-norte",
+   "nombre": "La torre norte (la de Kenneth)",
+   "otros": [
+    "Северная башня"
+   ],
+   "cat": "monumento",
+   "x": 0,
+   "y": 190,
+   "modelo": "ninguno",
+   "desc": "Una de las torres cilíndricas de vigía del anillo exterior, de ventanas angostas y adornos que cuentan los ideales de la comunidad. Cuando los salvajes atacan, Kenneth corre a su torre y le saca la lona al arma. Desde estas torres, en «Предчувствие», Kenneth le muestra a Oxana la vista… y casi se cae del borde.",
+   "buscar": "северн\\w+ башн\\w*|Кеннет добрался до своей башни|на другую башню"
+  },
+  {
+   "id": "ut-torre-sur",
+   "nombre": "La torre sur (la de Martin)",
+   "otros": [
+    "Южная башня"
+   ],
+   "cat": "monumento",
+   "x": 0,
+   "y": -154,
+   "modelo": "ninguno",
+   "desc": "La torre de vigía del lado sur, la que defiende Martin. Aquí sube con Oxana —«es uno de los mejores lugares de la fortaleza»— y aquí, fuera de sí, golpea a Kenneth en la cara.",
+   "buscar": "южн\\w+ башн\\w*|покажи мне башню"
+  },
+  {
+   "id": "ut-acacia",
+   "nombre": "La acacia y el monumento a Robert",
+   "otros": [
+    "Старая акация",
+    "Памятник Роберту",
+    "Могила Роберта"
+   ],
+   "cat": "monumento",
+   "x": -40,
+   "y": 74,
+   "modelo": "acacia",
+   "desc": "En el fondo del patio, bajo la vieja acacia, está el monumento de piedra a Robert, el fundador. En «Предчувствие 2.4» Natalia sabe dónde buscar a Lusía, la pequeña violinista —la hija de Robert—: debajo de la vieja acacia, junto al monumento a su padre.",
+   "buscar": "акаци\\w*|памятник\\w* Роберт\\w*|Могила Роберта|могил\\w* Роберта",
+   "excluir_caps": {
+    "predchuvstvie-2-3": [
+     11
+    ]
+   }
+  },
+  {
+   "id": "ut-taller-vasia",
+   "nombre": "El taller de Vasia y las motos voladoras",
+   "otros": [
+    "Мастерская Васи",
+    "Летающие мотоциклы"
+   ],
+   "cat": "edificio",
+   "x": 40,
+   "y": -140,
+   "modelo": "taller-motos",
+   "desc": "Junto al muro sur. Huele a nafta, a cables quemados y a damascos secos (Lusía trajo una bolsa entera del campamento de las montañas y se los esconde a escondidas). Aquí se guardan las motos voladoras que mira Lusía desde la tumba de su padre.",
+   "buscar": "Мастерская Васи|Мастерская у южной стены|мастерской, где стояли летающие"
+  },
+  {
+   "id": "ut-muro-cantor",
+   "nombre": "El Muro de Luis, el muro que canta",
+   "otros": [
+    "Стена Луиса",
+    "Южная стена"
+   ],
+   "cat": "misterio",
+   "x": 0,
+   "y": -186,
+   "modelo": "muro-cantor",
+   "desc": "Veinte metros delante del muro sur se levanta la pared de Luis: fina, curva, como una caracola gigante abierta hacia el este. La estructura es de vigas de acero sacadas de los puentes de la Nueva Misión, y encima van cientos de placas: campanas partidas por la mitad, tubos de órgano aplastados, gongos, palanganas de cobre, tapas de olla, cuerdas de pianos rotos. Cuando sopla el viento del este, el muro canta. Fue idea de Rita: cada una de las 240 familias recibió una placa y tuvo que «afinarla» quedándose a su lado, golpeándola, cantándole, hablándole. La de la vieja Agafia, media campana de una iglesia, brilla amarilla como una vela; la de los chicos del tercer barracón, roja; la de una pareja recién casada, rosa pálido. Natalia afina las suyas en el extremo este, con el arco del violonchelo.",
+   "buscar": "Стена Луиса|южной стены|южной стене|пластин\\w+",
+   "solo": [
+    "predchuvstvie-2-4"
+   ]
+  },
+  {
+   "id": "ut-jardines",
+   "nombre": "Los jardines y las huertas",
+   "otros": [
+    "Сады крепости"
+   ],
+   "cat": "parque",
+   "x": 0,
+   "y": 140,
+   "modelo": "ninguno",
+   "desc": "Entre los dos anillos de murallas. Los salvajes, que antes eran enemigos, se volvieron parte de la comunidad: ayudan a levantar edificios nuevos, a cuidar los jardines y a enseñarles oficios a los chicos.",
+   "buscar": "сад(ы|ами|ах|ам|ов)\\b|ухаживать за садами|огород\\w*"
+  },
+  {
+   "id": "ut-puerta",
+   "nombre": "La puerta y el camino de la colina",
+   "otros": [
+    "Ворота крепости"
+   ],
+   "cat": "transporte",
+   "x": 150,
+   "y": -50,
+   "modelo": "ninguno",
+   "desc": "Llegar no es fácil: la colina es empinada y escarpada, y los vehículos apenas pueden subir. Solo quien de verdad quiere unirse a la comunidad, o tiene un propósito claro, llega hasta sus puertas. Los caminos que suben están bordeados de árboles y vegetación, y crean «una atmósfera de calma y de aislamiento del mundo exterior».",
+   "buscar": "ворот\\w*[^.]{0,60}крепост\\w*|крепост\\w*[^.]{0,60}ворот\\w*|до ее ворот"
+  },
+  {
+   "id": "ut-barracones",
+   "nombre": "Los barracones",
+   "otros": [
+    "Бараки"
+   ],
+   "cat": "barrio",
+   "x": -150,
+   "y": -10,
+   "modelo": "ninguno",
+   "desc": "Las viviendas de la mayoría de las familias, entre los dos anillos. Los chicos del tercer barracón son los que golpean su placa del Muro de Luis como un tambor y gritan marchas.",
+   "buscar": "барак\\w*"
+  },
+  {
+   "id": "ut-cementerio",
+   "nombre": "El cementerio de la fortaleza",
+   "otros": [
+    "Кладбище крепости"
+   ],
+   "cat": "misterio",
+   "x": -390,
+   "y": 205,
+   "modelo": "cementerio",
+   "desc": "Afuera de los muros, al pie de la colina: aquí se entierra a todos. A medianoche, en «Предчувствие 2», la luz de la luna corre sobre una lápida de mármol mientras Natalia lee un cuaderno gastado con las manos temblando. Solo a la vieja Agafia la enterraron adentro, junto a su placa del muro sur: Gordéi cavó la fosa él mismo, porque ella le contaba cuentos.",
+   "buscar": "кладбищ\\w*"
+  },
+  {
+   "id": "ut-bunker",
+   "nombre": "El búnker de Robert",
+   "otros": [
+    "Бункер Роберта",
+    "Бункер забытых писем"
+   ],
+   "cat": "casa",
+   "x": -1100,
+   "y": -1100,
+   "modelo": "bunker",
+   "desc": "El búnker que Robert construyó antes de la catástrofe y que fue su única salvación: aquí pasó dos años solo, con su vieja campera de cuero. En «Предчувствие 2.2», Natalia, expulsada de la fortaleza, encuentra en el desierto el búnker medio enterrado, con la puerta oxidada, cuando las ruedas de su Peugeot se hunden en la arena. Adentro, un paquete de cartas atadas con una cinta descolorida, y una foto: Lusía descubre que Robert era su padre.",
+   "buscar": "бункер\\w*",
+   "solo": [
+    "predchuvstvie",
+    "predchuvstvie-2-2"
+   ]
+  },
+  {
+   "id": "ut-tumba-luis",
+   "nombre": "La tumba vacía de Luis",
+   "otros": [
+    "Пустая могила Луиса"
+   ],
+   "cat": "misterio",
+   "x": 1000,
+   "y": -1150,
+   "modelo": "tumba",
+   "desc": "En el desierto. En «Предчувствие 2.3», Natalia cava la tumba de Luis… y la encuentra vacía. Luis está en alguna parte, cerca, y por lo visto juega su propio juego.",
+   "buscar": "пуст\\w+ могил\\w*|могил\\w* Луиса|Дорога к пустой могиле",
+   "solo": [
+    "predchuvstvie-2-3"
+   ]
+  },
+  {
+   "id": "ut-tuneles",
+   "nombre": "La boca de los túneles hacia el este",
+   "otros": [
+    "Туннели"
+   ],
+   "cat": "transporte",
+   "x": 560,
+   "y": 90,
+   "modelo": "boca-tunel",
+   "desc": "Cuando los tanques-robot de las «Herederas» salen del mar, los habitantes de Nuestra Utopía tienen que huir por los túneles hacia el este, al campamento de refugiados en las montañas, entre viñedos y hierbas de montaña. «Lágrimas en el túnel», «El túnel de la gloria».",
+   "buscar": "туннел\\w*",
+   "solo": [
+    "predchuvstvie-2-3"
+   ]
+  },
+  {
+   "id": "ut-playa",
+   "nombre": "La playa de los tanques-araña",
+   "otros": [
+    "Берег",
+    "Железные захватчики"
+   ],
+   "cat": "misterio",
+   "x": -1790,
+   "y": -290,
+   "modelo": "tanques",
+   "desc": "El mar se encrespó en olas negras y de las profundidades salieron, uno tras otro, monstruos de acero: no simples tanques, sino tanques-robot de las «Herederas» de la Segunda Potencia, con seis patas flexibles de araña en lugar de orugas, que se mueven sin ruido y pasan por encima de cualquier obstáculo. Salieron a la orilla escaneando con frialdad lo que quedaba del mundo.",
+   "buscar": "танк\\w*-робот\\w*|вышли на берег|Море вздыбилось",
+   "solo": [
+    "predchuvstvie-2-3"
+   ],
+   "excluir_caps": {
+    "predchuvstvie-2-3": [
+     26
+    ]
+   }
+  }
+ ]
+}

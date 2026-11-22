@@ -2,10 +2,15 @@
 // y las utilidades geométricas que usan escena.js, hitos.js y app.js.
 import * as SINEA from './ciudades/sinea.js';
 import * as VERDEGRAD from './ciudades/verdegrad.js';
+import * as UTOPIA from './ciudades/utopia.js';
 
-export const CIUDAD = globalThis.CIUDAD === 'verdegrad' ? 'verdegrad' : 'sinea';
-const C = CIUDAD === 'verdegrad' ? VERDEGRAD : SINEA;
+const TODAS = { sinea: SINEA, verdegrad: VERDEGRAD, utopia: UTOPIA };
+export const CIUDAD = TODAS[globalThis.CIUDAD] ? globalThis.CIUDAD : 'sinea';
+const C = TODAS[CIUDAD];
 export const ARROYO = C.ARROYO || [], LAGOS = C.LAGOS || [];
+export const AFUERAS_HUECO = C.AFUERAS_HUECO ?? (CIUDAD !== 'sinea');
+export const AFUERAS_COLOR = C.AFUERAS_COLOR ?? (CIUDAD === 'sinea' ? 0xd6debe : 0xc4d6a4);
+export const colorSuelo = C.colorSuelo || null, zonaArboles = C.zonaArboles || null;
 export const { LIMITES, COSTA, TIERRA, RIO, COLINAS, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, BORDES, AFUERAS, MUELLES, RESERVAS, EXTRAS, VISTA, NOMBRE, LEMA, RUTA_BUS } = C;
 
 /* ---------- utilidades geométricas ---------- */
@@ -62,7 +67,8 @@ function ruido(x, y) {
 export function altura(x, y) {
   const c = costa(x, y);
   let h = C.ALTURA_BASE + ruido(x, y) * 1.5;
-  for (const [cx, cy, r, a] of COLINAS) {
+  for (const [cx, cy, r, a, , tipo] of COLINAS) {
+    if (tipo === 'meseta') { const d = Math.hypot(x - cx, y - cy); h += a * sstep(r, r * 0.62, d); continue; }
     const d2 = ((x - cx) ** 2 + (y - cy) ** 2) / (r * r);
     h += a * Math.exp(-d2 * 1.6);
   }

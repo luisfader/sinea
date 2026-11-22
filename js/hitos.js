@@ -373,6 +373,130 @@ const MODELOS = {
     const t = new THREE.Mesh(prismaGeo(), M(0x9c4a33)); t.scale.set(31, 5, 15); t.rotation.y = Math.PI / 2; t.scale.set(15, 5, 31); t.position.y = 12; g.add(t);
     return { g, r: 20 };
   },
+  'utopia-fortaleza'() {
+    const g = new THREE.Group();
+    const turq = M(0x3fb3a5, { roughness: .6 }), turqO = M(0x2c8c82, { roughness: .6 }), orn = M(0xe8d9a8, { metalness: .3, roughness: .4 });
+    const pent = (r, a0 = 90) => [0, 1, 2, 3, 4].map(i => { const a = (a0 + i * 72) * Math.PI / 180; return [Math.cos(a) * r, Math.sin(a) * r]; });
+    const muro = (A, B, alto, grosor, mat, hueco) => {
+      const dx = B[0] - A[0], dy = B[1] - A[1], L = Math.hypot(dx, dy), ang = Math.atan2(dy, dx);
+      const tramo = (k0, k1) => { const l = (k1 - k0) * L, cx = A[0] + dx * (k0 + k1) / 2, cy = A[1] + dy * (k0 + k1) / 2;
+        const w = new THREE.Mesh(new THREE.BoxGeometry(l, alto, grosor), mat); w.position.set(cx, alto / 2, -cy); w.rotation.y = ang; w.castShadow = w.receiveShadow = true; g.add(w);
+        for (let s2 = 2; s2 < l - 1; s2 += 4) { const c = new THREE.Mesh(new THREE.BoxGeometry(2, 1.6, grosor + .2), mat); const k = k0 + (s2 / L); c.position.set(A[0] + dx * k, alto + .8, -(A[1] + dy * k)); c.rotation.y = ang; g.add(c); } };
+      if (hueco) { tramo(0, .42); tramo(.58, 1); } else tramo(0, 1);
+    };
+    const torre = (x, y, r, alto, mat, techo = true) => {
+      const t = new THREE.Group(); t.position.set(x, 0, -y);
+      t.add(cil(r, r * 1.08, alto, mat)); t.add(new THREE.Mesh(new THREE.TorusGeometry(r * 1.06, .35, 6, 24), orn).translateY(alto * .55).rotateX(Math.PI / 2));
+      t.add(new THREE.Mesh(new THREE.TorusGeometry(r * 1.06, .35, 6, 24), orn).translateY(alto * .85).rotateX(Math.PI / 2));
+      for (let i = 0; i < 6; i++) { const a = i / 6 * Math.PI * 2; const v = caja(.6, 2.6, .3, 0x1d2b2a, Math.cos(a) * r * 1.01, alto * .62, Math.sin(a) * r * 1.01); v.rotation.y = -a + Math.PI / 2; t.add(v); }
+      t.add(cil(r * 1.18, r * 1.18, 1.2, mat, 0, alto));
+      for (let i = 0; i < 10; i++) { const a = i / 10 * Math.PI * 2; t.add(caja(1.1, 1.4, 1.1, mat, Math.cos(a) * r * 1.1, alto + 1.2, Math.sin(a) * r * 1.1)); }
+      if (techo) t.add(new THREE.Mesh(new THREE.ConeGeometry(r * 1.05, r * 1.5, 16), M(0x2a6f68)).translateY(alto + 2.6 + r * .75));
+      g.add(t); return t;
+    };
+    const E = pent(190), I = pent(120);
+    for (let i = 0; i < 5; i++) {
+      muro(E[i], E[(i + 1) % 5], 12, 4.5, turq, i === 4); // el lado 4 (entre los vértices de 18° y 90°… ) lleva la puerta
+      muro(I[i], I[(i + 1) % 5], 9, 3.5, turq, i === 4);
+      torre(E[i][0], E[i][1], 6.5, 22, turqO); torre(I[i][0], I[i][1], 4.2, 15, turqO);
+    }
+    // torre sur (la de Martin), a mitad del lado sur del anillo exterior
+    const S = [(E[2][0] + E[3][0]) / 2, (E[2][1] + E[3][1]) / 2]; torre(S[0], S[1], 5.5, 20, turqO);
+    // puerta: a mitad del lado entre E[4] (18°) y E[0] (90°)… se coloca en el lado este (342°)
+    const P = [Math.cos(-18 * Math.PI / 180) * 154, Math.sin(-18 * Math.PI / 180) * 154];
+    const pu = new THREE.Group(); pu.position.set(P[0], 0, -P[1]); pu.rotation.y = 18 * Math.PI / 180;
+    for (const z of [-7, 7]) { const t = cil(4.5, 4.8, 18, turqO, 0, 0, z, 16); pu.add(t); pu.add(new THREE.Mesh(new THREE.ConeGeometry(5, 6, 16), M(0x2a6f68)).translateY(21).translateZ(z)); }
+    pu.add(caja(4.5, 4, 10, turq, 0, 11, 0)); pu.add(caja(1, 8, 9, M(0x6b4a2f), 1.5, 0, 0));
+    g.add(pu);
+    // torre principal: más alta y esbelta, con el mirador arriba
+    const tp = torre(0, 10, 7, 58, turq, false);
+    tp.add(cil(10, 10, 1.4, M(0xd9e6e3), 0, 58)); for (let i = 0; i < 20; i++) { const a = i / 20 * Math.PI * 2; tp.add(cil(.15, .15, 2.2, 0x333333, Math.cos(a) * 9.6, 59.4, Math.sin(a) * 9.6, 4)); }
+    tp.add(cil(4, 6, 6, turqO, 0, 59.4)); tp.add(new THREE.Mesh(new THREE.ConeGeometry(4.8, 8, 16), M(0x2a6f68)).translateY(69.4));
+    tp.add(cil(.15, .15, 9, 0xdddddd, 0, 73, 0, 6));
+    const bandera = caja(5, 3, .2, 0x3fd0c0, 2.5, 79, 0); tp.add(bandera);
+    const faroles = []; for (const [x, y] of [...E, ...I, S, [0, 10]]) { const f = esfera(.9, new THREE.MeshStandardMaterial({ color: 0xfff1c6, emissive: 0xffd27a, emissiveIntensity: 0 }), x, (x === 0 && y === 10) ? 61 : 24, -y); g.add(f); faroles.push(f); }
+    return { g, r: 0, anim(t, n) { bandera.rotation.y = Math.sin(t * 2) * .3; faroles.forEach(f => f.material.emissiveIntensity = 3 * n); } };
+  },
+  'muro-cantor'() {
+    // «La pared de Luis»: una caracola de acero delante del muro sur, abierta hacia el este, con cientos de placas
+    const g = new THREE.Group(), placas = [];
+    const acero = M(0x6d7377, { metalness: .6, roughness: .5 });
+    const cols = [0xffd36b, 0xff6b5b, 0xf8b4c8, 0x3fd0c0, 0x9b8cff, 0xffa64d, 0x8fe388];
+    for (let i = 0; i <= 36; i++) {
+      const k = i / 36, a = Math.PI * .52 + k * Math.PI * .96, R = 50 - Math.abs(k - .5) * 16; // curva abierta hacia el este
+      const x = Math.cos(a) * R + 26, z = Math.sin(a) * R * .5;
+      const alto = 10 + Math.sin(k * Math.PI) * 9;
+      const pos = new THREE.Mesh(new THREE.BoxGeometry(.6, alto, .6), acero); pos.position.set(x, alto / 2, z); g.add(pos);
+      for (let j = 0; j < Math.floor(alto / 2.2); j++) {
+        const pm = new THREE.MeshStandardMaterial({ color: [0xb08d57, 0xc9a26b, 0x9e9e9e, 0xd4af37][(i + j) % 4], metalness: .7, roughness: .35, emissive: cols[(i * 7 + j * 3) % cols.length], emissiveIntensity: 0 });
+        const p = new THREE.Mesh(j % 3 ? new THREE.BoxGeometry(2.6, 1.8, .2) : new THREE.CylinderGeometry(1, 1, .2, 12), pm);
+        if (!(j % 3)) p.rotation.x = Math.PI / 2;
+        p.position.set(x + Math.cos(a + Math.PI) * .6, 1.4 + j * 2.2, z + Math.sin(a + Math.PI) * .3); p.rotation.y = -a + Math.PI / 2; g.add(p); placas.push(p);
+      }
+    }
+    return { g, r: 0, anim(t, n) { placas.forEach((p, i) => { p.material.emissiveIntensity = (.12 + .9 * n) * (0.55 + 0.45 * Math.sin(t * 1.7 + i * .37)); }); } };
+  },
+  bunker() {
+    const g = new THREE.Group(), hor = M(0x8d8a80, { roughness: 1 });
+    const loma = new THREE.Mesh(new THREE.SphereGeometry(14, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2), M(0xd6bf8e, { roughness: 1 })); loma.scale.y = .4; g.add(loma);
+    g.add(caja(6, 4.5, 3, hor, 0, 0, -12)); g.add(caja(3, 3.4, .3, M(0x7a4a2a, { metalness: .4 }), .4, 0, -13.6));
+    g.add(cil(.5, .5, 4, 0x555555, 4, 4, -2, 8));
+    const coche = new THREE.Group(); coche.position.set(-10, 0, -18); coche.rotation.y = .4; coche.rotation.z = .08;
+    coche.add(caja(4, 1.4, 2, 0xbfc6cc, 0, .4)); coche.add(caja(2.4, 1, 1.9, 0x9fb3bf, -.2, 1.8)); g.add(coche); // el Peugeot hundido en la arena
+    return { g, r: 0 };
+  },
+  tumba() {
+    const g = new THREE.Group();
+    const fosa = new THREE.Mesh(new THREE.BoxGeometry(2.4, .3, 5), new THREE.MeshStandardMaterial({ color: 0x3b2f22 })); fosa.position.y = .1; g.add(fosa);
+    const tierra = new THREE.Mesh(new THREE.SphereGeometry(2.5, 10, 6, 0, Math.PI * 2, 0, Math.PI / 2), M(0xc9ad7c)); tierra.position.set(3.2, 0, 0); tierra.scale.set(1, .45, 1.6); g.add(tierra);
+    const cruz = new THREE.Group(); cruz.position.set(0, 0, -3.4); cruz.add(caja(.35, 3, .35, 0x6b4a2f)); cruz.add(caja(1.8, .3, .35, 0x6b4a2f, 0, 2)); cruz.rotation.z = .25; g.add(cruz);
+    return { g, r: 0 };
+  },
+  'boca-tunel'() {
+    const g = new THREE.Group(), p = M(0x8e8678, { roughness: 1 });
+    const arco = new THREE.Mesh(new THREE.TorusGeometry(6, 1.8, 8, 16, Math.PI), p); arco.position.y = 0; g.add(arco);
+    const negro = new THREE.Mesh(new THREE.CircleGeometry(5.2, 20, 0, Math.PI), new THREE.MeshBasicMaterial({ color: 0x0b0b0b })); negro.position.z = -.3; g.add(negro);
+    g.rotation.y = -Math.PI / 2;
+    return { g, r: 0 };
+  },
+  tanques() {
+    const g = new THREE.Group(), oxido = M(0x6b4a33, { metalness: .5, roughness: .8 });
+    for (let k = 0; k < 3; k++) {
+      const t = new THREE.Group(); t.position.set(k * 26 - 26, 0, k % 2 ? 14 : -8); t.rotation.set(0, k * 1.3, k === 1 ? .35 : 0);
+      t.add(caja(9, 3, 6, oxido, 0, 2)); t.add(cil(1.8, 2.2, 1.6, oxido, 0, 5)); t.add(cil(.35, .35, 7, oxido, 3.5, 5.6).rotateZ(Math.PI / 2));
+      for (let i = 0; i < 6; i++) { const a = i / 6 * Math.PI * 2; const pata = caja(.6, 5, .6, oxido, Math.cos(a) * 5.5, 0, Math.sin(a) * 4); pata.rotation.z = Math.cos(a) * .7; pata.rotation.x = -Math.sin(a) * .7; t.add(pata); }
+      g.add(t);
+    }
+    return { g, r: 0 };
+  },
+  cementerio() {
+    const g = new THREE.Group(), p = M(0xbdb7aa);
+    for (let i = 0; i < 28; i++) { const x = (i % 7) * 7 - 21, z = Math.floor(i / 7) * 8 - 12; const c = new THREE.Group(); c.position.set(x + Math.sin(i) * 1.2, 0, z); c.add(caja(.4, 2.4, .4, p)); c.add(caja(1.4, .35, .4, p, 0, 1.6)); g.add(c); }
+    for (const [x, z] of [[-28, -18], [28, -18], [-28, 20], [28, 20]]) g.add(caja(1, 1.6, 1, p, x, 0, z));
+    return { g, r: 0 };
+  },
+  acacia() {
+    const g = new THREE.Group();
+    g.add(cil(.9, 1.3, 7, 0x6b4a2f)); const copa = M(0x7a9e4e, { roughness: 1, flatShading: true });
+    for (const [x, y, z, r] of [[0, 9, 0, 6], [3.5, 8, 2, 4], [-3.5, 8.5, -1.5, 4.5], [1, 10.5, -3, 4]]) { const c = new THREE.Mesh(new THREE.IcosahedronGeometry(r, 1), copa); c.position.set(x, y, z); c.scale.y = .55; c.castShadow = true; g.add(c); }
+    const pied = M(0xd8d2c6, { roughness: .6 });
+    g.add(caja(2.4, 1.6, 2.4, pied, 5, 0, 3)); const fig = new THREE.Group(); fig.position.set(5, 1.6, 3);
+    fig.add(cil(.55, .7, 2.2, pied)); fig.add(esfera(.45, pied, 0, 2.7, 0)); g.add(fig);
+    return { g, r: 9 };
+  },
+  'taller-motos'() {
+    const g = new THREE.Group();
+    g.add(caja(16, 6, 10, 0xb9b1a0)); const tg = new THREE.CylinderGeometry(5, 5, 16, 12, 1, false, 0, Math.PI); tg.rotateZ(Math.PI / 2); const t = new THREE.Mesh(tg, M(0x8c8c88)); t.position.y = 6; t.scale.y = .5; g.add(t);
+    const moto = new THREE.Group(); moto.add(caja(2.4, .7, .6, 0xd23b2a)); for (const x of [-1, 1]) { const r = new THREE.Mesh(new THREE.TorusGeometry(.45, .15, 6, 12), M(0x222222)); r.position.set(x, -.3, 0); moto.add(r); }
+    moto.add(caja(.6, .2, 2.6, 0x9aa3ad, 0, .2, 0));
+    g.add(moto);
+    return { g, r: 12, anim(t) { const a = t * .5; moto.position.set(Math.cos(a) * 18, 14 + Math.sin(t * 1.3) * 2, Math.sin(a) * 18); moto.rotation.y = -a; } };
+  },
+  salon() {
+    const g = new THREE.Group(); g.add(caja(26, 10, 16, 0xd2c8b4)); const t = new THREE.Mesh(prismaGeo(), M(0x2c8c82)); t.scale.set(17, 5, 27); t.rotation.y = Math.PI / 2; t.position.y = 10; g.add(t);
+    const ant = []; for (const x of [-9, -3, 3, 9]) { const f = esfera(.6, new THREE.MeshStandardMaterial({ color: 0xffb35a, emissive: 0xff8a1a, emissiveIntensity: 0 }), x, 7, -8.4); g.add(f); ant.push(f); }
+    return { g, r: 16, anim(t, n) { ant.forEach((f, i) => f.material.emissiveIntensity = (.5 + 2.5 * n) * (0.8 + .2 * Math.sin(t * 9 + i))); } };
+  },
   puente() { return { g: new THREE.Group(), r: 0 }; },
   casa() { return { g: new THREE.Group(), r: 0 }; },
   plaza() { return { g: new THREE.Group(), r: 34 }; },
@@ -405,7 +529,7 @@ export function construirHitos(lugares, u) {
     grupo.add(m.g);
     if (m.anim) anims.push(m.anim);
     if (m.r) reservas.push([L.x, L.y, m.r]);
-    L._h = h + ({ campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
+    L._h = h + ({ 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
   }
   // reserva extra: la plaza Dante entera y el puerto
   reservas.push(...RESERVAS);
@@ -502,4 +626,18 @@ export function crearAutobus() {
     estado.x = x; estado.y = y; estado.parada = quieto; estado.bocina = !!bz;
     vid.emissiveIntensity = .9 * n; faro.emissiveIntensity = .2 + 2.5 * n; luzBus.intensity = 2500 * n;
   } };
+}
+
+// Los drones-gaviota que sobrevuelan la fortaleza en «Предчувствие 2»
+export function crearDrones() {
+  const g = new THREE.Group(), lista = [];
+  const mat = new THREE.MeshStandardMaterial({ color: 0xe9eef2, metalness: .5, roughness: .3 });
+  for (let i = 0; i < 4; i++) {
+    const d = new THREE.Group();
+    const cuerpo = new THREE.Mesh(new THREE.CapsuleGeometry(.5, 1.6, 4, 8), mat); cuerpo.rotation.z = Math.PI / 2; d.add(cuerpo);
+    const alas = []; for (const s of [-1, 1]) { const a = new THREE.Mesh(new THREE.BoxGeometry(.8, .1, 3.2), mat); a.position.z = s * 1.7; d.add(a); alas.push(a); }
+    const roja = new THREE.Mesh(new THREE.SphereGeometry(.22, 8, 6), new THREE.MeshBasicMaterial({ color: 0xff2a1a })); roja.position.set(.9, .1, 0); d.add(roja);
+    d.scale.setScalar(2.2); g.add(d); lista.push({ d, alas, roja, f: i * 1.6, r: 120 + i * 45, h: 95 + i * 12 });
+  }
+  return { g, anim(t) { for (const o of lista) { const a = t * .12 + o.f; o.d.position.set(Math.cos(a) * o.r, o.h + Math.sin(t * .6 + o.f) * 6, Math.sin(a) * o.r); o.d.rotation.y = -a; o.alas.forEach((al, i) => al.rotation.x = Math.sin(t * 6 + o.f) * .35 * (i ? 1 : -1)); o.roja.visible = Math.sin(t * 4 + o.f) > 0; } } };
 }

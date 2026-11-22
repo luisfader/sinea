@@ -1139,6 +1139,23 @@ export const CIUDADES = {
 ]
 },
 {
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"9",
+"Новая Миссия"
+],
+[
+"12",
+"Рыжая из глубин"
+],
+[
+"13",
+"Исповедь рыжей"
+]
+]
+},
+{
 "n": "tikhaya-lyubov",
 "c": [
 [
@@ -1148,6 +1165,15 @@ export const CIUDADES = {
 [
 "10",
 "Люблю тебя молча"
+]
+]
+},
+{
+"n": "predchuvstvie-2-3",
+"c": [
+[
+"19",
+"Щит и тени"
 ]
 ]
 }
@@ -3013,6 +3039,15 @@ export const CIUDADES = {
 [
 "18",
 "Второе место"
+]
+]
+},
+{
+"n": "predchuvstvie-2-2",
+"c": [
+[
+"18",
+"Утреннее освобождение"
 ]
 ]
 }
@@ -6261,6 +6296,35 @@ export const CIUDADES = {
 "desc_ru": "Рабочий квартал у порта со старыми домами в антеннах и депо, где ночуют трамваи. В «Знаке» кто-то здесь «звучит как целый оркестр» Водолеев; в «Стратеге» он — часть доски.",
 "apar": [
 {
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"13",
+"Исповедь рыжей"
+],
+[
+"25",
+"Ночь падающих звёзд"
+],
+[
+"29",
+"Прощение"
+],
+[
+"30",
+"То, о чём она не узнает"
+],
+[
+"40",
+"Песня Люсии"
+],
+[
+"51",
+"Мы не убийцы"
+]
+]
+},
+{
 "n": "znak",
 "c": [
 [
@@ -7302,6 +7366,15 @@ export const CIUDADES = {
 [
 "18",
 "Дуэль"
+]
+]
+},
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"13",
+"Исповедь рыжей"
 ]
 ]
 }
@@ -10066,88 +10139,2020 @@ export const CIUDADES = {
 }
 ]
 }
+],
+"utopia": [
+{
+"id": "ut-torre-principal",
+"nombre": "La torre principal y el mirador",
+"otros": [
+"Главная башня",
+"Смотровая площадка"
+],
+"cat": "monumento",
+"x": 0,
+"y": 10,
+"modelo": "utopia-fortaleza",
+"desc": "El corazón de Nuestra Utopía: más alta y esbelta que las demás, en el centro de la fortaleza, junto a la plaza central. Desde arriba se ve todo el valle y las tierras de alrededor. En la plataforma de observación Robert se queda solo, con los prismáticos, mientras se prepara la defensa. Abajo, en los sótanos, se improvisaron los calabozos donde se encerró a Martin, a Zheni y a los demás conspiradores. Todo el fuerte es pentagonal y turquesa —«para que se vea de lejos y sirva de faro a quien busca refugio»— y tiene dos anillos de murallas.",
+"nombre_ru": "Главная башня и смотровая площадка",
+"desc_ru": "Сердце Нашей Утопии: выше и стройнее остальных, в центре крепости, рядом с центральной площадью. С её вершины видна вся долина и окрестные земли. На смотровой площадке Роберт стоит один с биноклем, пока крепость готовится к обороне. Внизу, в подвалах, устроили импровизированные подземелья, где держали Мартина, Жени и других заговорщиков. Вся крепость — пятиугольная и бирюзовая, «чтобы быть заметной издалека и служить маяком для тех, кто ищет убежище», с двумя кольцами стен.",
+"apar": [
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"2",
+"Последний конверт"
+],
+[
+"3",
+"Наша Утопия"
+],
+[
+"4",
+"Разговор в «Алых розах»"
+],
+[
+"6",
+"Призрак под акацией"
+],
+[
+"7",
+"Оксана и Вася"
+],
+[
+"8",
+"Голос Надежды"
+],
+[
+"11",
+"Тайна виноградной лозы"
+],
+[
+"14",
+"Совет трёх"
+],
+[
+"15",
+"Возвращение архитектора"
+],
+[
+"16",
+"Сын архитектора"
+],
+[
+"19",
+"Слёзы Риты"
+],
+[
+"24",
+"Он уходит"
+],
+[
+"25",
+"Ночь падающих звёзд"
+],
+[
+"26",
+"Живой"
+],
+[
+"27",
+"Возвращение героев"
+],
+[
+"28",
+"Тайный советник"
+],
+[
+"29",
+"Прощение"
+],
+[
+"30",
+"То, о чём она не узнает"
+],
+[
+"31",
+"Ультиматум Пангеи"
+],
+[
+"32",
+"Раскол"
+],
+[
+"35",
+"Кеннет и Саша"
+],
+[
+"36",
+"Голос в эфире"
+],
+[
+"37",
+"Штурм"
+],
+[
+"38",
+"Медовый и бирюзовый"
+],
+[
+"39",
+"Цена щита"
+],
+[
+"40",
+"Песня Люсии"
+],
+[
+"47",
+"Единогласно"
+],
+[
+"48",
+"Бирюзовая Федерация"
+],
+[
+"50",
+"Пять лет спустя"
+],
+[
+"51",
+"Мы не убийцы"
+]
+]
+},
+{
+"n": "predchuvstvie",
+"c": [
+[
+"3",
+"Призраки"
+],
+[
+"4",
+"Интриганка"
+],
+[
+"5",
+"Предчувствие"
+],
+[
+"6",
+"Враги"
+],
+[
+"7",
+"Капают слезы"
+],
+[
+"8",
+"Гуманизм"
+],
+[
+"11",
+"Ночь без утешения"
+],
+[
+"12",
+"Тайна и Опасность"
+],
+[
+"14",
+"Буря в сердце"
+],
+[
+"15",
+"Плен твоей любви"
+],
+[
+"16",
+"Хитрец"
+],
+[
+"17",
+"Самозванец"
+],
+[
+"18",
+"Конфликт"
+],
+[
+"19",
+"Визит знаменитостей"
+],
+[
+"20",
+"Взгляд на Луиса"
+],
+[
+"21",
+"Тайна в роскоши"
+],
+[
+"22",
+"Приближение шторма"
+],
+[
+"23",
+"Сопротивление"
+],
+[
+"25",
+"Она"
+],
+[
+"26",
+"Ночь празднования"
+],
+[
+"extra-1",
+"Интервью с Натальей, виолончелисткой"
+],
+[
+"extra-2",
+"После последней страницы: выбор, страх и цена утопии"
+]
+]
+},
+{
+"n": "predchuvstvie-2-2",
+"c": [
+[
+"1",
+"Неожиданные гости"
+],
+[
+"2",
+"Стальные ангелы и бумажные перемирия"
+],
+[
+"6",
+"Союз и Сила"
+],
+[
+"8",
+"Освобождение и первые признаки бури"
+],
+[
+"12",
+"Подземная правда"
+],
+[
+"13",
+"Лучи страсти"
+],
+[
+"15",
+"Послание миру"
+],
+[
+"16",
+"Разлом"
+],
+[
+"20",
+"Напряжённый Закат"
+],
+[
+"22",
+"Падение и ярость"
+],
+[
+"25",
+"Луч и Отражение"
+],
+[
+"26",
+"Последний Совет"
+]
+]
+},
+{
+"n": "predchuvstvie-2",
+"c": [
+[
+"3",
+"Ночной дозор"
+],
+[
+"27",
+"Клятвы под ливнем"
+],
+[
+"29",
+"Шоу для мертвецов"
+],
+[
+"32",
+"Обещания"
+],
+[
+"35",
+"Падающая звезда"
+],
+[
+"36",
+"Плач с севера"
+],
+[
+"43",
+"Испытание"
+],
+[
+"46",
+"Импичмент"
+],
+[
+"47",
+"Завещание и клятва"
+],
+[
+"65",
+"Песчаные призраки"
+]
+]
+},
+{
+"n": "predchuvstvie-2-3",
+"c": [
+[
+"2",
+"Военный совет и голос из глубин"
+],
+[
+"5",
+"Жертва и пробуждение"
+],
+[
+"6",
+"Слезы в туннеле"
+],
+[
+"13",
+"Утреннее озарение"
+],
+[
+"17",
+"Река слёз и медовые искры"
+],
+[
+"24",
+"Сила винограда и тени Новой Миссии"
+]
+]
+}
+],
+"res": [
+{
+"a": "Robert",
+"ar": "Роберт",
+"s": 5,
+"es": "Desde arriba se ve todo el valle. Mi madre decía que la utopía no existe. Existe, mamá. Y la construí.",
+"ru": "Сверху видна вся долина. Мама говорила, что утопии не бывает. Бывает, мама. И я её построил."
+},
+{
+"a": "Martin",
+"ar": "Мартин",
+"s": 1,
+"es": "Los calabozos del sótano: húmedos, oscuros y sin vista. No los recomiendo.",
+"ru": "Подземелья в подвале: сыро, темно и без вида. Не рекомендую."
+},
+{
+"a": "Kenneth",
+"ar": "Кеннет",
+"s": 4,
+"es": "Buena vista. Le saco una estrella porque cada vez que subo alguien intenta tirarme.",
+"ru": "Хороший вид. Минус звезда: каждый раз, когда я поднимаюсь, кто-то пытается меня сбросить."
+}
+],
+"img": {
+"src": "img/lugares/ut-torre-principal.webp",
+"n": "predchuvstvie",
+"c": "4"
+}
+},
+{
+"id": "ut-plaza",
+"nombre": "La plaza central",
+"otros": [
+"Центральная площадь"
+],
+"cat": "plaza",
+"x": 0,
+"y": -32,
+"modelo": "plaza",
+"desc": "Junto a la torre principal: «un lugar de encuentro lleno de vida», donde los habitantes se juntan para compartir ideas, celebrar las fiestas y fortalecer los lazos de la comunidad (así la describe «Предчувствие», cap. 4).",
+"nombre_ru": "Центральная площадь",
+"desc_ru": "Рядом с главной башней: «яркое место встречи», где жители собираются, чтобы делиться идеями, отмечать праздники и укреплять общинные связи (так описывает её «Предчувствие», глава 4).",
+"apar": [
+{
+"n": "predchuvstvie",
+"c": [
+[
+"4",
+"Интриганка"
+],
+[
+"11",
+"Ночь без утешения"
+],
+[
+"12",
+"Тайна и Опасность"
+],
+[
+"22",
+"Приближение шторма"
+],
+[
+"26",
+"Ночь празднования"
+]
+]
+},
+{
+"n": "predchuvstvie-2",
+"c": [
+[
+"6",
+"Тени за горизонтом"
+],
+[
+"27",
+"Клятвы под ливнем"
+],
+[
+"41",
+"Ночные тайны"
+],
+[
+"47",
+"Завещание и клятва"
+],
+[
+"65",
+"Песчаные призраки"
+]
+]
+},
+{
+"n": "predchuvstvie-2-2",
+"c": [
+[
+"1",
+"Неожиданные гости"
+],
+[
+"5",
+"Ультиматум с небес"
+],
+[
+"6",
+"Союз и Сила"
+],
+[
+"22",
+"Падение и ярость"
+]
+]
+},
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"2",
+"Последний конверт"
+],
+[
+"32",
+"Раскол"
+],
+[
+"47",
+"Единогласно"
+]
+]
+}
+],
+"img": {
+"src": "img/lugares/ut-plaza.webp",
+"n": "predchuvstvie",
+"c": "4"
+}
+},
+{
+"id": "ut-consejo",
+"nombre": "La Sala del Consejo",
+"otros": [
+"Зал Совета"
+],
+"cat": "edificio",
+"x": 0,
+"y": 62,
+"modelo": "salon",
+"desc": "Sofocante de aire viciado y de pasiones encendidas: Robert de pie a la cabeza de la mesa, con los dedos sobre un mapa lleno de marcas, cuando el enemigo ya está dentro de las fronteras. De mañana, a la luz parpadeante de las antorchas, aquí se decide la guerra, se juzga a los traidores y se vota el «impeachment». En «Предчувствие 2.4» nace aquí el Consejo de tres: Natalia para la defensa y lo de afuera, Oxana para la vida dentro de los muros —pan, agua, escuelas, talleres—, y las decisiones, en común.",
+"nombre_ru": "Зал Совета",
+"desc_ru": "Душный от спёртого воздуха и накалённых страстей: Роберт стоит во главе стола, пальцы на карте с пометками, а враг уже внутри границ. Утром, при мерцающем свете факелов, здесь решают вопросы войны, судят предателей и голосуют за импичмент. В «Предчувствии 2.4» здесь рождается Совет трёх: Наталья — оборона и внешние дела, Оксана — жизнь внутри стен (хлеб, вода, школы, мастерские), а решения — общие.",
+"apar": [
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"2",
+"Последний конверт"
+],
+[
+"14",
+"Совет трёх"
+],
+[
+"23",
+"Шёпот подо льдом"
+],
+[
+"31",
+"Ультиматум Пангеи"
+],
+[
+"32",
+"Раскол"
+],
+[
+"40",
+"Песня Люсии"
+],
+[
+"42",
+"Логово"
+],
+[
+"43",
+"То, что нельзя скопировать"
+],
+[
+"45",
+"Не убивать"
+],
+[
+"47",
+"Единогласно"
+],
+[
+"51",
+"Мы не убийцы"
+]
+]
+},
+{
+"n": "predchuvstvie-2",
+"c": [
+[
+"12",
+"Раскол"
+],
+[
+"20",
+"Последний закат"
+],
+[
+"21",
+"Разбитые клятвы"
+],
+[
+"26",
+"Сомнительная сделка"
+],
+[
+"48",
+"Рассвет предателя"
+],
+[
+"50",
+"Подземный гром"
+],
+[
+"51",
+"Игры предателей"
+]
+]
+},
+{
+"n": "predchuvstvie-2-2",
+"c": [
+[
+"3",
+"Возвращение"
+],
+[
+"10",
+"Игры власти и крови"
+]
+]
+}
+],
+"res": [
+{
+"a": "Oxana",
+"ar": "Оксана",
+"s": 4,
+"es": "Aquí se gobierna. Aire viciado, antorchas, gritos. Tres reinas en una mesa y, por fin, decisiones en común.",
+"ru": "Здесь правят. Спёртый воздух, факелы, крики. Три королевы за одним столом и, наконец, общие решения."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 3,
+"es": "Una sala excelente para hacer diplomacia, Sáshenka. Que algunos lo llamen mentir es un problema de vocabulario.",
+"ru": "Отличный зал для дипломатии, Сашенька. То, что некоторые называют это ложью, — проблема словаря."
+},
+{
+"a": "Zheni",
+"ar": "Жени",
+"s": 2,
+"es": "Propuse una moneda para organizar el trabajo. Nadie me escuchó. Una estrella por cada cuarto de la población que me siguió.",
+"ru": "Я предложила валюту, чтобы организовать труд. Никто не послушал. По звезде за каждую четверть населения, которая ушла за мной."
+}
+]
+},
+{
+"id": "ut-hospital",
+"nombre": "El hospital de la fortaleza",
+"otros": [
+"Больница крепости"
+],
+"cat": "edificio",
+"x": -64,
+"y": 8,
+"modelo": "hotelito",
+"desc": "Aquí yace Robert, agotado, con el cuerpo y la cabeza llenos de dudas, y en sueños se le aparece Natalia. En «Предчувствие 2», en «Revelaciones de hospital», la doctora revisa con frialdad las heridas de un prisionero que intentó tomar la fortaleza mientras, por la ventana, se juntan nubes sobre el bosque.",
+"nombre_ru": "Больница крепости",
+"desc_ru": "Здесь лежит измождённый Роберт, полный сомнений, и в полусне к нему приходит Наталья. В «Предчувствии 2», в главе «Больничные откровения», доктор холодно осматривает раны пленного, пытавшегося захватить крепость, а за окном больницы, вдалеке, над лесом сгущаются тучи.",
+"apar": [
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"31",
+"Ультиматум Пангеи"
+],
+[
+"33",
+"Платформа «Гелиос»"
+],
+[
+"34",
+"Екатерина"
+],
+[
+"42",
+"Логово"
+]
+]
+},
+{
+"n": "predchuvstvie",
+"c": [
+[
+"15",
+"Плен твоей любви"
+]
+]
+},
+{
+"n": "predchuvstvie-2",
+"c": [
+[
+"8",
+"Больничные откровения"
+]
+]
+}
+],
+"res": [
+{
+"a": "Robert",
+"ar": "Роберт",
+"s": 4,
+"es": "Me curaron el cuerpo. El resto me lo curó un sueño.",
+"ru": "Мне вылечили тело. Остальное вылечил сон."
+},
+{
+"a": "Natalia, la doctora",
+"ar": "Наталья-врач",
+"s": 3,
+"es": "Instrumental escaso. Pacientes que preguntan demasiado.",
+"ru": "Инструментов мало. Пациенты задают слишком много вопросов."
+}
+],
+"img": {
+"src": "img/lugares/ut-hospital.webp",
+"n": "predchuvstvie",
+"c": "15"
+}
+},
+{
+"id": "ut-alye-rozy",
+"nombre": "Café «Las Rosas Escarlata»",
+"otros": [
+"Кафе «Алые розы»"
+],
+"cat": "restaurante",
+"x": 56,
+"y": -30,
+"modelo": "cafe",
+"desc": "Un café acogedor y solo para mujeres: a los hombres se les prohíbe estrictamente la entrada. Huele a masas recién horneadas y a lavanda; Sasha sirve té de hierbas en tazas de porcelana mientras Natalia retuerce el borde de una servilleta de encaje. Aquí se cuentan los secretos de la fortaleza, desde «Предчувствие 2» hasta «Разговор в „Алых розах“», en la 2.4.",
+"nombre_ru": "Кафе «Алые розы»",
+"desc_ru": "Уютное женское кафе, куда мужчинам вход строго запрещён. Пахнет свежей выпечкой и лавандой; Саша разливает травяной чай по фарфоровым чашкам, а Наталья нервно теребит край кружевной салфетки. Здесь рассказывают секреты крепости — от «Предчувствия 2» до главы «Разговор в „Алых розах“» в 2.4.",
+"apar": [
+{
+"n": "predchuvstvie-2",
+"c": [
+[
+"4",
+"Женские секреты"
+],
+[
+"7",
+"Женские разговоры"
+],
+[
+"32",
+"Обещания"
+]
+]
+},
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"4",
+"Разговор в «Алых розах»"
+]
+]
+}
+],
+"res": [
+{
+"a": "Sasha",
+"ar": "Саша",
+"s": 5,
+"es": "Té de hierbas, lavanda y masas recién hechas. Los hombres no entran. Por eso aquí se dice la verdad.",
+"ru": "Травяной чай, лаванда и свежая выпечка. Мужчинам вход запрещён. Поэтому здесь говорят правду."
+},
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Rompí tres servilletas de encaje retorciéndolas. Nadie me cobró ninguna.",
+"ru": "Изорвала три кружевные салфетки, пока их теребила. Ни за одну с меня не взяли денег."
+},
+{
+"a": "Kenneth",
+"ar": "Кеннет",
+"s": 1,
+"es": "No me dejaron entrar. Huele riquísimo desde la puerta.",
+"ru": "Меня не пустили. От двери пахнет потрясающе."
+}
+]
+},
+{
+"id": "ut-bar",
+"nombre": "El bar de la fortaleza",
+"otros": [
+"Бар"
+],
+"cat": "restaurante",
+"x": 42,
+"y": 32,
+"modelo": "cafe",
+"desc": "En «Предчувствие 2», Luis se toma una copa de un trago y se desploma con la cara sobre la barra. «Bueno. Otro “romántico” en el piso», suspira Kenneth, y Robert se queda mirando su vaso, mientras detrás de las paredes del bar, en la parte nueva de la fortaleza que nunca se terminó, el viento anda entre los muros sin acabar.",
+"nombre_ru": "Бар крепости",
+"desc_ru": "В «Предчувствии 2» Луис выпивает рюмку залпом и падает лицом на стойку. «Ну вот. Очередной „романтик“ на полу», — вздыхает Кеннет, а Роберт смотрит на свой стакан, пока за стенами бара, в новой части крепости, которую так и не достроили, ветер гуляет среди недостроенных стен.",
+"apar": [
+{
+"n": "predchuvstvie-2",
+"c": [
+[
+"2",
+"Новые стены, старые раны"
+]
+]
+}
+],
+"res": [
+{
+"a": "Kenneth",
+"ar": "Кеннет",
+"s": 4,
+"es": "Buen lugar. Cada tanto hay que levantar a un romántico del piso.",
+"ru": "Хорошее место. Время от времени приходится поднимать с пола очередного романтика."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 2,
+"es": "No recuerdo nada de la noche. Me dicen que fue una sola copa.",
+"ru": "Ничего не помню про тот вечер. Говорят, это была одна рюмка."
+}
+]
+},
+{
+"id": "ut-arsenal",
+"nombre": "El viejo arsenal y el depósito",
+"otros": [
+"Старый арсенал",
+"Старый склад за арсеналом"
+],
+"cat": "edificio",
+"x": -50,
+"y": -58,
+"modelo": "hotelito",
+"desc": "En el patio interior, junto al viejo arsenal, donde Luis suele revisar las reservas de armas. Natalia pasa por aquí retorciendo el borde del vestido, preguntándose por qué él la ignora. En el viejo depósito de atrás, Vasia ve a Luis hablando por un smartphone sobre Necrología.",
+"nombre_ru": "Старый арсенал и склад",
+"desc_ru": "Во внутреннем дворе, у старого арсенала, где Луис обычно проверяет запасы оружия. Наталья проходит мимо, теребя край платья: почему он её игнорирует? В старом складе за арсеналом Вася видит, как Луис разговаривает по смартфону о Некрологии.",
+"apar": [
+{
+"n": "predchuvstvie-2",
+"c": [
+[
+"11",
+"Холодные встречи"
+],
+[
+"34",
+"Башня секретов"
+],
+[
+"35",
+"Падающая звезда"
+]
+]
+},
+{
+"n": "predchuvstvie-2-2",
+"c": [
+[
+"2",
+"Стальные ангелы и бумажные перемирия"
+]
+]
+},
+{
+"n": "predchuvstvie-2-3",
+"c": [
+[
+"26",
+"Кровавый выбор"
+]
+]
+}
+]
+},
+{
+"id": "ut-torre-luis",
+"nombre": "La torre de Luis",
+"otros": [
+"Башня Луиса",
+"Башня секретов"
+],
+"cat": "casa",
+"x": 114,
+"y": 37,
+"modelo": "ninguno",
+"desc": "La torre del arquitecto Luis, el que construye los muros nuevos de la fortaleza. En «Предчувствие 2», en el capítulo «La torre de los secretos», una luna roja sale de entre las nubes y tiñe la torre de un color de sangre mientras Oxana y Vasia deciden tener más cuidado.",
+"nombre_ru": "Башня Луиса",
+"desc_ru": "Башня архитектора Луиса, который возводит новые стены крепости. В «Предчувствии 2», в главе «Башня секретов», красная луна выскальзывает из-за туч и освещает башню кровавым светом, пока Оксана и Вася решают быть осторожнее.",
+"apar": [
+{
+"n": "predchuvstvie-2",
+"c": [
+[
+"34",
+"Башня секретов"
+]
+]
+}
+]
+},
+{
+"id": "ut-torre-norte",
+"nombre": "La torre norte (la de Kenneth)",
+"otros": [
+"Северная башня"
+],
+"cat": "monumento",
+"x": 0,
+"y": 190,
+"modelo": "ninguno",
+"desc": "Una de las torres cilíndricas de vigía del anillo exterior, de ventanas angostas y adornos que cuentan los ideales de la comunidad. Cuando los salvajes atacan, Kenneth corre a su torre y le saca la lona al arma. Desde estas torres, en «Предчувствие», Kenneth le muestra a Oxana la vista… y casi se cae del borde.",
+"nombre_ru": "Северная башня (башня Кеннета)",
+"desc_ru": "Одна из цилиндрических сторожевых башен внешнего кольца, с узкими окнами и орнаментами, отражающими идеалы сообщества. Когда нападают дикари, Кеннет бежит к своей башне и снимает покрывало с оружия. С этих башен в «Предчувствии» Кеннет показывает Оксане вид… и чуть не падает с края.",
+"apar": [
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"7",
+"Оксана и Вася"
+],
+[
+"35",
+"Кеннет и Саша"
+],
+[
+"36",
+"Голос в эфире"
+],
+[
+"37",
+"Штурм"
+],
+[
+"38",
+"Медовый и бирюзовый"
+],
+[
+"39",
+"Цена щита"
+],
+[
+"40",
+"Песня Люсии"
+]
+]
+},
+{
+"n": "predchuvstvie-2",
+"c": [
+[
+"56",
+"Тени предательства"
+],
+[
+"61",
+"Обещания"
+],
+[
+"62",
+"Смена власти"
+]
+]
+},
+{
+"n": "predchuvstvie",
+"c": [
+[
+"7",
+"Капают слезы"
+],
+[
+"10",
+"Страсти II"
+]
+]
+},
+{
+"n": "predchuvstvie-2-2",
+"c": [
+[
+"13",
+"Лучи страсти"
+]
+]
+}
+],
+"img": {
+"src": "img/lugares/ut-torre-norte.webp",
+"n": "predchuvstvie",
+"c": "7"
+}
+},
+{
+"id": "ut-torre-sur",
+"nombre": "La torre sur (la de Martin)",
+"otros": [
+"Южная башня"
+],
+"cat": "monumento",
+"x": 0,
+"y": -154,
+"modelo": "ninguno",
+"desc": "La torre de vigía del lado sur, la que defiende Martin. Aquí sube con Oxana —«es uno de los mejores lugares de la fortaleza»— y aquí, fuera de sí, golpea a Kenneth en la cara.",
+"nombre_ru": "Южная башня (башня Мартина)",
+"desc_ru": "Сторожевая башня южной стороны, которую защищает Мартин. Сюда он поднимается с Оксаной — «это одно из лучших мест в крепости» — и здесь, потеряв голову, бьёт Кеннета по лицу.",
+"apar": [
+{
+"n": "predchuvstvie",
+"c": [
+[
+"9",
+"Страсти"
+]
+]
+},
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"36",
+"Голос в эфире"
+]
+]
+}
+],
+"img": {
+"src": "img/lugares/ut-torre-sur.webp",
+"n": "predchuvstvie",
+"c": "9"
+}
+},
+{
+"id": "ut-acacia",
+"nombre": "La acacia y el monumento a Robert",
+"otros": [
+"Старая акация",
+"Памятник Роберту",
+"Могила Роберта"
+],
+"cat": "monumento",
+"x": -40,
+"y": 74,
+"modelo": "acacia",
+"desc": "En el fondo del patio, bajo la vieja acacia, está el monumento de piedra a Robert, el fundador. En «Предчувствие 2.4» Natalia sabe dónde buscar a Lusía, la pequeña violinista —la hija de Robert—: debajo de la vieja acacia, junto al monumento a su padre.",
+"nombre_ru": "Акация и памятник Роберту",
+"desc_ru": "В глубине двора, под старой акацией, стоит каменный памятник Роберту, основателю. В «Предчувствии 2.4» Наталья знает, где искать Люсию, маленькую скрипачку, дочь Роберта: под старой акацией, у памятника отцу.",
+"apar": [
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"2",
+"Последний конверт"
+],
+[
+"3",
+"Наша Утопия"
+],
+[
+"4",
+"Разговор в «Алых розах»"
+],
+[
+"6",
+"Призрак под акацией"
+],
+[
+"7",
+"Оксана и Вася"
+],
+[
+"11",
+"Тайна виноградной лозы"
+],
+[
+"13",
+"Исповедь рыжей"
+],
+[
+"14",
+"Совет трёх"
+],
+[
+"15",
+"Возвращение архитектора"
+],
+[
+"16",
+"Сын архитектора"
+],
+[
+"19",
+"Слёзы Риты"
+],
+[
+"21",
+"Через океан"
+],
+[
+"24",
+"Он уходит"
+],
+[
+"25",
+"Ночь падающих звёзд"
+],
+[
+"26",
+"Живой"
+],
+[
+"27",
+"Возвращение героев"
+],
+[
+"29",
+"Прощение"
+],
+[
+"30",
+"То, о чём она не узнает"
+],
+[
+"31",
+"Ультиматум Пангеи"
+],
+[
+"36",
+"Голос в эфире"
+],
+[
+"38",
+"Медовый и бирюзовый"
+],
+[
+"40",
+"Песня Люсии"
+],
+[
+"43",
+"То, что нельзя скопировать"
+],
+[
+"48",
+"Бирюзовая Федерация"
+],
+[
+"49",
+"Женщина в очках"
+],
+[
+"50",
+"Пять лет спустя"
+],
+[
+"51",
+"Мы не убийцы"
+]
+]
+},
+{
+"n": "predchuvstvie-2",
+"c": [
+[
+"36",
+"Плач с севера"
+],
+[
+"37",
+"Рассвет и сделка с тенью"
+],
+[
+"38",
+"Утро без него"
+],
+[
+"48",
+"Рассвет предателя"
+],
+[
+"56",
+"Тени предательства"
+],
+[
+"60",
+"Искушение и раскаяние"
+],
+[
+"62",
+"Смена власти"
+]
+]
+},
+{
+"n": "predchuvstvie-2-2",
+"c": [
+[
+"26",
+"Последний Совет"
+]
+]
+},
+{
+"n": "predchuvstvie-2-3",
+"c": [
+[
+"27",
+"Все хорошо… пока"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lusía",
+"ar": "Люсия",
+"s": 5,
+"es": "Vengo a tocarle el violín a papá. La acacia hace sombra justo donde me siento.",
+"ru": "Прихожу играть папе на скрипке. Акация даёт тень как раз там, где я сижу."
+}
+],
+"img": {
+"src": "img/lugares/ut-acacia.webp",
+"n": "predchuvstvie-2-2",
+"c": "26"
+}
+},
+{
+"id": "ut-taller-vasia",
+"nombre": "El taller de Vasia y las motos voladoras",
+"otros": [
+"Мастерская Васи",
+"Летающие мотоциклы"
+],
+"cat": "edificio",
+"x": 40,
+"y": -140,
+"modelo": "taller-motos",
+"desc": "Junto al muro sur. Huele a nafta, a cables quemados y a damascos secos (Lusía trajo una bolsa entera del campamento de las montañas y se los esconde a escondidas). Aquí se guardan las motos voladoras que mira Lusía desde la tumba de su padre.",
+"nombre_ru": "Мастерская Васи и летающие мотоциклы",
+"desc_ru": "У южной стены. Пахнет бензином, горелой проводкой и сушёными абрикосами (Люсия привезла целый мешок из горного лагеря и тайком их подкладывает). Здесь стоят летающие мотоциклы, на которые Люсия смотрит от могилы отца.",
+"apar": [
+{
+"n": "predchuvstvie-2",
+"c": [
+[
+"62",
+"Смена власти"
+]
+]
+},
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"7",
+"Оксана и Вася"
+]
+]
+}
+],
+"res": [
+{
+"a": "Vasia",
+"ar": "Вася",
+"s": 5,
+"es": "Huele a nafta y a damascos. Si alguien sigue escondiendo damascos entre mis herramientas, que sepa que me los como.",
+"ru": "Пахнет бензином и абрикосами. Если кто-то и дальше будет прятать абрикосы среди моих инструментов, пусть знает: я их съедаю."
+},
+{
+"a": "Lusía",
+"ar": "Люсия",
+"s": 5,
+"es": "Las motos vuelan. Yo no puedo subirme. Todavía.",
+"ru": "Мотоциклы летают. Мне на них нельзя. Пока."
+}
+]
+},
+{
+"id": "ut-muro-cantor",
+"nombre": "El Muro de Luis, el muro que canta",
+"otros": [
+"Стена Луиса",
+"Южная стена"
+],
+"cat": "misterio",
+"x": 0,
+"y": -186,
+"modelo": "muro-cantor",
+"desc": "Veinte metros delante del muro sur se levanta la pared de Luis: fina, curva, como una caracola gigante abierta hacia el este. La estructura es de vigas de acero sacadas de los puentes de la Nueva Misión, y encima van cientos de placas: campanas partidas por la mitad, tubos de órgano aplastados, gongos, palanganas de cobre, tapas de olla, cuerdas de pianos rotos. Cuando sopla el viento del este, el muro canta. Fue idea de Rita: cada una de las 240 familias recibió una placa y tuvo que «afinarla» quedándose a su lado, golpeándola, cantándole, hablándole. La de la vieja Agafia, media campana de una iglesia, brilla amarilla como una vela; la de los chicos del tercer barracón, roja; la de una pareja recién casada, rosa pálido. Natalia afina las suyas en el extremo este, con el arco del violonchelo.",
+"nombre_ru": "Стена Луиса — стена, которая поёт",
+"desc_ru": "В двадцати метрах перед южной стеной поднимается стена Луиса: тонкая, изогнутая, похожая на огромную раковину, развёрнутую к востоку. Каркас — из стальных балок, снятых с мостов Новой Миссии, а на нём сотни пластин: распиленные колокола, сплющенные органные трубы, гонги, медные тазы, крышки от кастрюль, струны разбитых роялей. Когда ветер дует с востока, стена поёт. Это идея Риты: каждая из 240 семей получила пластину и должна была её «настроить» — быть рядом, стучать, петь, разговаривать. Пластина старухи Агафьи, половина церковного колокола, светится тёплым жёлтым, как свечка в окне; у мальчишек из третьего барака — красным; у молодой пары — бледно-розовым. Наталья настраивает свои у восточного края — смычком.",
+"apar": [
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"7",
+"Оксана и Вася"
+],
+[
+"15",
+"Возвращение архитектора"
+],
+[
+"28",
+"Тайный советник"
+],
+[
+"29",
+"Прощение"
+],
+[
+"30",
+"То, о чём она не узнает"
+],
+[
+"31",
+"Ультиматум Пангеи"
+],
+[
+"32",
+"Раскол"
+],
+[
+"35",
+"Кеннет и Саша"
+],
+[
+"36",
+"Голос в эфире"
+],
+[
+"37",
+"Штурм"
+],
+[
+"38",
+"Медовый и бирюзовый"
+],
+[
+"39",
+"Цена щита"
+],
+[
+"40",
+"Песня Люсии"
+],
+[
+"43",
+"То, что нельзя скопировать"
+],
+[
+"45",
+"Не убивать"
+],
+[
+"47",
+"Единогласно"
+],
+[
+"48",
+"Бирюзовая Федерация"
+],
+[
+"49",
+"Женщина в очках"
+],
+[
+"50",
+"Пять лет спустя"
+]
+]
+}
+],
+"res": [
+{
+"a": "Agafia",
+"ar": "Агафья",
+"s": 5,
+"es": "Mi media campana brilla amarilla cuando le cuento cuentos. Tengo noventa años y por fin alguien me escucha.",
+"ru": "Моя половинка колокола светится жёлтым, когда я рассказываю ей сказки. Мне девяносто, и наконец-то меня кто-то слушает."
+},
+{
+"a": "Rita",
+"ar": "Рита",
+"s": 5,
+"es": "Me dijeron que era una idea loca. Era una idea loca. Y canta.",
+"ru": "Мне сказали, что это безумная идея. Это была безумная идея. И она поёт."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Seiscientas cuarenta placas. Lo vamos a lograr. Dios mío, lo vamos a lograr.",
+"ru": "Шестьсот сорок. Мы успеем. Господи, мы успеем."
+},
+{
+"a": "Los chicos del tercer barracón",
+"ar": "Мальчишки из третьего барака",
+"s": 5,
+"es": "¡PUM PUM PUM! (Nuestra placa es la más roja.)",
+"ru": "БУМ-БУМ-БУМ! (Наша пластина самая красная.)"
+}
+]
+},
+{
+"id": "ut-jardines",
+"nombre": "Los jardines y las huertas",
+"otros": [
+"Сады крепости"
+],
+"cat": "parque",
+"x": 0,
+"y": 140,
+"modelo": "ninguno",
+"desc": "Entre los dos anillos de murallas. Los salvajes, que antes eran enemigos, se volvieron parte de la comunidad: ayudan a levantar edificios nuevos, a cuidar los jardines y a enseñarles oficios a los chicos.",
+"nombre_ru": "Сады и огороды",
+"desc_ru": "Между двумя кольцами стен. Дикари, ранее считавшиеся врагами, стали частью сообщества: помогают строить новые здания, ухаживать за садами и обучать детей ремёслам.",
+"apar": [
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"11",
+"Тайна виноградной лозы"
+],
+[
+"22",
+"Нью-Икар в огне"
+],
+[
+"50",
+"Пять лет спустя"
+]
+]
+},
+{
+"n": "predchuvstvie",
+"c": [
+[
+"8",
+"Гуманизм"
+],
+[
+"24",
+"Возвращение"
+]
+]
+},
+{
+"n": "predchuvstvie-2-2",
+"c": [
+[
+"15",
+"Послание миру"
+]
+]
+},
+{
+"n": "predchuvstvie-2-3",
+"c": [
+[
+"4",
+"Пробуждение силы"
+]
+]
+}
+],
+"img": {
+"src": "img/lugares/ut-jardines.webp",
+"n": "predchuvstvie",
+"c": "8"
+}
+},
+{
+"id": "ut-puerta",
+"nombre": "La puerta y el camino de la colina",
+"otros": [
+"Ворота крепости"
+],
+"cat": "transporte",
+"x": 150,
+"y": -50,
+"modelo": "ninguno",
+"desc": "Llegar no es fácil: la colina es empinada y escarpada, y los vehículos apenas pueden subir. Solo quien de verdad quiere unirse a la comunidad, o tiene un propósito claro, llega hasta sus puertas. Los caminos que suben están bordeados de árboles y vegetación, y crean «una atmósfera de calma y de aislamiento del mundo exterior».",
+"nombre_ru": "Ворота и дорога на холм",
+"desc_ru": "Добраться нелегко: холм крутой и обрывистый, машины с трудом поднимаются наверх. До ворот доходят только те, кто действительно хочет присоединиться к сообществу или имеет чёткую цель. Дороги к крепости обрамлены деревьями и растительностью, создавая «атмосферу спокойствия и изоляции от внешнего мира».",
+"apar": [
+{
+"n": "predchuvstvie-2",
+"c": [
+[
+"3",
+"Ночной дозор"
+],
+[
+"15",
+"Белый флаг на рассвете"
+],
+[
+"19",
+"Триумф"
+],
+[
+"20",
+"Последний закат"
+],
+[
+"25",
+"Переговоры"
+],
+[
+"26",
+"Сомнительная сделка"
+],
+[
+"61",
+"Обещания"
+]
+]
+},
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"19",
+"Слёзы Риты"
+],
+[
+"27",
+"Возвращение героев"
+],
+[
+"41",
+"Курс на Кристал-Шорс"
+],
+[
+"47",
+"Единогласно"
+]
+]
+},
+{
+"n": "predchuvstvie",
+"c": [
+[
+"4",
+"Интриганка"
+],
+[
+"11",
+"Ночь без утешения"
+],
+[
+"extra-2",
+"После последней страницы: выбор, страх и цена утопии"
+]
+]
+},
+{
+"n": "predchuvstvie-2-3",
+"c": [
+[
+"4",
+"Пробуждение силы"
+]
+]
+}
+],
+"res": [
+{
+"a": "Dima",
+"ar": "Дима",
+"s": 4,
+"es": "La subida es durísima. Pero arriba hay gente que todavía cree en algo.",
+"ru": "Подъём очень тяжёлый. Но наверху есть люди, которые ещё во что-то верят."
+},
+{
+"a": "Masha",
+"ar": "Маша",
+"s": 3,
+"es": "Vi muchas utopías nacer del engaño. Esta, por ahora, no. Por ahora.",
+"ru": "Я видела много утопий, рождённых обманом. Эта — пока нет. Пока."
+}
+],
+"img": {
+"src": "img/lugares/ut-puerta.webp",
+"n": "predchuvstvie",
+"c": "4"
+}
+},
+{
+"id": "ut-barracones",
+"nombre": "Los barracones",
+"otros": [
+"Бараки"
+],
+"cat": "barrio",
+"x": -150,
+"y": -10,
+"modelo": "ninguno",
+"desc": "Las viviendas de la mayoría de las familias, entre los dos anillos. Los chicos del tercer barracón son los que golpean su placa del Muro de Luis como un tambor y gritan marchas.",
+"nombre_ru": "Бараки",
+"desc_ru": "Жилища большинства семей между двумя кольцами стен. Мальчишки из третьего барака колотят по своей пластине стены Луиса, как по барабану, и орут марши.",
+"apar": [
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"11",
+"Тайна виноградной лозы"
+],
+[
+"16",
+"Сын архитектора"
+],
+[
+"17",
+"Налёт на долину"
+],
+[
+"26",
+"Живой"
+],
+[
+"28",
+"Тайный советник"
+],
+[
+"30",
+"То, о чём она не узнает"
+],
+[
+"31",
+"Ультиматум Пангеи"
+],
+[
+"32",
+"Раскол"
+],
+[
+"35",
+"Кеннет и Саша"
+],
+[
+"36",
+"Голос в эфире"
+],
+[
+"37",
+"Штурм"
+],
+[
+"39",
+"Цена щита"
+],
+[
+"40",
+"Песня Люсии"
+],
+[
+"42",
+"Логово"
+],
+[
+"43",
+"То, что нельзя скопировать"
+],
+[
+"47",
+"Единогласно"
+],
+[
+"49",
+"Женщина в очках"
+],
+[
+"50",
+"Пять лет спустя"
+]
+]
+},
+{
+"n": "predchuvstvie-2",
+"c": [
+[
+"32",
+"Обещания"
+],
+[
+"37",
+"Рассвет и сделка с тенью"
+]
+]
+},
+{
+"n": "predchuvstvie-2-3",
+"c": [
+[
+"8",
+"Лагерь среди гор"
+],
+[
+"15",
+"Испытания и тени"
+]
+]
+},
+{
+"n": "predchuvstvie-2-2",
+"c": [
+[
+"4",
+"Бункер забытых писем"
+]
+]
+}
+]
+},
+{
+"id": "ut-cementerio",
+"nombre": "El cementerio de la fortaleza",
+"otros": [
+"Кладбище крепости"
+],
+"cat": "misterio",
+"x": -390,
+"y": 205,
+"modelo": "cementerio",
+"desc": "Afuera de los muros, al pie de la colina: aquí se entierra a todos. A medianoche, en «Предчувствие 2», la luz de la luna corre sobre una lápida de mármol mientras Natalia lee un cuaderno gastado con las manos temblando. Solo a la vieja Agafia la enterraron adentro, junto a su placa del muro sur: Gordéi cavó la fosa él mismo, porque ella le contaba cuentos.",
+"nombre_ru": "Кладбище крепости",
+"desc_ru": "За стенами, у подножия холма: здесь хоронят всех. В полночь в «Предчувствии 2» лунный свет струится по мраморному надгробию, пока Наталья читает потрёпанную тетрадь дрожащими руками. Только старуху Агафью похоронили внутри, у её пластины на южной стене: Гордей выкопал яму сам, потому что она рассказывала ему сказки.",
+"apar": [
+{
+"n": "predchuvstvie-2",
+"c": [
+[
+"56",
+"Тени предательства"
+]
+]
+},
+{
+"n": "predchuvstvie-2-4",
+"c": [
+[
+"40",
+"Песня Люсии"
+]
+]
+}
+],
+"res": [
+{
+"a": "Gordéi",
+"ar": "Гордей",
+"s": 5,
+"es": "A la abuela Agafia la enterré yo, al lado de su placa. Me contaba cuentos. Aquí afuera duermen los demás.",
+"ru": "Бабушку Агафью я похоронил сам, у её пластины. Она рассказывала мне сказки. Здесь, за стенами, спят остальные."
+}
+]
+},
+{
+"id": "ut-bunker",
+"nombre": "El búnker de Robert",
+"otros": [
+"Бункер Роберта",
+"Бункер забытых писем"
+],
+"cat": "casa",
+"x": -1100,
+"y": -1100,
+"modelo": "bunker",
+"desc": "El búnker que Robert construyó antes de la catástrofe y que fue su única salvación: aquí pasó dos años solo, con su vieja campera de cuero. En «Предчувствие 2.2», Natalia, expulsada de la fortaleza, encuentra en el desierto el búnker medio enterrado, con la puerta oxidada, cuando las ruedas de su Peugeot se hunden en la arena. Adentro, un paquete de cartas atadas con una cinta descolorida, y una foto: Lusía descubre que Robert era su padre.",
+"nombre_ru": "Бункер Роберта",
+"desc_ru": "Бункер, который Роберт построил заранее и который стал его единственным спасением: здесь он провёл два года в одиночестве, в старой кожаной куртке. В «Предчувствии 2.2» изгнанная из крепости Наталья находит в пустыне полузасыпанный бункер с ржавой дверью, когда колёса её Peugeot окончательно зарываются в песок. Внутри — пачка писем, перевязанных выцветшей лентой, и фотография: Люсия узнаёт, что Роберт — её отец.",
+"apar": [
+{
+"n": "predchuvstvie-2-2",
+"c": [
+[
+"1",
+"Неожиданные гости"
+],
+[
+"4",
+"Бункер забытых писем"
+],
+[
+"5",
+"Ультиматум с небес"
+],
+[
+"7",
+"Разговор в бункере"
+],
+[
+"12",
+"Подземная правда"
+],
+[
+"13",
+"Лучи страсти"
+],
+[
+"15",
+"Послание миру"
+],
+[
+"16",
+"Разлом"
+]
+]
+},
+{
+"n": "predchuvstvie",
+"c": [
+[
+"1",
+"Начало пути"
+],
+[
+"5",
+"Предчувствие"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Polvo, una puerta oxidada y las cartas que nunca me mandó. El lugar más triste y más querido del desierto.",
+"ru": "Пыль, ржавая дверь и письма, которые он мне так и не отправил. Самое грустное и самое дорогое место в пустыне."
+},
+{
+"a": "Robert",
+"ar": "Роберт",
+"s": 4,
+"es": "Dos años solo aquí adentro. Buen aislamiento. Pésima compañía.",
+"ru": "Два года здесь в одиночестве. Отличная изоляция. Ужасная компания."
+}
+],
+"img": {
+"src": "img/lugares/ut-bunker.webp",
+"n": "predchuvstvie-2-2",
+"c": "1"
+}
+},
+{
+"id": "ut-tumba-luis",
+"nombre": "La tumba vacía de Luis",
+"otros": [
+"Пустая могила Луиса"
+],
+"cat": "misterio",
+"x": 1000,
+"y": -1150,
+"modelo": "tumba",
+"desc": "En el desierto. En «Предчувствие 2.3», Natalia cava la tumba de Luis… y la encuentra vacía. Luis está en alguna parte, cerca, y por lo visto juega su propio juego.",
+"nombre_ru": "Пустая могила Луиса",
+"desc_ru": "В пустыне. В «Предчувствии 2.3» Наталья раскапывает могилу Луиса — и находит её пустой. Луис где-то рядом и, похоже, ведёт свою игру.",
+"apar": [
+{
+"n": "predchuvstvie-2-3",
+"c": [
+[
+"1",
+"Дорога к пустой могиле"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 1,
+"es": "Vacía. Típico de Luis.",
+"ru": "Пустая. Это так похоже на Луиса."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Respuesta del propietario: sin comentarios.",
+"ru": "Ответ владельца: без комментариев."
+}
+]
+},
+{
+"id": "ut-tuneles",
+"nombre": "La boca de los túneles hacia el este",
+"otros": [
+"Туннели"
+],
+"cat": "transporte",
+"x": 560,
+"y": 90,
+"modelo": "boca-tunel",
+"desc": "Cuando los tanques-robot de las «Herederas» salen del mar, los habitantes de Nuestra Utopía tienen que huir por los túneles hacia el este, al campamento de refugiados en las montañas, entre viñedos y hierbas de montaña. «Lágrimas en el túnel», «El túnel de la gloria».",
+"nombre_ru": "Вход в туннели на восток",
+"desc_ru": "Когда из моря выходят танки-роботы «Наследниц», жителям Нашей Утопии приходится бежать через туннели на восток, в горный лагерь беженцев, среди виноградников и горных трав. «Слёзы в туннеле», «Туннель славы».",
+"apar": [
+{
+"n": "predchuvstvie-2-3",
+"c": [
+[
+"4",
+"Пробуждение силы"
+],
+[
+"5",
+"Жертва и пробуждение"
+],
+[
+"6",
+"Слезы в туннеле"
+],
+[
+"7",
+"Новый мир и старые раны"
+],
+[
+"8",
+"Лагерь среди гор"
+],
+[
+"11",
+"Лунное признание"
+],
+[
+"13",
+"Утреннее озарение"
+],
+[
+"23",
+"Туннель славы"
+],
+[
+"26",
+"Кровавый выбор"
+]
+]
+}
+]
+},
+{
+"id": "ut-playa",
+"nombre": "La playa de los tanques-araña",
+"otros": [
+"Берег",
+"Железные захватчики"
+],
+"cat": "misterio",
+"x": -1790,
+"y": -290,
+"modelo": "tanques",
+"desc": "El mar se encrespó en olas negras y de las profundidades salieron, uno tras otro, monstruos de acero: no simples tanques, sino tanques-robot de las «Herederas» de la Segunda Potencia, con seis patas flexibles de araña en lugar de orugas, que se mueven sin ruido y pasan por encima de cualquier obstáculo. Salieron a la orilla escaneando con frialdad lo que quedaba del mundo.",
+"nombre_ru": "Берег танков-пауков",
+"desc_ru": "Море вздыбилось чёрными волнами, и из глубин одна за другой вырвались стальные чудовища — не просто танки, а танки-роботы «Наследниц» Второй Державы: вместо гусениц шесть гибких паучьих конечностей, позволяющих двигаться бесшумно и преодолевать любые препятствия. Они вышли на берег, холодно сканируя то, что осталось от мира.",
+"apar": [
+{
+"n": "predchuvstvie-2-3",
+"c": [
+[
+"3",
+"Железные захватчики"
+],
+[
+"19",
+"Щит и тени"
+],
+[
+"24",
+"Сила винограда и тени Новой Миссии"
+]
+]
+}
+],
+"res": [
+{
+"a": "Sasha",
+"ar": "Саша",
+"s": 1,
+"es": "Seis patas, ningún sonido y cero modales.",
+"ru": "Шесть лап, ни звука и никаких манер."
+},
+{
+"a": "Ekaterina",
+"ar": "Екатерина",
+"s": 5,
+"es": "Un desembarco perfecto. Hasta que una violonchelista me pisó la mano herida.",
+"ru": "Идеальная высадка. Пока виолончелистка не наступила мне на раненую руку."
+}
+]
+}
 ]
 };
 export const NOVELAS = {
-"27-ocak": {
-"t": "27 Ocak",
-"es": "27 de enero",
-"l": "tr",
-"y": 2026,
-"ru": "27 января",
-"p": "img/portadas/27-ocak.webp",
-"tr": {}
-},
-"il-treno-fantasma": {
-"t": "Il treno fantasma",
-"es": "El tren fantasma (it.)",
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
 "l": "it",
-"y": null,
-"ru": "Призрачный поезд (ит.)",
-"p": "img/portadas/il-treno-fantasma.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
-"l": "ru",
 "y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
 "tr": {}
 },
-"el-tren-fantasma": {
-"t": "El tren fantasma",
-"es": "El tren fantasma",
-"l": "es",
-"y": null,
-"ru": "Призрачный поезд (исп.)",
-"p": "img/portadas/el-tren-fantasma.webp",
-"tr": {
-"it": "il-treno-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
-"tr": {}
-},
-"prizrachnyj-poezd": {
-"t": "Призрачный поезд",
-"es": "El tren fantasma (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Призрачный поезд",
-"p": "img/portadas/prizrachnyj-poezd.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"it": "il-treno-fantasma"
-}
-},
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
-"tr": {}
-},
-"tajna-v-biblioteke": {
-"t": "Тайна в библиотеке",
-"es": "El misterio de la biblioteca",
-"l": "ru",
-"y": 2026,
-"ru": "Тайна в библиотеке",
-"p": "img/portadas/tajna-v-biblioteke.webp",
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
 "tr": {}
 },
 "golos": {
@@ -10161,34 +12166,27 @@ export const NOVELAS = {
 "fr": "la-voix"
 }
 },
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
-"l": "es",
-"y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
-"tr": {}
-},
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
-"l": "it",
+"grustnyj-gorod": {
+"t": "Грустный город",
+"es": "La ciudad triste",
+"l": "ru",
 "y": 2026,
-"ru": "Люблю тебя молча (ит.)",
-"p": "img/portadas/ti-amo-in-silenzio.webp",
+"ru": "Грустный город",
+"p": "img/portadas/grustnyj-gorod.webp",
 "tr": {
-"ru": "tikhaya-lyubov"
+"it": "la-citta-triste"
 }
 },
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
+"l": "ru",
 "y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
 },
 "almaznyj-dozhd": {
 "t": "Алмазный дождь",
@@ -10199,33 +12197,72 @@ export const NOVELAS = {
 "p": "img/portadas/almaznyj-dozhd.webp",
 "tr": {}
 },
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
-"l": "ru",
-"y": 2026,
-"ru": "Карнавал Синеи",
-"p": "img/portadas/karnaval-sinei.webp",
-"tr": {}
-},
-"la-citta-triste": {
-"t": "La città triste",
-"es": "La ciudad triste (it.)",
-"l": "it",
-"y": 2025,
-"ru": "Грустный город (ит.)",
-"p": "img/portadas/la-citta-triste.webp",
-"tr": {
-"ru": "grustnyj-gorod"
-}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
 "l": "es",
 "y": 2026,
-"ru": "Любовь в космосе",
-"p": "img/portadas/amor-en-el-cosmos.webp",
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"27-ocak": {
+"t": "27 Ocak",
+"es": "27 de enero",
+"l": "tr",
+"y": 2026,
+"ru": "27 января",
+"p": "img/portadas/27-ocak.webp",
+"tr": {}
+},
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
+"tr": {}
+},
+"predchuvstvie": {
+"t": "Предчувствие",
+"es": "El presentimiento",
+"l": "ru",
+"y": 2023,
+"ru": "Предчувствие",
+"p": "img/portadas/predchuvstvie.webp",
+"tr": {
+"fr": "reve-turquoise",
+"eo": "la-antausento",
+"it": "presentimento",
+"es": "la-corazonada",
+"isv": "predcutje",
+"tr": "col-gulu",
+"de": "vorahnung",
+"sr": "predosecaj",
+"vo": "fot-latik",
+"ia": "le-presentimento",
+"pt": "mundo-turquesa",
+"cs": "predtucha",
+"pl": "przeczucie"
+}
+},
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"tr": {}
+},
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
 "tr": {}
 },
 "onde-d-amore": {
@@ -10250,64 +12287,6 @@ export const NOVELAS = {
 "ru": "golos"
 }
 },
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
-"znak": {
-"t": "Знак",
-"es": "El signo",
-"l": "ru",
-"y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
-"tr": {}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
-"l": "es",
-"y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
-"tr": {}
-},
-"ondas-de-amor": {
-"t": "Ondas de amor",
-"es": "Ondas de amor",
-"l": "es",
-"y": 2026,
-"ru": "Волны любви (исп.)",
-"p": "img/portadas/ondas-de-amor.webp",
-"tr": {
-"it": "onde-d-amore"
-}
-},
-"grustnyj-gorod": {
-"t": "Грустный город",
-"es": "La ciudad triste",
-"l": "ru",
-"y": 2026,
-"ru": "Грустный город",
-"p": "img/portadas/grustnyj-gorod.webp",
-"tr": {
-"it": "la-citta-triste"
-}
-},
 "pokhititel-serdec-portret-osnovatelya": {
 "t": "Похититель сердец: Портрет основателя",
 "es": "Ladrón de corazones: El retrato del fundador",
@@ -10317,13 +12296,22 @@ export const NOVELAS = {
 "p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
 "tr": {}
 },
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
+"predchuvstvie-2-4": {
+"t": "Предчувствие 2.4",
+"es": "El presentimiento 2.4",
+"l": "ru",
 "y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
+"ru": "Предчувствие 2.4",
+"p": "img/portadas/predchuvstvie-2-4.webp",
+"tr": {}
+},
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
+"l": "ru",
+"y": 2026,
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
 "tr": {}
 },
 "volny-lyubvi": {
@@ -10335,25 +12323,93 @@ export const NOVELAS = {
 "p": "img/portadas/volny-lyubvi.webp",
 "tr": {}
 },
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
-"l": "ru",
-"y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
+"la-citta-triste": {
+"t": "La città triste",
+"es": "La ciudad triste (it.)",
+"l": "it",
+"y": 2025,
+"ru": "Грустный город (ит.)",
+"p": "img/portadas/la-citta-triste.webp",
 "tr": {
-"en": "the-date"
+"ru": "grustnyj-gorod"
 }
 },
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
 "tr": {}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
+"tr": {}
+},
+"el-tren-fantasma": {
+"t": "El tren fantasma",
+"es": "El tren fantasma",
+"l": "es",
+"y": null,
+"ru": "Призрачный поезд (исп.)",
+"p": "img/portadas/el-tren-fantasma.webp",
+"tr": {
+"it": "il-treno-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"predchuvstvie-2-3": {
+"t": "Предчувствие 2.3",
+"es": "El presentimiento 2.3",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.3",
+"p": "img/portadas/predchuvstvie-2-3.webp",
+"tr": {}
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
+"tr": {}
+},
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
+"tr": {
+"ru": "tikhaya-lyubov"
+}
 },
 "lluvia-de-meteoritos": {
 "t": "Lluvia de meteoritos",
@@ -10366,6 +12422,27 @@ export const NOVELAS = {
 "ru": "meteoritnyj-dozhd"
 }
 },
+"prizrachnyj-poezd": {
+"t": "Призрачный поезд",
+"es": "El tren fantasma (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Призрачный поезд",
+"p": "img/portadas/prizrachnyj-poezd.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"it": "il-treno-fantasma"
+}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
 "tikhaya-lyubov": {
 "t": "Тихая любовь",
 "es": "Amor en silencio",
@@ -10377,40 +12454,90 @@ export const NOVELAS = {
 "it": "ti-amo-in-silenzio"
 }
 },
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
+"predchuvstvie-2-2": {
+"t": "Предчувствие 2.2",
+"es": "El presentimiento 2.2",
 "l": "ru",
-"y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
+"y": 2025,
+"ru": "Предчувствие 2.2",
+"p": "img/portadas/predchuvstvie-2-2.webp",
 "tr": {}
 },
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
 "tr": {}
 },
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
+"l": "es",
+"y": 2026,
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
+"tr": {}
+},
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
+"l": "es",
+"y": null,
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
+"tr": {}
+},
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
+"l": "ru",
+"y": 2026,
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
+"tr": {}
+},
+"tajna-v-biblioteke": {
+"t": "Тайна в библиотеке",
+"es": "El misterio de la biblioteca",
+"l": "ru",
+"y": 2026,
+"ru": "Тайна в библиотеке",
+"p": "img/portadas/tajna-v-biblioteke.webp",
+"tr": {}
+},
+"il-treno-fantasma": {
+"t": "Il treno fantasma",
+"es": "El tren fantasma (it.)",
 "l": "it",
-"y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
-"tr": {}
+"y": null,
+"ru": "Призрачный поезд (ит.)",
+"p": "img/portadas/il-treno-fantasma.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"ru": "prizrachnyj-poezd"
+}
 },
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
+"ondas-de-amor": {
+"t": "Ondas de amor",
+"es": "Ondas de amor",
+"l": "es",
 "y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
+"ru": "Волны любви (исп.)",
+"p": "img/portadas/ondas-de-amor.webp",
+"tr": {
+"it": "onde-d-amore"
+}
+},
+"predchuvstvie-2": {
+"t": "Предчувствие 2",
+"es": "El presentimiento 2",
+"l": "ru",
+"y": 2024,
+"ru": "Предчувствие 2",
+"p": "img/portadas/predchuvstvie-2.webp",
 "tr": {}
 }
 };

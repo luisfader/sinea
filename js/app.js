@@ -3,7 +3,7 @@ import * as THREE from './vendor/three.module.js';
 import { MapControls } from './vendor/MapControls.js';
 import { LIMITES, BARRIOS, CALLES, BORDES, EXTRAS, VISTA, NOMBRE, LEMA, CIUDAD, altura } from './mundo.js';
 import { pintarSuelo, crearTerreno, crearMar, crearEdificios, crearArboles, crearPuentes, crearAfueras } from './escena.js';
-import { construirHitos, crearDelfines, crearTrenFantasma, crearAutobus } from './hitos.js';
+import { construirHitos, crearDelfines, crearTrenFantasma, crearAutobus, crearDrones } from './hitos.js';
 import { CIUDADES, NOVELAS, IDIOMAS, IDIOMAS_RU } from './datos.js';
 const LUGARES = CIUDADES[CIUDAD];
 
@@ -86,6 +86,7 @@ async function construir() {
   escena.add(crearArboles(hitos.reservas)); escena.add(crearPuentes());
   if (EXTRAS.includes('delfines')) { delf = crearDelfines(); escena.add(delf.g); }
   if (EXTRAS.includes('tren-fantasma')) { tren = crearTrenFantasma(); escena.add(tren.g); }
+  if (EXTRAS.includes('drones-gaviota')) { delf = crearDrones(); escena.add(delf.g); }
   if (EXTRAS.includes('autobus-7')) { autobus = crearAutobus(); escena.add(autobus.g); }
   if (EXTRAS.includes('tren-girasoles')) { tren = crearTrenFantasma({ fantasma: false, vagones: 5, s0: 200, s1: 3900, vel: 22 }); escena.add(tren.g); }
 }
@@ -520,9 +521,9 @@ function cuadro() {
 /* ------------------------------------------------------------------ */
 function urlCon(hash) {
   const q = new URLSearchParams(); if (CIUDAD !== 'sinea') q.set('ciudad', CIUDAD); if (lang === 'ru') q.set('lang', 'ru');
-  const qs = q.toString(); return location.pathname.replace(/verdegrad\.html$/, 'index.html') + (qs ? '?' + qs : '') + hash;
+  const qs = q.toString(); return location.pathname.replace(/(verdegrad|utopia)\.html$/, 'index.html') + (qs ? '?' + qs : '') + hash;
 }
-function irCiudad(c) { const q = new URLSearchParams(); if (c !== 'sinea') q.set('ciudad', c); if (lang === 'ru') q.set('lang', 'ru'); location.href = location.pathname.replace(/verdegrad\.html$/, 'index.html') + (q.toString() ? '?' + q : ''); }
+function irCiudad(c) { const q = new URLSearchParams(); if (c !== 'sinea') q.set('ciudad', c); if (lang === 'ru') q.set('lang', 'ru'); location.href = location.pathname.replace(/(verdegrad|utopia)\.html$/, 'index.html') + (q.toString() ? '?' + q : ''); }
 document.querySelectorAll('#ciudad button').forEach(b => { b.classList.toggle('on', b.dataset.c === CIUDAD); b.onclick = () => { if (b.dataset.c !== CIUDAD) irCiudad(b.dataset.c); }; });
 const ESTATICO = [
   ['#buscar', 'placeholder', `Buscar en ${NOMBRE.es}: un lugar, una novela, un personaje…`, `Поиск по ${NOMBRE.dat}: место, роман, персонаж…`],
@@ -533,8 +534,8 @@ const ESTATICO = [
   ['#panel .cerrar', 'title', 'Cerrar', 'Закрыть'], ['#recorrido button', 'title', 'Quitar filtro', 'Снять фильтр'],
   ['#recorrido b', 'text', 'Recorrido:', 'Маршрут:'],
   ['#carga .sub', 'text', LEMA.es, LEMA.ru],
-  ['#pie', 'html', `<b>${NOMBRE.es}</b> · ${CIUDAD === 'sinea' ? 'la ciudad' : 'un pueblo'} de las novelas de <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Robert Fader</a> · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Faderpedia</a> · <span class="ayuda">arrastrá para moverte · clic derecho o dos dedos para girar · rueda para el zoom</span>`,
-    `<b>${NOMBRE.ru}</b> · ${CIUDAD === 'sinea' ? 'город' : 'городок'} из романов <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Роберта Фадера</a> · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Фадерпедия</a> · <span class="ayuda">тяните, чтобы двигаться · правая кнопка или два пальца — поворот · колесо — масштаб</span>`]
+  ['#pie', 'html', `<b>${NOMBRE.es}</b> · ${CIUDAD === 'sinea' ? 'la ciudad' : CIUDAD === 'utopia' ? 'la fortaleza' : 'un pueblo'} de las novelas de <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Robert Fader</a> · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Faderpedia</a> · <span class="ayuda">arrastrá para moverte · clic derecho o dos dedos para girar · rueda para el zoom</span>`,
+    `<b>${NOMBRE.ru}</b> · ${CIUDAD === 'sinea' ? 'город' : CIUDAD === 'utopia' ? 'крепость' : 'городок'} из романов <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Роберта Фадера</a> · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Фадерпедия</a> · <span class="ayuda">тяните, чтобы двигаться · правая кнопка или два пальца — поворот · колесо — масштаб</span>`]
 ];
 function ponerIdioma(l, refrescar = true) {
   lang = l === 'ru' ? 'ru' : 'es';

@@ -1,9 +1,10 @@
-# Sinea y Verdegrad — mapas 3D · Синея и Вердеград — 3D-карты
+# Sinea, Verdegrad y Nuestra Utopía — mapas 3D · Синея, Вердеград и Наша Утопия — 3D-карты
 
-Dos mapas en el mismo sitio, con el selector **Sinea | Verdegrad** arriba:
+Tres mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía** arriba:
 
 - **Sinea**, la ciudad junto al mar: `index.html`
 - **Verdegrad**, el pueblo verde de Natalia, con su fortaleza en la penumbra: `index.html?ciudad=verdegrad` (o `verdegrad.html`)
+- **Nuestra Utopía** (Наша Утопия), la fortaleza de Robert en «Предчувствие»: `index.html?ciudad=utopia` (o `utopia.html`)
 
 Los rótulos verdes en el borde del mapa también llevan de una ciudad a la otra («← Verdegrad · estación Nubecita» en Sinea; «← Antiguo camino a Sinea» en Verdegrad).
 
@@ -63,6 +64,10 @@ img/portadas/         portadas de las novelas
 
 Verdegrad está armado con lo que cuentan «Волны любви: Крепость в полумраке», «Нарисованный мир», «Лабиринт забвения», «Onde d'amore» y «Город без улыбок»: la calle de los Tilos (Липовая) baja suave hasta el mercado junto al campanario, la fortaleza se ve desde cualquier calle, por la calle del Molino se cruza el arroyo, después vienen el callejón de los Zapateros y la iglesia de Santa Ana, y al final de la calle del Oeste están las Puertas del Oeste y el antiguo camino a Sinea. La estación «Nubecita» (Облачко) queda en el borde, donde las calles se vuelven campo. En `tools/build.py` solo se buscan los capítulos que pasan en Verdegrad (por ejemplo, de «Нарисованный мир» solo los capítulos 1–13, porque después la acción se va a Новая Любовь).
 
+## Nuestra Utopía
+
+La fortaleza sigue la descripción de «Предчувствие», cap. 4: un fuerte pentagonal turquesa sobre una colina empinada de cima plana, con dos anillos de murallas, torres cilíndricas de vigía (de ventanas angostas y con adornos) en el anillo exterior, y la torre principal con su mirador junto a la plaza central. Alrededor, el valle verde; más allá, el desierto con el búnker de Robert y la tumba vacía de Luis; al oeste, el mar de los tanques-araña; al este, los túneles hacia el campamento de las montañas. Delante del muro sur está el Muro de Luis de «Предчувствие 2.4», cuyas placas brillan de noche. Sobre la fortaleza vuelan los drones-gaviota. Los datos están en `data/utopia/` y la geografía en `js/ciudades/utopia.js`.
+
 ## Añadir o corregir un lugar
 
 1. Editar `data/lugares.json`. Cada lugar tiene:
@@ -71,7 +76,7 @@ Verdegrad está armado con lo que cuentan «Волны любви: Крепос�
    - `modelo`: el edificio 3D (`faro`, `torre-tv`, `ayuntamiento`, `planetario`, `estacion`, `museo`, `hotel`, `cafe`, `taller`, `molino`, `iglesia`…, o `ninguno` para solo el marcador);
    - `desc`: la descripción;
    - `buscar`: expresión regular que se busca en los capítulos para saber en qué novelas aparece (por ejemplo `площад\\w* Данте|plaza Dante|piazza Dante`);
-   - opcionales: `buscar_en` (patrón que solo vale en ciertas novelas), `extra` (capítulos añadidos a mano: `{"el-impostor": [1]}`), `ilustracion` (elegir la imagen a mano: `["golos", "19-01.jpg"]`).
+   - opcionales: `solo` (buscar solo en esas novelas), `excluir` (novelas), `excluir_caps` (capítulos: `{"predchuvstvie-2-4": [1]}`), `buscar_en` (patrón que solo vale en ciertas novelas), `extra` (capítulos añadidos a mano: `{"el-impostor": [1]}`), `ilustracion` (elegir la imagen a mano: `["golos", "19-01.jpg"]`).
 2. Agregar su nombre y descripción en ruso en `data/lugares.ru.json` (el script avisa «FALTA traducción rusa» si falta).
 3. Opcional: reseñas en `data/resenas.json`, con la misma clave id: `{"a": "Vasili", "ar": "Василий", "s": 4, "es": "…", "ru": "…"}`. Si el texto empieza con «Respuesta del propietario» / «Ответ владельца», se muestra como respuesta del dueño.
 4. Regenerar los datos con una copia local de litmir al lado:

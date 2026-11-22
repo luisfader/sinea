@@ -16,6 +16,8 @@ LIT = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else os.path.join(ROOT, '
 # Novelas ambientadas (total o parcialmente) en Sinea. Título en español para
 # las que no lo tienen. El orden decide qué novela aporta la ilustración.
 NOVELAS = {
+    'predchuvstvie': 'El presentimiento', 'predchuvstvie-2': 'El presentimiento 2', 'predchuvstvie-2-2': 'El presentimiento 2.2',
+    'predchuvstvie-2-3': 'El presentimiento 2.3', 'predchuvstvie-2-4': 'El presentimiento 2.4',
     'grustnyj-gorod': 'La ciudad triste', 'la-citta-triste': 'La ciudad triste (it.)',
     'el-tren-fantasma': None, 'prizrachnyj-poezd': 'El tren fantasma (ru.)', 'il-treno-fantasma': 'El tren fantasma (it.)',
     'el-tren': None, 'bezumie-v-poezde': 'Locura en el tren',
@@ -55,6 +57,8 @@ CIUDADES = {
      # capítulos que pasan en Verdegrad (el resto ocurre en Sinea, en Новая Любовь o en la Ciudad del Norte)
      'rangos': {'volny-lyubvi-narisovannyj-mir': [(1, 13)], 'volny-lyubvi-labirint-zabveniya': [(1, 6)],
                 'volny-lyubvi-gorod-bez-ulybok': [(1, 3), (43, 44)], 'onde-d-amore': [(11, 20)]}},
+    'utopia': {'dir': os.path.join('data', 'utopia'), 'novelas': [
+        'predchuvstvie', 'predchuvstvie-2', 'predchuvstvie-2-2', 'predchuvstvie-2-3', 'predchuvstvie-2-4']},
 }
 # Excepciones: patrones demasiado generales que solo valen en ciertas novelas
 SOLO = {
@@ -133,8 +137,11 @@ def procesar(cfg, textos, titulos, seg, usadas):
         excl = set(L.get('excluir') or [])
         hits = collections.OrderedDict(); primera = {}
         rangos = cfg.get('rangos') or {}
+        excl_caps = L.get('excluir_caps') or {}
         def ok(slug, f):
             if slug not in novs or slug in excl or (solo and slug not in solo):
+                return False
+            if f[:2].isdigit() and int(f[:2]) in excl_caps.get(slug, []):
                 return False
             if slug in rangos:
                 num = int(f[:2]) if f[:2].isdigit() else 0

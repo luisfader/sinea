@@ -1,7 +1,7 @@
 // Construcción de la escena 3D de Sinea: relieve, agua, calles, edificios e hitos.
 import * as THREE from './vendor/three.module.js';
 import {
-  LIMITES, COSTA, RIO, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, AFUERAS, MUELLES, CIUDAD, altura, costa, rio, dentro, distLinea, distSeg
+  LIMITES, COSTA, RIO, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, AFUERAS, MUELLES, CIUDAD, AFUERAS_HUECO, AFUERAS_COLOR, colorSuelo, zonaArboles, altura, costa, rio, dentro, distLinea, distSeg
 } from './mundo.js';
 
 // mundo (x este, y norte) → three (X, Y arriba, Z sur)
@@ -33,7 +33,8 @@ export function pintarSuelo(S, minimas) {
       const v = Math.min(1, Math.max(0, (h - 6) / 70));
       r = 214 - 60 * v; gg = 222 - 30 * v; b = 190 - 70 * v;
     }
-    if (CIUDAD !== 'sinea' && !BARRIOS.some(B => B.nombre && dentro([x, y], B.pol)) && !PARQUES.some(P => dentro([x, y], P.pol)) && h < 22) {
+    if (colorSuelo && c >= 22) { [r, gg, b] = colorSuelo(x, y, h, c); }
+    if (CIUDAD === 'verdegrad' && !BARRIOS.some(B => B.nombre && dentro([x, y], B.pol)) && !PARQUES.some(P => dentro([x, y], P.pol)) && h < 22) {
       // campos alrededor del pueblo: girasoles, trigo, huertas y prados
       const a = Math.floor((x + y * 0.35) / 170), bb = Math.floor((y - x * 0.25) / 130);
       const k = Math.abs(Math.sin(a * 12.9898 + bb * 78.233) * 43758.5453) % 1;
@@ -292,7 +293,8 @@ export function crearArboles(reservas) {
   for (let i = 0; i < 2600; i++) {
     const x = LIMITES.x0 + r() * W, y = LIMITES.y0 + r() * H;
     if (costa(x, y) < 40 || BARRIOS.some(b => dentro([x, y], b.pol))) continue;
-    if (altura(x, y) < 22 && r() < 0.7) continue;
+    if (zonaArboles) { if (!zonaArboles(x, y) || r() < 0.55) continue; }
+    else if (altura(x, y) < 22 && r() < 0.7) continue;
     pts.push([x, y, 3]);
   }
   const copa = new THREE.IcosahedronGeometry(1, 1); copa.translate(0, 1.1, 0);
@@ -344,13 +346,13 @@ export function crearPuentes() {
 export function crearAfueras() {
   const sh = new THREE.Shape();
   AFUERAS.forEach(([x, y], i) => i ? sh.lineTo(x, -y) : sh.moveTo(x, -y)); sh.closePath();
-  if (CIUDAD !== 'sinea') { // la ciudad está rodeada de campo: agujero donde está el terreno detallado
+  if (AFUERAS_HUECO) { // la ciudad está rodeada de campo: agujero donde está el terreno detallado
     const h = new THREE.Path(), e = 40, { x0, x1, y0, y1 } = LIMITES;
     h.moveTo(x0 + e, -(y0 + e)); h.lineTo(x0 + e, -(y1 - e)); h.lineTo(x1 - e, -(y1 - e)); h.lineTo(x1 - e, -(y0 + e)); h.closePath();
     sh.holes.push(h);
   }
   const geo = new THREE.ShapeGeometry(sh); geo.rotateX(Math.PI / 2);
-  const mat = new THREE.MeshStandardMaterial({ color: CIUDAD === 'sinea' ? 0xd6debe : 0xc4d6a4, roughness: 1, side: THREE.DoubleSide });
-  const m = new THREE.Mesh(geo, mat); m.position.y = CIUDAD === 'sinea' ? 1.2 : 3.2;
+  const mat = new THREE.MeshStandardMaterial({ color: AFUERAS_COLOR, roughness: 1, side: THREE.DoubleSide });
+  const m = new THREE.Mesh(geo, mat); m.position.y = CIUDAD === 'verdegrad' ? 3.2 : 1.2;
   return m;
 }
