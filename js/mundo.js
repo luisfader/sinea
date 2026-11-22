@@ -6,7 +6,7 @@ import * as VERDEGRAD from './ciudades/verdegrad.js';
 export const CIUDAD = globalThis.CIUDAD === 'verdegrad' ? 'verdegrad' : 'sinea';
 const C = CIUDAD === 'verdegrad' ? VERDEGRAD : SINEA;
 export const ARROYO = C.ARROYO || [], LAGOS = C.LAGOS || [];
-export const { LIMITES, COSTA, TIERRA, RIO, COLINAS, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, BORDES, AFUERAS, MUELLES, RESERVAS, EXTRAS, VISTA, NOMBRE, LEMA } = C;
+export const { LIMITES, COSTA, TIERRA, RIO, COLINAS, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, BORDES, AFUERAS, MUELLES, RESERVAS, EXTRAS, VISTA, NOMBRE, LEMA, RUTA_BUS } = C;
 
 /* ---------- utilidades geométricas ---------- */
 

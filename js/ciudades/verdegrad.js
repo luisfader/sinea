@@ -83,7 +83,16 @@ export const BORDES = [
 export const AFUERAS = [[-30000, -30000], [30000, -30000], [30000, 30000], [-30000, 30000]];
 export const MUELLES = [];
 export const RESERVAS = [[0, 0, 56], [-140, 170, 30], [430, 340, 135], [420, -600, 70]];
-export const EXTRAS = ['tren-girasoles'];
+export const EXTRAS = ['tren-girasoles', 'autobus-7'];
+
+// Recorrido del autobús n.º 7 de Víctor, siempre en marcha (por las calles del mapa).
+// p: parada (segundos detenido) · b: toca la bocina dos veces (bajo las ventanas de Natalia)
+export const RUTA_BUS = [
+  [-300, -170, { p: 5, n: 'Cocheras' }], [-300, -238], [-100, -228], [100, -226], [175, -238],
+  [200, -290], [300, -460], [400, -548, { p: 7, n: 'Estación «Nubecita»' }], [300, -460], [200, -290], [130, -180],
+  [40, -40], [-10, 15, { p: 4, n: 'Mercado' }], [-30, 40], [-140, 170], [-300, 380], [-318, 405, { b: 1 }], [-430, 560], [-620, 900],
+  [-430, 560], [-300, 380], [-140, 170], [-400, 140], [-485, 135], [-650, 110], [-690, 60], [-700, -150], [-700, -268], [-400, -250], [-300, -238]
+];
 export const VISTA = { inicio: [60, -40, 1700, 0.98, 0.45], toda: [0, 50, 3000, 0.85, 0.35], cat: [0, 50, 2300, 0.85], previa: [0, 200], lejos: 4800, zoomExtra: 1.3 };
 export const NOMBRE = { es: 'Verdegrad', ru: 'Вердеград', gen: 'Вердеграда', dat: 'Вердеграду' };
 export const LEMA = { es: '«aquí se respira mejor; aquí se puede ser más libre»', ru: '«здесь легче дышать, здесь можно быть свободнее»' };

@@ -23,6 +23,7 @@ No necesita compilación: es un `index.html` con módulos JavaScript y three.js 
 - **Filtrar por personaje**: el detective Vasili, Sasha, Marcos y Alicia, Irina, Franco y Chiara, Luis y Natalia, Alessio y Tatiana, Fabrizio y Lucía.
 - **Casas de los personajes**: Marcos y Alicia (calle de los Castaños), la familia Grande (Franco, Alfredo y Gaia), Chiara, Sasha, el piso de Luis y Natalia, la oficina del detective Vasili y el carrito de helados de Octavio Grande en la plaza Dante. En el menú: «Casas de los personajes».
 - **Reseñas**: restaurantes, cafés, tiendas, bares y lugares famosos tienen reseñas con estrellas escritas por los propios personajes (Casimiro Condena, el zorro, Doña Carmen, Ashot…), en español y en ruso. En el menú: «Lugares con reseñas».
+- **El autobús n.º 7 de Víctor** (Verdegrad) anda sin parar: cocheras → malecón → estación «Nubecita» → mercado → calle de los Tilos (dos bocinazos bajo las ventanas de Natalia) → calle del Molino. Tocándolo, la cámara lo sigue. El recorrido está en `RUTA_BUS` de `js/ciudades/verdegrad.js`.
 - **Noche**: se encienden las ventanas, el faro barre la bahía con su haz y, por las vías del barrio de los Locos, pasa el tren fantasma.
 - **Enlaces directos**: `#/lugar/faro-ael`, `#/novela/opasnoe-svidanie`, `#/personaje/vasili`.
 

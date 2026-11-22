@@ -134,6 +134,7 @@ export const AFUERAS = [[2900, 3800], [3050, 6000], [5200, 45000], [-45000, 4500
 export const MUELLES = [[480, -1185, 620, 40]];  // [x, y, ancho, alto] pavimento portuario
 export const RESERVAS = [[600, -640, 82], [760, -1180, 60]];  // zonas sin edificios genéricos
 export const EXTRAS = ['delfines', 'tren-fantasma'];
+export const RUTA_BUS = [];
 export const VISTA = { inicio: [1000, -300, 2700, 0.98, 0.62], toda: [800, -100, 4600, 0.85, 0.5], cat: [500, -300, 3400, 0.85], previa: [700, 500], lejos: 9500 };
 export const NOMBRE = { es: 'Sinea', ru: 'Синея', gen: 'Синеи', dat: 'Синее' };
 export const LEMA = { es: '«una ciudad de nieblas, de silencio y de deseos no dichos»', ru: '«город туманов, тишины и невысказанных желаний»' };

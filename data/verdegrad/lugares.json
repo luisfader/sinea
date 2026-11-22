@@ -233,14 +233,15 @@
    "x": -300,
    "y": -170,
    "modelo": "cocheras",
-   "desc": "De aquí sale cada mañana a las seis, puntual, el autobús n.º 7: azul, viejo, con una abolladura en el ala izquierda. Lo maneja Víctor, el padre de Natalia, que nunca dice «buenos días, hija» en voz alta: lo dice la bocina, dos toques bajo su ventana. En «Похититель сердец» Víctor para el 7 en la estación de Verdegrad fuera de recorrido. En «Лабиринт забвения» un capítulo entero se titula «El autobús no tocó la bocina».",
+   "desc": "De aquí sale cada mañana a las seis, puntual, el autobús n.º 7: azul, viejo, con una abolladura en el ala izquierda. Lo maneja Víctor, el padre de Natalia, que nunca dice «buenos días, hija» en voz alta: lo dice la bocina, dos toques bajo su ventana. En «Похититель сердец» Víctor para el 7 en la estación de Verdegrad fuera de recorrido. En «Лабиринт забвения» un capítulo entero se titula «El autobús no tocó la bocina». En el mapa, el 7 no se detiene nunca: sale de las cocheras, va por el malecón hasta la estación «Nubecita», vuelve al mercado, sube por la calle de los Tilos —dos bocinazos bajo las ventanas de Natalia— y regresa por la calle del Molino. Tocá el autobús para seguirlo.",
    "buscar": "автобус\\w* (номер )?сем\\w*|седьм\\w+ автобус|седьмого маршрута|синему автобусу|Автобус не посигналил",
    "solo": [
     "volny-lyubvi-labirint-zabveniya",
     "volny-lyubvi-narisovannyj-mir",
     "pokhititel-serdec-portret-osnovatelya",
     "volny-lyubvi-krepost"
-   ]
+   ],
+   "sin_ilustracion": true
   },
   {
    "id": "vg-malecon",

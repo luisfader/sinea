@@ -3,7 +3,7 @@ import * as THREE from './vendor/three.module.js';
 import { MapControls } from './vendor/MapControls.js';
 import { LIMITES, BARRIOS, CALLES, BORDES, EXTRAS, VISTA, NOMBRE, LEMA, CIUDAD, altura } from './mundo.js';
 import { pintarSuelo, crearTerreno, crearMar, crearEdificios, crearArboles, crearPuentes, crearAfueras } from './escena.js';
-import { construirHitos, crearDelfines, crearTrenFantasma } from './hitos.js';
+import { construirHitos, crearDelfines, crearTrenFantasma, crearAutobus } from './hitos.js';
 import { CIUDADES, NOVELAS, IDIOMAS, IDIOMAS_RU } from './datos.js';
 const LUGARES = CIUDADES[CIUDAD];
 
@@ -69,7 +69,7 @@ const cielo = new THREE.HemisphereLight(0xdfeeff, 0xcbb894, 1.25); escena.add(ci
 const progreso = (es, ru) => { $('#carga p').textContent = tr(es, ru || es); };
 const espera = () => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0)));
 
-let hitos, delf, tren, edificios;
+let hitos, delf, tren, edificios, autobus;
 async function construir() {
   progreso('Pintando el mapa…', 'Рисуем карту…'); await espera();
   const S = renderer.capabilities.maxTextureSize >= 8192 && innerWidth > 900 ? 8192 : 4096;
@@ -86,6 +86,7 @@ async function construir() {
   escena.add(crearArboles(hitos.reservas)); escena.add(crearPuentes());
   if (EXTRAS.includes('delfines')) { delf = crearDelfines(); escena.add(delf.g); }
   if (EXTRAS.includes('tren-fantasma')) { tren = crearTrenFantasma(); escena.add(tren.g); }
+  if (EXTRAS.includes('autobus-7')) { autobus = crearAutobus(); escena.add(autobus.g); }
   if (EXTRAS.includes('tren-girasoles')) { tren = crearTrenFantasma({ fantasma: false, vagones: 5, s0: 200, s1: 3900, vel: 22 }); escena.add(tren.g); }
 }
 
@@ -181,10 +182,27 @@ for (const [nombre, t, pts, nru] of CALLES) {
 }
 
 const vp = new THREE.Vector3(), vp2 = new THREE.Vector3();
+let siguiendo = false;
+const marcaBus = document.createElement('button'); marcaBus.className = 'pin bus'; marcaBus.style.setProperty('--c', '#2f6fbf');
+marcaBus.innerHTML = `<span class="ic"><svg viewBox="0 0 24 24">${ICONO.transporte}</svg></span><span class="nm"></span><span class="bip"></span>`;
+marcaBus.style.display = 'none'; capa.appendChild(marcaBus);
+marcaBus.addEventListener('click', (e) => { e.stopPropagation(); abrirLugar('vg-autobus-7', false); siguiendo = true; volar(autobus.estado.x, autobus.estado.y, 260, 1.0, null, 900); });
+controles.addEventListener('start', () => { siguiendo = false; });
 let filtro = null, filtroIds = null, seleccion = null;
 function proyectar(x, y, h, out) {
   vp.set(x, h, -y).project(camara);
   out.x = (vp.x + 1) / 2 * innerWidth; out.y = (1 - vp.y) / 2 * innerHeight; out.z = vp.z; return out;
+}
+function marcaAutobus() {
+  if (!autobus) return;
+  const o = proyectar(autobus.estado.x, autobus.estado.y, altura(autobus.estado.x, autobus.estado.y) + 9, {});
+  const vis = o.z < 1 && o.x > -50 && o.x < innerWidth + 50 && o.y > -50 && o.y < innerHeight + 50;
+  marcaBus.style.display = vis ? '' : 'none'; if (!vis) return;
+  marcaBus.style.transform = `translate(${o.x - 13}px,${o.y - 30}px)`;
+  marcaBus.querySelector('.nm').textContent = tr('Autobús n.º 7', 'Автобус № 7') + (autobus.estado.parada ? ' · ' + tr('parada', 'остановка') : '');
+  const bip = marcaBus.querySelector('.bip');
+  bip.textContent = autobus.estado.bocina ? tr('¡pi-pip! · buenos días, hija', 'би-бип! · доброе утро, дочка') : '';
+  bip.style.display = autobus.estado.bocina ? '' : 'none';
 }
 function etiquetas() {
   const dist = camara.position.distanceTo(controles.target);
@@ -281,7 +299,8 @@ function abrirLugar(id, mover = false) {
     <h3>${lang === 'ru' ? `Встречается в ${L.apar.length} ${plural(L.apar.length, '', '', 'романе', 'романах', 'романах')}` : `Aparece en ${L.apar.length === 1 ? 'una novela' : L.apar.length + ' novelas'}`} <small>${total} ${plural(total, 'capítulo', 'capítulos', 'глава', 'главы', 'глав')}</small></h3>
     ${L.apar.map(fichaNovela).join('') || `<p class="vacio">${tr('Todavía no se encontró en el texto de las novelas.', 'Пока не найдено в тексте романов.')}</p>`}`;
   panel.classList.add('abierto'); panel.scrollTop = 0; cuerpo.scrollTop = 0;
-  if (mover) volar(L.x, L.y, distanciaPara(L), 0.98);
+  if (id === 'vg-autobus-7' && autobus) { siguiendo = true; if (mover) volar(autobus.estado.x, autobus.estado.y, 260, 1.0, null, 900); }
+  else if (mover) volar(L.x, L.y, distanciaPara(L), 0.98);
   cuerpo.querySelector('[data-acc=volar]').onclick = () => volar(L.x, L.y, distanciaPara(L), 0.98);
   cuerpo.querySelector('[data-acc=girar]').onclick = () => { volar(L.x, L.y, distanciaPara(L), 1.05); orbita = performance.now(); };
   cuerpo.querySelector('[data-acc=link]').onclick = (e) => { navigator.clipboard?.writeText(location.href); e.target.textContent = tr('Enlace copiado', 'Ссылка скопирована'); };
@@ -485,10 +504,14 @@ function cuadro() {
   sol.position.set(T.x + 1400, T.y + 2600, T.z + 900); sol.target.position.copy(T);
   if (hitos) hitos.anims.forEach(f => f(t, noche));
   if (delf) delf.anim(t); if (tren) tren.anim(t, noche);
+  if (autobus) {
+    autobus.anim(t, noche);
+    if (siguiendo) { const h = altura(autobus.estado.x, autobus.estado.y); const nt = new THREE.Vector3(autobus.estado.x, h, -autobus.estado.y); const d = nt.sub(controles.target).multiplyScalar(.08); controles.target.add(d); camara.position.add(d); }
+  }
   const az = Math.atan2(camara.position.x - T.x, camara.position.z - T.z);
   brujula.style.transform = `rotate(${az * 180 / Math.PI}deg)`;
   renderer.render(escena, camara);
-  etiquetas();
+  etiquetas(); marcaAutobus();
   requestAnimationFrame(cuadro);
 }
 

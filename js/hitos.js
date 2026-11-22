@@ -1,7 +1,7 @@
 // Edificios y lugares famosos de Sinea modelados en 3D.
 // Cada modelo devuelve { g: THREE.Group, r: radio libre de edificios, anim?(t, noche) }.
 import * as THREE from './vendor/three.module.js';
-import { altura, rio, distLinea, VIAS, RESERVAS } from './mundo.js';
+import { altura, rio, distLinea, VIAS, RESERVAS, RUTA_BUS } from './mundo.js';
 import { ventanas } from './escena.js';
 
 const mats = {};
@@ -358,9 +358,7 @@ const MODELOS = {
   cocheras() {
     const g = new THREE.Group();
     g.add(caja(30, 7, 18, 0xbdb6a6)); const tg = new THREE.CylinderGeometry(9, 9, 30, 14, 1, false, 0, Math.PI); tg.rotateZ(Math.PI / 2); const tt = new THREE.Mesh(tg, M(0x8c8c88)); tt.position.y = 7; tt.scale.y = .45; g.add(tt);
-    const bus = new THREE.Group(); bus.add(caja(10, 3.2, 3, 0x2f6fbf, 0, .5)); bus.add(caja(9.8, 1, 3.05, 0xcfe6f7, 0, 2.3)); for (const x of [-3, 3]) for (const z of [-1.5, 1.5]) { const r = new THREE.Mesh(new THREE.CylinderGeometry(.6, .6, .4, 12), M(0x222222)); r.rotation.x = Math.PI / 2; r.position.set(x, .6, z); bus.add(r); }
-    bus.position.set(0, 0, -16); g.add(bus);
-    return { g, r: 22, anim(t) { bus.position.x = Math.sin(t * .15) * 6; } };
+    return { g, r: 22 };
   },
   fuente() {
     const g = new THREE.Group();
@@ -451,5 +449,57 @@ export function crearTrenFantasma(o = {}) {
     const s = s0 + ((t * vel) % (s1 - s0));
     vagones.forEach((v, i) => { const [x, y, a] = punto(s - i * 20); v.position.set(x, altura(x, y) + 3.5 + Math.sin(t * 2 + i) * .4, -y); v.rotation.y = a; });
     g.visible = fantasma ? n > .35 : true;
+  } };
+}
+
+// El autobús n.º 7 de Víctor: azul, viejo, con una abolladura en el ala izquierda. Nunca deja de andar.
+export function crearAutobus() {
+  const g = new THREE.Group(), cuerpo = new THREE.Group(); g.add(cuerpo);
+  const azul = new THREE.MeshStandardMaterial({ color: 0x2f6fbf, roughness: .55, metalness: .1 });
+  const caj = new THREE.Mesh(new THREE.BoxGeometry(11, 3.2, 3.2), azul); caj.position.y = 2.1; caj.castShadow = true; cuerpo.add(caj);
+  const vid = new THREE.MeshStandardMaterial({ color: 0xcfe6f7, roughness: .2, emissive: 0xffd58a, emissiveIntensity: 0 });
+  const vent = new THREE.Mesh(new THREE.BoxGeometry(10.4, 1.1, 3.25), vid); vent.position.y = 2.7; cuerpo.add(vent);
+  const techo = new THREE.Mesh(new THREE.BoxGeometry(10.8, .3, 3), new THREE.MeshStandardMaterial({ color: 0xe9eef2 })); techo.position.y = 3.85; cuerpo.add(techo);
+  const abolladura = new THREE.Mesh(new THREE.SphereGeometry(.7, 8, 6), new THREE.MeshStandardMaterial({ color: 0x24589a })); abolladura.position.set(3.6, 1.4, 1.45); abolladura.scale.set(1.4, .7, .25); cuerpo.add(abolladura);
+  const cartel = new THREE.Mesh(new THREE.BoxGeometry(.1, .7, 1.4), new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0xfff2b0, emissiveIntensity: .4 })); cartel.position.set(5.52, 3.2, 0); cuerpo.add(cartel);
+  const ruedas = [];
+  for (const x of [-3.6, 3.4]) for (const z of [-1.55, 1.55]) { const r = new THREE.Mesh(new THREE.CylinderGeometry(.62, .62, .4, 14), new THREE.MeshStandardMaterial({ color: 0x1d1d1d })); r.rotation.x = Math.PI / 2; r.position.set(x, .62, z); cuerpo.add(r); ruedas.push(r); }
+  const faro = new THREE.MeshStandardMaterial({ color: 0xfff6d0, emissive: 0xffe9a0, emissiveIntensity: .2 });
+  for (const z of [-1.1, 1.1]) { const f = new THREE.Mesh(new THREE.CircleGeometry(.3, 12), faro); f.position.set(5.53, 1.2, z); f.rotation.y = Math.PI / 2; cuerpo.add(f); }
+  const luzBus = new THREE.SpotLight(0xffe9b0, 0, 90, .5, .6, 1.2); luzBus.position.set(5.6, 1.4, 0); luzBus.target.position.set(30, -2, 0); cuerpo.add(luzBus, luzBus.target);
+  g.scale.setScalar(1.25);
+
+  // recorrido: longitudes acumuladas
+  const P = RUTA_BUS.map(p => ({ x: p[0], y: p[1], o: p[2] || {} }));
+  const L = [0]; for (let i = 1; i < P.length; i++) L.push(L[i - 1] + Math.hypot(P[i].x - P[i - 1].x, P[i].y - P[i - 1].y));
+  L.push(L[L.length - 1] + Math.hypot(P[0].x - P[P.length - 1].x, P[0].y - P[P.length - 1].y)); // vuelve al inicio
+  const total = L[L.length - 1], VEL = 11; // m/s, al paso tranquilo de Verdegrad
+  const paradas = P.map((p, i) => [L[i], p.o.p || 0, p.o]).filter(x => x[1] || x[2].b);
+  const pausaTotal = paradas.reduce((t, x) => t + x[1], 0), ciclo = total / VEL + pausaTotal;
+  const punto = (s) => {
+    s = ((s % total) + total) % total; let i = 1; while (i < L.length - 1 && L[i] < s) i++;
+    const a = P[i - 1], b = P[i % P.length], k = (s - L[i - 1]) / ((L[i] - L[i - 1]) || 1);
+    return [a.x + (b.x - a.x) * k, a.y + (b.y - a.y) * k, Math.atan2(b.y - a.y, b.x - a.x)];
+  };
+  let ang = 0;
+  const estado = { x: P[0].x, y: P[0].y, bocina: false, parada: '' };
+  return { g, estado, anim(t, n) {
+    // tiempo dentro del ciclo → distancia recorrida, descontando las paradas
+    let tc = t % ciclo, s = 0, quieto = '';
+    for (const [d, pausa, o] of paradas) {
+      const llegar = d / VEL;
+      if (tc < llegar) break;
+      if (tc < llegar + pausa) { quieto = o.n || ''; tc = llegar; break; }
+      tc -= pausa;
+    }
+    s = tc * VEL;
+    const [x, y, a] = punto(s), [x2, y2] = punto(s + 6);
+    let da = Math.atan2(y2 - y, x2 - x) - ang; while (da > Math.PI) da -= 2 * Math.PI; while (da < -Math.PI) da += 2 * Math.PI; ang += da * .12;
+    g.position.set(x, altura(x, y) + .15, -y); g.rotation.y = ang;
+    cuerpo.position.y = quieto ? 0 : Math.sin(t * 9) * .04;
+    if (!quieto) ruedas.forEach(r => r.rotation.y = s * .8);
+    const bz = paradas.find(p => p[2].b && Math.abs(s - p[0]) < 30);
+    estado.x = x; estado.y = y; estado.parada = quieto; estado.bocina = !!bz;
+    vid.emissiveIntensity = .9 * n; faro.emissiveIntensity = .2 + 2.5 * n; luzBus.intensity = 2500 * n;
   } };
 }

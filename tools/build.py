@@ -168,7 +168,9 @@ def procesar(cfg, textos, titulos, seg, usadas):
             apar.append({'n': slug, 'c': cs})
             usadas.add(slug)
         apar.sort(key=lambda a: -len(a['c']))
-        if L.get('ilustracion'):
+        if L.get('sin_ilustracion'):
+            img = None
+        elif L.get('ilustracion'):
             sl, fn = L['ilustracion']
             r = reducir(os.path.join(LIT, 'novels', sl, 'img', fn), os.path.join('img', 'lugares', L['id'] + '.webp'), 640)
             img = {'src': r, 'n': sl, 'c': seg_of(sl, fn.split('-')[0].split('.')[0] + '.md')} if r else None
