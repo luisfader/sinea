@@ -497,6 +497,44 @@ const MODELOS = {
     const ant = []; for (const x of [-9, -3, 3, 9]) { const f = esfera(.6, new THREE.MeshStandardMaterial({ color: 0xffb35a, emissive: 0xff8a1a, emissiveIntensity: 0 }), x, 7, -8.4); g.add(f); ant.push(f); }
     return { g, r: 16, anim(t, n) { ant.forEach((f, i) => f.material.emissiveIntensity = (.5 + 2.5 * n) * (0.8 + .2 * Math.sin(t * 9 + i))); } };
   },
+  huertas() {
+    // canteros de verduras en el valle: surcos de colores, caminitos, un tanque de agua y un espantapájaros
+    const g = new THREE.Group();
+    const verdes = [0x5f9e3a, 0x7cb342, 0x8fbf4d, 0x4e8a34, 0xa5c75a, 0x6aa84f, 0xc7b24a, 0x9c6b3e];
+    const tierra = M(0x7a5a3a, { roughness: 1 });
+    for (let c = 0; c < 4; c++) for (let f = 0; f < 3; f++) {
+      const px = (c - 1.5) * 42, pz = (f - 1) * 38, col = verdes[(c * 3 + f) % verdes.length];
+      g.add(caja(36, .25, 32, tierra, px, -.05, pz));
+      const planta = M(col, { roughness: 1, flatShading: true });
+      for (let r = 0; r < 7; r++) {
+        const fila = new THREE.Mesh(new THREE.BoxGeometry(33, .9 + (r % 2) * .3, 1.8), planta);
+        fila.position.set(px, .55, pz - 13 + r * 4.3); fila.castShadow = true; g.add(fila);
+        if ((c + f) % 3 === 0) for (let k = 0; k < 6; k++) { const ca = new THREE.Mesh(new THREE.SphereGeometry(.7, 6, 4), M(k % 2 ? 0xe07b2a : 0xd94b3b)); ca.position.set(px - 14 + k * 5.5, 1.1, pz - 13 + r * 4.3); g.add(ca); }
+      }
+    }
+    const tanque = cil(4, 4, 6, 0x6f8fa0, 95, 0, -10, 16); g.add(tanque);
+    const esp = new THREE.Group(); esp.position.set(-20, 0, 2);
+    esp.add(caja(.3, 4, .3, 0x6b4a2f)); esp.add(caja(3.4, .3, .3, 0x6b4a2f, 0, 2.8)); esp.add(esfera(.6, 0xe8d9a8, 0, 4.3, 0)); esp.add(cil(.1, .9, .7, 0x8a6a2a, 0, 4.7, 0, 8));
+    esp.add(caja(1.4, 1.6, .6, 0x3f6fb5, 0, 2.2, 0)); g.add(esp);
+    const carretilla = caja(1.6, .7, 1, 0x9e9e9e, 30, .3, 22); g.add(carretilla);
+    return { g, r: 95, anim(t) { esp.rotation.y = Math.sin(t * .4) * .15; } };
+  },
+  invernadero() {
+    const g = new THREE.Group();
+    const vidrio = new THREE.MeshStandardMaterial({ color: 0xcdeee6, transparent: true, opacity: .38, metalness: .2, roughness: .05, emissive: 0x7dffb0, emissiveIntensity: 0, side: THREE.DoubleSide, depthWrite: false });
+    const bg = new THREE.CylinderGeometry(7, 7, 38, 20, 1, true, 0, Math.PI); bg.rotateZ(Math.PI / 2);
+    const boveda = new THREE.Mesh(bg, vidrio); boveda.position.y = 1.2; g.add(boveda);
+    const marco = M(0xe9eef2, { metalness: .5, roughness: .4 });
+    for (let x = -19; x <= 19; x += 4.75) { const arco = new THREE.Mesh(new THREE.TorusGeometry(7, .15, 4, 20, Math.PI), marco); arco.position.set(x, 1.2, 0); arco.rotation.y = Math.PI / 2; g.add(arco); }
+    g.add(caja(38.4, 1.2, 14.4, marco, 0, 0, 0));
+    for (const z of [-7.1, 7.1]) { const tapa = new THREE.Mesh(new THREE.CircleGeometry(7, 20, 0, Math.PI), vidrio); tapa.position.set(z > 0 ? 19 : -19, 1.2, 0); tapa.rotation.y = Math.PI / 2; g.add(tapa); }
+    const hojas = [0x3f8f3a, 0x5aa846, 0x2e7d32, 0x7cb342];
+    for (let i = 0; i < 36; i++) { const p = new THREE.Mesh(new THREE.IcosahedronGeometry(.9 + (i % 3) * .35, 0), M(hojas[i % 4], { flatShading: true }));
+      p.position.set(-16 + (i % 12) * 2.9, 1.9 + (i % 2) * .4, -3.5 + Math.floor(i / 12) * 3.5); g.add(p);
+      if (i % 4 === 0) { const f = new THREE.Mesh(new THREE.SphereGeometry(.35, 6, 4), M(i % 8 ? 0xd94b3b : 0xffd23f)); f.position.copy(p.position).add(new THREE.Vector3(.4, .6, .2)); g.add(f); } }
+    const luzI = luz(0xb8ffcf, 0, 60, 0, 6, 0); g.add(luzI);
+    return { g, r: 22, anim(t, n) { vidrio.emissiveIntensity = .45 * n; luzI.intensity = 900 * n; } };
+  },
   puente() { return { g: new THREE.Group(), r: 0 }; },
   casa() { return { g: new THREE.Group(), r: 0 }; },
   plaza() { return { g: new THREE.Group(), r: 34 }; },
@@ -529,7 +567,7 @@ export function construirHitos(lugares, u) {
     grupo.add(m.g);
     if (m.anim) anims.push(m.anim);
     if (m.r) reservas.push([L.x, L.y, m.r]);
-    L._h = h + ({ 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
+    L._h = h + ({ huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
   }
   // reserva extra: la plaza Dante entera y el puerto
   reservas.push(...RESERVAS);

@@ -1,58 +1,278 @@
 {
  "_info": "Reseñas de los habitantes de Nuestra Utopía.",
  "ut-torre-principal": [
-  {"a": "Robert", "ar": "Роберт", "s": 5, "es": "Desde arriba se ve todo el valle. Mi madre decía que la utopía no existe. Existe, mamá. Y la construí.", "ru": "Сверху видна вся долина. Мама говорила, что утопии не бывает. Бывает, мама. И я её построил."},
-  {"a": "Martin", "ar": "Мартин", "s": 1, "es": "Los calabozos del sótano: húmedos, oscuros y sin vista. No los recomiendo.", "ru": "Подземелья в подвале: сыро, темно и без вида. Не рекомендую."},
-  {"a": "Kenneth", "ar": "Кеннет", "s": 4, "es": "Buena vista. Le saco una estrella porque cada vez que subo alguien intenta tirarme.", "ru": "Хороший вид. Минус звезда: каждый раз, когда я поднимаюсь, кто-то пытается меня сбросить."}
+  {
+   "a": "Robert",
+   "ar": "Роберт",
+   "s": 5,
+   "es": "Desde arriba se ve todo el valle. Mi madre decía que la utopía no existe. Existe, mamá. Y la construí.",
+   "ru": "Сверху видна вся долина. Мама говорила, что утопии не бывает. Бывает, мама. И я её построил."
+  },
+  {
+   "a": "Martin",
+   "ar": "Мартин",
+   "s": 1,
+   "es": "Los calabozos del sótano: húmedos, oscuros y sin vista. No los recomiendo.",
+   "ru": "Подземелья в подвале: сыро, темно и без вида. Не рекомендую."
+  },
+  {
+   "a": "Kenneth",
+   "ar": "Кеннет",
+   "s": 4,
+   "es": "Buena vista. Le saco una estrella porque cada vez que subo alguien intenta tirarme.",
+   "ru": "Хороший вид. Минус звезда: каждый раз, когда я поднимаюсь, кто-то пытается меня сбросить."
+  }
  ],
  "ut-consejo": [
-  {"a": "Oxana", "ar": "Оксана", "s": 4, "es": "Aquí se gobierna. Aire viciado, antorchas, gritos. Tres reinas en una mesa y, por fin, decisiones en común.", "ru": "Здесь правят. Спёртый воздух, факелы, крики. Три королевы за одним столом и, наконец, общие решения."},
-  {"a": "Luis", "ar": "Луис", "s": 3, "es": "Una sala excelente para hacer diplomacia, Sáshenka. Que algunos lo llamen mentir es un problema de vocabulario.", "ru": "Отличный зал для дипломатии, Сашенька. То, что некоторые называют это ложью, — проблема словаря."},
-  {"a": "Zheni", "ar": "Жени", "s": 2, "es": "Propuse una moneda para organizar el trabajo. Nadie me escuchó. Una estrella por cada cuarto de la población que me siguió.", "ru": "Я предложила валюту, чтобы организовать труд. Никто не послушал. По звезде за каждую четверть населения, которая ушла за мной."}
+  {
+   "a": "Oxana",
+   "ar": "Оксана",
+   "s": 4,
+   "es": "Aquí se gobierna. Aire viciado, antorchas, gritos. Tres reinas en una mesa y, por fin, decisiones en común.",
+   "ru": "Здесь правят. Спёртый воздух, факелы, крики. Три королевы за одним столом и, наконец, общие решения."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 3,
+   "es": "Una sala excelente para hacer diplomacia, Sáshenka. Que algunos lo llamen mentir es un problema de vocabulario.",
+   "ru": "Отличный зал для дипломатии, Сашенька. То, что некоторые называют это ложью, — проблема словаря."
+  },
+  {
+   "a": "Zheni",
+   "ar": "Жени",
+   "s": 2,
+   "es": "Propuse una moneda para organizar el trabajo. Nadie me escuchó. Una estrella por cada cuarto de la población que me siguió.",
+   "ru": "Я предложила валюту, чтобы организовать труд. Никто не послушал. По звезде за каждую четверть населения, которая ушла за мной."
+  }
  ],
  "ut-alye-rozy": [
-  {"a": "Sasha", "ar": "Саша", "s": 5, "es": "Té de hierbas, lavanda y masas recién hechas. Los hombres no entran. Por eso aquí se dice la verdad.", "ru": "Травяной чай, лаванда и свежая выпечка. Мужчинам вход запрещён. Поэтому здесь говорят правду."},
-  {"a": "Natalia", "ar": "Наталья", "s": 5, "es": "Rompí tres servilletas de encaje retorciéndolas. Nadie me cobró ninguna.", "ru": "Изорвала три кружевные салфетки, пока их теребила. Ни за одну с меня не взяли денег."},
-  {"a": "Kenneth", "ar": "Кеннет", "s": 1, "es": "No me dejaron entrar. Huele riquísimo desde la puerta.", "ru": "Меня не пустили. От двери пахнет потрясающе."}
+  {
+   "a": "Sasha",
+   "ar": "Саша",
+   "s": 5,
+   "es": "Té de hierbas, lavanda y masas recién hechas. Los hombres no entran. Por eso aquí se dice la verdad.",
+   "ru": "Травяной чай, лаванда и свежая выпечка. Мужчинам вход запрещён. Поэтому здесь говорят правду."
+  },
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "Rompí tres servilletas de encaje retorciéndolas. Nadie me cobró ninguna.",
+   "ru": "Изорвала три кружевные салфетки, пока их теребила. Ни за одну с меня не взяли денег."
+  },
+  {
+   "a": "Kenneth",
+   "ar": "Кеннет",
+   "s": 1,
+   "es": "No me dejaron entrar. Huele riquísimo desde la puerta.",
+   "ru": "Меня не пустили. От двери пахнет потрясающе."
+  }
  ],
  "ut-bar": [
-  {"a": "Kenneth", "ar": "Кеннет", "s": 4, "es": "Buen lugar. Cada tanto hay que levantar a un romántico del piso.", "ru": "Хорошее место. Время от времени приходится поднимать с пола очередного романтика."},
-  {"a": "Luis", "ar": "Луис", "s": 2, "es": "No recuerdo nada de la noche. Me dicen que fue una sola copa.", "ru": "Ничего не помню про тот вечер. Говорят, это была одна рюмка."}
+  {
+   "a": "Kenneth",
+   "ar": "Кеннет",
+   "s": 4,
+   "es": "Buen lugar. Cada tanto hay que levantar a un romántico del piso.",
+   "ru": "Хорошее место. Время от времени приходится поднимать с пола очередного романтика."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 2,
+   "es": "No recuerdo nada de la noche. Me dicen que fue una sola copa.",
+   "ru": "Ничего не помню про тот вечер. Говорят, это была одна рюмка."
+  }
  ],
  "ut-hospital": [
-  {"a": "Robert", "ar": "Роберт", "s": 4, "es": "Me curaron el cuerpo. El resto me lo curó un sueño.", "ru": "Мне вылечили тело. Остальное вылечил сон."},
-  {"a": "Natalia, la doctora", "ar": "Наталья-врач", "s": 3, "es": "Instrumental escaso. Pacientes que preguntan demasiado.", "ru": "Инструментов мало. Пациенты задают слишком много вопросов."}
+  {
+   "a": "Robert",
+   "ar": "Роберт",
+   "s": 4,
+   "es": "Me curaron el cuerpo. El resto me lo curó un sueño.",
+   "ru": "Мне вылечили тело. Остальное вылечил сон."
+  },
+  {
+   "a": "Natalia, la doctora",
+   "ar": "Наталья-врач",
+   "s": 3,
+   "es": "Instrumental escaso. Pacientes que preguntan demasiado.",
+   "ru": "Инструментов мало. Пациенты задают слишком много вопросов."
+  }
  ],
  "ut-muro-cantor": [
-  {"a": "Agafia", "ar": "Агафья", "s": 5, "es": "Mi media campana brilla amarilla cuando le cuento cuentos. Tengo noventa años y por fin alguien me escucha.", "ru": "Моя половинка колокола светится жёлтым, когда я рассказываю ей сказки. Мне девяносто, и наконец-то меня кто-то слушает."},
-  {"a": "Rita", "ar": "Рита", "s": 5, "es": "Me dijeron que era una idea loca. Era una idea loca. Y canta.", "ru": "Мне сказали, что это безумная идея. Это была безумная идея. И она поёт."},
-  {"a": "Luis", "ar": "Луис", "s": 5, "es": "Seiscientas cuarenta placas. Lo vamos a lograr. Dios mío, lo vamos a lograr.", "ru": "Шестьсот сорок. Мы успеем. Господи, мы успеем."},
-  {"a": "Los chicos del tercer barracón", "ar": "Мальчишки из третьего барака", "s": 5, "es": "¡PUM PUM PUM! (Nuestra placa es la más roja.)", "ru": "БУМ-БУМ-БУМ! (Наша пластина самая красная.)"}
+  {
+   "a": "Agafia",
+   "ar": "Агафья",
+   "s": 5,
+   "es": "Mi media campana brilla amarilla cuando le cuento cuentos. Tengo noventa años y por fin alguien me escucha.",
+   "ru": "Моя половинка колокола светится жёлтым, когда я рассказываю ей сказки. Мне девяносто, и наконец-то меня кто-то слушает."
+  },
+  {
+   "a": "Rita",
+   "ar": "Рита",
+   "s": 5,
+   "es": "Me dijeron que era una idea loca. Era una idea loca. Y canta.",
+   "ru": "Мне сказали, что это безумная идея. Это была безумная идея. И она поёт."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Seiscientas cuarenta placas. Lo vamos a lograr. Dios mío, lo vamos a lograr.",
+   "ru": "Шестьсот сорок. Мы успеем. Господи, мы успеем."
+  },
+  {
+   "a": "Los chicos del tercer barracón",
+   "ar": "Мальчишки из третьего барака",
+   "s": 5,
+   "es": "¡PUM PUM PUM! (Nuestra placa es la más roja.)",
+   "ru": "БУМ-БУМ-БУМ! (Наша пластина самая красная.)"
+  }
  ],
  "ut-acacia": [
-  {"a": "Lusía", "ar": "Люсия", "s": 5, "es": "Vengo a tocarle el violín a papá. La acacia hace sombra justo donde me siento.", "ru": "Прихожу играть папе на скрипке. Акация даёт тень как раз там, где я сижу."}
+  {
+   "a": "Lusía",
+   "ar": "Люсия",
+   "s": 5,
+   "es": "Vengo a tocarle el violín a papá. La acacia hace sombra justo donde me siento.",
+   "ru": "Прихожу играть папе на скрипке. Акация даёт тень как раз там, где я сижу."
+  }
  ],
  "ut-taller-vasia": [
-  {"a": "Vasia", "ar": "Вася", "s": 5, "es": "Huele a nafta y a damascos. Si alguien sigue escondiendo damascos entre mis herramientas, que sepa que me los como.", "ru": "Пахнет бензином и абрикосами. Если кто-то и дальше будет прятать абрикосы среди моих инструментов, пусть знает: я их съедаю."},
-  {"a": "Lusía", "ar": "Люсия", "s": 5, "es": "Las motos vuelan. Yo no puedo subirme. Todavía.", "ru": "Мотоциклы летают. Мне на них нельзя. Пока."}
+  {
+   "a": "Vasia",
+   "ar": "Вася",
+   "s": 5,
+   "es": "Huele a nafta y a damascos. Si alguien sigue escondiendo damascos entre mis herramientas, que sepa que me los como.",
+   "ru": "Пахнет бензином и абрикосами. Если кто-то и дальше будет прятать абрикосы среди моих инструментов, пусть знает: я их съедаю."
+  },
+  {
+   "a": "Lusía",
+   "ar": "Люсия",
+   "s": 5,
+   "es": "Las motos vuelan. Yo no puedo subirme. Todavía.",
+   "ru": "Мотоциклы летают. Мне на них нельзя. Пока."
+  }
  ],
  "ut-bunker": [
-  {"a": "Natalia", "ar": "Наталья", "s": 5, "es": "Polvo, una puerta oxidada y las cartas que nunca me mandó. El lugar más triste y más querido del desierto.", "ru": "Пыль, ржавая дверь и письма, которые он мне так и не отправил. Самое грустное и самое дорогое место в пустыне."},
-  {"a": "Robert", "ar": "Роберт", "s": 4, "es": "Dos años solo aquí adentro. Buen aislamiento. Pésima compañía.", "ru": "Два года здесь в одиночестве. Отличная изоляция. Ужасная компания."}
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "Polvo, una puerta oxidada y las cartas que nunca me mandó. El lugar más triste y más querido del desierto.",
+   "ru": "Пыль, ржавая дверь и письма, которые он мне так и не отправил. Самое грустное и самое дорогое место в пустыне."
+  },
+  {
+   "a": "Robert",
+   "ar": "Роберт",
+   "s": 4,
+   "es": "Dos años solo aquí adentro. Buen aislamiento. Pésima compañía.",
+   "ru": "Два года здесь в одиночестве. Отличная изоляция. Ужасная компания."
+  }
  ],
  "ut-tumba-luis": [
-  {"a": "Natalia", "ar": "Наталья", "s": 1, "es": "Vacía. Típico de Luis.", "ru": "Пустая. Это так похоже на Луиса."},
-  {"a": "Luis", "ar": "Луис", "s": 5, "es": "Respuesta del propietario: sin comentarios.", "ru": "Ответ владельца: без комментариев."}
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 1,
+   "es": "Vacía. Típico de Luis.",
+   "ru": "Пустая. Это так похоже на Луиса."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Respuesta del propietario: sin comentarios.",
+   "ru": "Ответ владельца: без комментариев."
+  }
  ],
  "ut-puerta": [
-  {"a": "Dima", "ar": "Дима", "s": 4, "es": "La subida es durísima. Pero arriba hay gente que todavía cree en algo.", "ru": "Подъём очень тяжёлый. Но наверху есть люди, которые ещё во что-то верят."},
-  {"a": "Masha", "ar": "Маша", "s": 3, "es": "Vi muchas utopías nacer del engaño. Esta, por ahora, no. Por ahora.", "ru": "Я видела много утопий, рождённых обманом. Эта — пока нет. Пока."}
+  {
+   "a": "Dima",
+   "ar": "Дима",
+   "s": 4,
+   "es": "La subida es durísima. Pero arriba hay gente que todavía cree en algo.",
+   "ru": "Подъём очень тяжёлый. Но наверху есть люди, которые ещё во что-то верят."
+  },
+  {
+   "a": "Masha",
+   "ar": "Маша",
+   "s": 3,
+   "es": "Vi muchas utopías nacer del engaño. Esta, por ahora, no. Por ahora.",
+   "ru": "Я видела много утопий, рождённых обманом. Эта — пока нет. Пока."
+  }
  ],
  "ut-playa": [
-  {"a": "Sasha", "ar": "Саша", "s": 1, "es": "Seis patas, ningún sonido y cero modales.", "ru": "Шесть лап, ни звука и никаких манер."},
-  {"a": "Ekaterina", "ar": "Екатерина", "s": 5, "es": "Un desembarco perfecto. Hasta que una violonchelista me pisó la mano herida.", "ru": "Идеальная высадка. Пока виолончелистка не наступила мне на раненую руку."}
+  {
+   "a": "Sasha",
+   "ar": "Саша",
+   "s": 1,
+   "es": "Seis patas, ningún sonido y cero modales.",
+   "ru": "Шесть лап, ни звука и никаких манер."
+  },
+  {
+   "a": "Ekaterina",
+   "ar": "Екатерина",
+   "s": 5,
+   "es": "Un desembarco perfecto. Hasta que una violonchelista me pisó la mano herida.",
+   "ru": "Идеальная высадка. Пока виолончелистка не наступила мне на раненую руку."
+  }
  ],
  "ut-cementerio": [
-  {"a": "Gordéi", "ar": "Гордей", "s": 5, "es": "A la abuela Agafia la enterré yo, al lado de su placa. Me contaba cuentos. Aquí afuera duermen los demás.", "ru": "Бабушку Агафью я похоронил сам, у её пластины. Она рассказывала мне сказки. Здесь, за стенами, спят остальные."}
+  {
+   "a": "Gordéi",
+   "ar": "Гордей",
+   "s": 5,
+   "es": "A la abuela Agafia la enterré yo, al lado de su placa. Me contaba cuentos. Aquí afuera duermen los demás.",
+   "ru": "Бабушку Агафью я похоронил сам, у её пластины. Она рассказывала мне сказки. Здесь, за стенами, спят остальные."
+  }
+ ],
+ "ut-invernadero": [
+  {
+   "a": "Lusía",
+   "ar": "Люсия",
+   "s": 5,
+   "es": "Adentro hace calor aunque afuera sople el viento del desierto. Le toco el violín a los tomates. Dicen que crecen más.",
+   "ru": "Внутри тепло, даже когда снаружи дует ветер пустыни. Я играю помидорам на скрипке. Говорят, так они растут быстрее."
+  },
+  {
+   "a": "Dima",
+   "ar": "Дима",
+   "s": 4,
+   "es": "Calculé la orientación del vidrio tres veces. Masha dice que con una alcanzaba.",
+   "ru": "Я трижды рассчитал ориентацию стёкол. Маша говорит, что хватило бы и одного раза."
+  },
+  {
+   "a": "Oxana",
+   "ar": "Оксана",
+   "s": 5,
+   "es": "Mi parte del Consejo es la vida dentro de los muros. El invernadero es la parte que más me gusta.",
+   "ru": "Моя часть Совета — жизнь внутри стен. Теплица — то, что нравится мне больше всего."
+  }
+ ],
+ "ut-huertas": [
+  {
+   "a": "Masha",
+   "ar": "Маша",
+   "s": 4,
+   "es": "Dos años sobrevivimos de una huerta al lado de una choza. Esta es diez veces más grande. Y nadie nos la quiere robar. Por ahora.",
+   "ru": "Два года мы выживали на огороде у землянки. Этот в десять раз больше. И никто не пытается его отнять. Пока."
+  },
+  {
+   "a": "Vasia",
+   "ar": "Вася",
+   "s": 3,
+   "es": "Arreglé la bomba del tanque de agua. Me pagaron con zapallos. Muchos zapallos.",
+   "ru": "Починил насос на баке с водой. Расплатились тыквами. Очень многими тыквами."
+  },
+  {
+   "a": "Kenneth",
+   "ar": "Кеннет",
+   "s": 5,
+   "es": "El espantapájaros tiene mi camisa azul. Nadie me pidió permiso. Igual le queda bien.",
+   "ru": "На пугале моя синяя рубашка. Никто не спросил разрешения. Но ему идёт."
+  }
  ]
 }

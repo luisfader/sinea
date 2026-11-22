@@ -297,8 +297,8 @@ function abrirLugar(id, mover = false) {
     ${L.res ? `<div class="nota" data-ir="1"><b>${promedio(L).toFixed(1).replace('.', lang === 'ru' ? ',' : ',')}</b> ${estrellas(promedio(L))} <span>(${L.res.length} ${plural(L.res.length, 'reseña', 'reseñas', 'отзыв', 'отзыва', 'отзывов')})</span></div>` : ''}
     <p class="desc">${esc(descL(L))}</p>
     ${resenasHTML(L)}
-    <h3>${lang === 'ru' ? `Встречается в ${L.apar.length} ${plural(L.apar.length, '', '', 'романе', 'романах', 'романах')}` : `Aparece en ${L.apar.length === 1 ? 'una novela' : L.apar.length + ' novelas'}`} <small>${total} ${plural(total, 'capítulo', 'capítulos', 'глава', 'главы', 'глав')}</small></h3>
-    ${L.apar.map(fichaNovela).join('') || `<p class="vacio">${tr('Todavía no se encontró en el texto de las novelas.', 'Пока не найдено в тексте романов.')}</p>`}`;
+    ${L.apar.length ? `<h3>${lang === 'ru' ? `Встречается в ${L.apar.length} ${plural(L.apar.length, '', '', 'романе', 'романах', 'романах')}` : `Aparece en ${L.apar.length === 1 ? 'una novela' : L.apar.length + ' novelas'}`} <small>${total} ${plural(total, 'capítulo', 'capítulos', 'глава', 'главы', 'глав')}</small></h3>
+    ${L.apar.map(fichaNovela).join('')}` : `<p class="vacio">${tr('Este lugar no aparece en el texto de las novelas.', 'Этого места нет в тексте романов.')}</p>`}`;
   panel.classList.add('abierto'); panel.scrollTop = 0; cuerpo.scrollTop = 0;
   if (id === 'vg-autobus-7' && autobus) { siguiendo = true; if (mover) volar(autobus.estado.x, autobus.estado.y, 260, 1.0, null, 900); }
   else if (mover) volar(L.x, L.y, distanciaPara(L), 0.98);

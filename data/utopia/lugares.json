@@ -211,6 +211,30 @@
    ]
   },
   {
+   "id": "ut-invernadero",
+   "nombre": "El invernadero",
+   "otros": [
+    "Теплица"
+   ],
+   "cat": "edificio",
+   "x": 0,
+   "y": 139,
+   "modelo": "invernadero",
+   "desc": "Un invernadero de vidrio con bóveda de arcos blancos, entre las dos murallas del lado norte, junto a los jardines que cuidan los antiguos salvajes. Adentro crecen los plantines, los tomates y las flores que no aguantarían el viento del desierto. De noche, en el mapa, brilla un poco verde. (Las novelas no lo describen: se agregó al mapa a pedido del autor.)"
+  },
+  {
+   "id": "ut-huertas",
+   "nombre": "Las huertas del valle",
+   "otros": [
+    "Огороды"
+   ],
+   "cat": "parque",
+   "x": 420,
+   "y": 330,
+   "modelo": "huertas",
+   "desc": "Al pie de la colina, donde el valle todavía es verde antes del desierto: canteros de verduras con surcos de colores, un tanque de agua, una carretilla y un espantapájaros con camisa azul. De aquí sale lo que se cocina dentro de los muros: pan, agua y comida son el trabajo de todos los días que Oxana organiza en «Предчувствие 2.4». (Las novelas no las describen: se agregaron al mapa a pedido del autor.)"
+  },
+  {
    "id": "ut-jardines",
    "nombre": "Los jardines y las huertas",
    "otros": [

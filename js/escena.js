@@ -293,6 +293,7 @@ export function crearArboles(reservas) {
   for (let i = 0; i < 2600; i++) {
     const x = LIMITES.x0 + r() * W, y = LIMITES.y0 + r() * H;
     if (costa(x, y) < 40 || BARRIOS.some(b => dentro([x, y], b.pol))) continue;
+    if (reservas.some(([rx, ry, rr]) => (x - rx) ** 2 + (y - ry) ** 2 < rr * rr)) continue;
     if (zonaArboles) { if (!zonaArboles(x, y) || r() < 0.55) continue; }
     else if (altura(x, y) < 22 && r() < 0.7) continue;
     pts.push([x, y, 3]);
