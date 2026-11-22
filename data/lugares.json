@@ -215,28 +215,32 @@
   },
   {
    "id": "calle-castanos",
-   "nombre": "Calle de los Castaños",
+   "nombre": "Casa de Marcos y Alicia (calle de los Castaños)",
    "otros": [
+    "Марк и Алисия",
+    "Marco e Alice",
+    "Marcus",
     "Улица Каштанов"
    ],
-   "cat": "calle",
+   "cat": "casa",
    "x": -560,
    "y": 40,
-   "modelo": "casa",
-   "desc": "Aquí está el piso de Marcos y Alicia, «estrecho como una cajita donde dos personas intentan guardar dos vidas». En la pared, un mapa de Sinea lleno de alfileres: rojos para los casos, azules para los sospechosos… y doce blancos que, en «Знак», dibujan un círculo alrededor del Planetario.",
-   "buscar": "улиц\\w* Каштанов|calle de los Castaños"
+   "modelo": "hogar",
+   "desc": "El piso de Marcos —Marco en italiano, Марк en ruso, Marcus en latín— y de Alicia —Alice, Алисия—, en la calle de los Castaños: «estrecho como una cajita donde dos personas intentan guardar dos vidas». Él cocina «de forma peligrosa para el incendio», ella «de forma ritual». En la pared, un mapa de Sinea lleno de alfileres: rojos para los casos, azules para los sospechosos… y doce blancos que, en «Знак», dibujan un círculo alrededor del Planetario. En el alféizar, el zorrito de madera con el sello «АНОМАЛИЯ».",
+   "buscar": "улиц\\w* Каштанов|calle de los Castaños|квартир\\w* Марка|Маркушка"
   },
   {
    "id": "calle-violinistas",
-   "nombre": "Calle de los Violinistas (oficina de Vasili)",
+   "nombre": "Oficina del detective Vasili",
    "otros": [
+    "Контора Василия",
     "Улица Скрипачей"
    ],
-   "cat": "calle",
+   "cat": "casa",
    "x": 300,
    "y": -150,
-   "modelo": "casa",
-   "desc": "En un tercer piso, detrás de una puerta con el cartel «Sin preguntas innecesarias», está la oficina del detective Vasili. Miguel, el Ajedrecista de «Стратег», llama tres veces corto y una largo y extiende sobre la mesa un viejo mapa de Sinea cuadriculado de ocho por ocho. En la esquina hay una panadería donde se discute de fútbol.",
+   "modelo": "hogar",
+   "desc": "En un tercer piso de la calle de los Violinistas, detrás de una puerta con el cartel «Sin preguntas innecesarias», está la oficina del detective privado Vasili (Vasily, Василий). Miguel, el Ajedrecista de «Стратег», llama tres veces corto y una largo y extiende sobre la mesa un viejo mapa de Sinea cuadriculado de ocho por ocho. En «Алмазный дождь» Vasili se muda a un despacho encima de la shawarma de Ashot, en la calle de los Castaños, decidido a «descansar del amor».",
    "buscar": "улиц\\w* Скрипачей|Без лишних вопросов"
   },
   {
@@ -930,6 +934,253 @@
    "modelo": "ninguno",
    "desc": "La carretera que baja por la costa del este. En «Стратег» es la columna «g», la de la tercera columna de camiones.",
    "buscar": "Портов\\w+ шоссе"
+  },
+  {
+   "id": "casa-grande",
+   "nombre": "Casa de la familia Grande (Franco, Alfredo y Gaia)",
+   "otros": [
+    "Дом семьи Гранде",
+    "Франко, Альфредо и Гайя"
+   ],
+   "cat": "casa",
+   "x": 780,
+   "y": -170,
+   "modelo": "hogar",
+   "desc": "Un viejo edificio de cuatro pisos cerca del centro. Aquí vive Franco con sus padres: Gaia, que lo entiende con mirarlo unos segundos y siempre tiene algo al fuego con ajo y verduras, y Alfredo Grande, que gruñe ante las noticias, se burla del alcalde… y en «Карнавал Синеи» se convierte él mismo en alcalde. Alfredo es hermano de Octavio Grande, el que prohibió la risa.",
+   "buscar": "Гайя|Гайи|Gaia|четырёхэтажном доме"
+  },
+  {
+   "id": "casa-chiara",
+   "nombre": "Piso de Chiara",
+   "otros": [
+    "Квартира Кьяры",
+    "Casa di Chiara"
+   ],
+   "cat": "casa",
+   "x": -10,
+   "y": -90,
+   "modelo": "hogar",
+   "desc": "El piso de Chiara, la sonrisa imposible de Sinea. Franco llega aquí como repartidor de «Pedidos Sabrosos» y le abre la puerta un pelirrojo alto en camiseta de estar por casa… y Franco se muere de celos. Al día siguiente, la aplicación le asigna otro pedido: «CLIENTE: CHIARA». Mismo portal, mismo piso.",
+   "buscar": "квартир\\w* Кьяры|КЛИЕНТ: КЬЯРА|casa di Chiara"
+  },
+  {
+   "id": "helados-octavio",
+   "nombre": "Carrito de helados de Octavio Grande",
+   "otros": [
+    "Мороженое от Октавио",
+    "Тележка Октавио"
+   ],
+   "cat": "restaurante",
+   "x": 545,
+   "y": -600,
+   "modelo": "carrito",
+   "desc": "Después de perder contra la risa, el ex alcalde Octavio Grande renunció y se puso a vender helados. Su carrito es celeste, con sombrilla a rayas, junto a la fuente del poeta en la plaza Dante. Dice: «HELADOS DE OCTAVIO. SABORES: VAINILLA, PISTACHO, LAVANDA. SIN MULTAS». Octavio, con delantal y gorra blancos, mira entornando los ojos «como alguien que vivió mucho tiempo a oscuras». Jura que la lavanda calma los nervios.",
+   "buscar": "МОРОЖЕНОЕ ОТ ОКТАВИО|продавать мороженое|продавал мороженое|тележк\\w+ с мороженым|голубой тележк\\w+|helados de Octavio|vende helado"
+  },
+  {
+   "id": "casa-sasha",
+   "nombre": "Casa de Sasha (La voz)",
+   "otros": [
+    "Квартира Саши",
+    "L'appartement de Sasha"
+   ],
+   "cat": "casa",
+   "x": 1880,
+   "y": 1160,
+   "modelo": "hogar",
+   "desc": "Al principio de «Голос», Sasha vive sola en un pisito de las afueras, casi siempre en penumbra porque nunca está de día: oficina, tablas, correos, y a casa cuando ya se apagan las ventanas de los vecinos. Aquí lee la noticia de los delfines desaparecidos y sueña por primera vez con Ael. Años después vive en otro sitio: un cuarto bajo la linterna del Faro de Ael, que huele a pintura vieja.",
+   "buscar": "Саша жила|комнате под фонарём маяка|Sasha vivait|Sasha viveva"
+  },
+  {
+   "id": "casa-luis",
+   "nombre": "El piso de Luis y Natalia (Ondas de amor)",
+   "otros": [
+    "Квартира Луиса и Натальи",
+    "L'appartamento al terzo piano"
+   ],
+   "cat": "casa",
+   "x": 830,
+   "y": -440,
+   "modelo": "hogar",
+   "desc": "Un pisito en un tercer piso, a la vuelta del café donde nació el zorro. Aquí viven Luis y Natalia cuando la primavera vuelve a Sinea: ella guarda el dibujo del zorro en su cuaderno de canciones y él toca el piano. Una mañana Natalia le dice «quiero llevarte a mi casa» y él se ríe: «ya estoy en tu casa». Ella se refiere a la de Verdegrad, donde está el piano de la abuela. (Las novelas no dan otra dirección de Luis en Sinea.)",
+   "buscar": "piccolo appartamento al terzo piano",
+   "extra": {
+    "onde-d-amore": [
+     11
+    ]
+   }
+  },
+  {
+   "id": "shawarma-ashot",
+   "nombre": "Shawarma de Ashot",
+   "otros": [
+    "Шаверма у Ашота"
+   ],
+   "cat": "restaurante",
+   "x": -470,
+   "y": 30,
+   "modelo": "cafe",
+   "desc": "Una shawarma en la calle de los Castaños, en la misma calle que Marcos y Alicia. En «Алмазный дождь» Vasili alquila un despacho justo encima. Cuando caen los meteoritos, el dueño sale a la calle gritando que es el fin del mundo; cuando todo termina, Ashot llora sobre la carne escuchando la radio… y dice que es por la cebolla.",
+   "buscar": "шаверм\\w+"
+  },
+  {
+   "id": "rosa-blanca",
+   "nombre": "Restaurante «La Rosa Blanca»",
+   "otros": [
+    "Ресторан «Белая роза»"
+   ],
+   "cat": "restaurante",
+   "x": -1330,
+   "y": -960,
+   "modelo": "cafe",
+   "desc": "El restaurante caro del barrio de los Ricos Tristes. En «Грустный город», la aplicación le manda a Franco un pedido desde aquí hasta la avenida de los Emperadores 56, y él suspira: «Ahí no».",
+   "buscar": "«Белая роза»|Rosa Bianca"
+  },
+  {
+   "id": "vietnamita",
+   "nombre": "Restaurante vietnamita",
+   "otros": [
+    "Вьетнамский ресторан"
+   ],
+   "cat": "restaurante",
+   "x": 160,
+   "y": 990,
+   "modelo": "cafe",
+   "desc": "Un restaurante pequeño, apretado y calentito en una calle tranquila cerca de la estación. Aquí Vasili se encuentra por fin con la mujer de la voz, mientras se le enfría la sopa de fideos, y empieza la «Operación Venganza» de «Опасное свидание».",
+   "buscar": "Вьетнамск\\w+ ресторан\\w*|вьетнамская лапша"
+  },
+  {
+   "id": "restaurante-puerto",
+   "nombre": "Restaurante del Puerto Viejo",
+   "otros": [
+    "Ресторан у старого порта"
+   ],
+   "cat": "restaurante",
+   "x": 880,
+   "y": -1165,
+   "modelo": "cafe",
+   "desc": "Con puerta al malecón. «Ven al restaurante del puerto viejo dentro de una hora», le dice María a Vasili. Allí lo esperan dos mujeres a la vez, y él tiene que salir a tomar aire frente al mar.",
+   "buscar": "ресторан\\w* у старого порта"
+  },
+  {
+   "id": "bar-ancora",
+   "nombre": "Bar «El Ancla»",
+   "otros": [
+    "Bar Ancora",
+    "Бар «Якорь»"
+   ],
+   "cat": "restaurante",
+   "x": 1180,
+   "y": -1120,
+   "modelo": "cafe",
+   "desc": "En el puerto. Madera oscura, fotos viejas en las paredes, olor a cerveza y a mar. En un rincón, sola, con una cerveza y su campera de cuero, Oxana espera al detective Vasily en «Chi ha visto Sasha?».",
+   "buscar": "bar Ancora"
+  },
+  {
+   "id": "bar-gino",
+   "nombre": "Bar de Gino",
+   "otros": [
+    "Бар Джино",
+    "Il bar di Gino"
+   ],
+   "cat": "restaurante",
+   "x": -40,
+   "y": -930,
+   "modelo": "cafe",
+   "desc": "El bar de toda la vida de la calle de los Pescadores, en el verano de 1997 de «Тихая любовь». En la noche más rara de ese verano, un robot gigante le arranca el techo «como la tapa de una caja de galletas».",
+   "buscar": "бар\\w* Джино|bar di Gino"
+  },
+  {
+   "id": "gabbiano",
+   "nombre": "Pastelería «Gabbiano»",
+   "otros": [
+    "Pasticceria Gabbiano",
+    "Кондитерская «Габбьяно»"
+   ],
+   "cat": "restaurante",
+   "x": 520,
+   "y": -1190,
+   "modelo": "cafe",
+   "desc": "En el paseo marítimo. En el plan de Marisa para «Onde d'amore 3», escrito en colores, es la parada de las 16:00: «pastelería Gabbiano (¡cannoli!)». El zorro se come tres y medio; el medio era de Marisa, pero él dice que lo «adoptó».",
+   "buscar": "pasticceria Gabbiano"
+  },
+  {
+   "id": "cafe-nubecita",
+   "nombre": "Café «Nubecita»",
+   "otros": [
+    "Кафе «Облачко»"
+   ],
+   "cat": "restaurante",
+   "x": 40,
+   "y": 1715,
+   "modelo": "cafe",
+   "desc": "Frente al Depósito Norte. Aquí se juntan las seis compañeras de trabajo de Alicia con Hortense Belcourt y su copa de vino tinto, en «Знак»; y en «Алмазный дождь» Natalia canta por las noches.",
+   "buscar": "кафе «Облачко»|кафе «Облачко»"
+  },
+  {
+   "id": "casa-celeste",
+   "nombre": "«Casa Celeste», la tienda de Alicia",
+   "otros": [
+    "Лавка «Casa Celeste»"
+   ],
+   "cat": "tienda",
+   "x": 300,
+   "y": -470,
+   "modelo": "cafe",
+   "desc": "Tienda esotérica en la esquina de la plaza de las Flores, donde Alicia Gómez Fernández trabaja de astróloga y tarotista: velas, cartas, lavanda «y, a veces, esperanza».",
+   "buscar": "Casa Celeste"
+  },
+  {
+   "id": "libreria-bruni",
+   "nombre": "Librería del señor Bruni",
+   "otros": [
+    "Книжная лавка синьора Бруни"
+   ],
+   "cat": "tienda",
+   "x": 650,
+   "y": -1100,
+   "modelo": "cafe",
+   "desc": "Una librería junto al puerto. En «Город без улыбок», Marisa reconoce a su dueño, el canoso señor Bruni, entre los que protestan con carteles contra la risa.",
+   "buscar": "Бруни"
+  },
+  {
+   "id": "tienda-deportes",
+   "nombre": "Tienda de deportes de Tatiana",
+   "otros": [
+    "Спортивный магазин Татьяны"
+   ],
+   "cat": "tienda",
+   "x": 650,
+   "y": -40,
+   "modelo": "cafe",
+   "desc": "Tatiana, veinticinco años, trabaja aquí en «La chica del retrato». Le gusta correr, la música y sacar fotos para las redes… hasta que un sábado la policía llama a su puerta: alguien atacó la página de un banco y dejó en la pantalla su retrato.",
+   "buscar": "tienda de deportes"
+  },
+  {
+   "id": "restaurante-juan-carlos",
+   "nombre": "Restaurante de Juan Carlos",
+   "otros": [
+    "Ресторан Хуана Карлоса"
+   ],
+   "cat": "restaurante",
+   "x": 920,
+   "y": -70,
+   "modelo": "cafe",
+   "desc": "El restaurante del desafortunado Juan Carlos, uno de los tres alumnos del «taller del amor» en «El impostor». Valeria sabe que es aquí donde puede encontrarlos.",
+   "buscar": "restaurante de Juan Carlos|mala suerte de Juan Carlos"
+  },
+  {
+   "id": "taller-amor",
+   "nombre": "El taller del amor de Andrés Cortés",
+   "otros": [
+    "Мастерская любви Андреса Кортеса"
+   ],
+   "cat": "tienda",
+   "x": 1060,
+   "y": 10,
+   "modelo": "cafe",
+   "desc": "«¡La epidemia de noes tiene solución!», anuncia el famoso «experto en relaciones» Andrés Cortés. Tres hombres desafortunados se apuntan a sus clases sin saber que detrás está Doña Destino con su Esfera de Energía y sus Cupidronas.",
+   "buscar": "Andrés Cortés|taller del amor|El taller del amor"
   }
  ]
 }

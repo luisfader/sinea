@@ -280,6 +280,24 @@ const MODELOS = {
   observatorio() { const g = new THREE.Group(); g.add(cil(6, 6.5, 14, 0xe6ddc8)); g.add(esfera(6, M(0xc9cfd2, { metalness: .5 }), 0, 14, 0, {}, [20, 10, 0, Math.PI * 2, 0, Math.PI / 2])); return { g, r: 12 }; },
   puertas() { const g = new THREE.Group(), p = M(0x8f8a80); g.add(caja(2, 9, 2, p, -6)); g.add(caja(2, 9, 2, p, 6)); g.add(caja(14, 2, 2, p, 0, 9)); g.add(caja(.4, 1, 10, 0x222222, -3, 0, 0)); return { g, r: 10 }; },
   redondo(u) { const g = new THREE.Group(); const m = new THREE.MeshStandardMaterial({ color: 0xf2f2ee }); const c = new THREE.Mesh(new THREE.CylinderGeometry(22, 22, 30, 40), m); c.position.y = 15; c.castShadow = true; g.add(c); const vm = new THREE.MeshStandardMaterial({ color: 0x31475a, emissive: 0xffd28a, emissiveIntensity: 0 }); for (let k = 0; k < 3; k++) for (let i = 0; i < 18; i++) { const a = i / 18 * Math.PI * 2; const o = new THREE.Mesh(new THREE.CircleGeometry(1.6, 16), vm); o.position.set(Math.cos(a) * 22.05, 7 + k * 8, Math.sin(a) * 22.05); o.lookAt(Math.cos(a) * 40, 7 + k * 8, Math.sin(a) * 40); g.add(o); } return { g, r: 28, anim(t, n) { vm.emissiveIntensity = n * 1.2; } }; },
+  hogar() {
+    const g = new THREE.Group();
+    g.add(caja(14, 11, 11, 0xf3c98b)); const t = new THREE.Mesh(prismaGeo(), M(0xb5482f)); t.scale.set(15, 5.5, 12); t.position.y = 11; t.castShadow = true; g.add(t);
+    g.add(caja(1.6, 4, 1.6, 0x8a3b28, 4, 12, 2)); g.add(caja(2.4, 3.6, .3, 0x2f6b4a, 0, 0, -5.6));
+    for (const x of [-4.5, 4.5]) { g.add(caja(2.2, 2, .3, 0x9cc9e6, x, 6.5, -5.6)); g.add(caja(2.2, 2, .3, 0x9cc9e6, x, 2, -5.6)); }
+    g.add(caja(4, .4, 1.4, 0x6b4a2f, 0, 6, -6.2)); // balcón
+    return { g, r: 15 };
+  },
+  carrito() {
+    const g = new THREE.Group();
+    g.add(caja(3.2, 1.6, 1.8, 0x7ec8e8, 0, .7)); g.add(caja(3.3, .2, 1.9, 0xffffff, 0, 2.3));
+    for (const x of [-1.2, 1.2]) { const r = new THREE.Mesh(new THREE.TorusGeometry(.45, .12, 6, 14), M(0x333333)); r.position.set(x, .45, -.95); g.add(r); }
+    g.add(cil(.06, .06, 2.6, 0xdddddd, 0, 2.4));
+    const somb = new THREE.Group(); somb.position.y = 5;
+    for (let i = 0; i < 8; i++) { const seg = new THREE.Mesh(new THREE.ConeGeometry(2.4, .9, 3, 1, true, i * Math.PI / 4, Math.PI / 4), M(i % 2 ? 0xffffff : 0xe8453c, { side: THREE.DoubleSide })); somb.add(seg); }
+    g.add(somb); g.scale.setScalar(1.6);
+    return { g, r: 0, anim(t) { somb.rotation.y = Math.sin(t * .8) * .05; } };
+  },
   puente() { return { g: new THREE.Group(), r: 0 }; },
   casa() { return { g: new THREE.Group(), r: 0 }; },
   plaza() { return { g: new THREE.Group(), r: 34 }; },

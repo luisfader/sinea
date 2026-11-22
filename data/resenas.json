@@ -1,0 +1,215 @@
+{
+ "_info": "Reseñas escritas por los personajes. Clave: id del lugar. a/ar: autor en español/ruso; s: estrellas (1-5); es/ru: texto. Después de editar: python3 tools/build.py ../litmir",
+
+ "helados-octavio": [
+  {"a": "Franco", "ar": "Франко", "s": 5, "es": "Mi tío me cobró el doble «por las multas de antes». Después me regaló un cucurucho de lavanda y se le escapó una sonrisa. La primera en diez años. Cinco estrellas por el helado, diez por la sonrisa.", "ru": "Дядя взял с меня двойную цену «за старые штрафы». Потом подарил рожок с лавандой, и у него вырвалась улыбка. Первая за десять лет. Пять звёзд за мороженое, десять — за улыбку."},
+  {"a": "Chiara", "ar": "Кьяра", "s": 5, "es": "El pistacho es una canción. Le pedí que se riera un poquito más fuerte y casi se le cae la sombrilla.", "ru": "Фисташковое — это песня. Я попросила его смеяться чуть громче, и у него чуть не упал зонтик."},
+  {"a": "Alfredo Grande", "ar": "Альфредо Гранде", "s": 3, "es": "Mi hermano hace buen helado. No se lo digan. Tres estrellas para que no se le suba a la cabeza otra vez.", "ru": "Мой брат делает хорошее мороженое. Только ему не говорите. Три звезды, чтобы опять не зазнался."},
+  {"a": "El zorro", "ar": "Лис", "s": 5, "es": "Esto sí que se ve como tiene que verse.", "ru": "Вот это выглядит как надо."},
+  {"a": "Octavio Grande", "ar": "Октавио Гранде", "s": 4, "es": "Respuesta del propietario: gracias a todos. Quejas y multas, por favor, a la alcaldía. Ya no es mi problema.", "ru": "Ответ владельца: спасибо всем. Жалобы и штрафы — пожалуйста, в мэрию. Это больше не моя забота."}
+ ],
+
+ "casa-grande": [
+  {"a": "Gaia", "ar": "Гайя", "s": 5, "es": "Cuatro pisos sin ascensor, un marido que discute con el televisor y un hijo que vuelve oliendo a moto. Huele a ajo y a salsa. No lo cambio por nada.", "ru": "Четыре этажа без лифта, муж, который спорит с телевизором, и сын, который возвращается с запахом мотоцикла. Пахнет чесноком и соусом. Ни на что не променяю."},
+  {"a": "Alfredo Grande", "ar": "Альфредо Гранде", "s": 4, "es": "Buena casa. Le quito una estrella porque desde que soy alcalde tengo que hacer los chistes en voz baja para que no salgan en los diarios.", "ru": "Хороший дом. Минус звезда: с тех пор как я мэр, шутить приходится шёпотом, чтобы не попасть в газеты."},
+  {"a": "Martino", "ar": "Мартино", "s": 5, "es": "Vine a buscar a Franco para el stand-up secreto y me fui con tres táperes de Gaia. Volvería solo por eso.", "ru": "Зашёл за Франко на тайный стендап, а ушёл с тремя контейнерами еды от Гайи. Вернусь хотя бы ради этого."}
+ ],
+
+ "casa-chiara": [
+  {"a": "Franco", "ar": "Франко", "s": 2, "es": "Me abrió la puerta un pelirrojo alto en camiseta. Dos estrellas. Actualización: era su hermano. Cinco estrellas. No sé cómo se cambia la nota.", "ru": "Дверь открыл рыжий в футболке. Две звезды. Обновление: это был её брат. Пять звёзд. Не знаю, как изменить оценку."},
+  {"a": "Chiara", "ar": "Кьяра", "s": 5, "es": "Mi casa: plantas, una guitarra y un repartidor que siempre llega con cara de tragedia griega.", "ru": "Мой дом: цветы, гитара и курьер, который всегда приезжает с лицом из греческой трагедии."}
+ ],
+
+ "calle-castanos": [
+  {"a": "Alicia", "ar": "Алисия", "s": 5, "es": "Piso pequeño, energía enorme. Venus en la cocina, Marte en el sofá. El zorro de madera del alféizar se calienta cuando algo va a pasar.", "ru": "Квартира маленькая, энергия огромная. Венера на кухне, Марс на диване. Деревянный лис на подоконнике теплеет, когда что-то должно случиться."},
+  {"a": "Marcos", "ar": "Марк", "s": 4, "es": "Inventario: un mapa, ciento doce alfileres, una novia que quema incienso en el fogón. Riesgo de incendio: alto. Calidad de vida: también.", "ru": "Опись: одна карта, сто двенадцать булавок, девушка, которая жжёт благовония на конфорке. Пожароопасность: высокая. Качество жизни: тоже."},
+  {"a": "Miguel", "ar": "Мигель", "s": 5, "es": "Vengo los domingos a jugar al ajedrez con mi hermano. Pierde siempre, pero dice que me deja ganar. Mentira.", "ru": "Прихожу по воскресеньям играть с братом в шахматы. Он всегда проигрывает, но говорит, что поддаётся. Неправда."}
+ ],
+
+ "calle-violinistas": [
+  {"a": "Miguel", "ar": "Мигель", "s": 5, "es": "Tres golpes cortos y uno largo. Té, un mapa de Sinea de ocho por ocho y un detective que no hace preguntas innecesarias. Lo mejor de la ciudad.", "ru": "Три коротких стука и один длинный. Чай, карта Синеи восемь на восемь и детектив без лишних вопросов. Лучшее место в городе."},
+  {"a": "Marcos", "ar": "Марк", "s": 2, "es": "Un pozo de pose y teorías. Pero hay que reconocer que cava en el lugar correcto.", "ru": "Сплошная поза и теории. Но надо признать: копает он в правильном месте."},
+  {"a": "Vasili", "ar": "Василий", "s": 4, "es": "Respuesta del propietario: gracias, Marcos. El cartel sigue en la puerta. Lo leíste mal.", "ru": "Ответ владельца: спасибо, Марк. Табличка всё ещё на двери. Ты неправильно её прочитал."}
+ ],
+
+ "casa-sasha": [
+  {"a": "Sasha", "ar": "Саша", "s": 3, "es": "Tranquilo, oscuro y a veinte minutos de cualquier cosa. Ideal para dormir. O para soñar con delfines que te hablan.", "ru": "Тихо, темно и двадцать минут до чего угодно. Идеально, чтобы спать. Или чтобы видеть во сне говорящих дельфинов."},
+  {"a": "Oxana", "ar": "Оксана", "s": 2, "es": "Me despertó a las dos de la mañana para ir a un parque cerrado porque «la alegría recuerda el nombre del mar». No vuelvo a darle mi número. (Sí vuelvo.)", "ru": "Разбудила меня в два часа ночи, чтобы ехать в закрытый парк, потому что «радость помнит имя моря». Больше не дам ей свой номер. (Дам.)"}
+ ],
+
+ "casa-luis": [
+  {"a": "Natalia", "ar": "Наталья", "s": 5, "es": "Tercer piso, sin ascensor, con un piano y un zorro que opina de todo. A veces la casa canta sola.", "ru": "Третий этаж, без лифта, с пианино и лисом, у которого на всё есть мнение. Иногда дом поёт сам."},
+  {"a": "El zorro", "ar": "Лис", "s": 4, "es": "Buena luz para dormir en el alféizar. Le saco una estrella porque me guardan en un cuaderno.", "ru": "Хороший свет, чтобы спать на подоконнике. Минус звезда за то, что меня хранят в тетради."},
+  {"a": "Luis", "ar": "Луис", "s": 5, "es": "No es mi casa. Es la de ella. Por eso es la mejor.", "ru": "Это не мой дом. Это её дом. Поэтому он лучший."}
+ ],
+
+ "shawarma-ashot": [
+  {"a": "Vasili", "ar": "Василий", "s": 5, "es": "Mi despacho está arriba. El olor sube por la escalera y me impide pensar en el amor. Exactamente lo que necesitaba.", "ru": "Мой кабинет наверху. Запах поднимается по лестнице и мешает думать о любви. Именно то, что мне было нужно."},
+  {"a": "Marcos", "ar": "Марк", "s": 4, "es": "Buena shawarma. Mala vecindad: hay un detective privado en el primer piso.", "ru": "Хорошая шаверма. Плохое соседство: на втором этаже частный детектив."},
+  {"a": "Ashot", "ar": "Ашот", "s": 5, "es": "Respuesta del propietario: no lloré escuchando la radio. Fue la cebolla.", "ru": "Ответ владельца: я не плакал, слушая эфир. Это был лук."}
+ ],
+
+ "fucsia": [
+  {"a": "Irina", "ar": "Ирина", "s": 4, "es": "Odio el rosa. Odio las citas. Odio a la gente que habla de Bunin como si fuera su vecino. Volví al día siguiente.", "ru": "Ненавижу розовый. Ненавижу свидания. Ненавижу людей, которые говорят о Бунине, как о соседе по лестничной клетке. Вернулась на следующий день."},
+  {"a": "Mateo", "ar": "Матео", "s": 5, "es": "El mejor croissant de almendras de Sinea y la mejor oyente de Sinea. La última vez que tuve una cita fue con el gobierno anterior.", "ru": "Лучший круассан с миндалём в Синее и лучшая слушательница в Синее. В последний раз я ходил на свидание при прошлом правительстве."},
+  {"a": "Casimiro Condena", "ar": "Казимиро Кондена", "s": 1, "es": "Demasiado rosa. Casimiro Condena condena este café. Una estrella. The best estrella.", "ru": "Слишком розово. Казимиро Кондена осуждает это кафе. Одна звезда. The best звезда."}
+ ],
+
+ "chaika": [
+  {"a": "Irina", "ar": "Ирина", "s": 2, "es": "Pan, kéfir, queso, manzanas, té. Y desde hace dos semanas, en la caja, una pirámide de «kits para el fin del mundo». Gracias, ahora no duermo.", "ru": "Хлеб, кефир, сыр, яблоки, чай. А последние две недели у кассы — пирамида «наборов на конец света». Спасибо, теперь я не сплю."},
+  {"a": "Bobby López", "ar": "Бобби Лопес", "s": 5, "es": "Compré seis kits del fin del mundo por las latas. Mi suegra dice que el fin del mundo soy yo.", "ru": "Купил шесть наборов на конец света ради тушёнки. Тёща говорит, что конец света — это я."}
+ ],
+
+ "rosa-blanca": [
+  {"a": "Franco", "ar": "Франко", "s": 1, "es": "No comí. Repartí. Veinte minutos para que me abrieran la reja y una propina de cero dragones. Ahí no.", "ru": "Я не ел. Я доставлял. Двадцать минут ждал у ворот, чаевые — ноль драконов. Только не туда."},
+  {"a": "Rigoberto", "ar": "Ригоберто", "s": 4, "es": "Excelente pescado. Las cámaras del Ministerio en el techo arruinan un poco la digestión.", "ru": "Отличная рыба. Камеры Министерства под потолком немного портят пищеварение."},
+  {"a": "Octavio Grande", "ar": "Октавио Гранде", "s": 5, "es": "Mi mesa de siempre. Era. Ahora me queda lejos del carrito.", "ru": "Мой любимый столик. Был. Теперь далеко от тележки."}
+ ],
+
+ "vietnamita": [
+  {"a": "Vasili", "ar": "Василий", "s": 4, "es": "La sopa se enfrió mientras una mujer buscada por media ciudad me proponía una venganza. No es culpa del cocinero. Volveré.", "ru": "Лапша остыла, пока женщина, которую ищет полгорода, предлагала мне месть. Повар не виноват. Вернусь."},
+  {"a": "Svetlana", "ar": "Светлана", "s": 3, "es": "Rica comida. Wifi abierto, contraseña «12345». Como especialista en delitos informáticos, me dio taquicardia.", "ru": "Вкусно. Открытый вайфай, пароль «12345». Как специалиста по киберпреступлениям, меня чуть не хватил удар."}
+ ],
+
+ "restaurante-puerto": [
+  {"a": "Vasili", "ar": "Василий", "s": 2, "es": "Llegué con una venda en la mano y me encontré a dos mujeres esperándome en la misma mesa. Buena vista al mar, porque terminé mirándolo un buen rato.", "ru": "Пришёл с повязкой в руке и застал двух женщин за одним столом. Вид на море хороший: я долго на него смотрел."},
+  {"a": "Nadia", "ar": "Надя", "s": 4, "es": "Como psicóloga: excelente lugar para conversaciones difíciles. El mar ayuda. El vino también.", "ru": "Как психолог: отличное место для трудных разговоров. Море помогает. Вино тоже."}
+ ],
+
+ "bar-ancora": [
+  {"a": "Oxana", "ar": "Оксана", "s": 5, "es": "Cerveza fría, madera oscura y nadie que te pregunte por qué estás sola en un rincón. Mi bar.", "ru": "Холодное пиво, тёмное дерево и никто не спрашивает, почему ты одна в углу. Мой бар."},
+  {"a": "Vasili", "ar": "Василий", "s": 4, "es": "Regla de este año: nada de amor. Este bar me la puso a prueba.", "ru": "Правило этого года: никакой любви. Этот бар устроил мне проверку."}
+ ],
+
+ "bar-gino": [
+  {"a": "Fabrizio", "ar": "Фабрицио", "s": 5, "es": "Aquí aprendí a hacer el café perfecto. Y aquí la vi pasar en la moto roja. Veintinueve años después todavía me tiemblan las manos al pedir un cortado.", "ru": "Здесь я научился варить идеальный кофе. И здесь увидел, как она проезжает на красном мотоцикле. Двадцать девять лет спустя у меня всё ещё дрожат руки, когда заказываю кортадо."},
+  {"a": "Gino", "ar": "Джино", "s": 3, "es": "Respuesta del propietario: un robot gigante se llevó el techo. Ya lo arreglamos. Sigan viniendo.", "ru": "Ответ владельца: гигантский робот унёс крышу. Мы уже починили. Приходите."}
+ ],
+
+ "gabbiano": [
+  {"a": "El zorro", "ar": "Лис", "s": 5, "es": "Tres cannoli y medio. El medio lo adopté. Nadie lo quería tanto como yo.", "ru": "Три с половиной канноли. Половинку я усыновил. Никто не любил её так, как я."},
+  {"a": "Marisa", "ar": "Мариса", "s": 4, "es": "Parada de las 16:00 de mi plan. Le saco una estrella porque el zorro se comió mi medio cannoli.", "ru": "Остановка на 16:00 по моему плану. Минус звезда: лис съел мою половинку канноли."}
+ ],
+
+ "cafe-nubecita": [
+  {"a": "Alicia", "ar": "Алисия", "s": 4, "es": "Aquí me reúno con mis compañeras. Hortense pide tinto a las diez de la mañana y dice que es cosa de Saturno.", "ru": "Здесь я встречаюсь с коллегами. Ортанс заказывает красное в десять утра и говорит, что это Сатурн."},
+  {"a": "Vasili", "ar": "Василий", "s": 5, "es": "Desde la ventana se ven perfectamente los portones del depósito. El café es malo. La vista, inmejorable.", "ru": "Из окна прекрасно видны ворота депо. Кофе плохой. Вид — лучше не бывает."},
+  {"a": "Natalia", "ar": "Наталья", "s": 5, "es": "Canto aquí por las noches. Si el público no aplaude, aplaude el zorro.", "ru": "Пою здесь по вечерам. Если публика не хлопает, хлопает лис."}
+ ],
+
+ "casa-celeste": [
+  {"a": "Alicia", "ar": "Алисия", "s": 5, "es": "Velas, cartas, lavanda y, a veces, esperanza. Los miércoles, descuento para Piscis.", "ru": "Свечи, карты, лаванда и иногда надежда. По средам скидка для Рыб."},
+  {"a": "Marcos", "ar": "Марк", "s": 3, "es": "No creo en nada de lo que venden. Pero la vendedora es la mejor de Sinea.", "ru": "Не верю ни во что из того, что здесь продают. Но продавщица — лучшая в Синее."},
+  {"a": "Doña Destino", "ar": "Донья Дестино", "s": 1, "es": "Horóscopos sin licencia. Competencia desleal con mi aplicación.", "ru": "Гороскопы без лицензии. Недобросовестная конкуренция с моим приложением."}
+ ],
+
+ "libreria-bruni": [
+  {"a": "Marisa", "ar": "Мариса", "s": 4, "es": "Libros maravillosos. El dueño protestaba contra la risa con un cartel, pero dentro de la tienda tiene una sección de humor. Lo vi.", "ru": "Чудесные книги. Хозяин протестовал против смеха с плакатом, но внутри у него есть полка с юмором. Я видела."},
+  {"a": "Mateo", "ar": "Матео", "s": 5, "es": "Encontré una primera edición de Bunin. No se la presto a nadie. Salvo, tal vez, a una psicóloga.", "ru": "Нашёл первое издание Бунина. Никому не дам. Разве что, может быть, одному психологу."}
+ ],
+
+ "tienda-deportes": [
+  {"a": "Tatiana", "ar": "Татьяна", "s": 4, "es": "Buenas zapatillas, buen ambiente. Le saco una estrella porque una vez la policía vino a buscarme por un retrato que no hice yo.", "ru": "Хорошие кроссовки, хорошая атмосфера. Минус звезда: однажды за мной сюда пришла полиция из-за портрета, который рисовала не я."},
+  {"a": "Laura Rivera", "ar": "Лаура Ривера", "s": 5, "es": "Visita profesional. La vendedora era inocente. Me llevé unas zapatillas igual.", "ru": "Служебный визит. Продавщица оказалась невиновна. Кроссовки я всё равно купила."}
+ ],
+
+ "restaurante-juan-carlos": [
+  {"a": "Juan Carlos", "ar": "Хуан Карлос", "s": 3, "es": "Mi restaurante es bueno. Mi suerte, no. Si alguien quiere comprar una caja de anillos usada, pregunte por mí.", "ru": "Мой ресторан хороший. Моё везение — нет. Если кому-то нужна подержанная коробочка для колец, спросите меня."},
+  {"a": "Valeria", "ar": "Валерия", "s": 5, "es": "Aquí encontré a los tres. Y el postre estaba riquísimo.", "ru": "Здесь я нашла всех троих. И десерт был потрясающий."}
+ ],
+
+ "taller-amor": [
+  {"a": "Leonardo", "ar": "Леонардо", "s": 1, "es": "Pagué el curso completo para recuperar a Sofía. Resultó que el maestro trabajaba para una máquina que se alimenta de mis suspiros.", "ru": "Заплатил за весь курс, чтобы вернуть Софию. Оказалось, что учитель работает на машину, которая питается моими вздохами."},
+  {"a": "Andrés Cortés", "ar": "Андрес Кортес", "s": 5, "es": "Respuesta del propietario: el amor es una ciencia. Los reembolsos, no.", "ru": "Ответ владельца: любовь — это наука. Возврат денег — нет."},
+  {"a": "Doña Destino", "ar": "Донья Дестино", "s": 5, "es": "Altamente recomendable. Para mí.", "ru": "Очень рекомендую. Себе."}
+ ],
+
+ "rincon-suspiros": [
+  {"a": "Lusiana", "ar": "Лусиана", "s": 5, "es": "Vine a dibujar y terminé hablando del subconsciente con un desconocido. Esa noche soñé con él. El café, correcto.", "ru": "Пришла рисовать, а в итоге говорила о подсознании с незнакомцем. Той же ночью он мне приснился. Кофе нормальный."},
+  {"a": "Celestio", "ar": "Селестио", "s": 4, "es": "Buen lugar para trabajar en planos. Hasta que alguien se sienta a tu mesa y te abre el sótano.", "ru": "Хорошее место, чтобы работать над чертежами. Пока кто-нибудь не подсядет и не откроет твой подвал."},
+  {"a": "Doctor Crane", "ar": "Доктор Крейн", "s": 2, "es": "Demasiados sueños sin explotar en un solo local. Lo tengo en la lista.", "ru": "Слишком много неиспользованных снов в одном заведении. Внёс в список."}
+ ],
+
+ "cafe-ladron": [
+  {"a": "Tatiana", "ar": "Татьяна", "s": 3, "es": "La primera vez me tiraron un café encima de la camisa blanca. La segunda vez el barista me dibujó un zorro en la espuma para pedir perdón. Le subo una estrella por cada zorro.", "ru": "В первый раз мне пролили кофе на белую рубашку. Во второй раз бариста нарисовал мне лиса на пенке в знак извинения. Добавляю по звезде за каждого лиса."},
+  {"a": "Alessio", "ar": "Алессио", "s": 5, "es": "Respuesta del propietario: aquí no se roba nada. Salvo el corazón, que es gratis.", "ru": "Ответ владельца: здесь ничего не крадут. Кроме сердца — оно бесплатно."},
+  {"a": "Laura", "ar": "Лаура", "s": 5, "es": "Mi Alessio dibuja zorros en la espuma del capuchino. Nadie se anima a tomarlo.", "ru": "Мой Алессио рисует лисов на пенке капучино. Никто не решается его пить."}
+ ],
+
+ "plaza-reloj": [
+  {"a": "Miguel", "ar": "Мигель", "s": 5, "es": "Casilla e3. El café Tre Sorelle tiene dos puertas: perfecto para un enroque.", "ru": "Поле e3. У кафе «Тре Сорелле» две двери: идеально для рокировки."},
+  {"a": "Marcos", "ar": "Марк", "s": 3, "es": "Las palomas se sientan en fila, a la misma distancia. Eso no es normal. Lo anoté.", "ru": "Голуби сидят в ряд, на одинаковом расстоянии. Это ненормально. Записал."}
+ ],
+
+ "ministerio": [
+  {"a": "Franco", "ar": "Франко", "s": 1, "es": "Trabajé aquí. No hay ventanas, no hay chistes y me multaron por sonreírle a una chica en el metro. Lo mejor del Ministerio es la puerta de salida.", "ru": "Работал здесь. Окон нет, шуток нет, и меня оштрафовали за улыбку девушке в метро. Лучшее в Министерстве — дверь на выход."},
+  {"a": "Octavio Grande", "ar": "Октавио Гранде", "s": 5, "es": "Orden. Disciplina. Futuro. (Reseña escrita en 2025, ya no la comparto.)", "ru": "Порядок. Дисциплина. Будущее. (Отзыв написан в 2025 году, больше не разделяю.)"},
+  {"a": "Chiara", "ar": "Кьяра", "s": 1, "es": "Me cantaron una multa. Les contesté cantando. Empate.", "ru": "Мне выписали штраф. Я ответила песней. Ничья."}
+ ],
+
+ "taller-geppetto": [
+  {"a": "Franco", "ar": "Франко", "s": 5, "es": "Entré buscando un escondite y salí con una regadera que dispara sonrisas. Geppetto, sos un genio.", "ru": "Зашёл в поисках укрытия, а вышел с лейкой, которая стреляет улыбками. Джеппетто, ты гений."},
+  {"a": "Geppetto", "ar": "Джеппетто", "s": 4, "es": "Respuesta del propietario: el té, en un minuto. La persecución, en cinco. Hay tiempo.", "ru": "Ответ владельца: чай будет через минуту, погоня — через пять. Время есть."}
+ ],
+
+ "faro-ael": [
+  {"a": "Sasha", "ar": "Саша", "s": 5, "es": "Vivo aquí. El haz no se detiene nunca. Casi nunca.", "ru": "Я здесь живу. Луч никогда не останавливается. Почти никогда."},
+  {"a": "Dima", "ar": "Дима", "s": 5, "es": "Lo construimos con nuestras manos donde estaba la vieja estación. Arriba guardamos el Corazón del Mar. Visita obligatoria.", "ru": "Мы построили его своими руками на месте старой станции. Наверху хранится Сердце Моря. Обязательно к посещению."},
+  {"a": "Nira", "ar": "Нира", "s": 5, "es": "Clic. Clic-clic. Silbido largo. (Traducido por Sasha: «La mejor luz de toda la costa».)", "ru": "Щёлк. Щёлк-щёлк. Долгий свист. (Перевод Саши: «Лучший свет на всём побережье».)"},
+  {"a": "Marcos", "ar": "Марк", "s": 3, "es": "El haz se detuvo siete segundos a la una menos veinte. Exijo una explicación.", "ru": "Луч остановился на семь секунд без двадцати час. Требую объяснений."}
+ ],
+
+ "estacion-central": [
+  {"a": "Bobby López", "ar": "Бобби Лопес", "s": 5, "es": "El tren fantasma se llevó a mi suegra. Cinco estrellas.", "ru": "Призрачный поезд увёз мою тёщу. Пять звёзд."},
+  {"a": "Doña Carmen", "ar": "Донья Кармен", "s": 1, "es": "Volví.", "ru": "Я вернулась."},
+  {"a": "Marcos", "ar": "Марк", "s": 3, "es": "Horarios puntuales. Salvo uno, que no figura en ningún tablero.", "ru": "Расписание соблюдается. Кроме одного поезда, которого нет ни на одном табло."}
+ ],
+
+ "tren-fantasma": [
+  {"a": "Casimiro Condena", "ar": "Казимиро Кондена", "s": 5, "es": "El mejor tren. Un tren tremendo. Casimiro Condena juzga rápido, sin tonterías. ¡Mucha gente me lo agradece!", "ru": "Лучший поезд. Потрясающий поезд. Казимиро Кондена судит быстро, без глупостей. Многие мне благодарны!"},
+  {"a": "Alicia", "ar": "Алисия", "s": 2, "es": "El vagón biblioteca, precioso. El jurado de boy scouts zombis, impresentable. Además desafinan.", "ru": "Вагон-библиотека прекрасен. Жюри из бойскаутов-зомби — безобразие. И они фальшивят."},
+  {"a": "Vasili", "ar": "Василий", "s": 1, "es": "Todo cuesta doscientos rublos. Hasta confesarse.", "ru": "Всё стоит двести рублей. Даже исповедь."}
+ ],
+
+ "museo-arte": [
+  {"a": "Alessio", "ar": "Алессио", "s": 4, "es": "Prometí no acercarme a menos de un kilómetro. Las salas son preciosas. Lo sé por una amiga.", "ru": "Я обещал не подходить ближе чем на километр. Залы прекрасные. Знаю от подруги."},
+  {"a": "Charles", "ar": "Чарльз", "s": 5, "es": "I found the diamond. I gave it back. Nobody said thank you. Still, beautiful museum.", "ru": "Я нашёл алмаз. Я его вернул. Никто не сказал спасибо. Но музей красивый."},
+  {"a": "Livia", "ar": "Ливия", "s": 5, "es": "Trabajo aquí restaurando milímetro a milímetro. Por favor, no toquen los cuadros. Ni los roben.", "ru": "Работаю здесь, реставрирую миллиметр за миллиметром. Пожалуйста, не трогайте картины. И не крадите."}
+ ],
+
+ "biblioteca-amor": [
+  {"a": "Rosa", "ar": "Роза", "s": 5, "es": "Abrimos una noche cada cien años. Los libros solo te sueltan por el marcapáginas. No traigan comida.", "ru": "Открыты одну ночь раз в сто лет. Книги отпускают только через закладку. Еду не приносить."},
+  {"a": "Vasili", "ar": "Василий", "s": 3, "es": "Entré a buscar un libro y terminé en tres novelas distintas. Una de ellas era mía.", "ru": "Зашёл за книгой, а оказался в трёх разных романах. Один из них был мой."}
+ ],
+
+ "grand-hotel": [
+  {"a": "Vasili", "ar": "Василий", "s": 3, "es": "Habitación 512: un huésped con «piedras con historia». La historia era mejor que los papeles.", "ru": "Номер 512: постоялец с «камнями с историей». История была лучше документов."},
+  {"a": "Zinaida", "ar": "Зинаида", "s": 5, "es": "Lujo, discreción y un detective que se cree que no lo vi en el lobby.", "ru": "Роскошь, конфиденциальность и детектив, который думает, что я не заметила его в лобби."}
+ ],
+
+ "hotel-miramare": [
+  {"a": "Oxana", "ar": "Оксана", "s": 1, "es": "Un señor de gris alquiló una barca la noche en que desapareció mi mejor amiga. El hotel no vio nada. Claro.", "ru": "Господин в сером взял лодку в ночь, когда исчезла моя лучшая подруга. Отель ничего не видел. Конечно."},
+  {"a": "E. Valli", "ar": "Э. Валли", "s": 5, "es": "Muy tranquilo. Nadie hace preguntas.", "ru": "Очень спокойно. Никто не задаёт вопросов."}
+ ],
+
+ "torre-norte": [
+  {"a": "Vasili", "ar": "Василий", "s": 4, "es": "Último piso. Las alturas muestran cómo es la gente de verdad. Ella pidió lo más caro.", "ru": "Верхний этаж. Высота показывает, какие люди на самом деле. Она заказала самое дорогое."},
+  {"a": "Alexandra", "ar": "Александра", "s": 5, "es": "Me encantan las alturas. Y que pague otro.", "ru": "Обожаю высоту. И когда платит кто-то другой."}
+ ],
+
+ "plaza-dante": [
+  {"a": "Chiara", "ar": "Кьяра", "s": 5, "es": "Canté aquí delante de toda la ciudad. Después la ciudad cantó conmigo.", "ru": "Я пела здесь перед всем городом. А потом город пел со мной."},
+  {"a": "Beppe", "ar": "Беппе", "s": 5, "es": "Buena acústica para el acordeón. Mis dedos ya parecen fideos hervidos.", "ru": "Хорошая акустика для аккордеона. Мои пальцы уже как варёные макароны."},
+  {"a": "Octavio Grande", "ar": "Октавио Гранде", "s": 4, "es": "Aquí perdí un duelo contra la risa. Ahora vendo helado al lado de la fuente. Las vueltas de la vida.", "ru": "Здесь я проиграл смеху дуэль. Теперь продаю мороженое у фонтана. Жизнь — штука такая."}
+ ],
+
+ "torre-tv": [
+  {"a": "El zorro", "ar": "Лис", "s": 1, "es": "De aquí sale todo lo malo de la ciudad. Y los programas de cocina.", "ru": "Отсюда идёт всё плохое в городе. И кулинарные передачи."},
+  {"a": "Marisa", "ar": "Мариса", "s": 4, "es": "Trabajo en la tele. La vista desde arriba es increíble. El café de la máquina, no.", "ru": "Работаю на телевидении. Вид сверху невероятный. Кофе из автомата — нет."}
+ ],
+
+ "central-electrica": [
+  {"a": "Dima", "ar": "Дима", "s": 1, "es": "Niveles ocultos, un laboratorio que amplifica una brecha y olor a azufre. No recomiendo.", "ru": "Скрытые уровни, лаборатория, усиливающая разлом, и запах серы. Не рекомендую."},
+  {"a": "Nullio", "ar": "Нуллио", "s": 5, "es": "Excelente fábrica. 300.000 máscaras, un solo rostro.", "ru": "Отличная фабрика. 300 000 масок, одно лицо."}
+ ]
+}

@@ -56,6 +56,7 @@ SOLO = {
     'tuneles': ['tikhaya-lyubov', 'ti-amo-in-silenzio', 'tajna-v-biblioteke', 'karnaval-sinei'],
     'laberinto-cristal': ['amor-en-el-cosmos'],
     'casa-amarilla': ['tikhaya-lyubov', 'ti-amo-in-silenzio'],
+    'casa-grande': ['grustnyj-gorod', 'la-citta-triste', 'karnaval-sinei'],
     'puerto-viejo': None,
     'ayuntamiento': None,
 }
@@ -67,6 +68,10 @@ def main():
     src = json.load(open(os.path.join(ROOT, 'data', 'lugares.json')))
     lugares = src['lugares']
     ru = json.load(open(os.path.join(ROOT, 'data', 'lugares.ru.json')))
+    resenas = json.load(open(os.path.join(ROOT, 'data', 'resenas.json')))
+    for k in resenas:
+        if not k.startswith('_') and k not in {L['id'] for L in lugares}:
+            print('  reseñas para un lugar que no existe:', k)
 
     # textos y rutas de capítulos
     textos, titulos = {}, {}
@@ -139,6 +144,8 @@ def main():
         else:
             print('  FALTA traducción rusa:', L['id'])
         o['apar'] = apar
+        if resenas.get(L['id']):
+            o['res'] = resenas[L['id']]
         if img:
             o['img'] = img
         out_lugares.append(o)

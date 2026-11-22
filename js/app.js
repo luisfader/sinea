@@ -25,7 +25,8 @@ const FP = { 'faro-ael': 'ael', 'parque-delfines': 'ael', ministerio: 'ministeri
   'calle-castanos': 'marcos', 'calle-violinistas': 'vasili', 'central-electrica': 'brecha', 'estacion-cero': 'tren-fantasma', 'cafe-centro': 'olas' };
 const CAT = {
   monumento: ['Monumento', '#d24f3f', 'Памятник'], plaza: ['Plaza', '#b57a2c', 'Площадь'], cafe: ['Café', '#c2456b', 'Кафе'], edificio: ['Edificio', '#5b6fb5', 'Здание'],
-  transporte: ['Transporte', '#2f7fb8', 'Транспорт'], parque: ['Parque', '#3d9a53', 'Парк'], barrio: ['Barrio', '#7d6b5c', 'Район'], calle: ['Calle', '#8a7a6a', 'Улица'], misterio: ['Misterio', '#7a4fc4', 'Тайна']
+  transporte: ['Transporte', '#2f7fb8', 'Транспорт'], parque: ['Parque', '#3d9a53', 'Парк'], barrio: ['Barrio', '#7d6b5c', 'Район'], calle: ['Calle', '#8a7a6a', 'Улица'], misterio: ['Misterio', '#7a4fc4', 'Тайна'],
+  casa: ['Casa de personaje', '#e0672b', 'Дом персонажа'], restaurante: ['Restaurante y café', '#d9822b', 'Ресторан и кафе'], tienda: ['Tienda', '#0f8f86', 'Магазин']
 };
 const ICONO = {
   monumento: '<path d="M12 2l2.6 6.3 6.4.5-4.9 4.2 1.5 6.4L12 16l-5.6 3.4 1.5-6.4L3 8.8l6.4-.5z"/>',
@@ -35,7 +36,10 @@ const ICONO = {
   transporte: '<path d="M6 3h12a2 2 0 012 2v10a3 3 0 01-3 3l2 3H7l2-3a3 3 0 01-3-3V5a2 2 0 012-2zm1 3v5h10V6z"/>',
   parque: '<path d="M12 2l6 9h-3l4 6H5l4-6H6zM11 17h2v5h-2z"/>',
   barrio: '<circle cx="12" cy="12" r="6"/>', calle: '<circle cx="12" cy="12" r="6"/>',
-  misterio: '<path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z"/>'
+  misterio: '<path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z"/>',
+  casa: '<path d="M12 3l9 8h-3v9h-4v-6h-4v6H6v-9H3z"/>',
+  restaurante: '<path d="M7 2h2v7a2 2 0 01-1 1.7V22H6V10.7A2 2 0 015 9V2h2v6h0V2zm8 0c2 0 3 2.5 3 6s-1 4-2 4v10h-2V2z"/>',
+  tienda: '<path d="M5 8h14l-1 13H6zM9 8V6a3 3 0 016 0v2h-2V6a1 1 0 00-2 0v2z"/>'
 };
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -155,7 +159,7 @@ for (const L of LUGARES) {
   el.addEventListener('click', (e) => { e.stopPropagation(); abrirLugar(L.id, true); });
   capa.appendChild(el);
   const p = peso(L);
-  ETQ.push({ el, L, texto: () => nomL(L).replace(/ \(.*\)$/, ''), titulo: () => nomL(L), imp: Math.log2(2 + p) + (L.cat === 'monumento' ? 2.2 : L.cat === 'plaza' ? 1.4 : 0) + (L.id === 'plaza-dante' || L.id === 'faro-ael' ? 3 : 0), w: 0, h: 0, tipo: 'lugar' });
+  ETQ.push({ el, L, texto: () => nomL(L).replace(/ \(.*\)$/, ''), titulo: () => nomL(L), imp: Math.log2(2 + p) + (L.cat === 'monumento' ? 2.2 : L.cat === 'plaza' ? 1.4 : 0) + (L.id === 'plaza-dante' || L.id === 'faro-ael' ? 3 : 0) + (L.cat === 'casa' ? 2.4 : 0) + (L.res ? 0.8 : 0), w: 0, h: 0, tipo: 'lugar' });
 }
 for (const b of BARRIOS) if (b.nombre) {
   const el = document.createElement('div'); el.className = 'barrio'; capa.appendChild(el);
@@ -174,7 +178,7 @@ for (const [nombre, t, pts, nru] of CALLES) {
 }
 
 const vp = new THREE.Vector3(), vp2 = new THREE.Vector3();
-let filtro = null, seleccion = null;
+let filtro = null, filtroIds = null, seleccion = null;
 function proyectar(x, y, h, out) {
   vp.set(x, h, -y).project(camara);
   out.x = (vp.x + 1) / 2 * innerWidth; out.y = (1 - vp.y) / 2 * innerHeight; out.z = vp.z; return out;
@@ -192,7 +196,7 @@ function etiquetas() {
     else { x = E.x; y = E.y; h = Math.max(0, altura(x, y)) + 2; }
     proyectar(x, y, h, o);
     let visible = o.z < 1 && o.x > -100 && o.x < innerWidth + 100 && o.y > -40 && o.y < innerHeight + 40;
-    const enFiltro = !filtro || (E.tipo === 'lugar' && E.L.apar.some(a => filtro.has(a.n)));
+    const enFiltro = !filtro || (E.tipo === 'lugar' && (filtroIds ? filtroIds.has(E.L.id) : E.L.apar.some(a => filtro.has(a.n))));
     if (E.tipo === 'lugar') {
       const umbral = 6.4 - zoom * 1.25;
       E.sel = seleccion === E.L.id;
@@ -247,6 +251,16 @@ function fichaNovela(a) {
     <div class="meta">${orig}${esc(tr(IDIOMAS[n.l], IDIOMAS_RU[n.l]) || n.l || '')}${n.y ? ' · ' + n.y : ''} · <button class="lnk" data-filtro="${a.n}">${tr('ver sus lugares en el mapa', 'места на карте')}</button></div>
     ${capitulos(a)}</div></div>`;
 }
+const promedio = (L) => L.res.reduce((t, r) => t + r.s, 0) / L.res.length;
+function estrellas(n) { let h = ''; for (let i = 1; i <= 5; i++) h += `<i class="${n >= i - .25 ? 'll' : n >= i - .75 ? 'md' : ''}">★</i>`; return `<span class="est">${h}</span>`; }
+const COL_AV = ['#e8453c', '#1a73e8', '#0f9d58', '#f4b400', '#ab47bc', '#00acc1', '#ff7043', '#5c6bc0', '#8d6e63'];
+function resenasHTML(L) {
+  if (!L.res) return '';
+  const items = L.res.map(r => { const nom = tr(r.a, r.ar || r.a); let h = 0; for (const c of r.a) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+    const resp = /^(Respuesta del propietario|Ответ владельца)/.test(r.es);
+    return `<div class="res${resp ? ' resp' : ''}"><div class="av" style="background:${COL_AV[h % COL_AV.length]}">${esc(nom[0])}</div><div><b>${esc(nom)}</b>${resp ? '' : ` ${estrellas(r.s)}`}<p>${esc(tr(r.es, r.ru || r.es))}</p></div></div>`; }).join('');
+  return `<h3 id="resenas">${tr('Reseñas de los vecinos', 'Отзывы жителей')} <small>${tr('escritas por los personajes', 'от персонажей')}</small></h3><div class="resenas">${items}</div>`;
+}
 function abrirLugar(id, mover = false) {
   const L = LUGARES.find(l => l.id === id); if (!L) return;
   seleccion = id;
@@ -258,7 +272,9 @@ function abrirLugar(id, mover = false) {
     <h2>${esc(nomL(L))}</h2>
     ${otrosL(L).length ? `<div class="otros">${otrosL(L).map(esc).join(' · ')}</div>` : ''}</div>
     <div class="acciones"><button data-acc="volar">${tr('Acercarse', 'Приблизить')}</button><button data-acc="girar">${tr('Dar la vuelta', 'Облететь')}</button><button data-acc="link">${tr('Copiar enlace', 'Скопировать ссылку')}</button>${FP[L.id] ? `<a href="${FADERPEDIA()}${FP[L.id]}" target="_blank" rel="noopener">${tr('Faderpedia', 'Фадерпедия')}</a>` : ''}</div>
+    ${L.res ? `<div class="nota" data-ir="1"><b>${promedio(L).toFixed(1).replace('.', lang === 'ru' ? ',' : ',')}</b> ${estrellas(promedio(L))} <span>(${L.res.length} ${plural(L.res.length, 'reseña', 'reseñas', 'отзыв', 'отзыва', 'отзывов')})</span></div>` : ''}
     <p class="desc">${esc(descL(L))}</p>
+    ${resenasHTML(L)}
     <h3>${lang === 'ru' ? `Встречается в ${L.apar.length} ${plural(L.apar.length, '', '', 'романе', 'романах', 'романах')}` : `Aparece en ${L.apar.length === 1 ? 'una novela' : L.apar.length + ' novelas'}`} <small>${total} ${plural(total, 'capítulo', 'capítulos', 'глава', 'главы', 'глав')}</small></h3>
     ${L.apar.map(fichaNovela).join('') || `<p class="vacio">${tr('Todavía no se encontró en el texto de las novelas.', 'Пока не найдено в тексте романов.')}</p>`}`;
   panel.classList.add('abierto'); panel.scrollTop = 0; cuerpo.scrollTop = 0;
@@ -274,6 +290,7 @@ function cerrarPanel() { panel.classList.remove('abierto'); seleccion = null; if
 $('#panel .cerrar').onclick = cerrarPanel;
 cuerpo.addEventListener('click', (e) => {
   const b = e.target.closest('.mas'); if (b) { b.parentElement.classList.add('todo'); b.remove(); }
+  if (e.target.closest('[data-ir]')) cuerpo.querySelector('#resenas')?.scrollIntoView({ behavior: 'smooth' });
   const f = e.target.closest('[data-filtro]'); if (f) aplicarFiltro(f.dataset.filtro, true);
   const l = e.target.closest('[data-lugar]'); if (l) abrirLugar(l.dataset.lugar, true);
 });
@@ -299,7 +316,7 @@ const usadas = Object.keys(NOVELAS).map(s => [s, LUGARES.filter(L => L.apar.some
 function llenarSelect() {
   const v = sel.value;
   const us = usadas.slice().sort((a, b) => tituloNovela(a[0]).localeCompare(tituloNovela(b[0]), lang));
-  sel.innerHTML = `<option value="">${tr('Todas las novelas y personajes', 'Все романы и персонажи')}</option><optgroup label="${tr('Personajes', 'Персонажи')}">` + Object.entries(PERSONAJES).map(([k, p]) => `<option value="p:${k}">${esc(pN(p))}</option>`).join('') + `</optgroup><optgroup label="${tr('Novelas', 'Романы')}">` + us.map(([s, n]) => `<option value="${s}">${esc(tituloNovela(s))} (${n})</option>`).join('') + '</optgroup>';
+  sel.innerHTML = `<option value="">${tr('Todas las novelas y personajes', 'Все романы и персонажи')}</option><optgroup label="${tr('En la ciudad', 'В городе')}"><option value="c:casa">${tr('Casas de los personajes', 'Дома персонажей')}</option><option value="c:res">${tr('Lugares con reseñas', 'Места с отзывами')}</option></optgroup><optgroup label="${tr('Personajes', 'Персонажи')}">` + Object.entries(PERSONAJES).map(([k, p]) => `<option value="p:${k}">${esc(pN(p))}</option>`).join('') + `</optgroup><optgroup label="${tr('Novelas', 'Романы')}">` + us.map(([s, n]) => `<option value="${s}">${esc(tituloNovela(s))} (${n})</option>`).join('') + '</optgroup>';
   sel.value = v;
 }
 sel.onchange = () => aplicarFiltro(sel.value || null, true);
@@ -308,8 +325,10 @@ let filtroActual = null;
 function aplicarFiltro(slug, mover) {
   if (ruta) { escena.remove(ruta); ruta.geometry.dispose(); ruta = null; }
   sel.value = slug || '';
-  if (!slug) { filtroActual = null; filtro = null; if (!seleccion) history.replaceState(null, '', urlCon('#/')); $('#recorrido').hidden = true; return; }
+  if (!slug) { filtroActual = null; filtro = null; filtroIds = null; if (!seleccion) history.replaceState(null, '', urlCon('#/')); $('#recorrido').hidden = true; return; }
+  filtroIds = null;
   if (slug.startsWith('p:')) return filtroPersonaje(slug.slice(2), mover);
+  if (slug.startsWith('c:')) return filtroCategoria(slug.slice(2), mover);
   const n = NOVELAS[slug];
   const fam = new Set([slug, ...Object.values(n.tr || {}).filter(s => NOVELAS[s])]);
   filtro = fam;
@@ -341,6 +360,18 @@ function aplicarFiltro(slug, mover) {
 }
 $('#recorrido button').onclick = () => aplicarFiltro(null);
 
+function filtroCategoria(k, mover) {
+  const lugares = LUGARES.filter(L => k === 'casa' ? L.cat === 'casa' : !!L.res).sort((a, b) => k === 'res' ? b.res.length - a.res.length : 0);
+  filtro = new Set(); filtroIds = new Set(lugares.map(L => L.id));
+  const tit = k === 'casa' ? tr('Casas de los personajes', 'Дома персонажей') : tr('Lugares con reseñas', 'Места с отзывами');
+  cuerpo.innerHTML = `<div class="cab"><span class="cat" style="--c:#e0672b">${tr('En la ciudad', 'В городе')}</span><h2>${esc(tit)}</h2>
+    <div class="acciones"><button data-filtro="">${tr('Quitar filtro', 'Снять фильтр')}</button></div></div>
+    <ol class="lista">${lugares.map(L => `<li><button data-lugar="${L.id}"><b>${esc(nomL(L))}</b><span>${L.res ? promedio(L).toFixed(1) + ' ★ · ' + L.res.length + ' ' + plural(L.res.length, 'reseña', 'reseñas', 'отзыв', 'отзыва', 'отзывов') : esc(tr(CAT[L.cat][0], CAT[L.cat][2]))}</span></button></li>`).join('')}</ol>`;
+  panel.classList.add('abierto'); seleccion = null; filtroActual = 'c:' + k;
+  $('#recorrido').hidden = false; $('#recorrido span').textContent = tit;
+  history.replaceState(null, '', urlCon('#/'));
+  if (mover) volar(500, -300, 3400, 0.85);
+}
 function filtroPersonaje(k, mover) {
   const P = PERSONAJES[k]; if (!P) return;
   filtro = new Set(P[1]);
@@ -366,7 +397,7 @@ const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 bus.addEventListener('input', () => {
   const q = norm(bus.value.trim()); if (!q) { res.hidden = true; return; }
   const lug = LUGARES.map(L => {
-    const nom = norm(L.nombre + ' ' + (L.nombre_ru || '') + ' ' + (L.otros || []).join(' ')); const d = norm(descL(L));
+    const nom = norm(L.nombre + ' ' + (L.nombre_ru || '') + ' ' + (L.otros || []).join(' ')); const d = norm(descL(L) + ' ' + (L.res || []).map(r => r.a + ' ' + r.ar + ' ' + tr(r.es, r.ru)).join(' '));
     const s = nom.includes(q) ? 3 : d.includes(q) ? 1 : 0; return [s, L];
   }).filter(x => x[0]).sort((a, b) => b[0] - a[0] || peso(b[1]) - peso(a[1])).slice(0, 8);
   const nov = Object.entries(NOVELAS).filter(([s, n]) => norm(n.es + ' ' + n.t + ' ' + (n.ru || '')).includes(q)).slice(0, 5);

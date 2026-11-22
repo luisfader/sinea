@@ -14,6 +14,8 @@ No necesita compilación: es un `index.html` con módulos JavaScript y three.js 
 - **Buscar** (tecla `/`): lugares, novelas, personajes, calles y también palabras de las descripciones (por ejemplo, «Irina» encuentra la cafetería Fucsia).
 - **Filtrar por novela**: se iluminan solo sus lugares y aparece el **recorrido** en el orden en que la novela los menciona, con una línea roja sobre el mapa.
 - **Filtrar por personaje**: el detective Vasili, Sasha, Marcos y Alicia, Irina, Franco y Chiara, Luis y Natalia, Alessio y Tatiana, Fabrizio y Lucía.
+- **Casas de los personajes**: Marcos y Alicia (calle de los Castaños), la familia Grande (Franco, Alfredo y Gaia), Chiara, Sasha, el piso de Luis y Natalia, la oficina del detective Vasili y el carrito de helados de Octavio Grande en la plaza Dante. En el menú: «Casas de los personajes».
+- **Reseñas**: restaurantes, cafés, tiendas, bares y lugares famosos tienen reseñas con estrellas escritas por los propios personajes (Casimiro Condena, el zorro, Doña Carmen, Ashot…), en español y en ruso. En el menú: «Lugares con reseñas».
 - **Noche**: se encienden las ventanas, el faro barre la bahía con su haz y, por las vías del barrio de los Locos, pasa el tren fantasma.
 - **Enlaces directos**: `#/lugar/faro-ael`, `#/novela/opasnoe-svidanie`, `#/personaje/vasili`.
 
@@ -40,6 +42,7 @@ js/hitos.js           los edificios famosos en 3D (faro, torre de TV, ayuntamien
 js/datos.js           GENERADO: lugares + novelas + capítulos
 data/lugares.json     FUENTE: los lugares, escritos a mano
 data/lugares.ru.json  FUENTE: nombre y descripción de cada lugar en ruso (misma clave id)
+data/resenas.json     FUENTE: las reseñas de los personajes (autor ES/RU, estrellas, texto ES/RU)
 tools/build.py        cruza data/lugares.json con los textos de litmir y genera js/datos.js e img/
 img/lugares/          una ilustración por lugar (de los capítulos de litmir, reducida a webp)
 img/portadas/         portadas de las novelas
@@ -55,7 +58,8 @@ img/portadas/         portadas de las novelas
    - `buscar`: expresión regular que se busca en los capítulos para saber en qué novelas aparece (por ejemplo `площад\\w* Данте|plaza Dante|piazza Dante`);
    - opcionales: `buscar_en` (patrón que solo vale en ciertas novelas), `extra` (capítulos añadidos a mano: `{"el-impostor": [1]}`), `ilustracion` (elegir la imagen a mano: `["golos", "19-01.jpg"]`).
 2. Agregar su nombre y descripción en ruso en `data/lugares.ru.json` (el script avisa «FALTA traducción rusa» si falta).
-3. Regenerar los datos con una copia local de litmir al lado:
+3. Opcional: reseñas en `data/resenas.json`, con la misma clave id: `{"a": "Vasili", "ar": "Василий", "s": 4, "es": "…", "ru": "…"}`. Si el texto empieza con «Respuesta del propietario» / «Ответ владельца», se muestra como respuesta del dueño.
+4. Regenerar los datos con una copia local de litmir al lado:
 
 ```
 python3 tools/build.py ../litmir
@@ -65,7 +69,7 @@ Las calles, barrios y colinas se editan en `js/mundo.js` (cada calle y barrio ll
 
 ## Próximas capas
 
-- Personajes en el mapa: dónde vive cada uno (el piso de Marcos y Alicia, la oficina de Vasili, el balcón de Marisa…).
+- Más casas: el balcón de Marisa, la casa de Nadia sobre la librería, el piso de Irina.
 - Más interiores y escenas: el metro que no existía y sus estaciones, los vagones del tren fantasma, la Sala del Corazón Negro.
 - Lugares fuera de Sinea conectados: Verdegrad, Armonia, la Ciudad del Norte.
 - Más idiomas: italiano e inglés (los textos de la interfaz están en `js/app.js`, función `tr`).

@@ -458,6 +458,29 @@ export const LUGARES = [
 ]
 }
 ],
+"res": [
+{
+"a": "Chiara",
+"ar": "Кьяра",
+"s": 5,
+"es": "Canté aquí delante de toda la ciudad. Después la ciudad cantó conmigo.",
+"ru": "Я пела здесь перед всем городом. А потом город пел со мной."
+},
+{
+"a": "Beppe",
+"ar": "Беппе",
+"s": 5,
+"es": "Buena acústica para el acordeón. Mis dedos ya parecen fideos hervidos.",
+"ru": "Хорошая акустика для аккордеона. Мои пальцы уже как варёные макароны."
+},
+{
+"a": "Octavio Grande",
+"ar": "Октавио Гранде",
+"s": 4,
+"es": "Aquí perdí un duelo contra la risa. Ahora vendo helado al lado de la fuente. Las vueltas de la vida.",
+"ru": "Здесь я проиграл смеху дуэль. Теперь продаю мороженое у фонтана. Жизнь — штука такая."
+}
+],
 "img": {
 "src": "img/lugares/plaza-dante.webp",
 "n": "pokhititel-serdec-portret-osnovatelya",
@@ -1220,6 +1243,22 @@ export const LUGARES = [
 ]
 }
 ],
+"res": [
+{
+"a": "Miguel",
+"ar": "Мигель",
+"s": 5,
+"es": "Casilla e3. El café Tre Sorelle tiene dos puertas: perfecto para un enroque.",
+"ru": "Поле e3. У кафе «Тре Сорелле» две двери: идеально для рокировки."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 3,
+"es": "Las palomas se sientan en fila, a la misma distancia. Eso no es normal. Lo anoté.",
+"ru": "Голуби сидят в ряд, на одинаковом расстоянии. Это ненормально. Записал."
+}
+],
 "img": {
 "src": "img/lugares/plaza-reloj.webp",
 "n": "strateg",
@@ -1579,6 +1618,29 @@ export const LUGARES = [
 ]
 ]
 }
+],
+"res": [
+{
+"a": "Lusiana",
+"ar": "Лусиана",
+"s": 5,
+"es": "Vine a dibujar y terminé hablando del subconsciente con un desconocido. Esa noche soñé con él. El café, correcto.",
+"ru": "Пришла рисовать, а в итоге говорила о подсознании с незнакомцем. Той же ночью он мне приснился. Кофе нормальный."
+},
+{
+"a": "Celestio",
+"ar": "Селестио",
+"s": 4,
+"es": "Buen lugar para trabajar en planos. Hasta que alguien se sienta a tu mesa y te abre el sótano.",
+"ru": "Хорошее место, чтобы работать над чертежами. Пока кто-нибудь не подсядет и не откроет твой подвал."
+},
+{
+"a": "Doctor Crane",
+"ar": "Доктор Крейн",
+"s": 2,
+"es": "Demasiados sueños sin explotar en un solo local. Lo tengo en la lista.",
+"ru": "Слишком много неиспользованных снов в одном заведении. Внёс в список."
+}
 ]
 },
 {
@@ -1797,6 +1859,29 @@ export const LUGARES = [
 ]
 }
 ],
+"res": [
+{
+"a": "Tatiana",
+"ar": "Татьяна",
+"s": 3,
+"es": "La primera vez me tiraron un café encima de la camisa blanca. La segunda vez el barista me dibujó un zorro en la espuma para pedir perdón. Le subo una estrella por cada zorro.",
+"ru": "В первый раз мне пролили кофе на белую рубашку. Во второй раз бариста нарисовал мне лиса на пенке в знак извинения. Добавляю по звезде за каждого лиса."
+},
+{
+"a": "Alessio",
+"ar": "Алессио",
+"s": 5,
+"es": "Respuesta del propietario: aquí no se roba nada. Salvo el corazón, que es gratis.",
+"ru": "Ответ владельца: здесь ничего не крадут. Кроме сердца — оно бесплатно."
+},
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 5,
+"es": "Mi Alessio dibuja zorros en la espuma del capuchino. Nadie se anima a tomarlo.",
+"ru": "Мой Алессио рисует лисов на пенке капучино. Никто не решается его пить."
+}
+],
 "img": {
 "src": "img/lugares/cafe-ladron.webp",
 "n": "pokhititel-serdec-portret-osnovatelya",
@@ -1935,6 +2020,29 @@ export const LUGARES = [
 "Кабинет с широким окном"
 ]
 ]
+}
+],
+"res": [
+{
+"a": "Franco",
+"ar": "Франко",
+"s": 1,
+"es": "Trabajé aquí. No hay ventanas, no hay chistes y me multaron por sonreírle a una chica en el metro. Lo mejor del Ministerio es la puerta de salida.",
+"ru": "Работал здесь. Окон нет, шуток нет, и меня оштрафовали за улыбку девушке в метро. Лучшее в Министерстве — дверь на выход."
+},
+{
+"a": "Octavio Grande",
+"ar": "Октавио Гранде",
+"s": 5,
+"es": "Orden. Disciplina. Futuro. (Reseña escrita en 2025, ya no la comparto.)",
+"ru": "Порядок. Дисциплина. Будущее. (Отзыв написан в 2025 году, больше не разделяю.)"
+},
+{
+"a": "Chiara",
+"ar": "Кьяра",
+"s": 1,
+"es": "Me cantaron una multa. Les contesté cantando. Empate.",
+"ru": "Мне выписали штраф. Я ответила песней. Ничья."
 }
 ],
 "img": {
@@ -2265,6 +2373,22 @@ export const LUGARES = [
 ]
 }
 ],
+"res": [
+{
+"a": "El zorro",
+"ar": "Лис",
+"s": 1,
+"es": "De aquí sale todo lo malo de la ciudad. Y los programas de cocina.",
+"ru": "Отсюда идёт всё плохое в городе. И кулинарные передачи."
+},
+{
+"a": "Marisa",
+"ar": "Мариса",
+"s": 4,
+"es": "Trabajo en la tele. La vista desde arriba es increíble. El café de la máquina, no.",
+"ru": "Работаю на телевидении. Вид сверху невероятный. Кофе из автомата — нет."
+}
+],
 "img": {
 "src": "img/lugares/torre-tv.webp",
 "n": "volny-lyubvi-gorod-bez-ulybok",
@@ -2424,6 +2548,29 @@ export const LUGARES = [
 "Ливия"
 ]
 ]
+}
+],
+"res": [
+{
+"a": "Alessio",
+"ar": "Алессио",
+"s": 4,
+"es": "Prometí no acercarme a menos de un kilómetro. Las salas son preciosas. Lo sé por una amiga.",
+"ru": "Я обещал не подходить ближе чем на километр. Залы прекрасные. Знаю от подруги."
+},
+{
+"a": "Charles",
+"ar": "Чарльз",
+"s": 5,
+"es": "I found the diamond. I gave it back. Nobody said thank you. Still, beautiful museum.",
+"ru": "Я нашёл алмаз. Я его вернул. Никто не сказал спасибо. Но музей красивый."
+},
+{
+"a": "Livia",
+"ar": "Ливия",
+"s": 5,
+"es": "Trabajo aquí restaurando milímetro a milímetro. Por favor, no toquen los cuadros. Ni los roben.",
+"ru": "Работаю здесь, реставрирую миллиметр за миллиметром. Пожалуйста, не трогайте картины. И не крадите."
 }
 ],
 "img": {
@@ -2676,6 +2823,22 @@ export const LUGARES = [
 ]
 }
 ],
+"res": [
+{
+"a": "Franco",
+"ar": "Франко",
+"s": 5,
+"es": "Entré buscando un escondite y salí con una regadera que dispara sonrisas. Geppetto, sos un genio.",
+"ru": "Зашёл в поисках укрытия, а вышел с лейкой, которая стреляет улыбками. Джеппетто, ты гений."
+},
+{
+"a": "Geppetto",
+"ar": "Джеппетто",
+"s": 4,
+"es": "Respuesta del propietario: el té, en un minuto. La persecución, en cinco. Hay tiempo.",
+"ru": "Ответ владельца: чай будет через минуту, погоня — через пять. Время есть."
+}
+],
 "img": {
 "src": "img/lugares/taller-geppetto.webp",
 "n": "grustnyj-gorod",
@@ -2684,17 +2847,20 @@ export const LUGARES = [
 },
 {
 "id": "calle-castanos",
-"nombre": "Calle de los Castaños",
+"nombre": "Casa de Marcos y Alicia (calle de los Castaños)",
 "otros": [
+"Марк и Алисия",
+"Marco e Alice",
+"Marcus",
 "Улица Каштанов"
 ],
-"cat": "calle",
+"cat": "casa",
 "x": -560,
 "y": 40,
-"modelo": "casa",
-"desc": "Aquí está el piso de Marcos y Alicia, «estrecho como una cajita donde dos personas intentan guardar dos vidas». En la pared, un mapa de Sinea lleno de alfileres: rojos para los casos, azules para los sospechosos… y doce blancos que, en «Знак», dibujan un círculo alrededor del Planetario.",
-"nombre_ru": "Улица Каштанов",
-"desc_ru": "Здесь квартира Марка и Алисии, тесная, «как шкатулка, куда два человека пытаются сложить две жизни». На стене — карта Синеи в булавках: красные — дела, синие — подозреваемые… и двенадцать белых, которые в «Знаке» складываются в круг вокруг Планетария.",
+"modelo": "hogar",
+"desc": "El piso de Marcos —Marco en italiano, Марк en ruso, Marcus en latín— y de Alicia —Alice, Алисия—, en la calle de los Castaños: «estrecho como una cajita donde dos personas intentan guardar dos vidas». Él cocina «de forma peligrosa para el incendio», ella «de forma ritual». En la pared, un mapa de Sinea lleno de alfileres: rojos para los casos, azules para los sospechosos… y doce blancos que, en «Знак», dibujan un círculo alrededor del Planetario. En el alféizar, el zorrito de madera con el sello «АНОМАЛИЯ».",
+"nombre_ru": "Дом Марка и Алисии (улица Каштанов)",
+"desc_ru": "Квартира Марка — Marcos по-испански, Marco по-итальянски, Marcus по-латыни — и Алисии (Alicia, Alice) на улице Каштанов, тесная, «как шкатулка, куда два человека пытаются сложить две жизни». Он готовит «пожароопасно», она — «ритуально». На стене — карта Синеи в булавках: красные — дела, синие — подозреваемые… и двенадцать белых, которые в «Знаке» складываются в круг вокруг Планетария. На подоконнике — деревянный лис с печатью «АНОМАЛИЯ».",
 "apar": [
 {
 "n": "znak",
@@ -2706,6 +2872,10 @@ export const LUGARES = [
 [
 "4",
 "Здравый смысл"
+],
+[
+"6",
+"Откровение года"
 ],
 [
 "7",
@@ -2728,8 +2898,16 @@ export const LUGARES = [
 "Шов в небе"
 ],
 [
+"14",
+"Альриша"
+],
+[
 "15",
 "Звездопад"
+],
+[
+"16",
+"Третий день"
 ]
 ]
 },
@@ -2817,6 +2995,23 @@ export const LUGARES = [
 ]
 },
 {
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"32",
+"Станция шёпота"
+],
+[
+"33",
+"Станция бури"
+],
+[
+"extra-4",
+"Интервью с Карлоттой, флорентийским искусствоведом"
+]
+]
+},
+{
 "n": "almaznyj-dozhd",
 "c": [
 [
@@ -2830,6 +3025,29 @@ export const LUGARES = [
 ]
 }
 ],
+"res": [
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 5,
+"es": "Piso pequeño, energía enorme. Venus en la cocina, Marte en el sofá. El zorro de madera del alféizar se calienta cuando algo va a pasar.",
+"ru": "Квартира маленькая, энергия огромная. Венера на кухне, Марс на диване. Деревянный лис на подоконнике теплеет, когда что-то должно случиться."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 4,
+"es": "Inventario: un mapa, ciento doce alfileres, una novia que quema incienso en el fogón. Riesgo de incendio: alto. Calidad de vida: también.",
+"ru": "Опись: одна карта, сто двенадцать булавок, девушка, которая жжёт благовония на конфорке. Пожароопасность: высокая. Качество жизни: тоже."
+},
+{
+"a": "Miguel",
+"ar": "Мигель",
+"s": 5,
+"es": "Vengo los domingos a jugar al ajedrez con mi hermano. Pierde siempre, pero dice que me deja ganar. Mentira.",
+"ru": "Прихожу по воскресеньям играть с братом в шахматы. Он всегда проигрывает, но говорит, что поддаётся. Неправда."
+}
+],
 "img": {
 "src": "img/lugares/calle-castanos.webp",
 "n": "znak",
@@ -2838,17 +3056,18 @@ export const LUGARES = [
 },
 {
 "id": "calle-violinistas",
-"nombre": "Calle de los Violinistas (oficina de Vasili)",
+"nombre": "Oficina del detective Vasili",
 "otros": [
+"Контора Василия",
 "Улица Скрипачей"
 ],
-"cat": "calle",
+"cat": "casa",
 "x": 300,
 "y": -150,
-"modelo": "casa",
-"desc": "En un tercer piso, detrás de una puerta con el cartel «Sin preguntas innecesarias», está la oficina del detective Vasili. Miguel, el Ajedrecista de «Стратег», llama tres veces corto y una largo y extiende sobre la mesa un viejo mapa de Sinea cuadriculado de ocho por ocho. En la esquina hay una panadería donde se discute de fútbol.",
-"nombre_ru": "Улица Скрипачей (контора Василия)",
-"desc_ru": "На третьем этаже, за дверью с табличкой «Без лишних вопросов», — контора детектива Василия. Мигель, Шахматист из «Стратега», стучит три раза коротко и один длинно и расстилает на столе старую карту Синеи, расчерченную на восемь на восемь. На углу пекарня, где спорят о футболе.",
+"modelo": "hogar",
+"desc": "En un tercer piso de la calle de los Violinistas, detrás de una puerta con el cartel «Sin preguntas innecesarias», está la oficina del detective privado Vasili (Vasily, Василий). Miguel, el Ajedrecista de «Стратег», llama tres veces corto y una largo y extiende sobre la mesa un viejo mapa de Sinea cuadriculado de ocho por ocho. En «Алмазный дождь» Vasili se muda a un despacho encima de la shawarma de Ashot, en la calle de los Castaños, decidido a «descansar del amor».",
+"nombre_ru": "Контора детектива Василия",
+"desc_ru": "На третьем этаже дома на улице Скрипачей, за дверью с табличкой «Без лишних вопросов», — контора частного детектива Василия. Мигель, Шахматист из «Стратега», стучит три раза коротко и один длинно и расстилает на столе старую карту Синеи, расчерченную восемь на восемь. В «Алмазном дожде» Василий снимает кабинет над шавермой Ашота на улице Каштанов, решив «отдохнуть от любви».",
 "apar": [
 {
 "n": "strateg",
@@ -2888,6 +3107,29 @@ export const LUGARES = [
 "Возвращение Василия"
 ]
 ]
+}
+],
+"res": [
+{
+"a": "Miguel",
+"ar": "Мигель",
+"s": 5,
+"es": "Tres golpes cortos y uno largo. Té, un mapa de Sinea de ocho por ocho y un detective que no hace preguntas innecesarias. Lo mejor de la ciudad.",
+"ru": "Три коротких стука и один длинный. Чай, карта Синеи восемь на восемь и детектив без лишних вопросов. Лучшее место в городе."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 2,
+"es": "Un pozo de pose y teorías. Pero hay que reconocer que cava en el lugar correcto.",
+"ru": "Сплошная поза и теории. Но надо признать: копает он в правильном месте."
+},
+{
+"a": "Vasili",
+"ar": "Василий",
+"s": 4,
+"es": "Respuesta del propietario: gracias, Marcos. El cartel sigue en la puerta. Lo leíste mal.",
+"ru": "Ответ владельца: спасибо, Марк. Табличка всё ещё на двери. Ты неправильно её прочитал."
 }
 ],
 "img": {
@@ -3550,6 +3792,29 @@ export const LUGARES = [
 "Dos desconocidos en la estación"
 ]
 ]
+}
+],
+"res": [
+{
+"a": "Bobby López",
+"ar": "Бобби Лопес",
+"s": 5,
+"es": "El tren fantasma se llevó a mi suegra. Cinco estrellas.",
+"ru": "Призрачный поезд увёз мою тёщу. Пять звёзд."
+},
+{
+"a": "Doña Carmen",
+"ar": "Донья Кармен",
+"s": 1,
+"es": "Volví.",
+"ru": "Я вернулась."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 3,
+"es": "Horarios puntuales. Salvo uno, que no figura en ningún tablero.",
+"ru": "Расписание соблюдается. Кроме одного поезда, которого нет ни на одном табло."
 }
 ],
 "img": {
@@ -4251,6 +4516,29 @@ export const LUGARES = [
 ]
 }
 ],
+"res": [
+{
+"a": "Casimiro Condena",
+"ar": "Казимиро Кондена",
+"s": 5,
+"es": "El mejor tren. Un tren tremendo. Casimiro Condena juzga rápido, sin tonterías. ¡Mucha gente me lo agradece!",
+"ru": "Лучший поезд. Потрясающий поезд. Казимиро Кондена судит быстро, без глупостей. Многие мне благодарны!"
+},
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 2,
+"es": "El vagón biblioteca, precioso. El jurado de boy scouts zombis, impresentable. Además desafinan.",
+"ru": "Вагон-библиотека прекрасен. Жюри из бойскаутов-зомби — безобразие. И они фальшивят."
+},
+{
+"a": "Vasili",
+"ar": "Василий",
+"s": 1,
+"es": "Todo cuesta doscientos rublos. Hasta confesarse.",
+"ru": "Всё стоит двести рублей. Даже исповедь."
+}
+],
 "img": {
 "src": "img/lugares/tren-fantasma.webp",
 "n": "el-tren-fantasma",
@@ -4279,6 +4567,22 @@ export const LUGARES = [
 "След"
 ]
 ]
+}
+],
+"res": [
+{
+"a": "Vasili",
+"ar": "Василий",
+"s": 4,
+"es": "Último piso. Las alturas muestran cómo es la gente de verdad. Ella pidió lo más caro.",
+"ru": "Верхний этаж. Высота показывает, какие люди на самом деле. Она заказала самое дорогое."
+},
+{
+"a": "Alexandra",
+"ar": "Александра",
+"s": 5,
+"es": "Me encantan las alturas. Y que pague otro.",
+"ru": "Обожаю высоту. И когда платит кто-то другой."
 }
 ]
 },
@@ -5448,6 +5752,29 @@ export const LUGARES = [
 ]
 }
 ],
+"res": [
+{
+"a": "Irina",
+"ar": "Ирина",
+"s": 4,
+"es": "Odio el rosa. Odio las citas. Odio a la gente que habla de Bunin como si fuera su vecino. Volví al día siguiente.",
+"ru": "Ненавижу розовый. Ненавижу свидания. Ненавижу людей, которые говорят о Бунине, как о соседе по лестничной клетке. Вернулась на следующий день."
+},
+{
+"a": "Mateo",
+"ar": "Матео",
+"s": 5,
+"es": "El mejor croissant de almendras de Sinea y la mejor oyente de Sinea. La última vez que tuve una cita fue con el gobierno anterior.",
+"ru": "Лучший круассан с миндалём в Синее и лучшая слушательница в Синее. В последний раз я ходил на свидание при прошлом правительстве."
+},
+{
+"a": "Casimiro Condena",
+"ar": "Казимиро Кондена",
+"s": 1,
+"es": "Demasiado rosa. Casimiro Condena condena este café. Una estrella. The best estrella.",
+"ru": "Слишком розово. Казимиро Кондена осуждает это кафе. Одна звезда. The best звезда."
+}
+],
 "img": {
 "src": "img/lugares/fucsia.webp",
 "n": "mashina-snov",
@@ -5484,6 +5811,22 @@ export const LUGARES = [
 "Онейрос"
 ]
 ]
+}
+],
+"res": [
+{
+"a": "Irina",
+"ar": "Ирина",
+"s": 2,
+"es": "Pan, kéfir, queso, manzanas, té. Y desde hace dos semanas, en la caja, una pirámide de «kits para el fin del mundo». Gracias, ahora no duermo.",
+"ru": "Хлеб, кефир, сыр, яблоки, чай. А последние две недели у кассы — пирамида «наборов на конец света». Спасибо, теперь я не сплю."
+},
+{
+"a": "Bobby López",
+"ar": "Бобби Лопес",
+"s": 5,
+"es": "Compré seis kits del fin del mundo por las latas. Mi suegra dice que el fin del mundo soy yo.",
+"ru": "Купил шесть наборов на конец света ради тушёнки. Тёща говорит, что конец света — это я."
 }
 ],
 "img": {
@@ -5811,6 +6154,22 @@ export const LUGARES = [
 ]
 }
 ],
+"res": [
+{
+"a": "Vasili",
+"ar": "Василий",
+"s": 3,
+"es": "Habitación 512: un huésped con «piedras con historia». La historia era mejor que los papeles.",
+"ru": "Номер 512: постоялец с «камнями с историей». История была лучше документов."
+},
+{
+"a": "Zinaida",
+"ar": "Зинаида",
+"s": 5,
+"es": "Lujo, discreción y un detective que se cree que no lo vi en el lobby.",
+"ru": "Роскошь, конфиденциальность и детектив, который думает, что я не заметила его в лобби."
+}
+],
 "img": {
 "src": "img/lugares/grand-hotel.webp",
 "n": "almaznyj-dozhd",
@@ -5863,6 +6222,22 @@ export const LUGARES = [
 "La cena"
 ]
 ]
+}
+],
+"res": [
+{
+"a": "Oxana",
+"ar": "Оксана",
+"s": 1,
+"es": "Un señor de gris alquiló una barca la noche en que desapareció mi mejor amiga. El hotel no vio nada. Claro.",
+"ru": "Господин в сером взял лодку в ночь, когда исчезла моя лучшая подруга. Отель ничего не видел. Конечно."
+},
+{
+"a": "E. Valli",
+"ar": "Э. Валли",
+"s": 5,
+"es": "Muy tranquilo. Nadie hace preguntas.",
+"ru": "Очень спокойно. Никто не задаёт вопросов."
 }
 ]
 },
@@ -6224,6 +6599,22 @@ export const LUGARES = [
 "Узор на карте"
 ]
 ]
+}
+],
+"res": [
+{
+"a": "Dima",
+"ar": "Дима",
+"s": 1,
+"es": "Niveles ocultos, un laboratorio que amplifica una brecha y olor a azufre. No recomiendo.",
+"ru": "Скрытые уровни, лаборатория, усиливающая разлом, и запах серы. Не рекомендую."
+},
+{
+"a": "Nullio",
+"ar": "Нуллио",
+"s": 5,
+"es": "Excelente fábrica. 300.000 máscaras, un solo rostro.",
+"ru": "Отличная фабрика. 300 000 масок, одно лицо."
 }
 ],
 "img": {
@@ -6767,6 +7158,36 @@ export const LUGARES = [
 ]
 }
 ],
+"res": [
+{
+"a": "Sasha",
+"ar": "Саша",
+"s": 5,
+"es": "Vivo aquí. El haz no se detiene nunca. Casi nunca.",
+"ru": "Я здесь живу. Луч никогда не останавливается. Почти никогда."
+},
+{
+"a": "Dima",
+"ar": "Дима",
+"s": 5,
+"es": "Lo construimos con nuestras manos donde estaba la vieja estación. Arriba guardamos el Corazón del Mar. Visita obligatoria.",
+"ru": "Мы построили его своими руками на месте старой станции. Наверху хранится Сердце Моря. Обязательно к посещению."
+},
+{
+"a": "Nira",
+"ar": "Нира",
+"s": 5,
+"es": "Clic. Clic-clic. Silbido largo. (Traducido por Sasha: «La mejor luz de toda la costa».)",
+"ru": "Щёлк. Щёлк-щёлк. Долгий свист. (Перевод Саши: «Лучший свет на всём побережье».)"
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 3,
+"es": "El haz se detuvo siete segundos a la una menos veinte. Exijo una explicación.",
+"ru": "Луч остановился на семь секунд без двадцати час. Требую объяснений."
+}
+],
 "img": {
 "src": "img/lugares/faro-ael.webp",
 "n": "golos",
@@ -7119,6 +7540,22 @@ export const LUGARES = [
 ]
 ]
 }
+],
+"res": [
+{
+"a": "Rosa",
+"ar": "Роза",
+"s": 5,
+"es": "Abrimos una noche cada cien años. Los libros solo te sueltan por el marcapáginas. No traigan comida.",
+"ru": "Открыты одну ночь раз в сто лет. Книги отпускают только через закладку. Еду не приносить."
+},
+{
+"a": "Vasili",
+"ar": "Василий",
+"s": 3,
+"es": "Entré a buscar un libro y terminé en tres novelas distintas. Una de ellas era mía.",
+"ru": "Зашёл за книгой, а оказался в трёх разных романах. Один из них был мой."
+}
 ]
 },
 {
@@ -7204,63 +7641,1239 @@ export const LUGARES = [
 "n": "strateg",
 "c": "11"
 }
+},
+{
+"id": "casa-grande",
+"nombre": "Casa de la familia Grande (Franco, Alfredo y Gaia)",
+"otros": [
+"Дом семьи Гранде",
+"Франко, Альфредо и Гайя"
+],
+"cat": "casa",
+"x": 780,
+"y": -170,
+"modelo": "hogar",
+"desc": "Un viejo edificio de cuatro pisos cerca del centro. Aquí vive Franco con sus padres: Gaia, que lo entiende con mirarlo unos segundos y siempre tiene algo al fuego con ajo y verduras, y Alfredo Grande, que gruñe ante las noticias, se burla del alcalde… y en «Карнавал Синеи» se convierte él mismo en alcalde. Alfredo es hermano de Octavio Grande, el que prohibió la risa.",
+"nombre_ru": "Дом семьи Гранде (Франко, Альфредо и Гайя)",
+"desc_ru": "Старый четырёхэтажный дом недалеко от центра. Здесь Франко живёт с родителями: Гайей, которая понимает его с одного взгляда и всегда что-то готовит с чесноком и овощами, и Альфредо Гранде, который ворчит на новости, подшучивает над мэром… а в «Карнавале Синеи» сам становится мэром. Альфредо — брат Октавио Гранде, того самого, что запретил смех.",
+"apar": [
+{
+"n": "grustnyj-gorod",
+"c": [
+[
+"2",
+"Штраф за улыбку"
+],
+[
+"4",
+"Район грустных богачей"
+],
+[
+"5",
+"Тайная вечеринка"
+],
+[
+"6",
+"Приглашение Мартино"
+],
+[
+"8",
+"Песня над Синеей"
+],
+[
+"17",
+"Вызов"
+],
+[
+"18",
+"Дуэль"
+],
+[
+"19",
+"Мороженое от Октавио"
+]
+]
+},
+{
+"n": "karnaval-sinei",
+"c": [
+[
+"31",
+"Конверт от отца"
+],
+[
+"37",
+"Кухня Гранде"
+]
+]
+}
+],
+"res": [
+{
+"a": "Gaia",
+"ar": "Гайя",
+"s": 5,
+"es": "Cuatro pisos sin ascensor, un marido que discute con el televisor y un hijo que vuelve oliendo a moto. Huele a ajo y a salsa. No lo cambio por nada.",
+"ru": "Четыре этажа без лифта, муж, который спорит с телевизором, и сын, который возвращается с запахом мотоцикла. Пахнет чесноком и соусом. Ни на что не променяю."
+},
+{
+"a": "Alfredo Grande",
+"ar": "Альфредо Гранде",
+"s": 4,
+"es": "Buena casa. Le quito una estrella porque desde que soy alcalde tengo que hacer los chistes en voz baja para que no salgan en los diarios.",
+"ru": "Хороший дом. Минус звезда: с тех пор как я мэр, шутить приходится шёпотом, чтобы не попасть в газеты."
+},
+{
+"a": "Martino",
+"ar": "Мартино",
+"s": 5,
+"es": "Vine a buscar a Franco para el stand-up secreto y me fui con tres táperes de Gaia. Volvería solo por eso.",
+"ru": "Зашёл за Франко на тайный стендап, а ушёл с тремя контейнерами еды от Гайи. Вернусь хотя бы ради этого."
+}
+],
+"img": {
+"src": "img/lugares/casa-grande.webp",
+"n": "grustnyj-gorod",
+"c": "2"
+}
+},
+{
+"id": "casa-chiara",
+"nombre": "Piso de Chiara",
+"otros": [
+"Квартира Кьяры",
+"Casa di Chiara"
+],
+"cat": "casa",
+"x": -10,
+"y": -90,
+"modelo": "hogar",
+"desc": "El piso de Chiara, la sonrisa imposible de Sinea. Franco llega aquí como repartidor de «Pedidos Sabrosos» y le abre la puerta un pelirrojo alto en camiseta de estar por casa… y Franco se muere de celos. Al día siguiente, la aplicación le asigna otro pedido: «CLIENTE: CHIARA». Mismo portal, mismo piso.",
+"nombre_ru": "Квартира Кьяры",
+"desc_ru": "Квартира Кьяры, невозможной улыбки Синеи. Франко приезжает сюда курьером «Вкусных заказов», и дверь ему открывает высокий рыжий парень в домашней футболке… Франко умирает от ревности. На следующий день приложение присылает новый заказ: «КЛИЕНТ: КЬЯРА». Тот же подъезд, та же квартира.",
+"apar": [
+{
+"n": "grustnyj-gorod",
+"c": [
+[
+"4",
+"Район грустных богачей"
+],
+[
+"5",
+"Тайная вечеринка"
+]
+]
+}
+],
+"res": [
+{
+"a": "Franco",
+"ar": "Франко",
+"s": 2,
+"es": "Me abrió la puerta un pelirrojo alto en camiseta. Dos estrellas. Actualización: era su hermano. Cinco estrellas. No sé cómo se cambia la nota.",
+"ru": "Дверь открыл рыжий в футболке. Две звезды. Обновление: это был её брат. Пять звёзд. Не знаю, как изменить оценку."
+},
+{
+"a": "Chiara",
+"ar": "Кьяра",
+"s": 5,
+"es": "Mi casa: plantas, una guitarra y un repartidor que siempre llega con cara de tragedia griega.",
+"ru": "Мой дом: цветы, гитара и курьер, который всегда приезжает с лицом из греческой трагедии."
+}
+],
+"img": {
+"src": "img/lugares/casa-chiara.webp",
+"n": "grustnyj-gorod",
+"c": "4"
+}
+},
+{
+"id": "helados-octavio",
+"nombre": "Carrito de helados de Octavio Grande",
+"otros": [
+"Мороженое от Октавио",
+"Тележка Октавио"
+],
+"cat": "restaurante",
+"x": 545,
+"y": -600,
+"modelo": "carrito",
+"desc": "Después de perder contra la risa, el ex alcalde Octavio Grande renunció y se puso a vender helados. Su carrito es celeste, con sombrilla a rayas, junto a la fuente del poeta en la plaza Dante. Dice: «HELADOS DE OCTAVIO. SABORES: VAINILLA, PISTACHO, LAVANDA. SIN MULTAS». Octavio, con delantal y gorra blancos, mira entornando los ojos «como alguien que vivió mucho tiempo a oscuras». Jura que la lavanda calma los nervios.",
+"nombre_ru": "Тележка с мороженым Октавио Гранде",
+"desc_ru": "Проиграв смеху, бывший мэр Октавио Гранде ушёл в отставку и стал продавать мороженое. Его тележка — голубая, с полосатым зонтиком, у фонтана с мраморным поэтом на площади Данте. Надпись: «МОРОЖЕНОЕ ОТ ОКТАВИО. ВКУСЫ: ВАНИЛЬ, ФИСТАШКА, ЛАВАНДА. ШТРАФОВ НЕТ». Октавио в белом фартуке и кепке щурится, «как человек, который долго жил в темноте». Уверяет, что лаванда успокаивает нервы.",
+"apar": [
+{
+"n": "karnaval-sinei",
+"c": [
+[
+"1",
+"Город, который решил праздновать"
+],
+[
+"4",
+"Серые пальто"
+],
+[
+"5",
+"Лицо в каждой маске"
+],
+[
+"32",
+"Репетиция"
+],
+[
+"35",
+"Тринадцатый удар"
+],
+[
+"66",
+"Условие"
+],
+[
+"71",
+"Команда смеха"
+],
+[
+"101",
+"Ключ Октавио"
+]
+]
+},
+{
+"n": "grustnyj-gorod",
+"c": [
+[
+"19",
+"Мороженое от Октавио"
+],
+[
+"extra-3",
+"Интервью с Кьярой"
+]
+]
+},
+{
+"n": "volny-lyubvi-gorod-bez-ulybok",
+"c": [
+[
+"16",
+"Нелегальная радиостанция"
+],
+[
+"42",
+"Мороженое с лавандой"
+]
+]
+},
+{
+"n": "amor-en-el-cosmos",
+"c": [
+[
+"1",
+"La luna que llegó de noche"
+],
+[
+"43",
+"Un papel que nació solo"
+]
+]
+},
+{
+"n": "strateg",
+"c": [
+[
+"2",
+"Связка"
+]
+]
+},
+{
+"n": "pokhititel-serdec-portret-osnovatelya",
+"c": [
+[
+"40",
+"Город без цвета"
+]
+]
+}
+],
+"res": [
+{
+"a": "Franco",
+"ar": "Франко",
+"s": 5,
+"es": "Mi tío me cobró el doble «por las multas de antes». Después me regaló un cucurucho de lavanda y se le escapó una sonrisa. La primera en diez años. Cinco estrellas por el helado, diez por la sonrisa.",
+"ru": "Дядя взял с меня двойную цену «за старые штрафы». Потом подарил рожок с лавандой, и у него вырвалась улыбка. Первая за десять лет. Пять звёзд за мороженое, десять — за улыбку."
+},
+{
+"a": "Chiara",
+"ar": "Кьяра",
+"s": 5,
+"es": "El pistacho es una canción. Le pedí que se riera un poquito más fuerte y casi se le cae la sombrilla.",
+"ru": "Фисташковое — это песня. Я попросила его смеяться чуть громче, и у него чуть не упал зонтик."
+},
+{
+"a": "Alfredo Grande",
+"ar": "Альфредо Гранде",
+"s": 3,
+"es": "Mi hermano hace buen helado. No se lo digan. Tres estrellas para que no se le suba a la cabeza otra vez.",
+"ru": "Мой брат делает хорошее мороженое. Только ему не говорите. Три звезды, чтобы опять не зазнался."
+},
+{
+"a": "El zorro",
+"ar": "Лис",
+"s": 5,
+"es": "Esto sí que se ve como tiene que verse.",
+"ru": "Вот это выглядит как надо."
+},
+{
+"a": "Octavio Grande",
+"ar": "Октавио Гранде",
+"s": 4,
+"es": "Respuesta del propietario: gracias a todos. Quejas y multas, por favor, a la alcaldía. Ya no es mi problema.",
+"ru": "Ответ владельца: спасибо всем. Жалобы и штрафы — пожалуйста, в мэрию. Это больше не моя забота."
+}
+],
+"img": {
+"src": "img/lugares/helados-octavio.webp",
+"n": "grustnyj-gorod",
+"c": "19"
+}
+},
+{
+"id": "casa-sasha",
+"nombre": "Casa de Sasha (La voz)",
+"otros": [
+"Квартира Саши",
+"L'appartement de Sasha"
+],
+"cat": "casa",
+"x": 1880,
+"y": 1160,
+"modelo": "hogar",
+"desc": "Al principio de «Голос», Sasha vive sola en un pisito de las afueras, casi siempre en penumbra porque nunca está de día: oficina, tablas, correos, y a casa cuando ya se apagan las ventanas de los vecinos. Aquí lee la noticia de los delfines desaparecidos y sueña por primera vez con Ael. Años después vive en otro sitio: un cuarto bajo la linterna del Faro de Ael, que huele a pintura vieja.",
+"nombre_ru": "Дом Саши («Голос»)",
+"desc_ru": "В начале «Голоса» Саша живёт одна в небольшой квартире на окраине, почти всегда в полумраке, потому что днём её никогда нет дома: офис, таблицы, письма, и домой — когда в соседних окнах уже гаснет свет. Здесь она читает новость об исчезнувших дельфинах и впервые видит во сне Аэля. Спустя годы она живёт иначе — в комнате под фонарём Маяка Аэля, где пахнет старой краской.",
+"apar": [
+{
+"n": "golos",
+"c": [
+[
+"1",
+"Сон о дельфине"
+]
+]
+},
+{
+"n": "karnaval-sinei",
+"c": [
+[
+"80",
+"Её лицо"
+]
+]
+}
+],
+"res": [
+{
+"a": "Sasha",
+"ar": "Саша",
+"s": 3,
+"es": "Tranquilo, oscuro y a veinte minutos de cualquier cosa. Ideal para dormir. O para soñar con delfines que te hablan.",
+"ru": "Тихо, темно и двадцать минут до чего угодно. Идеально, чтобы спать. Или чтобы видеть во сне говорящих дельфинов."
+},
+{
+"a": "Oxana",
+"ar": "Оксана",
+"s": 2,
+"es": "Me despertó a las dos de la mañana para ir a un parque cerrado porque «la alegría recuerda el nombre del mar». No vuelvo a darle mi número. (Sí vuelvo.)",
+"ru": "Разбудила меня в два часа ночи, чтобы ехать в закрытый парк, потому что «радость помнит имя моря». Больше не дам ей свой номер. (Дам.)"
+}
+],
+"img": {
+"src": "img/lugares/casa-sasha.webp",
+"n": "golos",
+"c": "1"
+}
+},
+{
+"id": "casa-luis",
+"nombre": "El piso de Luis y Natalia (Ondas de amor)",
+"otros": [
+"Квартира Луиса и Натальи",
+"L'appartamento al terzo piano"
+],
+"cat": "casa",
+"x": 830,
+"y": -440,
+"modelo": "hogar",
+"desc": "Un pisito en un tercer piso, a la vuelta del café donde nació el zorro. Aquí viven Luis y Natalia cuando la primavera vuelve a Sinea: ella guarda el dibujo del zorro en su cuaderno de canciones y él toca el piano. Una mañana Natalia le dice «quiero llevarte a mi casa» y él se ríe: «ya estoy en tu casa». Ella se refiere a la de Verdegrad, donde está el piano de la abuela. (Las novelas no dan otra dirección de Luis en Sinea.)",
+"nombre_ru": "Квартира Луиса и Натальи («Волны любви»)",
+"desc_ru": "Маленькая квартира на третьем этаже, за углом от кафе, где родился лис. Здесь живут Луис и Наталья, когда в Синею возвращается весна: она хранит рисунок лиса в тетради с песнями, он играет на пианино. Однажды утром Наталья говорит: «Хочу отвезти тебя к себе домой», а он смеётся: «Я и так у тебя дома». Она имеет в виду Вердеград, где стоит бабушкино пианино. (Другого адреса Луиса в Синее в романах нет.)",
+"apar": [
+{
+"n": "onde-d-amore",
+"c": [
+[
+"11",
+"Il treno per Nuvoletta"
+],
+[
+"extra-1",
+"Le onde sono rimaste"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Tercer piso, sin ascensor, con un piano y un zorro que opina de todo. A veces la casa canta sola.",
+"ru": "Третий этаж, без лифта, с пианино и лисом, у которого на всё есть мнение. Иногда дом поёт сам."
+},
+{
+"a": "El zorro",
+"ar": "Лис",
+"s": 4,
+"es": "Buena luz para dormir en el alféizar. Le saco una estrella porque me guardan en un cuaderno.",
+"ru": "Хороший свет, чтобы спать на подоконнике. Минус звезда за то, что меня хранят в тетради."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "No es mi casa. Es la de ella. Por eso es la mejor.",
+"ru": "Это не мой дом. Это её дом. Поэтому он лучший."
+}
+],
+"img": {
+"src": "img/lugares/casa-luis.webp",
+"n": "onde-d-amore",
+"c": "11"
+}
+},
+{
+"id": "shawarma-ashot",
+"nombre": "Shawarma de Ashot",
+"otros": [
+"Шаверма у Ашота"
+],
+"cat": "restaurante",
+"x": -470,
+"y": 30,
+"modelo": "cafe",
+"desc": "Una shawarma en la calle de los Castaños, en la misma calle que Marcos y Alicia. En «Алмазный дождь» Vasili alquila un despacho justo encima. Cuando caen los meteoritos, el dueño sale a la calle gritando que es el fin del mundo; cuando todo termina, Ashot llora sobre la carne escuchando la radio… y dice que es por la cebolla.",
+"nombre_ru": "Шаверма у Ашота",
+"desc_ru": "Шаверма на улице Каштанов — на той же улице, где живут Марк и Алисия. В «Алмазном дожде» Василий снимает кабинет прямо над ней. Когда падают метеориты, хозяин выбегает на улицу с криком, что это конец света; а когда всё заканчивается, Ашот плачет над мясом, слушая эфир, и говорит, что это от лука.",
+"apar": [
+{
+"n": "almaznyj-dozhd",
+"c": [
+[
+"1",
+"Человек с пустым сейфом"
+],
+[
+"3",
+"Город, который пахнет духами"
+],
+[
+"8",
+"Чёрная книга"
+],
+[
+"12",
+"Купол"
+],
+[
+"20",
+"Урок испанского"
+],
+[
+"33",
+"Чужая слава"
+],
+[
+"36",
+"Санитарная машина"
+],
+[
+"39",
+"Маяк"
+]
+]
+},
+{
+"n": "tajna-v-biblioteke",
+"c": [
+[
+"18",
+"Метеоритный дождь"
+],
+[
+"21",
+"Детектив, который опоздал"
+],
+[
+"22",
+"Рассвет вдвоём"
+],
+[
+"29",
+"Мастерская с зелёными ставнями"
+],
+[
+"50",
+"Рассвет вдвоём"
+]
+]
+},
+{
+"n": "karnaval-sinei",
+"c": [
+[
+"2",
+"Шесть конвертов"
+],
+[
+"38",
+"Лицо на столбе"
+]
+]
+}
+],
+"res": [
+{
+"a": "Vasili",
+"ar": "Василий",
+"s": 5,
+"es": "Mi despacho está arriba. El olor sube por la escalera y me impide pensar en el amor. Exactamente lo que necesitaba.",
+"ru": "Мой кабинет наверху. Запах поднимается по лестнице и мешает думать о любви. Именно то, что мне было нужно."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 4,
+"es": "Buena shawarma. Mala vecindad: hay un detective privado en el primer piso.",
+"ru": "Хорошая шаверма. Плохое соседство: на втором этаже частный детектив."
+},
+{
+"a": "Ashot",
+"ar": "Ашот",
+"s": 5,
+"es": "Respuesta del propietario: no lloré escuchando la radio. Fue la cebolla.",
+"ru": "Ответ владельца: я не плакал, слушая эфир. Это был лук."
+}
+],
+"img": {
+"src": "img/lugares/shawarma-ashot.webp",
+"n": "almaznyj-dozhd",
+"c": "1"
+}
+},
+{
+"id": "rosa-blanca",
+"nombre": "Restaurante «La Rosa Blanca»",
+"otros": [
+"Ресторан «Белая роза»"
+],
+"cat": "restaurante",
+"x": -1330,
+"y": -960,
+"modelo": "cafe",
+"desc": "El restaurante caro del barrio de los Ricos Tristes. En «Грустный город», la aplicación le manda a Franco un pedido desde aquí hasta la avenida de los Emperadores 56, y él suspira: «Ahí no».",
+"nombre_ru": "Ресторан «Белая роза»",
+"desc_ru": "Дорогой ресторан в Районе Грустных Богачей. В «Грустном городе» приложение отправляет Франко заказ отсюда на проспект Императоров, 56, и он вздыхает: «Только не туда».",
+"apar": [
+{
+"n": "grustnyj-gorod",
+"c": [
+[
+"4",
+"Район грустных богачей"
+]
+]
+}
+],
+"res": [
+{
+"a": "Franco",
+"ar": "Франко",
+"s": 1,
+"es": "No comí. Repartí. Veinte minutos para que me abrieran la reja y una propina de cero dragones. Ahí no.",
+"ru": "Я не ел. Я доставлял. Двадцать минут ждал у ворот, чаевые — ноль драконов. Только не туда."
+},
+{
+"a": "Rigoberto",
+"ar": "Ригоберто",
+"s": 4,
+"es": "Excelente pescado. Las cámaras del Ministerio en el techo arruinan un poco la digestión.",
+"ru": "Отличная рыба. Камеры Министерства под потолком немного портят пищеварение."
+},
+{
+"a": "Octavio Grande",
+"ar": "Октавио Гранде",
+"s": 5,
+"es": "Mi mesa de siempre. Era. Ahora me queda lejos del carrito.",
+"ru": "Мой любимый столик. Был. Теперь далеко от тележки."
+}
+],
+"img": {
+"src": "img/lugares/rosa-blanca.webp",
+"n": "grustnyj-gorod",
+"c": "4"
+}
+},
+{
+"id": "vietnamita",
+"nombre": "Restaurante vietnamita",
+"otros": [
+"Вьетнамский ресторан"
+],
+"cat": "restaurante",
+"x": 160,
+"y": 990,
+"modelo": "cafe",
+"desc": "Un restaurante pequeño, apretado y calentito en una calle tranquila cerca de la estación. Aquí Vasili se encuentra por fin con la mujer de la voz, mientras se le enfría la sopa de fideos, y empieza la «Operación Venganza» de «Опасное свидание».",
+"nombre_ru": "Вьетнамский ресторан",
+"desc_ru": "Маленький, тесный и тёплый ресторан на тихой улице недалеко от вокзала. Здесь Василий наконец встречается с женщиной из телефона, пока остывает его лапша, и начинается «Операция „Месть“» из «Опасного свидания».",
+"apar": [
+{
+"n": "opasnoe-svidanie",
+"c": [
+[
+"20",
+"Красная точка"
+],
+[
+"21",
+"Операция «Месть»"
+]
+]
+}
+],
+"res": [
+{
+"a": "Vasili",
+"ar": "Василий",
+"s": 4,
+"es": "La sopa se enfrió mientras una mujer buscada por media ciudad me proponía una venganza. No es culpa del cocinero. Volveré.",
+"ru": "Лапша остыла, пока женщина, которую ищет полгорода, предлагала мне месть. Повар не виноват. Вернусь."
+},
+{
+"a": "Svetlana",
+"ar": "Светлана",
+"s": 3,
+"es": "Rica comida. Wifi abierto, contraseña «12345». Como especialista en delitos informáticos, me dio taquicardia.",
+"ru": "Вкусно. Открытый вайфай, пароль «12345». Как специалиста по киберпреступлениям, меня чуть не хватил удар."
+}
+]
+},
+{
+"id": "restaurante-puerto",
+"nombre": "Restaurante del Puerto Viejo",
+"otros": [
+"Ресторан у старого порта"
+],
+"cat": "restaurante",
+"x": 880,
+"y": -1165,
+"modelo": "cafe",
+"desc": "Con puerta al malecón. «Ven al restaurante del puerto viejo dentro de una hora», le dice María a Vasili. Allí lo esperan dos mujeres a la vez, y él tiene que salir a tomar aire frente al mar.",
+"nombre_ru": "Ресторан у старого порта",
+"desc_ru": "С дверью на набережную. «Приходи в ресторан у старого порта через час», — говорит Мария Василию. Там его ждут сразу две женщины, и ему приходится выйти подышать к морю.",
+"apar": [
+{
+"n": "opasnoe-svidanie",
+"c": [
+[
+"29",
+"За морем"
+],
+[
+"30",
+"Мария"
+]
+]
+}
+],
+"res": [
+{
+"a": "Vasili",
+"ar": "Василий",
+"s": 2,
+"es": "Llegué con una venda en la mano y me encontré a dos mujeres esperándome en la misma mesa. Buena vista al mar, porque terminé mirándolo un buen rato.",
+"ru": "Пришёл с повязкой в руке и застал двух женщин за одним столом. Вид на море хороший: я долго на него смотрел."
+},
+{
+"a": "Nadia",
+"ar": "Надя",
+"s": 4,
+"es": "Como psicóloga: excelente lugar para conversaciones difíciles. El mar ayuda. El vino también.",
+"ru": "Как психолог: отличное место для трудных разговоров. Море помогает. Вино тоже."
+}
+]
+},
+{
+"id": "bar-ancora",
+"nombre": "Bar «El Ancla»",
+"otros": [
+"Bar Ancora",
+"Бар «Якорь»"
+],
+"cat": "restaurante",
+"x": 1180,
+"y": -1120,
+"modelo": "cafe",
+"desc": "En el puerto. Madera oscura, fotos viejas en las paredes, olor a cerveza y a mar. En un rincón, sola, con una cerveza y su campera de cuero, Oxana espera al detective Vasily en «Chi ha visto Sasha?».",
+"nombre_ru": "Бар «Якорь»",
+"desc_ru": "В порту. Тёмное дерево, старые фотографии на стенах, запах пива и моря. В углу, одна, с пивом и в кожаной куртке, Оксана ждёт детектива Василия в «Chi ha visto Sasha?».",
+"apar": [
+{
+"n": "chi-ha-visto-sasha",
+"c": [
+[
+"40",
+"Oxana"
+],
+[
+"42",
+"Il cuore libero"
+]
+]
+}
+],
+"res": [
+{
+"a": "Oxana",
+"ar": "Оксана",
+"s": 5,
+"es": "Cerveza fría, madera oscura y nadie que te pregunte por qué estás sola en un rincón. Mi bar.",
+"ru": "Холодное пиво, тёмное дерево и никто не спрашивает, почему ты одна в углу. Мой бар."
+},
+{
+"a": "Vasili",
+"ar": "Василий",
+"s": 4,
+"es": "Regla de este año: nada de amor. Este bar me la puso a prueba.",
+"ru": "Правило этого года: никакой любви. Этот бар устроил мне проверку."
+}
+]
+},
+{
+"id": "bar-gino",
+"nombre": "Bar de Gino",
+"otros": [
+"Бар Джино",
+"Il bar di Gino"
+],
+"cat": "restaurante",
+"x": -40,
+"y": -930,
+"modelo": "cafe",
+"desc": "El bar de toda la vida de la calle de los Pescadores, en el verano de 1997 de «Тихая любовь». En la noche más rara de ese verano, un robot gigante le arranca el techo «como la tapa de una caja de galletas».",
+"nombre_ru": "Бар Джино",
+"desc_ru": "Старый бар на улице Рыбаков летом 1997 года из «Тихой любви». В самую странную ночь того лета гигантский робот срывает с него крышу, «как крышку с коробки печенья».",
+"apar": [
+{
+"n": "ti-amo-in-silenzio",
+"c": [
+[
+"3",
+"Il caffè perfetto"
+],
+[
+"8",
+"Quando stavo per arrendermi"
+]
+]
+},
+{
+"n": "tikhaya-lyubov",
+"c": [
+[
+"8",
+"Когда я чуть не сдался"
+]
+]
+}
+],
+"res": [
+{
+"a": "Fabrizio",
+"ar": "Фабрицио",
+"s": 5,
+"es": "Aquí aprendí a hacer el café perfecto. Y aquí la vi pasar en la moto roja. Veintinueve años después todavía me tiemblan las manos al pedir un cortado.",
+"ru": "Здесь я научился варить идеальный кофе. И здесь увидел, как она проезжает на красном мотоцикле. Двадцать девять лет спустя у меня всё ещё дрожат руки, когда заказываю кортадо."
+},
+{
+"a": "Gino",
+"ar": "Джино",
+"s": 3,
+"es": "Respuesta del propietario: un robot gigante se llevó el techo. Ya lo arreglamos. Sigan viniendo.",
+"ru": "Ответ владельца: гигантский робот унёс крышу. Мы уже починили. Приходите."
+}
+],
+"img": {
+"src": "img/lugares/bar-gino.webp",
+"n": "ti-amo-in-silenzio",
+"c": "3"
+}
+},
+{
+"id": "gabbiano",
+"nombre": "Pastelería «Gabbiano»",
+"otros": [
+"Pasticceria Gabbiano",
+"Кондитерская «Габбьяно»"
+],
+"cat": "restaurante",
+"x": 520,
+"y": -1190,
+"modelo": "cafe",
+"desc": "En el paseo marítimo. En el plan de Marisa para «Onde d'amore 3», escrito en colores, es la parada de las 16:00: «pastelería Gabbiano (¡cannoli!)». El zorro se come tres y medio; el medio era de Marisa, pero él dice que lo «adoptó».",
+"nombre_ru": "Кондитерская «Габбьяно»",
+"desc_ru": "На набережной. В цветном плане Марисы в «Onde d'amore 3» это остановка на 16:00: «кондитерская Габбьяно (канноли!)». Лис съедает три с половиной; половинка была Марисы, но лис говорит, что он её «усыновил».",
+"apar": [
+{
+"n": "onde-d-amore-3",
+"c": [
+[
+"3",
+"Il racconto di Marisa"
+],
+[
+"24",
+"Un'onda sul mare"
+]
+]
+}
+],
+"res": [
+{
+"a": "El zorro",
+"ar": "Лис",
+"s": 5,
+"es": "Tres cannoli y medio. El medio lo adopté. Nadie lo quería tanto como yo.",
+"ru": "Три с половиной канноли. Половинку я усыновил. Никто не любил её так, как я."
+},
+{
+"a": "Marisa",
+"ar": "Мариса",
+"s": 4,
+"es": "Parada de las 16:00 de mi plan. Le saco una estrella porque el zorro se comió mi medio cannoli.",
+"ru": "Остановка на 16:00 по моему плану. Минус звезда: лис съел мою половинку канноли."
+}
+],
+"img": {
+"src": "img/lugares/gabbiano.webp",
+"n": "onde-d-amore-3",
+"c": "3"
+}
+},
+{
+"id": "cafe-nubecita",
+"nombre": "Café «Nubecita»",
+"otros": [
+"Кафе «Облачко»"
+],
+"cat": "restaurante",
+"x": 40,
+"y": 1715,
+"modelo": "cafe",
+"desc": "Frente al Depósito Norte. Aquí se juntan las seis compañeras de trabajo de Alicia con Hortense Belcourt y su copa de vino tinto, en «Знак»; y en «Алмазный дождь» Natalia canta por las noches.",
+"nombre_ru": "Кафе «Облачко»",
+"desc_ru": "Напротив Северного депо. Здесь собираются шесть коллег Алисии с Ортанс Белькур и её бокалом красного вина в «Знаке», а в «Алмазном дожде» по вечерам поёт Наталья.",
+"apar": [
+{
+"n": "znak",
+"c": [
+[
+"4",
+"Здравый смысл"
+],
+[
+"16",
+"Третий день"
+]
+]
+},
+{
+"n": "almaznyj-dozhd",
+"c": [
+[
+"39",
+"Маяк"
+]
+]
+}
+],
+"res": [
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 4,
+"es": "Aquí me reúno con mis compañeras. Hortense pide tinto a las diez de la mañana y dice que es cosa de Saturno.",
+"ru": "Здесь я встречаюсь с коллегами. Ортанс заказывает красное в десять утра и говорит, что это Сатурн."
+},
+{
+"a": "Vasili",
+"ar": "Василий",
+"s": 5,
+"es": "Desde la ventana se ven perfectamente los portones del depósito. El café es malo. La vista, inmejorable.",
+"ru": "Из окна прекрасно видны ворота депо. Кофе плохой. Вид — лучше не бывает."
+},
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Canto aquí por las noches. Si el público no aplaude, aplaude el zorro.",
+"ru": "Пою здесь по вечерам. Если публика не хлопает, хлопает лис."
+}
+],
+"img": {
+"src": "img/lugares/cafe-nubecita.webp",
+"n": "znak",
+"c": "4"
+}
+},
+{
+"id": "casa-celeste",
+"nombre": "«Casa Celeste», la tienda de Alicia",
+"otros": [
+"Лавка «Casa Celeste»"
+],
+"cat": "tienda",
+"x": 300,
+"y": -470,
+"modelo": "cafe",
+"desc": "Tienda esotérica en la esquina de la plaza de las Flores, donde Alicia Gómez Fernández trabaja de astróloga y tarotista: velas, cartas, lavanda «y, a veces, esperanza».",
+"nombre_ru": "«Casa Celeste», лавка Алисии",
+"desc_ru": "Эзотерическая лавка на углу у площади Цветов, где Алисия Гомес Фернандес работает астрологом и тарологом: свечи, карты, лаванда «и иногда — надежда».",
+"apar": [
+{
+"n": "znak",
+"c": [
+[
+"1",
+"Не жди меня"
+],
+[
+"3",
+"Четыре Водолея"
+],
+[
+"8",
+"Свод"
+],
+[
+"9",
+"Гармония Двенадцати"
+],
+[
+"14",
+"Альриша"
+]
+]
+},
+{
+"n": "el-tren-fantasma",
+"c": [
+[
+"4",
+"El tren aparece"
+]
+]
+},
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"extra-1",
+"Досье: Алисия Гомес"
+]
+]
+}
+],
+"res": [
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 5,
+"es": "Velas, cartas, lavanda y, a veces, esperanza. Los miércoles, descuento para Piscis.",
+"ru": "Свечи, карты, лаванда и иногда надежда. По средам скидка для Рыб."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 3,
+"es": "No creo en nada de lo que venden. Pero la vendedora es la mejor de Sinea.",
+"ru": "Не верю ни во что из того, что здесь продают. Но продавщица — лучшая в Синее."
+},
+{
+"a": "Doña Destino",
+"ar": "Донья Дестино",
+"s": 1,
+"es": "Horóscopos sin licencia. Competencia desleal con mi aplicación.",
+"ru": "Гороскопы без лицензии. Недобросовестная конкуренция с моим приложением."
+}
+],
+"img": {
+"src": "img/lugares/casa-celeste.webp",
+"n": "znak",
+"c": "1"
+}
+},
+{
+"id": "libreria-bruni",
+"nombre": "Librería del señor Bruni",
+"otros": [
+"Книжная лавка синьора Бруни"
+],
+"cat": "tienda",
+"x": 650,
+"y": -1100,
+"modelo": "cafe",
+"desc": "Una librería junto al puerto. En «Город без улыбок», Marisa reconoce a su dueño, el canoso señor Bruni, entre los que protestan con carteles contra la risa.",
+"nombre_ru": "Книжная лавка синьора Бруни",
+"desc_ru": "Книжная лавка возле порта. В «Городе без улыбок» Мариса узнаёт её хозяина, седого синьора Бруни, среди тех, кто с плакатами протестует против смеха.",
+"apar": [
+{
+"n": "volny-lyubvi-gorod-bez-ulybok",
+"c": [
+[
+"7",
+"Девять вечера"
+],
+[
+"8",
+"Серые нити"
+],
+[
+"13",
+"Обелиск Спокойствия"
+]
+]
+}
+],
+"res": [
+{
+"a": "Marisa",
+"ar": "Мариса",
+"s": 4,
+"es": "Libros maravillosos. El dueño protestaba contra la risa con un cartel, pero dentro de la tienda tiene una sección de humor. Lo vi.",
+"ru": "Чудесные книги. Хозяин протестовал против смеха с плакатом, но внутри у него есть полка с юмором. Я видела."
+},
+{
+"a": "Mateo",
+"ar": "Матео",
+"s": 5,
+"es": "Encontré una primera edición de Bunin. No se la presto a nadie. Salvo, tal vez, a una psicóloga.",
+"ru": "Нашёл первое издание Бунина. Никому не дам. Разве что, может быть, одному психологу."
+}
+],
+"img": {
+"src": "img/lugares/libreria-bruni.webp",
+"n": "volny-lyubvi-gorod-bez-ulybok",
+"c": "7"
+}
+},
+{
+"id": "tienda-deportes",
+"nombre": "Tienda de deportes de Tatiana",
+"otros": [
+"Спортивный магазин Татьяны"
+],
+"cat": "tienda",
+"x": 650,
+"y": -40,
+"modelo": "cafe",
+"desc": "Tatiana, veinticinco años, trabaja aquí en «La chica del retrato». Le gusta correr, la música y sacar fotos para las redes… hasta que un sábado la policía llama a su puerta: alguien atacó la página de un banco y dejó en la pantalla su retrato.",
+"nombre_ru": "Спортивный магазин Татьяны",
+"desc_ru": "Здесь работает двадцатипятилетняя Татьяна из «Девушки с портрета». Она любит бегать, музыку и выкладывать фотографии… пока однажды в субботу к ней не приходит полиция: кто-то взломал сайт банка и оставил на экране её портрет.",
+"apar": [
+{
+"n": "la-chica-del-retrato",
+"c": [
+[
+"1",
+"Una visita inesperada"
+]
+]
+}
+],
+"res": [
+{
+"a": "Tatiana",
+"ar": "Татьяна",
+"s": 4,
+"es": "Buenas zapatillas, buen ambiente. Le saco una estrella porque una vez la policía vino a buscarme por un retrato que no hice yo.",
+"ru": "Хорошие кроссовки, хорошая атмосфера. Минус звезда: однажды за мной сюда пришла полиция из-за портрета, который рисовала не я."
+},
+{
+"a": "Laura Rivera",
+"ar": "Лаура Ривера",
+"s": 5,
+"es": "Visita profesional. La vendedora era inocente. Me llevé unas zapatillas igual.",
+"ru": "Служебный визит. Продавщица оказалась невиновна. Кроссовки я всё равно купила."
+}
+],
+"img": {
+"src": "img/lugares/tienda-deportes.webp",
+"n": "la-chica-del-retrato",
+"c": "1"
+}
+},
+{
+"id": "restaurante-juan-carlos",
+"nombre": "Restaurante de Juan Carlos",
+"otros": [
+"Ресторан Хуана Карлоса"
+],
+"cat": "restaurante",
+"x": 920,
+"y": -70,
+"modelo": "cafe",
+"desc": "El restaurante del desafortunado Juan Carlos, uno de los tres alumnos del «taller del amor» en «El impostor». Valeria sabe que es aquí donde puede encontrarlos.",
+"nombre_ru": "Ресторан Хуана Карлоса",
+"desc_ru": "Ресторан невезучего Хуана Карлоса, одного из трёх учеников «мастерской любви» в «El impostor». Валерия знает, что найти их можно именно здесь.",
+"apar": [
+{
+"n": "el-impostor",
+"c": [
+[
+"11",
+"El seductor y la tirana"
+]
+]
+}
+],
+"res": [
+{
+"a": "Juan Carlos",
+"ar": "Хуан Карлос",
+"s": 3,
+"es": "Mi restaurante es bueno. Mi suerte, no. Si alguien quiere comprar una caja de anillos usada, pregunte por mí.",
+"ru": "Мой ресторан хороший. Моё везение — нет. Если кому-то нужна подержанная коробочка для колец, спросите меня."
+},
+{
+"a": "Valeria",
+"ar": "Валерия",
+"s": 5,
+"es": "Aquí encontré a los tres. Y el postre estaba riquísimo.",
+"ru": "Здесь я нашла всех троих. И десерт был потрясающий."
+}
+]
+},
+{
+"id": "taller-amor",
+"nombre": "El taller del amor de Andrés Cortés",
+"otros": [
+"Мастерская любви Андреса Кортеса"
+],
+"cat": "tienda",
+"x": 1060,
+"y": 10,
+"modelo": "cafe",
+"desc": "«¡La epidemia de noes tiene solución!», anuncia el famoso «experto en relaciones» Andrés Cortés. Tres hombres desafortunados se apuntan a sus clases sin saber que detrás está Doña Destino con su Esfera de Energía y sus Cupidronas.",
+"nombre_ru": "Мастерская любви Андреса Кортеса",
+"desc_ru": "«У эпидемии отказов есть решение!» — объявляет знаменитый «эксперт по отношениям» Андрес Кортес. Трое невезучих мужчин записываются к нему, не подозревая, что за всем стоят Донья Дестино с её Сферой энергии и Купидроны.",
+"apar": [
+{
+"n": "el-impostor",
+"c": [
+[
+"4",
+"El taller del amor"
+],
+[
+"5",
+"La primera clase del maestro"
+],
+[
+"6",
+"Lo que esconde el maestro"
+],
+[
+"7",
+"Prohibido enamorarse"
+],
+[
+"9",
+"La reunión secreta"
+],
+[
+"11",
+"El seductor y la tirana"
+],
+[
+"13",
+"El corazón de la máquina"
+],
+[
+"14",
+"La caída de Doña Destino"
+],
+[
+"15",
+"La cuenta final"
+],
+[
+"16",
+"Tres bodas y una moto"
+],
+[
+"extra-1",
+"Test final"
+]
+]
+}
+],
+"res": [
+{
+"a": "Leonardo",
+"ar": "Леонардо",
+"s": 1,
+"es": "Pagué el curso completo para recuperar a Sofía. Resultó que el maestro trabajaba para una máquina que se alimenta de mis suspiros.",
+"ru": "Заплатил за весь курс, чтобы вернуть Софию. Оказалось, что учитель работает на машину, которая питается моими вздохами."
+},
+{
+"a": "Andrés Cortés",
+"ar": "Андрес Кортес",
+"s": 5,
+"es": "Respuesta del propietario: el amor es una ciencia. Los reembolsos, no.",
+"ru": "Ответ владельца: любовь — это наука. Возврат денег — нет."
+},
+{
+"a": "Doña Destino",
+"ar": "Донья Дестино",
+"s": 5,
+"es": "Altamente recomendable. Para mí.",
+"ru": "Очень рекомендую. Себе."
+}
+]
 }
 ];
 export const NOVELAS = {
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
 "l": "ru",
 "y": 2026,
-"ru": "Карнавал Синеи",
-"p": "img/portadas/karnaval-sinei.webp",
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
 "tr": {}
 },
-"la-citta-triste": {
-"t": "La città triste",
-"es": "La ciudad triste (it.)",
-"l": "it",
-"y": 2025,
-"ru": "Грустный город (ит.)",
-"p": "img/portadas/la-citta-triste.webp",
-"tr": {
-"ru": "grustnyj-gorod"
-}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
-"tr": {}
-},
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
 "l": "it",
 "y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
-"tr": {}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
-"y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
 "tr": {}
 },
 "la-voix": {
@@ -7274,24 +8887,6 @@ export const NOVELAS = {
 "ru": "golos"
 }
 },
-"27-ocak": {
-"t": "27 Ocak",
-"es": "27 de enero",
-"l": "tr",
-"y": 2026,
-"ru": "27 января",
-"p": "img/portadas/27-ocak.webp",
-"tr": {}
-},
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
-"tr": {}
-},
 "il-treno-fantasma": {
 "t": "Il treno fantasma",
 "es": "El tren fantasma (it.)",
@@ -7303,6 +8898,62 @@ export const NOVELAS = {
 "es": "el-tren-fantasma",
 "ru": "prizrachnyj-poezd"
 }
+},
+"ondas-de-amor": {
+"t": "Ondas de amor",
+"es": "Ondas de amor",
+"l": "es",
+"y": 2026,
+"ru": "Волны любви (исп.)",
+"p": "img/portadas/ondas-de-amor.webp",
+"tr": {
+"it": "onde-d-amore"
+}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
+"tr": {}
+},
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
+"l": "es",
+"y": 2026,
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
+"tr": {}
+},
+"tajna-v-biblioteke": {
+"t": "Тайна в библиотеке",
+"es": "El misterio de la biblioteca",
+"l": "ru",
+"y": 2026,
+"ru": "Тайна в библиотеке",
+"p": "img/portadas/tajna-v-biblioteke.webp",
+"tr": {}
 },
 "prizrachnyj-poezd": {
 "t": "Призрачный поезд",
@@ -7316,51 +8967,13 @@ export const NOVELAS = {
 "it": "il-treno-fantasma"
 }
 },
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
-"l": "ru",
-"y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
-"tr": {
-"en": "the-date"
-}
-},
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
-"l": "ru",
-"y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
-"tr": {}
-},
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
-"l": "ru",
-"y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
-"tr": {}
-},
-"pokhititel-serdec-portret-osnovatelya": {
-"t": "Похититель сердец: Портрет основателя",
-"es": "Ladrón de corazones: El retrato del fundador",
-"l": "ru",
-"y": 2026,
-"ru": "Похититель сердец: Портрет основателя",
-"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
 "tr": {}
 },
 "grustnyj-gorod": {
@@ -7374,45 +8987,24 @@ export const NOVELAS = {
 "it": "la-citta-triste"
 }
 },
-"golos": {
-"t": "Голос",
-"es": "La voz",
-"l": "ru",
-"y": 2026,
-"ru": "Голос",
-"p": "img/portadas/golos.webp",
+"la-citta-triste": {
+"t": "La città triste",
+"es": "La ciudad triste (it.)",
+"l": "it",
+"y": 2025,
+"ru": "Грустный город (ит.)",
+"p": "img/portadas/la-citta-triste.webp",
 "tr": {
-"fr": "la-voix"
+"ru": "grustnyj-gorod"
 }
 },
-"el-tren-fantasma": {
-"t": "El tren fantasma",
-"es": "El tren fantasma",
-"l": "es",
-"y": null,
-"ru": "Призрачный поезд (исп.)",
-"p": "img/portadas/el-tren-fantasma.webp",
-"tr": {
-"it": "il-treno-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"tajna-v-biblioteke": {
-"t": "Тайна в библиотеке",
-"es": "El misterio de la biblioteca",
+"pokhititel-serdec-portret-osnovatelya": {
+"t": "Похититель сердец: Портрет основателя",
+"es": "Ladrón de corazones: El retrato del fundador",
 "l": "ru",
 "y": 2026,
-"ru": "Тайна в библиотеке",
-"p": "img/portadas/tajna-v-biblioteke.webp",
-"tr": {}
-},
-"znak": {
-"t": "Знак",
-"es": "El signo",
-"l": "ru",
-"y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
+"ru": "Похититель сердец: Портрет основателя",
+"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
 "tr": {}
 },
 "lluvia-de-meteoritos": {
@@ -7426,41 +9018,93 @@ export const NOVELAS = {
 "ru": "meteoritnyj-dozhd"
 }
 },
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
-"l": "es",
-"y": 2026,
-"ru": "Любовь в космосе",
-"p": "img/portadas/amor-en-el-cosmos.webp",
-"tr": {}
-},
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
-},
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви",
-"p": "img/portadas/volny-lyubvi.webp",
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
 "tr": {}
+},
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
+"tr": {}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
+"y": 2026,
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
+"tr": {
+"ru": "tikhaya-lyubov"
+}
+},
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
+"tr": {
+"es": "ondas-de-amor"
+}
+},
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"tr": {}
+},
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
+"l": "ru",
+"y": 2026,
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
+"tr": {}
+},
+"el-tren-fantasma": {
+"t": "El tren fantasma",
+"es": "El tren fantasma",
+"l": "es",
+"y": null,
+"ru": "Призрачный поезд (исп.)",
+"p": "img/portadas/el-tren-fantasma.webp",
+"tr": {
+"it": "il-treno-fantasma",
+"ru": "prizrachnyj-poezd"
+}
 },
 "volny-lyubvi-gorod-bez-ulybok": {
 "t": "Волны любви: Город без улыбок",
@@ -7480,16 +9124,43 @@ export const NOVELAS = {
 "p": "img/portadas/el-impostor.webp",
 "tr": {}
 },
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
-"l": "it",
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
+"l": "ru",
 "y": 2026,
-"ru": "Волны любви (ит.)",
-"p": "img/portadas/onde-d-amore.webp",
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
+"tr": {}
+},
+"golos": {
+"t": "Голос",
+"es": "La voz",
+"l": "ru",
+"y": 2026,
+"ru": "Голос",
+"p": "img/portadas/golos.webp",
 "tr": {
-"es": "ondas-de-amor"
+"fr": "la-voix"
 }
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
+},
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
+"l": "ru",
+"y": 2026,
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
+"tr": {}
 },
 "tikhaya-lyubov": {
 "t": "Тихая любовь",
@@ -7502,45 +9173,34 @@ export const NOVELAS = {
 "it": "ti-amo-in-silenzio"
 }
 },
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
+"27-ocak": {
+"t": "27 Ocak",
+"es": "27 de enero",
+"l": "tr",
 "y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
+"ru": "27 января",
+"p": "img/portadas/27-ocak.webp",
 "tr": {}
 },
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
 "l": "ru",
 "y": 2026,
-"ru": "Алмазный дождь",
-"p": "img/portadas/almaznyj-dozhd.webp",
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
+},
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
 "tr": {}
-},
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Люблю тебя молча (ит.)",
-"p": "img/portadas/ti-amo-in-silenzio.webp",
-"tr": {
-"ru": "tikhaya-lyubov"
-}
-},
-"ondas-de-amor": {
-"t": "Ondas de amor",
-"es": "Ondas de amor",
-"l": "es",
-"y": 2026,
-"ru": "Волны любви (исп.)",
-"p": "img/portadas/ondas-de-amor.webp",
-"tr": {
-"it": "onde-d-amore"
-}
 }
 };
 export const IDIOMAS = {"ru": "ruso", "es": "español", "it": "italiano", "fr": "francés", "en": "inglés", "tr": "turco"};
