@@ -1,4 +1,6 @@
-# Sinea, Verdegrad, Nuestra Utopía y Mendoza — mapas 3D · Синея, Вердеград, Наша Утопия и Мендоса — 3D-карты
+# Mapas de los mundos literarios de Robert Fader · Карты миров Роберта Фадера
+
+Sinea, Verdegrad, Nuestra Utopía y Mendoza en 3D. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
 
 Cuatro mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza** arriba:
 

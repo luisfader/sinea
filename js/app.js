@@ -551,7 +551,8 @@ function ponerIdioma(l, refrescar = true) {
   lang = l === 'ru' ? 'ru' : 'es';
   try { localStorage.setItem('sinea-lang', lang); } catch (e) {}
   document.documentElement.lang = lang;
-  document.title = tr(`${NOMBRE.es} — el mapa 3D de la ciudad de Robert Fader`, `${NOMBRE.ru} — 3D-карта города Роберта Фадера`);
+  document.title = tr(`Mapas de los mundos literarios de Robert Fader · ${NOMBRE.es}`, `Карты миров Роберта Фадера · ${NOMBRE.ru}`);
+  $('#carga .titulo-mapas').textContent = tr('Mapas de los mundos literarios de Robert Fader', 'Карты миров Роберта Фадера');
   $('#carga .logo').textContent = tr(NOMBRE.es, NOMBRE.ru);
   document.querySelectorAll('#ciudad button').forEach(b => b.textContent = tr(b.dataset.es, b.dataset.ru));
   for (const [q, at, es, ru] of ESTATICO) { const el = $(q); if (!el) continue; const v = tr(es, ru); if (at === 'text') el.textContent = v; else if (at === 'html') el.innerHTML = v; else el.setAttribute(at, v); }
