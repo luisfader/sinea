@@ -8,7 +8,7 @@
 <meta name="theme-color" content="#1d2a38">
 <link rel="icon" href="img/icono.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/sinea.css">
-<script>globalThis.CIUDAD = (c => ['verdegrad', 'utopia', 'mendoza', 'venezia', 'madrid'].includes(c) ? c : 'sinea')(new URLSearchParams(location.search).get('ciudad'));</script>
+<script>globalThis.CIUDAD = (c => ['verdegrad', 'utopia', 'mendoza', 'venezia', 'madrid', 'petersburgo'].includes(c) ? c : 'sinea')(new URLSearchParams(location.search).get('ciudad'));</script>
 </head>
 <body>
 <canvas id="mapa"></canvas>
@@ -21,7 +21,7 @@
     <div id="resultados" hidden></div>
   </div>
   <select id="novela" aria-label="Filtrar por novela"></select>
-  <div id="ciudad" role="group" aria-label="Ciudad / Город"><button data-c="sinea" data-es="Sinea" data-ru="Синея">Sinea</button><button data-c="verdegrad" data-es="Verdegrad" data-ru="Вердеград">Verdegrad</button><button data-c="utopia" data-es="Utopía" data-ru="Утопия">Utopía</button><button data-c="mendoza" data-es="Mendoza" data-ru="Мендоса">Mendoza</button><button data-c="venezia" data-es="Venecia" data-ru="Венеция">Venecia</button><button data-c="madrid" data-es="Madrid" data-ru="Мадрид">Madrid</button></div>
+  <div id="ciudad" role="group" aria-label="Ciudad / Город"><button data-c="sinea" data-es="Sinea" data-ru="Синея">Sinea</button><button data-c="verdegrad" data-es="Verdegrad" data-ru="Вердеград">Verdegrad</button><button data-c="utopia" data-es="Utopía" data-ru="Утопия">Utopía</button><button data-c="mendoza" data-es="Mendoza" data-ru="Мендоса">Mendoza</button><button data-c="venezia" data-es="Venecia" data-ru="Венеция">Venecia</button><button data-c="madrid" data-es="Madrid" data-ru="Мадрид">Madrid</button><button data-c="petersburgo" data-es="San Petersburgo" data-ru="Петербург">San Petersburgo</button></div>
   <div id="idioma" role="group" aria-label="Idioma / Язык"><button data-l="es" title="Español">ES</button><button data-l="ru" title="Русский">RU</button></div>
 </header>
 

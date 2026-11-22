@@ -738,5 +738,35 @@
    "es": "Excelente fábrica. 300.000 máscaras, un solo rostro.",
    "ru": "Отличная фабрика. 300 000 масок, одно лицо."
   }
+ ],
+ "monumento-fundador": [
+  {
+   "a": "Alessio",
+   "ar": "Алессио",
+   "s": 5,
+   "es": "Lo veo todos los días desde la barra del «Kolokol». Un fundador con un cuaderno en blanco en vez de una espada: alguien que todavía no terminó su dibujo. Me cae bien.",
+   "ru": "Вижу его каждый день из-за стойки «Колокола». Основатель с чистым блокнотом вместо шпаги — человек, который ещё не дорисовал свой рисунок. Он мне нравится."
+  },
+  {
+   "a": "Signora Rosa",
+   "ar": "Синьора Роза",
+   "s": 5,
+   "es": "Cuando robaron el retrato, la gente le trajo flores y notitas. Yo le dejé un café. Frío, pero con cariño.",
+   "ru": "Когда украли портрет, люди понесли ему цветы и записки. Я оставила ему кофе. Холодный, но с любовью."
+  },
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 4,
+   "es": "Me senté a su lado en el banco. No dijo nada, pero tampoco hacía falta. Le saco una estrella por las palomas.",
+   "ru": "Посидела рядом с ним на скамейке. Он ничего не сказал, да и не нужно было. Минус звезда за голубей."
+  },
+  {
+   "a": "Brunetti",
+   "ar": "Брунетти",
+   "s": 5,
+   "es": "Veintidós años de sereno en el museo cuidándole el retrato. Ahora, de día, lo saludo acá, en bronce. Sigue esperando.",
+   "ru": "Двадцать два года я ночным сторожем берёг в музее его портрет. Теперь днём здороваюсь с ним здесь, в бронзе. Он всё ещё ждёт."
+  }
  ]
 }

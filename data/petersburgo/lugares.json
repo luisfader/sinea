@@ -1,0 +1,271 @@
+{
+ "_info": "Lugares de «Резонанс любви» en San Petersburgo. «ll» = [lat, lon] reales.",
+ "lugares": [
+  {
+   "id": "spb-nevski",
+   "nombre": "Nevski prospekt",
+   "cat": "calle",
+   "ll": [
+    59.9345,
+    30.33
+   ],
+   "modelo": "ninguno",
+   "desc": "La avenida principal de Petersburgo, del Almirantazgo a la estación de Moscú. «Primavera en el Nevski»: Natalia, una moscovita de vacaciones, camina hacia el puente Anichkov entre la multitud y los pétalos, cuando de golpe el cielo se oscurece, le falla el cuerpo y tropieza con el bordillo. Así conoce a Luis. Después, los diarios cuentan que la famosa esfinge pasea suelta por las calles, y en la novela todo el centro se llena de símbolos que despiertan.",
+   "buscar": "Невск\\w*",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "01-2.jpg"
+   ]
+  },
+  {
+   "id": "spb-anichkov",
+   "nombre": "Puente Anichkov",
+   "cat": "monumento",
+   "ll": [
+    59.93327,
+    30.34305
+   ],
+   "modelo": "anichkov",
+   "desc": "El puente sobre el Fontanka con los cuatro domadores de caballos de bronce. Acá Natalia tropieza con el bordillo y, enojada, le dice al aire unas palabras duras… que la ciudad escucha: según Luis, eso fue lo que la conectó con la anomalía. Al día siguiente vuelve a caminar hasta el puente para convencerse de que todo es normal.",
+   "buscar": "Аничков\\w*",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "01-1.jpg"
+   ]
+  },
+  {
+   "id": "spb-cafe",
+   "nombre": "El café del Nevski",
+   "cat": "restaurante",
+   "ll": [
+    59.9336,
+    30.3416
+   ],
+   "modelo": "cafe",
+   "desc": "Un café chico de luz tibia, a pocos metros del puente Anichkov. Luis se pone entre Natalia y el viento, la lleva adentro, la sienta lejos de la puerta y le pide algo caliente. Ella no entiende qué le pasó; él mira por la ventana y le dice que Petersburgo «rara vez tranquiliza enseguida, pero a veces avisa». Ahí le deja su tarjeta: agente secreto de asuntos celestiales. El café no tiene nombre en la novela; el marcador va junto al puente.",
+   "buscar": "Визитн\\w+ карточк\\w*|визитк\\w*",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "02-1.jpg"
+   ]
+  },
+  {
+   "id": "spb-okean",
+   "nombre": "Hotel «Okeán» (calle Vosstániya)",
+   "cat": "edificio",
+   "ll": [
+    59.9312,
+    30.3606
+   ],
+   "modelo": "hotel",
+   "desc": "El hotel de Natalia, en la calle Vosstániya, cerca de la estación de Moscú. Al amanecer Luis la trae en moto de agua y atracan cerca; otra noche la acompaña a pie desde el Neva, después de los puentes levadizos, y el camino resulta más silencioso de lo que debería. En los informes del cuartel aparecen «faroleros» en la zona de la estación. El hotel es de la novela; la calle es real.",
+   "buscar": "«Океан»|Восстания|Московск\\w+ вокзал\\w*",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "03-1.jpg"
+   ]
+  },
+  {
+   "id": "spb-atlantes",
+   "nombre": "Los atlantes de la calle Millónnaya",
+   "cat": "monumento",
+   "ll": [
+    59.9411982,
+    30.3176211
+   ],
+   "modelo": "atlantes",
+   "desc": "Los atlantes de granito que sostienen el pórtico del Nuevo Ermitage, en la calle Millónnaya 35. En la novela bajan del pórtico, pasean por el muelle y organizan un paso pago a la Plaza del Palacio: doscientos rublos. Natalia paga, el atlante toma el billete con una delicadeza increíble… y al día siguiente, en la Millónnaya, el pórtico está vacío. «Estoy en la calle Millónnaya, en el número treinta y cinco. Los atlantes no están.»",
+   "buscar": "[Аа]тлант\\w*|Миллионн\\w*",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "04-1.jpg"
+   ]
+  },
+  {
+   "id": "spb-plaza-palacio",
+   "nombre": "Plaza del Palacio y Columna de Alejandro",
+   "cat": "plaza",
+   "ll": [
+    59.939,
+    30.3158
+   ],
+   "modelo": "columna-alejandro",
+   "desc": "La gran plaza frente al Palacio de Invierno, con la Columna de Alejandro en el centro. Los atlantes cobran el paso hacia acá, y el cuartel de asuntos celestiales la marca en sus mapas como uno de los puntos luminosos de la anomalía. Cuando el rayo dorado sale de la Casa Singer, golpea hacia la Plaza del Palacio: las piedras tiemblan y el palacio se despega del suelo.",
+   "buscar": "Дворцов\\w+ площад\\w*",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "04-2.jpg"
+   ]
+  },
+  {
+   "id": "spb-ermitazh",
+   "nombre": "Palacio de Invierno – Ermitage",
+   "cat": "monumento",
+   "ll": [
+    59.94054,
+    30.31367
+   ],
+   "modelo": "ermitazh",
+   "desc": "«Cuando la ciudad levantó el palacio»: desde el techo de la Casa Singer, Dmitri Petróvich tira de los hilos de la memoria de la ciudad y el Ermitage se separa del suelo y queda colgando sobre Petersburgo, reflejando en las ventanas la luz fría del amanecer, «como si alguien quisiera demostrar que hasta la historia puede ser rehén». Es el primero de los nodos que el villano arranca; al final, la ciudad recuerda su peso y todo vuelve a su lugar.",
+   "buscar": "Эрмитаж\\w*|Зимн\\w+ двор\\w*",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "19-2.jpg"
+   ]
+  },
+  {
+   "id": "spb-esfinges",
+   "nombre": "Las esfinges del muelle de la Universidad",
+   "cat": "monumento",
+   "ll": [
+    59.93715,
+    30.29005
+   ],
+   "modelo": "esfinges",
+   "desc": "Las dos esfinges egipcias de granito traídas de Tebas, sobre el muelle de la isla Vasílievski, mirando al Neva. En la novela una de ellas se escapa y corre suelta por la ciudad: los diarios hablan de una esfinge en Vasílievski y en la Millónnaya. Luis la atrapa con unas boleadoras —Natalia nunca pensó que vería boleadoras en el centro de Petersburgo— y la esfinge, «enojada, cansada y ofendida con la isla Vasílievski», vuelve a su pedestal.",
+   "buscar": "[Сс]финкс\\w*",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "05-2.jpg"
+   ]
+  },
+  {
+   "id": "spb-casa-luis",
+   "nombre": "El departamento de Luis frente al Gran Neva",
+   "cat": "casa",
+   "ll": [
+    59.9385,
+    30.287
+   ],
+   "modelo": "hogar",
+   "desc": "«Un departamento con vista al Gran Neva»: Luis lleva a Natalia a la isla Vasílievski, a una casa vieja frente al muelle que parece haber sobrevivido a más de una época y más de una inundación. A la mañana hay syrniki calientes con dulce de frutilla y té. Más tarde la policía del caos asalta el departamento sin hacer ruido, y Natalia huye en un monopatín eléctrico de alquiler. La casa es de la novela; el marcador va en el muelle de Vasílievski.",
+   "buscar": "Больш\\w+ Нев\\w*|сырник\\w*|самокат\\w*",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "07-1.jpg"
+   ]
+  },
+  {
+   "id": "spb-banco",
+   "nombre": "Puente del Banco y sus grifos",
+   "cat": "monumento",
+   "ll": [
+    59.9321789,
+    30.3249311
+   ],
+   "modelo": "grifones",
+   "desc": "«Grifos sobre el canal»: el puentecito peatonal sobre el canal Griboédov, junto al antiguo Banco de Asignaciones, con cuatro grifos de alas doradas que, según Luis, cuidan el dinero y algo más: el grifo es un ser de frontera, con cuerpo de león y alas de águila. Más tarde los grifos cobran vida y se meten en la lucha contra la policía del caos, y Natalia aparece volando montada en uno de ellos, enorme, negro y dorado: «Mi transporte, al parecer, es mejor que el suyo».",
+   "buscar": "Банковск\\w*|[Гг]рифон\\w*",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "13-1.jpg"
+   ]
+  },
+  {
+   "id": "spb-puente-palacio",
+   "nombre": "Puente del Palacio (los puentes levadizos)",
+   "cat": "monumento",
+   "ll": [
+    59.9412,
+    30.3083
+   ],
+   "modelo": "puente-palacio",
+   "desc": "Después de los grifos, Luis mira el reloj: «Llegamos justo». Salen al Neva cuando en los muelles ya se junta la gente, y los tramos del puente empiezan a subir. Natalia había visto fotos y videos, pero en vivo el puente levadizo no tiene nada de postal. En algún momento su mano queda en la de Luis. En el mapa, de noche, el puente se abre.",
+   "buscar": "разводн\\w+ мост\\w*",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "13-2.jpg"
+   ]
+  },
+  {
+   "id": "spb-singer",
+   "nombre": "Casa Singer (Casa del Libro)",
+   "cat": "edificio",
+   "ll": [
+    59.9358726,
+    30.3258989
+   ],
+   "modelo": "singer",
+   "desc": "«La casa donde despiertan los libros»: el edificio de la compañía Singer en el Nevski, de comienzos del siglo XX, con la cúpula de vidrio y el globo en la torre, después Casa del Libro. Dmitri Petróvich, coordinador del cuartel, lo elige como el nodo más fuerte de la memoria de la ciudad para «empezar el procedimiento sin que se note». Desde su techo, con un hilo dorado sobre la cúpula, levanta el Ermitage, el Museo Ruso y el teatro, y todos los fragmentos de la ciudad tiran hacia la Singer. El final de la novela se juega acá.",
+   "buscar": "Зингер\\w*|Дом\\w* книги",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "17-1.jpg"
+   ]
+  },
+  {
+   "id": "spb-gostiny",
+   "nombre": "Gostini Dvor",
+   "cat": "tienda",
+   "ll": [
+    59.9339,
+    30.3335
+   ],
+   "modelo": "mercado",
+   "desc": "Las galerías comerciales más antiguas del Nevski. La primera noche, después de todo lo imposible, «no pasó nada realmente imposible… salvo que junto al Gostini Dvor un músico callejero» se puso a tocar algo raro.",
+   "buscar": "Гостин\\w+ двор\\w*",
+   "sin_ilustracion": true
+  },
+  {
+   "id": "spb-isaakiy",
+   "nombre": "Catedral de San Isaac",
+   "cat": "monumento",
+   "ll": [
+    59.93411,
+    30.30612
+   ],
+   "modelo": "isaakiy",
+   "desc": "La catedral de la gran cúpula dorada. El auto de la policía del caos que se lleva a Natalia deja atrás la plaza de San Isaac. Y en la entrevista del final, Robert Fader dice que lo que más le gustó de la ciudad fue la vista desde la columnata de San Isaac: desde arriba se ve toda su composición.",
+   "buscar": "Исаакиев\\w*",
+   "sin_ilustracion": true
+  },
+  {
+   "id": "spb-museo-ruso",
+   "nombre": "Museo Ruso",
+   "cat": "monumento",
+   "ll": [
+    59.93862,
+    30.33232
+   ],
+   "modelo": "museo-ruso",
+   "desc": "«Una isla sobre la ciudad»: Dmitri Petróvich arranca un pedazo del Museo Ruso y lo deja flotando sobre Petersburgo, con marcos sin cuadros, molduras y losas de piedra suspendidas en el aire. «No podía pasar de largo por el Museo Ruso: ahí hay demasiadas imágenes de Rusia.» Natalia y Luis llegan volando en los grifos y cruzan desde ahí por un puente de pura luz. Cuando la ciudad vuelve, el fragmento del Museo Ruso es el primero en responder.",
+   "buscar": "Русск\\w+ музе\\w*",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "24-1.jpg"
+   ]
+  },
+  {
+   "id": "spb-mariinski",
+   "nombre": "Teatro Mariinski",
+   "cat": "monumento",
+   "ll": [
+    59.92566,
+    30.29625
+   ],
+   "modelo": "mariinski",
+   "desc": "El teatro de ópera y ballet. Cuando el ladrón de símbolos empieza a robar la ciudad «como un ladrón que sabe llevarse lo valioso sin que grite», muy lejos sobre los techos tiembla la silueta del Mariinski; después un teatro de fachada solemne flota en el aire, como si la música encerrada en sus paredes quisiera sostener la piedra.",
+   "buscar": "Мариинск\\w*|театр\\w* с торжественн\\w*",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "23-1.jpg"
+   ]
+  },
+  {
+   "id": "spb-poceluev",
+   "nombre": "Puente de los Besos (sobre el Moika)",
+   "cat": "monumento",
+   "ll": [
+    59.9281623,
+    30.2949406
+   ],
+   "modelo": "poceluev",
+   "desc": "«El puente que callaba»: en la novela no se dice su nombre. En la batalla final, el rayo dorado de Dmitri Petróvich golpea un puente y lo parte con luz, «no la piedra: la memoria»; el agua sube como una pared y en ella Natalia ve manos que se tomaron acá, cartas, promesas, besos robados al tiempo. Ese puente no guardaba poder, ni gloria, ni arte: guardaba el amor. En el epílogo, paseando por el Moika, Robert le da a Luis una pista para los lectores: «el puente sobre el Moika en la línea de las calles Glinka y Trudá, que une la isla Kazanski con la Segunda Isla del Almirantazgo». Es el Puente Potselúev, el de los besos.",
+   "buscar": "Мост, который молчал|створе улицы Глинки|Мойк\\w*|Этот мост хранил",
+   "ilustracion": [
+    "rezonans-lyubvi",
+    "26-1.jpg"
+   ]
+  }
+ ]
+}

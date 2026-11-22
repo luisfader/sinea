@@ -489,6 +489,62 @@ export const CIUDADES = {
 }
 },
 {
+"id": "monumento-fundador",
+"nombre": "Monumento a Luis Fader, fundador de Sinea",
+"otros": [
+"Памятник основателю Синеи",
+"Бронзовый основатель"
+],
+"cat": "monumento",
+"x": 548,
+"y": -606,
+"modelo": "fundador",
+"desc": "En la Plaza Dante, frente a la fuente del poeta, Luis Fader, el fundador de la ciudad, está sentado en bronce en un banco. No tiene espada ni pergamino, como los fundadores de los cuadros de gala: lleva la cabeza descubierta y en la mano un cuadernito abierto en una página en blanco, igual que en el «Retrato de Luis Fader, fundador de Sinea» del Museo de Arte. Según la leyenda que cuentan las viejitas, encontró este lugar, construyó la ciudad y se quedó esperando a alguien que nunca llegó; el retrato espera que alguien termine el dibujo del cuaderno. En «Похититель сердец: Портрет основателя», después del robo del retrato, alrededor del bronce del fundador aparecen flores y notas de los vecinos.",
+"nombre_ru": "Памятник Луису Фадеру, основателю Синеи",
+"desc_ru": "На площади Данте, напротив фонтана с поэтом, на бронзовой скамейке сидит Луис Фадер, основатель города. У него нет ни шпаги, ни свитка, как у основателей на парадных портретах: голова непокрыта, а в руке — маленький блокнот, раскрытый на чистой странице, точь-в-точь как на «Портрете Луиса Фадера, основателя Синеи» из Музея искусств. Старушки рассказывают легенду: он нашёл это место, построил город и так и не дождался ту, которую ждал; а портрет ждёт, когда кто-нибудь закончит рисунок в блокноте. В «Похитителе сердец: Портрет основателя» после кражи портрета вокруг бронзового основателя появляются цветы и записки горожан.",
+"apar": [
+{
+"n": "pokhititel-serdec-portret-osnovatelya",
+"c": [
+[
+"29",
+"Пустая рама"
+]
+]
+}
+],
+"res": [
+{
+"a": "Alessio",
+"ar": "Алессио",
+"s": 5,
+"es": "Lo veo todos los días desde la barra del «Kolokol». Un fundador con un cuaderno en blanco en vez de una espada: alguien que todavía no terminó su dibujo. Me cae bien.",
+"ru": "Вижу его каждый день из-за стойки «Колокола». Основатель с чистым блокнотом вместо шпаги — человек, который ещё не дорисовал свой рисунок. Он мне нравится."
+},
+{
+"a": "Signora Rosa",
+"ar": "Синьора Роза",
+"s": 5,
+"es": "Cuando robaron el retrato, la gente le trajo flores y notitas. Yo le dejé un café. Frío, pero con cariño.",
+"ru": "Когда украли портрет, люди понесли ему цветы и записки. Я оставила ему кофе. Холодный, но с любовью."
+},
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 4,
+"es": "Me senté a su lado en el banco. No dijo nada, pero tampoco hacía falta. Le saco una estrella por las palomas.",
+"ru": "Посидела рядом с ним на скамейке. Он ничего не сказал, да и не нужно было. Минус звезда за голубей."
+},
+{
+"a": "Brunetti",
+"ar": "Брунетти",
+"s": 5,
+"es": "Veintidós años de sereno en el museo cuidándole el retrato. Ahora, de día, lo saludo acá, en bronce. Sigue esperando.",
+"ru": "Двадцать два года я ночным сторожем берёг в музее его портрет. Теперь днём здороваюсь с ним здесь, в бронзе. Он всё ещё ждёт."
+}
+]
+},
+{
 "id": "ayuntamiento",
 "nombre": "Ayuntamiento y Reloj del Carnaval",
 "otros": [
@@ -1877,6 +1933,27 @@ export const CIUDADES = {
 ]
 },
 {
+"n": "rezonans-lyubvi",
+"c": [
+[
+"8",
+"Сырники на рассвете"
+],
+[
+"17",
+"Город, который несёт на крыльях"
+],
+[
+"21",
+"Город на небе"
+],
+[
+"extra-1",
+"Интервью: Модный взгляд Карлотты"
+]
+]
+},
+{
 "n": "tikhaya-lyubov",
 "c": [
 [
@@ -3150,6 +3227,15 @@ export const CIUDADES = {
 [
 "28",
 "Возвращение Василия"
+]
+]
+},
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"18",
+"Когда город поднял дворец"
 ]
 ]
 },
@@ -17353,8 +17439,8 @@ export const CIUDADES = {
 ],
 "img": {
 "src": "img/lugares/vz-piazza.webp",
-"n": "venecianskaya-maska",
-"c": "1"
+"n": "maschera-di-venezia",
+"c": "3"
 }
 },
 {
@@ -17433,8 +17519,8 @@ export const CIUDADES = {
 ],
 "img": {
 "src": "img/lugares/vz-campanile.webp",
-"n": "venecianskaya-maska",
-"c": "8"
+"n": "maschera-di-venezia",
+"c": "10"
 }
 },
 {
@@ -17486,7 +17572,12 @@ export const CIUDADES = {
 "es": "Llegué por un canal de servicio y salí empapado. El argentino, seco. Inaceptable.",
 "ru": "Приплыл по служебному каналу и вылез насквозь мокрый. Аргентинец — сухой. Недопустимо."
 }
-]
+],
+"img": {
+"src": "img/lugares/vz-basilica.webp",
+"n": "maschera-di-venezia",
+"c": "12"
+}
 },
 {
 "id": "vz-ducale",
@@ -17553,7 +17644,12 @@ export const CIUDADES = {
 "es": "Diez minutos y ya estábamos en taxi acuático al lado de la góndola. Servicio impecable.",
 "ru": "Десять минут — и мы уже на водном такси рядом с гондолой. Безупречный сервис."
 }
-]
+],
+"img": {
+"src": "img/lugares/vz-ducale.webp",
+"n": "maschera-di-venezia",
+"c": "20"
+}
 },
 {
 "id": "vz-sospiri",
@@ -17620,7 +17716,12 @@ export const CIUDADES = {
 "es": "Paso por abajo veinte veces por día. Los turistas suspiran, yo remo.",
 "ru": "Проплываю под ним двадцать раз в день. Туристы вздыхают, я гребу."
 }
-]
+],
+"img": {
+"src": "img/lugares/vz-sospiri.webp",
+"n": "maschera-di-venezia",
+"c": "4"
+}
 },
 {
 "id": "vz-casa-roberto",
@@ -17671,7 +17772,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-casa-roberto.webp",
 "n": "maschera-di-venezia",
-"c": "5"
+"c": "7"
 }
 },
 {
@@ -17710,7 +17811,12 @@ export const CIUDADES = {
 "es": "El puente más lindo del Canal Grande. Mucha gente; vengan temprano o en plena revolución.",
 "ru": "Самый красивый мост на Большом канале. Много народу: приходите рано утром или прямо во время революции."
 }
-]
+],
+"img": {
+"src": "img/lugares/vz-rialto.webp",
+"n": "maschera-di-venezia",
+"c": "1"
+}
 },
 {
 "id": "vz-canal-grande",
@@ -17777,7 +17883,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-canal-grande.webp",
 "n": "maschera-di-venezia",
-"c": "3"
+"c": "11"
 }
 },
 {
@@ -17849,7 +17955,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-loggia.webp",
 "n": "maschera-di-venezia",
-"c": "6"
+"c": "13"
 }
 },
 {
@@ -17872,7 +17978,12 @@ export const CIUDADES = {
 ]
 ]
 }
-]
+],
+"img": {
+"src": "img/lugares/vz-cannaregio.webp",
+"n": "maschera-di-venezia",
+"c": "22"
+}
 },
 {
 "id": "vz-arsenale",
@@ -17934,7 +18045,12 @@ export const CIUDADES = {
 "es": "Metí el As de Bastos bajo el friso y saltó la primera chispa. Me siento parte de la historia de la República.",
 "ru": "Вставил «Туз жезлов» под фриз — и вспыхнула первая искра. Чувствую себя частью истории Республики."
 }
-]
+],
+"img": {
+"src": "img/lugares/vz-arsenale.webp",
+"n": "maschera-di-venezia",
+"c": "2"
+}
 },
 {
 "id": "vz-salute",
@@ -17969,7 +18085,12 @@ export const CIUDADES = {
 "es": "La Reina de Copas está escondida en la base de la terraza. Cuando el agua bajo el templo se encendió, entendí lo que sentía.",
 "ru": "«Королева кубков» спрятана в основании террасы. Когда вода под храмом засветилась, я поняла, что чувствую."
 }
-]
+],
+"img": {
+"src": "img/lugares/vz-salute.webp",
+"n": "venecianskaya-maska",
+"c": "48"
+}
 },
 {
 "id": "vz-san-giorgio",
@@ -18004,7 +18125,12 @@ export const CIUDADES = {
 "es": "Llegamos de noche en moto de agua. Del otro lado titilaban las luces de San Marco. Escondimos la carta en un poste viejo. Romántico y peligroso.",
 "ru": "Приплыли ночью на гидроциклах. На другом берегу мерцали огни Сан-Марко. Спрятали карту в старом столбе. Романтично и опасно."
 }
-]
+],
+"img": {
+"src": "img/lugares/vz-san-giorgio.webp",
+"n": "maschera-di-venezia",
+"c": "23"
+}
 },
 {
 "id": "vz-san-michele",
@@ -18055,7 +18181,12 @@ export const CIUDADES = {
 "es": "Cipreses, silencio y tumbas. Y de noche, un aeróstato que sale del agua. Venecia nunca deja de sorprender.",
 "ru": "Кипарисы, тишина и могилы. А ночью — аэростат, выныривающий из воды. Венеция не перестаёт удивлять."
 }
-]
+],
+"img": {
+"src": "img/lugares/vz-san-michele.webp",
+"n": "maschera-di-venezia",
+"c": "16"
+}
 },
 {
 "id": "vz-laguna",
@@ -18114,7 +18245,12 @@ export const CIUDADES = {
 "es": "Intenté irme en lancha con unos lingotes. Me arrestaron en el agua. La laguna no es discreta.",
 "ru": "Пытался уехать на катере с парой слитков. Арестовали прямо на воде. Лагуна совсем не умеет хранить тайны."
 }
-]
+],
+"img": {
+"src": "img/lugares/vz-laguna.webp",
+"n": "maschera-di-venezia",
+"c": "17"
+}
 },
 {
 "id": "vz-perduta",
@@ -18194,7 +18330,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-perduta.webp",
 "n": "maschera-di-venezia",
-"c": "13"
+"c": "19"
 }
 },
 {
@@ -18245,7 +18381,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-segrete.webp",
 "n": "maschera-di-venezia",
-"c": "29"
+"c": "8"
 }
 },
 {
@@ -18268,7 +18404,12 @@ export const CIUDADES = {
 ]
 ]
 }
-]
+],
+"img": {
+"src": "img/lugares/vz-cripta.webp",
+"n": "maschera-di-venezia",
+"c": "18"
+}
 },
 {
 "id": "vz-abisso",
@@ -18316,7 +18457,12 @@ export const CIUDADES = {
 "es": "Palacios hundidos detrás de los ojos de buey, capa sobre capa. No sale en los mapas, y así está bien.",
 "ru": "Затонувшие дворцы за иллюминаторами, слой под слоем. Его нет на картах — и пусть так и будет."
 }
-]
+],
+"img": {
+"src": "img/lugares/vz-abisso.webp",
+"n": "maschera-di-venezia",
+"c": "15"
+}
 },
 {
 "id": "vz-rifugio",
@@ -18402,8 +18548,8 @@ export const CIUDADES = {
 ],
 "img": {
 "src": "img/lugares/vz-rifugio.webp",
-"n": "venecianskaya-maska",
-"c": "9"
+"n": "maschera-di-venezia",
+"c": "14"
 }
 },
 {
@@ -18463,7 +18609,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-questura.webp",
 "n": "maschera-di-venezia",
-"c": "7"
+"c": "9"
 }
 }
 ],
@@ -19366,20 +19512,1412 @@ export const CIUDADES = {
 "c": "33"
 }
 }
+],
+"petersburgo": [
+{
+"id": "spb-nevski",
+"nombre": "Nevski prospekt",
+"cat": "calle",
+"x": 792,
+"y": -501,
+"modelo": "ninguno",
+"desc": "La avenida principal de Petersburgo, del Almirantazgo a la estación de Moscú. «Primavera en el Nevski»: Natalia, una moscovita de vacaciones, camina hacia el puente Anichkov entre la multitud y los pétalos, cuando de golpe el cielo se oscurece, le falla el cuerpo y tropieza con el bordillo. Así conoce a Luis. Después, los diarios cuentan que la famosa esfinge pasea suelta por las calles, y en la novela todo el centro se llena de símbolos que despiertan.",
+"nombre_ru": "Невский проспект",
+"desc_ru": "Главная улица Петербурга от Адмиралтейства до Московского вокзала. «Весна на Невском»: москвичка Наталья в отпуске идёт среди толпы и лепестков к Аничкову мосту, как вдруг небо темнеет, ей становится плохо, и она спотыкается о поребрик. Так она знакомится с Луисом. Потом газеты пишут, что знаменитый сфинкс свободно разгуливает по улицам, а весь центр наполняется просыпающимися символами.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"1",
+"Весна на Невском"
+],
+[
+"2",
+"Визитная карточка"
+],
+[
+"3",
+"Экскурсия с неожиданной остановкой"
+],
+[
+"9",
+"Верховное собрание."
+],
+[
+"16",
+"Дом, где просыпаются книги"
+],
+[
+"18",
+"Когда город поднял дворец"
+],
+[
+"19",
+"Город просит о помощи"
+],
+[
+"24",
+"Мост, который молчал"
+],
+[
+"25",
+"Город возвращается"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 4,
+"es": "Primavera, pétalos y un viento que casi me lleva. Tropecé con un bordillo y terminé trabajando para los asuntos celestiales. Una estrella menos por el bordillo.",
+"ru": "Весна, лепестки и ветер, который чуть не унёс меня. Споткнулась о поребрик — и в итоге работаю на небесные дела. Минус звезда за поребрик."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Si una moscovita tropieza en el Nevski y le habla mal a la ciudad, la ciudad contesta. Hay que estar cerca.",
+"ru": "Если москвичка спотыкается на Невском и говорит городу резкие слова, город отвечает. Нужно оказаться рядом."
+}
+],
+"img": {
+"src": "img/lugares/spb-nevski.webp",
+"n": "rezonans-lyubvi",
+"c": "1"
+}
+},
+{
+"id": "spb-anichkov",
+"nombre": "Puente Anichkov",
+"cat": "monumento",
+"x": 1520,
+"y": -638,
+"modelo": "anichkov",
+"desc": "El puente sobre el Fontanka con los cuatro domadores de caballos de bronce. Acá Natalia tropieza con el bordillo y, enojada, le dice al aire unas palabras duras… que la ciudad escucha: según Luis, eso fue lo que la conectó con la anomalía. Al día siguiente vuelve a caminar hasta el puente para convencerse de que todo es normal.",
+"nombre_ru": "Аничков мост",
+"desc_ru": "Мост через Фонтанку с четырьмя бронзовыми укротителями коней. Здесь Наталья спотыкается о поребрик и в сердцах бросает резкие слова — а город их слышит: по словам Луиса, именно это и связало её с аномалией. На следующий день она снова идёт к мосту, чтобы убедиться, что всё нормально.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"1",
+"Весна на Невском"
+],
+[
+"2",
+"Визитная карточка"
+],
+[
+"3",
+"Экскурсия с неожиданной остановкой"
+],
+[
+"4",
+"Двести рублей за невозможное"
+],
+[
+"7",
+"Квартира с видом на Большую Неву"
+],
+[
+"12",
+"Грифоны над каналом"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 3,
+"es": "Caballos de bronce preciosos. El bordillo de al lado, un enemigo personal.",
+"ru": "Бронзовые кони прекрасны. Поребрик рядом — мой личный враг."
+}
+],
+"img": {
+"src": "img/lugares/spb-anichkov.webp",
+"n": "rezonans-lyubvi",
+"c": "1"
+}
+},
+{
+"id": "spb-cafe",
+"nombre": "El café del Nevski",
+"cat": "restaurante",
+"x": 1439,
+"y": -602,
+"modelo": "cafe",
+"desc": "Un café chico de luz tibia, a pocos metros del puente Anichkov. Luis se pone entre Natalia y el viento, la lleva adentro, la sienta lejos de la puerta y le pide algo caliente. Ella no entiende qué le pasó; él mira por la ventana y le dice que Petersburgo «rara vez tranquiliza enseguida, pero a veces avisa». Ahí le deja su tarjeta: agente secreto de asuntos celestiales. El café no tiene nombre en la novela; el marcador va junto al puente.",
+"nombre_ru": "Кафе на Невском",
+"desc_ru": "Небольшое кафе с тёплым светом в нескольких шагах от Аничкова моста. Луис встаёт между Натальей и ветром, заводит её внутрь, сажает подальше от двери и заказывает горячее. Она не понимает, что с ней случилось; он смотрит в окно и говорит, что Петербург «редко успокаивает сразу, но иногда предупреждает». Здесь он оставляет ей визитку: секретный агент по небесным делам. У кафе в романе нет названия; метка стоит у моста.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"2",
+"Визитная карточка"
+],
+[
+"3",
+"Экскурсия с неожиданной остановкой"
+],
+[
+"4",
+"Двести рублей за невозможное"
+],
+[
+"5",
+"Сфинкс на Миллионной"
+],
+[
+"7",
+"Квартира с видом на Большую Неву"
+],
+[
+"13",
+"Белая ночь у двери"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Calentito, lejos de la puerta y con un desconocido que se puso entre el viento y yo. Me dejó una tarjeta de «agente de asuntos celestiales». Pensé que era una broma.",
+"ru": "Тепло, подальше от двери, и незнакомец, который встал между мной и ветром. Оставил визитку «агента по небесным делам». Я думала, это шутка."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 4,
+"es": "Buen té, buena mesa junto a la pared. El tiempo afuera, petersburgués.",
+"ru": "Хороший чай, хороший столик у стены. Погода снаружи — петербургская."
+}
+],
+"img": {
+"src": "img/lugares/spb-cafe.webp",
+"n": "rezonans-lyubvi",
+"c": "2"
+}
+},
+{
+"id": "spb-okean",
+"nombre": "Hotel «Okeán» (calle Vosstániya)",
+"cat": "edificio",
+"x": 2498,
+"y": -869,
+"modelo": "hotel",
+"desc": "El hotel de Natalia, en la calle Vosstániya, cerca de la estación de Moscú. Al amanecer Luis la trae en moto de agua y atracan cerca; otra noche la acompaña a pie desde el Neva, después de los puentes levadizos, y el camino resulta más silencioso de lo que debería. En los informes del cuartel aparecen «faroleros» en la zona de la estación. El hotel es de la novela; la calle es real.",
+"nombre_ru": "Гостиница «Океан» (улица Восстания)",
+"desc_ru": "Гостиница Натальи на улице Восстания, недалеко от Московского вокзала. На рассвете Луис привозит её на гидроцикле и они причаливают неподалёку; в другой вечер он провожает её пешком от Невы, после разводных мостов, и путь оказывается тише, чем должен быть. В сводках штаба значатся «фонарники» в районе вокзала. Гостиница — из романа, улица — настоящая.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"3",
+"Экскурсия с неожиданной остановкой"
+],
+[
+"8",
+"Сырники на рассвете"
+],
+[
+"10",
+"Неожиданный поворот."
+],
+[
+"13",
+"Белая ночь у двери"
+],
+[
+"14",
+"Никто не будет мной командовать"
+],
+[
+"17",
+"Город, который несёт на крыльях"
+],
+[
+"20",
+"Не капитан"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 4,
+"es": "Cerca de la estación, desayuno correcto, cama cómoda. Una mañana me trajeron en moto de agua. El portero no preguntó nada.",
+"ru": "Рядом с вокзалом, нормальный завтрак, удобная кровать. Однажды утром меня привезли на гидроцикле. Портье ничего не спросил."
+}
+],
+"img": {
+"src": "img/lugares/spb-okean.webp",
+"n": "rezonans-lyubvi",
+"c": "3"
+}
+},
+{
+"id": "spb-atlantes",
+"nombre": "Los atlantes de la calle Millónnaya",
+"cat": "monumento",
+"x": 102,
+"y": 245,
+"modelo": "atlantes",
+"desc": "Los atlantes de granito que sostienen el pórtico del Nuevo Ermitage, en la calle Millónnaya 35. En la novela bajan del pórtico, pasean por el muelle y organizan un paso pago a la Plaza del Palacio: doscientos rublos. Natalia paga, el atlante toma el billete con una delicadeza increíble… y al día siguiente, en la Millónnaya, el pórtico está vacío. «Estoy en la calle Millónnaya, en el número treinta y cinco. Los atlantes no están.»",
+"nombre_ru": "Атланты на Миллионной",
+"desc_ru": "Гранитные атланты, держащие портик Нового Эрмитажа, Миллионная улица, 35. В романе они сходят с портика, гуляют по набережной и устраивают платный проход к Дворцовой площади — двести рублей. Наталья платит, атлант берёт купюру с удивительной деликатностью… а на следующий день на Миллионной портик пуст. «Я стою на Миллионной улице, у дома номер тридцать пять. Атлантов нет на месте».",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"3",
+"Экскурсия с неожиданной остановкой"
+],
+[
+"4",
+"Двести рублей за невозможное"
+],
+[
+"5",
+"Сфинкс на Миллионной"
+],
+[
+"6",
+"Полиция хаоса"
+],
+[
+"7",
+"Квартира с видом на Большую Неву"
+],
+[
+"9",
+"Верховное собрание."
+],
+[
+"10",
+"Неожиданный поворот."
+],
+[
+"11",
+"Мой парень"
+],
+[
+"12",
+"Грифоны над каналом"
+],
+[
+"13",
+"Белая ночь у двери"
+],
+[
+"extra-1",
+"Интервью: Модный взгляд Карлотты"
+]
+]
+}
+],
+"res": [
+{
+"a": "Un atlante",
+"ar": "Атлант",
+"s": 4,
+"es": "Doscientos rublos por pasar a la Plaza del Palacio. Precio justo después de ciento setenta años sosteniendo un pórtico.",
+"ru": "Двести рублей за проход к Дворцовой площади. Справедливая цена после ста семидесяти лет с портиком на плечах."
+},
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 2,
+"es": "Pagué los doscientos rublos. Al día siguiente el pórtico estaba vacío. Exijo reembolso.",
+"ru": "Заплатила двести рублей. На следующий день портик был пуст. Требую возврата."
+}
+],
+"img": {
+"src": "img/lugares/spb-atlantes.webp",
+"n": "rezonans-lyubvi",
+"c": "4"
+}
+},
+{
+"id": "spb-plaza-palacio",
+"nombre": "Plaza del Palacio y Columna de Alejandro",
+"cat": "plaza",
+"x": 0,
+"y": 0,
+"modelo": "columna-alejandro",
+"desc": "La gran plaza frente al Palacio de Invierno, con la Columna de Alejandro en el centro. Los atlantes cobran el paso hacia acá, y el cuartel de asuntos celestiales la marca en sus mapas como uno de los puntos luminosos de la anomalía. Cuando el rayo dorado sale de la Casa Singer, golpea hacia la Plaza del Palacio: las piedras tiemblan y el palacio se despega del suelo.",
+"nombre_ru": "Дворцовая площадь и Александровская колонна",
+"desc_ru": "Огромная площадь перед Зимним дворцом с Александровской колонной в центре. Атланты берут плату за проход сюда, а штаб небесных дел отмечает её на картах как одну из светящихся точек аномалии. Когда золотой луч бьёт от Дома Зингера, он направлен в сторону Дворцовой площади: камни дрожат, и дворец отрывается от земли.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"4",
+"Двести рублей за невозможное"
+],
+[
+"5",
+"Сфинкс на Миллионной"
+],
+[
+"9",
+"Верховное собрание."
+],
+[
+"10",
+"Неожиданный поворот."
+],
+[
+"18",
+"Когда город поднял дворец"
+]
+]
+}
+],
+"res": [
+{
+"a": "El chino",
+"ar": "Китаец",
+"s": 3,
+"es": "Vi el palacio levantarse sobre la plaza al amanecer. Quiero volver a dormir.",
+"ru": "Видел, как дворец поднимается над площадью на рассвете. Хочу обратно спать."
+},
+{
+"a": "Iván Domovóiev",
+"ar": "Иван Домовоев",
+"s": 4,
+"es": "En el mapa del cuartel es un punto luminoso. En persona, más luminoso todavía.",
+"ru": "На карте штаба — светящаяся точка. Вживую — ещё ярче."
+}
+],
+"img": {
+"src": "img/lugares/spb-plaza-palacio.webp",
+"n": "rezonans-lyubvi",
+"c": "4"
+}
+},
+{
+"id": "spb-ermitazh",
+"nombre": "Palacio de Invierno – Ermitage",
+"cat": "monumento",
+"x": -119,
+"y": 172,
+"modelo": "ermitazh",
+"desc": "«Cuando la ciudad levantó el palacio»: desde el techo de la Casa Singer, Dmitri Petróvich tira de los hilos de la memoria de la ciudad y el Ermitage se separa del suelo y queda colgando sobre Petersburgo, reflejando en las ventanas la luz fría del amanecer, «como si alguien quisiera demostrar que hasta la historia puede ser rehén». Es el primero de los nodos que el villano arranca; al final, la ciudad recuerda su peso y todo vuelve a su lugar.",
+"nombre_ru": "Зимний дворец — Эрмитаж",
+"desc_ru": "«Когда город поднял дворец»: с крыши Дома Зингера Дмитрий Петрович тянет нити городской памяти, и Эрмитаж отрывается от земли и повисает над Петербургом, отражая в окнах холодный предрассветный свет, — «словно кто-то решил доказать, что даже история может быть заложницей». Это первый узел, который вырывает злодей; в финале город вспоминает свой вес, и всё возвращается на место.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"3",
+"Экскурсия с неожиданной остановкой"
+],
+[
+"4",
+"Двести рублей за невозможное"
+],
+[
+"5",
+"Сфинкс на Миллионной"
+],
+[
+"9",
+"Верховное собрание."
+],
+[
+"18",
+"Когда город поднял дворец"
+],
+[
+"19",
+"Город просит о помощи"
+],
+[
+"20",
+"Не капитан"
+],
+[
+"22",
+"Остров над городом"
+],
+[
+"25",
+"Город возвращается"
+]
+]
+}
+],
+"res": [
+{
+"a": "La capitana",
+"ar": "Капитан",
+"s": 2,
+"es": "Un palacio colgando sobre la ciudad. Pésimo para el orden público. Ya sé quién fue.",
+"ru": "Дворец висит над городом. Ужасно для общественного порядка. Я уже знаю, кто это сделал."
+},
+{
+"a": "Dmitri Petróvich",
+"ar": "Дмитрий Петрович",
+"s": 5,
+"es": "Una obra maestra de la ingeniería de la memoria. Lástima que la ciudad no supo apreciarla.",
+"ru": "Шедевр инженерии памяти. Жаль, что город не сумел оценить."
+}
+],
+"img": {
+"src": "img/lugares/spb-ermitazh.webp",
+"n": "rezonans-lyubvi",
+"c": "18"
+}
+},
+{
+"id": "spb-esfinges",
+"nombre": "Las esfinges del muelle de la Universidad",
+"cat": "monumento",
+"x": -1436,
+"y": -206,
+"modelo": "esfinges",
+"desc": "Las dos esfinges egipcias de granito traídas de Tebas, sobre el muelle de la isla Vasílievski, mirando al Neva. En la novela una de ellas se escapa y corre suelta por la ciudad: los diarios hablan de una esfinge en Vasílievski y en la Millónnaya. Luis la atrapa con unas boleadoras —Natalia nunca pensó que vería boleadoras en el centro de Petersburgo— y la esfinge, «enojada, cansada y ofendida con la isla Vasílievski», vuelve a su pedestal.",
+"nombre_ru": "Сфинксы на Университетской набережной",
+"desc_ru": "Два египетских гранитных сфинкса, привезённых из Фив, на набережной Васильевского острова, лицом к Неве. В романе один из них сбегает и носится по городу: газеты пишут о сфинксе на Васильевском и на Миллионной. Луис ловит его болеадорас — Наталья никогда не думала, что увидит болеадорас в центре Петербурга, — и сфинкс, «злой, уставший и обиженный на Васильевский остров», возвращается на постамент.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"2",
+"Визитная карточка"
+],
+[
+"3",
+"Экскурсия с неожиданной остановкой"
+],
+[
+"4",
+"Двести рублей за невозможное"
+],
+[
+"5",
+"Сфинкс на Миллионной"
+],
+[
+"6",
+"Полиция хаоса"
+],
+[
+"7",
+"Квартира с видом на Большую Неву"
+],
+[
+"8",
+"Сырники на рассвете"
+],
+[
+"9",
+"Верховное собрание."
+],
+[
+"10",
+"Неожиданный поворот."
+],
+[
+"11",
+"Мой парень"
+],
+[
+"12",
+"Грифоны над каналом"
+],
+[
+"13",
+"Белая ночь у двери"
+],
+[
+"19",
+"Город просит о помощи"
+]
+]
+}
+],
+"res": [
+{
+"a": "La esfinge",
+"ar": "Сфинкс",
+"s": 2,
+"es": "Tres mil años de calma en Tebas y acá me tiran boleadoras a las patas. Ofendida con la isla Vasílievski.",
+"ru": "Три тысячи лет покоя в Фивах — а здесь мне бросают под лапы болеадорас. Обижена на Васильевский остров."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Atrapé una esfinge con boleadoras en el centro de Petersburgo. Mi abuelo de la pampa estaría orgulloso.",
+"ru": "Поймал сфинкса болеадорас в центре Петербурга. Мой дед из пампы гордился бы."
+}
+],
+"img": {
+"src": "img/lugares/spb-esfinges.webp",
+"n": "rezonans-lyubvi",
+"c": "5"
+}
+},
+{
+"id": "spb-casa-luis",
+"nombre": "El departamento de Luis frente al Gran Neva",
+"cat": "casa",
+"x": -1606,
+"y": -56,
+"modelo": "hogar",
+"desc": "«Un departamento con vista al Gran Neva»: Luis lleva a Natalia a la isla Vasílievski, a una casa vieja frente al muelle que parece haber sobrevivido a más de una época y más de una inundación. A la mañana hay syrniki calientes con dulce de frutilla y té. Más tarde la policía del caos asalta el departamento sin hacer ruido, y Natalia huye en un monopatín eléctrico de alquiler. La casa es de la novela; el marcador va en el muelle de Vasílievski.",
+"nombre_ru": "Квартира Луиса с видом на Большую Неву",
+"desc_ru": "«Квартира с видом на Большую Неву»: Луис приводит Наталью на Васильевский остров, в старый дом у набережной, переживший не одну эпоху и не один потоп. Утром — горячие сырники с клубничным вареньем и чай. Позже полиция хаоса бесшумно штурмует квартиру, а Наталья удирает на прокатном электросамокате. Дом — из романа; метка стоит на набережной Васильевского.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"7",
+"Квартира с видом на Большую Неву"
+],
+[
+"8",
+"Сырники на рассвете"
+],
+[
+"13",
+"Белая ночь у двери"
+],
+[
+"15",
+"Самокат против хаоса"
+],
+[
+"16",
+"Дом, где просыпаются книги"
+],
+[
+"17",
+"Город, который несёт на крыльях"
+],
+[
+"19",
+"Город просит о помощи"
+],
+[
+"22",
+"Остров над городом"
+],
+[
+"23",
+"Архипелаг памяти"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Vista al Gran Neva y syrniki calientes al amanecer. Le saco cero estrellas aunque la policía del caos haya entrado sin tocar.",
+"ru": "Вид на Большую Неву и горячие сырники на рассвете. Не сниму ни звезды, хоть полиция хаоса и вошла без стука."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 4,
+"es": "Casa vieja, ha sobrevivido a inundaciones. A un asalto de la policía del caos también, por poco.",
+"ru": "Старый дом, пережил наводнения. Штурм полиции хаоса тоже — еле-еле."
+}
+],
+"img": {
+"src": "img/lugares/spb-casa-luis.webp",
+"n": "rezonans-lyubvi",
+"c": "7"
+}
+},
+{
+"id": "spb-banco",
+"nombre": "Puente del Banco y sus grifos",
+"cat": "monumento",
+"x": 509,
+"y": -760,
+"modelo": "grifones",
+"desc": "«Grifos sobre el canal»: el puentecito peatonal sobre el canal Griboédov, junto al antiguo Banco de Asignaciones, con cuatro grifos de alas doradas que, según Luis, cuidan el dinero y algo más: el grifo es un ser de frontera, con cuerpo de león y alas de águila. Más tarde los grifos cobran vida y se meten en la lucha contra la policía del caos, y Natalia aparece volando montada en uno de ellos, enorme, negro y dorado: «Mi transporte, al parecer, es mejor que el suyo».",
+"nombre_ru": "Банковский мост и грифоны",
+"desc_ru": "«Грифоны над каналом»: маленький пешеходный мост через канал Грибоедова у бывшего Ассигнационного банка с четырьмя грифонами с золотыми крыльями, которые, по словам Луиса, сторожат деньги — и не только: грифон — существо пограничное, с телом льва и крыльями орла. Потом грифоны оживают и вмешиваются в борьбу с полицией хаоса, а Наталья прилетает верхом на одном из них — огромном, чёрно-золотом: «Мой транспорт, кажется, лучше вашего».",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"12",
+"Грифоны над каналом"
+],
+[
+"13",
+"Белая ночь у двери"
+],
+[
+"14",
+"Никто не будет мной командовать"
+],
+[
+"16",
+"Дом, где просыпаются книги"
+],
+[
+"17",
+"Город, который несёт на крыльях"
+],
+[
+"18",
+"Когда город поднял дворец"
+],
+[
+"19",
+"Город просит о помощи"
+],
+[
+"20",
+"Не капитан"
+],
+[
+"21",
+"Город на небе"
+],
+[
+"22",
+"Остров над городом"
+],
+[
+"23",
+"Архипелаг памяти"
+],
+[
+"24",
+"Мост, который молчал"
+],
+[
+"25",
+"Город возвращается"
+],
+[
+"extra-2",
+"Интервью: Василий даёт советы Луису"
+],
+[
+"extra-4",
+"Интервью с Робертом Фадером: «Наталья — это женщина, рядом с которой Петербург начинает дышать иначе»"
+],
+[
+"extra-5",
+"Прогулка с автором"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Primero Luis me dio una clase de grifos. Después me fui volando en uno. Mi transporte es mejor que el suyo.",
+"ru": "Сначала Луис прочитал мне лекцию о грифонах. Потом я улетела на одном из них. Мой транспорт лучше вашего."
+},
+{
+"a": "Un grifo",
+"ar": "Грифон",
+"s": 5,
+"es": "Cuidamos el dinero, y desde ahora también a ella.",
+"ru": "Мы сторожим деньги, а с этих пор — и её."
+}
+],
+"img": {
+"src": "img/lugares/spb-banco.webp",
+"n": "rezonans-lyubvi",
+"c": "12"
+}
+},
+{
+"id": "spb-puente-palacio",
+"nombre": "Puente del Palacio (los puentes levadizos)",
+"cat": "monumento",
+"x": -418,
+"y": 245,
+"modelo": "puente-palacio",
+"desc": "Después de los grifos, Luis mira el reloj: «Llegamos justo». Salen al Neva cuando en los muelles ya se junta la gente, y los tramos del puente empiezan a subir. Natalia había visto fotos y videos, pero en vivo el puente levadizo no tiene nada de postal. En algún momento su mano queda en la de Luis. En el mapa, de noche, el puente se abre.",
+"nombre_ru": "Дворцовый мост (разводные мосты)",
+"desc_ru": "После грифонов Луис смотрит на часы: «Мы как раз успеем». Они выходят к Неве, когда на набережных уже собрались люди, и пролёты моста начинают подниматься. Наталья видела фотографии и видео, но вживую разводной мост не имеет ничего общего с открыткой. В какой-то момент её рука оказывается в ладони Луиса. На карте ночью мост разводится.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"12",
+"Грифоны над каналом"
+],
+[
+"13",
+"Белая ночь у двери"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Había visto fotos. No se parece en nada. Y en algún momento mi mano estaba en la suya.",
+"ru": "Я видела фотографии. Ничего общего. И в какой-то момент моя рука оказалась в его ладони."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Excepcional guía turístico, me dijeron. Llegamos justo a tiempo.",
+"ru": "Мне сказали, что я исключительный экскурсовод. Мы успели вовремя."
+}
+],
+"img": {
+"src": "img/lugares/spb-puente-palacio.webp",
+"n": "rezonans-lyubvi",
+"c": "12"
+}
+},
+{
+"id": "spb-singer",
+"nombre": "Casa Singer (Casa del Libro)",
+"cat": "edificio",
+"x": 563,
+"y": -348,
+"modelo": "singer",
+"desc": "«La casa donde despiertan los libros»: el edificio de la compañía Singer en el Nevski, de comienzos del siglo XX, con la cúpula de vidrio y el globo en la torre, después Casa del Libro. Dmitri Petróvich, coordinador del cuartel, lo elige como el nodo más fuerte de la memoria de la ciudad para «empezar el procedimiento sin que se note». Desde su techo, con un hilo dorado sobre la cúpula, levanta el Ermitage, el Museo Ruso y el teatro, y todos los fragmentos de la ciudad tiran hacia la Singer. El final de la novela se juega acá.",
+"nombre_ru": "Дом Зингера (Дом книги)",
+"desc_ru": "«Дом, где просыпаются книги»: здание компании «Зингер» на Невском начала XX века со стеклянным куполом и глобусом на башне, позже — Дом книги. Дмитрий Петрович, координатор штаба, выбирает его как один из самых сильных узлов городской памяти, чтобы «начать процедуру незаметно». С его крыши, по золотой нити над куполом, он поднимает Эрмитаж, Русский музей и театр, и все фрагменты города тянутся к Зингеру. Здесь решается финал романа.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"16",
+"Дом, где просыпаются книги"
+],
+[
+"18",
+"Когда город поднял дворец"
+],
+[
+"19",
+"Город просит о помощи"
+],
+[
+"20",
+"Не капитан"
+],
+[
+"21",
+"Город на небе"
+],
+[
+"22",
+"Остров над городом"
+],
+[
+"23",
+"Архипелаг памяти"
+],
+[
+"24",
+"Мост, который молчал"
+],
+[
+"25",
+"Город возвращается"
+]
+]
+}
+],
+"res": [
+{
+"a": "Dmitri Petróvich",
+"ar": "Дмитрий Петрович",
+"s": 5,
+"es": "Valor arquitectónico, memoria de libros y visibilidad turística. El lugar ideal para empezar un procedimiento sin que se note.",
+"ru": "Архитектурная дерзость, книжная память и туристическая видимость. Идеальное место, чтобы начать процедуру незаметно."
+},
+{
+"a": "Iván Domovóiev",
+"ar": "Иван Домовоев",
+"s": 2,
+"es": "¿Sin que se note? ¿En la Casa Singer? Viento helado en el techo y un jefe dando clases.",
+"ru": "Незаметно? В Доме Зингера? Ледяной ветер на крыше и начальник, читающий лекции."
+},
+{
+"a": "El traductor",
+"ar": "Переводчик",
+"s": 3,
+"es": "Traduje todo lo que dijo el maestro. Lo último fue «quiero volver a dormir». Lo entendí perfecto.",
+"ru": "Я перевёл всё, что сказал мастер. Последним было «хочу обратно спать». Понял прекрасно."
+}
+],
+"img": {
+"src": "img/lugares/spb-singer.webp",
+"n": "rezonans-lyubvi",
+"c": "16"
+}
+},
+{
+"id": "spb-gostiny",
+"nombre": "Gostini Dvor",
+"cat": "tienda",
+"x": 987,
+"y": -568,
+"modelo": "mercado",
+"desc": "Las galerías comerciales más antiguas del Nevski. La primera noche, después de todo lo imposible, «no pasó nada realmente imposible… salvo que junto al Gostini Dvor un músico callejero» se puso a tocar algo raro.",
+"nombre_ru": "Гостиный двор",
+"desc_ru": "Старейшие торговые ряды на Невском. В первую ночь, после всего невозможного, «ничего по-настоящему невозможного больше не происходило… разве что у Гостиного двора какой-то уличный музыкант» заиграл что-то странное.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"6",
+"Полиция хаоса"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 4,
+"es": "De noche, un músico callejero tocando algo que la ciudad conocía. Petersburgo nunca está del todo en silencio.",
+"ru": "Ночью уличный музыкант играл что-то, что город узнал. Петербург никогда не молчит до конца."
+}
+]
+},
+{
+"id": "spb-isaakiy",
+"nombre": "Catedral de San Isaac",
+"cat": "monumento",
+"x": -540,
+"y": -545,
+"modelo": "isaakiy",
+"desc": "La catedral de la gran cúpula dorada. El auto de la policía del caos que se lleva a Natalia deja atrás la plaza de San Isaac. Y en la entrevista del final, Robert Fader dice que lo que más le gustó de la ciudad fue la vista desde la columnata de San Isaac: desde arriba se ve toda su composición.",
+"nombre_ru": "Исаакиевский собор",
+"desc_ru": "Собор с огромным золотым куполом. Машина полиции хаоса, увозящая Наталью, оставляет позади Исаакиевскую площадь. А в интервью в конце книги Роберт Фадер говорит, что больше всего в городе ему понравился вид с Исаакиевского собора: сверху видна вся его композиция.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"14",
+"Никто не будет мной командовать"
+],
+[
+"extra-4",
+"Интервью с Робертом Фадером: «Наталья — это женщина, рядом с которой Петербург начинает дышать иначе»"
+]
+]
+}
+],
+"res": [
+{
+"a": "Robert Fader",
+"ar": "Роберт Фадер",
+"s": 5,
+"es": "La vista desde la columnata: ves la composición entera de la ciudad, no solo calles.",
+"ru": "Вид с колоннады: видишь всю композицию города, а не отдельные улицы."
+}
+]
+},
+{
+"id": "spb-museo-ruso",
+"nombre": "Museo Ruso",
+"cat": "monumento",
+"x": 921,
+"y": -42,
+"modelo": "museo-ruso",
+"desc": "«Una isla sobre la ciudad»: Dmitri Petróvich arranca un pedazo del Museo Ruso y lo deja flotando sobre Petersburgo, con marcos sin cuadros, molduras y losas de piedra suspendidas en el aire. «No podía pasar de largo por el Museo Ruso: ahí hay demasiadas imágenes de Rusia.» Natalia y Luis llegan volando en los grifos y cruzan desde ahí por un puente de pura luz. Cuando la ciudad vuelve, el fragmento del Museo Ruso es el primero en responder.",
+"nombre_ru": "Русский музей",
+"desc_ru": "«Остров над городом»: Дмитрий Петрович вырывает фрагмент Русского музея и оставляет его парить над Петербургом — рамы без картин, лепнина и каменные плиты висят в воздухе. «Он не мог пройти мимо Русского музея: там слишком много образов России». Наталья и Луис прилетают на грифонах и переходят оттуда по мосту из чистого света. Когда город возвращается, фрагмент Русского музея отзывается первым.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"22",
+"Остров над городом"
+],
+[
+"23",
+"Архипелаг памяти"
+],
+[
+"25",
+"Город возвращается"
+]
+]
+}
+],
+"res": [
+{
+"a": "Galina Serguéievna",
+"ar": "Галина Сергеевна",
+"s": 4,
+"es": "Desde abajo se oía a las molduras quejarse del frío allá arriba. Las piedras hablan, si una escucha.",
+"ru": "Снизу было слышно, как лепнина жалуется на холод наверху. Камни разговаривают, если слушать."
+},
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 4,
+"es": "Marcos sin cuadros flotando en el aire y un puente de luz para bajar. No apto para vértigo.",
+"ru": "Рамы без картин парят в воздухе, а вниз — по мосту из света. Не для тех, кто боится высоты."
+}
+],
+"img": {
+"src": "img/lugares/spb-museo-ruso.webp",
+"n": "rezonans-lyubvi",
+"c": "22"
+}
+},
+{
+"id": "spb-mariinski",
+"nombre": "Teatro Mariinski",
+"cat": "monumento",
+"x": -1090,
+"y": -1486,
+"modelo": "mariinski",
+"desc": "El teatro de ópera y ballet. Cuando el ladrón de símbolos empieza a robar la ciudad «como un ladrón que sabe llevarse lo valioso sin que grite», muy lejos sobre los techos tiembla la silueta del Mariinski; después un teatro de fachada solemne flota en el aire, como si la música encerrada en sus paredes quisiera sostener la piedra.",
+"nombre_ru": "Мариинский театр",
+"desc_ru": "Театр оперы и балета. Когда похититель символов начинает красть город «как вор, который умеет брать ценное так, чтобы оно не успело закричать», где-то далеко над крышами вздрагивает силуэт Мариинского театра; потом театр с торжественным фасадом дрожит в воздухе, будто музыка, заключённая в его стенах, пытается удержать камень.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"19",
+"Город просит о помощи"
+],
+[
+"21",
+"Город на небе"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 4,
+"es": "Hasta en el aire, el teatro sonaba. Volví a escucharlo cuando bajó.",
+"ru": "Даже в воздухе театр звучал. Когда он опустился, я снова его услышал."
+}
+],
+"img": {
+"src": "img/lugares/spb-mariinski.webp",
+"n": "rezonans-lyubvi",
+"c": "21"
+}
+},
+{
+"id": "spb-poceluev",
+"nombre": "Puente de los Besos (sobre el Moika)",
+"cat": "monumento",
+"x": -1163,
+"y": -1207,
+"modelo": "poceluev",
+"desc": "«El puente que callaba»: en la novela no se dice su nombre. En la batalla final, el rayo dorado de Dmitri Petróvich golpea un puente y lo parte con luz, «no la piedra: la memoria»; el agua sube como una pared y en ella Natalia ve manos que se tomaron acá, cartas, promesas, besos robados al tiempo. Ese puente no guardaba poder, ni gloria, ni arte: guardaba el amor. En el epílogo, paseando por el Moika, Robert le da a Luis una pista para los lectores: «el puente sobre el Moika en la línea de las calles Glinka y Trudá, que une la isla Kazanski con la Segunda Isla del Almirantazgo». Es el Puente Potselúev, el de los besos.",
+"nombre_ru": "Поцелуев мост (через Мойку)",
+"desc_ru": "«Мост, который молчал»: в романе его имя не названо. В финальной битве золотой луч Дмитрия Петровича ударяет в мост и раскалывает его светом — «не камень, а память»; вода поднимается прозрачной стеной, и в ней Наталья видит руки, которые здесь держались, письма, обещания, поцелуи, украденные у времени. Этот мост хранил не власть, не славу, не искусство — любовь. В эпилоге, гуляя по набережной Мойки, Роберт даёт Луису подсказку для читателей: «мост через Мойку в створе улицы Глинки и улицы Труда, соединяющий Казанский и Второй Адмиралтейский острова». Это Поцелуев мост.",
+"apar": [
+{
+"n": "rezonans-lyubvi",
+"c": [
+[
+"24",
+"Мост, который молчал"
+],
+[
+"extra-5",
+"Прогулка с автором"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "El agua subió como una pared y vi todas las manos que se tomaron acá. Entendí lo que guarda este puente.",
+"ru": "Вода встала стеной, и я увидела все руки, которые здесь держались. Я поняла, что хранит этот мост."
+},
+{
+"a": "Robert Fader",
+"ar": "Роберт Фадер",
+"s": 5,
+"es": "No voy a decir el nombre. Busquen el puente sobre el Moika en la línea de Glinka y Trudá.",
+"ru": "Не скажу названия. Ищите мост через Мойку в створе улиц Глинки и Труда."
+},
+{
+"a": "La capitana",
+"ar": "Капитан",
+"s": 4,
+"es": "Esas palabras sonaron también para mí. No hago reseñas, pero esta la hago.",
+"ru": "Эти слова прозвучали и для меня. Я не пишу отзывов, но этот напишу."
+}
+],
+"img": {
+"src": "img/lugares/spb-poceluev.webp",
+"n": "rezonans-lyubvi",
+"c": "24"
+}
+}
 ]
 };
 export const NOVELAS = {
-"il-treno-fantasma": {
-"t": "Il treno fantasma",
-"es": "El tren fantasma (it.)",
+"dikij-chas-2": {
+"t": "Дикий час: Духи гор",
+"es": "La hora salvaje: Los espíritus de la montaña",
+"l": "ru",
+"y": null,
+"ru": "Дикий час: Духи гор",
+"p": "img/portadas/dikij-chas-2.webp",
+"tr": {}
+},
+"dikij-chas-karnaval-razdora": {
+"t": "Дикий час: Карнавал раздора",
+"es": "La hora salvaje: El carnaval de la discordia",
+"l": "ru",
+"y": 2026,
+"ru": "Дикий час: Карнавал раздора",
+"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
+"tr": {}
+},
+"la-reina-de-la-vendimia": {
+"t": "La reina de la Vendimia",
+"es": "La reina de la Vendimia",
+"l": "es",
+"y": 2026,
+"ru": "Королева Вендимии (исп.)",
+"p": "img/portadas/la-reina-de-la-vendimia.webp",
+"tr": {
+"cs": "kralovna-vinobrani"
+}
+},
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
+"l": "ru",
+"y": 2026,
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
+"tr": {
+"it": "ti-amo-in-silenzio"
+}
+},
+"ladro-di-cuori-3": {
+"t": "Ladro di cuori 3",
+"es": "Ladrón de corazones 3 (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Похититель сердец 3 (ит.)",
+"p": "img/portadas/ladro-di-cuori-3.webp",
+"tr": {}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"divlji-chas-malbec": {
+"t": "Дивљи час: Љубав укуса малбека",
+"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
+"p": "img/portadas/divlji-chas-malbec.webp",
+"tr": {}
+},
+"golos": {
+"t": "Голос",
+"es": "La voz",
+"l": "ru",
+"y": 2026,
+"ru": "Голос",
+"p": "img/portadas/golos.webp",
+"tr": {
+"fr": "la-voix"
+}
+},
+"tajna-v-biblioteke": {
+"t": "Тайна в библиотеке",
+"es": "El misterio de la biblioteca",
+"l": "ru",
+"y": 2026,
+"ru": "Тайна в библиотеке",
+"p": "img/portadas/tajna-v-biblioteke.webp",
+"tr": {}
+},
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
+"l": "ru",
+"y": 2026,
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
+},
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
+"l": "ru",
+"y": 2026,
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
+"tr": {}
+},
+"grustnyj-gorod": {
+"t": "Грустный город",
+"es": "La ciudad triste",
+"l": "ru",
+"y": 2026,
+"ru": "Грустный город",
+"p": "img/portadas/grustnyj-gorod.webp",
+"tr": {
+"it": "la-citta-triste"
+}
+},
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
+"l": "es",
+"y": 2026,
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
+"tr": {}
+},
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
+"l": "es",
+"y": null,
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
+"tr": {}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
+"y": 2026,
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
+"tr": {}
+},
+"predchuvstvie-2-4": {
+"t": "Предчувствие 2.4",
+"es": "El presentimiento 2.4",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.4",
+"p": "img/portadas/predchuvstvie-2-4.webp",
+"tr": {}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"maschera-di-venezia": {
+"t": "Maschera di Venezia",
+"es": "La máscara de Venecia (it.)",
 "l": "it",
 "y": null,
-"ru": "Призрачный поезд (ит.)",
-"p": "img/portadas/il-treno-fantasma.webp",
+"ru": "Венецианская маска (ит.)",
+"p": "img/portadas/maschera-di-venezia.webp",
+"tr": {
+"ru": "venecianskaya-maska"
+}
+},
+"anomalia": {
+"t": "Anomalía",
+"es": "Anomalía",
+"l": "es",
+"y": null,
+"ru": "Аномалия (исп.)",
+"p": "img/portadas/anomalia.webp",
+"tr": {}
+},
+"operacion-londres": {
+"t": "El misterio de los Fader: Operación Londres",
+"es": "El misterio de los Fader: Operación Londres",
+"l": "es",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
+"p": "img/portadas/operacion-londres.webp",
+"tr": {}
+},
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
+"tr": {
+"es": "ondas-de-amor"
+}
+},
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
+"tr": {}
+},
+"venecianskaya-maska": {
+"t": "Венецианская маска",
+"es": "La máscara de Venecia (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Венецианская маска",
+"p": "img/portadas/venecianskaya-maska.webp",
+"tr": {
+"it": "maschera-di-venezia"
+}
+},
+"prizrachnyj-poezd": {
+"t": "Призрачный поезд",
+"es": "El tren fantasma (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Призрачный поезд",
+"p": "img/portadas/prizrachnyj-poezd.webp",
 "tr": {
 "es": "el-tren-fantasma",
-"ru": "prizrachnyj-poezd"
+"it": "il-treno-fantasma"
 }
+},
+"ondas-de-amor": {
+"t": "Ondas de amor",
+"es": "Ondas de amor",
+"l": "es",
+"y": 2026,
+"ru": "Волны любви (исп.)",
+"p": "img/portadas/ondas-de-amor.webp",
+"tr": {
+"it": "onde-d-amore"
+}
+},
+"tajna-semi-fader": {
+"t": "Тайна семьи Фадер",
+"es": "El misterio de los Fader (ru.)",
+"l": "ru",
+"y": null,
+"ru": "Тайна семьи Фадер",
+"p": "img/portadas/tajna-semi-fader.webp",
+"tr": {
+"es": "el-misterio-de-los-fader"
+}
+},
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"tr": {}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
+"tr": {}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
+"el-misterio-de-los-fader": {
+"t": "El misterio de los Fader",
+"es": "El misterio de los Fader",
+"l": "es",
+"y": 2025,
+"ru": "Тайна семьи Фадер (исп.)",
+"p": "img/portadas/el-misterio-de-los-fader.webp",
+"tr": {
+"ru": "tajna-semi-fader"
+}
+},
+"pokhititel-serdec-portret-osnovatelya": {
+"t": "Похититель сердец: Портрет основателя",
+"es": "Ladrón de corazones: El retrato del fundador",
+"l": "ru",
+"y": 2026,
+"ru": "Похититель сердец: Портрет основателя",
+"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
+"tr": {}
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
 },
 "predchuvstvie-2-2": {
 "t": "Предчувствие 2.2",
@@ -19388,6 +20926,78 @@ export const NOVELAS = {
 "y": 2025,
 "ru": "Предчувствие 2.2",
 "p": "img/portadas/predchuvstvie-2-2.webp",
+"tr": {}
+},
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
+"tr": {}
+},
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
+"l": "ru",
+"y": 2026,
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
+"tr": {}
+},
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
+"tr": {
+"ru": "tikhaya-lyubov"
+}
+},
+"lluvia-de-meteoritos": {
+"t": "Lluvia de meteoritos",
+"es": "Lluvia de meteoritos",
+"l": "es",
+"y": null,
+"ru": "Метеоритный дождь (исп.)",
+"p": "img/portadas/lluvia-de-meteoritos.webp",
+"tr": {
+"ru": "meteoritnyj-dozhd"
+}
+},
+"la-citta-triste": {
+"t": "La città triste",
+"es": "La ciudad triste (it.)",
+"l": "it",
+"y": 2025,
+"ru": "Грустный город (ит.)",
+"p": "img/portadas/la-citta-triste.webp",
+"tr": {
+"ru": "grustnyj-gorod"
+}
+},
+"el-tren-fantasma": {
+"t": "El tren fantasma",
+"es": "El tren fantasma",
+"l": "es",
+"y": null,
+"ru": "Призрачный поезд (исп.)",
+"p": "img/portadas/el-tren-fantasma.webp",
+"tr": {
+"it": "il-treno-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
 "tr": {}
 },
 "kralovna-vinobrani": {
@@ -19401,6 +21011,27 @@ export const NOVELAS = {
 "es": "la-reina-de-la-vendimia"
 }
 },
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
+"tr": {}
+},
+"il-treno-fantasma": {
+"t": "Il treno fantasma",
+"es": "El tren fantasma (it.)",
+"l": "it",
+"y": null,
+"ru": "Призрачный поезд (ит.)",
+"p": "img/portadas/il-treno-fantasma.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
 "27-ocak": {
 "t": "27 Ocak",
 "es": "27 de enero",
@@ -19409,86 +21040,6 @@ export const NOVELAS = {
 "ru": "27 января",
 "p": "img/portadas/27-ocak.webp",
 "tr": {}
-},
-"la-voix": {
-"t": "La voix",
-"es": "La voz (fr.)",
-"l": "fr",
-"y": null,
-"ru": "Голос (фр.)",
-"p": "img/portadas/la-voix.webp",
-"tr": {
-"ru": "golos"
-}
-},
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
-"l": "it",
-"y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
-"tr": {}
-},
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
-"tr": {}
-},
-"la-citta-triste": {
-"t": "La città triste",
-"es": "La ciudad triste (it.)",
-"l": "it",
-"y": 2025,
-"ru": "Грустный город (ит.)",
-"p": "img/portadas/la-citta-triste.webp",
-"tr": {
-"ru": "grustnyj-gorod"
-}
-},
-"golos": {
-"t": "Голос",
-"es": "La voz",
-"l": "ru",
-"y": 2026,
-"ru": "Голос",
-"p": "img/portadas/golos.webp",
-"tr": {
-"fr": "la-voix"
-}
-},
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
-"l": "es",
-"y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
-"tr": {}
-},
-"dikij-chas-karnaval-razdora": {
-"t": "Дикий час: Карнавал раздора",
-"es": "La hora salvaje: El carnaval de la discordia",
-"l": "ru",
-"y": 2026,
-"ru": "Дикий час: Карнавал раздора",
-"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
-"tr": {}
-},
-"lluvia-de-meteoritos": {
-"t": "Lluvia de meteoritos",
-"es": "Lluvia de meteoritos",
-"l": "es",
-"y": null,
-"ru": "Метеоритный дождь (исп.)",
-"p": "img/portadas/lluvia-de-meteoritos.webp",
-"tr": {
-"ru": "meteoritnyj-dozhd"
-}
 },
 "predchuvstvie": {
 "t": "Предчувствие",
@@ -19513,198 +21064,22 @@ export const NOVELAS = {
 "pl": "przeczucie"
 }
 },
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви",
-"p": "img/portadas/volny-lyubvi.webp",
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
 "tr": {}
 },
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
-"l": "ru",
-"y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
-"tr": {}
-},
-"tajna-v-biblioteke": {
-"t": "Тайна в библиотеке",
-"es": "El misterio de la biblioteca",
-"l": "ru",
-"y": 2026,
-"ru": "Тайна в библиотеке",
-"p": "img/portadas/tajna-v-biblioteke.webp",
-"tr": {}
-},
-"predchuvstvie-2-4": {
-"t": "Предчувствие 2.4",
-"es": "El presentimiento 2.4",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.4",
-"p": "img/portadas/predchuvstvie-2-4.webp",
-"tr": {}
-},
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
-"l": "ru",
-"y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
-"tr": {}
-},
-"el-tren-fantasma": {
-"t": "El tren fantasma",
-"es": "El tren fantasma",
-"l": "es",
-"y": null,
-"ru": "Призрачный поезд (исп.)",
-"p": "img/portadas/el-tren-fantasma.webp",
-"tr": {
-"it": "il-treno-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"ladro-di-cuori-3": {
-"t": "Ladro di cuori 3",
-"es": "Ladrón de corazones 3 (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Похититель сердец 3 (ит.)",
-"p": "img/portadas/ladro-di-cuori-3.webp",
-"tr": {}
-},
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
-"l": "ru",
-"y": 2026,
-"ru": "Карнавал Синеи",
-"p": "img/portadas/karnaval-sinei.webp",
-"tr": {}
-},
-"la-reina-de-la-vendimia": {
-"t": "La reina de la Vendimia",
-"es": "La reina de la Vendimia",
-"l": "es",
-"y": 2026,
-"ru": "Королева Вендимии (исп.)",
-"p": "img/portadas/la-reina-de-la-vendimia.webp",
-"tr": {
-"cs": "kralovna-vinobrani"
-}
-},
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
-"tr": {}
-},
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
-},
-"grustnyj-gorod": {
-"t": "Грустный город",
-"es": "La ciudad triste",
-"l": "ru",
-"y": 2026,
-"ru": "Грустный город",
-"p": "img/portadas/grustnyj-gorod.webp",
-"tr": {
-"it": "la-citta-triste"
-}
-},
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
-"tr": {}
-},
-"prizrachnyj-poezd": {
-"t": "Призрачный поезд",
-"es": "El tren fantasma (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Призрачный поезд",
-"p": "img/portadas/prizrachnyj-poezd.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"it": "il-treno-fantasma"
-}
-},
-"maschera-di-venezia": {
-"t": "Maschera di Venezia",
-"es": "La máscara de Venecia (it.)",
-"l": "it",
-"y": null,
-"ru": "Венецианская маска (ит.)",
-"p": "img/portadas/maschera-di-venezia.webp",
-"tr": {
-"ru": "venecianskaya-maska"
-}
-},
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
-"tr": {}
-},
-"ondas-de-amor": {
-"t": "Ondas de amor",
-"es": "Ondas de amor",
-"l": "es",
-"y": 2026,
-"ru": "Волны любви (исп.)",
-"p": "img/portadas/ondas-de-amor.webp",
-"tr": {
-"it": "onde-d-amore"
-}
-},
-"anomalia": {
-"t": "Anomalía",
-"es": "Anomalía",
-"l": "es",
-"y": null,
-"ru": "Аномалия (исп.)",
-"p": "img/portadas/anomalia.webp",
-"tr": {}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
+"rezonans-lyubvi": {
+"t": "Резонанс любви",
+"es": "Resonancia del amor",
 "l": "ru",
 "y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
+"ru": "Резонанс любви",
+"p": "img/portadas/rezonans-lyubvi.webp",
 "tr": {}
 },
 "almaznyj-dozhd": {
@@ -19725,96 +21100,25 @@ export const NOVELAS = {
 "p": "img/portadas/predchuvstvie-2-3.webp",
 "tr": {}
 },
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
 "l": "ru",
 "y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
-"tr": {
-"en": "the-date"
-}
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
+"tr": {}
 },
-"venecianskaya-maska": {
-"t": "Венецианская маска",
-"es": "La máscara de Venecia (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Венецианская маска",
-"p": "img/portadas/venecianskaya-maska.webp",
-"tr": {
-"it": "maschera-di-venezia"
-}
-},
-"dikij-chas-2": {
-"t": "Дикий час: Духи гор",
-"es": "La hora salvaje: Los espíritus de la montaña",
-"l": "ru",
+"la-voix": {
+"t": "La voix",
+"es": "La voz (fr.)",
+"l": "fr",
 "y": null,
-"ru": "Дикий час: Духи гор",
-"p": "img/portadas/dikij-chas-2.webp",
-"tr": {}
-},
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
-"l": "ru",
-"y": 2026,
-"ru": "Тихая любовь",
-"p": "img/portadas/tikhaya-lyubov.webp",
+"ru": "Голос (фр.)",
+"p": "img/portadas/la-voix.webp",
 "tr": {
-"it": "ti-amo-in-silenzio"
+"ru": "golos"
 }
-},
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Люблю тебя молча (ит.)",
-"p": "img/portadas/ti-amo-in-silenzio.webp",
-"tr": {
-"ru": "tikhaya-lyubov"
-}
-},
-"tajna-semi-fader": {
-"t": "Тайна семьи Фадер",
-"es": "El misterio de los Fader (ru.)",
-"l": "ru",
-"y": null,
-"ru": "Тайна семьи Фадер",
-"p": "img/portadas/tajna-semi-fader.webp",
-"tr": {
-"es": "el-misterio-de-los-fader"
-}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
-"l": "es",
-"y": 2026,
-"ru": "Любовь в космосе",
-"p": "img/portadas/amor-en-el-cosmos.webp",
-"tr": {}
-},
-"operacion-londres": {
-"t": "El misterio de los Fader: Operación Londres",
-"es": "El misterio de los Fader: Operación Londres",
-"l": "es",
-"y": 2026,
-"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
-"p": "img/portadas/operacion-londres.webp",
-"tr": {}
-},
-"divlji-chas-malbec": {
-"t": "Дивљи час: Љубав укуса малбека",
-"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
-"p": "img/portadas/divlji-chas-malbec.webp",
-"tr": {}
 },
 "predchuvstvie-2": {
 "t": "Предчувствие 2",
@@ -19823,73 +21127,6 @@ export const NOVELAS = {
 "y": 2024,
 "ru": "Предчувствие 2",
 "p": "img/portadas/predchuvstvie-2.webp",
-"tr": {}
-},
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви (ит.)",
-"p": "img/portadas/onde-d-amore.webp",
-"tr": {
-"es": "ondas-de-amor"
-}
-},
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
-"l": "es",
-"y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
-"tr": {}
-},
-"pokhititel-serdec-portret-osnovatelya": {
-"t": "Похититель сердец: Портрет основателя",
-"es": "Ladrón de corazones: El retrato del fundador",
-"l": "ru",
-"y": 2026,
-"ru": "Похититель сердец: Портрет основателя",
-"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
-"tr": {}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
-"y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
-"tr": {}
-},
-"el-misterio-de-los-fader": {
-"t": "El misterio de los Fader",
-"es": "El misterio de los Fader",
-"l": "es",
-"y": 2025,
-"ru": "Тайна семьи Фадер (исп.)",
-"p": "img/portadas/el-misterio-de-los-fader.webp",
-"tr": {
-"ru": "tajna-semi-fader"
-}
-},
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
-"znak": {
-"t": "Знак",
-"es": "El signo",
-"l": "ru",
-"y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
 "tr": {}
 }
 };

@@ -1,8 +1,8 @@
 # Mapas de los mundos literarios de Robert Fader · Карты миров Роберта Фадера
 
-Sinea, Verdegrad, Nuestra Utopía, Mendoza, Venecia y Madrid en 3D. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
+Sinea, Verdegrad, Nuestra Utopía, Mendoza, Venecia, Madrid y San Petersburgo en 3D. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
 
-Seis mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza | Venecia | Madrid** arriba:
+Siete mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza | Venecia | Madrid | San Petersburgo** arriba:
 
 - **Sinea**, la ciudad junto al mar: `index.html`
 - **Verdegrad**, el pueblo verde de Natalia, con su fortaleza en la penumbra: `index.html?ciudad=verdegrad` (o `verdegrad.html`)
@@ -10,6 +10,7 @@ Seis mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Me
 - **Mendoza** (Мендоса), la ciudad real de «La reina de la Vendimia», «El misterio de los Fader», «Дикий час: Духи гор» y otras: `index.html?ciudad=mendoza` (o `mendoza.html`)
 - **Venecia** (Венеция), la ciudad real de «Maschera di Venezia» / «Венецианская маска»: `index.html?ciudad=venezia` (o `venezia.html`)
 - **Madrid** (Мадрид), la ciudad real de «Дикий час: Карнавал раздора»: `index.html?ciudad=madrid` (o `madrid.html`)
+- **San Petersburgo** (Санкт-Петербург), la ciudad real de «Резонанс любви»: `index.html?ciudad=petersburgo` (o `petersburgo.html`)
 
 Los rótulos verdes en el borde del mapa también llevan de una ciudad a la otra («← Verdegrad · estación Nubecita» en Sinea; «← Antiguo camino a Sinea» en Verdegrad).
 
@@ -91,6 +92,10 @@ El mapa de «Maschera di Venezia» (y de su versión rusa, «Венецианс�
 ## Madrid
 
 El Madrid de «Дикий час: Карнавал раздора», del Templo de Debod al Retiro y de Colón a Atocha. El suelo es el mapa real de OpenStreetMap reclasificado (calles, manzanas, parques, el Manzanares) en `img/madrid-suelo.png`, a 3,64 m por píxel; los edificios salen de ese mismo mapa: uno cada 12 m donde OSM dibuja edificios (`js/ciudades/madrid-lotes.js`), con alturas inventadas. Modelados a mano: el monumento a Cervantes, la Torre de Madrid, el Templo de Debod, el Oso y el Madroño, la Plaza Mayor, el Mercado de la Cebada, la Biblioteca Nacional, la columna de Colón con la bandera, el Banco de España y una boca de metro. Datos: `data/madrid/`.
+
+## San Petersburgo
+
+El Petersburgo de «Резонанс любви», de la isla Vasílievski a la estación de Moscú. Igual que Madrid, el suelo, el agua (el Neva, el Fontanka, el Moika, los canales) y los edificios salen del mapa de OpenStreetMap a 4,79 m por píxel (`img/spb-suelo.png`, `img/spb-tierra.png`, `js/ciudades/spb-lotes.js`). Modelados a mano: la Casa Singer con su globo, los atlantes de la Millónnaya, la Columna de Alejandro, el Palacio de Invierno, las esfinges, el Puente del Banco con los grifos, San Isaac, el puente Anichkov, el Museo Ruso, el Mariinski, el Puente del Palacio (que de noche se abre) y el Puente de los Besos, que es «el puente que callaba» del final. Datos: `data/petersburgo/`.
 
 ## Añadir o corregir un lugar
 

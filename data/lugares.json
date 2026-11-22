@@ -16,6 +16,20 @@
    "buscar": "площад\\w* Данте|plaza (de )?Dante|piazza Dante|place Dante|Dante Meydan"
   },
   {
+   "id": "monumento-fundador",
+   "nombre": "Monumento a Luis Fader, fundador de Sinea",
+   "otros": [
+    "Памятник основателю Синеи",
+    "Бронзовый основатель"
+   ],
+   "cat": "monumento",
+   "x": 548,
+   "y": -606,
+   "modelo": "fundador",
+   "desc": "En la Plaza Dante, frente a la fuente del poeta, Luis Fader, el fundador de la ciudad, está sentado en bronce en un banco. No tiene espada ni pergamino, como los fundadores de los cuadros de gala: lleva la cabeza descubierta y en la mano un cuadernito abierto en una página en blanco, igual que en el «Retrato de Luis Fader, fundador de Sinea» del Museo de Arte. Según la leyenda que cuentan las viejitas, encontró este lugar, construyó la ciudad y se quedó esperando a alguien que nunca llegó; el retrato espera que alguien termine el dibujo del cuaderno. En «Похититель сердец: Портрет основателя», después del robo del retrato, alrededor del bronce del fundador aparecen flores y notas de los vecinos.",
+   "buscar": "бронзов\\w+ основател\\w*|основател\\w* на скамейке|памятник\\w* основател\\w*"
+  },
+  {
    "id": "ayuntamiento",
    "nombre": "Ayuntamiento y Reloj del Carnaval",
    "otros": [

@@ -1,0 +1,254 @@
+{
+ "_info": "Reseñas de San Petersburgo escritas por los personajes de «Резонанс любви». s = estrellas.",
+ "spb-nevski": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 4,
+   "es": "Primavera, pétalos y un viento que casi me lleva. Tropecé con un bordillo y terminé trabajando para los asuntos celestiales. Una estrella menos por el bordillo.",
+   "ru": "Весна, лепестки и ветер, который чуть не унёс меня. Споткнулась о поребрик — и в итоге работаю на небесные дела. Минус звезда за поребрик."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Si una moscovita tropieza en el Nevski y le habla mal a la ciudad, la ciudad contesta. Hay que estar cerca.",
+   "ru": "Если москвичка спотыкается на Невском и говорит городу резкие слова, город отвечает. Нужно оказаться рядом."
+  }
+ ],
+ "spb-anichkov": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 3,
+   "es": "Caballos de bronce preciosos. El bordillo de al lado, un enemigo personal.",
+   "ru": "Бронзовые кони прекрасны. Поребрик рядом — мой личный враг."
+  }
+ ],
+ "spb-cafe": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "Calentito, lejos de la puerta y con un desconocido que se puso entre el viento y yo. Me dejó una tarjeta de «agente de asuntos celestiales». Pensé que era una broma.",
+   "ru": "Тепло, подальше от двери, и незнакомец, который встал между мной и ветром. Оставил визитку «агента по небесным делам». Я думала, это шутка."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "Buen té, buena mesa junto a la pared. El tiempo afuera, petersburgués.",
+   "ru": "Хороший чай, хороший столик у стены. Погода снаружи — петербургская."
+  }
+ ],
+ "spb-okean": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 4,
+   "es": "Cerca de la estación, desayuno correcto, cama cómoda. Una mañana me trajeron en moto de agua. El portero no preguntó nada.",
+   "ru": "Рядом с вокзалом, нормальный завтрак, удобная кровать. Однажды утром меня привезли на гидроцикле. Портье ничего не спросил."
+  }
+ ],
+ "spb-atlantes": [
+  {
+   "a": "Un atlante",
+   "ar": "Атлант",
+   "s": 4,
+   "es": "Doscientos rublos por pasar a la Plaza del Palacio. Precio justo después de ciento setenta años sosteniendo un pórtico.",
+   "ru": "Двести рублей за проход к Дворцовой площади. Справедливая цена после ста семидесяти лет с портиком на плечах."
+  },
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 2,
+   "es": "Pagué los doscientos rublos. Al día siguiente el pórtico estaba vacío. Exijo reembolso.",
+   "ru": "Заплатила двести рублей. На следующий день портик был пуст. Требую возврата."
+  }
+ ],
+ "spb-plaza-palacio": [
+  {
+   "a": "El chino",
+   "ar": "Китаец",
+   "s": 3,
+   "es": "Vi el palacio levantarse sobre la plaza al amanecer. Quiero volver a dormir.",
+   "ru": "Видел, как дворец поднимается над площадью на рассвете. Хочу обратно спать."
+  },
+  {
+   "a": "Iván Domovóiev",
+   "ar": "Иван Домовоев",
+   "s": 4,
+   "es": "En el mapa del cuartel es un punto luminoso. En persona, más luminoso todavía.",
+   "ru": "На карте штаба — светящаяся точка. Вживую — ещё ярче."
+  }
+ ],
+ "spb-ermitazh": [
+  {
+   "a": "La capitana",
+   "ar": "Капитан",
+   "s": 2,
+   "es": "Un palacio colgando sobre la ciudad. Pésimo para el orden público. Ya sé quién fue.",
+   "ru": "Дворец висит над городом. Ужасно для общественного порядка. Я уже знаю, кто это сделал."
+  },
+  {
+   "a": "Dmitri Petróvich",
+   "ar": "Дмитрий Петрович",
+   "s": 5,
+   "es": "Una obra maestra de la ingeniería de la memoria. Lástima que la ciudad no supo apreciarla.",
+   "ru": "Шедевр инженерии памяти. Жаль, что город не сумел оценить."
+  }
+ ],
+ "spb-esfinges": [
+  {
+   "a": "La esfinge",
+   "ar": "Сфинкс",
+   "s": 2,
+   "es": "Tres mil años de calma en Tebas y acá me tiran boleadoras a las patas. Ofendida con la isla Vasílievski.",
+   "ru": "Три тысячи лет покоя в Фивах — а здесь мне бросают под лапы болеадорас. Обижена на Васильевский остров."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Atrapé una esfinge con boleadoras en el centro de Petersburgo. Mi abuelo de la pampa estaría orgulloso.",
+   "ru": "Поймал сфинкса болеадорас в центре Петербурга. Мой дед из пампы гордился бы."
+  }
+ ],
+ "spb-casa-luis": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "Vista al Gran Neva y syrniki calientes al amanecer. Le saco cero estrellas aunque la policía del caos haya entrado sin tocar.",
+   "ru": "Вид на Большую Неву и горячие сырники на рассвете. Не сниму ни звезды, хоть полиция хаоса и вошла без стука."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "Casa vieja, ha sobrevivido a inundaciones. A un asalto de la policía del caos también, por poco.",
+   "ru": "Старый дом, пережил наводнения. Штурм полиции хаоса тоже — еле-еле."
+  }
+ ],
+ "spb-banco": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "Primero Luis me dio una clase de grifos. Después me fui volando en uno. Mi transporte es mejor que el suyo.",
+   "ru": "Сначала Луис прочитал мне лекцию о грифонах. Потом я улетела на одном из них. Мой транспорт лучше вашего."
+  },
+  {
+   "a": "Un grifo",
+   "ar": "Грифон",
+   "s": 5,
+   "es": "Cuidamos el dinero, y desde ahora también a ella.",
+   "ru": "Мы сторожим деньги, а с этих пор — и её."
+  }
+ ],
+ "spb-puente-palacio": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "Había visto fotos. No se parece en nada. Y en algún momento mi mano estaba en la suya.",
+   "ru": "Я видела фотографии. Ничего общего. И в какой-то момент моя рука оказалась в его ладони."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Excepcional guía turístico, me dijeron. Llegamos justo a tiempo.",
+   "ru": "Мне сказали, что я исключительный экскурсовод. Мы успели вовремя."
+  }
+ ],
+ "spb-singer": [
+  {
+   "a": "Dmitri Petróvich",
+   "ar": "Дмитрий Петрович",
+   "s": 5,
+   "es": "Valor arquitectónico, memoria de libros y visibilidad turística. El lugar ideal para empezar un procedimiento sin que se note.",
+   "ru": "Архитектурная дерзость, книжная память и туристическая видимость. Идеальное место, чтобы начать процедуру незаметно."
+  },
+  {
+   "a": "Iván Domovóiev",
+   "ar": "Иван Домовоев",
+   "s": 2,
+   "es": "¿Sin que se note? ¿En la Casa Singer? Viento helado en el techo y un jefe dando clases.",
+   "ru": "Незаметно? В Доме Зингера? Ледяной ветер на крыше и начальник, читающий лекции."
+  },
+  {
+   "a": "El traductor",
+   "ar": "Переводчик",
+   "s": 3,
+   "es": "Traduje todo lo que dijo el maestro. Lo último fue «quiero volver a dormir». Lo entendí perfecto.",
+   "ru": "Я перевёл всё, что сказал мастер. Последним было «хочу обратно спать». Понял прекрасно."
+  }
+ ],
+ "spb-gostiny": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "De noche, un músico callejero tocando algo que la ciudad conocía. Petersburgo nunca está del todo en silencio.",
+   "ru": "Ночью уличный музыкант играл что-то, что город узнал. Петербург никогда не молчит до конца."
+  }
+ ],
+ "spb-isaakiy": [
+  {
+   "a": "Robert Fader",
+   "ar": "Роберт Фадер",
+   "s": 5,
+   "es": "La vista desde la columnata: ves la composición entera de la ciudad, no solo calles.",
+   "ru": "Вид с колоннады: видишь всю композицию города, а не отдельные улицы."
+  }
+ ],
+ "spb-museo-ruso": [
+  {
+   "a": "Galina Serguéievna",
+   "ar": "Галина Сергеевна",
+   "s": 4,
+   "es": "Desde abajo se oía a las molduras quejarse del frío allá arriba. Las piedras hablan, si una escucha.",
+   "ru": "Снизу было слышно, как лепнина жалуется на холод наверху. Камни разговаривают, если слушать."
+  },
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 4,
+   "es": "Marcos sin cuadros flotando en el aire y un puente de luz para bajar. No apto para vértigo.",
+   "ru": "Рамы без картин парят в воздухе, а вниз — по мосту из света. Не для тех, кто боится высоты."
+  }
+ ],
+ "spb-mariinski": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "Hasta en el aire, el teatro sonaba. Volví a escucharlo cuando bajó.",
+   "ru": "Даже в воздухе театр звучал. Когда он опустился, я снова его услышал."
+  }
+ ],
+ "spb-poceluev": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "El agua subió como una pared y vi todas las manos que se tomaron acá. Entendí lo que guarda este puente.",
+   "ru": "Вода встала стеной, и я увидела все руки, которые здесь держались. Я поняла, что хранит этот мост."
+  },
+  {
+   "a": "Robert Fader",
+   "ar": "Роберт Фадер",
+   "s": 5,
+   "es": "No voy a decir el nombre. Busquen el puente sobre el Moika en la línea de Glinka y Trudá.",
+   "ru": "Не скажу названия. Ищите мост через Мойку в створе улиц Глинки и Труда."
+  },
+  {
+   "a": "La capitana",
+   "ar": "Капитан",
+   "s": 4,
+   "es": "Esas palabras sonaron también para mí. No hago reseñas, pero esta la hago.",
+   "ru": "Эти слова прозвучали и для меня. Я не пишу отзывов, но этот напишу."
+  }
+ ]
+}

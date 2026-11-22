@@ -766,6 +766,121 @@ const MODELOS = {
     const r = new THREE.Mesh(new THREE.BoxGeometry(2.2, 1.2, .2), new THREE.MeshStandardMaterial({ color: 0xd8262e, emissive: 0x6a0a0a })); r.position.set(3.5, 4.4, 5); r.rotation.z = Math.PI / 4; g.add(r);
     return { g, r: 6 };
   },
+  fundador() { // Luis Fader, fundador de Sinea: de bronce, sentado en un banco, con el cuaderno abierto en una página en blanco
+    const g = new THREE.Group(), bronce = M(0x6b5636, { metalness: .55, roughness: .4 }), piedra = M(0xcfc6b6);
+    g.add(caja(7, .6, 4.2, piedra)); g.add(caja(4.6, .35, 1.4, bronce, 0, 1.25, 0)); g.add(caja(4.6, 1.3, .25, bronce, 0, 1.6, -.6));
+    for (const x of [-2, 2]) g.add(caja(.3, 1.25, 1.2, bronce, x, .6, 0));
+    const p = new THREE.Group(); p.position.set(-.6, 1.6, 0);
+    p.add(caja(.8, .5, 1.3, bronce, 0, 0, .25)); for (const z of [-.25, .25]) p.add(caja(.32, 1.3, .32, bronce, z, -1.25, .85));
+    p.add(caja(.9, 1.6, .55, bronce, 0, .95, -.2)); p.add(esfera(.36, bronce, 0, 2.15, -.15));
+    const libreta = caja(.55, .05, .4, 0xe9e2cf, .35, .9, .45); libreta.rotation.x = -.6; p.add(libreta);
+    p.rotation.y = 0; g.add(p);
+    const flores = [0xd9475e, 0xf0c84a, 0xffffff, 0xb05fc9, 0xe8733a];
+    for (let i = 0; i < 14; i++) { const a = -0.3 + i * 0.27, r = 3 + (i % 3) * .35; g.add(esfera(.22, M(flores[i % 5]), Math.cos(a) * r * .9, .75, Math.sin(a) * r * .55 + 1.1)); }
+    for (let i = 0; i < 5; i++) g.add(caja(.4, .02, .3, 0xfff8dc, -1.6 + i * .8, .62, 1.7));
+    g.rotation.y = Math.PI * .85; g.scale.setScalar(2.3);
+    const o = new THREE.Group(); o.add(cil(11, 11.5, .5, 0xd8cfc0)); o.add(g);
+    return { g: o, r: 12 };
+  },
+  // ---- San Petersburgo ----
+  singer() { // la Casa Singer: esquina con torre, cúpula de vidrio y el globo encima
+    const g = new THREE.Group(), f = M(0x9a8f86), v = M(0x6f8f9a, { roughness: .25, metalness: .3 });
+    g.add(caja(40, 26, 24, f, -8, 0, 0)); g.add(caja(24, 26, 40, f, 0, 0, -8));
+    g.add(cil(9, 9, 34, f, 6, 0, 6, 16)); g.add(cil(7.5, 9, 6, 0xb7c9cf, 6, 34, 6, 16));
+    g.add(esfera(7, v, 6, 40, 6, {}, [16, 8, 0, Math.PI * 2, 0, Math.PI / 2])); g.add(cil(.8, .8, 4, 0x4f6a52, 6, 47, 6, 8));
+    const globo = esfera(2.8, M(0xcfe6ef, { roughness: .1, metalness: .4, transparent: true, opacity: .8 }), 6, 52.5, 6); g.add(globo);
+    g.add(caja(.6, 2, .6, 0x2f6a4a, 6, 49, 9)); g.add(caja(.6, 2, .6, 0x2f6a4a, 6, 49, 3));
+    for (let y = 4; y < 26; y += 4.4) { g.add(caja(40.4, 2.6, .4, 0x7aa2b0, -8, y, 12.1)); g.add(caja(.4, 2.6, 40.4, 0x7aa2b0, 12.1, y, -8)); }
+    return { g, r: 26, anim(t) { globo.rotation.y = t * .4; } };
+  },
+  atlantes() { // los atlantes del Nuevo Ermitage, en la calle Millónnaya
+    const g = new THREE.Group(), gris = M(0x6f6a66, { roughness: .6 });
+    g.add(caja(24, 14, 6, 0xd8cdb8, 0, 0, -4)); g.add(caja(24, 1.4, 9, 0xcfc4ae, 0, 14, -2.5));
+    for (const x of [-7.5, -2.5, 2.5, 7.5]) { g.add(caja(1.6, 1.2, 1.6, gris, x, 0, 0)); g.add(caja(1.3, 5.5, 1.1, gris, x, 1.2, 0)); g.add(caja(2.2, 3.5, 1.3, gris, x, 6.7, 0)); g.add(esfera(.7, gris, x, 10.7, .2)); g.add(caja(.6, 3.2, .6, gris, x - .9, 10.4, 0)); g.add(caja(.6, 3.2, .6, gris, x + .9, 10.4, 0)); }
+    return { g, r: 14 };
+  },
+  'columna-alejandro'() { // la Columna de Alejandro en la Plaza del Palacio
+    const g = new THREE.Group(), granito = M(0xa0605a, { roughness: .4 });
+    g.add(caja(8, 4.5, 8, granito)); g.add(caja(6.4, 1.2, 6.4, 0x8a8a8a, 0, 4.5)); g.add(cil(1.9, 2.3, 30, granito, 0, 5.7, 0, 16));
+    g.add(caja(4.2, 3, 4.2, M(0x6a6a5a, { metalness: .6 }), 0, 35.7)); g.add(cil(.9, 1.2, 4, M(0xd4aa48, { metalness: .7, roughness: .35 }), 0, 38.7, 0, 8)); g.add(esfera(.6, M(0xd4aa48, { metalness: .7 }), 0, 43.2, 0)); g.add(caja(.3, 3, 1.6, M(0xd4aa48, { metalness: .7 }), 0, 41.8, 0));
+    return { g, r: 8 };
+  },
+  ermitazh() { // el Palacio de Invierno (Ermitage): verde y blanco, con columnas y estatuas en el techo
+    const g = new THREE.Group(), verde = M(0x7fb8a2), blanco = M(0xf2efe6), oro = M(0xd4aa48, { metalness: .7, roughness: .35 });
+    const W = 200, D = 150, A = 34, H = 24;
+    for (const [w, d, x, z] of [[W, A, 0, -D / 2 + A / 2], [W, A, 0, D / 2 - A / 2], [A, D, -W / 2 + A / 2, 0], [A, D, W / 2 - A / 2, 0]]) {
+      g.add(caja(w, H, d, verde, x, 0, z)); g.add(caja(w + .4, 1.4, d + .4, blanco, x, 9, z)); g.add(caja(w + .4, 1.6, d + .4, blanco, x, H - 1.6, z));
+      const n = Math.round(Math.max(w, d) / 11); for (let i = 0; i < n; i++) { const k = -Math.max(w, d) / 2 + (i + .5) * Math.max(w, d) / n;
+        if (w > d) for (const s of [-1, 1]) g.add(caja(.9, H - 4, .9, blanco, x + k, 2, z + s * (d / 2 + .3)));
+        else for (const s of [-1, 1]) g.add(caja(.9, H - 4, .9, blanco, x + s * (w / 2 + .3), 2, z + k));
+        if (i % 2 === 0) g.add(caja(.7, 2.2, .7, oro, w > d ? x + k : x + (w / 2), H, w > d ? z + d / 2 : z + k)); }
+    }
+    g.add(caja(W - 2 * A, 1, D - 2 * A, 0xd9d3c5, 0, 0, 0));
+    for (const [w, d, x, z] of [[W, A, 0, -D / 2 + A / 2], [W, A, 0, D / 2 - A / 2], [A, D, -W / 2 + A / 2, 0], [A, D, W / 2 - A / 2, 0]]) g.add(caja(w - 1, 3, d - 1, 0x8a9a92, x, H, z));
+    return { g, r: 110 };
+  },
+  esfinges() { // las esfinges egipcias del muelle de la Universidad, frente al Neva
+    const g = new THREE.Group(), p = M(0x9c8a72, { roughness: .5 });
+    g.add(caja(34, 1.5, 14, 0xa7a29a)); for (const s of [-1, 1]) g.add(caja(6, 1.2, 10, 0xb3aea6, 0, 1.5, s * 9));
+    for (const x of [-12, 12]) { g.add(caja(3.2, 2.2, 7, 0xb9a4c0, x, 1.5, 0)); g.add(caja(2.6, 2.2, 6, p, x, 3.7, 0)); g.add(caja(2.4, 3.4, 2.4, p, x, 4.6, -2.4)); g.add(caja(3, 1.4, 1.6, 0x6d7ea0, x, 7.4, -2.4)); }
+    return { g, r: 18 };
+  },
+  grifones() { // el Puente del Banco: pasarela sobre el canal Griboédov y los cuatro grifos de alas doradas
+    const g = new THREE.Group(), negro = M(0x2a2a2a, { metalness: .3 }), oro = M(0xd4aa48, { metalness: .8, roughness: .3 });
+    g.add(caja(2.2, .4, 26, 0x8a7f72, 0, 1.4, 0)); for (const s of [-1, 1]) g.add(caja(.15, 1, 26, negro, s * 1.1, 1.8, 0));
+    const alas = [];
+    for (const sx of [-1, 1]) for (const sz of [-1, 1]) {
+      const q = new THREE.Group(); q.position.set(sx * 1.8, 0, sz * 13);
+      q.add(caja(1.6, 2.2, 1.6, 0x9a9087)); q.add(caja(1.1, 1.2, 2.2, negro, 0, 2.2, 0)); q.add(esfera(.45, negro, 0, 3.6, sz * -1)); q.add(caja(.3, .5, .6, oro, 0, 3.5, sz * -1.5));
+      const a = new THREE.Group(); a.position.set(0, 3.2, 0); a.add(caja(.15, 1.8, 1.6, oro, sx * .6, .9, 0)); q.add(a); alas.push(a);
+      g.add(q);
+    }
+    return { g, r: 14, anim(t) { alas.forEach((a, i) => a.rotation.x = Math.sin(t * 1.5 + i) * .12); } };
+  },
+  isaakiy() { // la Catedral de San Isaac: columnatas, la gran cúpula dorada y cuatro campanarios
+    const g = new THREE.Group(), p = M(0xc8bfae), oro = M(0xd9ae4c, { metalness: .8, roughness: .3 }), col = M(0x8a4f48);
+    g.add(caja(70, 34, 50, p)); for (const [x, z, w, d] of [[-38, 0, 6, 34], [38, 0, 6, 34], [0, -28, 34, 6], [0, 28, 34, 6]]) { g.add(caja(w, 30, d, col, x, 0, z)); const fr = new THREE.Mesh(prismaGeo(), p); fr.scale.set(w > d ? w + 2 : 8, 8, w > d ? 8 : d + 2); fr.position.set(x, 30, z); if (d > w) fr.rotation.y = Math.PI / 2; g.add(fr); }
+    g.add(cil(15, 15, 18, p, 0, 34, 0, 24)); for (let i = 0; i < 24; i++) { const a = i / 24 * Math.PI * 2; g.add(cil(.8, .8, 16, col, Math.cos(a) * 16.5, 35, Math.sin(a) * 16.5, 6)); }
+    g.add(esfera(15, oro, 0, 52, 0, {}, [24, 12, 0, Math.PI * 2, 0, Math.PI / 2])); g.add(cil(3, 3, 8, p, 0, 66, 0, 12)); g.add(esfera(3.2, oro, 0, 74, 0, {}, [12, 6, 0, Math.PI * 2, 0, Math.PI / 2])); g.add(caja(.5, 5, .5, oro, 0, 77, 0));
+    for (const [x, z] of [[-28, -18], [28, -18], [-28, 18], [28, 18]]) { g.add(cil(3.4, 3.4, 8, p, x, 34, z, 12)); g.add(esfera(3.4, oro, x, 42, z, {}, [12, 6, 0, Math.PI * 2, 0, Math.PI / 2])); }
+    return { g, r: 46 };
+  },
+  anichkov() { // el Puente Anichkov sobre el Fontanka, con los cuatro domadores de caballos
+    const g = new THREE.Group(), bronce = M(0x3f3a33, { metalness: .5, roughness: .45 });
+    g.add(caja(38, 1.2, 40, 0x9a9087, 0, .5, 0)); for (const s of [-1, 1]) g.add(caja(.4, 1.2, 40, 0x6f6a66, s * 19, 1.7, 0));
+    for (const sx of [-1, 1]) for (const sz of [-1, 1]) { const q = new THREE.Group(); q.position.set(sx * 16, 1.7, sz * 22);
+      q.add(caja(4, 3, 7, 0xa79f92)); q.add(caja(2.4, 2.6, 5.5, bronce, 0, 3, 0)); { const cab = caja(1.2, 2.4, 1.3, bronce, 0, 5.2, sz * -2.5); cab.rotation.x = sz * .5; q.add(cab); } q.add(caja(.8, 2.6, .8, bronce, sx * 1.6, 3, sz * 2.4)); q.add(esfera(.4, bronce, sx * 1.6, 6, sz * 2.4)); g.add(q); }
+    return { g, r: 26 };
+  },
+  'museo-ruso'() { // el Museo Ruso (Palacio Mijáilovski): amarillo y blanco, con pórtico de columnas; en la novela se eleva sobre la ciudad
+    const g = new THREE.Group(), am = M(0xe9c96f), bl = M(0xf3efe5);
+    g.add(caja(120, 20, 26, am)); g.add(caja(24, 20, 70, am, -60, 0, 22)); g.add(caja(24, 20, 70, am, 60, 0, 22));
+    for (let i = -4; i <= 4; i++) g.add(cil(1, 1, 16, bl, i * 3, 4, 14, 8)); g.add(caja(30, 4, 6, bl, 0, 20, 14)); const fr = new THREE.Mesh(prismaGeo(), bl); fr.scale.set(30, 6, 6); fr.position.set(0, 24, 14); g.add(fr);
+    g.add(caja(121, 1.2, 27, bl, 0, 19, 0));
+    return { g, r: 70 };
+  },
+  mariinski() { // el Teatro Mariinski, verde menta
+    const g = new THREE.Group(), v = M(0x9fd0bf), bl = M(0xf3efe5);
+    g.add(caja(70, 24, 100, v)); g.add(caja(71, 1.4, 101, bl, 0, 11)); g.add(caja(40, 30, 40, v, 0, 0, -10)); g.add(caja(20, 10, 20, bl, -36, 0, 30));
+    g.add(esfera(10, M(0x8a96a0, { metalness: .4 }), 0, 30, -10, {}, [16, 8, 0, Math.PI * 2, 0, Math.PI / 2]));
+    return { g, r: 56 };
+  },
+  'puente-palacio'() { // el Puente del Palacio sobre el Neva: de noche se abre, como en la cita de Luis y Natalia
+    const g = new THREE.Group(), azul = M(0x4a6070, { metalness: .4 }), gr = M(0x9a9087);
+    const L = 250;
+    g.add(caja(28, 4, 90, gr, 0, 0, -L / 2 + 45)); g.add(caja(28, 4, 90, gr, 0, 0, L / 2 - 45));
+    const ha = new THREE.Group(), hb = new THREE.Group(); ha.position.set(0, 4, -L / 2 + 90); hb.position.set(0, 4, L / 2 - 90);
+    ha.add(caja(24, 2, 35, azul, 0, 0, 17.5)); hb.add(caja(24, 2, 35, azul, 0, 0, -17.5)); g.add(ha, hb);
+    for (const z of [-L / 2 + 90, L / 2 - 90]) for (const x of [-13, 13]) g.add(cil(.25, .25, 6, 0x333333, x, 4, z, 6));
+    return { g, r: 30, anim(t, n) { const a = n * 1.1; ha.rotation.x = -a; hb.rotation.x = a; } };
+  },
+  poceluev() { // el Puente de los Besos (Potselúev) sobre el Moika, con sus faroles
+    const g = new THREE.Group(), p = M(0xb4aca0);
+    const arco = new THREE.Mesh(new THREE.CylinderGeometry(12, 12, 32, 20, 1, false, -Math.PI / 2, Math.PI), p); arco.rotation.x = Math.PI / 2; arco.rotation.z = Math.PI / 2; arco.scale.set(1, .22, 1); g.add(arco);
+    const luces = []; for (const x of [-10, 10]) for (const z of [-14, 14]) { g.add(cil(.25, .3, 4, 0x2a2a2a, x, 2.6, z, 6)); const l = esfera(.6, new THREE.MeshStandardMaterial({ color: 0xfff0c0, emissive: 0xffd88a, emissiveIntensity: .2 }), x, 6.8, z); g.add(l); luces.push(l); }
+    g.rotation.y = Math.PI / 2;
+    return { g, r: 18, anim(t, n) { for (const l of luces) l.material.emissiveIntensity = .2 + 2.4 * n; } };
+  },
   'tren-fantasma'() { return { g: new THREE.Group(), r: 0 }; }
 };
 
@@ -787,7 +902,7 @@ export function construirHitos(lugares, u) {
     grupo.add(m.g);
     if (m.anim) anims.push(m.anim);
     if (m.r) reservas.push([L.x, L.y, m.r]);
-    L._h = h + ({ cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
+    L._h = h + ({ singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 80, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
   }
   // reserva extra: la plaza Dante entera y el puerto
   reservas.push(...RESERVAS);
