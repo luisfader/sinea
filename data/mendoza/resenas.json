@@ -1,0 +1,511 @@
+{
+ "_info": "Reseñas de Mendoza escritas por los personajes de las novelas. s = estrellas; a/ar = autor en español/ruso.",
+ "md-plaza-independencia": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "Vine a mirar la fiesta y me fui con una corona. «¡Necesitamos una reina YA!», gritaron, y nadie me preguntó si sabía saludar desde un carro. Aprendí. Cinco estrellas, y una para la candidata de la Sexta Sección, que ojalá esté mejor.",
+   "ru": "Пришла посмотреть на праздник, а ушла с короной. «Нам нужна королева СЕЙЧАС!» — закричали, и никто не спросил, умею ли я махать с платформы. Научилась. Пять звёзд, и ещё одна — кандидатке от Шестой секции, надеюсь, ей уже лучше."
+  },
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Desde mi balcón veo la fuente. Una semana había una vaca adentro. Después vino a buscarla su dueño, un tambero de Guaymallén, y se la llevó como si nada. Así es Mendoza.",
+   "ru": "С моего балкона виден фонтан. Целую неделю в нём стояла корова. Потом за ней пришёл хозяин, молочник из Гуаймальена, и увёл её как ни в чём не бывало. Такая она, Мендоса."
+  },
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Fuentes de colores, olor a polvo, a hojas y a hollejo de uva. Y a tres cuadras, una librería en la calle Garibaldi. Luis tuvo que sacarme de ahí de la mano.",
+   "ru": "Фонтаны в огнях, пахнет пылью, листьями и виноградной кожурой. А в трёх кварталах — книжный на Гарибальди. Луису пришлось уводить меня оттуда за руку."
+  },
+  {
+   "a": "Carlita Martínez",
+   "ar": "Карлита Мартинес",
+   "s": 3,
+   "es": "Linda plaza. Lástima lo de aquella noche: la rusa se subió al escenario y se llevó toda la atención. Igual, al final la reina fui yo.",
+   "ru": "Красивая площадь. Жаль ту ночь: русская вышла на сцену и забрала всё внимание. Впрочем, в итоге королевой стала я."
+  }
+ ],
+ "md-hotel-plaza": [
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 4,
+   "es": "Techo alto, ventilador lento, cama de hierro y balcón sobre la fuente. El ventilador no enfría, pero acompaña. Pagué en efectivo y nadie me pidió documento. Le saco una estrella por las paredes finas: de noche leía en voz baja.",
+   "ru": "Высокий потолок, медленный вентилятор, железная кровать и балкон над фонтаном. Вентилятор не охлаждает, но составляет компанию. Платила наличными, документов никто не спросил. Минус звезда за тонкие стены: по ночам приходилось читать шёпотом."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Dormimos acá con Natalia después de la Vendimia. Y antes del gran día, café en un bar a la vuelta: olía a café recién hecho y a chocolate mendocino. Vuelvo siempre.",
+   "ru": "Мы с Натальей ночевали здесь после Вендимии. А перед большим днём пили кофе в кафе за углом: пахло свежим кофе и мендосским шоколадом. Возвращаюсь сюда всегда."
+  }
+ ],
+ "md-km0": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "«Desde acá se miden todas las distancias de la provincia. Es el corazón de Mendoza.» Se lo dije a Natalia desde el Gacel, y lo sostengo.",
+   "ru": "«Отсюда меряют все расстояния в провинции. Это сердце Мендосы». Я сказал это Наталье из «Гасели» — и могу повторить."
+  },
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Le dije a una chica asustada «Yo voy en tu lugar» y diez minutos después era la reina de Las Heras. Sin ensayo. Recomiendo el lugar para decisiones impulsivas.",
+   "ru": "Сказала испуганной девушке: «Я буду вместо тебя» — и через десять минут стала королевой Лас-Эраса. Без репетиций. Рекомендую для импульсивных решений."
+  },
+  {
+   "a": "Jack",
+   "ar": "Джек",
+   "s": 1,
+   "es": "Quería levantar acá mi nueva residencia. Llegaron dos en moto y no me dejaron. Pésima atención.",
+   "ru": "Хотел построить здесь свою новую резиденцию. Приехали двое на мотоцикле и не дали. Ужасное обслуживание."
+  }
+ ],
+ "md-plaza-espana": [
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Subí a un banco y dije: «¡Mendocinos! ¡Soy Natasha Primera, representante del departamento de Las Heras!». Nadie se rió. Los azulejos son preciosos, y uno de ellos guardaba algo para nosotros.",
+   "ru": "Встала на скамейку и сказала: «Мендосинцы! Я Наташа Первая, представительница департамента Лас-Эрас!» Никто не засмеялся. Изразцы чудесные, а одна плитка кое-что для нас хранила."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "Los artesanos, el olor a madera y a pintura, la fuente. Una estrella menos porque mi novia da discursos de fuego sin avisar.",
+   "ru": "Ремесленники, запах дерева и краски, фонтан. Минус звезда: моя девушка произносит огненные речи без предупреждения."
+  }
+ ],
+ "md-casa-gobierno": [
+  {
+   "a": "Clara (Canal 9)",
+   "ar": "Клара («Канал 9»)",
+   "s": 4,
+   "es": "Entrevista en vivo con la reina rubia frente a la escalinata. Buena luz a la tarde. Mal señal de celular en el hall.",
+   "ru": "Прямой эфир с белокурой королевой у парадной лестницы. Хороший свет после обеда. В холле плохо ловит телефон."
+  },
+  {
+   "a": "Nastia",
+   "ar": "Настя",
+   "s": 5,
+   "es": "Vino la pared de granizo, levanté las manos y la cúpula aguantó. El edificio no tiene ni un vidrio roto. De nada.",
+   "ru": "Пришла стена града, я подняла руки — и купол выдержал. В здании ни одного разбитого стекла. Не за что."
+  },
+  {
+   "a": "Irina",
+   "ar": "Ирина",
+   "s": 4,
+   "es": "A la noche di acá la entrevista: «Soy la futura reina de la Vendimia». Los periodistas se miraron entre ellos. Que se acostumbren.",
+   "ru": "Вечером дала здесь интервью: «Я — будущая королева Вендимии». Журналисты переглянулись. Пусть привыкают."
+  }
+ ],
+ "md-area-fundacional": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Debajo de Mendoza hay otra Mendoza. Bajé por una losa removida y encontré la piedra que respira vino. No es apto para claustrofóbicos.",
+   "ru": "Под Мендосой есть другая Мендоса. Я спустился через сдвинутую плиту и нашёл камень, который дышит вином. Не для тех, кто боится тесноты."
+  },
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 4,
+   "es": "A las nueve de la noche, entre los arcos rotos. Llegué antes y esperé. Valió la pena.",
+   "ru": "В девять вечера, среди разбитых арок. Я пришла раньше и ждала. Оно того стоило."
+  }
+ ],
+ "md-aristides": [
+  {
+   "a": "Julieta Arancibia",
+   "ar": "Джульета Арансибия",
+   "s": 5,
+   "es": "Un lomito sentadas en el cordón, con los pies en la acequia, al lado de la que se suponía que era mi rival. La mejor cena de la Vendimia.",
+   "ru": "Ломито, сидя на бордюре, ноги в арыке, рядом с той, кто вроде бы была моей соперницей. Лучший ужин всей Вендимии."
+  },
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Bares, mesas en la vereda, una heladería. Y la peluquería donde me convertí en otra. Esta calle me cambió la cara, literal.",
+   "ru": "Бары, столики на тротуаре, кафе-мороженое. И парикмахерская, где я стала другой. Эта улица поменяла мне лицо — в прямом смысле."
+  }
+ ],
+ "md-mirta": [
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Entré morocha y salí rubia trigo con reflejos de miel. Tres horas. Me enteré del divorcio de Mirta, de su hija en España y de la vecina que le roba el agua de la acequia. Salí con otro nombre.",
+   "ru": "Вошла брюнеткой, вышла блондинкой цвета пшеницы с медовыми бликами. Три часа. Узнала про развод Мирты, про её дочь в Испании и про соседку, которая ворует у неё воду из арыка. Вышла с другим именем."
+  },
+  {
+   "a": "Graciela",
+   "ar": "Грасьела",
+   "s": 4,
+   "es": "Mi cuñada tiene ojo: me mandó una reina sin documento. La contratamos igual, estábamos desesperados. Una estrella menos por los nervios que pasé.",
+   "ru": "У моей золовки глаз-алмаз: прислала мне королеву без документов. Мы всё равно её взяли — были в отчаянии. Минус звезда за мои нервы."
+  },
+  {
+   "a": "Mirta",
+   "ar": "Мирта",
+   "s": 5,
+   "es": "Respuesta del propietario: ese rubio trigo con reflejos miel no se lo hace cualquiera. Turnos por teléfono. A las reinas, descuento.",
+   "ru": "Ответ владельца: такой пшеничный блонд с медовыми бликами кому попало не сделают. Запись по телефону. Королевам скидка."
+  }
+ ],
+ "md-casa-mirta": [
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Toqué el timbre a las dos de la mañana, descalza, con el vestido roto. Mirta abrió con ruleros, no preguntó nada y me dio la cama de su hija. «Mañana me contás. O nunca.» Nunca me sentí tan en casa.",
+   "ru": "Позвонила в два часа ночи, босиком, в разорванном платье. Мирта открыла в бигуди, ничего не спросила и уложила меня в кровать дочери. «Завтра расскажешь. Или никогда». Никогда не чувствовала себя настолько дома."
+  },
+  {
+   "a": "Julieta Arancibia",
+   "ar": "Джульета Арансибия",
+   "s": 4,
+   "es": "La encontré enseguida. Godoy Cruz es mi departamento: acá todo el mundo sabe quién tiñe a quién. El café con leche, muy bueno.",
+   "ru": "Нашла её сразу. Годой-Крус — мой департамент: здесь все знают, кто кого красит. Кофе с молоком отличный."
+  }
+ ],
+ "md-super-godoy": [
+  {
+   "a": "La señora de las latas",
+   "ar": "Сеньора с банками",
+   "s": 5,
+   "es": "Perdón, nene, no sé qué me pasó. Volví con las latas de tomate nuevas y una torta de chocolate para el cajero. Muy amables, no me echaron.",
+   "ru": "Прости, сынок, не знаю, что на меня нашло. Я вернулась с новыми банками томатов и шоколадным тортом для кассира. Очень вежливые, не выгнали."
+  }
+ ],
+ "md-parque": [
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Julieta me llevó en su Fiat Uno por el lago, los botes y el Rosedal. El Fiat sufría en las subidas, pero el parque es un milagro: un bosque plantado en el desierto.",
+   "ru": "Джульета катала меня на «Фиате Уно» мимо озера, лодок и розария. «Фиат» страдал на подъёмах, но парк — чудо: лес, посаженный в пустыне."
+  },
+  {
+   "a": "Julieta Arancibia",
+   "ar": "Джульета Арансибия",
+   "s": 4,
+   "es": "En el salón del parque se lo dije claro a la nueva: «Esto no es un concurso de belleza. Es la Vendimia». Una estrella menos por el estacionamiento.",
+   "ru": "В зале парка я ясно сказала новенькой: «Это не конкурс красоты. Это Вендимия». Минус звезда за парковку."
+  },
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 4,
+   "es": "Al mediodía, junto a la fuente, un rapero cantaba en castellano con acento ruso. Muy raro. Muy lindo.",
+   "ru": "В полдень у фонтана рэпер пел по-испански с русским акцентом. Очень странно. Очень красиво."
+  }
+ ],
+ "md-fuente-continentes": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "Mientras todos miraban al rapero, yo buscaba entre las esculturas una piedra con los cuatro puntos cardinales. La encontré. La fuente es hermosa, aunque yo la miré de rodillas.",
+   "ru": "Пока все смотрели на рэпера, я искал среди скульптур камень с четырьмя сторонами света. Нашёл. Фонтан прекрасен, хотя я разглядывал его на коленях."
+  }
+ ],
+ "md-cerro-gloria": [
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Subimos con Julieta y su Fiat Uno, que en las curvas rezaba. Arriba, San Martín a caballo, toda la ciudad a los pies y la cordillera al fondo. Volví de noche, sola, a las ocho.",
+   "ru": "Поднимались с Джульетой на её «Фиате Уно», который на поворотах молился. Наверху — Сан-Мартин на коне, весь город у ног и Кордильера вдали. Я вернулась сюда вечером, одна, в восемь."
+  },
+  {
+   "a": "Zmaj",
+   "ar": "Змай",
+   "s": 4,
+   "es": "Desde arriba se ve bien el Teatro Griego. Buen lugar para aterrizar si no hay turistas.",
+   "ru": "Сверху хорошо виден Греческий театр. Хорошее место для посадки, если нет туристов."
+  }
+ ],
+ "md-teatro-griego": [
+  {
+   "a": "Julieta Arancibia",
+   "ar": "Джульета Арансибия",
+   "s": 5,
+   "es": "Esto no es un concurso de belleza. Es la Vendimia. El escrutinio fue voto a voto entre Maipú y Godoy Cruz y casi me muero. Lugar sagrado.",
+   "ru": "Это не конкурс красоты. Это Вендимия. Подсчёт шёл голос за голосом между Майпу и Годой-Крусом, и я чуть не умерла. Святое место."
+  },
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 4,
+   "es": "No se parece a ningún teatro. No tiene techo. Es un cerro. Le saco una estrella por la grieta con llamas violetas en medio de la fiesta.",
+   "ru": "Он не похож ни на один театр. У него нет крыши. Это холм. Минус звезда за трещину с фиолетовым пламенем посреди праздника."
+  },
+  {
+   "a": "Carlita Martínez",
+   "ar": "Карлита Мартинес",
+   "s": 5,
+   "es": "Empatamos con la rusa y todo dependió del último sobre. La reina fui yo. Las Heras, presente.",
+   "ru": "Мы с русской набрали поровну, и всё решил последний конверт. Королевой стала я. Лас-Эрас, мы здесь."
+  },
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 3,
+   "es": "Empate, sobre, guerreros mapuches en el escenario y mi marido que se vuelve inmortal. Para ser una fiesta del vino, demasiada acción.",
+   "ru": "Ничья, конверт, воины-мапуче на сцене, и мой муж становится бессмертным. Для праздника вина — слишком много событий."
+  }
+ ],
+ "md-uncuyo": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Mi facultad. En la biblioteca hay un solo ejemplar de «Las venas abiertas de América Latina», y adentro, un conjuro en huarpe. Siempre supe que Galeano escondía algo.",
+   "ru": "Мой факультет. В библиотеке единственный экземпляр «Вскрытых вен Латинской Америки», а внутри — заклинание на языке уарпе. Я всегда знал, что Галеано что-то скрывает."
+  },
+  {
+   "a": "Un guerrero mapuche",
+   "ar": "Воин-мапуче",
+   "s": 4,
+   "es": "El campus de noche está vacío y la tierra es blanda. Encontramos lo que buscábamos. Faltan faroles.",
+   "ru": "Ночью кампус пустой, а земля мягкая. Нашли то, что искали. Не хватает фонарей."
+  }
+ ],
+ "md-lagomaggiore": [
+  {
+   "a": "Adolfo",
+   "ar": "Адольфо",
+   "s": 1,
+   "es": "Celda fría, olor a café rancio. Llegué con moretones de la finca, después de que un zorro me humillara. Nadie me trajo un abogado. Cero estrellas si se pudiera.",
+   "ru": "Холодная камера, запах прогорклого кофе. Попал сюда в синяках после финки, после того как меня унизил лис. Адвоката никто не привёл. Поставил бы ноль, если бы можно было."
+  },
+  {
+   "a": "María Silvana Roca",
+   "ar": "Мария Сильвана Рока",
+   "s": 2,
+   "es": "Estoy en cana y nadie atiende el teléfono. El hospital de al lado, al menos, parece serio.",
+   "ru": "Сижу под арестом, и никто не берёт трубку. Больница по соседству хотя бы выглядит солидно."
+  }
+ ],
+ "md-hotel-primera": [
+  {
+   "a": "Nátasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "La terraza, el piso, la baranda, la ciudad apagándose luz por luz. Él me agarró la mano y empezaron a salir las chispas. No pido nada más.",
+   "ru": "Крыша, пол, перила, город, гаснущий огонёк за огоньком. Он взял меня за руку, и полетели искры. Больше мне ничего не нужно."
+  }
+ ],
+ "md-challao": [
+  {
+   "a": "Zmaj",
+   "ar": "Змай",
+   "s": 5,
+   "es": "Quebrada tibia, piedras calientes al sol. Me enrosqué como un gato y dormí hasta que vino ella. Ideal para dragones cansados.",
+   "ru": "Тёплое ущелье, нагретые солнцем камни. Свернулся, как кот, и спал, пока она не пришла. Идеально для уставших драконов."
+  },
+  {
+   "a": "Carlos",
+   "ar": "Карлос",
+   "s": 5,
+   "es": "Acá la frontera es fina. El viento espera la orden. Para trabajo serio, el mejor lugar de Mendoza.",
+   "ru": "Здесь граница тонка. Ветер ждёт приказа. Для серьёзной работы — лучшее место в Мендосе."
+  },
+  {
+   "a": "María Silvana Roca",
+   "ar": "Мария Сильвана Рока",
+   "s": 3,
+   "es": "La vieja catedral de noche impresiona. El chamán y el guerrero me esperaban en el altar. No volvería sola.",
+   "ru": "Старый собор ночью впечатляет. Шаман и воин ждали меня у алтаря. Одна я бы сюда не вернулась."
+  }
+ ],
+ "md-plumerillo": [
+  {
+   "a": "Irina",
+   "ar": "Ирина",
+   "s": 2,
+   "es": "Perdimos el centro y él nos trae a un campo histórico. Mucha historia, poca sombra.",
+   "ru": "Мы потеряли центр, а он привёл нас на историческое поле. Много истории, мало тени."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Estamos en Las Heras. Y no es casualidad. De acá salió San Martín, y de acá salimos nosotros.",
+   "ru": "Мы в Лас-Эрасе. И это не случайно. Отсюда выступил Сан-Мартин, и отсюда выступили мы."
+  }
+ ],
+ "md-aeropuerto": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "Bajé del avión y en el horizonte brillaban los Andes nevados. Me quedé quieta en la escalerilla. Sergio esperaba con una sonrisa.",
+   "ru": "Вышла из самолёта — а на горизонте сияли снежные Анды. Я застыла на трапе. Серхио ждал с улыбкой."
+  },
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Por la ventanilla, una montaña blanca y solitaria, como una reina sentada en su trono. Recomiendo pedir ventanilla del lado izquierdo.",
+   "ru": "В иллюминаторе — белая одинокая гора, как королева на троне. Советую брать место у окна слева."
+  }
+ ],
+ "md-las-heras": [
+  {
+   "a": "Carlita Martínez",
+   "ar": "Карлита Мартинес",
+   "s": 5,
+   "es": "Mi tierra. La hinchada de Huracán Las Heras canta como nadie, aunque después le cantó a ese Luis. Traidores lindos.",
+   "ru": "Моя земля. Болельщики «Уракана Лас-Эрас» поют как никто, хотя потом запели для этого Луиса. Милые предатели."
+  },
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Soy la reina de Las Heras y no me arrepiento. Los Rastrojeros son viejos pero llegan a todos lados.",
+   "ru": "Я королева Лас-Эраса и не жалею. «Растроэхерос» старые, но доезжают куда угодно."
+  }
+ ],
+ "md-godoy-cruz": [
+  {
+   "a": "Julieta Arancibia",
+   "ar": "Джульета Арансибия",
+   "s": 5,
+   "es": "Banda verde, caballo negro y corona de plata. Godoy Cruz es mi departamento y lo defiendo hasta en el escrutinio.",
+   "ru": "Зелёная лента, вороной конь и серебряная корона. Годой-Крус — мой департамент, и я защищаю его даже при подсчёте голосов."
+  }
+ ],
+ "md-chacras": [
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Galería, parral y una cama angosta debajo de los dibujos de la cordillera que Luis hizo de chico. A media hora del centro y a mil años del ruido.",
+   "ru": "Галерея, виноградная беседка и узкая кровать под рисунками Кордильеры, которые Луис рисовал в детстве. Полчаса от центра и тысяча лет от шума."
+  },
+  {
+   "a": "Sergio Fader",
+   "ar": "Серхио Фадер",
+   "s": 4,
+   "es": "Mi casa. Mi hijo vuelve de noche con un racimo en la mano y cree que no lo escucho. Lo escucho.",
+   "ru": "Мой дом. Сын возвращается ночью с гроздью в руке и думает, что я не слышу. Я слышу."
+  }
+ ],
+ "md-museo-fader": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 3,
+   "es": "A los quince años el jurado rechazó mi pastel del árbol solitario. Los frescos de Fernando Fader, hermosos. El jurado, sin corazón.",
+   "ru": "В пятнадцать лет жюри отвергло мою пастель с одиноким деревом. Фрески Фернандо Фадера прекрасны. Жюри — бессердечное."
+  },
+  {
+   "a": "Karl Fader",
+   "ar": "Карл Фадер",
+   "s": 5,
+   "es": "Desde hoy, el museo es de Sergio. Que lo cuide como cuidamos la viña.",
+   "ru": "С сегодняшнего дня музей принадлежит Серхио. Пусть бережёт его, как мы бережём виноградник."
+  },
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 4,
+   "es": "El símbolo del cuadro solo aparece desde cierto ángulo. Me torcí el cuello, pero lo vi.",
+   "ru": "Символ на картине виден только под определённым углом. Чуть шею не свернула, но увидела."
+  }
+ ],
+ "md-lujan": [
+  {
+   "a": "Sergio Fader",
+   "ar": "Серхио Фадер",
+   "s": 5,
+   "es": "Mi hijo trajo una novia y me dijo: «Sí, pa. Es bruja. Pero de las buenas». Le creí. El Malbec ayudó.",
+   "ru": "Сын привёз девушку и сказал: «Да, пап. Она ведьма. Но из хороших». Я поверил. Мальбек помог."
+  },
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 5,
+   "es": "Calles estrechas y arboladas, portones de bodegas y los Andes nevados detrás de las viñas. Alessio dice que es por trabajo. Yo vine por el vino.",
+   "ru": "Узкие тенистые улицы, ворота виноделен и снежные Анды за виноградниками. Алессио говорит, что мы здесь по делу. Я приехала ради вина."
+  }
+ ],
+ "md-la-rural": [
+  {
+   "a": "El viñatero del sombrero",
+   "ar": "Виноградарь в шляпе",
+   "s": 5,
+   "es": "Bailé el vals con la reina y lloré: mi viña fue la que más se secó. Ella me apretó la mano y no me soltó hasta el final de la música.",
+   "ru": "Танцевал вальс с королевой и плакал: мой виноградник засох сильнее всех. Она сжала мне руку и не отпускала до конца музыки."
+  },
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 4,
+   "es": "Gala de coronación entre toneles y prensas de hace cien años. Demasiados intendentes por metro cuadrado.",
+   "ru": "Гала-коронация среди бочек и прессов столетней давности. Слишком много мэров на квадратный метр."
+  }
+ ],
+ "md-russell": [
+  {
+   "a": "Estela González",
+   "ar": "Эстела Гонсалес",
+   "s": 5,
+   "es": "El sábado gané la corona nacional, y el domingo hice acá, bajo el parral de la casa amarilla, el asado más grande que vio Maipú en cincuenta años. Vengan con hambre.",
+   "ru": "В субботу я выиграла национальную корону, а в воскресенье устроила здесь, под беседкой жёлтого дома, самое большое асадо, какое Майпу видел за пятьдесят лет. Приходите голодными."
+  },
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Me esperaba a las seis de la mañana con una tijera de cosecha en cada mano. Coseché por primera vez en mi vida. Me duele todo. Volvería.",
+   "ru": "Она ждала меня в шесть утра с секатором в каждой руке. Я впервые в жизни собирала виноград. Всё болит. Вернулась бы."
+  }
+ ],
+ "md-finca-fader": [
+  {
+   "a": "Karl Fader",
+   "ar": "Карл Фадер",
+   "s": 5,
+   "es": "El mate en una mano y el Malbec en la otra. Si las uvas brillan, no pregunten.",
+   "ru": "Мате в одной руке, мальбек в другой. Если виноград светится — не задавайте вопросов."
+  },
+  {
+   "a": "Adolfo",
+   "ar": "Адольфо",
+   "s": 1,
+   "es": "Un zorro me mordió el trasero. Después me dieron una paliza. No recomiendo.",
+   "ru": "Лис укусил меня за мягкое место. Потом меня ещё и побили. Не рекомендую."
+  }
+ ],
+ "md-potrerillos": [
+  {
+   "a": "Rodrigo",
+   "ar": "Родриго",
+   "s": 5,
+   "es": "El refugio: tres días sin señal, sin noticias, sin nada. Una maravilla. Hace tres años que no sé ni quién gobierna.",
+   "ru": "Приют: три дня без связи, без новостей, без ничего. Чудо. Я уже три года не знаю, кто у нас правит."
+  }
+ ],
+ "md-uspallata": [
+  {
+   "a": "Don Anselmo",
+   "ar": "Дон Ансельмо",
+   "s": 4,
+   "es": "Cuarenta cabras, un perro que se llama Presidente y un hilo negro que bajó del cielo. Lindo lugar, poca visita.",
+   "ru": "Сорок коз, пёс по кличке Президент и чёрная нить, спустившаяся с неба. Красивое место, гостей мало."
+  }
+ ]
+}

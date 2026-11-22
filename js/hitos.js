@@ -546,6 +546,65 @@ const MODELOS = {
     const a = new THREE.Mesh(new THREE.TorusGeometry(10, .8, 8, 40), m); a.rotation.x = -Math.PI / 2; a.position.y = 1; g.add(a);
     return { g, r: 0, anim(t, n) { m.opacity = (0.15 + 0.35 * n) * (0.6 + 0.4 * Math.sin(t * 2)); a.scale.setScalar(1 + .15 * Math.sin(t * 1.3)); } };
   },
+  // ---- Mendoza ----
+  anfiteatro() { // Teatro Griego Frank Romero Day: gradas en semicírculo contra el cerro y el escenario abajo
+    const g = new THREE.Group(), piedra = M(0xcfc4b0), gris = M(0xb7ad9c);
+    const perfil = [new THREE.Vector2(30, -1)];
+    for (let i = 0; i < 14; i++) { const r = 32 + i * 6, h = i * 1.8; perfil.push(new THREE.Vector2(r, h + 1.8), new THREE.Vector2(r + 6, h + 1.8)); }
+    perfil.push(new THREE.Vector2(116, -2));
+    const gradas = new THREE.Mesh(new THREE.LatheGeometry(perfil, 40, 0, Math.PI), M(0xcfc4b0, { side: THREE.DoubleSide })); gradas.position.set(18, 0, 0); gradas.castShadow = gradas.receiveShadow = true; g.add(gradas);
+    for (let i = 2; i < 14; i += 3) { const p = new THREE.Mesh(new THREE.TorusGeometry(32 + i * 6, .5, 4, 40, Math.PI), gris); p.rotation.set(-Math.PI / 2, 0, -Math.PI / 2); p.position.set(18, i * 1.8 + 1.9, 0); g.add(p); }
+    g.add(cil(30, 30, 1.6, 0x9a8f7e, 18, -.4, 0, 40));
+    g.add(caja(26, 3, 70, 0x6f5d4c, -12, 0, 0)); g.add(caja(4, 14, 74, 0x4b3f35, -26, 0, 0));
+    const luces = []; for (const z of [-55, 55]) { g.add(cil(.8, .8, 34, 0x777777, 30, 0, z, 8)); const f = caja(5, 2.5, 2.5, new THREE.MeshStandardMaterial({ color: 0xffffff, emissive: 0xfff0c0, emissiveIntensity: .1 }), 30, 34, z); g.add(f); luces.push(f); }
+    return { g, r: 115, anim(t, n) { for (const f of luces) f.material.emissiveIntensity = .1 + 2.5 * n; } };
+  },
+  'monumento-andes'() { // Monumento al Ejército de los Andes, en la cima del Cerro de la Gloria
+    const g = new THREE.Group(), piedra = M(0xa79f92), bronce = M(0x6f5a3a, { metalness: .5, roughness: .45 });
+    g.add(caja(34, 3, 24, 0x9d968a)); g.add(caja(26, 4, 16, piedra, 0, 3)); g.add(caja(12, 18, 9, piedra, 0, 7));
+    g.add(caja(16, 3, 8, bronce, 0, 25)); // San Martín a caballo
+    g.add(caja(3, 7, 3, bronce, 0, 28)); g.add(esfera(1.6, bronce, 0, 36.4));
+    g.add(caja(2.2, 9, 2.2, bronce, 5, 28)); g.add(caja(.5, 6, 6, bronce, 5, 34)); // la Libertad con las cadenas rotas
+    for (const [x, z] of [[-11, 9], [11, 9], [-11, -9], [11, -9]]) { g.add(caja(3, 6, 3, bronce, x, 7, z)); g.add(cil(.6, .6, 6, 0x3a3a3a, x * 1.3, 3, z * 1.3, 8)); }
+    return { g, r: 45 };
+  },
+  ruinas() { // Ruinas de San Francisco: arcos rotos de adobe y ladrillo
+    const g = new THREE.Group(), adobe = M(0xb98f6a), ladrillo = M(0x9c6a4c);
+    g.add(caja(60, .6, 36, 0xc9b79a));
+    for (let i = 0; i < 5; i++) { const x = -22 + i * 11, h = [9, 13, 6, 11, 4][i]; g.add(caja(3, h, 3, i % 2 ? adobe : ladrillo, x, 0, -12)); g.add(caja(3, h * .7, 3, adobe, x, 0, 12)); }
+    for (let i = 0; i < 3; i++) { const a = new THREE.Mesh(new THREE.TorusGeometry(5.5, 1.3, 6, 12, Math.PI * (i === 1 ? .55 : 1)), ladrillo); a.position.set(-16.5 + i * 22, 9, -12); g.add(a); }
+    g.add(caja(26, 7, 2.5, adobe, 8, 0, 18)); g.add(caja(14, 4, 2.5, ladrillo, -20, 0, 18));
+    return { g, r: 45 };
+  },
+  bodega() { // bodega con nave de techo a dos aguas, toneles y viñas en hileras
+    const g = new THREE.Group();
+    g.add(caja(46, 9, 20, 0xe9dcc2)); const t = new THREE.Mesh(prismaGeo(), M(0x9a4e34)); t.scale.set(48, 6, 22); t.position.y = 9; g.add(t);
+    g.add(caja(16, 12, 14, 0xd9c7a6, 26, 0, 4)); g.add(caja(8, 5, 1, 0x5a3b22, 0, 0, -10.2));
+    for (let i = 0; i < 6; i++) { const b = cil(1.6, 1.6, 3.2, 0x7a4a26, -16 + i * 3.6, 0, -14, 14); b.rotation.x = Math.PI / 2; b.position.y = 1.6; g.add(b); }
+    const vid = M(0x5f8f3e);
+    for (let i = 0; i < 16; i++) g.add(caja(1.6, 1.8, 90, vid, -70 + i * 6, 0, 30));
+    for (let i = 0; i < 16; i++) g.add(caja(1.6, 1.8, 70, vid, 22 + i * 6, 0, -48));
+    return { g, r: 60 };
+  },
+  aeropuerto() { // terminal, torre de control y la pista norte-sur
+    const g = new THREE.Group();
+    g.add(caja(150, 14, 46, 0xd8dde2)); g.add(caja(150, 2, 52, 0x8ea2b4, 0, 14));
+    for (let i = 0; i < 6; i++) g.add(caja(4, 4, 22, 0xb9c2ca, -60 + i * 24, 4, 34));
+    g.add(cil(4, 5, 38, 0xe8e8e8, -100, 0, -10, 12)); g.add(cil(9, 7, 7, 0x6fa3c7, -100, 38, -10, 12));
+    const pista = new THREE.Mesh(new THREE.BoxGeometry(48, .6, 2800), M(0x55595e)); pista.position.set(330, .3, -300); pista.receiveShadow = true; g.add(pista);
+    const raya = new THREE.Mesh(new THREE.BoxGeometry(1.2, .7, 2700), brillo(0xf2f2f2)); raya.position.set(330, .35, -300); g.add(raya);
+    g.add(caja(20, .5, 260, 0x6b6f74, 180, 0, 40));
+    const avion = new THREE.Group(); avion.add(caja(36, 4, 4, 0xf4f4f4)); avion.add(caja(6, .6, 34, 0xf4f4f4, 2, 1.4)); avion.add(caja(3, 5, .6, 0x2d6fb6, -16, 2)); avion.position.set(90, 0, 60); g.add(avion);
+    return { g, r: 120, anim(t) { const k = (t * 0.035) % 1; avion.position.set(330, k < .5 ? .4 : .4 + (k - .5) * 900, 1100 - k * 2600); avion.rotation.set(0, Math.PI / 2, k < .5 ? 0 : -.18); } };
+  },
+  santuario() { // Santuario de la Virgen de Lourdes del Challao
+    const g = new THREE.Group();
+    g.add(caja(16, 12, 32, 0xece4d6)); const t = new THREE.Mesh(prismaGeo(), M(0x8d8a86)); t.scale.set(17, 7, 33); t.position.y = 12; g.add(t);
+    g.add(caja(7, 30, 7, 0xe7dfd0, 0, 0, -18)); g.add(new THREE.Mesh(new THREE.ConeGeometry(5.2, 10, 4), M(0x8d8a86)).translateY(35).translateZ(-18).rotateY(Math.PI / 4));
+    g.add(caja(.8, 6, .8, 0x444444, 0, 40, -18)); g.add(caja(3.2, .8, .8, 0x444444, 0, 43, -18));
+    g.add(caja(26, .6, 16, 0xd8cdb8, 0, 0, 24));
+    return { g, r: 38 };
+  },
   'tren-fantasma'() { return { g: new THREE.Group(), r: 0 }; }
 };
 
@@ -567,7 +626,7 @@ export function construirHitos(lugares, u) {
     grupo.add(m.g);
     if (m.anim) anims.push(m.anim);
     if (m.r) reservas.push([L.x, L.y, m.r]);
-    L._h = h + ({ huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
+    L._h = h + ({ anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
   }
   // reserva extra: la plaza Dante entera y el puerto
   reservas.push(...RESERVAS);
@@ -678,4 +737,30 @@ export function crearDrones() {
     d.scale.setScalar(2.2); g.add(d); lista.push({ d, alas, roja, f: i * 1.6, r: 120 + i * 45, h: 95 + i * 12 });
   }
   return { g, anim(t) { for (const o of lista) { const a = t * .12 + o.f; o.d.position.set(Math.cos(a) * o.r, o.h + Math.sin(t * .6 + o.f) * 6, Math.sin(a) * o.r); o.d.rotation.y = -a; o.alas.forEach((al, i) => al.rotation.x = Math.sin(t * 6 + o.f) * .35 * (i ? 1 : -1)); o.roja.visible = Math.sin(t * 4 + o.f) > 0; } } };
+}
+
+// La cordillera de los Andes al oeste de Mendoza: siempre visible en el horizonte (sin niebla).
+// Las distancias están acortadas para que entren en la vista; el Aconcagua va en su dirección real (ONO).
+export function crearAndes() {
+  const g = new THREE.Group();
+  const roca = new THREE.MeshLambertMaterial({ color: 0x8f8a96, fog: true, flatShading: true });
+  const nieve = new THREE.MeshLambertMaterial({ color: 0xf4f6fa, fog: true, flatShading: true });
+  const lejos = new THREE.MeshLambertMaterial({ color: 0xa9adc0, fog: true, flatShading: true });
+  let s = 7; const r = () => ((s = (s * 16807) % 2147483647) / 2147483647);
+  const monte = (x, y, h, ancho, mat, conNieve = true) => {
+    const geo = new THREE.ConeGeometry(ancho, h, 7, 3); const p = geo.attributes.position;
+    for (let i = 0; i < p.count; i++) { const yy = p.getY(i); if (yy < h / 2 - 1) { p.setX(i, p.getX(i) * (0.8 + r() * 0.45)); p.setZ(i, p.getZ(i) * (0.8 + r() * 0.45)); p.setY(i, yy + (r() - .5) * h * 0.08); } }
+    geo.computeVertexNormals();
+    const m = new THREE.Mesh(geo, mat); m.position.set(x, h / 2 - 60, -y); g.add(m);
+    if (conNieve) { const c = new THREE.Mesh(new THREE.ConeGeometry(ancho * 0.36, h * 0.36, 7, 1), nieve); c.position.set(x, h - h * 0.18 - 60 + 2, -y); c.rotation.y = r(); g.add(c); }
+  };
+  // primer cordón (Cordón del Plata y precordillera alta)
+  for (let i = 0; i < 26; i++) { const y = -30000 + i * 2500 + r() * 900; monte(-13500 - r() * 4000, y, 1800 + r() * 1500, 3000 + r() * 1800, roca, r() > .45); }
+  // cordillera principal, más lejos y azulada
+  for (let i = 0; i < 22; i++) { const y = -40000 + i * 3800 + r() * 1500; monte(-24000 - r() * 6000, y, 3600 + r() * 1500, 5000 + r() * 2200, lejos); }
+  // el Aconcagua (6961 m), en su dirección real desde la plaza Independencia
+  const d = Math.hypot(-109500, 26200), k = 33000 / d; monte(-109500 * k, 26200 * k, 6000, 7500, lejos);
+  // el Tupungato, al sudoeste
+  const d2 = Math.hypot(-86100, -51800), k2 = 32000 / d2; monte(-86100 * k2, -51800 * k2, 5400, 7000, lejos);
+  return g;
 }

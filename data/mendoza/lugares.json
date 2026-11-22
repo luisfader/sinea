@@ -1,0 +1,1190 @@
+{
+ "_info": "Lugares de Mendoza en las novelas de Robert Fader. Coordenadas reales: «ll» = [lat, lon] (OpenStreetMap) o «g» = [cuadras al este de Mitre, cuadras al norte de Sarmiento]. Los que quedan fuera del mapa se muestran en el borde, en su dirección real.",
+ "lugares": [
+  {
+   "id": "md-plaza-independencia",
+   "nombre": "Plaza Independencia",
+   "otros": [
+    "Plaza Independencia",
+    "Пласа Индепенденсия",
+    "Náměstí Independencia"
+   ],
+   "cat": "plaza",
+   "ll": [
+    -32.8897243,
+    -68.8444983
+   ],
+   "modelo": "fuente",
+   "desc": "La plaza principal de Mendoza: cuatro manzanas de árboles, fuentes y explanada, trazadas después del terremoto de 1861, cuando la ciudad nueva se levantó lejos de las ruinas coloniales. Dos cuadras más allá de cada esquina hay una plaza satélite: España, Italia, Chile y San Martín. En «El misterio de los Fader», sobre el escenario de la Vendimia alguien grita «¡Necesitamos una reina YA!», y así Natalia, una rusa que había venido a mirar, termina coronada. En «La reina de la Vendimia», Jana mira la fuente desde el balcón de su hotel y una semana en la fuente aparece una vaca, que después vuelve a su dueño, un tambero de Guaymallén. En «Дикий час: Духи гор», la primera noche de Luis y Natasha en Mendoza: fuentes iluminadas y olor a polvo, a hojas y a hollejo de uva.",
+   "buscar": "Plaza Independencia|piazza Indipendenza|Náměstí Independencia|площад\\w* Независимости|Пласа Индепенденсия|Plaza de la Independencia",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     3,
+     5,
+     6,
+     18,
+     31,
+     41
+    ],
+    "kralovna-vinobrani": [
+     3,
+     5,
+     6,
+     18,
+     19
+    ],
+    "el-misterio-de-los-fader": [
+     7,
+     9,
+     42,
+     43,
+     54
+    ],
+    "tajna-semi-fader": [
+     7,
+     9,
+     42,
+     43,
+     54
+    ],
+    "dikij-chas-2": [
+     9
+    ]
+   },
+   "ilustracion": [
+    "el-misterio-de-los-fader",
+    "07.jpg"
+   ]
+  },
+  {
+   "id": "md-hotel-plaza",
+   "nombre": "Hotel Plaza (hoy Park Hyatt)",
+   "otros": [
+    "Park Hyatt",
+    "Хаятт"
+   ],
+   "cat": "edificio",
+   "ll": [
+    -32.8887791,
+    -68.84606
+   ],
+   "modelo": "hotel",
+   "desc": "El hotel antiguo frente a la Plaza Independencia, sobre la calle Chile. En «La reina de la Vendimia», Jana alquila ahí un cuarto chico, pagado en efectivo: techo alto, ventilador lento, cama de hierro y un balcón sobre la fuente. De noche lee el cuaderno negro de Mark. En «El misterio de los Fader», Luis y Natalia duermen en el hotel de enfrente de la plaza, y antes de la gran jornada de la Vendimia toman café en un bar cerca del Hyatt, con olor a café recién hecho y a chocolate mendocino. El edificio real, el viejo Plaza Hotel, hoy es el Park Hyatt Mendoza.",
+   "buscar": "Hotel Plaza|hotel de la Plaza Independencia|Hotel Hyatt|Хаятт|hotel antiguo frente a la plaza|hotel de enfrente",
+   "ilustracion": [
+    "la-reina-de-la-vendimia",
+    "06-2.jpg"
+   ]
+  },
+  {
+   "id": "md-km0",
+   "nombre": "Kilómetro Cero (Peatonal y San Martín)",
+   "cat": "plaza",
+   "g": [
+    4,
+    0
+   ],
+   "modelo": "ninguno",
+   "desc": "La esquina de la avenida San Martín y la Peatonal Sarmiento, que los mendocinos siguen llamando Kilómetro Cero: durante más de un siglo fue el punto de encuentro de la ciudad (el kilómetro cero oficial de las rutas se mudó después a San Martín y Vicente Zapata). En «El misterio de los Fader», Luis se lo muestra a Natalia desde el Gacel: «Desde acá se miden todas las distancias de la provincia. Es el corazón de Mendoza». En «Дикий час: Духи гор» es el centro de todo: la noche de la fiesta Natasha le dice a una chica perdida «Yo voy en tu lugar» y se vuelve reina de Las Heras; de acá sale la Vía Blanca, acá es el duelo contra el chamán Carlos y Jack, que quería levantar en este lugar su nueva residencia, y acá termina la novela. En «Anomalía», la cita a ciegas es junto a la fuente del Kilómetro Cero.",
+   "buscar": "Kilómetro Cero|kilómetro cero|Нулев\\w* километр\\w*|Km 0",
+   "extra": {
+    "el-misterio-de-los-fader": [
+     7,
+     40
+    ],
+    "tajna-semi-fader": [
+     7,
+     40,
+     56
+    ],
+    "dikij-chas-2": [
+     20,
+     43,
+     49,
+     55
+    ]
+   }
+  },
+  {
+   "id": "md-peatonal",
+   "nombre": "Peatonal Sarmiento",
+   "cat": "calle",
+   "g": [
+    2.5,
+    0
+   ],
+   "modelo": "ninguno",
+   "desc": "Tres cuadras peatonales, de la Plaza Independencia a la avenida San Martín, con cafés, mesas en la vereda y baldosas. En «La reina de la Vendimia», después de los once minutos que nadie recuerda, el móvil de Canal 9 sale a la Peatonal a preguntarles a los vecinos dónde estaban el sábado a las once.",
+   "buscar": "Peatonal Sarmiento|la peatonal|пешеходн\\w+ улиц\\w+ Сармьенто"
+  },
+  {
+   "id": "md-av-san-martin",
+   "nombre": "Avenida San Martín",
+   "cat": "calle",
+   "g": [
+    4,
+    -3.5
+   ],
+   "modelo": "ninguno",
+   "desc": "La columna vertebral de Mendoza: cruza el centro de norte a sur y sigue hasta Godoy Cruz y Luján de Cuyo. En la Vendimia por ella pasan la Vía Blanca de las Reinas, el desfile nocturno de carros iluminados, y el Carrusel del sábado por la mañana, con gauchos, caballos y las reinas de los dieciocho departamentos. En «La reina de la Vendimia» los carros avanzan iluminados «como barcos en la noche», y el día del Carrusel aparecen en medio de la avenida un dragón, un carruaje negro y Luis Fader con las zapatillas mojadas. En «Дикий час: Духи гор» la Vía Blanca sale del Kilómetro Cero.",
+   "buscar": "avenida San Martín|Avenida San Martín|проспект\\w* Сан-Мартин\\w*|třída San Martín|Vía Blanca|Виа Бланк\\w*|Carrusel",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     4,
+     23,
+     24,
+     25
+    ],
+    "kralovna-vinobrani": [
+     4,
+     22,
+     23
+    ]
+   },
+   "ilustracion": [
+    "la-reina-de-la-vendimia",
+    "05-1.jpg"
+   ]
+  },
+  {
+   "id": "md-plaza-espana",
+   "nombre": "Plaza España",
+   "cat": "plaza",
+   "ll": [
+    -32.8929598,
+    -68.8420275
+   ],
+   "modelo": "fuente",
+   "desc": "La más vistosa de las plazas satélite: bancos, fuente y paredes de azulejos andaluces blancos y azules con escenas de la historia de Mendoza y de España. En «Дикий час: Духи гор», entre puestos de artesanos y olor a madera y a pintura, Natasha da su discurso de fuego: «¡Mendocinos! ¡Soy la futura reina de la Vendimia! ¡Soy Natasha Primera, representante del departamento de Las Heras!». Ahí está escondida la última señal: un azulejo con un dibujo único. En «Anomalía», la protagonista vuelve de golpe a su Mendoza y aparece en medio de la Plaza España, bajo el sol, entre los mosaicos andaluces.",
+   "buscar": "Plaza España|Площад\\w* Испании",
+   "extra": {
+    "tajna-semi-fader": [
+     56
+    ],
+    "dikij-chas-2": [
+     28,
+     34
+    ]
+   },
+   "ilustracion": [
+    "anomalia",
+    "04-1.jpg"
+   ]
+  },
+  {
+   "id": "md-patricias",
+   "nombre": "Calle Patricias Mendocinas",
+   "cat": "calle",
+   "g": [
+    1,
+    -4.5
+   ],
+   "modelo": "ninguno",
+   "desc": "La calle que bordea el lado este de la Plaza Independencia. Lleva el nombre de las «patricias mendocinas», las mujeres que en 1816 donaron sus joyas para equipar al Ejército de los Andes de San Martín. En «Дикий час: Духи гор» la ciudad deja de estar en paz: en Patricias Mendocinas hay militares que cortan el tránsito, y Luis y Natasha corren a ver a Irina.",
+   "buscar": "Patricias Mendocinas|Патрисиас Мендосинас",
+   "extra": {
+    "dikij-chas-2": [
+     23
+    ]
+   }
+  },
+  {
+   "id": "md-libreria-garibaldi",
+   "nombre": "La librería de la calle Garibaldi",
+   "cat": "tienda",
+   "g": [
+    5.5,
+    0.18
+   ],
+   "modelo": "casa",
+   "desc": "Garibaldi es la calle que sigue a la Peatonal del otro lado de la avenida San Martín. En «Дикий час: Духи гор», la primera noche, a pocas cuadras de la Plaza Independencia, Luis y Natasha se paran frente a una librería de la calle Garibaldi y Natasha entra derecho. La librería es de la novela; la calle es real.",
+   "buscar": "Гарибальди"
+  },
+  {
+   "id": "md-casa-gobierno",
+   "nombre": "Casa de Gobierno",
+   "cat": "edificio",
+   "ll": [
+    -32.8984032,
+    -68.8455425
+   ],
+   "modelo": "ministerio",
+   "desc": "La sede del gobierno de la provincia, en el Barrio Cívico, al sur del centro, con la Legislatura y los tribunales alrededor. En «La reina de la Vendimia», Clara, de Canal 9, entrevista en vivo a «la reina rubia» frente a la Casa de Gobierno; Antonio Ferrer sube dos veces sus escaleras de mármol, y al final la presidenta Irina habla desde el balcón. En «Дикий час: Духи гор», cuando una pared de granizo avanza sobre Mendoza, Nastia levanta las manos y alrededor de la Casa de Gobierno se enciende una cúpula de luz; esa noche Irina da ahí una entrevista por televisión.",
+   "buscar": "Casa de Gobierno|Дом\\w* правительства|Vládní palác",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     4,
+     25,
+     41,
+     44
+    ],
+    "kralovna-vinobrani": [
+     4
+    ],
+    "dikij-chas-2": [
+     37,
+     38
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-area-fundacional",
+   "nombre": "Ruinas de San Francisco y Área Fundacional",
+   "cat": "monumento",
+   "ll": [
+    -32.8803,
+    -68.8288
+   ],
+   "modelo": "ruinas",
+   "desc": "Acá estuvo la Mendoza colonial, fundada por Pedro del Castillo en 1561 y destruida por el terremoto del 20 de marzo de 1861: quedan la Plaza Pedro del Castillo, el Museo del Área Fundacional con las excavaciones bajo un techo de vidrio y los arcos de las ruinas de San Francisco. En «La reina de la Vendimia»: «Debajo de Mendoza hay otra Mendoza». Después del sismo de la fiesta aparece bajo las ruinas una losa removida y la entrada a unas criptas. Ahí Luis encuentra la piedra que respira vino, y ahí, a las nueve de la noche, Jana y Luis se encuentran entre los arcos rotos.",
+   "buscar": "Área Fundacional|ruinas de San Francisco|Ruinas de San Francisco|Pedro del Castillo|otra Mendoza|Ruiny San Francisco",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     6,
+     10,
+     16,
+     17,
+     18,
+     42,
+     49
+    ],
+    "kralovna-vinobrani": [
+     6,
+     10,
+     16,
+     17,
+     18,
+     28,
+     29
+    ]
+   },
+   "ilustracion": [
+    "la-reina-de-la-vendimia",
+    "06-1.jpg"
+   ]
+  },
+  {
+   "id": "md-aristides",
+   "nombre": "Calle Arístides Villanueva",
+   "cat": "calle",
+   "g": [
+    -8.5,
+    -4
+   ],
+   "modelo": "ninguno",
+   "desc": "La calle de bares, cervecerías y restaurantes más famosa de Mendoza, en la Quinta Sección: es la continuación de la avenida Colón hacia el parque, y de noche las mesas ocupan las veredas. En «La reina de la Vendimia» está ahí la peluquería de Mirta, y después Jana y Julieta comen un lomito sentadas en el cordón, con los pies en la acequia.",
+   "buscar": "Arístides",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     3,
+     15,
+     21,
+     25
+    ],
+    "kralovna-vinobrani": [
+     3,
+     15,
+     20,
+     30
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-mirta",
+   "nombre": "Peluquería «Mirta, Estilo & Color»",
+   "cat": "tienda",
+   "g": [
+    -6.6,
+    -4.2
+   ],
+   "modelo": "casa",
+   "desc": "En la calle Arístides Villanueva, entre un bar con mesas en la vereda y una heladería: aire acondicionado, cumbia en la radio, olor a laca y a café. Mirta, sesenta años, bajita, pelo violeta y anteojos con brillitos, tarda tres horas en convertir a Jana en rubia trigo con reflejos de miel, y en ese tiempo le cuenta su divorcio, lo de su hija que vive en España y lo de la vecina que le roba el agua de la acequia. «¡Pero si sos una reina!» Ese mismo día nace Yanina, de Bariloche, «hija de checos». La peluquería es de la novela; la calle es real.",
+   "buscar": "Mirta, Estilo|peluquería",
+   "solo": [
+    "la-reina-de-la-vendimia",
+    "kralovna-vinobrani"
+   ],
+   "ilustracion": [
+    "la-reina-de-la-vendimia",
+    "03-1.jpg"
+   ]
+  },
+  {
+   "id": "md-casa-mirta",
+   "nombre": "Casa de Mirta (Godoy Cruz)",
+   "cat": "casa",
+   "ll": [
+    -32.93,
+    -68.8395
+   ],
+   "modelo": "hogar",
+   "desc": "Una casita baja en un barrio de Godoy Cruz. En «La reina de la Vendimia», Jana llega a las dos de la mañana, a pie, con el vestido blanco rasgado y los zapatos en la mano. Mirta abre en camisón y con ruleros, no pregunta nada, le da un camisón suyo y la cama de su hija que vive en España: «Mañana me contás. O nunca». A la tarde toca el timbre Julieta Arancibia, «la leona» de Godoy Cruz: «Acá todo el mundo sabe quién tiñe a quién». La casa es de la novela; el barrio es real.",
+   "buscar": "cocina de Mirta|casa de Mirta|hija de Mirta|Mirta había abierto",
+   "solo": [
+    "la-reina-de-la-vendimia",
+    "kralovna-vinobrani"
+   ],
+   "ilustracion": [
+    "la-reina-de-la-vendimia",
+    "09-2.jpg"
+   ]
+  },
+  {
+   "id": "md-super-godoy",
+   "nombre": "Supermercado de Godoy Cruz",
+   "cat": "tienda",
+   "ll": [
+    -32.923,
+    -68.847
+   ],
+   "modelo": "mercado",
+   "desc": "En «La reina de la Vendimia», durante la tarde de locura que se apodera de Mendoza, a las cinco y cuarto, en un supermercado de Godoy Cruz, una señora de setenta años —vecina de toda la vida, abuela de cuatro nietos, socia de la cooperadora de la escuela— empieza a tirar al piso, una por una y riéndose, las latas de tomate de la góndola. Cuando todo pasa, vuelve con latas nuevas y le deja al cajero una torta de chocolate y una nota: «perdón, nene, no sé qué me pasó». El supermercado es de la novela.",
+   "buscar": "supermercado de Godoy Cruz",
+   "solo": [
+    "la-reina-de-la-vendimia",
+    "kralovna-vinobrani"
+   ]
+  },
+  {
+   "id": "md-parque",
+   "nombre": "Parque General San Martín",
+   "cat": "parque",
+   "ll": [
+    -32.8935,
+    -68.8735
+   ],
+   "modelo": "parque",
+   "desc": "El gran parque del oeste, diseñado en 1896 por el paisajista Carlos Thays: más de trescientas hectáreas de árboles plantados en pleno desierto, el lago de las regatas, el Rosedal, la Fuente de los Continentes y, al fondo, el Cerro de la Gloria. En «La reina de la Vendimia» la primera reunión de candidatas es en un salón del parque («Esto no es un concurso de belleza. Es la Vendimia»), y Julieta pasea a Jana en su Fiat Uno por el lago, los remos y el Rosedal. En «El misterio de los Fader», en la entrada del parque un hombre de guantes y maletín negro hace un intercambio secreto, Karl Fader mandó esconder acá unos baúles hace siglo y medio, y en la noche de la Vía Blanca el parque brilla con miles de luces. En «Дикий час: Духи гор», al mediodía, un rapero canta en castellano con acento ruso junto a la fuente.",
+   "buscar": "Parque (General )?San Martín|parque San Martín|парк\\w* (Генерала )?Сан-Мартин\\w*|Rosedal|розари\\w*|Park San Martín|salón del Parque",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     4,
+     21,
+     43
+    ],
+    "kralovna-vinobrani": [
+     4,
+     20
+    ],
+    "el-misterio-de-los-fader": [
+     6,
+     10,
+     34,
+     40
+    ],
+    "tajna-semi-fader": [
+     6,
+     10,
+     34,
+     40
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-fuente-continentes",
+   "nombre": "Fuente de los Continentes",
+   "cat": "monumento",
+   "ll": [
+    -32.8890925,
+    -68.8666505
+   ],
+   "modelo": "fuente",
+   "desc": "La fuente monumental de la entrada del Parque San Martín, una de las postales más fotografiadas de Mendoza. En «Дикий час: Духи гор», mientras todos miran al rapero que canta en el escenario junto a la fuente, Luis busca entre las esculturas una pieza de piedra con los símbolos de los cuatro puntos cardinales.",
+   "buscar": "Fuente de los Continentes|Фонтан\\w* Континентов",
+   "extra": {
+    "dikij-chas-2": [
+     28,
+     33
+    ]
+   }
+  },
+  {
+   "id": "md-cerro-gloria",
+   "nombre": "Cerro de la Gloria",
+   "cat": "monumento",
+   "ll": [
+    -32.8889347,
+    -68.8912213
+   ],
+   "modelo": "monumento-andes",
+   "desc": "El cerro del fondo del Parque San Martín. Arriba está el Monumento al Ejército de los Andes, inaugurado en 1914: San Martín a caballo, granaderos, cañones y la figura de la Libertad rompiendo las cadenas. Desde la cima se ve toda la ciudad y, al oeste, la cordillera. En «La reina de la Vendimia», Julieta sube con Jana en el Fiat Uno, y más tarde el cerro es el lugar de una cita: «Hoy a las ocho. Sola».",
+   "buscar": "Cerro de la Gloria|Холм\\w* Славы|Ла-Глория|Ejército de los Andes|Андск\\w+ арми\\w+",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     4,
+     21,
+     43
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-teatro-griego",
+   "nombre": "Teatro Griego Frank Romero Day",
+   "cat": "monumento",
+   "ll": [
+    -32.8918888,
+    -68.8932276
+   ],
+   "modelo": "anfiteatro",
+   "desc": "El anfiteatro al aire libre al pie de los cerros del Parque San Martín, con lugar para más de veinte mil personas. Cada año acá se hace el Acto Central de la Fiesta Nacional de la Vendimia y se elige a la Reina Nacional entre las candidatas de los dieciocho departamentos. En «La reina de la Vendimia»: «No se parece a ningún teatro. No tiene techo. Es un cerro». En la fiesta de la Ciudad se abre una grieta y salen llamas doradas y violetas, y en el Acto Central el escrutinio va voto a voto entre Maipú y Godoy Cruz. En «El misterio de los Fader», Natalia y Carlita Martínez empatan, todo depende del último sobre; después los guerreros mapuches toman el escenario y Luis, al romper el cetro cargado de hidromiel, se vuelve inmortal.",
+   "buscar": "Teatro Griego|Frank Romero Day|Франка Ромеро Дая|anfiteatro|амфитеатр\\w*|Řecké divadlo|Acto Central",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     7,
+     27,
+     28,
+     46,
+     47
+    ],
+    "kralovna-vinobrani": [
+     7,
+     26
+    ],
+    "el-misterio-de-los-fader": [
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52
+    ],
+    "tajna-semi-fader": [
+     46,
+     47,
+     48,
+     49,
+     50,
+     51,
+     52
+    ]
+   },
+   "ilustracion": [
+    "la-reina-de-la-vendimia",
+    "07-1.jpg"
+   ]
+  },
+  {
+   "id": "md-uncuyo",
+   "nombre": "Universidad Nacional de Cuyo",
+   "cat": "edificio",
+   "ll": [
+    -32.8765372,
+    -68.8765959
+   ],
+   "modelo": "biblioteca",
+   "desc": "La principal universidad de Mendoza, fundada en 1939, con su ciudad universitaria pegada al Parque San Martín, cerca de los cerros. En «El misterio de los Fader», de noche, en el campus vacío de la Facultad de Ciencias Políticas y Sociales, un grupo de mapuches desentierra un tesoro escondido ahí hace muchos años. En «Дикий час: Духи гор» Luis lleva a Natasha a su facultad: en la biblioteca, en el único ejemplar de «Las venas abiertas de América Latina» de Eduardo Galeano, hay un conjuro escondido en lengua huarpe: «Solo la fe en nuestra tierra nos salvará».",
+   "buscar": "Universidad (Nacional )?de Cuyo|UNCuyo|университет\\w* Куйо|Ciencias Políticas|Вскрытых вен",
+   "extra": {
+    "el-misterio-de-los-fader": [
+     35
+    ],
+    "tajna-semi-fader": [
+     35
+    ],
+    "dikij-chas-2": [
+     27,
+     28,
+     29
+    ]
+   }
+  },
+  {
+   "id": "md-lagomaggiore",
+   "nombre": "Hospital Lagomaggiore y la comisaría",
+   "cat": "edificio",
+   "ll": [
+    -32.8723495,
+    -68.864878
+   ],
+   "modelo": "hotel",
+   "desc": "El hospital Luis C. Lagomaggiore, uno de los grandes hospitales públicos de Mendoza, al norte del parque. En «El misterio de los Fader», a la comisaría que está cerca del hospital van a parar María Silvana Roca y después Adolfo, con la cara llena de moretones de la paliza en la finca Fader: «Perdió el hidromiel, un zorro lo humilló y ahora estaba preso». Ahí lo va a ver Heinrich.",
+   "buscar": "Lagomaggiore|Lago Maggiore|Лагомаджоре"
+  },
+  {
+   "id": "md-hotel-primera",
+   "nombre": "Un hotel de la Primera Sección",
+   "cat": "edificio",
+   "g": [
+    3.5,
+    7.5
+   ],
+   "modelo": "hotel",
+   "desc": "En «La reina de la Vendimia», la noche en que salvaron Mendoza, con la ropa quemada y la ciudad apagándose de a una luz por los cortes, Nátasha y Luis suben a la terraza de un hotel de la Primera Sección, se sientan en el piso contra la baranda y él le agarra la mano. Entonces empiezan a salir de ellos las chispas rosadas, como luciérnagas. El hotel no tiene nombre en la novela; la Primera Sección (Parque Central) es el barrio al norte del microcentro.",
+   "buscar": "hotel de la Primera Sección"
+  },
+  {
+   "id": "md-challao",
+   "nombre": "Santuario y cerros del Challao",
+   "cat": "monumento",
+   "ll": [
+    -32.8577779,
+    -68.8991188
+   ],
+   "modelo": "santuario",
+   "desc": "Los cerros al noroeste de la ciudad, en Las Heras, con el Santuario de la Virgen de Lourdes, lugar de grandes peregrinaciones: la gente sube a pie por el Vía Crucis y desde arriba se ve toda Mendoza. En «El misterio de los Fader», de noche, María Silvana Roca entra a la vieja catedral del Challao, donde la esperan el chamán Lautaro y el joven guerrero Antu con una botella verde llena de hidromiel dorado. En «La reina de la Vendimia», Nátasha manda a Zmaj a dormir a los cerros del Challao y lo encuentra en una quebrada, «enroscado como un gato». En «Дикий час: Духи гор», el chamán Carlos, descalzo sobre las piedras («acá la frontera es fina»), manda desde estos cerros la tormenta y el granizo contra la ciudad.",
+   "buscar": "Challao|Чальяо",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     27,
+     31
+    ],
+    "el-misterio-de-los-fader": [
+     41
+    ],
+    "tajna-semi-fader": [
+     41
+    ],
+    "dikij-chas-2": [
+     36,
+     37
+    ]
+   }
+  },
+  {
+   "id": "md-plumerillo",
+   "nombre": "Campo Histórico El Plumerillo",
+   "cat": "monumento",
+   "ll": [
+    -32.8430636,
+    -68.8185701
+   ],
+   "modelo": "obelisco",
+   "desc": "El campamento donde en 1816 y 1817 el general San Martín entrenó al Ejército de los Andes antes de cruzar la cordillera y liberar Chile; hoy es un museo a cielo abierto en Las Heras. En «Дикий час: Духи гор», después de perder el centro, Luis lleva a todos ahí. «Perdimos el centro y vos nos traés a un campo histórico», se enoja Irina. «Estamos en Las Heras. Y no es casualidad», contesta Luis. De acá sale la contraofensiva.",
+   "buscar": "Campo Histórico|историческое поле|Историческ\\w+ пол\\w+",
+   "extra": {
+    "dikij-chas-2": [
+     50
+    ]
+   }
+  },
+  {
+   "id": "md-aeropuerto",
+   "nombre": "Aeropuerto El Plumerillo",
+   "cat": "transporte",
+   "ll": [
+    -32.8318687,
+    -68.7954466
+   ],
+   "modelo": "aeropuerto",
+   "desc": "El aeropuerto internacional de Mendoza, al norte, en Las Heras, junto a una base aérea; toma su nombre del vecino Campo Histórico El Plumerillo. En «La reina de la Vendimia», Jana ve por la ventanilla una montaña más alta que todas, «blanca y solitaria, como una reina sentada en su trono», y más tarde de la base sale un helicóptero hacia la isla. En «El misterio de los Fader», Luis y Natalia llegan de Moscú, Sergio los espera y Natalia se queda quieta frente a los Andes nevados. En «Дикий час: Духи гор» el avión aterriza suave y el aire seco y tibio de Mendoza abraza a Luis y a Natasha.",
+   "buscar": "El Plumerillo|Плумерильо|aeropuerto de Mendoza|letiště",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     2,
+     31
+    ],
+    "kralovna-vinobrani": [
+     2,
+     30
+    ],
+    "el-misterio-de-los-fader": [
+     3,
+     5
+    ],
+    "tajna-semi-fader": [
+     3,
+     5
+    ],
+    "dikij-chas-2": [
+     8
+    ]
+   },
+   "ilustracion": [
+    "la-reina-de-la-vendimia",
+    "02-2.jpg"
+   ]
+  },
+  {
+   "id": "md-las-heras",
+   "nombre": "Las Heras",
+   "cat": "barrio",
+   "ll": [
+    -32.85,
+    -68.829
+   ],
+   "modelo": "ninguno",
+   "desc": "El departamento al norte de la capital, con el nombre del general Juan Gregorio de Las Heras, héroe del Ejército de los Andes: ahí están el Campo Histórico El Plumerillo, los cerros del Challao y el comienzo del camino a Chile. En «El misterio de los Fader» es la tierra de Carlita Martínez, la gran rival de Natalia, y la hinchada de Huracán Las Heras primero la alienta a ella y después canta para Luis. En «Дикий час: Духи гор» Natasha es la reina de Las Heras; acá se repliegan los héroes, Zmaj libera a cinco cóndores y las columnas de Las Heras entran a liberar Mendoza en viejos Rastrojeros.",
+   "buscar": "Las Heras|Лас-Эрас\\w*",
+   "extra": {
+    "el-misterio-de-los-fader": [
+     45,
+     48,
+     51
+    ],
+    "tajna-semi-fader": [
+     45,
+     48,
+     51
+    ],
+    "dikij-chas-2": [
+     20,
+     34,
+     45,
+     52,
+     53,
+     55
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-casa-luis-heras",
+   "nombre": "La casa de la infancia de Luis (Las Heras)",
+   "cat": "casa",
+   "ll": [
+    -32.853,
+    -68.835
+   ],
+   "modelo": "hogar",
+   "desc": "En «El misterio de los Fader: Operación Londres», la casa familiar de Luis en Las Heras, en 1992: la sala en silencio, el televisor encendido y la madre que recuerda que hace diez años se recuperaron las islas. Ahí empieza la memoria de Luis. La casa es de la novela; el departamento es real.",
+   "buscar": "Casa familiar, Las Heras"
+  },
+  {
+   "id": "md-dalvian",
+   "nombre": "Casa de Domingo Castro (barrio Dalvian)",
+   "cat": "casa",
+   "ll": [
+    -32.8675765,
+    -68.888668
+   ],
+   "modelo": "villa",
+   "desc": "Dalvian es un barrio cerrado en la falda de los cerros, al norte del Parque San Martín, de calles con muros altos y jardines. En «El misterio de los Fader», Domingo Castro, «Kurüf», el hombre robusto del museo, estaciona su Ford F-150 frente a su casa moderna con un maletín bien apretado bajo el brazo. La casa es de la novela; el barrio es real.",
+   "buscar": "barrio Dalvian|Дальвиан",
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-godoy-cruz",
+   "nombre": "Godoy Cruz",
+   "cat": "barrio",
+   "ll": [
+    -32.9252658,
+    -68.8443509
+   ],
+   "modelo": "ninguno",
+   "desc": "El departamento pegado al sur de la capital, con el nombre de Tomás Godoy Cruz, diputado mendocino en el Congreso de Tucumán de 1816, y tierra del club Godoy Cruz Antonio Tomba, «el Tomba». En «La reina de la Vendimia» es el departamento de Julieta Arancibia, «una leona»: banda verde, caballo negro y corona de plata. En «El misterio de los Fader», el maletín con el hidromiel cae a una acequia, viaja medio Mendoza y en un puentecito de ladrillo de Godoy Cruz la corriente lo aprieta contra una piedra.",
+   "buscar": "Godoy Cruz|Годой-Крус\\w*",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     3,
+     4,
+     5,
+     7
+    ],
+    "kralovna-vinobrani": [
+     3,
+     4,
+     5,
+     7,
+     22
+    ],
+    "el-misterio-de-los-fader": [
+     8,
+     11
+    ],
+    "tajna-semi-fader": [
+     8,
+     11
+    ]
+   },
+   "ilustracion": [
+    "el-misterio-de-los-fader",
+    "09.jpg"
+   ]
+  },
+  {
+   "id": "md-chacras",
+   "nombre": "Chacras de Coria: la casa de Sergio",
+   "cat": "casa",
+   "ll": [
+    -32.985,
+    -68.879
+   ],
+   "modelo": "villa",
+   "desc": "Chacras de Coria es un pueblo de Luján de Cuyo de calles arboladas, casas bajas y quintas, rodeado de bodegas. En «La reina de la Vendimia»: «Sergio Fader. Calle de los Olmos, Chacras de Coria». La casa del padre de Luis, con galería y parral, a media hora del centro. Ahí vuelve Luis de noche con un racimo en la mano, y ahí, en la cama angosta de su infancia, debajo de sus dibujos de la cordillera, duerme con Jana. La calle de los Olmos es de la novela; Chacras es real.",
+   "buscar": "Chacras|calle de los Olmos|Чакрас",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     3,
+     5,
+     11,
+     15,
+     22
+    ],
+    "kralovna-vinobrani": [
+     3,
+     5,
+     11,
+     15,
+     19,
+     20,
+     21,
+     30
+    ]
+   },
+   "ilustracion": [
+    "la-reina-de-la-vendimia",
+    "05-2.jpg"
+   ]
+  },
+  {
+   "id": "md-museo-fader",
+   "nombre": "Museo Emiliano Guiñazú – Casa de Fader",
+   "cat": "monumento",
+   "ll": [
+    -33.0052599,
+    -68.8668086
+   ],
+   "modelo": "villa",
+   "desc": "La casona de la familia Fader en Mayor Drummond, Luján de Cuyo, cuyas paredes pintó al fresco Fernando Fader. Hoy es el Museo Provincial de Bellas Artes Emiliano Guiñazú, la «Casa de Fader», con jardín y una colección de pintura argentina. En «El misterio de los Fader», en una sala del museo dos hombres intercambian maletines; para Luis es un lugar especial y no del todo grato: a los quince años participó ahí de un concurso de pintura, y en «Operación Londres» recuerda la cara del jurado rechazando su pastel del árbol solitario. Al final, Karl anuncia que el museo ahora es de Sergio. En «Дикий час: Духи гор» Luis y Natasha van en el Gordini a buscar un símbolo escondido en un cuadro, que solo aparece desde cierto ángulo.",
+   "buscar": "Museo Fader|museo Fader|Guiñazú|Гиньясу|музе\\w* Фадера|Casa di Fader|casa di Fernando Fader|Museo Provinciale|Casa de Fader|casa de Fader",
+   "extra": {
+    "el-misterio-de-los-fader": [
+     4,
+     6,
+     38,
+     53
+    ],
+    "tajna-semi-fader": [
+     4,
+     6,
+     38,
+     53
+    ],
+    "dikij-chas-2": [
+     28,
+     31
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-lujan",
+   "nombre": "Luján de Cuyo",
+   "cat": "barrio",
+   "ll": [
+    -33.036,
+    -68.878
+   ],
+   "modelo": "ninguno",
+   "desc": "La «primera zona» del vino argentino y cuna del Malbec mendocino: decenas de bodegas al pie de los Andes, primera región vitivinícola del país con denominación de origen controlada. En «El misterio de los Fader» se levanta sobre sus viñedos, como un castillo feudal, la mansión del misterioso hombre de negro, y la virreina de la Vendimia es María Voloshchin, de Luján. En «Дикий час: Духи гор» Luis le presenta acá a Natasha a Sergio y a Mónica («Sí, pa. Es bruja. Pero de las buenas»), y después corren en moto entre las viñas. En «Ladro di cuori 3», Alessio y Laura llegan a Luján, «la tierra del Malbec», de calles estrechas y arboladas con portones de bodegas.",
+   "buscar": "Luján de Cuyo|Лухан-де-Куйо|Лухан",
+   "extra": {
+    "el-misterio-de-los-fader": [
+     11,
+     17,
+     47,
+     52
+    ],
+    "tajna-semi-fader": [
+     11,
+     17,
+     47,
+     52
+    ],
+    "dikij-chas-2": [
+     12,
+     13,
+     15
+    ]
+   },
+   "ilustracion": [
+    "la-reina-de-la-vendimia",
+    "03-2.jpg"
+   ]
+  },
+  {
+   "id": "md-la-rural",
+   "nombre": "Bodega La Rural (Maipú)",
+   "cat": "restaurante",
+   "ll": [
+    -32.957862,
+    -68.7455569
+   ],
+   "modelo": "bodega",
+   "desc": "Una bodega histórica de Coquimbito, en Maipú, fundada a fines del siglo XIX, con uno de los museos del vino más importantes de América Latina: prensas, toneles y herramientas de la vitivinicultura antigua. En «La reina de la Vendimia» es la gala de coronación de la reina de la Ciudad: el intendente, gente del gobierno de la presidenta Irina, los intendentes de los dieciocho departamentos… y un viñatero de sombrero que baila el vals con la reina y llora porque su viña fue la que más se secó.",
+   "buscar": "La Rural",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     12,
+     47
+    ],
+    "kralovna-vinobrani": [
+     12
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-russell",
+   "nombre": "La finca de Estela (Russell, Maipú)",
+   "cat": "casa",
+   "ll": [
+    -33.03,
+    -68.795
+   ],
+   "modelo": "bodega",
+   "desc": "Russell es un distrito rural de Maipú de callejones con álamos, acequias, viñedos y olivares. En «La reina de la Vendimia», Estela González, la reina de Maipú que no sale en las fotos, espera a Jana a las seis de la mañana con una tijera de cosecha en cada mano. El sábado gana la corona nacional, y el domingo hace en Russell, bajo el parral de la casa amarilla, el asado más grande que vio Maipú en cincuenta años. La finca es de la novela; Russell es real (la ubicación en el mapa es aproximada).",
+   "buscar": "Russell",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     45,
+     47,
+     48
+    ]
+   }
+  },
+  {
+   "id": "md-finca-fader",
+   "nombre": "Finca Fader (ficticia)",
+   "cat": "casa",
+   "ll": [
+    -33.065,
+    -68.93
+   ],
+   "modelo": "ninguno",
+   "desc": "El corazón de «El misterio de los Fader». El maletín queda trabado entre las piedras del canal del viñedo, el hidromiel se mezcla con el agua… y las uvas empiezan a brillar. Acá Luis y Natalia pintan los Andes, aparece el zorro que le muerde el trasero a Adolfo, y Karl Fader da su entrevista con el mate en una mano y el Malbec en la otra. En «Operación Londres» es el secreto de la familia: ahí se guarda la receta común del hidromiel. La finca no existe, pero se parece a muchas fincas familiares de Luján de Cuyo: casa con galería, hileras de vides, acequia y vista a los Andes nevados.",
+   "buscar": "finca Fader|finca de los Fader|финк\\w* Фадер\\w*",
+   "extra": {
+    "el-misterio-de-los-fader": [
+     12,
+     17,
+     18,
+     19,
+     21,
+     28,
+     33,
+     36,
+     55
+    ],
+    "tajna-semi-fader": [
+     12,
+     17,
+     18,
+     19,
+     21,
+     28,
+     33,
+     36,
+     55
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-cipolletti",
+   "nombre": "Dique Cipolletti",
+   "cat": "monumento",
+   "ll": [
+    -33.048,
+    -68.879
+   ],
+   "modelo": "ninguno",
+   "desc": "El dique derivador sobre el río Mendoza, en Luján de Cuyo, construido a fines del siglo XIX con el proyecto del ingeniero italiano Cesare Cipolletti: de ahí sale el agua de los canales que riegan el oasis. Aparece en «Královna vinobraní», la versión checa de «La reina de la Vendimia».",
+   "buscar": "Cipolletti",
+   "solo": [
+    "kralovna-vinobrani",
+    "la-reina-de-la-vendimia"
+   ],
+   "extra": {
+    "kralovna-vinobrani": [
+     21,
+     30
+    ]
+   }
+  },
+  {
+   "id": "md-cacheuta",
+   "nombre": "Ruinas de la usina de Cacheuta",
+   "cat": "misterio",
+   "ll": [
+    -33.017,
+    -69.115
+   ],
+   "modelo": "ninguno",
+   "desc": "El esqueleto de hormigón de la vieja central hidroeléctrica junto al río Mendoza, que en «El misterio de los Fader» construyó el ingeniero Carlos Fader. Ahí los mapuches buscan un escondite, aparecen dos gendarmes muertos y Antu encuentra el hidromiel que Karl había enterrado bajo los cimientos. Cacheuta es famosa por sus aguas termales; en enero de 1934 un aluvión destruyó casi todo.",
+   "buscar": "Cacheuta|Качеут\\w*",
+   "extra": {
+    "el-misterio-de-los-fader": [
+     14,
+     20,
+     21,
+     22,
+     27,
+     36,
+     41
+    ],
+    "tajna-semi-fader": [
+     14,
+     20,
+     21,
+     22,
+     27,
+     36,
+     41
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-potrerillos",
+   "nombre": "Potrerillos",
+   "cat": "parque",
+   "ll": [
+    -32.958,
+    -69.198
+   ],
+   "modelo": "ninguno",
+   "desc": "El dique y el embalse turquesa sobre el río Mendoza, camino a Chile: kayak, rafting y windsurf entre cerros. En «La reina de la Vendimia» el embalse aparece de golpe en una curva, «como una piedra preciosa tirada entre los cerros», y en el refugio Nátasha sostiene la cabeza de Rodrigo sobre las rodillas. En «El misterio de los Fader», Kurüf maneja su F-150 por el camino de cornisa. En «Дикий час: Духи гор», entre las rocas, Luis y Natasha encuentran el primer elemento: una piedra oscura, tibia, con brillo metálico.",
+   "buscar": "Potrerillos|Потрерильос",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     19,
+     20,
+     21,
+     22,
+     25,
+     34
+    ],
+    "kralovna-vinobrani": [
+     23,
+     24,
+     28,
+     30
+    ],
+    "el-misterio-de-los-fader": [
+     14,
+     22
+    ],
+    "tajna-semi-fader": [
+     14,
+     22
+    ],
+    "dikij-chas-2": [
+     24,
+     27,
+     28
+    ]
+   }
+  },
+  {
+   "id": "md-uspallata",
+   "nombre": "Paramillos de Uspallata",
+   "cat": "misterio",
+   "ll": [
+    -32.5,
+    -69.15
+   ],
+   "modelo": "ninguno",
+   "desc": "Cerros pelados con minas antiguas y un bosque petrificado de araucarias que Darwin describió en 1835. En «La reina de la Vendimia», una de las siete raíces negras de la isla se clava en Paramillos; un arriero llama a la radio porque vio un hilo negro bajando del cielo. Don Anselmo vive a quince kilómetros, con cuarenta cabras y un perro que se llama Presidente.",
+   "buscar": "Paramillos|Uspallata|Успальят\\w*",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     24,
+     25,
+     31,
+     32
+    ],
+    "kralovna-vinobrani": [
+     23,
+     24,
+     25,
+     28
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-cordon-plata",
+   "nombre": "Cordón del Plata",
+   "cat": "misterio",
+   "ll": [
+    -33.05,
+    -69.43
+   ],
+   "modelo": "ninguno",
+   "desc": "Un cordón de cumbres de casi seis mil metros frente a Luján de Cuyo, donde muchos andinistas se aclimatan antes del Aconcagua. En «La reina de la Vendimia» otra raíz de la isla baja sobre el cordón, «donde las vetas de cobre dormían debajo de la nieve».",
+   "buscar": "Cordón del Plata|cordón del Plata|cerro Plata|Cerro Plata",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     24,
+     31
+    ],
+    "kralovna-vinobrani": [
+     23,
+     24,
+     28
+    ]
+   }
+  },
+  {
+   "id": "md-aconcagua",
+   "nombre": "Laguna de Horcones y el Aconcagua",
+   "cat": "monumento",
+   "ll": [
+    -32.81,
+    -69.94
+   ],
+   "modelo": "ninguno",
+   "desc": "El Aconcagua mide 6961 metros: es la montaña más alta de América. La laguna de Horcones está en la entrada del Parque Provincial Aconcagua, donde empieza la ruta normal a la cumbre. En «La reina de la Vendimia», «el pie de la madre»: Jana llega descalza, con el vestido roto y negro de ceniza, y la montaña se despierta «como una persona muy vieja». En «El misterio de los Fader», Natalia la ve apenas baja del avión. En «Дикий час: Духи гор» es la montaña principal de la novela: su espíritu decide el final.",
+   "buscar": "Aconcagua|Аконкагуа|Horcones",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     2,
+     28,
+     29,
+     30,
+     33,
+     36,
+     40
+    ],
+    "kralovna-vinobrani": [
+     2,
+     9,
+     10,
+     19,
+     29,
+     30
+    ],
+    "el-misterio-de-los-fader": [
+     5
+    ],
+    "tajna-semi-fader": [
+     5
+    ],
+    "dikij-chas-2": [
+     10,
+     44,
+     54
+    ]
+   },
+   "ilustracion": [
+    "el-misterio-de-los-fader",
+    "04.jpg"
+   ]
+  },
+  {
+   "id": "md-puente-inca",
+   "nombre": "Puente del Inca",
+   "cat": "monumento",
+   "ll": [
+    -32.825,
+    -69.911
+   ],
+   "modelo": "ninguno",
+   "desc": "Un puente natural de roca sobre el río Las Cuevas, teñido de amarillo y naranja por las aguas termales, camino al Aconcagua y a Chile. Aparece en «Anomalía» y en «Дикий час: Духи гор».",
+   "buscar": "Puente del Inca|Пуэнте-дель-Инка"
+  },
+  {
+   "id": "md-tupungato",
+   "nombre": "Volcán Tupungato",
+   "cat": "monumento",
+   "ll": [
+    -33.358,
+    -69.771
+   ],
+   "modelo": "ninguno",
+   "desc": "Un volcán de unos 6570 metros en el límite con Chile, que le da nombre al departamento de Tupungato, en el Valle de Uco. En «La reina de la Vendimia», durante la emboscada del zonda, Jana lo ve blanco y tan cerca que da vértigo. En «Дикий час: Духи гор», al final, las siluetas del Aconcagua, el Tupungato y el Maipo cobran vida y los espíritus de la montaña bajan en forma de nubes.",
+   "buscar": "Tupungato|Тупунгато",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     14,
+     31,
+     35,
+     40
+    ],
+    "kralovna-vinobrani": [
+     14,
+     23,
+     24,
+     28
+    ],
+    "dikij-chas-2": [
+     44,
+     54
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-uco",
+   "nombre": "Bodega del Valle de Uco",
+   "cat": "restaurante",
+   "ll": [
+    -33.43,
+    -69.17
+   ],
+   "modelo": "ninguno",
+   "desc": "El valle de viñedos de altura de Tunuyán, Tupungato y San Carlos, al pie de la cordillera. En «La reina de la Vendimia», la visita de las reinas a las viñas más altas de la provincia termina en emboscada: el zonda sopla caliente desde la cordillera, el cielo se pone amarillo y seis hombres esperan a la reina rubia en una bodega de piedra y vidrio medio enterrada en la ladera.",
+   "buscar": "Valle de Uco",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     13,
+     14
+    ],
+    "kralovna-vinobrani": [
+     13,
+     14,
+     19
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-guanacache",
+   "nombre": "Lagunas de Guanacache (Lavalle)",
+   "cat": "parque",
+   "ll": [
+    -32.28,
+    -68.15
+   ],
+   "modelo": "ninguno",
+   "desc": "Humedales en el límite de Mendoza, San Juan y San Luis, sitio Ramsar desde 1999 y tierra ancestral de los huarpes laguneros. En «La reina de la Vendimia», la leyenda de la abuela de Luis: el sol de los huarpes castigó a Hunuc y a Huar, se arrepintió y lloró tanto que con sus lágrimas se hicieron las lagunas. De ahí viene Ayelén, la tímida reina de Lavalle.",
+   "buscar": "Guanacache",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     6,
+     23,
+     37
+    ],
+    "kralovna-vinobrani": [
+     6,
+     21,
+     22,
+     23
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-malargue",
+   "nombre": "Malargüe y Las Leñas",
+   "cat": "misterio",
+   "ll": [
+    -35.47,
+    -69.58
+   ],
+   "modelo": "ninguno",
+   "desc": "El sur de Mendoza: el campo volcánico de La Payunia, el centro de esquí Las Leñas y el observatorio Pierre Auger. En «La reina de la Vendimia» las raíces más lejanas de la isla se clavan en Las Leñas y en los salares de Malargüe, y al final se desclavan «con un ruido de piedra arrancada».",
+   "buscar": "Malargüe|Las Leñas|Маларгуэ",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     19,
+     31,
+     40
+    ],
+    "kralovna-vinobrani": [
+     22,
+     23,
+     24,
+     28
+    ]
+   },
+   "sin_ilustracion": true
+  }
+ ]
+}

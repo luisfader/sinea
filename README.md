@@ -1,10 +1,11 @@
-# Sinea, Verdegrad y Nuestra Utopía — mapas 3D · Синея, Вердеград и Наша Утопия — 3D-карты
+# Sinea, Verdegrad, Nuestra Utopía y Mendoza — mapas 3D · Синея, Вердеград, Наша Утопия и Мендоса — 3D-карты
 
-Tres mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía** arriba:
+Cuatro mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza** arriba:
 
 - **Sinea**, la ciudad junto al mar: `index.html`
 - **Verdegrad**, el pueblo verde de Natalia, con su fortaleza en la penumbra: `index.html?ciudad=verdegrad` (o `verdegrad.html`)
 - **Nuestra Utopía** (Наша Утопия), la fortaleza de Robert en «Предчувствие»: `index.html?ciudad=utopia` (o `utopia.html`)
+- **Mendoza** (Мендоса), la ciudad real de «La reina de la Vendimia», «El misterio de los Fader», «Дикий час: Духи гор» y otras: `index.html?ciudad=mendoza` (o `mendoza.html`)
 
 Los rótulos verdes en el borde del mapa también llevan de una ciudad a la otra («← Verdegrad · estación Nubecita» en Sinea; «← Antiguo camino a Sinea» en Verdegrad).
 
@@ -67,6 +68,17 @@ Verdegrad está armado con lo que cuentan «Волны любви: Крепос�
 ## Nuestra Utopía
 
 La fortaleza sigue la descripción de «Предчувствие», cap. 4: un fuerte pentagonal turquesa sobre una colina empinada de cima plana, con dos anillos de murallas, torres cilíndricas de vigía (de ventanas angostas y con adornos) en el anillo exterior, y la torre principal con su mirador junto a la plaza central. Alrededor, el valle verde; más allá, el desierto con el búnker de Robert y la tumba vacía de Luis; al oeste, el mar de los tanques-araña; al este, los túneles hacia el campamento de las montañas. Delante del muro sur está el Muro de Luis de «Предчувствие 2.4», cuyas placas brillan de noche. Sobre la fortaleza vuelan los drones-gaviota. Los datos están en `data/utopia/` y la geografía en `js/ciudades/utopia.js`.
+
+## Mendoza
+
+A diferencia de las otras tres, Mendoza es una ciudad real y el mapa sigue su geografía real, con datos de © colaboradores de [OpenStreetMap](https://www.openstreetmap.org/copyright) (ODbL), consultados con Nominatim y Overpass en noviembre de 2026:
+
+- **La cuadrícula del centro** está medida sobre los ejes reales de las calles: manzanas de 122,5 m de eje a eje, giradas 12,5° (las calles «norte-sur» apuntan al NNE). El (0,0) es el centro de la Plaza Independencia; la calle Mitre y Sarmiento son los ejes. Las calles con nombre (San Martín, Peatonal Sarmiento, Colón, Arístides Villanueva, Las Heras, Belgrano, Patricias Mendocinas, España, 9 de Julio…) están en su cuadra real, y las cuatro plazas satélite quedan a dos cuadras de cada esquina de la Independencia, como en la realidad.
+- **Los lugares** llevan coordenadas reales en `data/mendoza/lugares.json`: `"ll": [lat, lon]` o `"g": [cuadras al este de Mitre, cuadras al norte de Sarmiento]`; `tools/build.py` las convierte a metros. El parque San Martín, el lago, el Cerro de la Gloria, el Teatro Griego, la Casa de Gobierno, el Área Fundacional, el aeropuerto, el Challao, el museo Fader, Chacras de Coria y La Rural están donde están.
+- **Lo aproximado**: los contornos de los barrios y departamentos (Godoy Cruz, Guaymallén, Las Heras, Luján…), el trazado de las rutas fuera del centro, el relieve de la precordillera y la cordillera del horizonte (con las distancias acortadas; el Aconcagua y el Tupungato van en su dirección real). Los negocios y casas que inventan las novelas (la peluquería de Mirta, la casa de Sergio en la «calle de los Olmos», la librería de Garibaldi…) van en la calle o el barrio que dice el texto.
+- **Fuera del mapa**: Potrerillos, Cacheuta, Uspallata, el Aconcagua, el Valle de Uco, Malargüe y otros aparecen en el borde, en la dirección en que hay que ir, con la distancia en km.
+
+Las reseñas (`data/mendoza/resenas.json`) son de Jana, Mirta, Julieta Arancibia, Natalia, Natasha, Luis, Sergio, Karl Fader, Carlita Martínez, Estela González, Zmaj y otros personajes.
 
 ## Añadir o corregir un lugar
 

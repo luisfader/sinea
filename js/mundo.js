@@ -3,14 +3,15 @@
 import * as SINEA from './ciudades/sinea.js';
 import * as VERDEGRAD from './ciudades/verdegrad.js';
 import * as UTOPIA from './ciudades/utopia.js';
+import * as MENDOZA from './ciudades/mendoza.js';
 
-const TODAS = { sinea: SINEA, verdegrad: VERDEGRAD, utopia: UTOPIA };
+const TODAS = { sinea: SINEA, verdegrad: VERDEGRAD, utopia: UTOPIA, mendoza: MENDOZA };
 export const CIUDAD = TODAS[globalThis.CIUDAD] ? globalThis.CIUDAD : 'sinea';
 const C = TODAS[CIUDAD];
 export const ARROYO = C.ARROYO || [], LAGOS = C.LAGOS || [];
 export const AFUERAS_HUECO = C.AFUERAS_HUECO ?? (CIUDAD !== 'sinea');
 export const AFUERAS_COLOR = C.AFUERAS_COLOR ?? (CIUDAD === 'sinea' ? 0xd6debe : 0xc4d6a4);
-export const colorSuelo = C.colorSuelo || null, zonaArboles = C.zonaArboles || null;
+export const colorSuelo = C.colorSuelo || null, zonaArboles = C.zonaArboles || null, ARBOLES_CALLES = !!C.ARBOLES_CALLES;
 export const { LIMITES, COSTA, TIERRA, RIO, COLINAS, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, BORDES, AFUERAS, MUELLES, RESERVAS, EXTRAS, VISTA, NOMBRE, LEMA, RUTA_BUS } = C;
 
 /* ---------- utilidades geométricas ---------- */
@@ -72,6 +73,7 @@ export function altura(x, y) {
     const d2 = ((x - cx) ** 2 + (y - cy) ** 2) / (r * r);
     h += a * Math.exp(-d2 * 1.6);
   }
+  if (C.relieve) h += C.relieve(x, y);
   // borde costero: playa y fondo marino
   if (c < 0) return Math.max(-30, -2 + c * 0.06);
   h *= sstep(0, 90, c) * 0.85 + 0.15;

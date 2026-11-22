@@ -1824,6 +1824,15 @@ export const CIUDADES = {
 "Кафе в центре"
 ]
 ]
+},
+{
+"n": "divlji-chas-malbec",
+"c": [
+[
+"17",
+"Тамо где почињу сви путеви"
+]
+]
 }
 ],
 "img": {
@@ -3983,6 +3992,31 @@ export const CIUDADES = {
 "desc_ru": "Квартал у вокзала, где живёт Роберто «Бобби» Лопес Мендоса — Толстяк из «El tren fantasma», который мечтает открыть гриль-бар «Зять в огне».",
 "apar": [
 {
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"5",
+"La Cabalgata"
+],
+[
+"11",
+"El hilo bordó"
+],
+[
+"19",
+"Rodrigo"
+],
+[
+"37",
+"Las lágrimas de la reina"
+],
+[
+"44",
+"Pelo negro"
+]
+]
+},
+{
 "n": "el-tren-fantasma",
 "c": [
 [
@@ -3994,8 +4028,8 @@ export const CIUDADES = {
 ],
 "img": {
 "src": "img/lugares/tulipanes.webp",
-"n": "el-tren-fantasma",
-"c": "extra-6"
+"n": "la-reina-de-la-vendimia",
+"c": "5"
 }
 },
 {
@@ -4532,6 +4566,24 @@ export const CIUDADES = {
 "Альриша"
 ]
 ]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"extra-3",
+"Entrevista con Marcos, el detective"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"extra-3",
+"Интервью с Марком, детективом"
+]
+]
 }
 ],
 "res": [
@@ -4602,7 +4654,12 @@ export const CIUDADES = {
 "es": "Me encantan las alturas. Y que pague otro.",
 "ru": "Обожаю высоту. И когда платит кто-то другой."
 }
-]
+],
+"img": {
+"src": "img/lugares/torre-norte.webp",
+"n": "opasnoe-svidanie",
+"c": "4"
+}
 },
 {
 "id": "club-orilla-norte",
@@ -4643,7 +4700,12 @@ export const CIUDADES = {
 ]
 ]
 }
-]
+],
+"img": {
+"src": "img/lugares/club-orilla-norte.webp",
+"n": "opasnoe-svidanie",
+"c": "24"
+}
 },
 {
 "id": "avenida-independencia",
@@ -8246,7 +8308,12 @@ export const CIUDADES = {
 "es": "Rica comida. Wifi abierto, contraseña «12345». Como especialista en delitos informáticos, me dio taquicardia.",
 "ru": "Вкусно. Открытый вайфай, пароль «12345». Как специалиста по киберпреступлениям, меня чуть не хватил удар."
 }
-]
+],
+"img": {
+"src": "img/lugares/vietnamita.webp",
+"n": "opasnoe-svidanie",
+"c": "20"
+}
 },
 {
 "id": "restaurante-puerto",
@@ -8291,7 +8358,12 @@ export const CIUDADES = {
 "es": "Como psicóloga: excelente lugar para conversaciones difíciles. El mar ayuda. El vino también.",
 "ru": "Как психолог: отличное место для трудных разговоров. Море помогает. Вино тоже."
 }
-]
+],
+"img": {
+"src": "img/lugares/restaurante-puerto.webp",
+"n": "opasnoe-svidanie",
+"c": "29"
+}
 },
 {
 "id": "bar-ancora",
@@ -12210,105 +12282,4928 @@ export const CIUDADES = {
 }
 ]
 }
+],
+"mendoza": [
+{
+"id": "md-plaza-independencia",
+"nombre": "Plaza Independencia",
+"otros": [
+"Plaza Independencia",
+"Пласа Индепенденсия",
+"Náměstí Independencia"
+],
+"cat": "plaza",
+"x": 0,
+"y": 0,
+"modelo": "fuente",
+"desc": "La plaza principal de Mendoza: cuatro manzanas de árboles, fuentes y explanada, trazadas después del terremoto de 1861, cuando la ciudad nueva se levantó lejos de las ruinas coloniales. Dos cuadras más allá de cada esquina hay una plaza satélite: España, Italia, Chile y San Martín. En «El misterio de los Fader», sobre el escenario de la Vendimia alguien grita «¡Necesitamos una reina YA!», y así Natalia, una rusa que había venido a mirar, termina coronada. En «La reina de la Vendimia», Jana mira la fuente desde el balcón de su hotel y una semana en la fuente aparece una vaca, que después vuelve a su dueño, un tambero de Guaymallén. En «Дикий час: Духи гор», la primera noche de Luis y Natasha en Mendoza: fuentes iluminadas y olor a polvo, a hojas y a hollejo de uva.",
+"nombre_ru": "Площадь Независимости (Пласа Индепенденсия)",
+"desc_ru": "Главная площадь Мендосы: четыре квартала деревьев, фонтанов и аллей. Её разбили после землетрясения 1861 года, когда новый город строили подальше от колониальных руин. В двух кварталах от каждого угла — площадь-спутница: Испании, Италии, Чили и Сан-Мартина. В «Тайне семьи Фадер» со сцены Вендимии кричат: «Нам нужна королева СЕЙЧАС!» — и Наталья, русская, которая пришла просто посмотреть, оказывается коронованной. В «Королеве Вендимии» Яна смотрит на фонтан с балкона отеля, а однажды в фонтане появляется корова — потом она возвращается к хозяину, молочнику из Гуаймальена. В «Диком часе: Духи гор» здесь проходит первая вечерняя прогулка Луиса и Наташи: фонтаны в огнях, запах пыли, листьев и виноградной кожуры.",
+"apar": [
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"6",
+"Неожиданная королева Вендимии"
+],
+[
+"7",
+"Прошлое оставляет подсказки"
+],
+[
+"8",
+"Площадь теней"
+],
+[
+"9",
+"Слава и тайны"
+],
+[
+"32",
+"Лис-защитник"
+],
+[
+"41",
+"Ночь в центре и встреча с прошлым"
+],
+[
+"42",
+"Площадь воспоминаний"
+],
+[
+"43",
+"Объяснение Карла Фадера"
+],
+[
+"extra-3",
+"Интервью с Марком, детективом"
+],
+[
+"extra-4",
+"Интервью с Карлом Фадером, «немецким колдуном»"
+]
+]
+},
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"3",
+"Yanina"
+],
+[
+"5",
+"La Cabalgata"
+],
+[
+"6",
+"Debajo de Mendoza"
+],
+[
+"18",
+"Las ruinas de San Francisco"
+],
+[
+"26",
+"Los pactos se cumplen"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"34",
+"Lo que no se cuenta"
+],
+[
+"41",
+"Lo que se lleva la Mulánima"
+],
+[
+"49",
+"Praga sin nieve"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"6",
+"La Reina Inesperada de la Vendimia"
+],
+[
+"8",
+"La Plaza de las Sombras"
+],
+[
+"32",
+"El Zorro Protector"
+],
+[
+"41",
+"La Noche en el Centro y el Encuentro con el Pasado"
+],
+[
+"42",
+"La Plaza de los recuerdos"
+],
+[
+"extra-3",
+"Entrevista con Marcos, el detective"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"3",
+"Yanina"
+],
+[
+"5",
+"Jízda gaučů"
+],
+[
+"6",
+"Pod Mendozou"
+],
+[
+"18",
+"Ruiny San Francisco"
+],
+[
+"19",
+"Snídaně v Chacras"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"9",
+"Праздник, которого не ждали"
+],
+[
+"extra-4",
+"Глоссарий к роману «Дикий час»"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Vine a mirar la fiesta y me fui con una corona. «¡Necesitamos una reina YA!», gritaron, y nadie me preguntó si sabía saludar desde un carro. Aprendí. Cinco estrellas, y una para la candidata de la Sexta Sección, que ojalá esté mejor.",
+"ru": "Пришла посмотреть на праздник, а ушла с короной. «Нам нужна королева СЕЙЧАС!» — закричали, и никто не спросил, умею ли я махать с платформы. Научилась. Пять звёзд, и ещё одна — кандидатке от Шестой секции, надеюсь, ей уже лучше."
+},
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "Desde mi balcón veo la fuente. Una semana había una vaca adentro. Después vino a buscarla su dueño, un tambero de Guaymallén, y se la llevó como si nada. Así es Mendoza.",
+"ru": "С моего балкона виден фонтан. Целую неделю в нём стояла корова. Потом за ней пришёл хозяин, молочник из Гуаймальена, и увёл её как ни в чём не бывало. Такая она, Мендоса."
+},
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "Fuentes de colores, olor a polvo, a hojas y a hollejo de uva. Y a tres cuadras, una librería en la calle Garibaldi. Luis tuvo que sacarme de ahí de la mano.",
+"ru": "Фонтаны в огнях, пахнет пылью, листьями и виноградной кожурой. А в трёх кварталах — книжный на Гарибальди. Луису пришлось уводить меня оттуда за руку."
+},
+{
+"a": "Carlita Martínez",
+"ar": "Карлита Мартинес",
+"s": 3,
+"es": "Linda plaza. Lástima lo de aquella noche: la rusa se subió al escenario y se llevó toda la atención. Igual, al final la reina fui yo.",
+"ru": "Красивая площадь. Жаль ту ночь: русская вышла на сцену и забрала всё внимание. Впрочем, в итоге королевой стала я."
+}
+],
+"img": {
+"src": "img/lugares/md-plaza-independencia.webp",
+"n": "el-misterio-de-los-fader",
+"c": "6"
+}
+},
+{
+"id": "md-hotel-plaza",
+"nombre": "Hotel Plaza (hoy Park Hyatt)",
+"otros": [
+"Park Hyatt",
+"Хаятт"
+],
+"cat": "edificio",
+"x": -146,
+"y": 105,
+"modelo": "hotel",
+"desc": "El hotel antiguo frente a la Plaza Independencia, sobre la calle Chile. En «La reina de la Vendimia», Jana alquila ahí un cuarto chico, pagado en efectivo: techo alto, ventilador lento, cama de hierro y un balcón sobre la fuente. De noche lee el cuaderno negro de Mark. En «El misterio de los Fader», Luis y Natalia duermen en el hotel de enfrente de la plaza, y antes de la gran jornada de la Vendimia toman café en un bar cerca del Hyatt, con olor a café recién hecho y a chocolate mendocino. El edificio real, el viejo Plaza Hotel, hoy es el Park Hyatt Mendoza.",
+"nombre_ru": "Отель «Плаза» (сейчас Park Hyatt)",
+"desc_ru": "Старый отель напротив Площади Независимости, на улице Чили. В «Королеве Вендимии» Яна снимает там маленький номер и платит наличными: высокий потолок, медленный вентилятор, железная кровать и балкон над фонтаном. По ночам она читает чёрную тетрадь Марка. В «Тайне семьи Фадер» Луис и Наталья ночуют в отеле напротив площади, а перед большим днём Вендимии пьют кофе в кафе рядом с «Хаяттом» — пахнет свежим кофе и мендосским шоколадом. Настоящее здание, старый отель «Плаза», сегодня — Park Hyatt Mendoza.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"5",
+"La Cabalgata"
+],
+[
+"18",
+"Las ruinas de San Francisco"
+],
+[
+"34",
+"Lo que no se cuenta"
+],
+[
+"49",
+"Praga sin nieve"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"41",
+"La Noche en el Centro y el Encuentro con el Pasado"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"41",
+"Ночь в центре и встреча с прошлым"
+]
+]
+}
+],
+"res": [
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 4,
+"es": "Techo alto, ventilador lento, cama de hierro y balcón sobre la fuente. El ventilador no enfría, pero acompaña. Pagué en efectivo y nadie me pidió documento. Le saco una estrella por las paredes finas: de noche leía en voz baja.",
+"ru": "Высокий потолок, медленный вентилятор, железная кровать и балкон над фонтаном. Вентилятор не охлаждает, но составляет компанию. Платила наличными, документов никто не спросил. Минус звезда за тонкие стены: по ночам приходилось читать шёпотом."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Dormimos acá con Natalia después de la Vendimia. Y antes del gran día, café en un bar a la vuelta: olía a café recién hecho y a chocolate mendocino. Vuelvo siempre.",
+"ru": "Мы с Натальей ночевали здесь после Вендимии. А перед большим днём пили кофе в кафе за углом: пахло свежим кофе и мендосским шоколадом. Возвращаюсь сюда всегда."
+}
+],
+"img": {
+"src": "img/lugares/md-hotel-plaza.webp",
+"n": "la-reina-de-la-vendimia",
+"c": "6"
+}
+},
+{
+"id": "md-km0",
+"nombre": "Kilómetro Cero (Peatonal y San Martín)",
+"cat": "plaza",
+"x": 478,
+"y": -106,
+"modelo": "ninguno",
+"desc": "La esquina de la avenida San Martín y la Peatonal Sarmiento, que los mendocinos siguen llamando Kilómetro Cero: durante más de un siglo fue el punto de encuentro de la ciudad (el kilómetro cero oficial de las rutas se mudó después a San Martín y Vicente Zapata). En «El misterio de los Fader», Luis se lo muestra a Natalia desde el Gacel: «Desde acá se miden todas las distancias de la provincia. Es el corazón de Mendoza». En «Дикий час: Духи гор» es el centro de todo: la noche de la fiesta Natasha le dice a una chica perdida «Yo voy en tu lugar» y se vuelve reina de Las Heras; de acá sale la Vía Blanca, acá es el duelo contra el chamán Carlos y Jack, que quería levantar en este lugar su nueva residencia, y acá termina la novela. En «Anomalía», la cita a ciegas es junto a la fuente del Kilómetro Cero.",
+"nombre_ru": "Нулевой километр (Пеатональ и Сан-Мартин)",
+"desc_ru": "Перекрёсток проспекта Сан-Мартин и пешеходной улицы Сармьенто — мендосинцы до сих пор называют его Нулевым километром: больше века здесь встречался весь город (официальный нулевой километр дорог потом перенесли на угол Сан-Мартин и Висенте Сапата). В «Тайне семьи Фадер» Луис показывает его Наталье из «Гасели»: «Отсюда меряют все расстояния в провинции. Это сердце Мендосы». В «Диком часе: Духах гор» здесь всё и происходит: в ночь праздника Наташа говорит растерянной девушке «Я буду вместо тебя» и становится королевой Лас-Эраса; отсюда начинается «Виа Бланка», здесь дуэль с шаманом Карлосом и Джеком, который хотел построить здесь свою новую резиденцию, здесь и финал. В «Аномалии» свидание вслепую назначено у фонтана Нулевого километра.",
+"apar": [
+{
+"n": "anomalia",
+"c": [
+[
+"1",
+"La anomalía"
+],
+[
+"5",
+"La loca"
+],
+[
+"12",
+"El Espejo Roto"
+],
+[
+"13",
+"La Venganza del Pingüino"
+],
+[
+"15",
+"El Subsecretario"
+],
+[
+"18",
+"Puente del Inca"
+],
+[
+"19",
+"El Espejo Entero"
+],
+[
+"20",
+"Kilómetro Cero"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"6",
+"Неожиданная королева Вендимии"
+],
+[
+"7",
+"Прошлое оставляет подсказки"
+],
+[
+"39",
+"«Виа Бланка»"
+],
+[
+"40",
+"Встреча в соборе Эль-Чальяо"
+],
+[
+"56",
+""
+],
+[
+"extra-3",
+"Интервью с Марком, детективом"
+],
+[
+"extra-5",
+"Интервью с Хулиетой"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"20",
+"Королева, которая не хотела быть королевой"
+],
+[
+"40",
+"Просьба Ирины"
+],
+[
+"41",
+"Нулевой километр"
+],
+[
+"47",
+"Дуэль в центре"
+],
+[
+"53",
+"Нулевой километр II"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"6",
+"La Reina Inesperada de la Vendimia"
+],
+[
+"39",
+"La Vía Blanca"
+],
+[
+"extra-3",
+"Entrevista con Marcos, el detective"
+]
+]
+},
+{
+"n": "divlji-chas-malbec",
+"c": [
+[
+"17",
+"Тамо где почињу сви путеви"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "«Desde acá se miden todas las distancias de la provincia. Es el corazón de Mendoza.» Se lo dije a Natalia desde el Gacel, y lo sostengo.",
+"ru": "«Отсюда меряют все расстояния в провинции. Это сердце Мендосы». Я сказал это Наталье из «Гасели» — и могу повторить."
+},
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "Le dije a una chica asustada «Yo voy en tu lugar» y diez minutos después era la reina de Las Heras. Sin ensayo. Recomiendo el lugar para decisiones impulsivas.",
+"ru": "Сказала испуганной девушке: «Я буду вместо тебя» — и через десять минут стала королевой Лас-Эраса. Без репетиций. Рекомендую для импульсивных решений."
+},
+{
+"a": "Jack",
+"ar": "Джек",
+"s": 1,
+"es": "Quería levantar acá mi nueva residencia. Llegaron dos en moto y no me dejaron. Pésima atención.",
+"ru": "Хотел построить здесь свою новую резиденцию. Приехали двое на мотоцикле и не дали. Ужасное обслуживание."
+}
+],
+"img": {
+"src": "img/lugares/md-km0.webp",
+"n": "anomalia",
+"c": "1"
+}
+},
+{
+"id": "md-peatonal",
+"nombre": "Peatonal Sarmiento",
+"cat": "calle",
+"x": 299,
+"y": -66,
+"modelo": "ninguno",
+"desc": "Tres cuadras peatonales, de la Plaza Independencia a la avenida San Martín, con cafés, mesas en la vereda y baldosas. En «La reina de la Vendimia», después de los once minutos que nadie recuerda, el móvil de Canal 9 sale a la Peatonal a preguntarles a los vecinos dónde estaban el sábado a las once.",
+"nombre_ru": "Пешеходная улица Сармьенто",
+"desc_ru": "Три пешеходных квартала от Площади Независимости до проспекта Сан-Мартин: кафе, столики на тротуаре, плитка. В «Королеве Вендимии», после одиннадцати минут, которых никто не помнит, съёмочная группа «Канала 9» выходит на Пеатональ и спрашивает прохожих, где они были в субботу в одиннадцать.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"10",
+"Noticiero 9"
+]
+]
+}
+]
+},
+{
+"id": "md-av-san-martin",
+"nombre": "Avenida San Martín",
+"cat": "calle",
+"x": 386,
+"y": -525,
+"modelo": "ninguno",
+"desc": "La columna vertebral de Mendoza: cruza el centro de norte a sur y sigue hasta Godoy Cruz y Luján de Cuyo. En la Vendimia por ella pasan la Vía Blanca de las Reinas, el desfile nocturno de carros iluminados, y el Carrusel del sábado por la mañana, con gauchos, caballos y las reinas de los dieciocho departamentos. En «La reina de la Vendimia» los carros avanzan iluminados «como barcos en la noche», y el día del Carrusel aparecen en medio de la avenida un dragón, un carruaje negro y Luis Fader con las zapatillas mojadas. En «Дикий час: Духи гор» la Vía Blanca sale del Kilómetro Cero.",
+"nombre_ru": "Проспект Сан-Мартин",
+"desc_ru": "Хребет Мендосы: проспект пересекает центр с севера на юг и тянется до Годой-Круса и Лухан-де-Куйо. Во время Вендимии по нему проходит «Виа Бланка» — ночное шествие королев на светящихся платформах — и субботний утренний «Карусель» с гаучо, лошадьми и королевами восемнадцати департаментов. В «Королеве Вендимии» платформы плывут в огнях, «как корабли в ночи», а в день Карусели посреди проспекта появляются дракон, чёрная карета и Луис Фадер в мокрых кроссовках. В «Диком часе: Духах гор» «Виа Бланка» начинается от Нулевого километра.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"4",
+"La reina rubia"
+],
+[
+"22",
+"Potrerillos"
+],
+[
+"23",
+"Natasha Primera"
+],
+[
+"24",
+"Las raíces del cielo"
+],
+[
+"25",
+"Acá no paramos nada"
+],
+[
+"26",
+"Los pactos se cumplen"
+],
+[
+"27",
+"Antes de que se enciendan las luces"
+],
+[
+"30",
+"Morana"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"34",
+"Lo que no se cuenta"
+],
+[
+"35",
+"Chispas sobre la cordillera"
+],
+[
+"37",
+"Las lágrimas de la reina"
+],
+[
+"41",
+"Lo que se lleva la Mulánima"
+],
+[
+"42",
+"Lo que vio la checa"
+],
+[
+"43",
+"Pasión eslava"
+],
+[
+"44",
+"Pelo negro"
+],
+[
+"47",
+"La reina de Maipú"
+],
+[
+"48",
+"Esto acá no ha terminado"
+],
+[
+"49",
+"Praga sin nieve"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"15",
+"Дорога к истине"
+],
+[
+"27",
+"Камень памяти"
+],
+[
+"37",
+"Прямая трансляция"
+],
+[
+"38",
+"Перед Виа Бланкой"
+],
+[
+"40",
+"Просьба Ирины"
+],
+[
+"41",
+"Нулевой километр"
+],
+[
+"43",
+"Утро карусели"
+],
+[
+"48",
+"Боевая музыка"
+],
+[
+"extra-2",
+"Что такое Вендимия?"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"6",
+"La Reina Inesperada de la Vendimia"
+],
+[
+"23",
+"La Entrevista en Canal 9"
+],
+[
+"32",
+"El Zorro Protector"
+],
+[
+"39",
+"La Vía Blanca"
+],
+[
+"41",
+"La Noche en el Centro y el Encuentro con el Pasado"
+],
+[
+"43",
+"La Explicación de Karl Fader"
+],
+[
+"44",
+"El Carrusel de las Emociones"
+],
+[
+"extra-4",
+"Entrevista con Karl Fader, «el hechicero alemán»"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"6",
+"Неожиданная королева Вендимии"
+],
+[
+"23",
+"Интервью на «Канале 9»"
+],
+[
+"32",
+"Лис-защитник"
+],
+[
+"39",
+"«Виа Бланка»"
+],
+[
+"41",
+"Ночь в центре и встреча с прошлым"
+]
+]
+},
+{
+"n": "divlji-chas-malbec",
+"c": [
+[
+"3",
+"Република на два језика"
+],
+[
+"6",
+"Завера код моста Инка"
+],
+[
+"7",
+"Асадо код Марине и Катарине"
+],
+[
+"8",
+"Портрет за Настију"
+],
+[
+"9",
+"Ноћ Виа Бланке"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"4",
+"Blonďatá královna"
+],
+[
+"22",
+"Karusel"
+],
+[
+"23",
+"Kabely z nebe"
+]
+]
+}
+],
+"img": {
+"src": "img/lugares/md-av-san-martin.webp",
+"n": "la-reina-de-la-vendimia",
+"c": "5"
+}
+},
+{
+"id": "md-plaza-espana",
+"nombre": "Plaza España",
+"cat": "plaza",
+"x": 231,
+"y": -359,
+"modelo": "fuente",
+"desc": "La más vistosa de las plazas satélite: bancos, fuente y paredes de azulejos andaluces blancos y azules con escenas de la historia de Mendoza y de España. En «Дикий час: Духи гор», entre puestos de artesanos y olor a madera y a pintura, Natasha da su discurso de fuego: «¡Mendocinos! ¡Soy la futura reina de la Vendimia! ¡Soy Natasha Primera, representante del departamento de Las Heras!». Ahí está escondida la última señal: un azulejo con un dibujo único. En «Anomalía», la protagonista vuelve de golpe a su Mendoza y aparece en medio de la Plaza España, bajo el sol, entre los mosaicos andaluces.",
+"nombre_ru": "Площадь Испании",
+"desc_ru": "Самая нарядная из площадей-спутниц: скамейки, фонтан и стены, выложенные бело-синими андалусскими изразцами с картинами из истории Мендосы и Испании. В «Диком часе: Духах гор», среди ремесленных киосков, где пахнет деревом и краской, Наташа произносит огненную речь: «Мендосинцы! Я — будущая королева Вендимии! Я Наташа Первая, представительница департамента Лас-Эрас!» Здесь же спрятан последний знак — плитка с уникальным узором. В «Аномалии» героиня внезапно возвращается в свою Мендосу и оказывается посреди Площади Испании, под солнцем, среди андалусских мозаик.",
+"apar": [
+{
+"n": "anomalia",
+"c": [
+[
+"1",
+"La anomalía"
+],
+[
+"2",
+"Confusión en la plaza"
+],
+[
+"4",
+"El Regreso"
+],
+[
+"8",
+"Patadas, Portales y un Mauro Desmayado"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"56",
+""
+],
+[
+"extra-5",
+"Интервью с Хулиетой"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"33",
+"Площадь Испании и огненная речь"
+],
+[
+"extra-1",
+"Путеводитель по Мендосе"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "Subí a un banco y dije: «¡Mendocinos! ¡Soy Natasha Primera, representante del departamento de Las Heras!». Nadie se rió. Los azulejos son preciosos, y uno de ellos guardaba algo para nosotros.",
+"ru": "Встала на скамейку и сказала: «Мендосинцы! Я Наташа Первая, представительница департамента Лас-Эрас!» Никто не засмеялся. Изразцы чудесные, а одна плитка кое-что для нас хранила."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 4,
+"es": "Los artesanos, el olor a madera y a pintura, la fuente. Una estrella menos porque mi novia da discursos de fuego sin avisar.",
+"ru": "Ремесленники, запах дерева и краски, фонтан. Минус звезда: моя девушка произносит огненные речи без предупреждения."
+}
+],
+"img": {
+"src": "img/lugares/md-plaza-espana.webp",
+"n": "anomalia",
+"c": "4"
+}
+},
+{
+"id": "md-patricias",
+"nombre": "Calle Patricias Mendocinas",
+"cat": "calle",
+"x": 0,
+"y": -565,
+"modelo": "ninguno",
+"desc": "La calle que bordea el lado este de la Plaza Independencia. Lleva el nombre de las «patricias mendocinas», las mujeres que en 1816 donaron sus joyas para equipar al Ejército de los Andes de San Martín. En «Дикий час: Духи гор» la ciudad deja de estar en paz: en Patricias Mendocinas hay militares que cortan el tránsito, y Luis y Natasha corren a ver a Irina.",
+"nombre_ru": "Улица Патрисиас Мендосинас",
+"desc_ru": "Улица вдоль восточной стороны Площади Независимости. Названа в честь «мендосских патрицианок» — женщин, которые в 1816 году отдали свои драгоценности на снаряжение Андской армии Сан-Мартина. В «Диком часе: Духах гор» город перестаёт быть мирным: на Патрисиас Мендосинас стоят военные и перекрывают движение, а Луис и Наташа мчатся к Ирине.",
+"apar": [
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"23",
+"Запах дыма"
+]
+]
+}
+]
+},
+{
+"id": "md-libreria-garibaldi",
+"nombre": "La librería de la calle Garibaldi",
+"cat": "tienda",
+"x": 663,
+"y": -124,
+"modelo": "casa",
+"desc": "Garibaldi es la calle que sigue a la Peatonal del otro lado de la avenida San Martín. En «Дикий час: Духи гор», la primera noche, a pocas cuadras de la Plaza Independencia, Luis y Natasha se paran frente a una librería de la calle Garibaldi y Natasha entra derecho. La librería es de la novela; la calle es real.",
+"nombre_ru": "Книжный магазин на улице Гарибальди",
+"desc_ru": "Гарибальди — улица, которая продолжает Пеатональ по другую сторону проспекта Сан-Мартин. В «Диком часе: Духах гор» в первый же вечер, в нескольких кварталах от Площади Независимости, Луис и Наташа останавливаются у книжного магазина на улице Гарибальди, и Наташа сразу идёт внутрь. Магазин — из романа, улица — настоящая.",
+"apar": [
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"9",
+"Праздник, которого не ждали"
+]
+]
+}
+]
+},
+{
+"id": "md-casa-gobierno",
+"nombre": "Casa de Gobierno",
+"cat": "edificio",
+"x": -98,
+"y": -963,
+"modelo": "ministerio",
+"desc": "La sede del gobierno de la provincia, en el Barrio Cívico, al sur del centro, con la Legislatura y los tribunales alrededor. En «La reina de la Vendimia», Clara, de Canal 9, entrevista en vivo a «la reina rubia» frente a la Casa de Gobierno; Antonio Ferrer sube dos veces sus escaleras de mármol, y al final la presidenta Irina habla desde el balcón. En «Дикий час: Духи гор», cuando una pared de granizo avanza sobre Mendoza, Nastia levanta las manos y alrededor de la Casa de Gobierno se enciende una cúpula de luz; esa noche Irina da ahí una entrevista por televisión.",
+"nombre_ru": "Дом правительства",
+"desc_ru": "Резиденция правительства провинции в Гражданском квартале, к югу от центра; вокруг — Законодательное собрание и суды. В «Королеве Вендимии» Клара с «Канала 9» берёт прямо у Дома правительства интервью у «белокурой королевы»; Антонио Феррер дважды поднимается по его мраморной лестнице, а в финале президент Ирина говорит с балкона. В «Диком часе: Духах гор», когда на Мендосу движется стена града, Настя поднимает руки — и вокруг Дома правительства вспыхивает световой купол; вечером здесь же Ирина даёт телеинтервью.",
+"apar": [
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"10",
+"Ветер с гор"
+],
+[
+"15",
+"Дорога к истине"
+],
+[
+"22",
+"Операция «Чупакабра» — провал"
+],
+[
+"23",
+"Запах дыма"
+],
+[
+"31",
+"Ветер, который несёт угрозу"
+],
+[
+"34",
+"Тень, которая возвращается"
+],
+[
+"36",
+"Купол над Мендосой"
+],
+[
+"37",
+"Прямая трансляция"
+]
+]
+},
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"4",
+"La reina rubia"
+],
+[
+"25",
+"Acá no paramos nada"
+],
+[
+"41",
+"Lo que se lleva la Mulánima"
+],
+[
+"44",
+"Pelo negro"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"4",
+"Blonďatá královna"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"extra-4",
+"Entrevista con Karl Fader, «el hechicero alemán»"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"extra-4",
+"Интервью с Карлом Фадером, «немецким колдуном»"
+]
+]
+}
+],
+"res": [
+{
+"a": "Clara (Canal 9)",
+"ar": "Клара («Канал 9»)",
+"s": 4,
+"es": "Entrevista en vivo con la reina rubia frente a la escalinata. Buena luz a la tarde. Mal señal de celular en el hall.",
+"ru": "Прямой эфир с белокурой королевой у парадной лестницы. Хороший свет после обеда. В холле плохо ловит телефон."
+},
+{
+"a": "Nastia",
+"ar": "Настя",
+"s": 5,
+"es": "Vino la pared de granizo, levanté las manos y la cúpula aguantó. El edificio no tiene ni un vidrio roto. De nada.",
+"ru": "Пришла стена града, я подняла руки — и купол выдержал. В здании ни одного разбитого стекла. Не за что."
+},
+{
+"a": "Irina",
+"ar": "Ирина",
+"s": 4,
+"es": "A la noche di acá la entrevista: «Soy la futura reina de la Vendimia». Los periodistas se miraron entre ellos. Que se acostumbren.",
+"ru": "Вечером дала здесь интервью: «Я — будущая королева Вендимии». Журналисты переглянулись. Пусть привыкают."
+}
+]
+},
+{
+"id": "md-area-fundacional",
+"nombre": "Ruinas de San Francisco y Área Fundacional",
+"cat": "monumento",
+"x": 1467,
+"y": 1045,
+"modelo": "ruinas",
+"desc": "Acá estuvo la Mendoza colonial, fundada por Pedro del Castillo en 1561 y destruida por el terremoto del 20 de marzo de 1861: quedan la Plaza Pedro del Castillo, el Museo del Área Fundacional con las excavaciones bajo un techo de vidrio y los arcos de las ruinas de San Francisco. En «La reina de la Vendimia»: «Debajo de Mendoza hay otra Mendoza». Después del sismo de la fiesta aparece bajo las ruinas una losa removida y la entrada a unas criptas. Ahí Luis encuentra la piedra que respira vino, y ahí, a las nueve de la noche, Jana y Luis se encuentran entre los arcos rotos.",
+"nombre_ru": "Руины Сан-Франсиско и Район основания",
+"desc_ru": "Здесь стояла колониальная Мендоса, основанная Педро дель Кастильо в 1561 году и разрушенная землетрясением 20 марта 1861 года. Остались площадь Педро дель Кастильо, Музей района основания с раскопками под стеклянной крышей и арки руин Сан-Франсиско. В «Королеве Вендимии»: «Под Мендосой есть другая Мендоса». После толчка во время праздника под руинами обнаруживается сдвинутая плита и вход в крипты. Там Луис находит камень, который дышит вином, и там в девять вечера Яна и Луис встречаются среди разбитых арок.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"1",
+"Praga con nieve"
+],
+[
+"3",
+"Yanina"
+],
+[
+"6",
+"Debajo de Mendoza"
+],
+[
+"10",
+"Noticiero 9"
+],
+[
+"16",
+"La propuesta de Clara"
+],
+[
+"17",
+"El fuego y la casa"
+],
+[
+"18",
+"Las ruinas de San Francisco"
+],
+[
+"21",
+"Julieta"
+],
+[
+"42",
+"Lo que vio la checa"
+],
+[
+"49",
+"Praga sin nieve"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"1",
+"Praha se sněhem"
+],
+[
+"3",
+"Yanina"
+],
+[
+"6",
+"Pod Mendozou"
+],
+[
+"10",
+"Zprávy 9"
+],
+[
+"16",
+"Clařin návrh"
+],
+[
+"17",
+"Oheň a domov"
+],
+[
+"18",
+"Ruiny San Francisco"
+],
+[
+"28",
+"Obr"
+],
+[
+"29",
+"Srdce hory"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Debajo de Mendoza hay otra Mendoza. Bajé por una losa removida y encontré la piedra que respira vino. No es apto para claustrofóbicos.",
+"ru": "Под Мендосой есть другая Мендоса. Я спустился через сдвинутую плиту и нашёл камень, который дышит вином. Не для тех, кто боится тесноты."
+},
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 4,
+"es": "A las nueve de la noche, entre los arcos rotos. Llegué antes y esperé. Valió la pena.",
+"ru": "В девять вечера, среди разбитых арок. Я пришла раньше и ждала. Оно того стоило."
+}
+],
+"img": {
+"src": "img/lugares/md-area-fundacional.webp",
+"n": "la-reina-de-la-vendimia",
+"c": "6"
+}
+},
+{
+"id": "md-aristides",
+"nombre": "Calle Arístides Villanueva",
+"cat": "calle",
+"x": -1123,
+"y": -253,
+"modelo": "ninguno",
+"desc": "La calle de bares, cervecerías y restaurantes más famosa de Mendoza, en la Quinta Sección: es la continuación de la avenida Colón hacia el parque, y de noche las mesas ocupan las veredas. En «La reina de la Vendimia» está ahí la peluquería de Mirta, y después Jana y Julieta comen un lomito sentadas en el cordón, con los pies en la acequia.",
+"nombre_ru": "Улица Аристидес Вильянуэва",
+"desc_ru": "Самая известная улица баров, пивных и ресторанов Мендосы, в Пятой секции: продолжение проспекта Колон в сторону парка; вечером столики занимают все тротуары. В «Королеве Вендимии» здесь парикмахерская Мирты, а потом Яна и Джульета едят ломито, сидя на бордюре и опустив ноги в арык.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"3",
+"Yanina"
+],
+[
+"15",
+"Clara sabe"
+],
+[
+"21",
+"Julieta"
+],
+[
+"25",
+"Acá no paramos nada"
+],
+[
+"27",
+"Antes de que se enciendan las luces"
+],
+[
+"41",
+"Lo que se lleva la Mulánima"
+],
+[
+"44",
+"Pelo negro"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"3",
+"Yanina"
+],
+[
+"15",
+"Clara ví"
+],
+[
+"20",
+"Julieta"
+],
+[
+"30",
+"Zlatá voda"
+]
+]
+}
+],
+"res": [
+{
+"a": "Julieta Arancibia",
+"ar": "Джульета Арансибия",
+"s": 5,
+"es": "Un lomito sentadas en el cordón, con los pies en la acequia, al lado de la que se suponía que era mi rival. La mejor cena de la Vendimia.",
+"ru": "Ломито, сидя на бордюре, ноги в арыке, рядом с той, кто вроде бы была моей соперницей. Лучший ужин всей Вендимии."
+},
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "Bares, mesas en la vereda, una heladería. Y la peluquería donde me convertí en otra. Esta calle me cambió la cara, literal.",
+"ru": "Бары, столики на тротуаре, кафе-мороженое. И парикмахерская, где я стала другой. Эта улица поменяла мне лицо — в прямом смысле."
+}
+]
+},
+{
+"id": "md-mirta",
+"nombre": "Peluquería «Mirta, Estilo & Color»",
+"cat": "tienda",
+"x": -901,
+"y": -327,
+"modelo": "casa",
+"desc": "En la calle Arístides Villanueva, entre un bar con mesas en la vereda y una heladería: aire acondicionado, cumbia en la radio, olor a laca y a café. Mirta, sesenta años, bajita, pelo violeta y anteojos con brillitos, tarda tres horas en convertir a Jana en rubia trigo con reflejos de miel, y en ese tiempo le cuenta su divorcio, lo de su hija que vive en España y lo de la vecina que le roba el agua de la acequia. «¡Pero si sos una reina!» Ese mismo día nace Yanina, de Bariloche, «hija de checos». La peluquería es de la novela; la calle es real.",
+"nombre_ru": "Парикмахерская «Мирта, стиль и цвет»",
+"desc_ru": "На улице Аристидес Вильянуэва, между баром со столиками на тротуаре и кафе-мороженым: кондиционер, кумбия по радио, запах лака и кофе. Мирта — шестьдесят лет, маленькая, с фиолетовыми волосами и в очках со стразами — за три часа превращает Яну в блондинку цвета пшеницы с медовыми бликами и успевает рассказать про свой развод, про дочь в Испании и про соседку, которая ворует у неё воду из арыка. «Да ты же королева!» В тот же день рождается Янина из Барилоче, «дочь чехов». Парикмахерская — из романа, улица — настоящая.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"3",
+"Yanina"
+],
+[
+"9",
+"La isla del volcán"
+],
+[
+"10",
+"Noticiero 9"
+],
+[
+"15",
+"Clara sabe"
+],
+[
+"16",
+"La propuesta de Clara"
+],
+[
+"18",
+"Las ruinas de San Francisco"
+],
+[
+"25",
+"Acá no paramos nada"
+],
+[
+"26",
+"Los pactos se cumplen"
+],
+[
+"41",
+"Lo que se lleva la Mulánima"
+],
+[
+"44",
+"Pelo negro"
+],
+[
+"48",
+"Esto acá no ha terminado"
+],
+[
+"49",
+"Praga sin nieve"
+]
+]
+}
+],
+"res": [
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "Entré morocha y salí rubia trigo con reflejos de miel. Tres horas. Me enteré del divorcio de Mirta, de su hija en España y de la vecina que le roba el agua de la acequia. Salí con otro nombre.",
+"ru": "Вошла брюнеткой, вышла блондинкой цвета пшеницы с медовыми бликами. Три часа. Узнала про развод Мирты, про её дочь в Испании и про соседку, которая ворует у неё воду из арыка. Вышла с другим именем."
+},
+{
+"a": "Graciela",
+"ar": "Грасьела",
+"s": 4,
+"es": "Mi cuñada tiene ojo: me mandó una reina sin documento. La contratamos igual, estábamos desesperados. Una estrella menos por los nervios que pasé.",
+"ru": "У моей золовки глаз-алмаз: прислала мне королеву без документов. Мы всё равно её взяли — были в отчаянии. Минус звезда за мои нервы."
+},
+{
+"a": "Mirta",
+"ar": "Мирта",
+"s": 5,
+"es": "Respuesta del propietario: ese rubio trigo con reflejos miel no se lo hace cualquiera. Turnos por teléfono. A las reinas, descuento.",
+"ru": "Ответ владельца: такой пшеничный блонд с медовыми бликами кому попало не сделают. Запись по телефону. Королевам скидка."
+}
+],
+"img": {
+"src": "img/lugares/md-mirta.webp",
+"n": "la-reina-de-la-vendimia",
+"c": "3"
+}
+},
+{
+"id": "md-casa-mirta",
+"nombre": "Casa de Mirta (Godoy Cruz)",
+"cat": "casa",
+"x": 467,
+"y": -4467,
+"modelo": "hogar",
+"desc": "Una casita baja en un barrio de Godoy Cruz. En «La reina de la Vendimia», Jana llega a las dos de la mañana, a pie, con el vestido blanco rasgado y los zapatos en la mano. Mirta abre en camisón y con ruleros, no pregunta nada, le da un camisón suyo y la cama de su hija que vive en España: «Mañana me contás. O nunca». A la tarde toca el timbre Julieta Arancibia, «la leona» de Godoy Cruz: «Acá todo el mundo sabe quién tiñe a quién». La casa es de la novela; el barrio es real.",
+"nombre_ru": "Дом Мирты (Годой-Крус)",
+"desc_ru": "Низенький домик в одном из кварталов Годой-Круса. В «Королеве Вендимии» Яна приходит сюда в два часа ночи пешком, в разорванном белом платье и с туфлями в руках. Мирта открывает в ночной рубашке и бигуди, ни о чём не спрашивает, даёт ей свою рубашку и кровать дочери, которая живёт в Испании: «Завтра расскажешь. Или никогда». Днём в дверь звонит Джульета Арансибия, «львица» Годой-Круса: «Здесь все знают, кто кого красит». Дом — из романа, район — настоящий.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"9",
+"La isla del volcán"
+],
+[
+"11",
+"El hilo bordó"
+],
+[
+"17",
+"El fuego y la casa"
+]
+]
+}
+],
+"res": [
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "Toqué el timbre a las dos de la mañana, descalza, con el vestido roto. Mirta abrió con ruleros, no preguntó nada y me dio la cama de su hija. «Mañana me contás. O nunca.» Nunca me sentí tan en casa.",
+"ru": "Позвонила в два часа ночи, босиком, в разорванном платье. Мирта открыла в бигуди, ничего не спросила и уложила меня в кровать дочери. «Завтра расскажешь. Или никогда». Никогда не чувствовала себя настолько дома."
+},
+{
+"a": "Julieta Arancibia",
+"ar": "Джульета Арансибия",
+"s": 4,
+"es": "La encontré enseguida. Godoy Cruz es mi departamento: acá todo el mundo sabe quién tiñe a quién. El café con leche, muy bueno.",
+"ru": "Нашла её сразу. Годой-Крус — мой департамент: здесь все знают, кто кого красит. Кофе с молоком отличный."
+}
+],
+"img": {
+"src": "img/lugares/md-casa-mirta.webp",
+"n": "la-reina-de-la-vendimia",
+"c": "9"
+}
+},
+{
+"id": "md-super-godoy",
+"nombre": "Supermercado de Godoy Cruz",
+"cat": "tienda",
+"x": -234,
+"y": -3691,
+"modelo": "mercado",
+"desc": "En «La reina de la Vendimia», durante la tarde de locura que se apodera de Mendoza, a las cinco y cuarto, en un supermercado de Godoy Cruz, una señora de setenta años —vecina de toda la vida, abuela de cuatro nietos, socia de la cooperadora de la escuela— empieza a tirar al piso, una por una y riéndose, las latas de tomate de la góndola. Cuando todo pasa, vuelve con latas nuevas y le deja al cajero una torta de chocolate y una nota: «perdón, nene, no sé qué me pasó». El supermercado es de la novela.",
+"nombre_ru": "Супермаркет в Годой-Крусе",
+"desc_ru": "В «Королеве Вендимии», в тот вечер безумия, который охватывает Мендосу, в четверть шестого в супермаркете Годой-Круса семидесятилетняя сеньора — соседка с незапамятных времён, бабушка четырёх внуков, член школьного попечительского совета — начинает со смехом сбрасывать на пол банки с томатами, одну за другой. Когда всё проходит, она приносит новые банки и оставляет кассиру шоколадный торт с запиской: «Прости, сынок, не знаю, что на меня нашло». Супермаркет — из романа.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"25",
+"Acá no paramos nada"
+],
+[
+"41",
+"Lo que se lleva la Mulánima"
+]
+]
+}
+],
+"res": [
+{
+"a": "La señora de las latas",
+"ar": "Сеньора с банками",
+"s": 5,
+"es": "Perdón, nene, no sé qué me pasó. Volví con las latas de tomate nuevas y una torta de chocolate para el cajero. Muy amables, no me echaron.",
+"ru": "Прости, сынок, не знаю, что на меня нашло. Я вернулась с новыми банками томатов и шоколадным тортом для кассира. Очень вежливые, не выгнали."
+}
+]
+},
+{
+"id": "md-parque",
+"nombre": "Parque General San Martín",
+"cat": "parque",
+"x": -2711,
+"y": -419,
+"modelo": "parque",
+"desc": "El gran parque del oeste, diseñado en 1896 por el paisajista Carlos Thays: más de trescientas hectáreas de árboles plantados en pleno desierto, el lago de las regatas, el Rosedal, la Fuente de los Continentes y, al fondo, el Cerro de la Gloria. En «La reina de la Vendimia» la primera reunión de candidatas es en un salón del parque («Esto no es un concurso de belleza. Es la Vendimia»), y Julieta pasea a Jana en su Fiat Uno por el lago, los remos y el Rosedal. En «El misterio de los Fader», en la entrada del parque un hombre de guantes y maletín negro hace un intercambio secreto, Karl Fader mandó esconder acá unos baúles hace siglo y medio, y en la noche de la Vía Blanca el parque brilla con miles de luces. En «Дикий час: Духи гор», al mediodía, un rapero canta en castellano con acento ruso junto a la fuente.",
+"nombre_ru": "Парк Генерала Сан-Мартина",
+"desc_ru": "Большой парк на западе города, спроектированный в 1896 году ландшафтным архитектором Карлосом Тэйсом: больше трёхсот гектаров деревьев посреди пустыни, озеро для регат, розарий, Фонтан Континентов, а в глубине — Холм Славы. В «Королеве Вендимии» первое собрание кандидаток проходит в зале парка («Это не конкурс красоты. Это Вендимия»), а Джульета катает Яну на своём «Фиате Уно» вдоль озера, лодок и розария. В «Тайне семьи Фадер» у входа в парк человек в перчатках с чёрным чемоданчиком совершает тайный обмен; полтора века назад Карл Фадер велел спрятать здесь сундуки, а в ночь «Виа Бланки» парк сияет тысячами огней. В «Диком часе: Духах гор» в полдень у фонтана рэпер поёт по-испански с русским акцентом.",
+"apar": [
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"5",
+"В парке"
+],
+[
+"6",
+"Неожиданная королева Вендимии"
+],
+[
+"9",
+"Слава и тайны"
+],
+[
+"10",
+"Роскошный ужин"
+],
+[
+"33",
+"Игра власти в Буэнос-Айресе"
+],
+[
+"34",
+"Предательство на факультете"
+],
+[
+"37",
+"Тайна картин Фадера"
+],
+[
+"39",
+"«Виа Бланка»"
+],
+[
+"40",
+"Встреча в соборе Эль-Чальяо"
+]
+]
+},
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"4",
+"La reina rubia"
+],
+[
+"7",
+"La Mulánima"
+],
+[
+"21",
+"Julieta"
+],
+[
+"27",
+"Antes de que se enciendan las luces"
+],
+[
+"43",
+"Pasión eslava"
+],
+[
+"49",
+"Praga sin nieve"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"5",
+"En el parque"
+],
+[
+"9",
+"Fama y Misterios"
+],
+[
+"33",
+"El juego de poder en Buenos Aires"
+],
+[
+"37",
+"El secreto en los cuadros de Fader"
+],
+[
+"39",
+"La Vía Blanca"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"30",
+"Вдохновение, спрятанное в музее"
+],
+[
+"32",
+"Шум фонтана и исполнение желаний"
+],
+[
+"extra-1",
+"Путеводитель по Мендосе"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"4",
+"Blonďatá královna"
+],
+[
+"20",
+"Julieta"
+]
+]
+}
+],
+"res": [
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "Julieta me llevó en su Fiat Uno por el lago, los botes y el Rosedal. El Fiat sufría en las subidas, pero el parque es un milagro: un bosque plantado en el desierto.",
+"ru": "Джульета катала меня на «Фиате Уно» мимо озера, лодок и розария. «Фиат» страдал на подъёмах, но парк — чудо: лес, посаженный в пустыне."
+},
+{
+"a": "Julieta Arancibia",
+"ar": "Джульета Арансибия",
+"s": 4,
+"es": "En el salón del parque se lo dije claro a la nueva: «Esto no es un concurso de belleza. Es la Vendimia». Una estrella menos por el estacionamiento.",
+"ru": "В зале парка я ясно сказала новенькой: «Это не конкурс красоты. Это Вендимия». Минус звезда за парковку."
+},
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 4,
+"es": "Al mediodía, junto a la fuente, un rapero cantaba en castellano con acento ruso. Muy raro. Muy lindo.",
+"ru": "В полдень у фонтана рэпер пел по-испански с русским акцентом. Очень странно. Очень красиво."
+}
+]
+},
+{
+"id": "md-fuente-continentes",
+"nombre": "Fuente de los Continentes",
+"cat": "monumento",
+"x": -2071,
+"y": 70,
+"modelo": "fuente",
+"desc": "La fuente monumental de la entrada del Parque San Martín, una de las postales más fotografiadas de Mendoza. En «Дикий час: Духи гор», mientras todos miran al rapero que canta en el escenario junto a la fuente, Luis busca entre las esculturas una pieza de piedra con los símbolos de los cuatro puntos cardinales.",
+"nombre_ru": "Фонтан Континентов",
+"desc_ru": "Монументальный фонтан у входа в парк Сан-Мартина, один из самых фотографируемых уголков Мендосы. В «Диком часе: Духах гор», пока все смотрят на рэпера на сцене у фонтана, Луис ищет среди скульптур каменный элемент с символами четырёх сторон света.",
+"apar": [
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"32",
+"Шум фонтана и исполнение желаний"
+],
+[
+"extra-1",
+"Путеводитель по Мендосе"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 4,
+"es": "Mientras todos miraban al rapero, yo buscaba entre las esculturas una piedra con los cuatro puntos cardinales. La encontré. La fuente es hermosa, aunque yo la miré de rodillas.",
+"ru": "Пока все смотрели на рэпера, я искал среди скульптур камень с четырьмя сторонами света. Нашёл. Фонтан прекрасен, хотя я разглядывал его на коленях."
+}
+]
+},
+{
+"id": "md-cerro-gloria",
+"nombre": "Cerro de la Gloria",
+"cat": "monumento",
+"x": -4368,
+"y": 88,
+"modelo": "monumento-andes",
+"desc": "El cerro del fondo del Parque San Martín. Arriba está el Monumento al Ejército de los Andes, inaugurado en 1914: San Martín a caballo, granaderos, cañones y la figura de la Libertad rompiendo las cadenas. Desde la cima se ve toda la ciudad y, al oeste, la cordillera. En «La reina de la Vendimia», Julieta sube con Jana en el Fiat Uno, y más tarde el cerro es el lugar de una cita: «Hoy a las ocho. Sola».",
+"nombre_ru": "Холм Славы (Серро-де-ла-Глория)",
+"desc_ru": "Холм в глубине парка Сан-Мартина. На вершине — памятник Андской армии, открытый в 1914 году: Сан-Мартин на коне, гренадеры, пушки и фигура Свободы, разрывающей цепи. Сверху виден весь город, а на западе — Кордильера. В «Королеве Вендимии» Джульета поднимается сюда с Яной на «Фиате Уно», а позже холм становится местом свидания: «Сегодня в восемь. Одна».",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"4",
+"La reina rubia"
+],
+[
+"21",
+"Julieta"
+],
+[
+"43",
+"Pasión eslava"
+],
+[
+"48",
+"Esto acá no ha terminado"
+],
+[
+"50",
+"Smrtná neděle"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"20",
+"Julieta"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"46",
+"Луис Фадер, ведущий"
+]
+]
+}
+],
+"res": [
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "Subimos con Julieta y su Fiat Uno, que en las curvas rezaba. Arriba, San Martín a caballo, toda la ciudad a los pies y la cordillera al fondo. Volví de noche, sola, a las ocho.",
+"ru": "Поднимались с Джульетой на её «Фиате Уно», который на поворотах молился. Наверху — Сан-Мартин на коне, весь город у ног и Кордильера вдали. Я вернулась сюда вечером, одна, в восемь."
+},
+{
+"a": "Zmaj",
+"ar": "Змай",
+"s": 4,
+"es": "Desde arriba se ve bien el Teatro Griego. Buen lugar para aterrizar si no hay turistas.",
+"ru": "Сверху хорошо виден Греческий театр. Хорошее место для посадки, если нет туристов."
+}
+]
+},
+{
+"id": "md-teatro-griego",
+"nombre": "Teatro Griego Frank Romero Day",
+"cat": "monumento",
+"x": -4555,
+"y": -240,
+"modelo": "anfiteatro",
+"desc": "El anfiteatro al aire libre al pie de los cerros del Parque San Martín, con lugar para más de veinte mil personas. Cada año acá se hace el Acto Central de la Fiesta Nacional de la Vendimia y se elige a la Reina Nacional entre las candidatas de los dieciocho departamentos. En «La reina de la Vendimia»: «No se parece a ningún teatro. No tiene techo. Es un cerro». En la fiesta de la Ciudad se abre una grieta y salen llamas doradas y violetas, y en el Acto Central el escrutinio va voto a voto entre Maipú y Godoy Cruz. En «El misterio de los Fader», Natalia y Carlita Martínez empatan, todo depende del último sobre; después los guerreros mapuches toman el escenario y Luis, al romper el cetro cargado de hidromiel, se vuelve inmortal.",
+"nombre_ru": "Греческий театр Франка Ромеро Дая",
+"desc_ru": "Амфитеатр под открытым небом у подножия холмов парка Сан-Мартина, больше чем на двадцать тысяч зрителей. Каждый год здесь проходит Центральный акт Национального праздника Вендимии и выбирают Национальную королеву из кандидаток восемнадцати департаментов. В «Королеве Вендимии»: «Он не похож ни на один театр. У него нет крыши. Это холм». На городском празднике открывается трещина и вырываются золотые и фиолетовые языки пламени, а на Центральном акте подсчёт идёт голос за голосом между Майпу и Годой-Крусом. В «Тайне семьи Фадер» Наталья и Карлита Мартинес набирают поровну, всё решает последний конверт; потом сцену захватывают воины-мапуче, а Луис, разбив скипетр с медовухой, становится бессмертным.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"3",
+"Yanina"
+],
+[
+"4",
+"La reina rubia"
+],
+[
+"5",
+"La Cabalgata"
+],
+[
+"6",
+"Debajo de Mendoza"
+],
+[
+"7",
+"La Mulánima"
+],
+[
+"8",
+"Halí belí"
+],
+[
+"9",
+"La isla del volcán"
+],
+[
+"10",
+"Noticiero 9"
+],
+[
+"12",
+"La coronación"
+],
+[
+"13",
+"La respuesta de la isla"
+],
+[
+"14",
+"Noche de zonda"
+],
+[
+"15",
+"Clara sabe"
+],
+[
+"16",
+"La propuesta de Clara"
+],
+[
+"19",
+"Rodrigo"
+],
+[
+"21",
+"Julieta"
+],
+[
+"22",
+"Potrerillos"
+],
+[
+"23",
+"Natasha Primera"
+],
+[
+"24",
+"Las raíces del cielo"
+],
+[
+"25",
+"Acá no paramos nada"
+],
+[
+"26",
+"Los pactos se cumplen"
+],
+[
+"27",
+"Antes de que se enciendan las luces"
+],
+[
+"28",
+"Cuarenta mil sin borde"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"38",
+"El corazón de la montaña"
+],
+[
+"43",
+"Pasión eslava"
+],
+[
+"44",
+"Pelo negro"
+],
+[
+"46",
+"Acto Central"
+],
+[
+"47",
+"La reina de Maipú"
+],
+[
+"49",
+"Praga sin nieve"
+],
+[
+"50",
+"Smrtná neděle"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"41",
+"La Noche en el Centro y el Encuentro con el Pasado"
+],
+[
+"43",
+"La Explicación de Karl Fader"
+],
+[
+"45",
+"La logia desconocida"
+],
+[
+"46",
+"Luis Fader El conductor"
+],
+[
+"47",
+"Votación y tensión"
+],
+[
+"48",
+"La Revancha de la Historia"
+],
+[
+"49",
+"La Batalla en el Anfiteatro"
+],
+[
+"50",
+"Luis el inmortal"
+],
+[
+"51",
+"El final de una era y el comienzo de una nueva"
+],
+[
+"extra-3",
+"Entrevista con Marcos, el detective"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"45",
+"Неизвестная ложа"
+],
+[
+"46",
+"Луис Фадер, ведущий"
+],
+[
+"47",
+"Голосование и напряжение"
+],
+[
+"48",
+"Реванш истории"
+],
+[
+"49",
+"Битва в амфитеатре"
+],
+[
+"50",
+"Луис бессмертный"
+],
+[
+"51",
+"Конец одной эпохи и начало новой"
+],
+[
+"extra-2",
+"Последняя глава"
+],
+[
+"extra-3",
+"Интервью с Марком, детективом"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"7",
+"Mulánima"
+],
+[
+"26",
+"Popel nad Řeckým divadlem"
+],
+[
+"27",
+"Paní s černým prstenem"
+],
+[
+"30",
+"Zlatá voda"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"extra-2",
+"Что такое Вендимия?"
+]
+]
+}
+],
+"res": [
+{
+"a": "Julieta Arancibia",
+"ar": "Джульета Арансибия",
+"s": 5,
+"es": "Esto no es un concurso de belleza. Es la Vendimia. El escrutinio fue voto a voto entre Maipú y Godoy Cruz y casi me muero. Lugar sagrado.",
+"ru": "Это не конкурс красоты. Это Вендимия. Подсчёт шёл голос за голосом между Майпу и Годой-Крусом, и я чуть не умерла. Святое место."
+},
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 4,
+"es": "No se parece a ningún teatro. No tiene techo. Es un cerro. Le saco una estrella por la grieta con llamas violetas en medio de la fiesta.",
+"ru": "Он не похож ни на один театр. У него нет крыши. Это холм. Минус звезда за трещину с фиолетовым пламенем посреди праздника."
+},
+{
+"a": "Carlita Martínez",
+"ar": "Карлита Мартинес",
+"s": 5,
+"es": "Empatamos con la rusa y todo dependió del último sobre. La reina fui yo. Las Heras, presente.",
+"ru": "Мы с русской набрали поровну, и всё решил последний конверт. Королевой стала я. Лас-Эрас, мы здесь."
+},
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 3,
+"es": "Empate, sobre, guerreros mapuches en el escenario y mi marido que se vuelve inmortal. Para ser una fiesta del vino, demasiada acción.",
+"ru": "Ничья, конверт, воины-мапуче на сцене, и мой муж становится бессмертным. Для праздника вина — слишком много событий."
+}
+],
+"img": {
+"src": "img/lugares/md-teatro-griego.webp",
+"n": "la-reina-de-la-vendimia",
+"c": "7"
+}
+},
+{
+"id": "md-uncuyo",
+"nombre": "Universidad Nacional de Cuyo",
+"cat": "edificio",
+"x": -3000,
+"y": 1463,
+"modelo": "biblioteca",
+"desc": "La principal universidad de Mendoza, fundada en 1939, con su ciudad universitaria pegada al Parque San Martín, cerca de los cerros. En «El misterio de los Fader», de noche, en el campus vacío de la Facultad de Ciencias Políticas y Sociales, un grupo de mapuches desentierra un tesoro escondido ahí hace muchos años. En «Дикий час: Духи гор» Luis lleva a Natasha a su facultad: en la biblioteca, en el único ejemplar de «Las venas abiertas de América Latina» de Eduardo Galeano, hay un conjuro escondido en lengua huarpe: «Solo la fe en nuestra tierra nos salvará».",
+"nombre_ru": "Национальный университет Куйо",
+"desc_ru": "Главный университет Мендосы, основанный в 1939 году; его университетский городок примыкает к парку Сан-Мартина, рядом с холмами. В «Тайне семьи Фадер» ночью в пустом кампусе факультета политических и социальных наук группа мапуче выкапывает сокровище, спрятанное здесь много лет назад. В «Диком часе: Духах гор» Луис ведёт Наташу на свой факультет: в библиотеке, в единственном экземпляре «Вскрытых вен Латинской Америки» Эдуардо Галеано, спрятано заклинание на языке уарпе: «Только вера в нашу землю сохранит нас».",
+"apar": [
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"25",
+"La Revelación Interrumpida"
+],
+[
+"34",
+"La traición en la facultad"
+],
+[
+"46",
+"Luis Fader El conductor"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"27",
+"Камень памяти"
+],
+[
+"28",
+"Университет ветра"
+],
+[
+"extra-1",
+"Путеводитель по Мендосе"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"34",
+"Предательство на факультете"
+],
+[
+"35",
+"Волшебный виноград и новости дня"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Mi facultad. En la biblioteca hay un solo ejemplar de «Las venas abiertas de América Latina», y adentro, un conjuro en huarpe. Siempre supe que Galeano escondía algo.",
+"ru": "Мой факультет. В библиотеке единственный экземпляр «Вскрытых вен Латинской Америки», а внутри — заклинание на языке уарпе. Я всегда знал, что Галеано что-то скрывает."
+},
+{
+"a": "Un guerrero mapuche",
+"ar": "Воин-мапуче",
+"s": 4,
+"es": "El campus de noche está vacío y la tierra es blanda. Encontramos lo que buscábamos. Faltan faroles.",
+"ru": "Ночью кампус пустой, а земля мягкая. Нашли то, что искали. Не хватает фонарей."
+}
+]
+},
+{
+"id": "md-lagomaggiore",
+"nombre": "Hospital Lagomaggiore y la comisaría",
+"cat": "edificio",
+"x": -1905,
+"y": 1927,
+"modelo": "hotel",
+"desc": "El hospital Luis C. Lagomaggiore, uno de los grandes hospitales públicos de Mendoza, al norte del parque. En «El misterio de los Fader», a la comisaría que está cerca del hospital van a parar María Silvana Roca y después Adolfo, con la cara llena de moretones de la paliza en la finca Fader: «Perdió el hidromiel, un zorro lo humilló y ahora estaba preso». Ahí lo va a ver Heinrich.",
+"nombre_ru": "Больница Лагомаджоре и полицейский участок",
+"desc_ru": "Больница имени Луиса К. Лагомаджоре, одна из крупнейших государственных больниц Мендосы, к северу от парка. В «Тайне семьи Фадер» в полицейский участок рядом с больницей попадают Мария Сильвана Рока, а потом Адольфо — с лицом в синяках после взбучки на финке Фадер: «Он потерял медовуху, лис его унизил, а теперь он ещё и под арестом». Туда к нему приходит Генрих.",
+"apar": [
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"26",
+"Otra de los Fader"
+],
+[
+"30",
+"El Pacto secreto"
+],
+[
+"38",
+"La confesión de Adolfo"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"26",
+"Ещё одна из Фадеров"
+],
+[
+"30",
+"Тайный договор"
+],
+[
+"38",
+"Признание Адольфо"
+]
+]
+}
+],
+"res": [
+{
+"a": "Adolfo",
+"ar": "Адольфо",
+"s": 1,
+"es": "Celda fría, olor a café rancio. Llegué con moretones de la finca, después de que un zorro me humillara. Nadie me trajo un abogado. Cero estrellas si se pudiera.",
+"ru": "Холодная камера, запах прогорклого кофе. Попал сюда в синяках после финки, после того как меня унизил лис. Адвоката никто не привёл. Поставил бы ноль, если бы можно было."
+},
+{
+"a": "María Silvana Roca",
+"ar": "Мария Сильвана Рока",
+"s": 2,
+"es": "Estoy en cana y nadie atiende el teléfono. El hospital de al lado, al menos, parece serio.",
+"ru": "Сижу под арестом, и никто не берёт трубку. Больница по соседству хотя бы выглядит солидно."
+}
+]
+},
+{
+"id": "md-hotel-primera",
+"nombre": "Un hotel de la Primera Sección",
+"cat": "edificio",
+"x": 617,
+"y": 804,
+"modelo": "hotel",
+"desc": "En «La reina de la Vendimia», la noche en que salvaron Mendoza, con la ropa quemada y la ciudad apagándose de a una luz por los cortes, Nátasha y Luis suben a la terraza de un hotel de la Primera Sección, se sientan en el piso contra la baranda y él le agarra la mano. Entonces empiezan a salir de ellos las chispas rosadas, como luciérnagas. El hotel no tiene nombre en la novela; la Primera Sección (Parque Central) es el barrio al norte del microcentro.",
+"nombre_ru": "Отель в Первой секции",
+"desc_ru": "В «Королеве Вендимии», в ту ночь, когда они спасли Мендосу, — в обгоревшей одежде, пока город гас огонёк за огоньком из-за отключений, — Наташа и Луис поднимаются на крышу отеля в Первой секции, садятся на пол у перил, и он берёт её за руку. И тогда из них начинают вылетать розовые искры, как светлячки. У отеля в романе нет названия; Первая секция (Парк Сентраль) — район к северу от центра.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"26",
+"Los pactos se cumplen"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"34",
+"Lo que no se cuenta"
+]
+]
+}
+],
+"res": [
+{
+"a": "Nátasha",
+"ar": "Наташа",
+"s": 5,
+"es": "La terraza, el piso, la baranda, la ciudad apagándose luz por luz. Él me agarró la mano y empezaron a salir las chispas. No pido nada más.",
+"ru": "Крыша, пол, перила, город, гаснущий огонёк за огоньком. Он взял меня за руку, и полетели искры. Больше мне ничего не нужно."
+}
+]
+},
+{
+"id": "md-challao",
+"nombre": "Santuario y cerros del Challao",
+"cat": "monumento",
+"x": -5106,
+"y": 3543,
+"modelo": "santuario",
+"desc": "Los cerros al noroeste de la ciudad, en Las Heras, con el Santuario de la Virgen de Lourdes, lugar de grandes peregrinaciones: la gente sube a pie por el Vía Crucis y desde arriba se ve toda Mendoza. En «El misterio de los Fader», de noche, María Silvana Roca entra a la vieja catedral del Challao, donde la esperan el chamán Lautaro y el joven guerrero Antu con una botella verde llena de hidromiel dorado. En «La reina de la Vendimia», Nátasha manda a Zmaj a dormir a los cerros del Challao y lo encuentra en una quebrada, «enroscado como un gato». En «Дикий час: Духи гор», el chamán Carlos, descalzo sobre las piedras («acá la frontera es fina»), manda desde estos cerros la tormenta y el granizo contra la ciudad.",
+"nombre_ru": "Святилище и холмы Эль-Чальяо",
+"desc_ru": "Холмы к северо-западу от города, в Лас-Эрасе, со святилищем Девы Лурдской — местом больших паломничеств: люди поднимаются пешком по Крестному пути, а сверху видна вся Мендоса. В «Тайне семьи Фадер» ночью Мария Сильвана Рока входит в старый собор Эль-Чальяо, где её ждут шаман Лаутаро и юный воин Анту с зелёной бутылкой золотой медовухи. В «Королеве Вендимии» Наташа отправляет Змая спать на холмы Чальяо и находит его в ущелье, «свернувшегося, как кот». В «Диком часе: Духах гор» шаман Карлос стоит босиком на камнях («здесь граница тонка») и насылает с этих холмов бурю и град на город.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"27",
+"Antes de que se enciendan las luces"
+],
+[
+"31",
+"Lo que queda en el cerro"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"40",
+"Встреча в соборе Эль-Чальяо"
+],
+[
+"41",
+"Ночь в центре и встреча с прошлым"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"35",
+"Ярость Чальяо"
+],
+[
+"36",
+"Купол над Мендосой"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"40",
+"La reunión en la Catedral del Challao"
+]
+]
+}
+],
+"res": [
+{
+"a": "Zmaj",
+"ar": "Змай",
+"s": 5,
+"es": "Quebrada tibia, piedras calientes al sol. Me enrosqué como un gato y dormí hasta que vino ella. Ideal para dragones cansados.",
+"ru": "Тёплое ущелье, нагретые солнцем камни. Свернулся, как кот, и спал, пока она не пришла. Идеально для уставших драконов."
+},
+{
+"a": "Carlos",
+"ar": "Карлос",
+"s": 5,
+"es": "Acá la frontera es fina. El viento espera la orden. Para trabajo serio, el mejor lugar de Mendoza.",
+"ru": "Здесь граница тонка. Ветер ждёт приказа. Для серьёзной работы — лучшее место в Мендосе."
+},
+{
+"a": "María Silvana Roca",
+"ar": "Мария Сильвана Рока",
+"s": 3,
+"es": "La vieja catedral de noche impresiona. El chamán y el guerrero me esperaban en el altar. No volvería sola.",
+"ru": "Старый собор ночью впечатляет. Шаман и воин ждали меня у алтаря. Одна я бы сюда не вернулась."
+}
+]
+},
+{
+"id": "md-plumerillo",
+"nombre": "Campo Histórico El Plumerillo",
+"cat": "monumento",
+"x": 2424,
+"y": 5176,
+"modelo": "obelisco",
+"desc": "El campamento donde en 1816 y 1817 el general San Martín entrenó al Ejército de los Andes antes de cruzar la cordillera y liberar Chile; hoy es un museo a cielo abierto en Las Heras. En «Дикий час: Духи гор», después de perder el centro, Luis lleva a todos ahí. «Perdimos el centro y vos nos traés a un campo histórico», se enoja Irina. «Estamos en Las Heras. Y no es casualidad», contesta Luis. De acá sale la contraofensiva.",
+"nombre_ru": "Историческое поле Эль-Плумерильо",
+"desc_ru": "Лагерь, где в 1816–1817 годах генерал Сан-Мартин готовил Андскую армию к переходу через Кордильеру и освобождению Чили; сегодня — музей под открытым небом в Лас-Эрасе. В «Диком часе: Духах гор», потеряв центр, Луис приводит всех сюда. «Мы потеряли центр, а ты приводишь нас на историческое поле», — злится Ирина. «Мы в Лас-Эрасе. И это не случайно», — отвечает Луис. Отсюда начинается контрнаступление.",
+"apar": [
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"47",
+"Дуэль в центре"
+],
+[
+"48",
+"Боевая музыка"
+],
+[
+"49",
+"Когда город горит"
+]
+]
+}
+],
+"res": [
+{
+"a": "Irina",
+"ar": "Ирина",
+"s": 2,
+"es": "Perdimos el centro y él nos trae a un campo histórico. Mucha historia, poca sombra.",
+"ru": "Мы потеряли центр, а он привёл нас на историческое поле. Много истории, мало тени."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Estamos en Las Heras. Y no es casualidad. De acá salió San Martín, y de acá salimos nosotros.",
+"ru": "Мы в Лас-Эрасе. И это не случайно. Отсюда выступил Сан-Мартин, и отсюда выступили мы."
+}
+]
+},
+{
+"id": "md-aeropuerto",
+"nombre": "Aeropuerto El Plumerillo",
+"cat": "transporte",
+"x": 4585,
+"y": 6417,
+"modelo": "aeropuerto",
+"desc": "El aeropuerto internacional de Mendoza, al norte, en Las Heras, junto a una base aérea; toma su nombre del vecino Campo Histórico El Plumerillo. En «La reina de la Vendimia», Jana ve por la ventanilla una montaña más alta que todas, «blanca y solitaria, como una reina sentada en su trono», y más tarde de la base sale un helicóptero hacia la isla. En «El misterio de los Fader», Luis y Natalia llegan de Moscú, Sergio los espera y Natalia se queda quieta frente a los Andes nevados. En «Дикий час: Духи гор» el avión aterriza suave y el aire seco y tibio de Mendoza abraza a Luis y a Natasha.",
+"nombre_ru": "Аэропорт Эль-Плумерильо",
+"desc_ru": "Международный аэропорт Мендосы на севере, в Лас-Эрасе, рядом с военно-воздушной базой; назван по соседнему Историческому полю Эль-Плумерильо. В «Королеве Вендимии» Яна видит в иллюминатор гору выше всех, «белую и одинокую, как королева на троне», а позже с базы вылетает вертолёт к острову. В «Тайне семьи Фадер» Луис и Наталья прилетают из Москвы, их встречает Серхио, а Наталья замирает перед заснеженными Андами. В «Диком часе: Духах гор» самолёт мягко садится, и сухой тёплый воздух Мендосы обнимает Луиса и Наташу.",
+"apar": [
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"2",
+"Новость для отца"
+],
+[
+"3",
+"Обмен в музее"
+],
+[
+"4",
+"Возвращение в Мендосу"
+],
+[
+"5",
+"В парке"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"8",
+"Розовое небо"
+],
+[
+"47",
+"Дуэль в центре"
+],
+[
+"48",
+"Боевая музыка"
+],
+[
+"49",
+"Когда город горит"
+]
+]
+},
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"2",
+"La foto del gigante"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"48",
+"Esto acá no ha terminado"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"2",
+"Fotka obra"
+],
+[
+"30",
+"Zlatá voda"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"2",
+"Buenas noticias"
+],
+[
+"4",
+"El encuentro en Mendoza"
+]
+]
+},
+{
+"n": "divlji-chas-malbec",
+"c": [
+[
+"1",
+"Медени месец у Мендози"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Bajé del avión y en el horizonte brillaban los Andes nevados. Me quedé quieta en la escalerilla. Sergio esperaba con una sonrisa.",
+"ru": "Вышла из самолёта — а на горизонте сияли снежные Анды. Я застыла на трапе. Серхио ждал с улыбкой."
+},
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "Por la ventanilla, una montaña blanca y solitaria, como una reina sentada en su trono. Recomiendo pedir ventanilla del lado izquierdo.",
+"ru": "В иллюминаторе — белая одинокая гора, как королева на троне. Советую брать место у окна слева."
+}
+],
+"img": {
+"src": "img/lugares/md-aeropuerto.webp",
+"n": "la-reina-de-la-vendimia",
+"c": "2"
+}
+},
+{
+"id": "md-las-heras",
+"nombre": "Las Heras",
+"cat": "barrio",
+"x": 1449,
+"y": 4406,
+"modelo": "ninguno",
+"desc": "El departamento al norte de la capital, con el nombre del general Juan Gregorio de Las Heras, héroe del Ejército de los Andes: ahí están el Campo Histórico El Plumerillo, los cerros del Challao y el comienzo del camino a Chile. En «El misterio de los Fader» es la tierra de Carlita Martínez, la gran rival de Natalia, y la hinchada de Huracán Las Heras primero la alienta a ella y después canta para Luis. En «Дикий час: Духи гор» Natasha es la reina de Las Heras; acá se repliegan los héroes, Zmaj libera a cinco cóndores y las columnas de Las Heras entran a liberar Mendoza en viejos Rastrojeros.",
+"nombre_ru": "Лас-Эрас",
+"desc_ru": "Департамент к северу от столицы, названный в честь генерала Хуана Грегорио де Лас-Эраса, героя Андской армии: здесь Историческое поле Эль-Плумерильо, холмы Чальяо и начало дороги в Чили. В «Тайне семьи Фадер» это родина Карлиты Мартинес, главной соперницы Натальи; болельщики «Уракана Лас-Эрас» сначала поддерживают её, а потом поют для Луиса. В «Диком часе: Духах гор» Наташа — королева Лас-Эраса; сюда отступают герои, здесь Змай освобождает пять кондоров, и отсюда колонны Лас-Эраса на старых «Растроэхерос» входят в Мендосу освобождать город.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"6",
+"Debajo de Mendoza"
+],
+[
+"16",
+"La propuesta de Clara"
+],
+[
+"17",
+"El fuego y la casa"
+],
+[
+"19",
+"Rodrigo"
+],
+[
+"23",
+"Natasha Primera"
+],
+[
+"24",
+"Las raíces del cielo"
+],
+[
+"26",
+"Los pactos se cumplen"
+],
+[
+"27",
+"Antes de que se enciendan las luces"
+],
+[
+"28",
+"Cuarenta mil sin borde"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"43",
+"Pasión eslava"
+],
+[
+"47",
+"La reina de Maipú"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"20",
+"Королева, которая не хотела быть королевой"
+],
+[
+"33",
+"Площадь Испании и огненная речь"
+],
+[
+"43",
+"Утро карусели"
+],
+[
+"48",
+"Боевая музыка"
+],
+[
+"49",
+"Когда город горит"
+],
+[
+"50",
+"Освобождённые крылья"
+],
+[
+"51",
+"Рука, которая освобождает"
+],
+[
+"53",
+"Нулевой километр II"
+],
+[
+"extra-4",
+"Глоссарий к роману «Дикий час»"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"39",
+"«Виа Бланка»"
+],
+[
+"44",
+"Карусель чувств"
+],
+[
+"45",
+"Неизвестная ложа"
+],
+[
+"47",
+"Голосование и напряжение"
+],
+[
+"48",
+"Реванш истории"
+],
+[
+"50",
+"Луис бессмертный"
+],
+[
+"51",
+"Конец одной эпохи и начало новой"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"6",
+"Pod Mendozou"
+],
+[
+"16",
+"Clařin návrh"
+],
+[
+"17",
+"Oheň a domov"
+],
+[
+"21",
+"Voda teče pozpátku"
+],
+[
+"30",
+"Zlatá voda"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"39",
+"La Vía Blanca"
+],
+[
+"44",
+"El Carrusel de las Emociones"
+],
+[
+"47",
+"Votación y tensión"
+],
+[
+"50",
+"Luis el inmortal"
+]
+]
+},
+{
+"n": "operacion-londres",
+"c": [
+[
+"extra-1",
+"Introducción I"
+]
+]
+}
+],
+"res": [
+{
+"a": "Carlita Martínez",
+"ar": "Карлита Мартинес",
+"s": 5,
+"es": "Mi tierra. La hinchada de Huracán Las Heras canta como nadie, aunque después le cantó a ese Luis. Traidores lindos.",
+"ru": "Моя земля. Болельщики «Уракана Лас-Эрас» поют как никто, хотя потом запели для этого Луиса. Милые предатели."
+},
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "Soy la reina de Las Heras y no me arrepiento. Los Rastrojeros son viejos pero llegan a todos lados.",
+"ru": "Я королева Лас-Эраса и не жалею. «Растроэхерос» старые, но доезжают куда угодно."
+}
+]
+},
+{
+"id": "md-casa-luis-heras",
+"nombre": "La casa de la infancia de Luis (Las Heras)",
+"cat": "casa",
+"x": 888,
+"y": 4073,
+"modelo": "hogar",
+"desc": "En «El misterio de los Fader: Operación Londres», la casa familiar de Luis en Las Heras, en 1992: la sala en silencio, el televisor encendido y la madre que recuerda que hace diez años se recuperaron las islas. Ahí empieza la memoria de Luis. La casa es de la novela; el departamento es real.",
+"nombre_ru": "Дом детства Луиса (Лас-Эрас)",
+"desc_ru": "В «Тайне семьи Фадер: Операции „Лондон“» — семейный дом Луиса в Лас-Эрасе в 1992 году: тихая гостиная, включённый телевизор и мама, которая вспоминает, что десять лет назад «вернули острова». Отсюда начинаются воспоминания Луиса. Дом — из романа, департамент — настоящий.",
+"apar": [
+{
+"n": "operacion-londres",
+"c": [
+[
+"extra-1",
+"Introducción I"
+]
+]
+}
+],
+"img": {
+"src": "img/lugares/md-casa-luis-heras.webp",
+"n": "operacion-londres",
+"c": "extra-1"
+}
+},
+{
+"id": "md-dalvian",
+"nombre": "Casa de Domingo Castro (barrio Dalvian)",
+"cat": "casa",
+"x": -4129,
+"y": 2457,
+"modelo": "villa",
+"desc": "Dalvian es un barrio cerrado en la falda de los cerros, al norte del Parque San Martín, de calles con muros altos y jardines. En «El misterio de los Fader», Domingo Castro, «Kurüf», el hombre robusto del museo, estaciona su Ford F-150 frente a su casa moderna con un maletín bien apretado bajo el brazo. La casa es de la novela; el barrio es real.",
+"nombre_ru": "Дом Доминго Кастро (квартал Дальвиан)",
+"desc_ru": "Дальвиан — закрытый квартал на склоне холмов к северу от парка Сан-Мартина, с высокими стенами и садами. В «Тайне семьи Фадер» Доминго Кастро, «Курюф», крепкий мужчина из музея, паркует свой «Форд F-150» у современного дома, крепко прижимая к себе чемоданчик. Дом — из романа, квартал — настоящий.",
+"apar": [
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"7",
+"El pasado dando pistas"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"7",
+"Прошлое оставляет подсказки"
+]
+]
+}
+]
+},
+{
+"id": "md-godoy-cruz",
+"nombre": "Godoy Cruz",
+"cat": "barrio",
+"x": 14,
+"y": -3942,
+"modelo": "ninguno",
+"desc": "El departamento pegado al sur de la capital, con el nombre de Tomás Godoy Cruz, diputado mendocino en el Congreso de Tucumán de 1816, y tierra del club Godoy Cruz Antonio Tomba, «el Tomba». En «La reina de la Vendimia» es el departamento de Julieta Arancibia, «una leona»: banda verde, caballo negro y corona de plata. En «El misterio de los Fader», el maletín con el hidromiel cae a una acequia, viaja medio Mendoza y en un puentecito de ladrillo de Godoy Cruz la corriente lo aprieta contra una piedra.",
+"nombre_ru": "Годой-Крус",
+"desc_ru": "Департамент, прилегающий к столице с юга; назван в честь Томаса Годой-Круса, депутата от Мендосы на Тукуманском конгрессе 1816 года; здесь же клуб «Годой-Крус Антонио Томба», «Томба». В «Королеве Вендимии» это департамент Джульеты Арансибии, «львицы»: зелёная лента, вороной конь, серебряная корона. В «Тайне семьи Фадер» чемоданчик с медовухой падает в арык, проплывает пол-Мендосы, и у кирпичного мостика в Годой-Крусе течение прижимает его к камню.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"3",
+"Yanina"
+],
+[
+"4",
+"La reina rubia"
+],
+[
+"5",
+"La Cabalgata"
+],
+[
+"7",
+"La Mulánima"
+],
+[
+"9",
+"La isla del volcán"
+],
+[
+"10",
+"Noticiero 9"
+],
+[
+"11",
+"El hilo bordó"
+],
+[
+"21",
+"Julieta"
+],
+[
+"22",
+"Potrerillos"
+],
+[
+"23",
+"Natasha Primera"
+],
+[
+"24",
+"Las raíces del cielo"
+],
+[
+"25",
+"Acá no paramos nada"
+],
+[
+"27",
+"Antes de que se enciendan las luces"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"35",
+"Chispas sobre la cordillera"
+],
+[
+"40",
+"El gigante y el dios"
+],
+[
+"41",
+"Lo que se lleva la Mulánima"
+],
+[
+"44",
+"Pelo negro"
+],
+[
+"46",
+"Acto Central"
+],
+[
+"47",
+"La reina de Maipú"
+],
+[
+"48",
+"Esto acá no ha terminado"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"3",
+"Yanina"
+],
+[
+"4",
+"Blonďatá královna"
+],
+[
+"5",
+"Jízda gaučů"
+],
+[
+"7",
+"Mulánima"
+],
+[
+"9",
+"Ostrov se sopkou"
+],
+[
+"10",
+"Zprávy 9"
+],
+[
+"11",
+"Bordó nit"
+],
+[
+"20",
+"Julieta"
+],
+[
+"21",
+"Voda teče pozpátku"
+],
+[
+"22",
+"Karusel"
+],
+[
+"24",
+"Obálka se dvěma razítky"
+],
+[
+"25",
+"Den hlavního představení"
+],
+[
+"26",
+"Popel nad Řeckým divadlem"
+],
+[
+"28",
+"Obr"
+],
+[
+"30",
+"Zlatá voda"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"7",
+"Прошлое оставляет подсказки"
+],
+[
+"8",
+"Площадь теней"
+],
+[
+"10",
+"Роскошный ужин"
+],
+[
+"11",
+"Финка мечты"
+],
+[
+"41",
+"Ночь в центре и встреча с прошлым"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"7",
+"El pasado dando pistas"
+],
+[
+"10",
+"La cena lujosa"
+],
+[
+"41",
+"La Noche en el Centro y el Encuentro con el Pasado"
+]
+]
+}
+],
+"res": [
+{
+"a": "Julieta Arancibia",
+"ar": "Джульета Арансибия",
+"s": 5,
+"es": "Banda verde, caballo negro y corona de plata. Godoy Cruz es mi departamento y lo defiendo hasta en el escrutinio.",
+"ru": "Зелёная лента, вороной конь и серебряная корона. Годой-Крус — мой департамент, и я защищаю его даже при подсчёте голосов."
+}
+],
+"img": {
+"src": "img/lugares/md-godoy-cruz.webp",
+"n": "el-misterio-de-los-fader",
+"c": "8"
+}
+},
+{
+"id": "md-chacras",
+"nombre": "Chacras de Coria: la casa de Sergio",
+"cat": "casa",
+"x": -3225,
+"y": -10568,
+"modelo": "villa",
+"desc": "Chacras de Coria es un pueblo de Luján de Cuyo de calles arboladas, casas bajas y quintas, rodeado de bodegas. En «La reina de la Vendimia»: «Sergio Fader. Calle de los Olmos, Chacras de Coria». La casa del padre de Luis, con galería y parral, a media hora del centro. Ahí vuelve Luis de noche con un racimo en la mano, y ahí, en la cama angosta de su infancia, debajo de sus dibujos de la cordillera, duerme con Jana. La calle de los Olmos es de la novela; Chacras es real.",
+"nombre_ru": "Чакрас-де-Кория: дом Серхио",
+"desc_ru": "Чакрас-де-Кория — посёлок в Лухан-де-Куйо с тенистыми улицами, низкими домами и усадьбами среди виноделен. В «Королеве Вендимии»: «Серхио Фадер. Улица Вязов, Чакрас-де-Кория». Дом отца Луиса — с галереей и виноградной беседкой, в получасе от центра. Сюда Луис возвращается ночью с гроздью в руке, и здесь, на узкой кровати своего детства, под собственными рисунками Кордильеры, он спит с Яной. Улица Вязов — из романа, Чакрас — настоящий.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"3",
+"Yanina"
+],
+[
+"5",
+"La Cabalgata"
+],
+[
+"11",
+"El hilo bordó"
+],
+[
+"12",
+"La coronación"
+],
+[
+"13",
+"La respuesta de la isla"
+],
+[
+"14",
+"Noche de zonda"
+],
+[
+"15",
+"Clara sabe"
+],
+[
+"16",
+"La propuesta de Clara"
+],
+[
+"17",
+"El fuego y la casa"
+],
+[
+"18",
+"Las ruinas de San Francisco"
+],
+[
+"19",
+"Rodrigo"
+],
+[
+"21",
+"Julieta"
+],
+[
+"22",
+"Potrerillos"
+],
+[
+"23",
+"Natasha Primera"
+],
+[
+"26",
+"Los pactos se cumplen"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"32",
+"Las quebradas viejas"
+],
+[
+"35",
+"Chispas sobre la cordillera"
+],
+[
+"36",
+"El puesto de Olguina"
+],
+[
+"37",
+"Las lágrimas de la reina"
+],
+[
+"38",
+"El corazón de la montaña"
+],
+[
+"42",
+"Lo que vio la checa"
+],
+[
+"43",
+"Pasión eslava"
+],
+[
+"44",
+"Pelo negro"
+],
+[
+"48",
+"Esto acá no ha terminado"
+],
+[
+"49",
+"Praga sin nieve"
+],
+[
+"50",
+"Smrtná neděle"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"3",
+"Yanina"
+],
+[
+"5",
+"Jízda gaučů"
+],
+[
+"11",
+"Bordó nit"
+],
+[
+"12",
+"Korunovace"
+],
+[
+"13",
+"Odpověď ostrova"
+],
+[
+"14",
+"Noc zondy"
+],
+[
+"15",
+"Clara ví"
+],
+[
+"16",
+"Clařin návrh"
+],
+[
+"18",
+"Ruiny San Francisco"
+],
+[
+"19",
+"Snídaně v Chacras"
+],
+[
+"20",
+"Julieta"
+],
+[
+"21",
+"Voda teče pozpátku"
+],
+[
+"28",
+"Obr"
+],
+[
+"30",
+"Zlatá voda"
+]
+]
+},
+{
+"n": "divlji-chas-malbec",
+"c": [
+[
+"7",
+"Асадо код Марине и Катарине"
+]
+]
+}
+],
+"res": [
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "Galería, parral y una cama angosta debajo de los dibujos de la cordillera que Luis hizo de chico. A media hora del centro y a mil años del ruido.",
+"ru": "Галерея, виноградная беседка и узкая кровать под рисунками Кордильеры, которые Луис рисовал в детстве. Полчаса от центра и тысяча лет от шума."
+},
+{
+"a": "Sergio Fader",
+"ar": "Серхио Фадер",
+"s": 4,
+"es": "Mi casa. Mi hijo vuelve de noche con un racimo en la mano y cree que no lo escucho. Lo escucho.",
+"ru": "Мой дом. Сын возвращается ночью с гроздью в руке и думает, что я не слышу. Я слышу."
+}
+],
+"img": {
+"src": "img/lugares/md-chacras.webp",
+"n": "la-reina-de-la-vendimia",
+"c": "5"
+}
+},
+{
+"id": "md-museo-fader",
+"nombre": "Museo Emiliano Guiñazú – Casa de Fader",
+"cat": "monumento",
+"x": -2086,
+"y": -12815,
+"modelo": "villa",
+"desc": "La casona de la familia Fader en Mayor Drummond, Luján de Cuyo, cuyas paredes pintó al fresco Fernando Fader. Hoy es el Museo Provincial de Bellas Artes Emiliano Guiñazú, la «Casa de Fader», con jardín y una colección de pintura argentina. En «El misterio de los Fader», en una sala del museo dos hombres intercambian maletines; para Luis es un lugar especial y no del todo grato: a los quince años participó ahí de un concurso de pintura, y en «Operación Londres» recuerda la cara del jurado rechazando su pastel del árbol solitario. Al final, Karl anuncia que el museo ahora es de Sergio. En «Дикий час: Духи гор» Luis y Natasha van en el Gordini a buscar un símbolo escondido en un cuadro, que solo aparece desde cierto ángulo.",
+"nombre_ru": "Музей Эмилиано Гиньясу — Дом Фадера",
+"desc_ru": "Особняк семьи Фадер в Майор-Драммонде (Лухан-де-Куйо), стены которого расписал фресками Фернандо Фадер. Сегодня это Провинциальный музей изящных искусств имени Эмилиано Гиньясу, «Дом Фадера», с садом и коллекцией аргентинской живописи. В «Тайне семьи Фадер» в одном из залов двое мужчин обмениваются чемоданчиками; для Луиса это особое и не слишком приятное место: в пятнадцать лет он участвовал здесь в конкурсе живописи, а в «Операции „Лондон“» вспоминает лицо жюри, отвергшего его пастель с одиноким деревом. В финале Карл объявляет, что музей теперь принадлежит Серхио. В «Диком часе: Духах гор» Луис и Наташа едут на «Гордини» искать символ, спрятанный в картине, — он виден только под определённым углом.",
+"apar": [
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"3",
+"Обмен в музее"
+],
+[
+"4",
+"Возвращение в Мендосу"
+],
+[
+"5",
+"В парке"
+],
+[
+"6",
+"Неожиданная королева Вендимии"
+],
+[
+"37",
+"Тайна картин Фадера"
+],
+[
+"38",
+"Признание Адольфо"
+],
+[
+"43",
+"Объяснение Карла Фадера"
+],
+[
+"extra-2",
+"Последняя глава"
+],
+[
+"extra-3",
+"Интервью с Марком, детективом"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"3",
+"Un intercambio con sabor alemán"
+],
+[
+"5",
+"En el parque"
+],
+[
+"37",
+"El secreto en los cuadros de Fader"
+],
+[
+"43",
+"La Explicación de Karl Fader"
+],
+[
+"extra-2",
+"Capítulo final"
+]
+]
+},
+{
+"n": "ladro-di-cuori-3",
+"c": [
+[
+"4",
+"Il segreto nel quadro"
+],
+[
+"5",
+"La casa di Fader"
+],
+[
+"8",
+"Il labirinto di cipressi"
+],
+[
+"9",
+"Il Fantasma"
+],
+[
+"extra-2",
+"Soluzioni"
+]
+]
+},
+{
+"n": "operacion-londres",
+"c": [
+[
+"19",
+"La decisión"
+],
+[
+"extra-1",
+"Introducción I"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"30",
+"Вдохновение, спрятанное в музее"
+],
+[
+"extra-1",
+"Путеводитель по Мендосе"
+]
+]
+},
+{
+"n": "divlji-chas-malbec",
+"c": [
+[
+"4",
+"Срећа на имању Фадер"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 3,
+"es": "A los quince años el jurado rechazó mi pastel del árbol solitario. Los frescos de Fernando Fader, hermosos. El jurado, sin corazón.",
+"ru": "В пятнадцать лет жюри отвергло мою пастель с одиноким деревом. Фрески Фернандо Фадера прекрасны. Жюри — бессердечное."
+},
+{
+"a": "Karl Fader",
+"ar": "Карл Фадер",
+"s": 5,
+"es": "Desde hoy, el museo es de Sergio. Que lo cuide como cuidamos la viña.",
+"ru": "С сегодняшнего дня музей принадлежит Серхио. Пусть бережёт его, как мы бережём виноградник."
+},
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 4,
+"es": "El símbolo del cuadro solo aparece desde cierto ángulo. Me torcí el cuello, pero lo vi.",
+"ru": "Символ на картине виден только под определённым углом. Чуть шею не свернула, но увидела."
+}
+]
+},
+{
+"id": "md-lujan",
+"nombre": "Luján de Cuyo",
+"cat": "barrio",
+"x": -3132,
+"y": -16225,
+"modelo": "ninguno",
+"desc": "La «primera zona» del vino argentino y cuna del Malbec mendocino: decenas de bodegas al pie de los Andes, primera región vitivinícola del país con denominación de origen controlada. En «El misterio de los Fader» se levanta sobre sus viñedos, como un castillo feudal, la mansión del misterioso hombre de negro, y la virreina de la Vendimia es María Voloshchin, de Luján. En «Дикий час: Духи гор» Luis le presenta acá a Natasha a Sergio y a Mónica («Sí, pa. Es bruja. Pero de las buenas»), y después corren en moto entre las viñas. En «Ladro di cuori 3», Alessio y Laura llegan a Luján, «la tierra del Malbec», de calles estrechas y arboladas con portones de bodegas.",
+"nombre_ru": "Лухан-де-Куйо",
+"desc_ru": "«Первая зона» аргентинского вина и родина мендосского мальбека: десятки виноделен у подножия Анд, первый в стране регион с контролируемым наименованием происхождения. В «Тайне семьи Фадер» над его виноградниками, как феодальный замок, высится особняк таинственного человека в чёрном, а вице-королева Вендимии — Мария Волощина из Лухана. В «Диком часе: Духах гор» Луис знакомит здесь Наташу с Серхио и Моникой («Да, пап. Она ведьма. Но из хороших»), а потом они мчатся на мотоцикле между виноградниками. В «Ladro di cuori 3» Алессио и Лаура приезжают в Лухан, «землю мальбека», с узкими тенистыми улицами и воротами виноделен.",
+"apar": [
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"10",
+"Роскошный ужин"
+],
+[
+"11",
+"Финка мечты"
+],
+[
+"15",
+"Рассвет тайн"
+],
+[
+"16",
+"Утро на виноградниках"
+],
+[
+"17",
+"Протест на финке Фадер"
+],
+[
+"32",
+"Лис-защитник"
+],
+[
+"37",
+"Тайна картин Фадера"
+],
+[
+"46",
+"Луис Фадер, ведущий"
+],
+[
+"47",
+"Голосование и напряжение"
+],
+[
+"51",
+"Конец одной эпохи и начало новой"
+],
+[
+"extra-2",
+"Последняя глава"
+],
+[
+"extra-3",
+"Интервью с Марком, детективом"
+],
+[
+"extra-5",
+"Интервью с Хулиетой"
+]
+]
+},
+{
+"n": "divlji-chas-malbec",
+"c": [
+[
+"1",
+"Медени месец у Мендози"
+],
+[
+"3",
+"Република на два језика"
+],
+[
+"4",
+"Срећа на имању Фадер"
+],
+[
+"5",
+"Мирис малбека"
+],
+[
+"11",
+"Шта је хуарпско злато?"
+],
+[
+"15",
+"Где се река сече на вене"
+],
+[
+"23",
+"Настијина купола"
+],
+[
+"25",
+"Централни чин"
+],
+[
+"26",
+"Мама"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"10",
+"La cena lujosa"
+],
+[
+"16",
+"La mañana en los viñedos"
+],
+[
+"37",
+"El secreto en los cuadros de Fader"
+],
+[
+"46",
+"Luis Fader El conductor"
+],
+[
+"51",
+"El final de una era y el comienzo de una nueva"
+]
+]
+},
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"3",
+"Yanina"
+],
+[
+"4",
+"La reina rubia"
+],
+[
+"10",
+"Noticiero 9"
+],
+[
+"47",
+"La reina de Maipú"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"3",
+"Yanina"
+],
+[
+"4",
+"Blonďatá královna"
+],
+[
+"10",
+"Zprávy 9"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"12",
+"Виноградники судьбы"
+],
+[
+"13",
+"Гора, которая слушает"
+],
+[
+"15",
+"Дорога к истине"
+]
+]
+},
+{
+"n": "operacion-londres",
+"c": [
+[
+"19",
+"La decisión"
+],
+[
+"extra-1",
+"Introducción I"
+]
+]
+},
+{
+"n": "ladro-di-cuori-3",
+"c": [
+[
+"4",
+"Il segreto nel quadro"
+],
+[
+"5",
+"La casa di Fader"
+]
+]
+}
+],
+"res": [
+{
+"a": "Sergio Fader",
+"ar": "Серхио Фадер",
+"s": 5,
+"es": "Mi hijo trajo una novia y me dijo: «Sí, pa. Es bruja. Pero de las buenas». Le creí. El Malbec ayudó.",
+"ru": "Сын привёз девушку и сказал: «Да, пап. Она ведьма. Но из хороших». Я поверил. Мальбек помог."
+},
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 5,
+"es": "Calles estrechas y arboladas, portones de bodegas y los Andes nevados detrás de las viñas. Alessio dice que es por trabajo. Yo vine por el vino.",
+"ru": "Узкие тенистые улицы, ворота виноделен и снежные Анды за виноградниками. Алессио говорит, что мы здесь по делу. Я приехала ради вина."
+}
+],
+"img": {
+"src": "img/lugares/md-lujan.webp",
+"n": "la-reina-de-la-vendimia",
+"c": "3"
+}
+},
+{
+"id": "md-la-rural",
+"nombre": "Bodega La Rural (Maipú)",
+"cat": "restaurante",
+"x": 9249,
+"y": -7558,
+"modelo": "bodega",
+"desc": "Una bodega histórica de Coquimbito, en Maipú, fundada a fines del siglo XIX, con uno de los museos del vino más importantes de América Latina: prensas, toneles y herramientas de la vitivinicultura antigua. En «La reina de la Vendimia» es la gala de coronación de la reina de la Ciudad: el intendente, gente del gobierno de la presidenta Irina, los intendentes de los dieciocho departamentos… y un viñatero de sombrero que baila el vals con la reina y llora porque su viña fue la que más se secó.",
+"nombre_ru": "Винодельня «Ла Рураль» (Майпу)",
+"desc_ru": "Историческая винодельня в Кокимбито (Майпу), основанная в конце XIX века, с одним из важнейших музеев вина в Латинской Америке: прессы, бочки и инструменты старинного виноделия. В «Королеве Вендимии» здесь проходит гала-коронация королевы Города: мэр, люди из правительства президента Ирины, мэры восемнадцати департаментов… и виноградарь в шляпе, который танцует с королевой вальс и плачет, потому что его виноградник засох сильнее всех.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"12",
+"La coronación"
+],
+[
+"47",
+"La reina de Maipú"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"12",
+"Korunovace"
+]
+]
+}
+],
+"res": [
+{
+"a": "El viñatero del sombrero",
+"ar": "Виноградарь в шляпе",
+"s": 5,
+"es": "Bailé el vals con la reina y lloré: mi viña fue la que más se secó. Ella me apretó la mano y no me soltó hasta el final de la música.",
+"ru": "Танцевал вальс с королевой и плакал: мой виноградник засох сильнее всех. Она сжала мне руку и не отпускала до конца музыки."
+},
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 4,
+"es": "Gala de coronación entre toneles y prensas de hace cien años. Demasiados intendentes por metro cuadrado.",
+"ru": "Гала-коронация среди бочек и прессов столетней давности. Слишком много мэров на квадратный метр."
+}
+]
+},
+{
+"id": "md-russell",
+"nombre": "La finca de Estela (Russell, Maipú)",
+"cat": "casa",
+"x": 4627,
+"y": -15559,
+"modelo": "bodega",
+"desc": "Russell es un distrito rural de Maipú de callejones con álamos, acequias, viñedos y olivares. En «La reina de la Vendimia», Estela González, la reina de Maipú que no sale en las fotos, espera a Jana a las seis de la mañana con una tijera de cosecha en cada mano. El sábado gana la corona nacional, y el domingo hace en Russell, bajo el parral de la casa amarilla, el asado más grande que vio Maipú en cincuenta años. La finca es de la novela; Russell es real (la ubicación en el mapa es aproximada).",
+"nombre_ru": "Финка Эстелы (Рассел, Майпу)",
+"desc_ru": "Рассел — сельский район Майпу: переулки с тополями, арыки, виноградники и оливковые рощи. В «Королеве Вендимии» Эстела Гонсалес, королева Майпу, которая не попадает на фотографии, ждёт Яну в шесть утра с секатором в каждой руке. В субботу она выигрывает национальную корону, а в воскресенье в Расселе, под виноградной беседкой жёлтого дома, устраивает самое большое асадо, какое Майпу видел за пятьдесят лет. Финка — из романа, Рассел — настоящий (место на карте приблизительное).",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"27",
+"Antes de que se enciendan las luces"
+],
+[
+"28",
+"Cuarenta mil sin borde"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"44",
+"Pelo negro"
+],
+[
+"45",
+"La semana de la cosecha"
+],
+[
+"46",
+"Acto Central"
+],
+[
+"47",
+"La reina de Maipú"
+],
+[
+"48",
+"Esto acá no ha terminado"
+],
+[
+"49",
+"Praga sin nieve"
+]
+]
+}
+],
+"res": [
+{
+"a": "Estela González",
+"ar": "Эстела Гонсалес",
+"s": 5,
+"es": "El sábado gané la corona nacional, y el domingo hice acá, bajo el parral de la casa amarilla, el asado más grande que vio Maipú en cincuenta años. Vengan con hambre.",
+"ru": "В субботу я выиграла национальную корону, а в воскресенье устроила здесь, под беседкой жёлтого дома, самое большое асадо, какое Майпу видел за пятьдесят лет. Приходите голодными."
+},
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "Me esperaba a las seis de la mañana con una tijera de cosecha en cada mano. Coseché por primera vez en mi vida. Me duele todo. Volvería.",
+"ru": "Она ждала меня в шесть утра с секатором в каждой руке. Я впервые в жизни собирала виноград. Всё болит. Вернулась бы."
+}
+]
+},
+{
+"id": "md-finca-fader",
+"nombre": "Finca Fader (ficticia)",
+"cat": "casa",
+"x": -7992,
+"y": -19442,
+"modelo": "ninguno",
+"desc": "El corazón de «El misterio de los Fader». El maletín queda trabado entre las piedras del canal del viñedo, el hidromiel se mezcla con el agua… y las uvas empiezan a brillar. Acá Luis y Natalia pintan los Andes, aparece el zorro que le muerde el trasero a Adolfo, y Karl Fader da su entrevista con el mate en una mano y el Malbec en la otra. En «Operación Londres» es el secreto de la familia: ahí se guarda la receta común del hidromiel. La finca no existe, pero se parece a muchas fincas familiares de Luján de Cuyo: casa con galería, hileras de vides, acequia y vista a los Andes nevados.",
+"nombre_ru": "Финка Фадер (вымышленная)",
+"desc_ru": "Сердце «Тайны семьи Фадер». Чемоданчик застревает между камнями канала на винограднике, медовуха смешивается с водой… и виноград начинает светиться. Здесь Луис и Наталья рисуют Анды, появляется лис, который кусает Адольфо за мягкое место, а Карл Фадер даёт интервью с мате в одной руке и мальбеком в другой. В «Операции „Лондон“» это семейная тайна: здесь хранится рецепт обычной медовухи. Финки не существует, но она похожа на многие семейные финки Лухан-де-Куйо: дом с галереей, ряды лоз, арык и вид на снежные Анды.",
+"apar": [
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"11",
+"Финка мечты"
+],
+[
+"12",
+"Прошлое, которое преследует"
+],
+[
+"16",
+"Утро на виноградниках"
+],
+[
+"17",
+"Протест на финке Фадер"
+],
+[
+"18",
+"Неудавшийся герой"
+],
+[
+"19",
+"Гнев Карла"
+],
+[
+"20",
+"Сияние винограда"
+],
+[
+"21",
+"Тени Качеуты"
+],
+[
+"26",
+"Ещё одна из Фадеров"
+],
+[
+"27",
+"Горный лис"
+],
+[
+"28",
+"Игра власти"
+],
+[
+"30",
+"Тайный договор"
+],
+[
+"32",
+"Лис-защитник"
+],
+[
+"33",
+"Игра власти в Буэнос-Айресе"
+],
+[
+"35",
+"Волшебный виноград и новости дня"
+],
+[
+"36",
+"Теории заговора"
+],
+[
+"38",
+"Признание Адольфо"
+],
+[
+"extra-2",
+"Последняя глава"
+],
+[
+"extra-4",
+"Интервью с Карлом Фадером, «немецким колдуном»"
+],
+[
+"extra-5",
+"Интервью с Хулиетой"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"11",
+"La Finca de los Sueños"
+],
+[
+"16",
+"La mañana en los viñedos"
+],
+[
+"17",
+"La protesta en la finca Fader"
+],
+[
+"18",
+"El héroe fallido"
+],
+[
+"19",
+"La Ira de Karl"
+],
+[
+"20",
+"El Resplandor de las Uvas"
+],
+[
+"26",
+"Otra de los Fader"
+],
+[
+"27",
+"El Zorro de la Montaña"
+],
+[
+"30",
+"El Pacto secreto"
+],
+[
+"32",
+"El Zorro Protector"
+],
+[
+"35",
+"Las Uvas Mágicas y las Noticias del Día"
+],
+[
+"36",
+"Las teorías de conspiración"
+],
+[
+"38",
+"La confesión de Adolfo"
+],
+[
+"extra-2",
+"Capítulo final"
+],
+[
+"extra-4",
+"Entrevista con Karl Fader, «el hechicero alemán»"
+]
+]
+},
+{
+"n": "operacion-londres",
+"c": [
+[
+"4",
+"El Rastro en Londres"
+],
+[
+"6",
+"Olvidos e ideas"
+]
+]
+}
+],
+"res": [
+{
+"a": "Karl Fader",
+"ar": "Карл Фадер",
+"s": 5,
+"es": "El mate en una mano y el Malbec en la otra. Si las uvas brillan, no pregunten.",
+"ru": "Мате в одной руке, мальбек в другой. Если виноград светится — не задавайте вопросов."
+},
+{
+"a": "Adolfo",
+"ar": "Адольфо",
+"s": 1,
+"es": "Un zorro me mordió el trasero. Después me dieron una paliza. No recomiendo.",
+"ru": "Лис укусил меня за мягкое место. Потом меня ещё и побили. Не рекомендую."
+}
+]
+},
+{
+"id": "md-cipolletti",
+"nombre": "Dique Cipolletti",
+"cat": "monumento",
+"x": -3225,
+"y": -17556,
+"modelo": "ninguno",
+"desc": "El dique derivador sobre el río Mendoza, en Luján de Cuyo, construido a fines del siglo XIX con el proyecto del ingeniero italiano Cesare Cipolletti: de ahí sale el agua de los canales que riegan el oasis. Aparece en «Královna vinobraní», la versión checa de «La reina de la Vendimia».",
+"nombre_ru": "Плотина Чиполлетти",
+"desc_ru": "Водораспределительная плотина на реке Мендоса в Лухан-де-Куйо, построенная в конце XIX века по проекту итальянского инженера Чезаре Чиполлетти: отсюда вода расходится по каналам, которые орошают оазис. Встречается в «Královna vinobraní», чешской версии «Королевы Вендимии».",
+"apar": [
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"21",
+"Voda teče pozpátku"
+],
+[
+"30",
+"Zlatá voda"
+]
+]
+}
+]
+},
+{
+"id": "md-cacheuta",
+"nombre": "Ruinas de la usina de Cacheuta",
+"cat": "misterio",
+"x": -25286,
+"y": -14117,
+"modelo": "ninguno",
+"desc": "El esqueleto de hormigón de la vieja central hidroeléctrica junto al río Mendoza, que en «El misterio de los Fader» construyó el ingeniero Carlos Fader. Ahí los mapuches buscan un escondite, aparecen dos gendarmes muertos y Antu encuentra el hidromiel que Karl había enterrado bajo los cimientos. Cacheuta es famosa por sus aguas termales; en enero de 1934 un aluvión destruyó casi todo.",
+"nombre_ru": "Руины ГЭС в Качеуте",
+"desc_ru": "Бетонный скелет старой гидроэлектростанции у реки Мендоса, которую в «Тайне семьи Фадер» построил инженер Карлос Фадер. Здесь мапуче ищут укрытие, находят двух убитых жандармов, а Анту откапывает медовуху, которую Карл зарыл под фундаментом. Качеута славится термальными водами; в январе 1934 года сель разрушил почти всё.",
+"apar": [
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"13",
+"Тайна Синих гор"
+],
+[
+"14",
+"Сон о Коммуне"
+],
+[
+"19",
+"Гнев Карла"
+],
+[
+"20",
+"Сияние винограда"
+],
+[
+"21",
+"Тени Качеуты"
+],
+[
+"22",
+"Мечта о завоевании"
+],
+[
+"26",
+"Ещё одна из Фадеров"
+],
+[
+"27",
+"Горный лис"
+],
+[
+"28",
+"Игра власти"
+],
+[
+"32",
+"Лис-защитник"
+],
+[
+"35",
+"Волшебный виноград и новости дня"
+],
+[
+"36",
+"Теории заговора"
+],
+[
+"40",
+"Встреча в соборе Эль-Чальяо"
+],
+[
+"41",
+"Ночь в центре и встреча с прошлым"
+],
+[
+"extra-4",
+"Интервью с Карлом Фадером, «немецким колдуном»"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"13",
+"El Secreto de las Montañas Azules"
+],
+[
+"19",
+"La Ira de Karl"
+],
+[
+"20",
+"El Resplandor de las Uvas"
+],
+[
+"21",
+"Las sombras de Cacheuta"
+],
+[
+"26",
+"Otra de los Fader"
+],
+[
+"28",
+"El Juego del Poder"
+],
+[
+"32",
+"El Zorro Protector"
+],
+[
+"35",
+"Las Uvas Mágicas y las Noticias del Día"
+],
+[
+"40",
+"La reunión en la Catedral del Challao"
+],
+[
+"extra-4",
+"Entrevista con Karl Fader, «el hechicero alemán»"
+]
+]
+},
+{
+"n": "ladro-di-cuori-3",
+"c": [
+[
+"5",
+"La casa di Fader"
+]
+]
+}
+]
+},
+{
+"id": "md-potrerillos",
+"nombre": "Potrerillos",
+"cat": "parque",
+"x": -33044,
+"y": -7573,
+"modelo": "ninguno",
+"desc": "El dique y el embalse turquesa sobre el río Mendoza, camino a Chile: kayak, rafting y windsurf entre cerros. En «La reina de la Vendimia» el embalse aparece de golpe en una curva, «como una piedra preciosa tirada entre los cerros», y en el refugio Nátasha sostiene la cabeza de Rodrigo sobre las rodillas. En «El misterio de los Fader», Kurüf maneja su F-150 por el camino de cornisa. En «Дикий час: Духи гор», entre las rocas, Luis y Natasha encuentran el primer elemento: una piedra oscura, tibia, con brillo metálico.",
+"nombre_ru": "Потрерильос",
+"desc_ru": "Плотина и бирюзовое водохранилище на реке Мендоса по дороге в Чили: каяки, рафтинг и виндсёрфинг среди гор. В «Королеве Вендимии» водохранилище внезапно появляется за поворотом, «как драгоценный камень, брошенный между холмами», а в приюте Наташа держит голову Родриго у себя на коленях. В «Тайне семьи Фадер» Курюф ведёт свой F-150 по карнизной дороге. В «Диком часе: Духах гор» среди скал Луис и Наташа находят первый элемент — тёмный тёплый камень с металлическим блеском.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"19",
+"Rodrigo"
+],
+[
+"20",
+"Lo que pidió el Sur"
+],
+[
+"21",
+"Julieta"
+],
+[
+"22",
+"Potrerillos"
+],
+[
+"25",
+"Acá no paramos nada"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"34",
+"Lo que no se cuenta"
+],
+[
+"35",
+"Chispas sobre la cordillera"
+],
+[
+"38",
+"El corazón de la montaña"
+],
+[
+"48",
+"Esto acá no ha terminado"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"23",
+"Kabely z nebe"
+],
+[
+"24",
+"Obálka se dvěma razítky"
+],
+[
+"28",
+"Obr"
+],
+[
+"30",
+"Zlatá voda"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"13",
+"Тайна Синих гор"
+],
+[
+"14",
+"Сон о Коммуне"
+],
+[
+"21",
+"Тени Качеуты"
+],
+[
+"22",
+"Мечта о завоевании"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"24",
+"Всадник на горизонте"
+],
+[
+"27",
+"Камень памяти"
+],
+[
+"extra-1",
+"Путеводитель по Мендосе"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"13",
+"El Secreto de las Montañas Azules"
+],
+[
+"21",
+"Las sombras de Cacheuta"
+]
+]
+}
+],
+"res": [
+{
+"a": "Rodrigo",
+"ar": "Родриго",
+"s": 5,
+"es": "El refugio: tres días sin señal, sin noticias, sin nada. Una maravilla. Hace tres años que no sé ni quién gobierna.",
+"ru": "Приют: три дня без связи, без новостей, без ничего. Чудо. Я уже три года не знаю, кто у нас правит."
+}
+],
+"img": {
+"src": "img/lugares/md-potrerillos.webp",
+"n": "la-reina-de-la-vendimia",
+"c": "19"
+}
+},
+{
+"id": "md-uspallata",
+"nombre": "Paramillos de Uspallata",
+"cat": "misterio",
+"x": -28557,
+"y": 43228,
+"modelo": "ninguno",
+"desc": "Cerros pelados con minas antiguas y un bosque petrificado de araucarias que Darwin describió en 1835. En «La reina de la Vendimia», una de las siete raíces negras de la isla se clava en Paramillos; un arriero llama a la radio porque vio un hilo negro bajando del cielo. Don Anselmo vive a quince kilómetros, con cuarenta cabras y un perro que se llama Presidente.",
+"nombre_ru": "Парамильос-де-Успальята",
+"desc_ru": "Голые холмы со старыми рудниками и окаменелым лесом араукарий, который описал Дарвин в 1835 году. В «Королеве Вендимии» один из семи чёрных корней острова вонзается в Парамильос; погонщик звонит на радио: он видел чёрную нить, спускающуюся с неба. Дон Ансельмо живёт в пятнадцати километрах — с сорока козами и псом по кличке Президент.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"24",
+"Las raíces del cielo"
+],
+[
+"25",
+"Acá no paramos nada"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"32",
+"Las quebradas viejas"
+],
+[
+"34",
+"Lo que no se cuenta"
+],
+[
+"36",
+"El puesto de Olguina"
+],
+[
+"42",
+"Lo que vio la checa"
+],
+[
+"43",
+"Pasión eslava"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"23",
+"Kabely z nebe"
+],
+[
+"24",
+"Obálka se dvěma razítky"
+],
+[
+"25",
+"Den hlavního představení"
+],
+[
+"27",
+"Paní s černým prstenem"
+],
+[
+"28",
+"Obr"
+]
+]
+},
+{
+"n": "anomalia",
+"c": [
+[
+"17",
+"El Tío Cacho Tiene un Plan (Malísimo)"
+],
+[
+"20",
+"Kilómetro Cero"
+]
+]
+}
+],
+"res": [
+{
+"a": "Don Anselmo",
+"ar": "Дон Ансельмо",
+"s": 4,
+"es": "Cuarenta cabras, un perro que se llama Presidente y un hilo negro que bajó del cielo. Lindo lugar, poca visita.",
+"ru": "Сорок коз, пёс по кличке Президент и чёрная нить, спустившаяся с неба. Красивое место, гостей мало."
+}
+]
+},
+{
+"id": "md-cordon-plata",
+"nombre": "Cordón del Plata",
+"cat": "misterio",
+"x": -54731,
+"y": -17778,
+"modelo": "ninguno",
+"desc": "Un cordón de cumbres de casi seis mil metros frente a Luján de Cuyo, donde muchos andinistas se aclimatan antes del Aconcagua. En «La reina de la Vendimia» otra raíz de la isla baja sobre el cordón, «donde las vetas de cobre dormían debajo de la nieve».",
+"nombre_ru": "Кордон-дель-Плата",
+"desc_ru": "Горный хребет почти в шесть тысяч метров напротив Лухан-де-Куйо; здесь многие альпинисты акклиматизируются перед Аконкагуа. В «Королеве Вендимии» сюда спускается ещё один корень острова — туда, «где под снегом спали медные жилы».",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"22",
+"Potrerillos"
+],
+[
+"24",
+"Las raíces del cielo"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"38",
+"El corazón de la montaña"
+],
+[
+"40",
+"El gigante y el dios"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"23",
+"Kabely z nebe"
+],
+[
+"24",
+"Obálka se dvěma razítky"
+],
+[
+"28",
+"Obr"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"13",
+"El Secreto de las Montañas Azules"
+]
+]
+}
+]
+},
+{
+"id": "md-aconcagua",
+"nombre": "Laguna de Horcones y el Aconcagua",
+"cat": "monumento",
+"x": -102405,
+"y": 8843,
+"modelo": "ninguno",
+"desc": "El Aconcagua mide 6961 metros: es la montaña más alta de América. La laguna de Horcones está en la entrada del Parque Provincial Aconcagua, donde empieza la ruta normal a la cumbre. En «La reina de la Vendimia», «el pie de la madre»: Jana llega descalza, con el vestido roto y negro de ceniza, y la montaña se despierta «como una persona muy vieja». En «El misterio de los Fader», Natalia la ve apenas baja del avión. En «Дикий час: Духи гор» es la montaña principal de la novela: su espíritu decide el final.",
+"nombre_ru": "Лагуна Оркенес и Аконкагуа",
+"desc_ru": "Аконкагуа — 6961 метр, самая высокая гора Америки. Лагуна Оркенес — у входа в провинциальный парк Аконкагуа, где начинается обычный маршрут к вершине. В «Королеве Вендимии» это «стопа матери»: Яна приходит босиком, в разорванном платье, чёрном от пепла, и гора просыпается, «как очень старый человек». В «Тайне семьи Фадер» Наталья видит её, едва выйдя из самолёта. В «Диком часе: Духах гор» это главная гора романа: её дух решает финал.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"2",
+"La foto del gigante"
+],
+[
+"6",
+"Debajo de Mendoza"
+],
+[
+"9",
+"La isla del volcán"
+],
+[
+"10",
+"Noticiero 9"
+],
+[
+"13",
+"La respuesta de la isla"
+],
+[
+"17",
+"El fuego y la casa"
+],
+[
+"19",
+"Rodrigo"
+],
+[
+"20",
+"Lo que pidió el Sur"
+],
+[
+"21",
+"Julieta"
+],
+[
+"22",
+"Potrerillos"
+],
+[
+"23",
+"Natasha Primera"
+],
+[
+"24",
+"Las raíces del cielo"
+],
+[
+"25",
+"Acá no paramos nada"
+],
+[
+"28",
+"Cuarenta mil sin borde"
+],
+[
+"29",
+"El camino de abajo"
+],
+[
+"30",
+"Morana"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"33",
+"La tormenta blanca"
+],
+[
+"35",
+"Chispas sobre la cordillera"
+],
+[
+"36",
+"El puesto de Olguina"
+],
+[
+"37",
+"Las lágrimas de la reina"
+],
+[
+"38",
+"El corazón de la montaña"
+],
+[
+"39",
+"La canción de marzo"
+],
+[
+"40",
+"El gigante y el dios"
+],
+[
+"41",
+"Lo que se lleva la Mulánima"
+],
+[
+"42",
+"Lo que vio la checa"
+],
+[
+"43",
+"Pasión eslava"
+],
+[
+"44",
+"Pelo negro"
+],
+[
+"48",
+"Esto acá no ha terminado"
+],
+[
+"49",
+"Praga sin nieve"
+],
+[
+"50",
+"Smrtná neděle"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"2",
+"Fotka obra"
+],
+[
+"9",
+"Ostrov se sopkou"
+],
+[
+"10",
+"Zprávy 9"
+],
+[
+"13",
+"Odpověď ostrova"
+],
+[
+"19",
+"Snídaně v Chacras"
+],
+[
+"21",
+"Voda teče pozpátku"
+],
+[
+"25",
+"Den hlavního představení"
+],
+[
+"26",
+"Popel nad Řeckým divadlem"
+],
+[
+"27",
+"Paní s černým prstenem"
+],
+[
+"29",
+"Srdce hory"
+],
+[
+"30",
+"Zlatá voda"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"10",
+"Ветер с гор"
+],
+[
+"42",
+"Ночь, которая не спит"
+],
+[
+"52",
+"Розовая вода"
+],
+[
+"extra-4",
+"Глоссарий к роману «Дикий час»"
+]
+]
+},
+{
+"n": "ladro-di-cuori-3",
+"c": [
+[
+"5",
+"La casa di Fader"
+],
+[
+"6",
+"Una notte tra i vigneti"
+],
+[
+"7",
+"I fratelli di Adriana"
+],
+[
+"extra-2",
+"Soluzioni"
+]
+]
+},
+{
+"n": "anomalia",
+"c": [
+[
+"17",
+"El Tío Cacho Tiene un Plan (Malísimo)"
+],
+[
+"18",
+"Puente del Inca"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"4",
+"El encuentro en Mendoza"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"5",
+"В парке"
+]
+]
+}
+],
+"img": {
+"src": "img/lugares/md-aconcagua.webp",
+"n": "el-misterio-de-los-fader",
+"c": "3"
+}
+},
+{
+"id": "md-puente-inca",
+"nombre": "Puente del Inca",
+"cat": "monumento",
+"x": -99694,
+"y": 7179,
+"modelo": "ninguno",
+"desc": "Un puente natural de roca sobre el río Las Cuevas, teñido de amarillo y naranja por las aguas termales, camino al Aconcagua y a Chile. Aparece en «Anomalía» y en «Дикий час: Духи гор».",
+"nombre_ru": "Пуэнте-дель-Инка",
+"desc_ru": "Природный каменный мост над рекой Лас-Куэвас, окрашенный термальными водами в жёлтый и оранжевый, по дороге к Аконкагуа и в Чили. Встречается в «Аномалии» и в «Диком часе: Духах гор».",
+"apar": [
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"6",
+"Над океаном"
+],
+[
+"extra-4",
+"Глоссарий к роману «Дикий час»"
+]
+]
+},
+{
+"n": "anomalia",
+"c": [
+[
+"17",
+"El Tío Cacho Tiene un Plan (Malísimo)"
+],
+[
+"18",
+"Puente del Inca"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"extra-5",
+"Интервью с Хулиетой"
+]
+]
+}
+],
+"img": {
+"src": "img/lugares/md-puente-inca.webp",
+"n": "anomalia",
+"c": "17"
+}
+},
+{
+"id": "md-tupungato",
+"nombre": "Volcán Tupungato",
+"cat": "monumento",
+"x": -86607,
+"y": -51941,
+"modelo": "ninguno",
+"desc": "Un volcán de unos 6570 metros en el límite con Chile, que le da nombre al departamento de Tupungato, en el Valle de Uco. En «La reina de la Vendimia», durante la emboscada del zonda, Jana lo ve blanco y tan cerca que da vértigo. En «Дикий час: Духи гор», al final, las siluetas del Aconcagua, el Tupungato y el Maipo cobran vida y los espíritus de la montaña bajan en forma de nubes.",
+"nombre_ru": "Вулкан Тупунгато",
+"desc_ru": "Вулкан высотой около 6570 метров на границе с Чили; его имя носит департамент Тупунгато в долине Уко. В «Королеве Вендимии», во время засады в сонду, Яна видит его белым и так близко, что кружится голова. В «Диком часе: Духах гор» в финале оживают силуэты Аконкагуа, Тупунгато и Майпо, и духи гор спускаются облаками.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"14",
+"Noche de zonda"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"35",
+"Chispas sobre la cordillera"
+],
+[
+"40",
+"El gigante y el dios"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"14",
+"Noc zondy"
+],
+[
+"23",
+"Kabely z nebe"
+],
+[
+"24",
+"Obálka se dvěma razítky"
+],
+[
+"28",
+"Obr"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"42",
+"Ночь, которая не спит"
+],
+[
+"52",
+"Розовая вода"
+],
+[
+"extra-4",
+"Глоссарий к роману «Дикий час»"
+]
+]
+}
+]
+},
+{
+"id": "md-uco",
+"nombre": "Bodega del Valle de Uco",
+"cat": "restaurante",
+"x": -30427,
+"y": -59927,
+"modelo": "ninguno",
+"desc": "El valle de viñedos de altura de Tunuyán, Tupungato y San Carlos, al pie de la cordillera. En «La reina de la Vendimia», la visita de las reinas a las viñas más altas de la provincia termina en emboscada: el zonda sopla caliente desde la cordillera, el cielo se pone amarillo y seis hombres esperan a la reina rubia en una bodega de piedra y vidrio medio enterrada en la ladera.",
+"nombre_ru": "Винодельня в долине Уко",
+"desc_ru": "Долина высокогорных виноградников Тунуяна, Тупунгато и Сан-Карлоса у подножия Кордильеры. В «Королеве Вендимии» поездка королев на самые высокие виноградники провинции заканчивается засадой: с гор дует горячий сонда, небо желтеет, и шестеро мужчин ждут белокурую королеву в винодельне из камня и стекла, наполовину врытой в склон.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"4",
+"La reina rubia"
+],
+[
+"8",
+"Halí belí"
+],
+[
+"10",
+"Noticiero 9"
+],
+[
+"13",
+"La respuesta de la isla"
+],
+[
+"14",
+"Noche de zonda"
+],
+[
+"20",
+"Lo que pidió el Sur"
+],
+[
+"21",
+"Julieta"
+],
+[
+"37",
+"Las lágrimas de la reina"
+],
+[
+"43",
+"Pasión eslava"
+],
+[
+"49",
+"Praga sin nieve"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"4",
+"Blonďatá královna"
+],
+[
+"8",
+"Halí belí"
+],
+[
+"10",
+"Zprávy 9"
+],
+[
+"13",
+"Odpověď ostrova"
+],
+[
+"14",
+"Noc zondy"
+],
+[
+"19",
+"Snídaně v Chacras"
+],
+[
+"20",
+"Julieta"
+],
+[
+"26",
+"Popel nad Řeckým divadlem"
+],
+[
+"27",
+"Paní s černým prstenem"
+]
+]
+}
+]
+},
+{
+"id": "md-guanacache",
+"nombre": "Lagunas de Guanacache (Lavalle)",
+"cat": "parque",
+"x": 64920,
+"y": 67631,
+"modelo": "ninguno",
+"desc": "Humedales en el límite de Mendoza, San Juan y San Luis, sitio Ramsar desde 1999 y tierra ancestral de los huarpes laguneros. En «La reina de la Vendimia», la leyenda de la abuela de Luis: el sol de los huarpes castigó a Hunuc y a Huar, se arrepintió y lloró tanto que con sus lágrimas se hicieron las lagunas. De ahí viene Ayelén, la tímida reina de Lavalle.",
+"nombre_ru": "Лагуны Гуанакаче (Лаваль)",
+"desc_ru": "Водно-болотные угодья на границе Мендосы, Сан-Хуана и Сан-Луиса, Рамсарское угодье с 1999 года и исконная земля уарпе. В «Королеве Вендимии» — легенда бабушки Луиса: солнце уарпе наказало Хунука и Хуара, раскаялось и плакало так долго, что из его слёз получились лагуны. Оттуда родом Айелен, застенчивая королева Лаваля.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"6",
+"Debajo de Mendoza"
+],
+[
+"23",
+"Natasha Primera"
+],
+[
+"24",
+"Las raíces del cielo"
+],
+[
+"37",
+"Las lágrimas de la reina"
+],
+[
+"38",
+"El corazón de la montaña"
+],
+[
+"39",
+"La canción de marzo"
+],
+[
+"50",
+"Smrtná neděle"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"6",
+"Pod Mendozou"
+],
+[
+"21",
+"Voda teče pozpátku"
+],
+[
+"22",
+"Karusel"
+],
+[
+"23",
+"Kabely z nebe"
+],
+[
+"29",
+"Srdce hory"
+],
+[
+"30",
+"Zlatá voda"
+]
+]
+},
+{
+"n": "divlji-chas-malbec",
+"c": [
+[
+"13",
+"Фадерпедија"
+]
+]
+}
+]
+},
+{
+"id": "md-malargue",
+"nombre": "Malargüe y Las Leñas",
+"cat": "misterio",
+"x": -68753,
+"y": -286204,
+"modelo": "ninguno",
+"desc": "El sur de Mendoza: el campo volcánico de La Payunia, el centro de esquí Las Leñas y el observatorio Pierre Auger. En «La reina de la Vendimia» las raíces más lejanas de la isla se clavan en Las Leñas y en los salares de Malargüe, y al final se desclavan «con un ruido de piedra arrancada».",
+"nombre_ru": "Маларгуэ и Лас-Леньяс",
+"desc_ru": "Юг Мендосы: вулканическое поле Паюния, горнолыжный курорт Лас-Леньяс и обсерватория Пьера Оже. В «Королеве Вендимии» самые дальние корни острова вонзаются в Лас-Леньяс и в солончаки Маларгуэ, а в конце выдираются «с шумом вырванного камня».",
+"apar": [
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"4",
+"Blonďatá královna"
+],
+[
+"6",
+"Pod Mendozou"
+],
+[
+"10",
+"Zprávy 9"
+],
+[
+"22",
+"Karusel"
+],
+[
+"23",
+"Kabely z nebe"
+],
+[
+"24",
+"Obálka se dvěma razítky"
+],
+[
+"26",
+"Popel nad Řeckým divadlem"
+],
+[
+"28",
+"Obr"
+],
+[
+"29",
+"Srdce hory"
+],
+[
+"30",
+"Zlatá voda"
+]
+]
+},
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"4",
+"La reina rubia"
+],
+[
+"6",
+"Debajo de Mendoza"
+],
+[
+"10",
+"Noticiero 9"
+],
+[
+"19",
+"Rodrigo"
+],
+[
+"24",
+"Las raíces del cielo"
+],
+[
+"30",
+"Morana"
+],
+[
+"31",
+"Lo que queda en el cerro"
+],
+[
+"40",
+"El gigante y el dios"
+]
+]
+},
+{
+"n": "el-misterio-de-los-fader",
+"c": [
+[
+"47",
+"Votación y tensión"
+]
+]
+},
+{
+"n": "tajna-semi-fader",
+"c": [
+[
+"47",
+"Голосование и напряжение"
+]
+]
+},
+{
+"n": "dikij-chas-2",
+"c": [
+[
+"41",
+"Нулевой километр"
+]
+]
+}
+]
+}
 ]
 };
 export const NOVELAS = {
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
-"l": "ru",
-"y": 2026,
-"ru": "Тихая любовь",
-"p": "img/portadas/tikhaya-lyubov.webp",
-"tr": {
-"it": "ti-amo-in-silenzio"
-}
-},
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
-},
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
-"l": "ru",
-"y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
-"tr": {
-"en": "the-date"
-}
-},
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
-"l": "ru",
-"y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
-"tr": {}
-},
-"lluvia-de-meteoritos": {
-"t": "Lluvia de meteoritos",
-"es": "Lluvia de meteoritos",
-"l": "es",
-"y": null,
-"ru": "Метеоритный дождь (исп.)",
-"p": "img/portadas/lluvia-de-meteoritos.webp",
-"tr": {
-"ru": "meteoritnyj-dozhd"
-}
-},
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
-"tr": {}
-},
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви",
-"p": "img/portadas/volny-lyubvi.webp",
-"tr": {}
-},
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
-"l": "ru",
-"y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
-"tr": {}
-},
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
-"l": "ru",
-"y": 2026,
-"ru": "Карнавал Синеи",
-"p": "img/portadas/karnaval-sinei.webp",
-"tr": {}
-},
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
-"tr": {}
-},
 "ti-amo-in-silenzio": {
 "t": "Ti amo in silenzio",
 "es": "Te amo en silencio (it.)",
@@ -12320,123 +17215,6 @@ export const NOVELAS = {
 "ru": "tikhaya-lyubov"
 }
 },
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
-"tr": {}
-},
-"el-tren-fantasma": {
-"t": "El tren fantasma",
-"es": "El tren fantasma",
-"l": "es",
-"y": null,
-"ru": "Призрачный поезд (исп.)",
-"p": "img/portadas/el-tren-fantasma.webp",
-"tr": {
-"it": "il-treno-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
-"l": "it",
-"y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
-"tr": {}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"prizrachnyj-poezd": {
-"t": "Призрачный поезд",
-"es": "El tren fantasma (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Призрачный поезд",
-"p": "img/portadas/prizrachnyj-poezd.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"it": "il-treno-fantasma"
-}
-},
-"znak": {
-"t": "Знак",
-"es": "El signo",
-"l": "ru",
-"y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
-"tr": {}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
-"l": "es",
-"y": 2026,
-"ru": "Любовь в космосе",
-"p": "img/portadas/amor-en-el-cosmos.webp",
-"tr": {}
-},
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
-"l": "ru",
-"y": 2026,
-"ru": "Алмазный дождь",
-"p": "img/portadas/almaznyj-dozhd.webp",
-"tr": {}
-},
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
-"il-treno-fantasma": {
-"t": "Il treno fantasma",
-"es": "El tren fantasma (it.)",
-"l": "it",
-"y": null,
-"ru": "Призрачный поезд (ит.)",
-"p": "img/portadas/il-treno-fantasma.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
-"tr": {}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
-"y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
-"tr": {}
-},
 "onde-d-amore-3": {
 "t": "Onde d'amore 3: Il viso del male",
 "es": "Ondas de amor 3: El rostro del mal",
@@ -12444,68 +17222,6 @@ export const NOVELAS = {
 "y": 2026,
 "ru": "Волны любви 3: Лицо зла (ит.)",
 "p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"predchuvstvie-2-3": {
-"t": "Предчувствие 2.3",
-"es": "El presentimiento 2.3",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.3",
-"p": "img/portadas/predchuvstvie-2-3.webp",
-"tr": {}
-},
-"la-voix": {
-"t": "La voix",
-"es": "La voz (fr.)",
-"l": "fr",
-"y": null,
-"ru": "Голос (фр.)",
-"p": "img/portadas/la-voix.webp",
-"tr": {
-"ru": "golos"
-}
-},
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви (ит.)",
-"p": "img/portadas/onde-d-amore.webp",
-"tr": {
-"es": "ondas-de-amor"
-}
-},
-"la-citta-triste": {
-"t": "La città triste",
-"es": "La ciudad triste (it.)",
-"l": "it",
-"y": 2025,
-"ru": "Грустный город (ит.)",
-"p": "img/portadas/la-citta-triste.webp",
-"tr": {
-"ru": "grustnyj-gorod"
-}
-},
-"grustnyj-gorod": {
-"t": "Грустный город",
-"es": "La ciudad triste",
-"l": "ru",
-"y": 2026,
-"ru": "Грустный город",
-"p": "img/portadas/grustnyj-gorod.webp",
-"tr": {
-"it": "la-citta-triste"
-}
-},
-"predchuvstvie-2-2": {
-"t": "Предчувствие 2.2",
-"es": "El presentimiento 2.2",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.2",
-"p": "img/portadas/predchuvstvie-2-2.webp",
 "tr": {}
 },
 "predchuvstvie-2": {
@@ -12517,13 +17233,40 @@ export const NOVELAS = {
 "p": "img/portadas/predchuvstvie-2.webp",
 "tr": {}
 },
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
-"l": "es",
-"y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"tr": {}
+},
+"pokhititel-serdec-portret-osnovatelya": {
+"t": "Похититель сердец: Портрет основателя",
+"es": "Ladrón de corazones: El retrato del fundador",
+"l": "ru",
+"y": 2026,
+"ru": "Похититель сердец: Портрет основателя",
+"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
+"tr": {}
+},
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
+"tr": {}
+},
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
 "tr": {}
 },
 "ondas-de-amor": {
@@ -12537,22 +17280,25 @@ export const NOVELAS = {
 "it": "onde-d-amore"
 }
 },
-"predchuvstvie-2-4": {
-"t": "Предчувствие 2.4",
-"es": "El presentimiento 2.4",
+"prizrachnyj-poezd": {
+"t": "Призрачный поезд",
+"es": "El tren fantasma (ru.)",
 "l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.4",
-"p": "img/portadas/predchuvstvie-2-4.webp",
-"tr": {}
+"y": 2026,
+"ru": "Призрачный поезд",
+"p": "img/portadas/prizrachnyj-poezd.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"it": "il-treno-fantasma"
+}
 },
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
-"l": "es",
-"y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
+"l": "ru",
+"y": 2026,
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
 "tr": {}
 },
 "predchuvstvie": {
@@ -12578,6 +17324,64 @@ export const NOVELAS = {
 "pl": "przeczucie"
 }
 },
+"divlji-chas-malbec": {
+"t": "Дивљи час: Љубав укуса малбека",
+"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
+"p": "img/portadas/divlji-chas-malbec.webp",
+"tr": {}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
+"tr": {}
+},
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
+"l": "ru",
+"y": 2026,
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
+"tr": {}
+},
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
+"tr": {
+"es": "ondas-de-amor"
+}
+},
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"tr": {}
+},
+"la-reina-de-la-vendimia": {
+"t": "La reina de la Vendimia",
+"es": "La reina de la Vendimia",
+"l": "es",
+"y": 2026,
+"ru": "Королева Вендимии (исп.)",
+"p": "img/portadas/la-reina-de-la-vendimia.webp",
+"tr": {
+"cs": "kralovna-vinobrani"
+}
+},
 "golos": {
 "t": "Голос",
 "es": "La voz",
@@ -12589,13 +17393,33 @@ export const NOVELAS = {
 "fr": "la-voix"
 }
 },
-"pokhititel-serdec-portret-osnovatelya": {
-"t": "Похититель сердец: Портрет основателя",
-"es": "Ladrón de corazones: El retrato del fundador",
+"grustnyj-gorod": {
+"t": "Грустный город",
+"es": "La ciudad triste",
 "l": "ru",
 "y": 2026,
-"ru": "Похититель сердец: Портрет основателя",
-"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
+"ru": "Грустный город",
+"p": "img/portadas/grustnyj-gorod.webp",
+"tr": {
+"it": "la-citta-triste"
+}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
 "tr": {}
 },
 "tajna-v-biblioteke": {
@@ -12607,6 +17431,127 @@ export const NOVELAS = {
 "p": "img/portadas/tajna-v-biblioteke.webp",
 "tr": {}
 },
+"predchuvstvie-2-3": {
+"t": "Предчувствие 2.3",
+"es": "El presentimiento 2.3",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.3",
+"p": "img/portadas/predchuvstvie-2-3.webp",
+"tr": {}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
+"y": 2026,
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
+"l": "ru",
+"y": 2026,
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
+"tr": {}
+},
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
+"l": "es",
+"y": 2026,
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
+"tr": {}
+},
+"predchuvstvie-2-2": {
+"t": "Предчувствие 2.2",
+"es": "El presentimiento 2.2",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.2",
+"p": "img/portadas/predchuvstvie-2-2.webp",
+"tr": {}
+},
+"anomalia": {
+"t": "Anomalía",
+"es": "Anomalía",
+"l": "es",
+"y": null,
+"ru": "Аномалия (исп.)",
+"p": "img/portadas/anomalia.webp",
+"tr": {}
+},
+"kralovna-vinobrani": {
+"t": "Královna vinobraní",
+"es": "La reina de la Vendimia (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Королева Вендимии (чеш.)",
+"p": "img/portadas/kralovna-vinobrani.webp",
+"tr": {
+"es": "la-reina-de-la-vendimia"
+}
+},
+"predchuvstvie-2-4": {
+"t": "Предчувствие 2.4",
+"es": "El presentimiento 2.4",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.4",
+"p": "img/portadas/predchuvstvie-2-4.webp",
+"tr": {}
+},
+"tajna-semi-fader": {
+"t": "Тайна семьи Фадер",
+"es": "El misterio de los Fader (ru.)",
+"l": "ru",
+"y": null,
+"ru": "Тайна семьи Фадер",
+"p": "img/portadas/tajna-semi-fader.webp",
+"tr": {
+"es": "el-misterio-de-los-fader"
+}
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
+},
+"ladro-di-cuori-3": {
+"t": "Ladro di cuori 3",
+"es": "Ladrón de corazones 3 (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Похититель сердец 3 (ит.)",
+"p": "img/portadas/ladro-di-cuori-3.webp",
+"tr": {}
+},
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
+"tr": {}
+},
 "27-ocak": {
 "t": "27 Ocak",
 "es": "27 de enero",
@@ -12615,7 +17560,142 @@ export const NOVELAS = {
 "ru": "27 января",
 "p": "img/portadas/27-ocak.webp",
 "tr": {}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
+"l": "ru",
+"y": 2026,
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
+},
+"operacion-londres": {
+"t": "El misterio de los Fader: Operación Londres",
+"es": "El misterio de los Fader: Operación Londres",
+"l": "es",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
+"p": "img/portadas/operacion-londres.webp",
+"tr": {}
+},
+"la-voix": {
+"t": "La voix",
+"es": "La voz (fr.)",
+"l": "fr",
+"y": null,
+"ru": "Голос (фр.)",
+"p": "img/portadas/la-voix.webp",
+"tr": {
+"ru": "golos"
+}
+},
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
+"l": "ru",
+"y": 2026,
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
+"tr": {}
+},
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
+"l": "es",
+"y": null,
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
+"tr": {}
+},
+"lluvia-de-meteoritos": {
+"t": "Lluvia de meteoritos",
+"es": "Lluvia de meteoritos",
+"l": "es",
+"y": null,
+"ru": "Метеоритный дождь (исп.)",
+"p": "img/portadas/lluvia-de-meteoritos.webp",
+"tr": {
+"ru": "meteoritnyj-dozhd"
+}
+},
+"il-treno-fantasma": {
+"t": "Il treno fantasma",
+"es": "El tren fantasma (it.)",
+"l": "it",
+"y": null,
+"ru": "Призрачный поезд (ит.)",
+"p": "img/portadas/il-treno-fantasma.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
+"l": "ru",
+"y": 2026,
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
+"tr": {
+"it": "ti-amo-in-silenzio"
+}
+},
+"el-tren-fantasma": {
+"t": "El tren fantasma",
+"es": "El tren fantasma",
+"l": "es",
+"y": null,
+"ru": "Призрачный поезд (исп.)",
+"p": "img/portadas/el-tren-fantasma.webp",
+"tr": {
+"it": "il-treno-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"dikij-chas-2": {
+"t": "Дикий час: Духи гор",
+"es": "La hora salvaje: Los espíritus de la montaña",
+"l": "ru",
+"y": null,
+"ru": "Дикий час: Духи гор",
+"p": "img/portadas/dikij-chas-2.webp",
+"tr": {}
+},
+"la-citta-triste": {
+"t": "La città triste",
+"es": "La ciudad triste (it.)",
+"l": "it",
+"y": 2025,
+"ru": "Грустный город (ит.)",
+"p": "img/portadas/la-citta-triste.webp",
+"tr": {
+"ru": "grustnyj-gorod"
+}
+},
+"el-misterio-de-los-fader": {
+"t": "El misterio de los Fader",
+"es": "El misterio de los Fader",
+"l": "es",
+"y": 2025,
+"ru": "Тайна семьи Фадер (исп.)",
+"p": "img/portadas/el-misterio-de-los-fader.webp",
+"tr": {
+"ru": "tajna-semi-fader"
+}
 }
 };
-export const IDIOMAS = {"ru": "ruso", "es": "español", "it": "italiano", "fr": "francés", "en": "inglés", "tr": "turco"};
-export const IDIOMAS_RU = {"ru": "русский", "es": "испанский", "it": "итальянский", "fr": "французский", "en": "английский", "tr": "турецкий"};
+export const IDIOMAS = {"ru": "ruso", "es": "español", "it": "italiano", "fr": "francés", "en": "inglés", "tr": "turco", "cs": "checo", "sr": "serbio"};
+export const IDIOMAS_RU = {"ru": "русский", "es": "испанский", "it": "итальянский", "fr": "французский", "en": "английский", "tr": "турецкий", "cs": "чешский", "sr": "сербский"};

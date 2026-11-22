@@ -37,6 +37,10 @@ NOVELAS = {
     'tajna-v-biblioteke': 'El misterio de la biblioteca', 'karnaval-sinei': 'El Carnaval de Sinea',
     'amor-en-el-cosmos': None, 'lluvia-de-meteoritos': None, 'la-chica-del-retrato': None,
     'el-impostor': None, 'the-immigrant': 'El inmigrante', '27-ocak': '27 de enero',
+    'la-reina-de-la-vendimia': None, 'kralovna-vinobrani': 'La reina de la Vendimia (checo)',
+    'el-misterio-de-los-fader': None, 'tajna-semi-fader': 'El misterio de los Fader (ru.)', 'operacion-londres': None,
+    'dikij-chas-2': 'La hora salvaje: Los espíritus de la montaña', 'divlji-chas-malbec': 'La hora salvaje: El amor con sabor a malbec (serbio)',
+    'ladro-di-cuori-3': 'Ladrón de corazones 3 (it.)', 'anomalia': None,
 }
 # Título en ruso para las novelas que no están escritas en ruso
 NOVELAS_RU = {
@@ -45,9 +49,12 @@ NOVELAS_RU = {
     'onde-d-amore-3': 'Волны любви 3: Лицо зла (ит.)', 'chi-ha-visto-sasha': 'Кто видел Сашу?', 'ti-amo-in-silenzio': 'Люблю тебя молча (ит.)',
     'amor-en-el-cosmos': 'Любовь в космосе', 'lluvia-de-meteoritos': 'Метеоритный дождь (исп.)', 'la-chica-del-retrato': 'Девушка с портрета',
     'el-impostor': 'Самозванец', 'the-immigrant': 'Иммигрант', '27-ocak': '27 января',
+    'la-reina-de-la-vendimia': 'Королева Вендимии (исп.)', 'kralovna-vinobrani': 'Королева Вендимии (чеш.)',
+    'el-misterio-de-los-fader': 'Тайна семьи Фадер (исп.)', 'operacion-londres': 'Тайна семьи Фадер: Операция «Лондон» (исп.)',
+    'divlji-chas-malbec': 'Дикий час: Любовь со вкусом мальбека (серб.)', 'ladro-di-cuori-3': 'Похититель сердец 3 (ит.)', 'anomalia': 'Аномалия (исп.)',
 }
-LANG_RU = {'ru': 'русский', 'es': 'испанский', 'it': 'итальянский', 'fr': 'французский', 'en': 'английский', 'tr': 'турецкий'}
-LANG = {'ru': 'ruso', 'es': 'español', 'it': 'italiano', 'fr': 'francés', 'en': 'inglés', 'tr': 'turco'}
+LANG_RU = {'ru': 'русский', 'es': 'испанский', 'it': 'итальянский', 'fr': 'французский', 'en': 'английский', 'tr': 'турецкий', 'cs': 'чешский', 'sr': 'сербский'}
+LANG = {'ru': 'ruso', 'es': 'español', 'it': 'italiano', 'fr': 'francés', 'en': 'inglés', 'tr': 'turco', 'cs': 'checo', 'sr': 'serbio'}
 # Novelas que se buscan para cada ciudad (Sinea usa todas las de NOVELAS)
 CIUDADES = {
     'sinea': {'dir': 'data', 'novelas': None},
@@ -59,7 +66,24 @@ CIUDADES = {
                 'volny-lyubvi-gorod-bez-ulybok': [(1, 3), (43, 44)], 'onde-d-amore': [(11, 20)]}},
     'utopia': {'dir': os.path.join('data', 'utopia'), 'novelas': [
         'predchuvstvie', 'predchuvstvie-2', 'predchuvstvie-2-2', 'predchuvstvie-2-3', 'predchuvstvie-2-4']},
+    # Mendoza es una ciudad real: los lugares llevan coordenadas reales («ll»: lat, lon) o su cuadra («g»: e, n)
+    'mendoza': {'dir': os.path.join('data', 'mendoza'), 'geo': 'mendoza', 'novelas': [
+        'la-reina-de-la-vendimia', 'kralovna-vinobrani', 'el-misterio-de-los-fader', 'tajna-semi-fader', 'operacion-londres',
+        'dikij-chas-2', 'divlji-chas-malbec', 'ladro-di-cuori-3', 'anomalia']},
 }
+
+# Mendoza: (0,0) en el centro de la Plaza Independencia; cuadrícula de 122,5 m girada 12,5° (igual que js/ciudades/mendoza.js)
+import math
+_LAT0, _LON0 = -32.8897243, -68.8444983
+_KX, _KY = 111320 * math.cos(math.radians(_LAT0)), 110920
+_TH = math.radians(12.5)
+def geo_xy(L):
+    if 'll' in L:
+        lat, lon = L['ll']; return round((lon - _LON0) * _KX), round((lat - _LAT0) * _KY)
+    if 'g' in L:
+        e, n = L['g'][0] * 122.5, L['g'][1] * 122.5
+        return round(e * math.cos(_TH) + n * math.sin(_TH)), round(-e * math.sin(_TH) + n * math.cos(_TH))
+    return L['x'], L['y']
 # Excepciones: patrones demasiado generales que solo valen en ciertas novelas
 SOLO = {
     'faro-ael': None,
@@ -132,6 +156,8 @@ def procesar(cfg, textos, titulos, seg, usadas):
     novs = cfg['novelas'] or list(NOVELAS)
     out = []
     for L in lugares:
+        if cfg.get('geo'):
+            L['x'], L['y'] = geo_xy(L)
         rx = re.compile(L['buscar'], re.I) if L.get('buscar') else None
         solo = L.get('solo') or SOLO.get(L['id'])
         excl = set(L.get('excluir') or [])

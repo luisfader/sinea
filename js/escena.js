@@ -1,7 +1,7 @@
 // Construcción de la escena 3D de Sinea: relieve, agua, calles, edificios e hitos.
 import * as THREE from './vendor/three.module.js';
 import {
-  LIMITES, COSTA, RIO, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, AFUERAS, MUELLES, CIUDAD, AFUERAS_HUECO, AFUERAS_COLOR, colorSuelo, zonaArboles, altura, costa, rio, dentro, distLinea, distSeg
+  LIMITES, COSTA, RIO, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, AFUERAS, MUELLES, CIUDAD, AFUERAS_HUECO, AFUERAS_COLOR, colorSuelo, zonaArboles, ARBOLES_CALLES, altura, costa, rio, dentro, distLinea, distSeg
 } from './mundo.js';
 
 // mundo (x este, y norte) → three (X, Y arriba, Z sur)
@@ -13,7 +13,7 @@ const W = LIMITES.x1 - LIMITES.x0, H = LIMITES.y1 - LIMITES.y0;
 /* ------------------------------------------------------------------ */
 /* Textura del suelo: un mapa pintado en un canvas                     */
 /* ------------------------------------------------------------------ */
-const ANCHO = { av: 22, c: 11, ca: 18 };
+const ANCHO = { av: 22, c: 11, ca: 18, ag: 11 };
 
 export function pintarSuelo(S, minimas) {
   const cv = document.createElement('canvas'); cv.width = cv.height = S;
@@ -60,9 +60,9 @@ export function pintarSuelo(S, minimas) {
     g.fillStyle = b.id === 'afueras' ? 'rgba(232,226,208,.55)' : b.id === 'ricos' ? 'rgba(226,232,206,.7)' : 'rgba(236,231,221,.88)';
     g.fillRect(0, 0, S, S);
     // calles menores de la cuadrícula
-    g.strokeStyle = '#fbfaf7'; g.lineWidth = Math.max(1, 7 * m); g.lineCap = 'butt';
+    g.strokeStyle = '#fbfaf7'; g.lineWidth = Math.max(1, (b.calle || 7) * m); g.lineCap = 'butt';
     const a = b.ang * Math.PI / 180, ca = Math.cos(a), sa = Math.sin(a), L = b.lote;
-    const [cx, cy] = cen(b.pol), R = 2600;
+    const [cx, cy] = b.o || cen(b.pol), R = Math.ceil(Math.max(2600, ...b.pol.map(p => Math.hypot(p[0] - cx, p[1] - cy))) / L) * L;
     g.beginPath();
     for (let k = -R; k <= R; k += L) {
       g.moveTo(px(cx + ca * k - sa * -R), py(cy + sa * k + ca * -R)); g.lineTo(px(cx + ca * k - sa * R), py(cy + sa * k + ca * R));
@@ -91,8 +91,8 @@ export function pintarSuelo(S, minimas) {
   }
   // 5) calles con nombre: borde y relleno
   g.lineJoin = 'round'; g.lineCap = 'round';
-  for (const [, t, pts] of CALLES) { camino(pts); g.strokeStyle = t === 'ca' ? '#d9a75a' : t === 'av' ? '#d2b56f' : '#cfc8bb'; g.lineWidth = (ANCHO[t] + 4) * m; g.stroke(); }
-  for (const [, t, pts] of CALLES) { camino(pts); g.strokeStyle = t === 'ca' ? '#f9c36b' : t === 'av' ? '#fde49a' : '#ffffff'; g.lineWidth = ANCHO[t] * m; g.stroke(); }
+  for (const [, t, pts] of CALLES) { camino(pts); g.strokeStyle = t === 'ag' ? '#8fb7c9' : t === 'ca' ? '#d9a75a' : t === 'av' ? '#d2b56f' : '#cfc8bb'; g.lineWidth = (ANCHO[t] + 4) * m; g.stroke(); }
+  for (const [, t, pts] of CALLES) { camino(pts); g.strokeStyle = t === 'ag' ? '#7fb8d6' : t === 'ca' ? '#f9c36b' : t === 'av' ? '#fde49a' : '#ffffff'; g.lineWidth = ANCHO[t] * m; g.stroke(); }
   // puertos y muelles
   g.fillStyle = '#cfc6b6';
   for (const [x, y, w, h] of MUELLES) g.fillRect(px(x), py(y + h / 2), w * m, h * m);
@@ -174,16 +174,17 @@ export function crearEdificios(reservas, uniforms) {
     return false;
   };
   for (const b of BARRIOS) {
-    const a = b.ang * Math.PI / 180, ca = Math.cos(a), sa = Math.sin(a), L = b.lote, calle = 7;
-    const [cx, cy] = cen(b.pol);
+    const a = b.ang * Math.PI / 180, ca = Math.cos(a), sa = Math.sin(a), L = b.lote, calle = b.calle || 7;
+    const [cx, cy] = b.o || cen(b.pol);
     let minx = 1e9, maxx = -1e9, miny = 1e9, maxy = -1e9;
     for (const p of b.pol) { minx = Math.min(minx, p[0]); maxx = Math.max(maxx, p[0]); miny = Math.min(miny, p[1]); maxy = Math.max(maxy, p[1]); }
-    const R = Math.max(maxx - minx, maxy - miny);
-    const nl = L > 90 ? 2 : L > 55 ? 3 : 2; // lotes por lado de manzana
+    const R = b.o ? Math.ceil(Math.max(...b.pol.map(p => Math.hypot(p[0] - cx, p[1] - cy))) / L) * L : Math.max(maxx - minx, maxy - miny);
+    const nl = b.nl || (L > 90 ? 2 : L > 55 ? 3 : 2); // lotes por lado de manzana
     for (let u = -R; u < R; u += L) for (let v = -R; v < R; v += L) {
       const cell = (L - calle) / nl;
       for (let i = 0; i < nl; i++) for (let j = 0; j < nl; j++) {
         if (r() > b.dens) continue;
+        if (nl > 3 && i > 0 && i < nl - 1 && j > 0 && j < nl - 1 && r() < 0.7) continue; // patio en el corazón de la manzana
         const lu = u + calle / 2 + cell * (i + .5), lv = v + calle / 2 + cell * (j + .5);
         const x = cx + ca * lu - sa * lv, y = cy + sa * lu + ca * lv;
         if (!dentro([x, y], b.pol)) continue;
@@ -198,6 +199,7 @@ export function crearEdificios(reservas, uniforms) {
         if (mx - mn > 9) continue;
         let alto = b.alt[0] + (b.alt[1] - b.alt[0]) * Math.pow(r(), 1.6);
         if (b.id === 'norte' && r() < 0.07) alto *= 2.2; // alguna torre
+        if (b.torres && r() < b.torres) alto *= 2.4;
         lotes.push({ x, y, w: fw, d: fd, h: alto, base: mn - 1, ang: a + (r() - .5) * 0.06, techo: b.techo, col: b.pal[(r() * b.pal.length) | 0] });
       }
     }
@@ -271,7 +273,7 @@ export function crearArboles(reservas) {
   for (const p of PARQUES) {
     let minx = 1e9, maxx = -1e9, miny = 1e9, maxy = -1e9;
     for (const q of p.pol) { minx = Math.min(minx, q[0]); maxx = Math.max(maxx, q[0]); miny = Math.min(miny, q[1]); maxy = Math.max(maxy, q[1]); }
-    const n = (maxx - minx) * (maxy - miny) / (p.cem ? 500 : 260);
+    const n = (maxx - minx) * (maxy - miny) / (p.cem ? 500 : p.den || 260);
     for (let i = 0; i < n; i++) {
       const x = minx + r() * (maxx - minx), y = miny + r() * (maxy - miny);
       if (!dentro([x, y], p.pol) || reservas.some(([rx, ry, rr]) => (x - rx) ** 2 + (y - ry) ** 2 < rr * rr)) continue;
@@ -279,12 +281,25 @@ export function crearArboles(reservas) {
     }
   }
   // arbolado en avenidas
-  for (const [, t, ptsC] of CALLES) {
-    if (t !== 'av') continue;
+  // Mendoza: árboles en todas las calles, también en las de la cuadrícula
+  const filas = CALLES.filter(c => c[1] === 'av').map(c => c[2]);
+  if (ARBOLES_CALLES) for (const b of BARRIOS) {
+    if (!b.o) continue;
+    const a = b.ang * Math.PI / 180, ca = Math.cos(a), sa = Math.sin(a), L = b.lote, [cx, cy] = b.o;
+    const us = b.pol.map(p => { const dx = p[0] - cx, dy = p[1] - cy; return [dx * ca + dy * sa, -dx * sa + dy * ca]; });
+    const u0 = Math.min(...us.map(q => q[0])), u1 = Math.max(...us.map(q => q[0])), v0 = Math.min(...us.map(q => q[1])), v1 = Math.max(...us.map(q => q[1]));
+    const P = (u, v) => [cx + ca * u - sa * v, cy + sa * u + ca * v];
+    for (let k = Math.ceil(u0 / L) * L; k <= u1; k += L) filas.push([P(k, v0), P(k, v1)]);
+    for (let k = Math.ceil(v0 / L) * L; k <= v1; k += L) filas.push([P(u0, k), P(u1, k)]);
+  }
+  for (const ptsC of filas) {
+    const t = 'av';
     for (let i = 0; i < ptsC.length - 1; i++) {
       const [ax, ay] = ptsC[i], [bx, by] = ptsC[i + 1], L = Math.hypot(bx - ax, by - ay), nx = -(by - ay) / L, ny = (bx - ax) / L;
-      for (let s = 10; s < L; s += 16) for (const sg of [-1, 1]) {
-        const x = ax + (bx - ax) * s / L + nx * sg * 15, y = ay + (by - ay) * s / L + ny * sg * 15;
+      const off = ARBOLES_CALLES ? 9 : 15, paso = ARBOLES_CALLES ? 26 : 16;
+      for (let s = 10; s < L; s += paso) for (const sg of [-1, 1]) {
+        const x = ax + (bx - ax) * s / L + nx * sg * off, y = ay + (by - ay) * s / L + ny * sg * off;
+        if (ARBOLES_CALLES && !BARRIOS.some(b => dentro([x, y], b.pol))) continue;
         if (costa(x, y) > 6 && rio(x, y)[0] > 40 && !PLAZAS.some(([px, py, w, h]) => Math.abs(x - px) < w / 2 && Math.abs(y - py) < h / 2)) pts.push([x, y, 2]);
       }
     }
@@ -354,6 +369,6 @@ export function crearAfueras() {
   }
   const geo = new THREE.ShapeGeometry(sh); geo.rotateX(Math.PI / 2);
   const mat = new THREE.MeshStandardMaterial({ color: AFUERAS_COLOR, roughness: 1, side: THREE.DoubleSide });
-  const m = new THREE.Mesh(geo, mat); m.position.y = CIUDAD === 'verdegrad' ? 3.2 : 1.2;
+  const m = new THREE.Mesh(geo, mat); m.position.y = CIUDAD === 'mendoza' ? 29 : CIUDAD === 'verdegrad' ? 3.2 : 1.2;
   return m;
 }
