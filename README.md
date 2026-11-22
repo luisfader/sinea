@@ -1,14 +1,15 @@
 # Mapas de los mundos literarios de Robert Fader · Карты миров Роберта Фадера
 
-Sinea, Verdegrad, Nuestra Utopía, Mendoza y Venecia en 3D. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
+Sinea, Verdegrad, Nuestra Utopía, Mendoza, Venecia y Madrid en 3D. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
 
-Cinco mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza | Venecia** arriba:
+Seis mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza | Venecia | Madrid** arriba:
 
 - **Sinea**, la ciudad junto al mar: `index.html`
 - **Verdegrad**, el pueblo verde de Natalia, con su fortaleza en la penumbra: `index.html?ciudad=verdegrad` (o `verdegrad.html`)
 - **Nuestra Utopía** (Наша Утопия), la fortaleza de Robert en «Предчувствие»: `index.html?ciudad=utopia` (o `utopia.html`)
 - **Mendoza** (Мендоса), la ciudad real de «La reina de la Vendimia», «El misterio de los Fader», «Дикий час: Духи гор» y otras: `index.html?ciudad=mendoza` (o `mendoza.html`)
 - **Venecia** (Венеция), la ciudad real de «Maschera di Venezia» / «Венецианская маска»: `index.html?ciudad=venezia` (o `venezia.html`)
+- **Madrid** (Мадрид), la ciudad real de «Дикий час: Карнавал раздора»: `index.html?ciudad=madrid` (o `madrid.html`)
 
 Los rótulos verdes en el borde del mapa también llevan de una ciudad a la otra («← Verdegrad · estación Nubecita» en Sinea; «← Antiguo camino a Sinea» en Verdegrad).
 
@@ -86,6 +87,10 @@ Las reseñas (`data/mendoza/resenas.json`) son de Jana, Mirta, Julieta Arancibia
 ## Venecia
 
 El mapa de «Maschera di Venezia» (y de su versión rusa, «Венецианская маска», que agrega el Arsenal, la Salute, San Giorgio, San Michele y la red de cartas). La forma de las islas y de los canales grandes es la real: sale de una máscara tierra/agua de OpenStreetMap a 6,7 m por píxel, guardada como campo de distancias en `img/venezia-tierra.png` y leída por `js/ciudades/venezia.js`. Los canales chicos (rii) no entran a esa resolución. Los monumentos (Basílica, Campanile, Palacio Ducal, Puente de los Suspiros, Rialto, Salute, San Giorgio, la Porta Magna del Arsenal) están en sus coordenadas reales y modelados a mano; por el Canal Grande andan góndolas y vaporetti. Los lugares subterráneos de la novela (la Venecia perdida, las mazmorras de la Logia, el nivel sumergido, San Michele dell'Abisso, el palacio de Natalia) van debajo del sitio que dice el texto; los que la novela no ubica lo dicen en su ficha. Datos: `data/venezia/`.
+
+## Madrid
+
+El Madrid de «Дикий час: Карнавал раздора», del Templo de Debod al Retiro y de Colón a Atocha. El suelo es el mapa real de OpenStreetMap reclasificado (calles, manzanas, parques, el Manzanares) en `img/madrid-suelo.png`, a 3,64 m por píxel; los edificios salen de ese mismo mapa: uno cada 12 m donde OSM dibuja edificios (`js/ciudades/madrid-lotes.js`), con alturas inventadas. Modelados a mano: el monumento a Cervantes, la Torre de Madrid, el Templo de Debod, el Oso y el Madroño, la Plaza Mayor, el Mercado de la Cebada, la Biblioteca Nacional, la columna de Colón con la bandera, el Banco de España y una boca de metro. Datos: `data/madrid/`.
 
 ## Añadir o corregir un lugar
 

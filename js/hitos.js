@@ -686,6 +686,86 @@ const MODELOS = {
     g.add(caja(140, 9, 6, lad, 70, 0, -4)); g.add(caja(6, 9, 120, lad, 140, 0, 56));
     return { g, r: 30 };
   },
+  // ---- Madrid ----
+  cervantes() { // Monumento a Cervantes en la Plaza de España, con Don Quijote y Sancho a caballo delante
+    const g = new THREE.Group(), piedra = M(0xd8cdb8), bronce = M(0x5d5a42, { metalness: .5, roughness: .45 });
+    g.add(caja(36, 1.5, 22, 0xcfc3ad)); g.add(caja(16, 7, 10, piedra, 0, 1.5)); g.add(caja(9, 16, 7, piedra, 0, 8.5));
+    g.add(caja(5, 6, 5, piedra, 0, 24.5)); g.add(esfera(3, M(0x4f7fb8), 0, 33.5, 0));
+    g.add(caja(2.4, 4, 2, bronce, 0, 9, 4.2)); g.add(esfera(.9, bronce, 0, 13.8, 4.2)); // Cervantes sentado
+    g.add(caja(4.5, 2.2, 1.6, bronce, -3, 1.5, 9)); g.add(caja(1, 3.6, .8, bronce, -3, 3.7, 9)); // Don Quijote en Rocinante
+    g.add(caja(3, 1.8, 1.6, bronce, 3, 1.5, 9)); g.add(caja(1.2, 2.2, 1, bronce, 3, 3.3, 9)); // Sancho en el burro
+    g.add(caja(30, .8, 6, 0x8fb7c9, 0, 0, 15));
+    return { g, r: 26 };
+  },
+  debod() { // el Templo de Debod: el santuario egipcio, dos puertas de piedra y el estanque
+    const g = new THREE.Group(), p = M(0xd9c39a);
+    g.add(caja(70, .6, 26, 0x9fc3cf, 0, .2, 0));
+    g.add(caja(16, 9, 12, p, -26, 0, 0)); g.add(caja(17, 1.6, 13, 0xcbb289, -26, 9, 0));
+    for (const x of [6, 22]) { g.add(caja(2.6, 8, 3, p, x, 0, -3)); g.add(caja(2.6, 8, 3, p, x, 0, 3)); g.add(caja(2.8, 1.8, 9, p, x, 8, 0)); }
+    return { g, r: 34 };
+  },
+  'torre-madrid'() { // la Torre de Madrid, 142 m sobre la Plaza de España
+    const g = new THREE.Group(), c = M(0xe7e1d4), v = M(0x8aa3b5, { roughness: .3, metalness: .2 });
+    g.add(caja(46, 16, 40, c)); g.add(caja(30, 110, 22, c, 0, 16)); g.add(caja(20, 16, 16, c, 0, 126));
+    for (let y = 22; y < 124; y += 4) g.add(caja(30.4, 1.2, 22.4, v, 0, y));
+    return { g, r: 26 };
+  },
+  'oso-madrono'() { // el Oso y el Madroño de la Puerta del Sol
+    const g = new THREE.Group(), bronce = M(0x5d4a35, { metalness: .5, roughness: .45 });
+    g.add(caja(3, 2, 3, 0xc9bda8)); g.add(cil(.35, .45, 5, bronce, .8, 2, 0, 8));
+    g.add(esfera(2.2, M(0x3e6b3a), .8, 7.5, 0)); g.add(esfera(1.2, bronce, -.6, 3.6, 0)); g.add(esfera(.7, bronce, -.4, 5, .2));
+    return { g, r: 6 };
+  },
+  'plaza-mayor'() { // la Plaza Mayor: rectángulo cerrado de fachadas rojas con nueve arcos y el rey Felipe III en el centro
+    const g = new THREE.Group(), roja = M(0xa8573f), pizarra = M(0x4b4f57);
+    const W = 129, D = 94, A = 14, H = 20;
+    for (const [w, d, x, z] of [[W, A, 0, -D / 2 + A / 2], [W, A, 0, D / 2 - A / 2], [A, D, -W / 2 + A / 2, 0], [A, D, W / 2 - A / 2, 0]]) {
+      g.add(caja(w, H, d, roja, x, 0, z)); const t = new THREE.Mesh(prismaGeo(), pizarra); t.scale.set(w, 4, d); t.position.set(x, H, z); if (d > w) t.rotation.y = 0; g.add(t);
+    }
+    for (const x of [-12, 12]) { g.add(caja(6, 30, 6, roja, x, 0, -D / 2 + A / 2)); const c = new THREE.Mesh(new THREE.ConeGeometry(4.2, 10, 4), pizarra); c.position.set(x, 35, -D / 2 + A / 2); c.rotation.y = Math.PI / 4; g.add(c); }
+    g.add(caja(4, 4, 2, 0xc9bda8)); g.add(caja(3, 2, 1, M(0x5d5a42, { metalness: .5 }), 0, 4)); g.add(caja(.8, 2.4, .8, M(0x5d5a42, { metalness: .5 }), 0, 6));
+    g.rotation.y = 0.12;
+    return { g, r: 74 };
+  },
+  cebada() { // el Mercado de la Cebada, con su techo ondulado de cúpulas
+    const g = new THREE.Group();
+    g.add(caja(80, 9, 56, 0xd8d2c4));
+    for (let i = 0; i < 4; i++) for (let j = 0; j < 3; j++) g.add(esfera(10, M(0x8a96a0, { metalness: .4 }), -30 + i * 20, 9, -18 + j * 18, {}, [14, 6, 0, Math.PI * 2, 0, Math.PI / 2]));
+    return { g, r: 44 };
+  },
+  'biblioteca-nacional'() { // la Biblioteca Nacional, sobre el Paseo de Recoletos
+    const g = new THREE.Group(), p = M(0xe9e1d0);
+    g.add(caja(36, 24, 150, p)); g.add(caja(60, 20, 30, p, 20, 0, 0)); g.add(caja(8, 3, 34, 0xd8cdb8, -21, 0, 0));
+    for (let i = -3; i <= 3; i++) g.add(cil(1.3, 1.3, 16, p, -22, 4, i * 4, 10));
+    const fr = new THREE.Mesh(prismaGeo(), p); fr.scale.set(3, 6, 30); fr.position.set(-22, 20, 0); g.add(fr);
+    g.add(caja(50, .5, 150, 0xd9d0bd, 30, 0, 0));
+    return { g, r: 50 };
+  },
+  colon() { // la Plaza de Colón: la columna del navegante y la gran bandera de España
+    const g = new THREE.Group(), p = M(0xe0d6c3);
+    g.add(caja(8, 6, 8, p)); g.add(cil(1.8, 2.2, 22, p, 0, 6, 0, 12)); g.add(caja(3, 3, 3, p, 0, 28)); g.add(caja(1.2, 4, 1.2, M(0xd8d0bf), 0, 31));
+    g.add(cil(.4, .4, 50, 0x888888, 30, 0, 10, 8));
+    const bandera = new THREE.Group(); bandera.position.set(30, 44, 10);
+    const geo = new THREE.PlaneGeometry(21, 14, 12, 4); geo.translate(10.5, -7, 0);
+    const col = []; const pos = geo.attributes.position; for (let i = 0; i < pos.count; i++) { const yy = pos.getY(i); const c = yy > -3.5 || yy < -10.5 ? [0.78, 0.07, 0.12] : [0.98, 0.76, 0.0]; col.push(...c); }
+    geo.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
+    const fl = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({ vertexColors: true, side: THREE.DoubleSide, roughness: .8 })); bandera.add(fl); g.add(bandera);
+    const base = geo.attributes.position.array.slice();
+    return { g, r: 30, anim(t) { const a = pos.array; for (let i = 0; i < pos.count; i++) { const x = base[i * 3]; a[i * 3 + 2] = Math.sin(x * .45 - t * 3) * x * .06; } pos.needsUpdate = true; } };
+  },
+  'banco-espana'() { // el Banco de España, en la esquina de Cibeles, con la fuente de la diosa delante
+    const g = new THREE.Group(), p = M(0xe8dfcd);
+    g.add(caja(90, 22, 30, p, 0, 0, -10)); g.add(caja(30, 22, 80, p, 30, 0, 15)); g.add(cil(9, 9, 26, p, 40, 0, -20, 16));
+    g.add(esfera(9, M(0x6e8a7e, { metalness: .4 }), 40, 26, -20, {}, [16, 8, 0, Math.PI * 2, 0, Math.PI / 2]));
+    g.add(cil(9, 9, 1, 0x9fc3cf, 85, 0, -40, 20)); g.add(caja(3, 3, 5, M(0xe9e3d6), 85, 1, -40)); g.add(esfera(1, M(0xe9e3d6), 85, 5.5, -40));
+    return { g, r: 52 };
+  },
+  metro() { // una boca del metro de Madrid, con su rombo rojo
+    const g = new THREE.Group();
+    g.add(caja(6, .6, 10, 0x9a948a)); g.add(cil(.15, .15, 4, 0x777777, 3.5, 0, 5, 6));
+    const r = new THREE.Mesh(new THREE.BoxGeometry(2.2, 1.2, .2), new THREE.MeshStandardMaterial({ color: 0xd8262e, emissive: 0x6a0a0a })); r.position.set(3.5, 4.4, 5); r.rotation.z = Math.PI / 4; g.add(r);
+    return { g, r: 6 };
+  },
   'tren-fantasma'() { return { g: new THREE.Group(), r: 0 }; }
 };
 
@@ -707,7 +787,7 @@ export function construirHitos(lugares, u) {
     grupo.add(m.g);
     if (m.anim) anims.push(m.anim);
     if (m.r) reservas.push([L.x, L.y, m.r]);
-    L._h = h + ({ 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
+    L._h = h + ({ cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
   }
   // reserva extra: la plaza Dante entera y el puerto
   reservas.push(...RESERVAS);

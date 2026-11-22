@@ -1893,6 +1893,15 @@ export const CIUDADES = {
 "Café Ladrón de Corazones"
 ]
 ]
+},
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"3",
+"Дом мечты"
+]
+]
 }
 ],
 "res": [
@@ -4573,6 +4582,23 @@ export const CIUDADES = {
 [
 "14",
 "Альриша"
+]
+]
+},
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"26",
+"Храм Дебод"
+],
+[
+"30",
+"Колода из вагона"
+],
+[
+"38",
+"Прощание с Мадридом"
 ]
 ]
 },
@@ -18440,25 +18466,928 @@ export const CIUDADES = {
 "c": "7"
 }
 }
+],
+"madrid": [
+{
+"id": "mad-espana",
+"nombre": "Plaza de España",
+"cat": "plaza",
+"x": -736,
+"y": 723,
+"modelo": "cervantes",
+"desc": "El gran campo de batalla de la novela. Junto al monumento a Cervantes, con Don Quijote y Sancho Panza, espera el rey fantasma sobre un caballo blanco, y a lo largo de la Gran Vía forman las columnas blancas de su ejército. El rey no ataca: le hace a Luis una sola pregunta: «¿Qué te dio España?». Luis se queda inmóvil a su lado, como un monumento más, hasta que desde la calle de la Princesa entra a la plaza un diminuto Seat 600 blanco. Acá suena «¡Madrid, levántate!»: los madrileños bajan de los balcones con bastones, escobas, sartenes y cucharones. Acá vuelve de vacaciones el dragón Zmaj, y acá se juega el duelo final, a las cartas, con una baraja española, hasta el «¡Escoba!» que deshace a la caballería blanca. Al final, en la escalinata, Mariano muestra ante las cámaras de todo el mundo la foto del túnel bajo la tribuna: la final del Mundial Argentina–España estaba arreglada.",
+"nombre_ru": "Площадь Испании",
+"desc_ru": "Главное поле битвы. У памятника Сервантесу, с Дон Кихотом и Санчо Пансой, ждёт призрачный король на белом коне, а вдоль Гран-Виа стоят белые колонны его армии. Король не нападает — он задаёт Луису один вопрос: «Что тебе дала Испания?» Луис застывает рядом с ним, как ещё один памятник, пока со стороны улицы Принсеса на площадь не въезжает крошечный белый «Сеат-600». Здесь звучит «Мадрид, вставай!»: мадридцы спускаются с балконов с тростями, швабрами, сковородками и половниками. Здесь из отпуска возвращается дракон Змай, и здесь идёт последний поединок — в карты, испанской колодой, до «Эскобы!», от которой белая конница рассыпается в пыль. В финале на ступенях Мариано показывает камерам всего мира фотографию из подтрибунного тоннеля: финал чемпионата мира Аргентина — Испания был договорным.",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"13",
+"Высший Малон"
+],
+[
+"20",
+"Медведь и земляничное дерево"
+],
+[
+"21",
+"Что тебе дала Испания?"
+],
+[
+"22",
+"Чужой взгляд"
+],
+[
+"23",
+"Чемодан Феррейры"
+],
+[
+"24",
+"Мадрид, вставай!"
+],
+[
+"25",
+"Змай вернулся из отпуска"
+],
+[
+"26",
+"Храм Дебод"
+],
+[
+"27",
+"Фотография из чемодана"
+],
+[
+"28",
+"¡Pasaremos!"
+],
+[
+"31",
+"Банк Испании"
+],
+[
+"32",
+"Маска Инти"
+],
+[
+"33",
+"Не раньше десяти"
+],
+[
+"34",
+"Наипы"
+],
+[
+"35",
+"Эскоба"
+],
+[
+"36",
+"Аргумент поубедительнее"
+],
+[
+"37",
+"Договорной финал"
+],
+[
+"38",
+"Прощание с Мадридом"
+],
+[
+"39",
+"Дом"
+],
+[
+"extra-2",
+"Тёмная комната"
+]
+]
+}
+],
+"res": [
+{
+"a": "El rey fantasma",
+"ar": "Призрачный король",
+"s": 3,
+"es": "Buen pedestal, buena vista de la Gran Vía. Hice una sola pregunta y me respondieron con una baraja. Escoba. No vuelvo.",
+"ru": "Хороший постамент, хороший вид на Гран-Виа. Задал всего один вопрос — а мне ответили колодой. Эскоба. Больше не приду."
+},
+{
+"a": "Mariano Ferreira",
+"ar": "Мариано Феррейра",
+"s": 5,
+"es": "Acá, frente a las cámaras de todo el mundo, cumplí la promesa que le hice a Luis en Belgrado. Pesó como el trofeo.",
+"ru": "Здесь, перед камерами всего мира, я выполнил обещание, данное Луису ещё в Белграде. Весило оно как кубок."
+},
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "Llegué en un Seat 600 blanco y bajó medio Madrid de los balcones con escobas y sartenes. Ninguna ciudad me hizo llorar así.",
+"ru": "Я въехала на белом «Сеате-600», и пол-Мадрида спустилось с балконов со швабрами и сковородками. Ни один город не доводил меня так до слёз."
+}
+],
+"img": {
+"src": "img/lugares/mad-espana.webp",
+"n": "dikij-chas-karnaval-razdora",
+"c": "21"
+}
+},
+{
+"id": "mad-gran-via",
+"nombre": "Gran Vía",
+"cat": "calle",
+"x": -202,
+"y": 358,
+"modelo": "ninguno",
+"desc": "La gran avenida de los edificios altos, de la Plaza de España a la calle de Alcalá, pasando por Callao. En la novela, a lo largo de toda la Gran Vía forman las columnas blancas del ejército fantasma, y hasta Callao los faroles parpadean. Zmaj arranca con el ala un cartel publicitario de la Gran Vía, y después del «¡Escoba!» la caballería blanca se deshace en polvo plateado de la plaza a Callao.",
+"nombre_ru": "Гран-Виа",
+"desc_ru": "Большой проспект высоких домов от площади Испании до улицы Алькала через Каллао. В романе вдоль всей Гран-Виа стоят белые колонны призрачной армии, а до самого Каллао мигают фонари. Змай сносит крылом рекламный щит на Гран-Виа, а после «Эскобы!» белая конница рассыпается серебристой пылью от площади до Каллао.",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"20",
+"Медведь и земляничное дерево"
+],
+[
+"21",
+"Что тебе дала Испания?"
+],
+[
+"22",
+"Чужой взгляд"
+],
+[
+"24",
+"Мадрид, вставай!"
+],
+[
+"25",
+"Змай вернулся из отпуска"
+],
+[
+"26",
+"Храм Дебод"
+],
+[
+"27",
+"Фотография из чемодана"
+],
+[
+"33",
+"Не раньше десяти"
+],
+[
+"34",
+"Наипы"
+],
+[
+"35",
+"Эскоба"
+]
+]
+}
+],
+"res": [
+{
+"a": "Zmaj",
+"ar": "Змай",
+"s": 4,
+"es": "Le pegué con el ala a un cartel publicitario. Sin querer. Bueno, un poco queriendo.",
+"ru": "Задел крылом рекламный щит. Случайно. Ну, почти случайно."
+}
+]
+},
+{
+"id": "mad-atocha",
+"nombre": "Calle de Atocha",
+"cat": "calle",
+"x": 371,
+"y": -510,
+"modelo": "ninguno",
+"desc": "De la zona de la Puerta del Sol hacia el sudeste, hasta la estación de Atocha. Es el primer choque con la anomalía: por la calle corre una multitud disfrazada de carnaval y de toreros, y detrás va una estatua de bronce de un toro que cobró vida. El toro atraviesa un cartel publicitario y corre los autos con los cuernos.",
+"nombre_ru": "Улица Аточа",
+"desc_ru": "Улица от Пуэрта-дель-Соль на юго-восток, к вокзалу Аточа. Первое столкновение с аномалией: по улице несётся толпа в карнавальных костюмах и нарядах тореадоров, а за ней — ожившая бронзовая статуя быка. Бык пробивает рекламный щит и сдвигает рогами машины.",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"5",
+"Бык"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 3,
+"es": "Primer día en Madrid: una multitud de toreros y un toro de bronce corriendo los autos con los cuernos. Linda calle, tránsito complicado.",
+"ru": "Первый день в Мадриде: толпа тореадоров и бронзовый бык, который сдвигает рогами машины. Красивая улица, движение сложное."
+}
+]
+},
+{
+"id": "mad-lavapies",
+"nombre": "Lavapiés",
+"cat": "barrio",
+"x": 223,
+"y": -889,
+"modelo": "fuente",
+"desc": "El barrio viejo y popular con la fuente en la plaza. Huyendo del toro, Luis y Natasha llegan acá, y acá cobran vida todas las estatuas, que bajan despacio de sus pedestales; Luis literalmente toma al toro por los cuernos. Más tarde, junto a la fuente, Natasha se compra zapatos nuevos. Las margaritas con dientes muerden a todo el mundo en Lavapiés, pero a Luis lo esquivan, y Natasha lo nota. Y fue un jugador de cartas de Lavapiés el que, casi cien años antes, dejó en el tren fantasma la baraja que decidirá la suerte de Madrid.",
+"nombre_ru": "Лавапьес",
+"desc_ru": "Старый народный квартал с фонтаном на площади. Убегая от быка, Луис и Наташа попадают сюда — и здесь оживают уже все статуи, медленно сходя с пьедесталов; Луис буквально берёт быка за рога. Позже у фонтана Наташа покупает новые туфли. Зубастые маргаритки кусают в Лавапьесе всех подряд, но Луиса облетают стороной — и Наташа это замечает. А колоду, которая решит судьбу Мадрида, почти сто лет назад оставил в призрачном поезде картёжник из Лавапьеса.",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"6",
+"Лавапьес"
+],
+[
+"7",
+"Не пройдут"
+],
+[
+"10",
+"Страница Таурана"
+],
+[
+"27",
+"Фотография из чемодана"
+],
+[
+"28",
+"¡Pasaremos!"
+],
+[
+"30",
+"Колода из вагона"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "Zapatos nuevos junto a la fuente. Y unas margaritas con dientes que muerden a todos menos a Luis. Lo anoté.",
+"ru": "Новые туфли у фонтана. И зубастые маргаритки, которые кусают всех, кроме Луиса. Я это запомнила."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 4,
+"es": "Tomé un toro por los cuernos, literal. Las estatuas del barrio tienen mucha vida, demasiada.",
+"ru": "Взял быка за рога — буквально. У статуй в этом квартале очень много жизни, даже слишком."
+}
+],
+"img": {
+"src": "img/lugares/mad-lavapies.webp",
+"n": "dikij-chas-karnaval-razdora",
+"c": "6"
+}
+},
+{
+"id": "mad-biblioteca",
+"nombre": "Biblioteca Nacional",
+"cat": "edificio",
+"x": 1144,
+"y": 740,
+"modelo": "biblioteca-nacional",
+"desc": "Sobre el Paseo de Recoletos, junto a la Plaza de Colón. Acá se guarda el único manuscrito que habla de los siete signos celestes, del culto al toro y de la sumisión de la mente humana. En una de sus páginas está dibujado Taurán, el antiguo dios toro ibérico, y el toro dibujado abre los ojos y sale de la página. Luis salta sobre el dios toro y lo toma por los cuernos: Taurán se calma, y en todo Madrid la luz dorada se va de los ojos de los toreros contagiados. Antes de irse, Natasha vuelve sola y devuelve la hoja que arrancó el primer día.",
+"nombre_ru": "Национальная библиотека",
+"desc_ru": "На бульваре Реколетос, рядом с площадью Колумба. Здесь хранится единственная рукопись, где упоминаются семь небесных знаков, культ быка и подчинение человеческого сознания. На её странице нарисован Тауран — древний иберийский бог-бык, и нарисованный бык открывает глаза и выходит со страницы. Луис прыгает на бога-быка и берёт его за рога: Тауран смиряется, и по всему Мадриду из глаз заражённых тореадоров уходит золотой свет. Перед отъездом Наташа приходит сюда одна и возвращает лист, который вырвала из рукописи в первый день.",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"7",
+"Не пройдут"
+],
+[
+"8",
+"Бордовый бык"
+],
+[
+"10",
+"Страница Таурана"
+],
+[
+"11",
+"Взять быка за рога"
+],
+[
+"12",
+"Кольцо вокруг Мадрида"
+],
+[
+"13",
+"Высший Малон"
+],
+[
+"38",
+"Прощание с Мадридом"
+],
+[
+"extra-1",
+"Кто здесь главный?"
+]
+]
+}
+],
+"res": [
+{
+"a": "El bibliotecario",
+"ar": "Библиотекарь",
+"s": 2,
+"es": "Una señorita arrancó una hoja del manuscrito el primer día. La devolvió al final, eso sí. Y un toro salió de la página. Exijo silencio en la sala.",
+"ru": "Одна сеньорита в первый же день вырвала лист из рукописи. Правда, в конце вернула. И ещё из страницы вышел бык. Требую тишины в зале."
+},
+{
+"a": "Taurán",
+"ar": "Тауран",
+"s": 4,
+"es": "Lindo libro para vivir. Volví a casa, a mi página. Un hombre me tomó por los cuernos y no me molestó tanto.",
+"ru": "Хорошая книга, чтобы в ней жить. Вернулся домой, на свою страницу. Один человек взял меня за рога — и мне это почти не мешало."
+}
+],
+"img": {
+"src": "img/lugares/mad-biblioteca.webp",
+"n": "dikij-chas-karnaval-razdora",
+"c": "11"
+}
+},
+{
+"id": "mad-colon",
+"nombre": "Plaza de Colón",
+"cat": "plaza",
+"x": 1118,
+"y": 919,
+"modelo": "colon",
+"desc": "La columna con el navegante y la enorme bandera de España. Por la Castellana llega un ejército fantasma interminable: guerreros de albornoces blancos con sables, caballería, estandartes. Mientras Natasha lleva a la gente bajo tierra, Luis sale solo al medio de la plaza y llama al Malón Supremo. Al sentir el peligro, Natasha sale corriendo del metro y echa al rey de la plaza… con un cono de tránsito. A la mañana la plaza parece un campo de batalla: la columna rayada por los sables y la bandera torcida.",
+"nombre_ru": "Площадь Колумба",
+"desc_ru": "Колонна с фигурой мореплавателя и огромный испанский флаг. По Кастельяне сюда идёт бесконечная призрачная армия — воины в белых бурнусах с саблями, конница, знамёна. Пока Наташа уводит людей под землю, Луис один выходит на середину площади и вызывает Высший Малон. Почувствовав беду, Наташа выбегает из метро и выгоняет короля с площади… дорожным конусом. Утром площадь похожа на поле боя: колонна исцарапана саблями, флаг висит криво.",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"13",
+"Высший Малон"
+],
+[
+"14",
+"Славянская ярость"
+],
+[
+"24",
+"Мадрид, вставай!"
+],
+[
+"26",
+"Храм Дебод"
+],
+[
+"27",
+"Фотография из чемодана"
+],
+[
+"29",
+"Часы, эстампита и телефон"
+],
+[
+"32",
+"Маска Инти"
+],
+[
+"38",
+"Прощание с Мадридом"
+],
+[
+"extra-1",
+"Кто здесь главный?"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "Eché a un rey de la plaza con un cono de tránsito. Lo recomiendo: es más útil de lo que parece.",
+"ru": "Выгнала короля с площади дорожным конусом. Рекомендую: он полезнее, чем кажется."
+},
+{
+"a": "Mariano Ferreira",
+"ar": "Мариано Феррейра",
+"s": 3,
+"es": "A la mañana la columna estaba rayada y la bandera torcida. La cuenta la pagamos nosotros.",
+"ru": "Утром колонна была исцарапана, а флаг висел криво. Счёт оплатили мы."
+}
+],
+"img": {
+"src": "img/lugares/mad-colon.webp",
+"n": "dikij-chas-karnaval-razdora",
+"c": "13"
+}
+},
+{
+"id": "mad-metro-colon",
+"nombre": "Estación de metro Colón",
+"cat": "transporte",
+"x": 1219,
+"y": 867,
+"modelo": "metro",
+"desc": "Línea 4. Miles de madrileños se esconden en los andenes, los túneles y los pasillos, y Natasha, con un megáfono, pone orden: el perro sí, la heladera de cerveza no. Los espíritus golpean las rejas de las entradas pero no pueden entrar: bajo Madrid nace una fortaleza. Entre la multitud aparece una pelirroja disfrazada de carnaval —«Déjenme pasar, soy médica»— con un acento que a Natasha le suena demasiado. La herida de sable de Luis no cierra; lo salva el elixir que «simplemente Karl» le dio al agente L. Y en una línea sin ningún tren, de repente, suena una bocina.",
+"nombre_ru": "Станция метро «Колон»",
+"desc_ru": "Линия 4. Тысячи мадридцев прячутся на платформах, в тоннелях и переходах, а Наташа с мегафоном держит порядок: собаку можно, холодильник для пива — нельзя. Духи бьют в решётки входов, но войти не могут — под Мадридом образовалась крепость. Сквозь толпу пробирается рыжая женщина в карнавальном костюме: «Пропустите, я врач», — и её акцент Наташе очень знаком. Рана от сабли не заживает; Луиса спасает эликсир, который агенту Л дал «просто Карл». А на линии, где нет ни одного поезда, вдруг раздаётся гудок.",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"13",
+"Высший Малон"
+],
+[
+"14",
+"Славянская ярость"
+],
+[
+"15",
+"Крепость под Мадридом"
+],
+[
+"16",
+"Рыжая"
+],
+[
+"17",
+"Эликсир Карла"
+],
+[
+"18",
+"Поезд без расписания"
+],
+[
+"24",
+"Мадрид, вставай!"
+],
+[
+"26",
+"Храм Дебод"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "Mil madrileños en los andenes y ni una pelea. El perro, sí. La heladera de cerveza, no. Así se defiende una ciudad.",
+"ru": "Тысячи мадридцев на платформах — и ни одной драки. Собаку можно, холодильник с пивом — нельзя. Так защищают город."
+},
+{
+"a": "La Pelirroja",
+"ar": "Рыжая",
+"s": 4,
+"es": "«Déjenme pasar, soy médica.» Me dejaron. Buena circulación, aunque se oye una bocina rara en una línea sin trenes.",
+"ru": "«Пропустите, я врач». Пропустили. Хорошо организовано, хотя на линии без поездов слышен странный гудок."
+},
+{
+"a": "Agente L",
+"ar": "Агент Л",
+"s": 5,
+"es": "El elixir de «simplemente Karl» funcionó. La guitarra sobrevivió. El agente también.",
+"ru": "Эликсир «просто Карла» сработал. Гитара уцелела. Агент тоже."
+}
+],
+"img": {
+"src": "img/lugares/mad-metro-colon.webp",
+"n": "dikij-chas-karnaval-razdora",
+"c": "15"
+}
+},
+{
+"id": "mad-sol",
+"nombre": "Puerta del Sol: el Oso y el Madroño",
+"cat": "monumento",
+"x": 34,
+"y": 10,
+"modelo": "oso-madrono",
+"desc": "La plaza del kilómetro cero, con el Oso y el Madroño, el símbolo de Madrid. En la novela está vacía, y en las salidas a Preciados, Arenal, Mayor y Alcalá hay espíritus de guardia. Natasha le da saludos de parte del abuelo de la Estación Mítica, Luis le dibuja la libertad al oso con la tiza del centauro, y el oso de bronce baja las patas; de los portales salen domovói, kikímoras y un léshi. Después el pedestal queda vacío —el oso se instaló en el cuartel de Natasha— y en las ramas del madroño cuelga la estampita que el viento se llevó de Colón. Debajo de la plaza, en un andén abandonado de la estación Sol revestido de azulejos blancos, los vuelve a esperar el tren fantasma.",
+"nombre_ru": "Пуэрта-дель-Соль: Медведь и земляничное дерево",
+"desc_ru": "Площадь нулевого километра с Медведем и земляничным деревом — символом Мадрида. В романе она пуста, а на выходах к Пресиадос, Ареналь, Майор и Алькала стоят духи. Наташа передаёт привет от дедушки с Мифической станции, Луис рисует медведю свободу мелом кентавра — и бронзовый медведь опускает лапы; из подъездов выходят домовые, кикиморы и леший. Потом постамент пуст — медведь сидит у Наташи в штабе, а на ветвях земляничного дерева висит эстампита, которую ветер унёс с площади Колумба. Под площадью, на заброшенной платформе станции «Соль», облицованной белой плиткой, их снова ждёт призрачный поезд.",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"19",
+"Мифическая станция"
+],
+[
+"20",
+"Медведь и земляничное дерево"
+],
+[
+"29",
+"Часы, эстампита и телефон"
+],
+[
+"30",
+"Колода из вагона"
+],
+[
+"33",
+"Не раньше десяти"
+],
+[
+"38",
+"Прощание с Мадридом"
+]
+]
+}
+],
+"res": [
+{
+"a": "El Oso",
+"ar": "Медведь",
+"s": 5,
+"es": "Cien años con las patas arriba y por fin alguien me dibujó la libertad con tiza. Ahora vivo en el cuartel de Natasha. Buena comida.",
+"ru": "Сто лет с поднятыми лапами — и наконец кто-то нарисовал мне свободу мелом. Теперь живу у Наташи в штабе. Хорошо кормят."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "La tiza del centauro sirvió. Y bajo la plaza hay un andén abandonado de azulejos blancos que no sale en ningún plano del metro.",
+"ru": "Мел кентавра пригодился. А под площадью есть заброшенная платформа из белой плитки, которой нет ни на одной схеме метро."
+}
+],
+"img": {
+"src": "img/lugares/mad-sol.webp",
+"n": "dikij-chas-karnaval-razdora",
+"c": "19"
+}
+},
+{
+"id": "mad-debod",
+"nombre": "Templo de Debod",
+"cat": "monumento",
+"x": -1205,
+"y": 789,
+"modelo": "debod",
+"desc": "El templo egipcio sobre la colina, encima de la Plaza de España: dos arcos de piedra, el santuario y el agua quieta. Hasta acá trae Zmaj a Luis, que todavía habla con las palabras del rey. Natasha no discute: lo besa, y la luz blanca de sus ojos se apaga. Lo que pasó después lo saben solo las piedras antiguas del templo; abajo, en la Plaza de España, los faroles dejan de parpadear uno tras otro.",
+"nombre_ru": "Храм Дебод",
+"desc_ru": "Египетский храм на холме над площадью Испании: две каменные арки, святилище и неподвижная вода. Сюда Змай приносит Луиса, всё ещё говорящего словами короля. Наташа не спорит — она целует его, и белый свет в его глазах гаснет. Что было дальше, знают только древние камни храма Дебод, а внизу, на площади Испании, один за другим перестают мигать фонари.",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"25",
+"Змай вернулся из отпуска"
+],
+[
+"26",
+"Храм Дебод"
+],
+[
+"27",
+"Фотография из чемодана"
+],
+[
+"38",
+"Прощание с Мадридом"
+],
+[
+"39",
+"Дом"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "No discutí. Lo besé y la luz blanca se le fue de los ojos. Lo demás lo saben las piedras.",
+"ru": "Я не спорила. Поцеловала — и белый свет ушёл из его глаз. Остальное знают камни."
+},
+{
+"a": "Zmaj",
+"ar": "Змай",
+"s": 5,
+"es": "Buen lugar para aterrizar con un pasajero. Tranquilo, con agua, sin carteles publicitarios.",
+"ru": "Хорошее место для посадки с пассажиром. Тихо, есть вода, нет рекламных щитов."
+}
+],
+"img": {
+"src": "img/lugares/mad-debod.webp",
+"n": "dikij-chas-karnaval-razdora",
+"c": "25"
+}
+},
+{
+"id": "mad-plaza-mayor",
+"nombre": "Plaza Mayor",
+"cat": "plaza",
+"x": -324,
+"y": -155,
+"modelo": "plaza-mayor",
+"desc": "La plaza cerrada con nueve arcos de entrada. Es el cuartel de la resistencia, idea de Natasha: los arcos se cierran fácil y desde los balcones se ve todo. Llegan cocineros de la Cava de San Miguel, mozos, repartidores en bici y monjas; Natasha reparte los puestos con un marcador y da su discurso por megáfono: «¡Pasaremos!». En la escalinata, bajo la estatua del rey Felipe, Luis le dice a Mariano solo dos palabras: «Banco de España». Mariano contesta «no» antes de oír la pregunta.",
+"nombre_ru": "Пласа-Майор",
+"desc_ru": "Закрытая площадь с девятью арками-входами. Штаб сопротивления — идея Наташи: арки легко перекрыть, с балконов видно всё вокруг. Приходят повара с Каве-де-Сан-Мигель, официанты, велокурьеры, монахини; Наташа с маркером распределяет посты и говорит речь в мегафон: «¡Pasaremos!» На ступенях под статуей короля Филиппа Луис говорит Мариано всего два слова: «Банк Испании». Мариано отвечает «нет», ещё не дослушав вопрос.",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"28",
+"¡Pasaremos!"
+],
+[
+"29",
+"Часы, эстампита и телефон"
+],
+[
+"31",
+"Банк Испании"
+],
+[
+"32",
+"Маска Инти"
+],
+[
+"36",
+"Аргумент поубедительнее"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "Nueve arcos fáciles de cerrar y balcones para ver todo. El mejor cuartel que tuve. ¡Pasaremos!",
+"ru": "Девять арок, которые легко перекрыть, и балконы, с которых видно всё. Лучший штаб в моей жизни. ¡Pasaremos!"
+},
+{
+"a": "Un cocinero de la Cava de San Miguel",
+"ar": "Повар с Каве-де-Сан-Мигель",
+"s": 5,
+"es": "Vinimos con sartenes y cucharones. Nos dieron un puesto y un marcador. Nunca la plaza estuvo tan llena de gente con hambre de pelear.",
+"ru": "Мы пришли со сковородками и половниками. Нам дали пост и маркер. Никогда ещё площадь не была так полна людей, готовых драться."
+},
+{
+"a": "Mariano Ferreira",
+"ar": "Мариано Феррейра",
+"s": 3,
+"es": "Me dijo «Banco de España» y contesté que no antes de que terminara. Después dije que sí. No me pregunten cómo.",
+"ru": "Он сказал «Банк Испании», и я ответил «нет», не дослушав. Потом сказал «да». Не спрашивайте как."
+}
+],
+"img": {
+"src": "img/lugares/mad-plaza-mayor.webp",
+"n": "dikij-chas-karnaval-razdora",
+"c": "28"
+}
+},
+{
+"id": "mad-banco",
+"nombre": "Banco de España",
+"cat": "edificio",
+"x": 753,
+"y": 151,
+"modelo": "banco-espana",
+"desc": "En la Plaza de Cibeles, con la cámara acorazada a treinta y cinco metros bajo tierra. Es el lugar más vigilado del país: si alguien entra por la fuerza, en dos minutos el agua de un arroyo subterráneo inunda la bóveda. Natasha da un ultimátum y las puertas se abren. Adentro hay oro, jade, plumas y máscaras que alguna vez cruzaron el océano. Luis toma la máscara de Inti, y la máscara mira al sur, hacia el mercado de la Cebada, adonde van los jinetes de arena.",
+"nombre_ru": "Банк Испании",
+"desc_ru": "На площади Сибелес; хранилище — в тридцати пяти метрах под землёй. Самое охраняемое место в стране: если войти силой, хранилище за две минуты затопит вода подземного ручья. Наташа ставит ультиматум — и двери открываются. Внутри золото, нефрит, перья и маски, когда-то увезённые через океан. Луис берёт в руки маску Инти, и маска смотрит на юг — туда, где на рынок Себада идут песчаные всадники.",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"30",
+"Колода из вагона"
+],
+[
+"31",
+"Банк Испании"
+],
+[
+"34",
+"Наипы"
+],
+[
+"extra-2",
+"Тёмная комната"
+]
+]
+}
+],
+"res": [
+{
+"a": "El director del banco",
+"ar": "Управляющий банком",
+"s": 1,
+"es": "Treinta y cinco metros bajo tierra, la bóveda más segura del país, y una señora rusa abrió las puertas con un ultimátum.",
+"ru": "Тридцать пять метров под землёй, самое надёжное хранилище страны — и одна русская сеньора открыла двери ультиматумом."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Oro, jade, plumas. Y la máscara de Inti, que me miró y señaló el sur. No es un banco: es un museo que nadie visita.",
+"ru": "Золото, нефрит, перья. И маска Инти, которая посмотрела на меня и указала на юг. Это не банк, а музей, куда никто не ходит."
+}
+],
+"img": {
+"src": "img/lugares/mad-banco.webp",
+"n": "dikij-chas-karnaval-razdora",
+"c": "31"
+}
+},
+{
+"id": "mad-cebada",
+"nombre": "Mercado de la Cebada",
+"cat": "tienda",
+"x": -484,
+"y": -635,
+"modelo": "cebada",
+"desc": "En La Latina, sobre la calle de Toledo. El Seat 600 vuela por la calle de Toledo, y en la plaza del mercado salen de una nube de arena cientos de jinetes de arena. La máscara de Inti canta en quechua una canción que en Cusco no se oía desde hacía quinientos años, y llegan a ayudar los guerreros de la pampa: el Malón. Cuando la tormenta pasa, la calle de Toledo queda cubierta de arena tibia y dorada, como una playa, y los chicos ya corren a hacer castillos.",
+"nombre_ru": "Рынок Себада",
+"desc_ru": "В Ла-Латине, на улице Толедо. «Сеат-600» летит по улице Толедо, а на площади у рынка из песчаного облака выходят сотни песчаных всадников. Маска Инти поёт на кечуа песню, которую пятьсот лет не слышали в Куско, и на помощь приходят воины пампы — Малон. Когда буря стихает, улица Толедо покрыта тёплым золотистым песком, как пляж, а дети уже бегут строить замки.",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"31",
+"Банк Испании"
+],
+[
+"32",
+"Маска Инти"
+]
+]
+}
+],
+"res": [
+{
+"a": "Agente L",
+"ar": "Агент Л",
+"s": 5,
+"es": "La máscara cantó en quechua y llegó el Malón. Después, la calle de Toledo era una playa. Los chicos hicieron castillos.",
+"ru": "Маска запела на кечуа, и пришёл Малон. Потом улица Толедо стала пляжем, и дети строили замки."
+},
+{
+"a": "La Pelirroja",
+"ar": "Рыжая",
+"s": 4,
+"es": "Mucha arena en los zapatos. Pero ver a cientos de jinetes de arena deshacerse en el aire vale cualquier zapato.",
+"ru": "Много песка в туфлях. Но видеть, как сотни песчаных всадников рассыпаются в воздухе, стоит любых туфель."
+}
+],
+"img": {
+"src": "img/lugares/mad-cebada.webp",
+"n": "dikij-chas-karnaval-razdora",
+"c": "32"
+}
+},
+{
+"id": "mad-puerta-toledo",
+"nombre": "Puerta de Toledo",
+"cat": "monumento",
+"x": -655,
+"y": -1104,
+"modelo": "ninguno",
+"desc": "El arco de triunfo al final de la calle de Toledo. Ahí se despiden los jinetes del Malón después de la tormenta de arena.",
+"nombre_ru": "Толедские ворота",
+"desc_ru": "Триумфальная арка в конце улицы Толедо. Здесь после песчаной бури прощаются всадники Малона.",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"28",
+"¡Pasaremos!"
+],
+[
+"29",
+"Часы, эстампита и телефон"
+],
+[
+"31",
+"Банк Испании"
+],
+[
+"32",
+"Маска Инти"
+]
+]
+}
+]
+},
+{
+"id": "mad-torre",
+"nombre": "Torre de Madrid",
+"cat": "edificio",
+"x": -667,
+"y": 793,
+"modelo": "torre-madrid",
+"desc": "El rascacielos sobre la Plaza de España. La Pelirroja oye un ruido raro arriba: en un departamento de sillones blancos y araña de cristal hay doce monitores y un norteamericano en un sillón. Es Bradley Whitcomb, nieto del mismo Harold de la foto. En la pantalla central se apagan siete lucecitas verdes, y las siete estrellitas que colgaban sobre Madrid desde la noche del carnaval ruedan detrás del horizonte.",
+"nombre_ru": "Мадридская башня",
+"desc_ru": "Небоскрёб над площадью Испании. Рыжая слышит странный звук сверху: в квартире с белыми диванами и хрустальной люстрой — двенадцать мониторов и американец в кресле. Это Брэдли Уиткомб, внук того самого Гарольда с фотографии. На центральном экране гаснут семь зелёных огоньков — и семь маленьких звёзд, висевших над Мадридом с ночи карнавала, скатываются за горизонт.",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"21",
+"Что тебе дала Испания?"
+],
+[
+"27",
+"Фотография из чемодана"
+],
+[
+"28",
+"¡Pasaremos!"
+],
+[
+"33",
+"Не раньше десяти"
+],
+[
+"36",
+"Аргумент поубедительнее"
+],
+[
+"extra-2",
+"Тёмная комната"
+]
+]
+}
+],
+"res": [
+{
+"a": "Bradley Whitcomb",
+"ar": "Брэдли Уиткомб",
+"s": 1,
+"es": "Doce monitores, sillones blancos, araña de cristal, vista privilegiada. Y una pelirroja que entra sin tocar. Siete luces apagadas. Pésimo.",
+"ru": "Двенадцать мониторов, белые диваны, хрустальная люстра, отличный вид. И рыжая, которая входит без стука. Семь огней погасли. Ужасно."
+},
+{
+"a": "La Pelirroja",
+"ar": "Рыжая",
+"s": 5,
+"es": "Oí un ruido raro arriba y subí. Bien que subí.",
+"ru": "Услышала странный звук сверху и поднялась. И правильно сделала."
+}
+],
+"img": {
+"src": "img/lugares/mad-torre.webp",
+"n": "dikij-chas-karnaval-razdora",
+"c": "33"
+}
+}
 ]
 };
 export const NOVELAS = {
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
+"il-treno-fantasma": {
+"t": "Il treno fantasma",
+"es": "El tren fantasma (it.)",
+"l": "it",
+"y": null,
+"ru": "Призрачный поезд (ит.)",
+"p": "img/portadas/il-treno-fantasma.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"ru": "prizrachnyj-poezd"
+}
 },
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
+"predchuvstvie-2-2": {
+"t": "Предчувствие 2.2",
+"es": "El presentimiento 2.2",
 "l": "ru",
-"y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
+"y": 2025,
+"ru": "Предчувствие 2.2",
+"p": "img/portadas/predchuvstvie-2-2.webp",
 "tr": {}
 },
 "kralovna-vinobrani": {
@@ -18472,15 +19401,93 @@ export const NOVELAS = {
 "es": "la-reina-de-la-vendimia"
 }
 },
-"tajna-semi-fader": {
-"t": "Тайна семьи Фадер",
-"es": "El misterio de los Fader (ru.)",
-"l": "ru",
+"27-ocak": {
+"t": "27 Ocak",
+"es": "27 de enero",
+"l": "tr",
+"y": 2026,
+"ru": "27 января",
+"p": "img/portadas/27-ocak.webp",
+"tr": {}
+},
+"la-voix": {
+"t": "La voix",
+"es": "La voz (fr.)",
+"l": "fr",
 "y": null,
-"ru": "Тайна семьи Фадер",
-"p": "img/portadas/tajna-semi-fader.webp",
+"ru": "Голос (фр.)",
+"p": "img/portadas/la-voix.webp",
 "tr": {
-"es": "el-misterio-de-los-fader"
+"ru": "golos"
+}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
+"tr": {}
+},
+"la-citta-triste": {
+"t": "La città triste",
+"es": "La ciudad triste (it.)",
+"l": "it",
+"y": 2025,
+"ru": "Грустный город (ит.)",
+"p": "img/portadas/la-citta-triste.webp",
+"tr": {
+"ru": "grustnyj-gorod"
+}
+},
+"golos": {
+"t": "Голос",
+"es": "La voz",
+"l": "ru",
+"y": 2026,
+"ru": "Голос",
+"p": "img/portadas/golos.webp",
+"tr": {
+"fr": "la-voix"
+}
+},
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
+"l": "es",
+"y": null,
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
+"tr": {}
+},
+"dikij-chas-karnaval-razdora": {
+"t": "Дикий час: Карнавал раздора",
+"es": "La hora salvaje: El carnaval de la discordia",
+"l": "ru",
+"y": 2026,
+"ru": "Дикий час: Карнавал раздора",
+"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
+"tr": {}
+},
+"lluvia-de-meteoritos": {
+"t": "Lluvia de meteoritos",
+"es": "Lluvia de meteoritos",
+"l": "es",
+"y": null,
+"ru": "Метеоритный дождь (исп.)",
+"p": "img/portadas/lluvia-de-meteoritos.webp",
+"tr": {
+"ru": "meteoritnyj-dozhd"
 }
 },
 "predchuvstvie": {
@@ -18506,135 +19513,6 @@ export const NOVELAS = {
 "pl": "przeczucie"
 }
 },
-"ondas-de-amor": {
-"t": "Ondas de amor",
-"es": "Ondas de amor",
-"l": "es",
-"y": 2026,
-"ru": "Волны любви (исп.)",
-"p": "img/portadas/ondas-de-amor.webp",
-"tr": {
-"it": "onde-d-amore"
-}
-},
-"dikij-chas-2": {
-"t": "Дикий час: Духи гор",
-"es": "La hora salvaje: Los espíritus de la montaña",
-"l": "ru",
-"y": null,
-"ru": "Дикий час: Духи гор",
-"p": "img/portadas/dikij-chas-2.webp",
-"tr": {}
-},
-"venecianskaya-maska": {
-"t": "Венецианская маска",
-"es": "La máscara de Venecia (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Венецианская маска",
-"p": "img/portadas/venecianskaya-maska.webp",
-"tr": {
-"it": "maschera-di-venezia"
-}
-},
-"predchuvstvie-2-4": {
-"t": "Предчувствие 2.4",
-"es": "El presentimiento 2.4",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.4",
-"p": "img/portadas/predchuvstvie-2-4.webp",
-"tr": {}
-},
-"el-misterio-de-los-fader": {
-"t": "El misterio de los Fader",
-"es": "El misterio de los Fader",
-"l": "es",
-"y": 2025,
-"ru": "Тайна семьи Фадер (исп.)",
-"p": "img/portadas/el-misterio-de-los-fader.webp",
-"tr": {
-"ru": "tajna-semi-fader"
-}
-},
-"la-reina-de-la-vendimia": {
-"t": "La reina de la Vendimia",
-"es": "La reina de la Vendimia",
-"l": "es",
-"y": 2026,
-"ru": "Королева Вендимии (исп.)",
-"p": "img/portadas/la-reina-de-la-vendimia.webp",
-"tr": {
-"cs": "kralovna-vinobrani"
-}
-},
-"grustnyj-gorod": {
-"t": "Грустный город",
-"es": "La ciudad triste",
-"l": "ru",
-"y": 2026,
-"ru": "Грустный город",
-"p": "img/portadas/grustnyj-gorod.webp",
-"tr": {
-"it": "la-citta-triste"
-}
-},
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
-"l": "ru",
-"y": 2026,
-"ru": "Алмазный дождь",
-"p": "img/portadas/almaznyj-dozhd.webp",
-"tr": {}
-},
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви (ит.)",
-"p": "img/portadas/onde-d-amore.webp",
-"tr": {
-"es": "ondas-de-amor"
-}
-},
-"znak": {
-"t": "Знак",
-"es": "El signo",
-"l": "ru",
-"y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
-"tr": {}
-},
-"predchuvstvie-2-2": {
-"t": "Предчувствие 2.2",
-"es": "El presentimiento 2.2",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.2",
-"p": "img/portadas/predchuvstvie-2-2.webp",
-"tr": {}
-},
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
-"l": "ru",
-"y": 2026,
-"ru": "Карнавал Синеи",
-"p": "img/portadas/karnaval-sinei.webp",
-"tr": {}
-},
 "volny-lyubvi": {
 "t": "Волны любви",
 "es": "Ondas de amor (ru.)",
@@ -18643,26 +19521,6 @@ export const NOVELAS = {
 "ru": "Волны любви",
 "p": "img/portadas/volny-lyubvi.webp",
 "tr": {}
-},
-"predchuvstvie-2": {
-"t": "Предчувствие 2",
-"es": "El presentimiento 2",
-"l": "ru",
-"y": 2024,
-"ru": "Предчувствие 2",
-"p": "img/portadas/predchuvstvie-2.webp",
-"tr": {}
-},
-"la-voix": {
-"t": "La voix",
-"es": "La voz (fr.)",
-"l": "fr",
-"y": null,
-"ru": "Голос (фр.)",
-"p": "img/portadas/la-voix.webp",
-"tr": {
-"ru": "golos"
-}
 },
 "strateg": {
 "t": "Стратег",
@@ -18673,27 +19531,32 @@ export const NOVELAS = {
 "p": "img/portadas/strateg.webp",
 "tr": {}
 },
-"maschera-di-venezia": {
-"t": "Maschera di Venezia",
-"es": "La máscara de Venecia (it.)",
-"l": "it",
-"y": null,
-"ru": "Венецианская маска (ит.)",
-"p": "img/portadas/maschera-di-venezia.webp",
-"tr": {
-"ru": "venecianskaya-maska"
-}
+"tajna-v-biblioteke": {
+"t": "Тайна в библиотеке",
+"es": "El misterio de la biblioteca",
+"l": "ru",
+"y": 2026,
+"ru": "Тайна в библиотеке",
+"p": "img/portadas/tajna-v-biblioteke.webp",
+"tr": {}
 },
-"lluvia-de-meteoritos": {
-"t": "Lluvia de meteoritos",
-"es": "Lluvia de meteoritos",
-"l": "es",
-"y": null,
-"ru": "Метеоритный дождь (исп.)",
-"p": "img/portadas/lluvia-de-meteoritos.webp",
-"tr": {
-"ru": "meteoritnyj-dozhd"
-}
+"predchuvstvie-2-4": {
+"t": "Предчувствие 2.4",
+"es": "El presentimiento 2.4",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.4",
+"p": "img/portadas/predchuvstvie-2-4.webp",
+"tr": {}
+},
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
+"l": "ru",
+"y": 2026,
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
+"tr": {}
 },
 "el-tren-fantasma": {
 "t": "El tren fantasma",
@@ -18707,119 +19570,13 @@ export const NOVELAS = {
 "ru": "prizrachnyj-poezd"
 }
 },
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
-"l": "es",
-"y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
-"tr": {}
-},
-"tajna-v-biblioteke": {
-"t": "Тайна в библиотеке",
-"es": "El misterio de la biblioteca",
-"l": "ru",
-"y": 2026,
-"ru": "Тайна в библиотеке",
-"p": "img/portadas/tajna-v-biblioteke.webp",
-"tr": {}
-},
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
-"anomalia": {
-"t": "Anomalía",
-"es": "Anomalía",
-"l": "es",
-"y": null,
-"ru": "Аномалия (исп.)",
-"p": "img/portadas/anomalia.webp",
-"tr": {}
-},
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
-"l": "ru",
-"y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
-"tr": {
-"en": "the-date"
-}
-},
-"il-treno-fantasma": {
-"t": "Il treno fantasma",
-"es": "El tren fantasma (it.)",
-"l": "it",
-"y": null,
-"ru": "Призрачный поезд (ит.)",
-"p": "img/portadas/il-treno-fantasma.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"la-citta-triste": {
-"t": "La città triste",
-"es": "La ciudad triste (it.)",
-"l": "it",
-"y": 2025,
-"ru": "Грустный город (ит.)",
-"p": "img/portadas/la-citta-triste.webp",
-"tr": {
-"ru": "grustnyj-gorod"
-}
-},
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
-"l": "es",
-"y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
-"tr": {}
-},
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
-"tr": {}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
-"y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
-"tr": {}
-},
-"27-ocak": {
-"t": "27 Ocak",
-"es": "27 de enero",
-"l": "tr",
-"y": 2026,
-"ru": "27 января",
-"p": "img/portadas/27-ocak.webp",
-"tr": {}
-},
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
 "l": "it",
 "y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
 "tr": {}
 },
 "ladro-di-cuori-3": {
@@ -18831,14 +19588,25 @@ export const NOVELAS = {
 "p": "img/portadas/ladro-di-cuori-3.webp",
 "tr": {}
 },
-"predchuvstvie-2-3": {
-"t": "Предчувствие 2.3",
-"es": "El presentimiento 2.3",
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
 "l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.3",
-"p": "img/portadas/predchuvstvie-2-3.webp",
+"y": 2026,
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
 "tr": {}
+},
+"la-reina-de-la-vendimia": {
+"t": "La reina de la Vendimia",
+"es": "La reina de la Vendimia",
+"l": "es",
+"y": 2026,
+"ru": "Королева Вендимии (исп.)",
+"p": "img/portadas/la-reina-de-la-vendimia.webp",
+"tr": {
+"cs": "kralovna-vinobrani"
+}
 },
 "volny-lyubvi-labirint-zabveniya": {
 "t": "Волны любви: Лабиринт забвения",
@@ -18849,83 +19617,34 @@ export const NOVELAS = {
 "p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
 "tr": {}
 },
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
-"l": "it",
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
+"tr": {}
+},
+"grustnyj-gorod": {
+"t": "Грустный город",
+"es": "La ciudad triste",
+"l": "ru",
 "y": 2026,
-"ru": "Люблю тебя молча (ит.)",
-"p": "img/portadas/ti-amo-in-silenzio.webp",
+"ru": "Грустный город",
+"p": "img/portadas/grustnyj-gorod.webp",
 "tr": {
-"ru": "tikhaya-lyubov"
+"it": "la-citta-triste"
 }
 },
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
 "l": "ru",
 "y": 2026,
-"ru": "Тихая любовь",
-"p": "img/portadas/tikhaya-lyubov.webp",
-"tr": {
-"it": "ti-amo-in-silenzio"
-}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
 "tr": {}
-},
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
-"tr": {}
-},
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
-"tr": {}
-},
-"pokhititel-serdec-portret-osnovatelya": {
-"t": "Похититель сердец: Портрет основателя",
-"es": "Ladrón de corazones: El retrato del fundador",
-"l": "ru",
-"y": 2026,
-"ru": "Похититель сердец: Портрет основателя",
-"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
-"tr": {}
-},
-"operacion-londres": {
-"t": "El misterio de los Fader: Operación Londres",
-"es": "El misterio de los Fader: Operación Londres",
-"l": "es",
-"y": 2026,
-"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
-"p": "img/portadas/operacion-londres.webp",
-"tr": {}
-},
-"golos": {
-"t": "Голос",
-"es": "La voz",
-"l": "ru",
-"y": 2026,
-"ru": "Голос",
-"p": "img/portadas/golos.webp",
-"tr": {
-"fr": "la-voix"
-}
 },
 "prizrachnyj-poezd": {
 "t": "Призрачный поезд",
@@ -18939,6 +19658,137 @@ export const NOVELAS = {
 "it": "il-treno-fantasma"
 }
 },
+"maschera-di-venezia": {
+"t": "Maschera di Venezia",
+"es": "La máscara de Venecia (it.)",
+"l": "it",
+"y": null,
+"ru": "Венецианская маска (ит.)",
+"p": "img/portadas/maschera-di-venezia.webp",
+"tr": {
+"ru": "venecianskaya-maska"
+}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"ondas-de-amor": {
+"t": "Ondas de amor",
+"es": "Ondas de amor",
+"l": "es",
+"y": 2026,
+"ru": "Волны любви (исп.)",
+"p": "img/portadas/ondas-de-amor.webp",
+"tr": {
+"it": "onde-d-amore"
+}
+},
+"anomalia": {
+"t": "Anomalía",
+"es": "Anomalía",
+"l": "es",
+"y": null,
+"ru": "Аномалия (исп.)",
+"p": "img/portadas/anomalia.webp",
+"tr": {}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
+"l": "ru",
+"y": 2026,
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
+"tr": {}
+},
+"predchuvstvie-2-3": {
+"t": "Предчувствие 2.3",
+"es": "El presentimiento 2.3",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.3",
+"p": "img/portadas/predchuvstvie-2-3.webp",
+"tr": {}
+},
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
+"l": "ru",
+"y": 2026,
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
+},
+"venecianskaya-maska": {
+"t": "Венецианская маска",
+"es": "La máscara de Venecia (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Венецианская маска",
+"p": "img/portadas/venecianskaya-maska.webp",
+"tr": {
+"it": "maschera-di-venezia"
+}
+},
+"dikij-chas-2": {
+"t": "Дикий час: Духи гор",
+"es": "La hora salvaje: Los espíritus de la montaña",
+"l": "ru",
+"y": null,
+"ru": "Дикий час: Духи гор",
+"p": "img/portadas/dikij-chas-2.webp",
+"tr": {}
+},
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
+"l": "ru",
+"y": 2026,
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
+"tr": {
+"it": "ti-amo-in-silenzio"
+}
+},
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
+"tr": {
+"ru": "tikhaya-lyubov"
+}
+},
+"tajna-semi-fader": {
+"t": "Тайна семьи Фадер",
+"es": "El misterio de los Fader (ru.)",
+"l": "ru",
+"y": null,
+"ru": "Тайна семьи Фадер",
+"p": "img/portadas/tajna-semi-fader.webp",
+"tr": {
+"es": "el-misterio-de-los-fader"
+}
+},
 "amor-en-el-cosmos": {
 "t": "Amor en el cosmos",
 "es": "Amor en el cosmos",
@@ -18948,6 +19798,15 @@ export const NOVELAS = {
 "p": "img/portadas/amor-en-el-cosmos.webp",
 "tr": {}
 },
+"operacion-londres": {
+"t": "El misterio de los Fader: Operación Londres",
+"es": "El misterio de los Fader: Operación Londres",
+"l": "es",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
+"p": "img/portadas/operacion-londres.webp",
+"tr": {}
+},
 "divlji-chas-malbec": {
 "t": "Дивљи час: Љубав укуса малбека",
 "es": "La hora salvaje: El amor con sabor a malbec (serbio)",
@@ -18955,6 +19814,82 @@ export const NOVELAS = {
 "y": null,
 "ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
 "p": "img/portadas/divlji-chas-malbec.webp",
+"tr": {}
+},
+"predchuvstvie-2": {
+"t": "Предчувствие 2",
+"es": "El presentimiento 2",
+"l": "ru",
+"y": 2024,
+"ru": "Предчувствие 2",
+"p": "img/portadas/predchuvstvie-2.webp",
+"tr": {}
+},
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
+"tr": {
+"es": "ondas-de-amor"
+}
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
+},
+"pokhititel-serdec-portret-osnovatelya": {
+"t": "Похититель сердец: Портрет основателя",
+"es": "Ladrón de corazones: El retrato del fundador",
+"l": "ru",
+"y": 2026,
+"ru": "Похититель сердец: Портрет основателя",
+"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
+"tr": {}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
+"tr": {}
+},
+"el-misterio-de-los-fader": {
+"t": "El misterio de los Fader",
+"es": "El misterio de los Fader",
+"l": "es",
+"y": 2025,
+"ru": "Тайна семьи Фадер (исп.)",
+"p": "img/portadas/el-misterio-de-los-fader.webp",
+"tr": {
+"ru": "tajna-semi-fader"
+}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
+"y": 2026,
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
 "tr": {}
 }
 };

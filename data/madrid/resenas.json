@@ -1,0 +1,218 @@
+{
+ "_info": "Reseñas de Madrid escritas por los personajes. s = estrellas.",
+ "mad-espana": [
+  {
+   "a": "El rey fantasma",
+   "ar": "Призрачный король",
+   "s": 3,
+   "es": "Buen pedestal, buena vista de la Gran Vía. Hice una sola pregunta y me respondieron con una baraja. Escoba. No vuelvo.",
+   "ru": "Хороший постамент, хороший вид на Гран-Виа. Задал всего один вопрос — а мне ответили колодой. Эскоба. Больше не приду."
+  },
+  {
+   "a": "Mariano Ferreira",
+   "ar": "Мариано Феррейра",
+   "s": 5,
+   "es": "Acá, frente a las cámaras de todo el mundo, cumplí la promesa que le hice a Luis en Belgrado. Pesó como el trofeo.",
+   "ru": "Здесь, перед камерами всего мира, я выполнил обещание, данное Луису ещё в Белграде. Весило оно как кубок."
+  },
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Llegué en un Seat 600 blanco y bajó medio Madrid de los balcones con escobas y sartenes. Ninguna ciudad me hizo llorar así.",
+   "ru": "Я въехала на белом «Сеате-600», и пол-Мадрида спустилось с балконов со швабрами и сковородками. Ни один город не доводил меня так до слёз."
+  }
+ ],
+ "mad-gran-via": [
+  {
+   "a": "Zmaj",
+   "ar": "Змай",
+   "s": 4,
+   "es": "Le pegué con el ala a un cartel publicitario. Sin querer. Bueno, un poco queriendo.",
+   "ru": "Задел крылом рекламный щит. Случайно. Ну, почти случайно."
+  }
+ ],
+ "mad-atocha": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 3,
+   "es": "Primer día en Madrid: una multitud de toreros y un toro de bronce corriendo los autos con los cuernos. Linda calle, tránsito complicado.",
+   "ru": "Первый день в Мадриде: толпа тореадоров и бронзовый бык, который сдвигает рогами машины. Красивая улица, движение сложное."
+  }
+ ],
+ "mad-lavapies": [
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Zapatos nuevos junto a la fuente. Y unas margaritas con dientes que muerden a todos menos a Luis. Lo anoté.",
+   "ru": "Новые туфли у фонтана. И зубастые маргаритки, которые кусают всех, кроме Луиса. Я это запомнила."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "Tomé un toro por los cuernos, literal. Las estatuas del barrio tienen mucha vida, demasiada.",
+   "ru": "Взял быка за рога — буквально. У статуй в этом квартале очень много жизни, даже слишком."
+  }
+ ],
+ "mad-biblioteca": [
+  {
+   "a": "El bibliotecario",
+   "ar": "Библиотекарь",
+   "s": 2,
+   "es": "Una señorita arrancó una hoja del manuscrito el primer día. La devolvió al final, eso sí. Y un toro salió de la página. Exijo silencio en la sala.",
+   "ru": "Одна сеньорита в первый же день вырвала лист из рукописи. Правда, в конце вернула. И ещё из страницы вышел бык. Требую тишины в зале."
+  },
+  {
+   "a": "Taurán",
+   "ar": "Тауран",
+   "s": 4,
+   "es": "Lindo libro para vivir. Volví a casa, a mi página. Un hombre me tomó por los cuernos y no me molestó tanto.",
+   "ru": "Хорошая книга, чтобы в ней жить. Вернулся домой, на свою страницу. Один человек взял меня за рога — и мне это почти не мешало."
+  }
+ ],
+ "mad-colon": [
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Eché a un rey de la plaza con un cono de tránsito. Lo recomiendo: es más útil de lo que parece.",
+   "ru": "Выгнала короля с площади дорожным конусом. Рекомендую: он полезнее, чем кажется."
+  },
+  {
+   "a": "Mariano Ferreira",
+   "ar": "Мариано Феррейра",
+   "s": 3,
+   "es": "A la mañana la columna estaba rayada y la bandera torcida. La cuenta la pagamos nosotros.",
+   "ru": "Утром колонна была исцарапана, а флаг висел криво. Счёт оплатили мы."
+  }
+ ],
+ "mad-metro-colon": [
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Mil madrileños en los andenes y ni una pelea. El perro, sí. La heladera de cerveza, no. Así se defiende una ciudad.",
+   "ru": "Тысячи мадридцев на платформах — и ни одной драки. Собаку можно, холодильник с пивом — нельзя. Так защищают город."
+  },
+  {
+   "a": "La Pelirroja",
+   "ar": "Рыжая",
+   "s": 4,
+   "es": "«Déjenme pasar, soy médica.» Me dejaron. Buena circulación, aunque se oye una bocina rara en una línea sin trenes.",
+   "ru": "«Пропустите, я врач». Пропустили. Хорошо организовано, хотя на линии без поездов слышен странный гудок."
+  },
+  {
+   "a": "Agente L",
+   "ar": "Агент Л",
+   "s": 5,
+   "es": "El elixir de «simplemente Karl» funcionó. La guitarra sobrevivió. El agente también.",
+   "ru": "Эликсир «просто Карла» сработал. Гитара уцелела. Агент тоже."
+  }
+ ],
+ "mad-sol": [
+  {
+   "a": "El Oso",
+   "ar": "Медведь",
+   "s": 5,
+   "es": "Cien años con las patas arriba y por fin alguien me dibujó la libertad con tiza. Ahora vivo en el cuartel de Natasha. Buena comida.",
+   "ru": "Сто лет с поднятыми лапами — и наконец кто-то нарисовал мне свободу мелом. Теперь живу у Наташи в штабе. Хорошо кормят."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "La tiza del centauro sirvió. Y bajo la plaza hay un andén abandonado de azulejos blancos que no sale en ningún plano del metro.",
+   "ru": "Мел кентавра пригодился. А под площадью есть заброшенная платформа из белой плитки, которой нет ни на одной схеме метро."
+  }
+ ],
+ "mad-debod": [
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "No discutí. Lo besé y la luz blanca se le fue de los ojos. Lo demás lo saben las piedras.",
+   "ru": "Я не спорила. Поцеловала — и белый свет ушёл из его глаз. Остальное знают камни."
+  },
+  {
+   "a": "Zmaj",
+   "ar": "Змай",
+   "s": 5,
+   "es": "Buen lugar para aterrizar con un pasajero. Tranquilo, con agua, sin carteles publicitarios.",
+   "ru": "Хорошее место для посадки с пассажиром. Тихо, есть вода, нет рекламных щитов."
+  }
+ ],
+ "mad-plaza-mayor": [
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Nueve arcos fáciles de cerrar y balcones para ver todo. El mejor cuartel que tuve. ¡Pasaremos!",
+   "ru": "Девять арок, которые легко перекрыть, и балконы, с которых видно всё. Лучший штаб в моей жизни. ¡Pasaremos!"
+  },
+  {
+   "a": "Un cocinero de la Cava de San Miguel",
+   "ar": "Повар с Каве-де-Сан-Мигель",
+   "s": 5,
+   "es": "Vinimos con sartenes y cucharones. Nos dieron un puesto y un marcador. Nunca la plaza estuvo tan llena de gente con hambre de pelear.",
+   "ru": "Мы пришли со сковородками и половниками. Нам дали пост и маркер. Никогда ещё площадь не была так полна людей, готовых драться."
+  },
+  {
+   "a": "Mariano Ferreira",
+   "ar": "Мариано Феррейра",
+   "s": 3,
+   "es": "Me dijo «Banco de España» y contesté que no antes de que terminara. Después dije que sí. No me pregunten cómo.",
+   "ru": "Он сказал «Банк Испании», и я ответил «нет», не дослушав. Потом сказал «да». Не спрашивайте как."
+  }
+ ],
+ "mad-banco": [
+  {
+   "a": "El director del banco",
+   "ar": "Управляющий банком",
+   "s": 1,
+   "es": "Treinta y cinco metros bajo tierra, la bóveda más segura del país, y una señora rusa abrió las puertas con un ultimátum.",
+   "ru": "Тридцать пять метров под землёй, самое надёжное хранилище страны — и одна русская сеньора открыла двери ультиматумом."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Oro, jade, plumas. Y la máscara de Inti, que me miró y señaló el sur. No es un banco: es un museo que nadie visita.",
+   "ru": "Золото, нефрит, перья. И маска Инти, которая посмотрела на меня и указала на юг. Это не банк, а музей, куда никто не ходит."
+  }
+ ],
+ "mad-cebada": [
+  {
+   "a": "Agente L",
+   "ar": "Агент Л",
+   "s": 5,
+   "es": "La máscara cantó en quechua y llegó el Malón. Después, la calle de Toledo era una playa. Los chicos hicieron castillos.",
+   "ru": "Маска запела на кечуа, и пришёл Малон. Потом улица Толедо стала пляжем, и дети строили замки."
+  },
+  {
+   "a": "La Pelirroja",
+   "ar": "Рыжая",
+   "s": 4,
+   "es": "Mucha arena en los zapatos. Pero ver a cientos de jinetes de arena deshacerse en el aire vale cualquier zapato.",
+   "ru": "Много песка в туфлях. Но видеть, как сотни песчаных всадников рассыпаются в воздухе, стоит любых туфель."
+  }
+ ],
+ "mad-torre": [
+  {
+   "a": "Bradley Whitcomb",
+   "ar": "Брэдли Уиткомб",
+   "s": 1,
+   "es": "Doce monitores, sillones blancos, araña de cristal, vista privilegiada. Y una pelirroja que entra sin tocar. Siete luces apagadas. Pésimo.",
+   "ru": "Двенадцать мониторов, белые диваны, хрустальная люстра, отличный вид. И рыжая, которая входит без стука. Семь огней погасли. Ужасно."
+  },
+  {
+   "a": "La Pelirroja",
+   "ar": "Рыжая",
+   "s": 5,
+   "es": "Oí un ruido raro arriba y subí. Bien que subí.",
+   "ru": "Услышала странный звук сверху и поднялась. И правильно сделала."
+  }
+ ]
+}

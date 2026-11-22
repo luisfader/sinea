@@ -1,0 +1,283 @@
+{
+ "_info": "Lugares de «Дикий час: Карнавал раздора» en Madrid. «ll» = [lat, lon] reales.",
+ "lugares": [
+  {
+   "id": "mad-espana",
+   "nombre": "Plaza de España",
+   "cat": "plaza",
+   "ll": [
+    40.4234,
+    -3.71226
+   ],
+   "modelo": "cervantes",
+   "desc": "El gran campo de batalla de la novela. Junto al monumento a Cervantes, con Don Quijote y Sancho Panza, espera el rey fantasma sobre un caballo blanco, y a lo largo de la Gran Vía forman las columnas blancas de su ejército. El rey no ataca: le hace a Luis una sola pregunta: «¿Qué te dio España?». Luis se queda inmóvil a su lado, como un monumento más, hasta que desde la calle de la Princesa entra a la plaza un diminuto Seat 600 blanco. Acá suena «¡Madrid, levántate!»: los madrileños bajan de los balcones con bastones, escobas, sartenes y cucharones. Acá vuelve de vacaciones el dragón Zmaj, y acá se juega el duelo final, a las cartas, con una baraja española, hasta el «¡Escoba!» que deshace a la caballería blanca. Al final, en la escalinata, Mariano muestra ante las cámaras de todo el mundo la foto del túnel bajo la tribuna: la final del Mundial Argentina–España estaba arreglada.",
+   "buscar": "Площад\\w* Испании|Сервантес\\w*",
+   "extra": {
+    "dikij-chas-karnaval-razdora": [
+     22,
+     23,
+     25,
+     26,
+     35,
+     37,
+     39
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas-karnaval-razdora",
+    "22-1.jpg"
+   ]
+  },
+  {
+   "id": "mad-gran-via",
+   "nombre": "Gran Vía",
+   "cat": "calle",
+   "ll": [
+    40.42011,
+    -3.70596
+   ],
+   "modelo": "ninguno",
+   "desc": "La gran avenida de los edificios altos, de la Plaza de España a la calle de Alcalá, pasando por Callao. En la novela, a lo largo de toda la Gran Vía forman las columnas blancas del ejército fantasma, y hasta Callao los faroles parpadean. Zmaj arranca con el ala un cartel publicitario de la Gran Vía, y después del «¡Escoba!» la caballería blanca se deshace en polvo plateado de la plaza a Callao.",
+   "buscar": "Гран-Виа|Каллао",
+   "sin_ilustracion": true
+  },
+  {
+   "id": "mad-atocha",
+   "nombre": "Calle de Atocha",
+   "cat": "calle",
+   "ll": [
+    40.4123,
+    -3.6992
+   ],
+   "modelo": "ninguno",
+   "desc": "De la zona de la Puerta del Sol hacia el sudeste, hasta la estación de Atocha. Es el primer choque con la anomalía: por la calle corre una multitud disfrazada de carnaval y de toreros, y detrás va una estatua de bronce de un toro que cobró vida. El toro atraviesa un cartel publicitario y corre los autos con los cuernos.",
+   "buscar": "улиц\\w* Аточа",
+   "extra": {
+    "dikij-chas-karnaval-razdora": [
+     5
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "mad-lavapies",
+   "nombre": "Lavapiés",
+   "cat": "barrio",
+   "ll": [
+    40.40888,
+    -3.70095
+   ],
+   "modelo": "fuente",
+   "desc": "El barrio viejo y popular con la fuente en la plaza. Huyendo del toro, Luis y Natasha llegan acá, y acá cobran vida todas las estatuas, que bajan despacio de sus pedestales; Luis literalmente toma al toro por los cuernos. Más tarde, junto a la fuente, Natasha se compra zapatos nuevos. Las margaritas con dientes muerden a todo el mundo en Lavapiés, pero a Luis lo esquivan, y Natasha lo nota. Y fue un jugador de cartas de Lavapiés el que, casi cien años antes, dejó en el tren fantasma la baraja que decidirá la suerte de Madrid.",
+   "buscar": "Лавапьес\\w*",
+   "extra": {
+    "dikij-chas-karnaval-razdora": [
+     6,
+     28,
+     31
+    ]
+   }
+  },
+  {
+   "id": "mad-biblioteca",
+   "nombre": "Biblioteca Nacional",
+   "cat": "edificio",
+   "ll": [
+    40.42355,
+    -3.69008
+   ],
+   "modelo": "biblioteca-nacional",
+   "desc": "Sobre el Paseo de Recoletos, junto a la Plaza de Colón. Acá se guarda el único manuscrito que habla de los siete signos celestes, del culto al toro y de la sumisión de la mente humana. En una de sus páginas está dibujado Taurán, el antiguo dios toro ibérico, y el toro dibujado abre los ojos y sale de la página. Luis salta sobre el dios toro y lo toma por los cuernos: Taurán se calma, y en todo Madrid la luz dorada se va de los ojos de los toreros contagiados. Antes de irse, Natasha vuelve sola y devuelve la hoja que arrancó el primer día.",
+   "buscar": "Национальн\\w+ библиотек\\w*",
+   "extra": {
+    "dikij-chas-karnaval-razdora": [
+     10,
+     11,
+     40
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas-karnaval-razdora",
+    "11-1.jpg"
+   ]
+  },
+  {
+   "id": "mad-colon",
+   "nombre": "Plaza de Colón",
+   "cat": "plaza",
+   "ll": [
+    40.42517,
+    -3.69039
+   ],
+   "modelo": "colon",
+   "desc": "La columna con el navegante y la enorme bandera de España. Por la Castellana llega un ejército fantasma interminable: guerreros de albornoces blancos con sables, caballería, estandartes. Mientras Natasha lleva a la gente bajo tierra, Luis sale solo al medio de la plaza y llama al Malón Supremo. Al sentir el peligro, Natasha sale corriendo del metro y echa al rey de la plaza… con un cono de tránsito. A la mañana la plaza parece un campo de batalla: la columna rayada por los sables y la bandera torcida.",
+   "buscar": "Площад\\w* Колумба",
+   "extra": {
+    "dikij-chas-karnaval-razdora": [
+     13,
+     15,
+     30
+    ]
+   }
+  },
+  {
+   "id": "mad-metro-colon",
+   "nombre": "Estación de metro Colón",
+   "cat": "transporte",
+   "ll": [
+    40.4247,
+    -3.6892
+   ],
+   "modelo": "metro",
+   "desc": "Línea 4. Miles de madrileños se esconden en los andenes, los túneles y los pasillos, y Natasha, con un megáfono, pone orden: el perro sí, la heladera de cerveza no. Los espíritus golpean las rejas de las entradas pero no pueden entrar: bajo Madrid nace una fortaleza. Entre la multitud aparece una pelirroja disfrazada de carnaval —«Déjenme pasar, soy médica»— con un acento que a Natasha le suena demasiado. La herida de sable de Luis no cierra; lo salva el elixir que «simplemente Karl» le dio al agente L. Y en una línea sin ningún tren, de repente, suena una bocina.",
+   "buscar": "станци\\w* «Колон»",
+   "extra": {
+    "dikij-chas-karnaval-razdora": [
+     13,
+     16,
+     17,
+     18
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas-karnaval-razdora",
+    "16-1.jpg"
+   ]
+  },
+  {
+   "id": "mad-sol",
+   "nombre": "Puerta del Sol: el Oso y el Madroño",
+   "cat": "monumento",
+   "ll": [
+    40.41698,
+    -3.70318
+   ],
+   "modelo": "oso-madrono",
+   "desc": "La plaza del kilómetro cero, con el Oso y el Madroño, el símbolo de Madrid. En la novela está vacía, y en las salidas a Preciados, Arenal, Mayor y Alcalá hay espíritus de guardia. Natasha le da saludos de parte del abuelo de la Estación Mítica, Luis le dibuja la libertad al oso con la tiza del centauro, y el oso de bronce baja las patas; de los portales salen domovói, kikímoras y un léshi. Después el pedestal queda vacío —el oso se instaló en el cuartel de Natasha— y en las ramas del madroño cuelga la estampita que el viento se llevó de Colón. Debajo de la plaza, en un andén abandonado de la estación Sol revestido de azulejos blancos, los vuelve a esperar el tren fantasma.",
+   "buscar": "Пуэрта-дель-Соль|земляничн\\w+ дерев\\w*",
+   "extra": {
+    "dikij-chas-karnaval-razdora": [
+     20,
+     21,
+     30,
+     31
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas-karnaval-razdora",
+    "20-1.jpg"
+   ]
+  },
+  {
+   "id": "mad-debod",
+   "nombre": "Templo de Debod",
+   "cat": "monumento",
+   "ll": [
+    40.424,
+    -3.7178
+   ],
+   "modelo": "debod",
+   "desc": "El templo egipcio sobre la colina, encima de la Plaza de España: dos arcos de piedra, el santuario y el agua quieta. Hasta acá trae Zmaj a Luis, que todavía habla con las palabras del rey. Natasha no discute: lo besa, y la luz blanca de sus ojos se apaga. Lo que pasó después lo saben solo las piedras antiguas del templo; abajo, en la Plaza de España, los faroles dejan de parpadear uno tras otro.",
+   "buscar": "Дебод",
+   "extra": {
+    "dikij-chas-karnaval-razdora": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "mad-plaza-mayor",
+   "nombre": "Plaza Mayor",
+   "cat": "plaza",
+   "ll": [
+    40.41549,
+    -3.7074
+   ],
+   "modelo": "plaza-mayor",
+   "desc": "La plaza cerrada con nueve arcos de entrada. Es el cuartel de la resistencia, idea de Natasha: los arcos se cierran fácil y desde los balcones se ve todo. Llegan cocineros de la Cava de San Miguel, mozos, repartidores en bici y monjas; Natasha reparte los puestos con un marcador y da su discurso por megáfono: «¡Pasaremos!». En la escalinata, bajo la estatua del rey Felipe, Luis le dice a Mariano solo dos palabras: «Banco de España». Mariano contesta «no» antes de oír la pregunta.",
+   "buscar": "Пласа-Майор|Каве-де-Сан-Мигель",
+   "extra": {
+    "dikij-chas-karnaval-razdora": [
+     29,
+     32
+    ]
+   }
+  },
+  {
+   "id": "mad-banco",
+   "nombre": "Banco de España",
+   "cat": "edificio",
+   "ll": [
+    40.41825,
+    -3.69469
+   ],
+   "modelo": "banco-espana",
+   "desc": "En la Plaza de Cibeles, con la cámara acorazada a treinta y cinco metros bajo tierra. Es el lugar más vigilado del país: si alguien entra por la fuerza, en dos minutos el agua de un arroyo subterráneo inunda la bóveda. Natasha da un ultimátum y las puertas se abren. Adentro hay oro, jade, plumas y máscaras que alguna vez cruzaron el océano. Luis toma la máscara de Inti, y la máscara mira al sur, hacia el mercado de la Cebada, adonde van los jinetes de arena.",
+   "buscar": "Банк\\w* Испании",
+   "extra": {
+    "dikij-chas-karnaval-razdora": [
+     32
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas-karnaval-razdora",
+    "32-1.jpg"
+   ]
+  },
+  {
+   "id": "mad-cebada",
+   "nombre": "Mercado de la Cebada",
+   "cat": "tienda",
+   "ll": [
+    40.41117,
+    -3.70929
+   ],
+   "modelo": "cebada",
+   "desc": "En La Latina, sobre la calle de Toledo. El Seat 600 vuela por la calle de Toledo, y en la plaza del mercado salen de una nube de arena cientos de jinetes de arena. La máscara de Inti canta en quechua una canción que en Cusco no se oía desde hacía quinientos años, y llegan a ayudar los guerreros de la pampa: el Malón. Cuando la tormenta pasa, la calle de Toledo queda cubierta de arena tibia y dorada, como una playa, y los chicos ya corren a hacer castillos.",
+   "buscar": "Себад\\w*",
+   "extra": {
+    "dikij-chas-karnaval-razdora": [
+     33
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas-karnaval-razdora",
+    "33-1.jpg"
+   ]
+  },
+  {
+   "id": "mad-puerta-toledo",
+   "nombre": "Puerta de Toledo",
+   "cat": "monumento",
+   "ll": [
+    40.40695,
+    -3.71131
+   ],
+   "modelo": "ninguno",
+   "desc": "El arco de triunfo al final de la calle de Toledo. Ahí se despiden los jinetes del Malón después de la tormenta de arena.",
+   "buscar": "Толедск\\w+ ворот\\w*",
+   "sin_ilustracion": true
+  },
+  {
+   "id": "mad-torre",
+   "nombre": "Torre de Madrid",
+   "cat": "edificio",
+   "ll": [
+    40.42403,
+    -3.71145
+   ],
+   "modelo": "torre-madrid",
+   "desc": "El rascacielos sobre la Plaza de España. La Pelirroja oye un ruido raro arriba: en un departamento de sillones blancos y araña de cristal hay doce monitores y un norteamericano en un sillón. Es Bradley Whitcomb, nieto del mismo Harold de la foto. En la pantalla central se apagan siete lucecitas verdes, y las siete estrellitas que colgaban sobre Madrid desde la noche del carnaval ruedan detrás del horizonte.",
+   "buscar": "Мадридск\\w+ башн\\w*|Уиткомб",
+   "extra": {
+    "dikij-chas-karnaval-razdora": [
+     34
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas-karnaval-razdora",
+    "34-1.jpg"
+   ]
+  }
+ ]
+}

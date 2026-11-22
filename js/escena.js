@@ -1,7 +1,7 @@
 // Construcción de la escena 3D de Sinea: relieve, agua, calles, edificios e hitos.
 import * as THREE from './vendor/three.module.js';
 import {
-  LIMITES, COSTA, RIO, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, AFUERAS, MUELLES, CIUDAD, AFUERAS_HUECO, AFUERAS_COLOR, colorSuelo, zonaArboles, ARBOLES_CALLES, PLAYA, MARGEN_AGUA, AGUA_ENCIMA, MAR_COLOR, altura, costa, rio, dentro, distLinea, distSeg
+  LIMITES, COSTA, RIO, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, AFUERAS, MUELLES, CIUDAD, AFUERAS_HUECO, AFUERAS_COLOR, colorSuelo, zonaArboles, ARBOLES_CALLES, PLAYA, MARGEN_AGUA, AGUA_ENCIMA, MAR_COLOR, SUELO_IMG, LOTES, ARBOLES, CALLES_SOLO_ETIQUETA, altura, costa, rio, dentro, distLinea, distSeg
 } from './mundo.js';
 
 // mundo (x este, y norte) → three (X, Y arriba, Z sur)
@@ -56,6 +56,8 @@ export function pintarSuelo(S, minimas) {
   const px = x => (x - LIMITES.x0) / W * S, py = y => (LIMITES.y1 - y) / H * S, m = S / W;
   const camino = (pts) => { g.beginPath(); pts.forEach((p, i) => i ? g.lineTo(px(p[0]), py(p[1])) : g.moveTo(px(p[0]), py(p[1]))); };
   const poli = (pol) => { camino(pol); g.closePath(); };
+  // Madrid: el suelo es el mapa real (calles, manzanas y parques); solo se le suma el sombreado del relieve
+  if (SUELO_IMG) { g.globalAlpha = 0.86; g.drawImage(SUELO_IMG, 0, 0, S, S); g.globalAlpha = 1; return cv; }
   // 2) barrios: tono urbano
   for (const b of BARRIOS) {
     poli(b.pol); g.save(); g.clip();
@@ -177,7 +179,16 @@ export function crearEdificios(reservas, uniforms) {
     for (const v of VIAS) if (distLinea(x, y, v) < 12 + marg) return true;
     return false;
   };
-  for (const b of BARRIOS) {
+  if (LOTES) { // Madrid: un edificio en cada lote del mapa real
+    const PALM = ['#e8dccb', '#e3cfb6', '#dcc6ad', '#efe4d2', '#d9b99b', '#e6d5c3', '#cfb9a5', '#f1e8da'];
+    for (let i = 0; i < LOTES.length; i += 3) {
+      const x = LOTES[i], y = LOTES[i + 1];
+      if (reservas.some(([rx, ry, rr]) => (x - rx) ** 2 + (y - ry) ** 2 < rr * rr)) continue;
+      const k = Math.abs(Math.sin(Math.floor(x / 45) * 12.9898 + Math.floor(y / 45) * 78.233) * 43758.5453) % 1;
+      lotes.push({ x, y, w: 12.2, d: 12.2, h: LOTES[i + 2], base: altura(x, y) - 1, ang: 0, techo: 'plano', col: PALM[Math.floor(k * PALM.length)] });
+    }
+  }
+  for (const b of (LOTES ? [] : BARRIOS)) {
     const a = b.ang * Math.PI / 180, ca = Math.cos(a), sa = Math.sin(a), L = b.lote, calle = b.calle || 7;
     const [cx, cy] = b.o || cen(b.pol);
     let minx = 1e9, maxx = -1e9, miny = 1e9, maxy = -1e9;
@@ -285,8 +296,9 @@ export function crearArboles(reservas) {
     }
   }
   // arbolado en avenidas
+  if (ARBOLES) for (let i = 0; i < ARBOLES.length; i += 2) { const x = ARBOLES[i], y = ARBOLES[i + 1]; if (!reservas.some(([rx, ry, rr]) => (x - rx) ** 2 + (y - ry) ** 2 < rr * rr)) pts.push([x, y, 0]); }
   // Mendoza: árboles en todas las calles, también en las de la cuadrícula
-  const filas = CALLES.filter(c => c[1] === 'av').map(c => c[2]);
+  const filas = CALLES_SOLO_ETIQUETA ? [] : CALLES.filter(c => c[1] === 'av').map(c => c[2]);
   if (ARBOLES_CALLES) for (const b of BARRIOS) {
     if (!b.o) continue;
     const a = b.ang * Math.PI / 180, ca = Math.cos(a), sa = Math.sin(a), L = b.lote, [cx, cy] = b.o;
