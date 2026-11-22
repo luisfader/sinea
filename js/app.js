@@ -1,0 +1,461 @@
+// Sinea 3D — aplicación principal
+import * as THREE from './vendor/three.module.js';
+import { MapControls } from './vendor/MapControls.js';
+import { LIMITES, BARRIOS, CALLES, BORDES, altura } from './mundo.js';
+import { pintarSuelo, crearTerreno, crearMar, crearEdificios, crearArboles, crearPuentes, crearAfueras } from './escena.js';
+import { construirHitos, crearDelfines, crearTrenFantasma } from './hitos.js';
+import { LUGARES, NOVELAS, IDIOMAS } from './datos.js';
+
+const LITMIR = 'https://luisfader.github.io/litmir/#/';
+const FADERPEDIA = 'https://luisfader.github.io/faderpedia/#/es/a/';
+const FP = { 'faro-ael': 'ael', 'parque-delfines': 'ael', ministerio: 'ministerio-sentimientos', 'tren-fantasma': 'tren-fantasma', 'estacion-central': 'tren-fantasma',
+  brecha: 'brecha', 'taller-geppetto': 'risatomat', 'rincon-suspiros': 'subconsciente', 'plaza-dante': 'sinea-ciudad', ayuntamiento: 'octavio-grande',
+  'calle-castanos': 'marcos', 'calle-violinistas': 'vasili', 'central-electrica': 'brecha', 'estacion-cero': 'tren-fantasma', 'cafe-centro': 'olas' };
+const CAT = {
+  monumento: ['Monumento', '#d24f3f'], plaza: ['Plaza', '#b57a2c'], cafe: ['Café', '#c2456b'], edificio: ['Edificio', '#5b6fb5'],
+  transporte: ['Transporte', '#2f7fb8'], parque: ['Parque', '#3d9a53'], barrio: ['Barrio', '#7d6b5c'], calle: ['Calle', '#8a7a6a'], misterio: ['Misterio', '#7a4fc4']
+};
+const ICONO = {
+  monumento: '<path d="M12 2l2.6 6.3 6.4.5-4.9 4.2 1.5 6.4L12 16l-5.6 3.4 1.5-6.4L3 8.8l6.4-.5z"/>',
+  plaza: '<rect x="5" y="5" width="14" height="14" rx="2"/>',
+  cafe: '<path d="M4 8h12v5a5 5 0 01-5 5H9a5 5 0 01-5-5zM16 9h2a2.5 2.5 0 010 5h-2"/>',
+  edificio: '<path d="M5 21V5l7-3 7 3v16h-5v-5h-4v5z"/>',
+  transporte: '<path d="M6 3h12a2 2 0 012 2v10a3 3 0 01-3 3l2 3H7l2-3a3 3 0 01-3-3V5a2 2 0 012-2zm1 3v5h10V6z"/>',
+  parque: '<path d="M12 2l6 9h-3l4 6H5l4-6H6zM11 17h2v5h-2z"/>',
+  barrio: '<circle cx="12" cy="12" r="6"/>', calle: '<circle cx="12" cy="12" r="6"/>',
+  misterio: '<path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z"/>'
+};
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+/* ------------------------------------------------------------------ */
+const lienzo = $('#mapa');
+const renderer = new THREE.WebGLRenderer({ canvas: lienzo, antialias: true, logarithmicDepthBuffer: false, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05;
+
+const escena = new THREE.Scene();
+const CIELO_DIA = new THREE.Color(0xbfd9ea), CIELO_NOCHE = new THREE.Color(0x0b1424);
+escena.background = CIELO_DIA.clone();
+escena.fog = new THREE.Fog(CIELO_DIA.clone(), 4000, 16000);
+const camara = new THREE.PerspectiveCamera(42, innerWidth / innerHeight, 3, 40000);
+
+const U = { uT: { value: 0 }, uNoche: { value: 0 } };
+const sol = new THREE.DirectionalLight(0xfff2dc, 2.6);
+sol.castShadow = true; const SM = innerWidth < 800 ? 2048 : 4096; sol.shadow.mapSize.set(SM, SM);
+const sc = sol.shadow.camera; sc.left = sc.bottom = -900; sc.right = sc.top = 900; sc.near = 10; sc.far = 6000; sol.shadow.bias = -0.0004; sol.shadow.normalBias = 1.2;
+escena.add(sol, sol.target);
+const cielo = new THREE.HemisphereLight(0xdfeeff, 0xcbb894, 1.25); escena.add(cielo);
+
+const progreso = (t) => { $('#carga p').textContent = t; };
+const espera = () => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0)));
+
+let hitos, delf, tren, edificios;
+async function construir() {
+  progreso('Pintando el mapa…'); await espera();
+  const S = renderer.capabilities.maxTextureSize >= 8192 && innerWidth > 900 ? 8192 : 4096;
+  const tex = new THREE.CanvasTexture(pintarSuelo(S));
+  tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = renderer.capabilities.getMaxAnisotropy(); tex.generateMipmaps = true; tex.minFilter = THREE.LinearMipmapLinearFilter;
+  progreso('Levantando colinas…'); await espera();
+  escena.add(crearTerreno(tex));
+  escena.add(crearMar(U)); escena.add(crearAfueras());
+  progreso('Construyendo los edificios famosos…'); await espera();
+  hitos = construirHitos(LUGARES, U); escena.add(hitos.grupo);
+  progreso('Construyendo la ciudad…'); await espera();
+  edificios = crearEdificios(hitos.reservas, U); escena.add(edificios);
+  progreso('Plantando árboles…'); await espera();
+  escena.add(crearArboles(hitos.reservas)); escena.add(crearPuentes());
+  delf = crearDelfines(); escena.add(delf.g);
+  tren = crearTrenFantasma(); escena.add(tren.g);
+}
+
+/* ------------------------------------------------------------------ */
+const controles = new MapControls(camara, renderer.domElement);
+controles.enableDamping = true; controles.dampingFactor = 0.09;
+controles.zoomToCursor = true; controles.screenSpacePanning = false;
+controles.minDistance = 40; controles.maxDistance = 9500; controles.maxPolarAngle = 1.36;
+controles.zoomSpeed = 1.3;
+
+function vistaInicial() {
+  controles.target.set(700, 0, 500);
+  camara.position.set(-600, 2600, 3300);
+  controles.update();
+}
+
+// límites de la cámara
+function limitar() {
+  const t = controles.target;
+  t.x = Math.max(LIMITES.x0 + 300, Math.min(LIMITES.x1 - 300, t.x));
+  t.z = Math.max(-LIMITES.y1 + 300, Math.min(-LIMITES.y0 - 300, t.z));
+  t.y = Math.max(0, altura(t.x, -t.z));
+  const hc = Math.max(0, altura(camara.position.x, -camara.position.z)) + 12;
+  if (camara.position.y < hc) camara.position.y = hc;
+}
+
+// vuelo suave hacia un punto
+let vuelo = null;
+function volar(x, y, dist = 520, polar = 0.95, azim = null, ms = 1400) {
+  const h = Math.max(0, altura(x, y));
+  const t0 = controles.target.clone(), p0 = camara.position.clone();
+  const t1 = new THREE.Vector3(x, h, -y);
+  const off = p0.clone().sub(t0);
+  const sph = new THREE.Spherical().setFromVector3(off);
+  sph.radius = dist; sph.phi = polar; if (azim !== null) sph.theta = azim;
+  const p1 = t1.clone().add(new THREE.Vector3().setFromSpherical(sph));
+  // con el panel abierto, correr el punto hacia la derecha para que quede en el centro de lo visible
+  if (panel.classList.contains('abierto') && innerWidth > 720) {
+    const mpp = 2 * dist * Math.tan(camara.fov * Math.PI / 360) / innerHeight;
+    const der = new THREE.Vector3(Math.cos(sph.theta), 0, -Math.sin(sph.theta)).multiplyScalar(-204 * mpp);
+    t1.add(der); p1.add(der);
+  } else if (panel.classList.contains('abierto')) {
+    const mpp = 2 * dist * Math.tan(camara.fov * Math.PI / 360) / innerHeight;
+    const atras = new THREE.Vector3(Math.sin(sph.theta), 0, Math.cos(sph.theta)).multiplyScalar(innerHeight * 0.22 * mpp / Math.max(.35, Math.cos(sph.phi)));
+    t1.add(atras); p1.add(atras);
+  }
+  vuelo = { t0, p0, t1, p1, ini: performance.now(), ms };
+}
+function pasoVuelo(now) {
+  if (!vuelo) return;
+  let k = Math.min(1, (now - vuelo.ini) / vuelo.ms); const e = k < .5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
+  // arco: se aleja un poco a mitad de camino
+  const d = vuelo.t0.distanceTo(vuelo.t1), arco = Math.sin(Math.PI * e) * Math.min(1200, d * .35);
+  controles.target.lerpVectors(vuelo.t0, vuelo.t1, e);
+  camara.position.lerpVectors(vuelo.p0, vuelo.p1, e); camara.position.y += arco;
+  if (k >= 1) vuelo = null;
+}
+controles.addEventListener('start', () => { vuelo = null; });
+
+/* ------------------------------------------------------------------ */
+/* Etiquetas                                                           */
+/* ------------------------------------------------------------------ */
+const capa = $('#etiquetas');
+const peso = (L) => L.apar.reduce((s, a) => s + a.c.length, 0);
+const ETQ = [];
+for (const L of LUGARES) {
+  const el = document.createElement('button');
+  const [nom, col] = CAT[L.cat] || CAT.edificio;
+  const soloTexto = L.cat === 'barrio' || L.cat === 'calle';
+  el.className = 'pin' + (soloTexto ? ' texto' : '');
+  el.style.setProperty('--c', col);
+  el.innerHTML = (soloTexto ? '' : `<span class="ic"><svg viewBox="0 0 24 24">${ICONO[L.cat] || ICONO.edificio}</svg></span>`) + `<span class="nm">${esc(L.nombre.replace(/ \(.*\)$/, ''))}</span>`;
+  el.title = L.nombre;
+  el.addEventListener('click', (e) => { e.stopPropagation(); abrirLugar(L.id, true); });
+  capa.appendChild(el);
+  const p = peso(L);
+  ETQ.push({ el, L, imp: Math.log2(2 + p) + (L.cat === 'monumento' ? 2.2 : L.cat === 'plaza' ? 1.4 : 0) + (L.id === 'plaza-dante' || L.id === 'faro-ael' ? 3 : 0), w: 0, h: 0, tipo: 'lugar' });
+}
+for (const b of BARRIOS) if (b.nombre) {
+  const el = document.createElement('div'); el.className = 'barrio'; el.textContent = b.nombre; capa.appendChild(el);
+  ETQ.push({ el, x: b.lx, y: b.ly, imp: 3.5, tipo: 'barrio' });
+}
+for (const b of BORDES) {
+  const el = document.createElement('div'); el.className = b.mar ? 'mar' : 'borde'; el.textContent = b.texto; capa.appendChild(el);
+  ETQ.push({ el, x: b.x, y: b.y, imp: 9, tipo: b.mar ? 'mar' : 'borde' });
+}
+for (const [nombre, t, pts] of CALLES) {
+  // segmento más largo
+  let best = 0, bi = 0; for (let i = 0; i < pts.length - 1; i++) { const l = Math.hypot(pts[i + 1][0] - pts[i][0], pts[i + 1][1] - pts[i][1]); if (l > best) { best = l; bi = i; } }
+  const a = pts[bi], b = pts[bi + 1];
+  const el = document.createElement('div'); el.className = 'calle ' + t; el.textContent = nombre; capa.appendChild(el);
+  ETQ.push({ el, x: (a[0] + b[0]) / 2, y: (a[1] + b[1]) / 2, a, b, imp: t === 'c' ? 1 : 2, tipo: 'calle', largo: best });
+}
+
+const vp = new THREE.Vector3(), vp2 = new THREE.Vector3();
+let filtro = null, seleccion = null;
+function proyectar(x, y, h, out) {
+  vp.set(x, h, -y).project(camara);
+  out.x = (vp.x + 1) / 2 * innerWidth; out.y = (1 - vp.y) / 2 * innerHeight; out.z = vp.z; return out;
+}
+function etiquetas() {
+  const dist = camara.position.distanceTo(controles.target);
+  const zoom = Math.log2(9000 / dist); // 0 lejos … 7 cerca
+  const ocupados = [];
+  const choca = (r) => ocupados.some(o => r.x < o.x + o.w && r.x + r.w > o.x && r.y < o.y + o.h && r.y + r.h > o.y);
+  const o = {};
+  const orden = ETQ.slice().sort((A, B) => (B.sel ? 99 : 0) + B.imp - (A.sel ? 99 : 0) - A.imp);
+  for (const E of orden) {
+    let x, y, h;
+    if (E.tipo === 'lugar') { x = E.L.x; y = E.L.y; h = (E.L._h ?? 10); }
+    else { x = E.x; y = E.y; h = Math.max(0, altura(x, y)) + 2; }
+    proyectar(x, y, h, o);
+    let visible = o.z < 1 && o.x > -100 && o.x < innerWidth + 100 && o.y > -40 && o.y < innerHeight + 40;
+    const enFiltro = !filtro || (E.tipo === 'lugar' && E.L.apar.some(a => filtro.has(a.n)));
+    if (E.tipo === 'lugar') {
+      const umbral = 6.4 - zoom * 1.25;
+      E.sel = seleccion === E.L.id;
+      visible = visible && (E.sel || (filtro ? enFiltro : E.imp > umbral) || (filtro && enFiltro));
+      E.el.classList.toggle('sel', E.sel);
+      E.el.classList.toggle('apagado', !!filtro && !enFiltro);
+      if (filtro && !enFiltro) visible = visible && zoom > 4.2 && E.imp > umbral;
+    } else if (E.tipo === 'barrio') visible = visible && zoom > .9 && zoom < 4.3;
+    else if (E.tipo === 'calle') {
+      visible = visible && zoom > (E.imp > 1 ? 3.1 : 3.9);
+      if (visible) { // orientar a lo largo de la calle
+        const pa = proyectar(E.a[0], E.a[1], 2, {}), pb = proyectar(E.b[0], E.b[1], 2, {});
+        let ang = Math.atan2(pb.y - pa.y, pb.x - pa.x) * 180 / Math.PI; if (ang > 90) ang -= 180; if (ang < -90) ang += 180;
+        const lenPx = Math.hypot(pb.x - pa.x, pb.y - pa.y);
+        if (lenPx < E.el.offsetWidth * 0.9 + 20) visible = false;
+        E.ang = ang;
+      }
+    } else if (E.tipo === 'mar' || E.tipo === 'borde') visible = visible && zoom < 3.5;
+    if (visible) {
+      const w = E.w || (E.w = E.el.offsetWidth || 120), hh = E.hh || (E.hh = E.el.offsetHeight || 24);
+      const r = E.tipo === 'lugar' ? { x: o.x - 14, y: o.y - hh, w: w, h: hh } : { x: o.x - w / 2, y: o.y - hh / 2, w, h: hh };
+      if (E.tipo !== 'calle' && !E.sel && choca(r)) visible = false;
+      else if (E.tipo !== 'calle') ocupados.push(r);
+    }
+    if (visible) {
+      E.el.style.display = '';
+      if (E.tipo === 'calle') E.el.style.transform = `translate(${o.x}px,${o.y}px) translate(-50%,-50%) rotate(${E.ang}deg)`;
+      else if (E.tipo === 'lugar') E.el.style.transform = `translate(${o.x - 13}px,${o.y - 30}px)`;
+      else E.el.style.transform = `translate(${o.x}px,${o.y}px) translate(-50%,-50%)`;
+      E.el.style.zIndex = E.sel ? 1000 : Math.round(E.imp * 10);
+    } else E.el.style.display = 'none';
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Panel lateral                                                       */
+/* ------------------------------------------------------------------ */
+const panel = $('#panel'), cuerpo = $('#panel .cuerpo');
+function tituloNovela(slug) { const n = NOVELAS[slug]; return n ? n.es : slug; }
+function capitulos(a, max = 6) {
+  const n = NOVELAS[a.n];
+  const chips = a.c.map(([seg, t]) => `<a class="cap" target="_blank" rel="noopener" href="${LITMIR}${a.n}/${seg}" title="${esc(t)}">${seg.startsWith('extra') ? '✦' : 'Cap. ' + seg}${t ? ' · ' + esc(t) : ''}</a>`);
+  const mas = chips.length > max ? `<button class="mas">+ ${chips.length - max} capítulos más</button>` : '';
+  return `<div class="caps">${chips.slice(0, max).join('')}${chips.length > max ? `<span class="ocultos">${chips.slice(max).join('')}</span>` : ''}${mas}</div>`;
+}
+function fichaNovela(a) {
+  const n = NOVELAS[a.n] || {};
+  const orig = n.t && n.t !== n.es ? `<i>${esc(n.t)}</i> · ` : '';
+  return `<div class="nov">
+    ${n.p ? `<img class="port" src="${n.p}" alt="" loading="lazy">` : '<div class="port"></div>'}
+    <div class="txt"><a class="tn" href="${LITMIR}${a.n}" target="_blank" rel="noopener">${esc(n.es || a.n)}</a>
+    <div class="meta">${orig}${esc(IDIOMAS[n.l] || n.l || '')}${n.y ? ' · ' + n.y : ''} · <button class="lnk" data-filtro="${a.n}">ver sus lugares en el mapa</button></div>
+    ${capitulos(a)}</div></div>`;
+}
+function abrirLugar(id, mover = false) {
+  const L = LUGARES.find(l => l.id === id); if (!L) return;
+  seleccion = id;
+  const [cn, col] = CAT[L.cat] || CAT.edificio;
+  const total = peso(L);
+  const im = L.img ? `<figure class="foto"><img src="${L.img.src}" alt=""><figcaption>Ilustración de <a href="${LITMIR}${L.img.n}/${L.img.c}" target="_blank" rel="noopener">${esc(tituloNovela(L.img.n))}, cap. ${esc(L.img.c)}</a></figcaption></figure>` : '';
+  cuerpo.innerHTML = `${im}
+    <div class="cab"><span class="cat" style="--c:${col}">${esc(cn)}</span>
+    <h2>${esc(L.nombre)}</h2>
+    ${L.otros && L.otros.length ? `<div class="otros">${L.otros.map(esc).join(' · ')}</div>` : ''}</div>
+    <div class="acciones"><button data-acc="volar">Acercarse</button><button data-acc="girar">Dar la vuelta</button><button data-acc="link">Copiar enlace</button>${FP[L.id] ? `<a href="${FADERPEDIA}${FP[L.id]}" target="_blank" rel="noopener">Faderpedia</a>` : ''}</div>
+    <p class="desc">${esc(L.desc)}</p>
+    <h3>Aparece en ${L.apar.length === 1 ? 'una novela' : L.apar.length + ' novelas'} <small>${total} capítulo${total === 1 ? '' : 's'}</small></h3>
+    ${L.apar.map(fichaNovela).join('') || '<p class="vacio">Todavía no se encontró en el texto de las novelas.</p>'}`;
+  panel.classList.add('abierto'); panel.scrollTop = 0; cuerpo.scrollTop = 0;
+  if (mover) volar(L.x, L.y, distanciaPara(L), 0.98);
+  cuerpo.querySelector('[data-acc=volar]').onclick = () => volar(L.x, L.y, distanciaPara(L), 0.98);
+  cuerpo.querySelector('[data-acc=girar]').onclick = () => { volar(L.x, L.y, distanciaPara(L), 1.05); orbita = performance.now(); };
+  cuerpo.querySelector('[data-acc=link]').onclick = (e) => { navigator.clipboard?.writeText(location.href); e.target.textContent = 'Enlace copiado'; };
+  history.replaceState(null, '', '#/lugar/' + id);
+}
+const distanciaPara = (L) => ({ 'torre-tv': 700, laberinto: 700, 'colina-oeste': 900, 'rio-sina': 1400, 'barrio-ricos': 900, 'estacion-central': 520, brecha: 700 }[L.modelo] || { barrio: 900, calle: 520 }[L.cat] || 380);
+let orbita = 0;
+function cerrarPanel() { panel.classList.remove('abierto'); seleccion = null; if (!filtro) history.replaceState(null, '', '#/'); }
+$('#panel .cerrar').onclick = cerrarPanel;
+cuerpo.addEventListener('click', (e) => {
+  const b = e.target.closest('.mas'); if (b) { b.parentElement.classList.add('todo'); b.remove(); }
+  const f = e.target.closest('[data-filtro]'); if (f) aplicarFiltro(f.dataset.filtro, true);
+  const l = e.target.closest('[data-lugar]'); if (l) abrirLugar(l.dataset.lugar, true);
+});
+
+const PERSONAJES = {
+  vasili: ['El detective Vasili', ['opasnoe-svidanie', 'almaznyj-dozhd', 'chi-ha-visto-sasha', 'el-tren', 'strateg'], 'Detective privado: «Una cita peligrosa», «Lluvia de diamantes», «¿Quién ha visto a Sasha?», «El tren», «El estratega»…'],
+  sasha: ['Sasha, la que oye', ['golos', 'la-voix', 'chi-ha-visto-sasha', 'almaznyj-dozhd'], 'La oficinista que escuchó al delfín Ael y hoy dirige el Centro de Anomalías del faro.'],
+  marcos: ['Marcos y Alicia', ['el-tren-fantasma', 'prizrachnyj-poezd', 'il-treno-fantasma', 'znak', 'bezumie-v-poezde'], 'El detective que no cree en las estrellas y la astróloga que lo hace subir al tren fantasma.'],
+  irina: ['Irina, la psicóloga', ['mashina-snov'], '«La máquina de los sueños»: los cuatro jinetes, la cita en la Fucsia, el viejo faro.'],
+  franco: ['Franco y Chiara', ['grustnyj-gorod', 'la-citta-triste'], 'Los que devolvieron la risa a la ciudad triste.'],
+  natalia: ['Luis, Natalia y el zorro', ['volny-lyubvi', 'ondas-de-amor', 'onde-d-amore', 'volny-lyubvi-gorod-bez-ulybok', 'volny-lyubvi-narisovannyj-mir', 'volny-lyubvi-krepost', 'volny-lyubvi-labirint-zabveniya', 'onde-d-amore-3'], '«Ondas de amor»: el dibujo del zorro, la torre, las ondas rosas y turquesas.'],
+  alessio: ['Alessio, Laura y Tatiana', ['pokhititel-serdec-portret-osnovatelya', 'la-chica-del-retrato'], '«Ladrón de corazones» y «La chica del retrato».'],
+  fabrizio: ['Fabrizio y Lucía', ['tikhaya-lyubov', 'ti-amo-in-silenzio'], '«Amor en silencio»: la carrera al faro del verano de 1997.']
+};
+
+/* ------------------------------------------------------------------ */
+/* Filtro por novela y recorrido                                       */
+/* ------------------------------------------------------------------ */
+let ruta = null;
+const sel = $('#novela');
+const usadas = Object.keys(NOVELAS).map(s => [s, LUGARES.filter(L => L.apar.some(a => a.n === s)).length]).sort((a, b) => tituloNovela(a[0]).localeCompare(tituloNovela(b[0]), 'es'));
+sel.innerHTML = '<option value="">Todas las novelas y personajes</option><optgroup label="Personajes">' + Object.entries(PERSONAJES).map(([k, p]) => `<option value="p:${k}">${esc(p[0])}</option>`).join('') + '</optgroup><optgroup label="Novelas">' + usadas.map(([s, n]) => `<option value="${s}">${esc(tituloNovela(s))} (${n})</option>`).join('') + '</optgroup>';
+sel.onchange = () => aplicarFiltro(sel.value || null, true);
+
+function aplicarFiltro(slug, mover) {
+  if (ruta) { escena.remove(ruta); ruta.geometry.dispose(); ruta = null; }
+  sel.value = slug || '';
+  if (!slug) { filtro = null; if (!seleccion) history.replaceState(null, '', '#/'); $('#recorrido').hidden = true; return; }
+  if (slug.startsWith('p:')) return filtroPersonaje(slug.slice(2), mover);
+  const n = NOVELAS[slug];
+  const fam = new Set([slug, ...Object.values(n.tr || {}).filter(s => NOVELAS[s])]);
+  filtro = fam;
+  // orden de aparición: primer capítulo en que se menciona
+  const lugares = LUGARES.map(L => { const a = L.apar.find(a => a.n === slug); return a ? { L, c: Math.min(...a.c.map(c => parseInt(c[0]) || 999)), a } : null; }).filter(Boolean).sort((a, b) => a.c - b.c);
+  // panel con el recorrido
+  cuerpo.innerHTML = `<div class="cab nv">${n.p ? `<img class="portg" src="${n.p}" alt="">` : ''}<div><span class="cat" style="--c:#444">Recorrido</span><h2>${esc(n.es)}</h2><div class="otros">${n.t !== n.es ? esc(n.t) + ' · ' : ''}${esc(IDIOMAS[n.l] || '')}${n.y ? ' · ' + n.y : ''}</div>
+    <div class="acciones"><a href="${LITMIR}${slug}" target="_blank" rel="noopener">Leer en Litmir</a><button data-filtro="">Quitar filtro</button></div></div></div>
+    <p class="desc">Los lugares de Sinea por los que pasa la novela, en el orden en que aparecen.</p>
+    <ol class="lista">${lugares.map(({ L, c, a }) => `<li><button data-lugar="${L.id}"><b>${esc(L.nombre)}</b><span>desde el cap. ${c} · ${a.c.length} cap.</span></button></li>`).join('')}</ol>`;
+  panel.classList.add('abierto'); seleccion = null;
+  $('#recorrido').hidden = false; $('#recorrido span').textContent = n.es;
+  history.replaceState(null, '', '#/novela/' + slug);
+  // línea del recorrido
+  if (lugares.length > 1) {
+    const pts = [];
+    for (let i = 0; i < lugares.length - 1; i++) {
+      const A = lugares[i].L, B = lugares[i + 1].L;
+      for (let k = 0; k <= 24; k++) { const x = A.x + (B.x - A.x) * k / 24, y = A.y + (B.y - A.y) * k / 24; pts.push(new THREE.Vector3(x, Math.max(0, altura(x, y)) + 30 + Math.sin(k / 24 * Math.PI) * 60, -y)); }
+    }
+    const geo = new THREE.BufferGeometry().setFromPoints(pts);
+    ruta = new THREE.Line(geo, new THREE.LineDashedMaterial({ color: 0xe8453c, dashSize: 26, gapSize: 16, transparent: true, opacity: .9, depthTest: false }));
+    ruta.computeLineDistances(); ruta.renderOrder = 5; escena.add(ruta);
+  }
+  if (mover && lugares.length) {
+    let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9; lugares.forEach(({ L }) => { x0 = Math.min(x0, L.x); x1 = Math.max(x1, L.x); y0 = Math.min(y0, L.y); y1 = Math.max(y1, L.y); });
+    volar((x0 + x1) / 2, (y0 + y1) / 2, Math.max(900, Math.max(x1 - x0, y1 - y0) * 1.25), 0.8);
+  }
+}
+$('#recorrido button').onclick = () => aplicarFiltro(null);
+
+function filtroPersonaje(k, mover) {
+  const P = PERSONAJES[k]; if (!P) return;
+  filtro = new Set(P[1]);
+  const lugares = LUGARES.map(L => { const ap = L.apar.filter(a => filtro.has(a.n)); return ap.length ? { L, ap, n: ap.reduce((s, a) => s + a.c.length, 0) } : null; }).filter(Boolean).sort((a, b) => b.n - a.n);
+  cuerpo.innerHTML = `<div class="cab"><span class="cat" style="--c:#444">Personaje</span><h2>${esc(P[0])}</h2><div class="otros">${esc(P[2])}</div>
+    <div class="acciones"><button data-filtro="">Quitar filtro</button></div></div>
+    <p class="desc">Los lugares de Sinea por los que pasa, ordenados por cuántas veces aparecen en sus novelas.</p>
+    <ol class="lista">${lugares.map(({ L, ap, n }) => `<li><button data-lugar="${L.id}"><b>${esc(L.nombre)}</b><span>${ap.map(a => esc(tituloNovela(a.n))).join(' · ')} · ${n} cap.</span></button></li>`).join('')}</ol>`;
+  panel.classList.add('abierto'); seleccion = null;
+  $('#recorrido').hidden = false; $('#recorrido span').textContent = P[0];
+  history.replaceState(null, '', '#/personaje/' + k);
+  if (mover && lugares.length) {
+    let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9; lugares.forEach(({ L }) => { x0 = Math.min(x0, L.x); x1 = Math.max(x1, L.x); y0 = Math.min(y0, L.y); y1 = Math.max(y1, L.y); });
+    volar((x0 + x1) / 2, (y0 + y1) / 2, Math.max(900, Math.max(x1 - x0, y1 - y0) * 1.2), 0.8);
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Búsqueda                                                            */
+/* ------------------------------------------------------------------ */
+const bus = $('#buscar'), res = $('#resultados');
+const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+bus.addEventListener('input', () => {
+  const q = norm(bus.value.trim()); if (!q) { res.hidden = true; return; }
+  const lug = LUGARES.map(L => {
+    const nom = norm(L.nombre + ' ' + (L.otros || []).join(' ')); const d = norm(L.desc);
+    const s = nom.includes(q) ? 3 : d.includes(q) ? 1 : 0; return [s, L];
+  }).filter(x => x[0]).sort((a, b) => b[0] - a[0] || peso(b[1]) - peso(a[1])).slice(0, 8);
+  const nov = Object.entries(NOVELAS).filter(([s, n]) => norm(n.es + ' ' + n.t).includes(q)).slice(0, 5);
+  const calles = CALLES.filter(c => norm(c[0]).includes(q)).slice(0, 3);
+  const pers = Object.entries(PERSONAJES).filter(([k, p]) => norm(p[0] + ' ' + k).includes(q) || (q === 'vasily' && k === 'vasili'));
+  res.innerHTML = pers.map(([k, p]) => `<button data-personaje="${k}"><svg viewBox="0 0 24 24" style="fill:#e8453c"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0z"/></svg><span><b>${esc(p[0])}</b><small>Personaje · ver sus lugares</small></span></button>`).join('') + lug.map(([s, L]) => `<button data-lugar="${L.id}"><svg viewBox="0 0 24 24" style="fill:${(CAT[L.cat] || CAT.edificio)[1]}">${ICONO[L.cat] || ''}</svg><span><b>${esc(L.nombre)}</b><small>${s === 1 ? esc(fragmento(L.desc, q)) : esc((CAT[L.cat] || [''])[0])}</small></span></button>`).join('')
+    + nov.map(([s, n]) => `<button data-novela="${s}"><svg viewBox="0 0 24 24" style="fill:#444"><path d="M5 3h11a3 3 0 013 3v15H8a3 3 0 01-3-3z"/></svg><span><b>${esc(n.es)}</b><small>Novela · ver su recorrido</small></span></button>`).join('')
+    + calles.map(c => `<button data-calle="${esc(c[0])}"><svg viewBox="0 0 24 24" style="fill:#999"><path d="M10 2h4v20h-4z"/></svg><span><b>${esc(c[0])}</b><small>Calle</small></span></button>`).join('')
+    || '<div class="nada">Nada con ese nombre en Sinea… todavía.</div>';
+  res.hidden = false;
+});
+function fragmento(t, q) { const i = norm(t).indexOf(q); return (i > 30 ? '…' : '') + t.slice(Math.max(0, i - 30), i + 50) + '…'; }
+res.addEventListener('click', (e) => {
+  const b = e.target.closest('button'); if (!b) return;
+  if (b.dataset.lugar) abrirLugar(b.dataset.lugar, true);
+  if (b.dataset.novela) aplicarFiltro(b.dataset.novela, true);
+  if (b.dataset.personaje) aplicarFiltro('p:' + b.dataset.personaje, true);
+  if (b.dataset.calle) { const c = CALLES.find(c => c[0] === b.dataset.calle); const p = c[2][Math.floor(c[2].length / 2)]; volar(p[0], p[1], 500, .9); }
+  res.hidden = true; bus.blur();
+});
+bus.addEventListener('keydown', (e) => { if (e.key === 'Enter') res.querySelector('button')?.click(); if (e.key === 'Escape') { res.hidden = true; bus.blur(); } });
+addEventListener('keydown', (e) => { if (e.key === '/' && document.activeElement !== bus) { e.preventDefault(); bus.focus(); } });
+
+/* ------------------------------------------------------------------ */
+/* Controles de la interfaz                                            */
+/* ------------------------------------------------------------------ */
+let noche = 0, nocheObj = 0;
+$('#b-noche').onclick = () => { nocheObj = nocheObj ? 0 : 1; $('#b-noche').classList.toggle('on', !!nocheObj); $('#b-noche').title = nocheObj ? 'Hacer de día' : 'Hacer de noche'; };
+$('#b-mas').onclick = () => zoomPaso(0.6);
+$('#b-menos').onclick = () => zoomPaso(1.6);
+function zoomPaso(f) { const off = camara.position.clone().sub(controles.target); const l = THREE.MathUtils.clamp(off.length() * f, controles.minDistance, controles.maxDistance); vuelo = { t0: controles.target.clone(), t1: controles.target.clone(), p0: camara.position.clone(), p1: controles.target.clone().add(off.setLength(l)), ini: performance.now(), ms: 450 }; }
+$('#b-norte').onclick = () => { const t = controles.target; volar(t.x, -t.z, camara.position.distanceTo(t), new THREE.Spherical().setFromVector3(camara.position.clone().sub(t)).phi, 0, 700); };
+$('#b-3d').onclick = () => {
+  const t = controles.target, sph = new THREE.Spherical().setFromVector3(camara.position.clone().sub(t));
+  const plano = sph.phi < 0.2; volar(t.x, -t.z, sph.radius, plano ? 0.95 : 0.01, null, 800);
+  $('#b-3d').textContent = plano ? '2D' : '3D';
+};
+$('#b-casa').onclick = () => { volar(800, -100, 4600, 0.85, 0.5); };
+
+// clic sobre el mapa: lugar más cercano al punto
+const ray = new THREE.Raycaster(), mouse = new THREE.Vector2();
+let abajo = null;
+lienzo.addEventListener('pointerdown', (e) => { abajo = [e.clientX, e.clientY]; });
+lienzo.addEventListener('pointerup', (e) => {
+  if (!abajo || Math.hypot(e.clientX - abajo[0], e.clientY - abajo[1]) > 5) return;
+  res.hidden = true;
+  mouse.set(e.clientX / innerWidth * 2 - 1, -e.clientY / innerHeight * 2 + 1); ray.setFromCamera(mouse, camara);
+  const hit = ray.intersectObjects([escena.getObjectByName('terreno'), hitos.grupo], true)[0]; if (!hit) return;
+  const x = hit.point.x, y = -hit.point.z;
+  let best = null, bd = 1e9; for (const L of LUGARES) { const d = Math.hypot(L.x - x, L.y - y); if (d < bd) { bd = d; best = L; } }
+  const lim = camara.position.distanceTo(controles.target) * 0.06 + 25;
+  if (best && bd < lim) abrirLugar(best.id, false);
+});
+lienzo.addEventListener('dblclick', (e) => {
+  mouse.set(e.clientX / innerWidth * 2 - 1, -e.clientY / innerHeight * 2 + 1); ray.setFromCamera(mouse, camara);
+  const hit = ray.intersectObject(escena.getObjectByName('terreno'))[0]; if (!hit) return;
+  const off = camara.position.clone().sub(controles.target);
+  volar(hit.point.x, -hit.point.z, Math.max(controles.minDistance, off.length() * .5), new THREE.Spherical().setFromVector3(off).phi, null, 600);
+});
+
+addEventListener('resize', () => { camara.aspect = innerWidth / innerHeight; camara.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); ETQ.forEach(E => E.w = 0); });
+
+/* ------------------------------------------------------------------ */
+const brujula = $('#b-norte svg');
+const T0 = performance.now();
+function cuadro() {
+  const now = performance.now(), t = (now - T0) / 1000;
+  pasoVuelo(now);
+  if (orbita) { if (now - orbita > 1500 && !vuelo) { const off = camara.position.clone().sub(controles.target); off.applyAxisAngle(new THREE.Vector3(0, 1, 0), 0.004); camara.position.copy(controles.target).add(off); } if (now - orbita > 18000) orbita = 0; }
+  controles.update(); limitar();
+  noche += (nocheObj - noche) * 0.04; if (Math.abs(noche - nocheObj) < .002) noche = nocheObj;
+  U.uT.value = t; U.uNoche.value = noche; document.body.classList.toggle('noche', noche > .5);
+  escena.background.copy(CIELO_DIA).lerp(CIELO_NOCHE, noche); escena.fog.color.copy(escena.background);
+  const d = camara.position.distanceTo(controles.target);
+  escena.fog.near = d * 0.8 + 200; escena.fog.far = d * 2.7 + 2500;
+  sol.intensity = 2.6 * (1 - noche) + 0.15 * noche; sol.color.setHSL(0.1, 0.6 - noche * .3, 0.9 - noche * .2);
+  cielo.intensity = 1.25 * (1 - noche) + 0.55 * noche; cielo.color.setHSL(0.58, 0.5, 0.9 - noche * .55);
+  renderer.toneMappingExposure = 1.05 - noche * 0.2;
+  // la sombra sigue a la cámara
+  const T = controles.target, ext = THREE.MathUtils.clamp(d * 0.9, 300, 2600);
+  sc.left = sc.bottom = -ext; sc.right = sc.top = ext; sc.updateProjectionMatrix();
+  sol.position.set(T.x + 1400, T.y + 2600, T.z + 900); sol.target.position.copy(T);
+  if (hitos) hitos.anims.forEach(f => f(t, noche));
+  if (delf) delf.anim(t); if (tren) tren.anim(t, noche);
+  const az = Math.atan2(camara.position.x - T.x, camara.position.z - T.z);
+  brujula.style.transform = `rotate(${az * 180 / Math.PI}deg)`;
+  renderer.render(escena, camara);
+  etiquetas();
+  requestAnimationFrame(cuadro);
+}
+
+/* ------------------------------------------------------------------ */
+function ruta0() {
+  const m = location.hash.match(/^#\/(lugar|novela|personaje)\/([\w-]+)/);
+  if (m && m[1] === 'personaje' && PERSONAJES[m[2]]) { aplicarFiltro('p:' + m[2], true); return true; }
+  if (m && m[1] === 'lugar') { abrirLugar(m[2], true); return true; }
+  if (m && m[1] === 'novela' && NOVELAS[m[2]]) { aplicarFiltro(m[2], true); return true; }
+  return false;
+}
+addEventListener('hashchange', ruta0);
+
+(async () => {
+  vistaInicial();
+  try { await construir(); }
+  catch (e) { console.error(e); progreso('Error: ' + e.message); return; }
+  $('#carga').classList.add('fuera');
+  cuadro();
+  if (!ruta0()) setTimeout(() => volar(1000, -300, 2700, 0.98, 0.62, 3200), 400);
+  window.SINEA = { escena, camara, controles, volar, abrirLugar, aplicarFiltro, noche: (v) => { nocheObj = v; noche = v; }, n: edificios.userData.n };
+})();

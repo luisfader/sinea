@@ -1,0 +1,935 @@
+{
+ "_info": "Fuente editable de los lugares de Sinea. Coordenadas en metros: x hacia el este, y hacia el norte; (0,0) cerca del puente de los Tejedores. 'buscar' es una expresión regular (sin distinguir mayúsculas) que tools/build.py busca en las novelas de Litmir para calcular en qué novelas y capítulos aparece cada lugar. 'extra' añade novelas y capítulos a mano: {\"slug\": [números de capítulo]}. 'modelo' elige el edificio 3D. Después de editar: python3 tools/build.py RUTA/A/litmir",
+ "lugares": [
+  {
+   "id": "plaza-dante",
+   "nombre": "Plaza Dante",
+   "otros": [
+    "Площадь Данте",
+    "Piazza Dante"
+   ],
+   "cat": "plaza",
+   "x": 600,
+   "y": -640,
+   "modelo": "plaza-dante",
+   "desc": "El corazón de Sinea. En el centro, la fuente con la estatua de mármol del poeta; al sur, el Ayuntamiento con su balcón y su torre del reloj. Aquí terminan las fiestas, los desfiles y las revoluciones: aquí Franco y Chiara devuelven la risa a la ciudad, aquí se abre el Carnaval con el himno «Смейся» y aquí Alessio, con los años, abre su Café Ladrón de Corazones.",
+   "buscar": "площад\\w* Данте|plaza (de )?Dante|piazza Dante|place Dante|Dante Meydan"
+  },
+  {
+   "id": "ayuntamiento",
+   "nombre": "Ayuntamiento y Reloj del Carnaval",
+   "otros": [
+    "Мэрия",
+    "Ратуша",
+    "Часовая башня"
+   ],
+   "cat": "edificio",
+   "x": 600,
+   "y": -790,
+   "modelo": "ayuntamiento",
+   "desc": "La sede de los alcaldes de Sinea, que rara vez tienen suerte: Octavio Grande y su prohibición de la risa, el corrupto Martin, Alfredo Grande y su carnaval. Su torre guarda el carillón y el Reloj del Carnaval, que en «Карнавал Синеи» da una decimotercera campanada. En la partida de ajedrez de Miguel es el rey blanco, en e1.",
+   "buscar": "мэри[яию]\\b|ратуш\\w+|Ayuntamiento|alcaldía|часов\\w+ башн\\w+|Час\\w* карнавала|карильон|Town Hall|the Mayor"
+  },
+  {
+   "id": "plaza-reloj",
+   "nombre": "Plaza de los Relojes",
+   "otros": [
+    "Площадь Часов"
+   ],
+   "cat": "plaza",
+   "x": 590,
+   "y": -420,
+   "modelo": "plaza",
+   "desc": "Plaza pequeña frente a la fachada norte del Ayuntamiento, con palomas en las cornisas. En «Стратег» es la casilla e3: allí debían reunirse a las cuatro de la madrugada las tres columnas de camiones de los golpistas. En una esquina, el café Tre Sorelle, con dos puertas: una a la plaza y otra al patio.",
+   "buscar": "площад\\w* Часов|plaza de los Relojes|Тре Сорелле|Tre Sorelle"
+  },
+  {
+   "id": "plaza-orden",
+   "nombre": "Plaza del Orden (antes Plaza de las Flores)",
+   "otros": [
+    "Площадь Порядка",
+    "Площадь Цветов"
+   ],
+   "cat": "plaza",
+   "x": 260,
+   "y": -520,
+   "modelo": "obelisco",
+   "desc": "La plaza del casco antiguo donde estaba el mercado de flores más grande de la costa y una fuente con una sirena de piedra. En «Волны любви: Город без улыбок» la sirena desaparece «para restaurarla» y en su lugar se levanta el negro Obelisco de la Tranquilidad, una de las cuatro torres que roban las sonrisas. Tiene campanario, y en la esquina está «Casa Celeste», la tienda de velas y cartas de Alicia.",
+   "buscar": "площад\\w* Порядка|площад\\w* Цветов|Обелиск\\w* Спокойствия|Casa Celeste|колокольн\\w+ у площади"
+  },
+  {
+   "id": "mercado-viejo",
+   "nombre": "Mercado Viejo y calle de la Paciencia",
+   "otros": [
+    "Старый рынок",
+    "Улица Терпения"
+   ],
+   "cat": "calle",
+   "x": 120,
+   "y": -330,
+   "modelo": "mercado",
+   "desc": "Calles estrechas alrededor del mercado antiguo. En la calle de la Paciencia vive la bruja Nadia, encima de una librería, con la biblioteca que le dejó su abuela; por aquí pasan Franco en su moto de repartidor y Luis, Natalia y el zorro huyendo por el mercado.",
+   "buscar": "улиц\\w* Терпения|старого рынка|старом рынке|старый рынок|mercado viejo|via della Pazienza"
+  },
+  {
+   "id": "rincon-suspiros",
+   "nombre": "Café «El Rincón de los Suspiros»",
+   "otros": [
+    "Кафе «Уголок вздохов»"
+   ],
+   "cat": "cafe",
+   "x": 430,
+   "y": -300,
+   "modelo": "cafe",
+   "desc": "Un café pequeño y tibio, de ventanas empañadas. Una tarde de lluvia de octubre, Lusiana, ilustradora, se sienta frente a Celestio, estudiante de arquitectura, y le dice que imagina el subconsciente como «un enorme sótano». Esa noche cada uno sueña con el otro.",
+   "buscar": "Уголок вздохов|Уголк\\w* вздохов|Rincón de los Suspiros|Angolo dei Sospiri"
+  },
+  {
+   "id": "cafe-centro",
+   "nombre": "El café del centro (donde nació el zorro)",
+   "otros": [
+    "Кафе в центре",
+    "Il caffè del centro",
+    "El café de la esquina"
+   ],
+   "cat": "cafe",
+   "x": 760,
+   "y": -520,
+   "modelo": "cafe",
+   "desc": "En este café chiquito, a un paso de la plaza Dante, Luis le regala a Natalia el dibujo de un zorro. La ciudad se cubre de una oscuridad azul, se besan, el tiempo se detiene… y el zorro salta del papel: «Me dibujaste pensando en ella». Aquí empieza todo «Ondas de amor».",
+   "buscar": "Кафе в центре|caffè del centro|café de la esquina|café chiquito",
+   "extra": {
+    "volny-lyubvi": [
+     1
+    ],
+    "onde-d-amore": [
+     1
+    ],
+    "ondas-de-amor": [
+     1
+    ]
+   }
+  },
+  {
+   "id": "cafe-ladron",
+   "nombre": "Café Ladrón de Corazones",
+   "otros": [
+    "Кафе на площади Данте"
+   ],
+   "cat": "cafe",
+   "x": 690,
+   "y": -560,
+   "modelo": "cafe",
+   "desc": "En la plaza Dante. Primero es el café donde Alessio, recién llegado de Argentina, trabaja de barista y derrama un café sobre la camisa blanca de Tatiana, la chica del retrato. Un año después abre aquí su propio local, con un cartel en la puerta: aquí no se roba nada, salvo el corazón.",
+   "buscar": "Café Ladrón|кафе на площади Данте|Эспрессо по-флорентийски|Белая рубашка",
+   "extra": {
+    "pokhititel-serdec-portret-osnovatelya": [
+     6,
+     7
+    ]
+   }
+  },
+  {
+   "id": "ministerio",
+   "nombre": "Ministerio de los Sentimientos",
+   "otros": [
+    "Министерство чувств",
+    "Ministero dei Sentimenti"
+   ],
+   "cat": "edificio",
+   "x": 930,
+   "y": -330,
+   "modelo": "ministerio",
+   "desc": "Un edificio enorme y sin ventanas, la maquinaria del régimen de Octavio Grande: cámaras que vigilan el estado emocional de la gente, multas por sonreír, un «Departamento de la Alegría». Franco trabajó aquí antes de volverse mensajero. Años después, en «Amor en el cosmos», alguien recorre el Ministerio vacío.",
+   "buscar": "Министерств\\w* (чувств|Чувств)|Ministero dei Sentimenti|Ministerio de los Sentimientos|Ministerio vacío"
+  },
+  {
+   "id": "torre-tv",
+   "nombre": "Torre de Sinea (torre de televisión)",
+   "otros": [
+    "Телебашня",
+    "Torre Esperanza",
+    "Torre de Televisión"
+   ],
+   "cat": "monumento",
+   "x": 1180,
+   "y": -560,
+   "modelo": "torre-tv",
+   "desc": "La gran antena en la colina de San Michele, detrás del Ayuntamiento, alta y fina como una aguja, con una luz roja en la punta. Desde aquí se transmite casi toda la televisión… y, según la novela, también el mal: la oscuridad que roba el alma en «Ondas de amor», los hilos grises en «Город без улыбок», el acorde de trece notas en el Carnaval. Los golpistas de «Стратег» quieren tomarla a las seis de la mañana.",
+   "buscar": "телебашн\\w+|телевышк\\w+|Torre de Sinea|torre di Sinea|Torre Esperanza|Torre de (TV|Televisión)|torre della televisione|телевизионн\\w+ башн\\w+|Huida hacia la Torre"
+  },
+  {
+   "id": "colina-san-michele",
+   "nombre": "Colina de San Michele",
+   "otros": [
+    "Холм Сан-Микеле"
+   ],
+   "cat": "barrio",
+   "x": 1250,
+   "y": -470,
+   "modelo": "ninguno",
+   "desc": "La colina sobre la ciudad donde se alza la torre de televisión. Desde arriba se ven el puerto viejo, la bahía y, en los días claros, el Faro de Ael.",
+   "buscar": "холм\\w* Сан-Микеле|colle di San Michele|colina mágica"
+  },
+  {
+   "id": "museo-arte",
+   "nombre": "Museo de Arte de Sinea",
+   "otros": [
+    "Музей искусств Синеи",
+    "Художественный музей",
+    "City Museum"
+   ],
+   "cat": "edificio",
+   "x": -260,
+   "y": -760,
+   "modelo": "museo",
+   "desc": "Un edificio blanco con columnas al final de la calle de la Colina. De aquí roban el diamante turquesa en «The Immigrant» y el retrato de Luis Fader, fundador de Sinea, en «Похититель сердец: Портрет основателя» (el alcalde ofrece un millón de dragones de recompensa). Livia, la restauradora de «Машина снов», trabaja aquí.",
+   "buscar": "Музе\\w+ искусств|Художественн\\w+ музе\\w+|музе\\w+ Синеи|city museum|the museum|белому зданию с колоннами|портрет основателя"
+  },
+  {
+   "id": "calle-colina",
+   "nombre": "Calle de la Colina",
+   "otros": [
+    "Улица Холма"
+   ],
+   "cat": "calle",
+   "x": -80,
+   "y": -650,
+   "modelo": "ninguno",
+   "desc": "Sube desde el casco antiguo hasta el Museo de Arte. Laura y Marisa siguen por el teléfono el punto azul de Alessio que trepa por esta calle hacia el museo… a pesar de que había prometido no acercarse a menos de un kilómetro.",
+   "buscar": "улиц\\w* Холма"
+  },
+  {
+   "id": "taller-geppetto",
+   "nombre": "Taller de Geppetto (barrio de los Artesanos)",
+   "otros": [
+    "Мастерская Джеппетто",
+    "Район Ремесленников"
+   ],
+   "cat": "edificio",
+   "x": -430,
+   "y": -300,
+   "modelo": "taller",
+   "desc": "Una casa de postigos verdes en el barrio de los Artesanos. Detrás de un armario, el viejo carpintero esconde una habitación llena de engranajes donde nace el Risatomat, la regadera que dispara sonrisas verdaderas. Es refugio en «Грустный город», en «Тайна в библиотеке» y en el Carnaval, y guarda el punto débil de Octavio Grande.",
+   "buscar": "Джеппетто|Geppetto|Район\\w* Ремесленников|район\\w* ремесленников|зелёными ставнями|Risatomat|Ризатомат"
+  },
+  {
+   "id": "calle-castanos",
+   "nombre": "Calle de los Castaños",
+   "otros": [
+    "Улица Каштанов"
+   ],
+   "cat": "calle",
+   "x": -560,
+   "y": 40,
+   "modelo": "casa",
+   "desc": "Aquí está el piso de Marcos y Alicia, «estrecho como una cajita donde dos personas intentan guardar dos vidas». En la pared, un mapa de Sinea lleno de alfileres: rojos para los casos, azules para los sospechosos… y doce blancos que, en «Знак», dibujan un círculo alrededor del Planetario.",
+   "buscar": "улиц\\w* Каштанов|calle de los Castaños"
+  },
+  {
+   "id": "calle-violinistas",
+   "nombre": "Calle de los Violinistas (oficina de Vasili)",
+   "otros": [
+    "Улица Скрипачей"
+   ],
+   "cat": "calle",
+   "x": 300,
+   "y": -150,
+   "modelo": "casa",
+   "desc": "En un tercer piso, detrás de una puerta con el cartel «Sin preguntas innecesarias», está la oficina del detective Vasili. Miguel, el Ajedrecista de «Стратег», llama tres veces corto y una largo y extiende sobre la mesa un viejo mapa de Sinea cuadriculado de ocho por ocho. En la esquina hay una panadería donde se discute de fútbol.",
+   "buscar": "улиц\\w* Скрипачей|Без лишних вопросов"
+  },
+  {
+   "id": "colina-astrologos",
+   "nombre": "Colina de los Astrólogos y Planetario",
+   "otros": [
+    "Холм Звездочётов",
+    "Планетарий"
+   ],
+   "cat": "monumento",
+   "x": -1150,
+   "y": -180,
+   "modelo": "planetario",
+   "desc": "Una colina al oeste del centro con el viejo Planetario de cúpula de cobre. Cada febrero, bajo el signo de Acuario, los astrólogos de toda la ciudad se reúnen aquí tres días; en «Знак» Alicia da su primera ponencia, «Los cuatro Acuarios», mientras cuatro hombres de gris lo anotan todo. Las doce líneas trazadas desde los doce alfileres del mapa de Marcos se cruzan exactamente aquí.",
+   "buscar": "Холм\\w* Звездочётов|Планетари\\w+|Colina de los Astrólogos|Planetario|улиц\\w* Лекарей"
+  },
+  {
+   "id": "parque-sol",
+   "nombre": "Parque del Sol",
+   "otros": [
+    "Парк Солнца"
+   ],
+   "cat": "parque",
+   "x": -380,
+   "y": 260,
+   "modelo": "parque",
+   "desc": "El gran parque del centro, con una fuente donde una noche el agua corrió hacia arriba durante tres minutos. Lusiana va a dibujar aquí y encuentra a Celestio en un banco de piedra; en «El impostor» Leonardo pide matrimonio a Sofía en un parque de Sinea, y en «27 Ocak» Mateo ayuda a Rosa a recoger manzanas caídas.",
+   "buscar": "парк\\w* Солнца|parque del Sol|большой парк в центре|Dos anillos en el parque|parque de Sinea|parkta",
+   "extra": {
+    "el-impostor": [
+     1
+    ],
+    "27-ocak": [
+     1
+    ]
+   }
+  },
+  {
+   "id": "puente-tejedores",
+   "nombre": "Puente y calle de los Tejedores",
+   "otros": [
+    "Мост Ткачей",
+    "Улица Ткачей"
+   ],
+   "cat": "calle",
+   "x": 40,
+   "y": 470,
+   "modelo": "puente",
+   "desc": "El viejo puente de piedra sobre el río Sina y la calle de las tiendas de vinilos. En «Знак», el vendedor de discos de la calle de los Tejedores está en el chat «Bichos raros de Sinea».",
+   "buscar": "Ткачей|Tejedores"
+  },
+  {
+   "id": "puente-norte",
+   "nombre": "Puente Norte",
+   "otros": [
+    "Северный мост"
+   ],
+   "cat": "transporte",
+   "x": 600,
+   "y": 400,
+   "modelo": "puente",
+   "desc": "El puente por donde entra la carretera del norte. En el mapa-tablero de Miguel es la columna «e»: por aquí debía bajar la segunda columna de camiones de la Ciudad del Norte en la noche del golpe.",
+   "buscar": "Северн\\w+ мост\\w*"
+  },
+  {
+   "id": "rio-sina",
+   "nombre": "Río Sina",
+   "otros": [
+    "Река Сина",
+    "Река Синеи"
+   ],
+   "cat": "parque",
+   "x": -900,
+   "y": 560,
+   "modelo": "ninguno",
+   "desc": "El río que parte la ciudad en dos y desemboca en el mar al este. Miguel confunde sus afluentes en clase de geografía; en «Опасное свидание» se rumorea que Vasili acabó en su fondo «con botas de cemento».",
+   "buscar": "реки Сины|рек\\w+ Синеи|río Sina|fiume Sina"
+  },
+  {
+   "id": "estacion-central",
+   "nombre": "Estación Central",
+   "otros": [
+    "Вокзал Синеи",
+    "Центральный вокзал",
+    "Stazione di Sinea"
+   ],
+   "cat": "transporte",
+   "x": 320,
+   "y": 1180,
+   "modelo": "estacion",
+   "desc": "De aquí salen los trenes a Venecia, a Belgrado y a Verdegrad… y, de noche, el tren fantasma. Marcos interroga al jefe de estación y al Hombre Gordo, que cuenta alegremente que el tren se llevó a su suegra. En «Безумие в поезде» es el Tren de la Locura, con diez vagones que son diez lecciones de ruso.",
+   "buscar": "вокзал\\w*|Estación Central|estación central|estación de Sinea|stazione di Sinea|stazione|jefe de (la )?estación",
+   "extra": {
+    "bezumie-v-poezde": [
+     1
+    ]
+   }
+  },
+  {
+   "id": "estacion-cero",
+   "nombre": "Estación Cero",
+   "otros": [
+    "Нулевая станция",
+    "Станция Ноль"
+   ],
+   "cat": "misterio",
+   "x": 230,
+   "y": 1080,
+   "modelo": "fantasma",
+   "desc": "La estación que no existe, al final del «metro que no existía»: estaciones del grito, del susurro, de la tormenta, de los perdidos, de las casas olvidadas, de la elección… hasta la Estación Cero, una hora fuera de la hora. En «Карнавал Синеи» la Estación Cero «espera a los que recuerdan».",
+   "buscar": "Нулев\\w+ станци\\w+|Станци\\w+ Ноль|Estación Cero|stazione Zero|метро, которого не было"
+  },
+  {
+   "id": "tulipanes",
+   "nombre": "Barrio de Los Tulipanes",
+   "otros": [
+    "Район Тюльпанов"
+   ],
+   "cat": "barrio",
+   "x": 640,
+   "y": 1300,
+   "modelo": "ninguno",
+   "desc": "El barrio junto a la estación donde vive Roberto «Bobby» López Mendoza, el Hombre Gordo de «El tren fantasma», que sueña con abrir una parrilla llamada El Yerno en Llamas.",
+   "buscar": "Los Tulipanes|Тюльпан\\w+ район|Tulipani"
+  },
+  {
+   "id": "barrio-locos",
+   "nombre": "Barrio de los Locos",
+   "otros": [
+    "Квартал сумасшедших",
+    "Район Сумасшедших",
+    "Quartiere dei Pazzi"
+   ],
+   "cat": "barrio",
+   "x": -420,
+   "y": 1420,
+   "modelo": "ninguno",
+   "desc": "Un barrio de niebla junto a las vías. Aquí, a las dos y cuarto de la madrugada, sale del humo el tren sin locomotora: lo toma el detective Vasily en «El tren», lo cruzan Vasili y el lector en «Тайна в библиотеке».",
+   "buscar": "район\\w* Сумасшедших|Квартал\\w* сумасшедших|barrio de los locos|Quartiere dei Pazzi"
+  },
+  {
+   "id": "tren-fantasma",
+   "nombre": "Las vías del tren fantasma",
+   "otros": [
+    "Призрачный поезд",
+    "Il treno fantasma"
+   ],
+   "cat": "misterio",
+   "x": -100,
+   "y": 1290,
+   "modelo": "tren-fantasma",
+   "desc": "La leyenda urbana más famosa de Sinea: un convoy que aparece de noche y se lleva a la gente. Vagón restaurante, biblioteca, piscina, discoteca secreta, confesionario y el Vagón del Juicio Final, presidido por el juez Casimiro Condena, que termina convertido en rata y lanzado por la ventanilla «en algún punto entre Sinea y la nada».",
+   "buscar": "Призрачн\\w+ поезд\\w*|tren fantasma|treno fantasma|Поезд Безумия|поезд без локомотива|tren sin locomotora"
+  },
+  {
+   "id": "torre-norte",
+   "nombre": "Torre «Norte»",
+   "otros": [
+    "Башня «Север»"
+   ],
+   "cat": "edificio",
+   "x": 930,
+   "y": 760,
+   "modelo": "rascacielos",
+   "desc": "El rascacielos de cristal de la orilla norte. En el último piso hay un restaurante con toda la ciudad a los pies: allí cita Vasili a Alexandra en «Опасное свидание», para «probarla en las alturas».",
+   "buscar": "башн\\w+ «Север»"
+  },
+  {
+   "id": "club-orilla-norte",
+   "nombre": "Club «Orilla Norte»",
+   "otros": [
+    "Клуб «Северный берег»"
+   ],
+   "cat": "edificio",
+   "x": 760,
+   "y": 500,
+   "modelo": "casa",
+   "desc": "Un club pequeño y cerrado en el malecón del río. María ordena a Vasili esperar en el coche, en la vereda de enfrente, a las nueve de la noche: «Nada de movimientos heroicos».",
+   "buscar": "Северный берег|закрытом клубе на набережной"
+  },
+  {
+   "id": "avenida-independencia",
+   "nombre": "Avenida de la Independencia",
+   "otros": [
+    "Проспект Независимости"
+   ],
+   "cat": "calle",
+   "x": 610,
+   "y": 120,
+   "modelo": "ninguno",
+   "desc": "La gran avenida de las boutiques que une la plaza Dante con la estación. Aquí cae uno de los primeros meteoritos de «Алмазный дождь», y en «Тайна в библиотеке» una vecina ve pasar a un hombre con armadura que pregunta, muy educado, por dónde se va al mar.",
+   "buscar": "проспект\\w* Независимости"
+  },
+  {
+   "id": "avenida-amanecer",
+   "nombre": "Avenida del Amanecer",
+   "otros": [
+    "Проспект Рассвета"
+   ],
+   "cat": "calle",
+   "x": -260,
+   "y": 760,
+   "modelo": "redondo",
+   "desc": "En esta avenida se alza un gran edificio claro de ventanas redondas: una de las cuatro torres que, en «Город без улыбок», tiran de los hilos grises que salen de la cabeza de la gente.",
+   "buscar": "проспект\\w* Рассвета"
+  },
+  {
+   "id": "deposito-norte",
+   "nombre": "Depósito Norte",
+   "otros": [
+    "Северное депо"
+   ],
+   "cat": "edificio",
+   "x": -60,
+   "y": 1760,
+   "modelo": "galpon",
+   "desc": "Los galpones de la Comisión, adonde en «Алмазный дождь» se llevan las «muestras» de meteorito… y algo más. Enfrente, en la planta baja de una casa vieja, brilla un cafecito de cortinas amarillas desde el que se ven perfectamente los portones.",
+   "buscar": "Северн\\w+ депо|кафе с жёлтыми занавесками"
+  },
+  {
+   "id": "cementerio",
+   "nombre": "Cementerio Viejo",
+   "otros": [
+    "Старое кладбище"
+   ],
+   "cat": "misterio",
+   "x": -1250,
+   "y": 1350,
+   "modelo": "puertas",
+   "desc": "Sus portones son uno de los doce puntos altos y viejos del círculo de «Знак», donde ocurren cosas pequeñas e inexplicables la misma noche.",
+   "buscar": "старого кладбища|старое кладбище"
+  },
+  {
+   "id": "molino-norte",
+   "nombre": "Molino de la Carretera del Norte",
+   "otros": [
+    "Мельница на Северной дороге"
+   ],
+   "cat": "misterio",
+   "x": 380,
+   "y": 2450,
+   "modelo": "molino",
+   "desc": "Un viejo molino de viento sin mecanismo desde hace años. En «Знак», a las tres de la tarde, sus aspas giran solas, contra el viento. Más al norte, la carretera lleva a la Ciudad del Norte, que «hace cien años no soporta a Sinea».",
+   "buscar": "Мельниц\\w+ на Северной дороге"
+  },
+  {
+   "id": "laberinto-cristal",
+   "nombre": "El laberinto de cristal de «Amor en el cosmos»",
+   "otros": [
+    "Plaza de las Constelaciones"
+   ],
+   "cat": "misterio",
+   "x": 1050,
+   "y": 2150,
+   "modelo": "laberinto",
+   "desc": "Una mañana de primavera aparece al norte de Sinea un laberinto de cristal azul con una luna de utilería encima: el reality más romántico del universo. Cinco parejas, la Plaza de las Constelaciones en el centro y, a medianoche, las ondas de amor. La Ciudad del Norte compra todas las entradas para reírse de los «paranoicos de Sinea».",
+   "buscar": "laberinto|Plaza de las Constelaciones|jardín de cristal|luna de utilería"
+  },
+  {
+   "id": "torre-agua",
+   "nombre": "Depósito de agua del barrio Este",
+   "otros": [
+    "Водонапорная башня"
+   ],
+   "cat": "misterio",
+   "x": 1640,
+   "y": 1050,
+   "modelo": "torre-agua",
+   "desc": "En «Знак», a la medianoche y media, alguien ve en su techo una luz azul «como de un cartel de neón, pero sin cartel». Es uno de los doce alfileres blancos.",
+   "buscar": "Водонапорн\\w+ башн\\w+"
+  },
+  {
+   "id": "cabo-golondrinas",
+   "nombre": "Cabo de las Golondrinas",
+   "otros": [
+    "Мыс Ласточек"
+   ],
+   "cat": "misterio",
+   "x": 2780,
+   "y": 1450,
+   "modelo": "aerogenerador",
+   "desc": "El cabo del noreste, con su molino de viento moderno. Otro de los doce puntos del círculo de «Знак».",
+   "buscar": "Мыс\\w* Ласточек"
+  },
+  {
+   "id": "colina-pescadores",
+   "nombre": "Colina de los Pescadores e iglesia de Santa Clara",
+   "otros": [
+    "Холм Рыбаков",
+    "Церковь Святой Клары"
+   ],
+   "cat": "monumento",
+   "x": -320,
+   "y": -1060,
+   "modelo": "iglesia",
+   "desc": "La colina que mira al puerto viejo. En la torre de la iglesia de Santa Clara, en «Знак», la veleta gira y se queda quieta aunque sople el viento del mar.",
+   "buscar": "Холм\\w* Рыбаков|Святой Клары"
+  },
+  {
+   "id": "casa-amarilla",
+   "nombre": "La casa amarilla de Fabrizio Orsini",
+   "otros": [
+    "Жёлтый дом",
+    "Calle de los Pescadores"
+   ],
+   "cat": "edificio",
+   "x": -150,
+   "y": -1000,
+   "modelo": "casa-amarilla",
+   "desc": "Una casita amarilla en la colina sobre el puerto, con paredes, puertas y hasta el techo cubiertos de dibujos de la misma chica. Aquí la periodista Chiara Bellini consigue que el dibujante Fabrizio cuente, después de veintinueve años, lo que hizo en el verano de 1997. Abajo, en la calle de los Pescadores, estaba la panadería de su familia.",
+   "buscar": "жёлт\\w+ дом\\w*|улиц\\w* Рыбаков|via dei Pescatori|casa gialla"
+  },
+  {
+   "id": "carrera-faro",
+   "nombre": "Carrera al Faro",
+   "otros": [
+    "Гонка к маяку",
+    "La Corsa del Faro"
+   ],
+   "cat": "misterio",
+   "x": 1650,
+   "y": -760,
+   "modelo": "ninguno",
+   "desc": "La carrera de motos que cada verano termina en el faro. En 1997, Lucía, la campeona invencible, entra a la plaza en una moto roja, y el tímido hijo del panadero aprende a manejar, a hacer el café perfecto y a reparar motores solo para que ella lo mire.",
+   "buscar": "Гонк\\w+ к маяку|Corsa del Faro|Corsa al faro"
+  },
+  {
+   "id": "tuneles",
+   "nombre": "Los túneles bajo la ciudad",
+   "otros": [
+    "Тоннели",
+    "Le gallerie"
+   ],
+   "cat": "misterio",
+   "x": 200,
+   "y": -880,
+   "modelo": "fantasma",
+   "desc": "Bajo el casco antiguo corren túneles, galerías técnicas y sótanos: los recorren Fabrizio y Lucía en «Тихая любовь», los usa Vasili para llegar a la plaza por la sala de bombas de la fuente durante el Carnaval, y debajo de la ciudad zumba la máquina REINA de «Тайна в библиотеке».",
+   "buscar": "под городом|Тоннели|gallerie|Sotto la città|Насосная у фонтана|техническая галерея"
+  },
+  {
+   "id": "puerto-viejo",
+   "nombre": "Puerto Viejo",
+   "otros": [
+    "Старый порт",
+    "Vecchio porto"
+   ],
+   "cat": "transporte",
+   "x": 760,
+   "y": -1110,
+   "modelo": "puerto",
+   "desc": "El puerto de la bahía, con barcos de paseo, grúas y gaviotas. Aquí baja del barco Charles, sin dinero ni papeles, en «The Immigrant»; aquí se pierden los conocimientos de embarque que investiga Marcos; aquí hay un restaurante donde Vasili se encuentra con dos mujeres a la vez, y el bar Ancora, de madera oscura, donde lo espera Oxana.",
+   "buscar": "старого порта|старый порт|старом порту|Старого порта|vecchio porto|bar Ancora|Il porto|ship|port of Sinea|площадь у порта"
+  },
+  {
+   "id": "bulevar-maritimo",
+   "nombre": "Bulevar Marítimo y malecón",
+   "otros": [
+    "Приморский бульвар",
+    "Набережная",
+    "Lungomare"
+   ],
+   "cat": "calle",
+   "x": 1200,
+   "y": -1060,
+   "modelo": "atracciones",
+   "desc": "El paseo junto al mar, con acacias, quioscos y atracciones cerradas en invierno. Irina, la psicóloga de «Машина снов», lo recorre cada mañana odiando por igual el olor del mar, el asfalto mojado y el pan recién hecho; en sus sueños, cuatro jinetes suben por aquí desde el mar. Beppe toca valses en el malecón durante horas cuando Sinea vuelve a reír.",
+   "buscar": "Приморск\\w+ бульвар\\w*|набережн\\w+ Беппе|lungomare|набережной Синеи",
+   "ilustracion": [
+    "mashina-snov",
+    "01-a.jpg"
+   ]
+  },
+  {
+   "id": "fucsia",
+   "nombre": "Cafetería «Fucsia»",
+   "otros": [
+    "Кофейня «Фуксия»"
+   ],
+   "cat": "cafe",
+   "x": 980,
+   "y": -960,
+   "modelo": "cafe",
+   "desc": "Una cadena de cafeterías que en Sinea se ama o se odia: todo es rosa fuerte, las paredes, los sillones, las tazas y hasta el azúcar. Pero hace los mejores croissants de almendra de la ciudad. Aquí, a las cuatro, Irina tiene su cita con Mateo, profesor de literatura, que le habla de Bunin y de García Márquez y le presta «Предчувствие».",
+   "buscar": "Фукси\\w+|Fucsia",
+   "ilustracion": [
+    "mashina-snov",
+    "06-a.jpg"
+   ]
+  },
+  {
+   "id": "chaika",
+   "nombre": "Supermercado «La Gaviota»",
+   "otros": [
+    "Супермаркет «Чайка»"
+   ],
+   "cat": "edificio",
+   "x": 1080,
+   "y": -880,
+   "modelo": "casa",
+   "desc": "El supermercado de la esquina de Irina. Un día aparece en la caja una pirámide de cajas color caqui: el «Kit para el fin del mundo», a la venta justo desde que miles de personas sueñan con los cuatro jinetes.",
+   "buscar": "«Чайк\\w»|Набор на конец света",
+   "ilustracion": [
+    "mashina-snov",
+    "03-b.jpg"
+   ]
+  },
+  {
+   "id": "piso-alessio",
+   "nombre": "El balcón de Alessio, Laura y Marisa",
+   "otros": [
+    "Квартира с балконом на набережную",
+    "Балкон Марисы"
+   ],
+   "cat": "edificio",
+   "x": 330,
+   "y": -1130,
+   "modelo": "casa",
+   "desc": "Un tercer piso sin ascensor con balcón al puerto viejo. Alessio y Laura llegan de Argentina a empezar de cero; su vecina Marisa, con su gato Pochoclo, toma mate con ellos a través de la reja de hierro. En «Алмазный дождь» el balcón de Marisa es un capítulo entero.",
+   "buscar": "Балкон\\w* Марисы|Мате на балконе|Вид на старый порт|Слёзы на балконе"
+  },
+  {
+   "id": "barrio-redes",
+   "nombre": "Callejón de las Redes y calle de las Conchas",
+   "otros": [
+    "Переулок Сетей",
+    "Улица Ракушек",
+    "Интернет-кафе «Сеть»"
+   ],
+   "cat": "calle",
+   "x": 80,
+   "y": -1020,
+   "modelo": "casa",
+   "desc": "Callejuelas de pescadores junto al puerto. En el cibercafé «Red» de la calle de las Conchas, Laura busca lo que no quiere buscar desde su ordenador; en la casa número 9 del callejón de las Redes, de puerta verde y buzones sin nombre, entra la chica de los retratos.",
+   "buscar": "переул\\w* Сетей|улиц\\w* Ракушек|«Сеть»"
+  },
+  {
+   "id": "calle-mimosas",
+   "nombre": "Calle de las Mimosas y la panadería de Toni",
+   "otros": [
+    "Улица Мимоз",
+    "Пекарня Тони"
+   ],
+   "cat": "calle",
+   "x": 460,
+   "y": -960,
+   "modelo": "casa",
+   "desc": "Una calle en pendiente donde Alessio persigue a una chica que camina demasiado rápido; en la esquina, la panadería de Toni vende unos zorritos de masa que nadie se anima a comer.",
+   "buscar": "улиц\\w* Мимоз|пекарн\\w+ Тони"
+  },
+  {
+   "id": "hotel-azur",
+   "nombre": "Hotel «Azur»",
+   "otros": [
+    "Отель «Лазурь»"
+   ],
+   "cat": "edificio",
+   "x": 1350,
+   "y": -900,
+   "modelo": "hotel",
+   "desc": "El hotel elegante del paseo marítimo. Aquí se celebra la cena benéfica de Morales, sábado a las ocho, en «Похититель сердец»: la ocasión de mirarlo a los ojos y averiguar cuándo no estará en su villa.",
+   "buscar": "«Лазурь»|“Лазурь”"
+  },
+  {
+   "id": "grand-hotel",
+   "nombre": "Gran Hotel «Sinea»",
+   "otros": [
+    "Гранд-отель «Синея»"
+   ],
+   "cat": "edificio",
+   "x": 860,
+   "y": -700,
+   "modelo": "hotel",
+   "desc": "El gran hotel histórico junto a la plaza Dante. En la habitación 512 vive un comerciante de «piedras con historia»: un capítulo de «Алмазный дождь» lleva ese número, y otro, el nombre del hotel.",
+   "buscar": "Гранд-отел\\w+|отел\\w+ «Синея»|Номер 512|пятьсот двенадцать"
+  },
+  {
+   "id": "hotel-miramare",
+   "nombre": "Hotel Miramare",
+   "otros": [
+    "Отель «Мирамаре»"
+   ],
+   "cat": "edificio",
+   "x": 1600,
+   "y": -980,
+   "modelo": "hotel",
+   "desc": "Un hotel de ventanas grandes y cortinas cansadas en el camino del faro. El señor E. Valli, sombrero gris, abrigo gris, alquila aquí la barca «Gaviota» la noche en que desaparece Sasha, en «Chi ha visto Sasha?».",
+   "buscar": "Miramare|Мирамаре|Camera 12"
+  },
+  {
+   "id": "observatorio-nautico",
+   "nombre": "Observatorio de la vieja Escuela Náutica",
+   "otros": [
+    "Обсерватория мореходной школы"
+   ],
+   "cat": "misterio",
+   "x": 1450,
+   "y": -760,
+   "modelo": "observatorio",
+   "desc": "Junto al puerto. En «Знак» su campana suena sola: otro alfiler blanco en el mapa de Marcos.",
+   "buscar": "мореходной школы"
+  },
+  {
+   "id": "cordeleros",
+   "nombre": "Barrio de los Cordeleros y cocheras del tranvía",
+   "otros": [
+    "Квартал Канатчиков",
+    "Трамвайное депо"
+   ],
+   "cat": "barrio",
+   "x": 1150,
+   "y": -720,
+   "modelo": "galpon",
+   "desc": "El barrio obrero del puerto, con casas viejas llenas de antenas y las cocheras donde duermen los tranvías. En «Знак» alguien aquí «suena como una orquesta entera» de Acuarios; en «Стратег» es parte del tablero.",
+   "buscar": "Канатчиков|трамвайн\\w+ депо|депо, где стоят трамваи"
+  },
+  {
+   "id": "parque-delfines",
+   "nombre": "Parque de los Delfines",
+   "otros": [
+    "Парк дельфинов",
+    "Parco della Gioia (it.)"
+   ],
+   "cat": "parque",
+   "x": 1520,
+   "y": -1130,
+   "modelo": "delfinario",
+   "desc": "El famoso parque marino de Sinea. Una noche, sin forzar nada, sin testigos, con las cámaras llenas de interferencias, desaparece de aquí un grupo entero de delfines. Esa misma noche Sasha, una oficinista cansada, sueña con un delfín plateado que intenta decirle algo: es Ael.",
+   "buscar": "Парк\\w* дельфинов|морско\\w+ парк\\w*|parc (aux|des) dauphins|sono spariti i delfini|исчезла группа дельфинов",
+   "ilustracion": [
+    "golos",
+    "01-01.jpg"
+   ]
+  },
+  {
+   "id": "parque-alegria",
+   "nombre": "Parque de la Alegría y el muelle abandonado",
+   "otros": [
+    "Парк Радости",
+    "Parc de la Joie"
+   ],
+   "cat": "parque",
+   "x": 1830,
+   "y": -1080,
+   "modelo": "muelle",
+   "desc": "Un parque viejo junto al agua, al lado del muelle abandonado: el lugar más oscuro de la costa. «La alegría recuerda el nombre del mar», escribe Sasha casi sin pensar, y a las dos de la mañana despierta a Oxana para ir hasta aquí. Los delfines las están esperando.",
+   "buscar": "Парк\\w* Радости|parc de la Joie|Parco della Gioia|заброшенн\\w+ пирс\\w*|старый пирс",
+   "ilustracion": [
+    "golos",
+    "18-01.jpg"
+   ]
+  },
+  {
+   "id": "central-electrica",
+   "nombre": "La vieja central eléctrica",
+   "otros": [
+    "Старая электростанция",
+    "Фабрика «Маскера»"
+   ],
+   "cat": "misterio",
+   "x": 2050,
+   "y": -820,
+   "modelo": "central",
+   "desc": "La central abandonada junto al faro. En «Голос» esconde, en niveles ocultos y pasadizos, el laboratorio secreto que amplifica la brecha bajo el mar y la Sala del Corazón Negro. En «Карнавал Синеи» vuelve a brillar de noche: es la fábrica «Maskera», donde se fabrican las 300.000 máscaras con el rostro de Tatiana. «Алмазный дождь» termina con una noche junto a ella.",
+   "buscar": "электростанци\\w+|centrale électrique|central eléctrica|centrale elettrica|Зал\\w* Чёрного Сердца|«Маскера»|фабрик\\w+ масок|Фабрика без лица|лаборатори\\w+"
+  },
+  {
+   "id": "faro-ael",
+   "nombre": "Faro de Ael",
+   "otros": [
+    "Маяк Аэля",
+    "Faro di Ael",
+    "Le phare d'Ael"
+   ],
+   "cat": "monumento",
+   "x": 2440,
+   "y": -1040,
+   "modelo": "faro",
+   "desc": "El faro famoso de Sinea, al final del muelle. Se levantó en el lugar de la vieja estación después de «Голос», como agradecimiento al delfín Ael, que se sacrificó para cerrar la brecha; en su linterna se guarda la cáscara apagada del Corazón del Mar. Hoy Sasha dirige aquí el Centro de Anomalías con Dima y la delfín Nira. Su haz no se detiene nunca… salvo siete segundos en «Знак» y siete minutos en «Chi ha visto Sasha?», cuando Sasha desaparece.",
+   "buscar": "Маяк\\w* Аэля|Faro (di|de) Ael|phare d.Ael|Ael Feneri|Центр\\w* аномалий|Centro de Anomalías",
+   "buscar_en": {
+    "mashina-snov": "маяк",
+    "tikhaya-lyubov": "маяк",
+    "ti-amo-in-silenzio": "faro",
+    "golos": "маяк",
+    "la-voix": "phare",
+    "amor-en-el-cosmos": "faro",
+    "karnaval-sinei": "маяк",
+    "chi-ha-visto-sasha": "faro",
+    "znak": "маяк"
+   },
+   "ilustracion": [
+    "golos",
+    "19-01.jpg"
+   ]
+  },
+  {
+   "id": "brecha",
+   "nombre": "La brecha bajo el mar",
+   "otros": [
+    "Разлом"
+   ],
+   "cat": "misterio",
+   "x": 2600,
+   "y": -1450,
+   "modelo": "brecha",
+   "desc": "Bajo las aguas de Sinea, justo donde la ciudad saca su energía, se abre una brecha antigua. Los delfines intentaron avisar a los gobernantes; nadie escuchó. Una noche la ciudad queda aislada del mundo y de las viejas leyendas salen sombras y leshis. Hace falta un «ancla» junto al punto de la brecha… y el sacrificio de Ael.",
+   "buscar": "разлом\\w*|la brèche|brecha",
+   "ilustracion": [
+    "golos",
+    "15-01.jpg"
+   ]
+  },
+  {
+   "id": "barrio-ricos",
+   "nombre": "Barrio de los Ricos Tristes y avenida de los Emperadores",
+   "otros": [
+    "Район Грустных Богачей",
+    "Проспект Императоров",
+    "Ресторан «Белая роза»"
+   ],
+   "cat": "barrio",
+   "x": -1450,
+   "y": -1050,
+   "modelo": "villa",
+   "desc": "Uno de los barrios más caros de Sinea: casas enormes, jardines y cámaras del Ministerio incluso aquí. Franco detesta los pedidos de esta zona; en «Грустный город» lleva uno del restaurante «La Rosa Blanca» a la avenida de los Emperadores 56. Más allá, sobre el mar, está la villa de Morales con su invernadero de cristal.",
+   "buscar": "район\\w* Грустных Богачей|проспект\\w* Императоров|«Белая роза»|Вилла над морем|оранжере\\w+"
+  },
+  {
+   "id": "colina-oeste",
+   "nombre": "Colina del Oeste y el Túnel Viejo",
+   "otros": [
+    "Западный холм",
+    "Старый тоннель"
+   ],
+   "cat": "transporte",
+   "x": -2250,
+   "y": 150,
+   "modelo": "tunel",
+   "desc": "La colina que cierra la ciudad por el oeste. Por el Túnel Viejo, debajo de ella, debía entrar la primera columna de camiones del golpe en «Стратег». Más allá, el camino a Verdegrad y a la estación «Nubecita».",
+   "buscar": "Западн\\w+ холм\\w*|Старый тоннель|Старом тоннеле"
+  },
+  {
+   "id": "muralla",
+   "nombre": "Torre de vigía de la vieja muralla",
+   "otros": [
+    "Сторожевая башня на старой городской стене"
+   ],
+   "cat": "misterio",
+   "x": -40,
+   "y": -540,
+   "modelo": "atalaya",
+   "desc": "Lo que queda de la muralla medieval que rodeaba el casco antiguo. Uno de los doce puntos de «Знак».",
+   "buscar": "Сторожев\\w+ башн\\w+|городской стене"
+  },
+  {
+   "id": "biblioteca-amor",
+   "nombre": "La Biblioteca del Amor",
+   "otros": [
+    "Библиотека Любви"
+   ],
+   "cat": "misterio",
+   "x": 140,
+   "y": -700,
+   "modelo": "biblioteca",
+   "desc": "Al fondo de un callejón sin salida del casco antiguo. Una vez cada cien años los lugares de Sinea recuerdan lo que deben ser —la estación quiere trenes, el mar quiere voces, el parque quiere bosque— y esa noche se abre la biblioteca donde están todas las novelas de Robert Fader. La bibliotecaria Rosa y el zorro rojo explican las reglas: un libro solo te suelta por el marcapáginas.",
+   "buscar": "Библиотек\\w+ Любви"
+  },
+  {
+   "id": "mercado-este",
+   "nombre": "Mercado del Este",
+   "otros": [
+    "Восточный рынок"
+   ],
+   "cat": "edificio",
+   "x": 1700,
+   "y": -420,
+   "modelo": "mercado",
+   "desc": "Uno de los bordes del tablero de Miguel: la ciudad se extiende «desde el Mercado del Este hasta la Colina del Oeste».",
+   "buscar": "Восточн\\w+ рын\\w+"
+  },
+  {
+   "id": "carretera-puerto",
+   "nombre": "Carretera del Puerto",
+   "otros": [
+    "Портовое шоссе"
+   ],
+   "cat": "transporte",
+   "x": 1950,
+   "y": 300,
+   "modelo": "ninguno",
+   "desc": "La carretera que baja por la costa del este. En «Стратег» es la columna «g», la de la tercera columna de camiones.",
+   "buscar": "Портов\\w+ шоссе"
+  }
+ ]
+}
