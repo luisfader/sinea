@@ -169,7 +169,10 @@
    "y": -470,
    "modelo": "ninguno",
    "desc": "La colina sobre la ciudad donde se alza la torre de televisión. Desde arriba se ven el puerto viejo, la bahía y, en los días claros, el Faro de Ael.",
-   "buscar": "холм\\w* Сан-Микеле|colle di San Michele|colina mágica"
+   "buscar": "холм\\w* Сан-Микеле|colle di San Michele",
+   "excluir": [
+    "ondas-de-amor"
+   ]
   },
   {
    "id": "museo-arte",
@@ -364,7 +367,10 @@
    "y": 1300,
    "modelo": "ninguno",
    "desc": "El barrio junto a la estación donde vive Roberto «Bobby» López Mendoza, el Hombre Gordo de «El tren fantasma», que sueña con abrir una parrilla llamada El Yerno en Llamas.",
-   "buscar": "Los Tulipanes|Тюльпан\\w+ район|Tulipani"
+   "buscar": "Los Tulipanes|Тюльпан\\w+ район|Tulipani",
+   "excluir": [
+    "onde-d-amore-3"
+   ]
   },
   {
    "id": "barrio-locos",
@@ -510,7 +516,10 @@
    "y": 1050,
    "modelo": "torre-agua",
    "desc": "En «Знак», a la medianoche y media, alguien ve en su techo una luz azul «como de un cartel de neón, pero sin cartel». Es uno de los doce alfileres blancos.",
-   "buscar": "Водонапорн\\w+ башн\\w+"
+   "buscar": "Водонапорн\\w+ башн\\w+",
+   "excluir": [
+    "volny-lyubvi-labirint-zabveniya"
+   ]
   },
   {
    "id": "cabo-golondrinas",
@@ -894,7 +903,10 @@
    "y": -540,
    "modelo": "atalaya",
    "desc": "Lo que queda de la muralla medieval que rodeaba el casco antiguo. Uno de los doce puntos de «Знак».",
-   "buscar": "Сторожев\\w+ башн\\w+|городской стене"
+   "buscar": "Сторожев\\w+ башн\\w+|городской стене",
+   "excluir": [
+    "volny-lyubvi-krepost"
+   ]
   },
   {
    "id": "biblioteca-amor",
@@ -990,25 +1002,6 @@
    "modelo": "hogar",
    "desc": "Al principio de «Голос», Sasha vive sola en un pisito de las afueras, casi siempre en penumbra porque nunca está de día: oficina, tablas, correos, y a casa cuando ya se apagan las ventanas de los vecinos. Aquí lee la noticia de los delfines desaparecidos y sueña por primera vez con Ael. Años después vive en otro sitio: un cuarto bajo la linterna del Faro de Ael, que huele a pintura vieja.",
    "buscar": "Саша жила|комнате под фонарём маяка|Sasha vivait|Sasha viveva"
-  },
-  {
-   "id": "casa-luis",
-   "nombre": "El piso de Luis y Natalia (Ondas de amor)",
-   "otros": [
-    "Квартира Луиса и Натальи",
-    "L'appartamento al terzo piano"
-   ],
-   "cat": "casa",
-   "x": 830,
-   "y": -440,
-   "modelo": "hogar",
-   "desc": "Un pisito en un tercer piso, a la vuelta del café donde nació el zorro. Aquí viven Luis y Natalia cuando la primavera vuelve a Sinea: ella guarda el dibujo del zorro en su cuaderno de canciones y él toca el piano. Una mañana Natalia le dice «quiero llevarte a mi casa» y él se ríe: «ya estoy en tu casa». Ella se refiere a la de Verdegrad, donde está el piano de la abuela. (Las novelas no dan otra dirección de Luis en Sinea.)",
-   "buscar": "piccolo appartamento al terzo piano",
-   "extra": {
-    "onde-d-amore": [
-     11
-    ]
-   }
   },
   {
    "id": "shawarma-ashot",

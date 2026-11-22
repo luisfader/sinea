@@ -1,0 +1,333 @@
+{
+ "_info": "Lugares de Verdegrad. Mismo formato que data/lugares.json (coordenadas en metros; (0,0) es el mercado). 'solo' limita la búsqueda a ciertas novelas.",
+ "lugares": [
+  {
+   "id": "vg-casa-natalia",
+   "nombre": "Casa de Natalia (y de Luis)",
+   "otros": [
+    "Дом Натальи",
+    "La casa di Natalia",
+    "Calle de los Tilos"
+   ],
+   "cat": "casa",
+   "x": -330,
+   "y": 420,
+   "modelo": "hogar",
+   "desc": "La casa de Natalia en la calle de los Tilos, con jardín y el piano de cola de la abuela, que le cantaba nanas en ruso. Aquí llega Luis por primera vez en «Крепость в полумраке»: Natalia le cocina ñoquis porque lo leyó en su viejo blog, y de noche él toca el piano mientras sobre Verdegrad caen luces del cielo. Desde el balcón, Natalia mira las estrellas por encima del techo de la panadería de Semión. Todas las mañanas a las seis el autobús azul n.º 7 toca la bocina dos veces bajo sus ventanas: es su padre, Víctor, que así le da los buenos días. En «Onde d'amore», detrás de la casa hay una escalera estrecha, casi secreta.",
+   "buscar": "Липов\\w*|бабушкин\\w* рояль|pianoforte della nonna|casa di Natalia|под окнами Натальи|Тихая квартира",
+   "solo": [
+    "volny-lyubvi-krepost",
+    "volny-lyubvi-narisovannyj-mir",
+    "volny-lyubvi-labirint-zabveniya",
+    "onde-d-amore",
+    "volny-lyubvi-gorod-bez-ulybok"
+   ],
+   "ilustracion": [
+    "volny-lyubvi-krepost",
+    "03-02.jpg"
+   ]
+  },
+  {
+   "id": "vg-mercado",
+   "nombre": "El mercado y el campanario",
+   "otros": [
+    "Рынок у колокольни",
+    "Колокольня"
+   ],
+   "cat": "plaza",
+   "x": 0,
+   "y": 0,
+   "modelo": "campanario",
+   "desc": "El corazón de Verdegrad. Se lo encuentra por el sonido: pesas en las balanzas, cuchillos en las tablas, risas y regateo; y por el olor: eneldo, manzanas, pescado del río y el humo de la parrilla donde el tío Ashot asa choclos desde temprano. Cuando la campana da las ocho, Verdegrad termina de despertarse. Aquí la tía Valia vende los «pepinos del Sol» (en «Лабиринт забвения», con cartel nuevo: frasco 800, foto con frasco 200) y la vendedora de miel jura que cura todo menos el mal carácter del marido. Cuando llega Natalia, alguien grita «¡llegó el Sol!» y corre por los puestos como una ola.",
+   "buscar": "рын(ок|ка|ке)\\b|колокольн\\w*|огурц\\w* Солнца|тёт\\w* Вал\\w*",
+   "solo": [
+    "volny-lyubvi-labirint-zabveniya",
+    "volny-lyubvi-narisovannyj-mir",
+    "volny-lyubvi-krepost"
+   ]
+  },
+  {
+   "id": "vg-fuente",
+   "nombre": "La plazoleta de la fuente",
+   "otros": [
+    "Площадь с фонтаном"
+   ],
+   "cat": "plaza",
+   "x": -140,
+   "y": 170,
+   "modelo": "fuente",
+   "desc": "Una plaza chica a mitad de la calle de los Tilos, donde los chicos juegan al fútbol: un partido Tilos contra Jardines con Natalia de árbitra. Aquí Petia, el nieto de la tía Elena —el que le dibujó al zorro una cola verde—, pregunta si en el mundo de los dibujos hay fútbol. A las cuatro y media de la mañana, en «Лабиринт забвения», el zorro da dos vueltas a la fuente, estornuda y dobla por la calle del Molino siguiendo un olor a vainilla y hierro.",
+   "buscar": "фонтан\\w*",
+   "solo": [
+    "volny-lyubvi-labirint-zabveniya",
+    "volny-lyubvi-narisovannyj-mir"
+   ]
+  },
+  {
+   "id": "vg-panaderia-semion",
+   "nombre": "Panadería de Semión",
+   "otros": [
+    "Пекарня Семёна"
+   ],
+   "cat": "restaurante",
+   "x": -250,
+   "y": 315,
+   "modelo": "panaderia",
+   "desc": "Lo primero que se despierta en Verdegrad: a las cinco ya hay luz amarilla en la ventana y olor a pan caliente. Semión es de pocas palabras pero se acuerda de todos los nombres, hasta de cada perro de la calle de los Tilos: durante veinte años llamó «Natashenka» a Natalia, y desde lo de la fortaleza le dice «Sol». Hornea bollos con forma de cabeza de zorro, los «Amigo Pelirrojo». En «Лабиринт забвения», una mañana no la reconoce, y ahí empieza el misterio.",
+   "buscar": "Семён\\w*|Семен\\w*|пекарн\\w+ Семён|«Рыжий друг»",
+   "solo": [
+    "volny-lyubvi-labirint-zabveniya",
+    "volny-lyubvi-narisovannyj-mir"
+   ]
+  },
+  {
+   "id": "vg-cafe-golondrina",
+   "nombre": "Café «La Golondrina»",
+   "otros": [
+    "Кафе «Ласточка»"
+   ],
+   "cat": "restaurante",
+   "x": -70,
+   "y": 95,
+   "modelo": "cafe",
+   "desc": "Un café chiquito, de seis mesas. Después de su conferencia en «Нарисованный мир», Alicia, la astróloga de Sinea, toma aquí té de lavanda con Natalia y le dice que «es imposible no reconocer al Sol». Aquí le llega el mensaje de Marcos que lo cambia todo, y desde aquí Alicia lo llama con el teléfono apretado entre las dos manos.",
+   "buscar": "«Ласточк\\w»|Лавандов\\w+ чай",
+   "solo": [
+    "volny-lyubvi-narisovannyj-mir"
+   ]
+  },
+  {
+   "id": "vg-fortaleza",
+   "nombre": "La fortaleza en la penumbra (Parque Viejo)",
+   "otros": [
+    "Крепость в полумраке",
+    "La fortezza nella penombra"
+   ],
+   "cat": "monumento",
+   "x": 430,
+   "y": 340,
+   "modelo": "fortaleza",
+   "desc": "En el Parque Viejo, donde la alameda empieza a subir, quedan terraplenes de tierra que la gente toma por colinas: los niños corren, los turistas se sacan fotos, en verano se sientan en el pasto. Según la leyenda, aquí hubo torres de madera, portones y murallas que protegían el camino. «Verdegrad no olvidó lo que fue», dicen los viejos. En «Крепость в полумраке» la fortaleza despierta: murallas que brillan, torres de vigía, guardias nocturnos. Natalia es proclamada Reina de Verdegrad, y más tarde los vecinos quedan convertidos en «un coro mudo de obediencia». Desde entonces todo el pueblo le dice «el Sol». (Se ve desde cualquier calle; de noche, en el mapa, la empalizada vuelve a encenderse.)",
+   "buscar": "крепост\\w*|fortezza|старый вал|земляные валы|Королев\\w+ Вердеграда|Komtur",
+   "solo": [
+    "volny-lyubvi-krepost",
+    "volny-lyubvi-narisovannyj-mir",
+    "volny-lyubvi-labirint-zabveniya",
+    "onde-d-amore"
+   ],
+   "ilustracion": [
+    "volny-lyubvi-krepost",
+    "05-01.jpg"
+   ]
+  },
+  {
+   "id": "vg-parque-estanque",
+   "nombre": "El estanque y la glorieta de la banda",
+   "otros": [
+    "Парк у пруда",
+    "Городской духовой оркестр"
+   ],
+   "cat": "parque",
+   "x": 230,
+   "y": 175,
+   "modelo": "glorieta",
+   "desc": "El parque del estanque, con patos a los que Natalia les da de comer cuando no soporta el silencio de la casa. Los domingos toca aquí la Banda Municipal de Verdegrad, la misma que en «Нарисованный мир» le manda una carta oficial, con sello y firma del director, para invitarla como huésped de honor al concierto de verano en el que la orquesta interpreta las melodías de Luis.",
+   "buscar": "пруд\\w*|духов\\w+ оркестр|Концерт в парке",
+   "solo": [
+    "volny-lyubvi-narisovannyj-mir",
+    "volny-lyubvi-krepost",
+    "volny-lyubvi-labirint-zabveniya"
+   ],
+   "ilustracion": [
+    "onde-d-amore",
+    "14-v2.jpg"
+   ]
+  },
+  {
+   "id": "vg-calle-molino",
+   "nombre": "Calle del Molino y el puente del arroyo",
+   "otros": [
+    "Мельничная улица",
+    "Мост через ручей",
+    "Сапожный переулок"
+   ],
+   "cat": "calle",
+   "x": -485,
+   "y": 135,
+   "modelo": "ninguno",
+   "desc": "La calle que sale de la fuente hacia el oeste. Cruza un puentecito sobre el arroyo donde por las mañanas se sientan los pescadores (una madrugada solo queda una caña olvidada en el pasto) y sigue por el callejón de los Zapateros, que huele a cuero y pegamento viejo. Es el camino que hace el zorro, nariz al suelo, hacia las Puertas del Oeste.",
+   "buscar": "Мельничн\\w*|ручей|ручья|Сапожн\\w+ переул\\w*",
+   "solo": [
+    "volny-lyubvi-labirint-zabveniya"
+   ]
+  },
+  {
+   "id": "vg-santa-ana",
+   "nombre": "Iglesia de Santa Ana",
+   "otros": [
+    "Церковь Святой Анны"
+   ],
+   "cat": "monumento",
+   "x": -690,
+   "y": 60,
+   "modelo": "iglesia",
+   "desc": "Una iglesia que huele a cera, a piedra húmeda y, quién sabe por qué, a manzanas. Queda en el camino de la calle del Molino a la calle del Oeste.",
+   "buscar": "Святой Анны",
+   "solo": [
+    "volny-lyubvi-labirint-zabveniya"
+   ]
+  },
+  {
+   "id": "vg-puertas-oeste",
+   "nombre": "Las Puertas del Oeste",
+   "otros": [
+    "Западные ворота",
+    "Западная улица"
+   ],
+   "cat": "misterio",
+   "x": -1080,
+   "y": 90,
+   "modelo": "puertas-oeste",
+   "desc": "Al final de la calle del Oeste, la última de Verdegrad, quedan dos torrecitas de piedra cubiertas de hiedra y un arco por el que ya nadie pasa, porque el camino lo rodea. Más allá empiezan las huertas, después el campo y después el antiguo camino a Sinea, por donde antes iban las carretas. En «Лабиринт забвения» el zorro se sienta aquí, muy derecho, y huele de dónde viene el olor que hace olvidar.",
+   "buscar": "Западн\\w+ ворот\\w*|улиц\\w* Западн\\w*|Западные ворота",
+   "solo": [
+    "volny-lyubvi-labirint-zabveniya"
+   ]
+  },
+  {
+   "id": "vg-estacion-nubecita",
+   "nombre": "Estación «Nubecita»",
+   "otros": [
+    "Станция «Облачко»",
+    "Stazione Nuvoletta",
+    "Puente de Nubecita"
+   ],
+   "cat": "transporte",
+   "x": 420,
+   "y": -640,
+   "modelo": "estacion-chica",
+   "desc": "Un edificio chico de columnas blancas con un reloj sobre la entrada, en el borde de Verdegrad, donde las calles se vuelven campo y el campo se vuelve cielo. Le dicen «Nubecita» porque por las mañanas siempre flota una neblina sobre las vías. Aquí baja Luis de la electrichka en «Крепость в полумраке» y sube a la pasarela sobre las vías; aquí la aplicación de taxis dice «no hay taxis por una anomalía». Sobre el río está el puente donde Natalia lo abrazó por la espalda, el que Luis dibuja una y otra vez en su cuaderno. En italiano, el puente de Nuvoletta donde ella sube cantando «atrápame si puedes».",
+   "buscar": "Облачк\\w*|Nuvoletta|вокзал\\w* Вердеграда|привокзальн\\w+ площад\\w*",
+   "solo": [
+    "volny-lyubvi-krepost",
+    "volny-lyubvi-narisovannyj-mir",
+    "volny-lyubvi-labirint-zabveniya",
+    "onde-d-amore",
+    "volny-lyubvi-gorod-bez-ulybok",
+    "pokhititel-serdec-portret-osnovatelya",
+    "karnaval-sinei"
+   ],
+   "ilustracion": [
+    "volny-lyubvi-krepost",
+    "01-02.jpg"
+   ]
+  },
+  {
+   "id": "vg-autobus-7",
+   "nombre": "Cocheras del autobús n.º 7",
+   "otros": [
+    "Автобус номер семь",
+    "Депо"
+   ],
+   "cat": "transporte",
+   "x": -300,
+   "y": -170,
+   "modelo": "cocheras",
+   "desc": "De aquí sale cada mañana a las seis, puntual, el autobús n.º 7: azul, viejo, con una abolladura en el ala izquierda. Lo maneja Víctor, el padre de Natalia, que nunca dice «buenos días, hija» en voz alta: lo dice la bocina, dos toques bajo su ventana. En «Похититель сердец» Víctor para el 7 en la estación de Verdegrad fuera de recorrido. En «Лабиринт забвения» un capítulo entero se titula «El autobús no tocó la bocina».",
+   "buscar": "автобус\\w* (номер )?сем\\w*|седьм\\w+ автобус|седьмого маршрута|синему автобусу|Автобус не посигналил",
+   "solo": [
+    "volny-lyubvi-labirint-zabveniya",
+    "volny-lyubvi-narisovannyj-mir",
+    "pokhititel-serdec-portret-osnovatelya",
+    "volny-lyubvi-krepost"
+   ]
+  },
+  {
+   "id": "vg-malecon",
+   "nombre": "El malecón del río",
+   "otros": [
+    "Набережная",
+    "Река"
+   ],
+   "cat": "parque",
+   "x": -150,
+   "y": -235,
+   "modelo": "ninguno",
+   "desc": "El paseo a lo largo del río, con bancos mojados de rocío y niebla a las cuatro y media de la mañana, la hora de Verdegrad que más le gusta a Natalia. Cuando llegan los turistas, las palomas del campanario se van todas «al otro lado del río» y no vuelven hasta la noche. Al atardecer, en «Лабиринт забвения», Natalia mira el río desde el puente mientras los turistas fotografían el malecón.",
+   "buscar": "набережн\\w*|над рекой|за реку|туман\\w* над рекой",
+   "solo": [
+    "volny-lyubvi-labirint-zabveniya",
+    "volny-lyubvi-narisovannyj-mir"
+   ],
+   "ilustracion": [
+    "onde-d-amore",
+    "16-v2.jpg"
+   ]
+  },
+  {
+   "id": "vg-biblioteca",
+   "nombre": "Biblioteca de Verdegrad",
+   "otros": [
+    "Библиотека Вердеграда"
+   ],
+   "cat": "edificio",
+   "x": 140,
+   "y": -95,
+   "modelo": "biblioteca",
+   "desc": "Sobre estrellas tiene exactamente cuatro libros. Uno es «Astronomía recreativa» de 1958, de hojas amarillas, con un sello de «Dado de baja» que alguien tachó para escribir a mano: «¡No dado de baja! ¡Buen libro!». Natalia se los lleva a casa en «Нарисованный мир» y los lee toda la noche.",
+   "buscar": "библиотек\\w* Вердеграда|Занимательная астрономия",
+   "solo": [
+    "volny-lyubvi-narisovannyj-mir"
+   ]
+  },
+  {
+   "id": "vg-optica",
+   "nombre": "Óptica de la calle de los Jardines",
+   "otros": [
+    "Магазин «Оптика»",
+    "Садовая улица"
+   ],
+   "cat": "tienda",
+   "x": 160,
+   "y": 280,
+   "modelo": "cafe",
+   "desc": "En Verdegrad no se venden telescopios. Natalia pregunta igual en la «Óptica» de la calle de los Jardines, la noche que quiere ver de verdad los anillos de Saturno.",
+   "buscar": "«Оптика»|Садов\\w+",
+   "solo": [
+    "volny-lyubvi-narisovannyj-mir"
+   ]
+  },
+  {
+   "id": "vg-hotel-fortaleza",
+   "nombre": "Hotel «La Fortaleza»",
+   "otros": [
+    "Гостиница «Крепость»"
+   ],
+   "cat": "edificio",
+   "x": 300,
+   "y": 30,
+   "modelo": "hotelito",
+   "desc": "Uno de los hoteles donde duermen los turistas cuando Verdegrad gana el título de «ciudad más verde del país», en «Лабиринт забвения». Junto con el hotel «Los Tilos» y la vieja residencia del instituto técnico, convertida en una semana en «hotel boutique».",
+   "buscar": "гостиниц\\w* «Крепость»",
+   "solo": [
+    "volny-lyubvi-labirint-zabveniya"
+   ]
+  },
+  {
+   "id": "vg-hotel-tilos",
+   "nombre": "Hotel «Los Tilos»",
+   "otros": [
+    "Гостиница «Липы»"
+   ],
+   "cat": "edificio",
+   "x": -205,
+   "y": 255,
+   "modelo": "hotelito",
+   "desc": "El hotel de la calle de los Tilos. En la madrugada de «Лабиринт забвения» los turistas duermen aquí, en «La Fortaleza» y en veinte departamentos alquilados por día. No duerme nadie más que Semión.",
+   "buscar": "«Липы»",
+   "solo": [
+    "volny-lyubvi-labirint-zabveniya"
+   ]
+  }
+ ]
+}

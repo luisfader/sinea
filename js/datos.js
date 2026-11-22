@@ -1,5 +1,6 @@
-// Generado por tools/build.py a partir de data/lugares.json y de litmir. No editar a mano.
-export const LUGARES = [
+// Generado por tools/build.py a partir de data/ y de litmir. No editar a mano.
+export const CIUDADES = {
+"sinea": [
 {
 "id": "plaza-dante",
 "nombre": "Plaza Dante",
@@ -2425,15 +2426,6 @@ export const LUGARES = [
 "Последняя башня"
 ]
 ]
-},
-{
-"n": "ondas-de-amor",
-"c": [
-[
-"16",
-"La colina mágica"
-]
-]
 }
 ],
 "img": {
@@ -3963,15 +3955,6 @@ export const LUGARES = [
 "Dossiers del tren fantasma"
 ]
 ]
-},
-{
-"n": "onde-d-amore-3",
-"c": [
-[
-"17",
-"La cupola"
-]
-]
 }
 ],
 "img": {
@@ -5077,15 +5060,6 @@ export const LUGARES = [
 [
 "8",
 "Свод"
-]
-]
-},
-{
-"n": "volny-lyubvi-labirint-zabveniya",
-"c": [
-[
-"8",
-"Северный Город"
 ]
 ]
 },
@@ -7409,19 +7383,6 @@ export const LUGARES = [
 "desc_ru": "Всё, что осталось от средневековой стены вокруг старого города. Одна из двенадцати точек «Знака».",
 "apar": [
 {
-"n": "volny-lyubvi-krepost",
-"c": [
-[
-"4",
-"Утро Вердеграда"
-],
-[
-"11",
-"Свет за пределами Вердеграда"
-]
-]
-},
-{
 "n": "znak",
 "c": [
 [
@@ -7433,8 +7394,8 @@ export const LUGARES = [
 ],
 "img": {
 "src": "img/lugares/muralla.webp",
-"n": "volny-lyubvi-krepost",
-"c": "4"
+"n": "znak",
+"c": "7"
 }
 },
 {
@@ -7995,64 +7956,6 @@ export const LUGARES = [
 "src": "img/lugares/casa-sasha.webp",
 "n": "golos",
 "c": "1"
-}
-},
-{
-"id": "casa-luis",
-"nombre": "El piso de Luis y Natalia (Ondas de amor)",
-"otros": [
-"Квартира Луиса и Натальи",
-"L'appartamento al terzo piano"
-],
-"cat": "casa",
-"x": 830,
-"y": -440,
-"modelo": "hogar",
-"desc": "Un pisito en un tercer piso, a la vuelta del café donde nació el zorro. Aquí viven Luis y Natalia cuando la primavera vuelve a Sinea: ella guarda el dibujo del zorro en su cuaderno de canciones y él toca el piano. Una mañana Natalia le dice «quiero llevarte a mi casa» y él se ríe: «ya estoy en tu casa». Ella se refiere a la de Verdegrad, donde está el piano de la abuela. (Las novelas no dan otra dirección de Luis en Sinea.)",
-"nombre_ru": "Квартира Луиса и Натальи («Волны любви»)",
-"desc_ru": "Маленькая квартира на третьем этаже, за углом от кафе, где родился лис. Здесь живут Луис и Наталья, когда в Синею возвращается весна: она хранит рисунок лиса в тетради с песнями, он играет на пианино. Однажды утром Наталья говорит: «Хочу отвезти тебя к себе домой», а он смеётся: «Я и так у тебя дома». Она имеет в виду Вердеград, где стоит бабушкино пианино. (Другого адреса Луиса в Синее в романах нет.)",
-"apar": [
-{
-"n": "onde-d-amore",
-"c": [
-[
-"11",
-"Il treno per Nuvoletta"
-],
-[
-"extra-1",
-"Le onde sono rimaste"
-]
-]
-}
-],
-"res": [
-{
-"a": "Natalia",
-"ar": "Наталья",
-"s": 5,
-"es": "Tercer piso, sin ascensor, con un piano y un zorro que opina de todo. A veces la casa canta sola.",
-"ru": "Третий этаж, без лифта, с пианино и лисом, у которого на всё есть мнение. Иногда дом поёт сам."
-},
-{
-"a": "El zorro",
-"ar": "Лис",
-"s": 4,
-"es": "Buena luz para dormir en el alféizar. Le saco una estrella porque me guardan en un cuaderno.",
-"ru": "Хороший свет, чтобы спать на подоконнике. Минус звезда за то, что меня хранят в тетради."
-},
-{
-"a": "Luis",
-"ar": "Луис",
-"s": 5,
-"es": "No es mi casa. Es la de ella. Por eso es la mejor.",
-"ru": "Это не мой дом. Это её дом. Поэтому он лучший."
-}
-],
-"img": {
-"src": "img/lugares/casa-luis.webp",
-"n": "onde-d-amore",
-"c": "11"
 }
 },
 {
@@ -8856,49 +8759,1321 @@ export const LUGARES = [
 }
 ]
 }
-];
+],
+"verdegrad": [
+{
+"id": "vg-casa-natalia",
+"nombre": "Casa de Natalia (y de Luis)",
+"otros": [
+"Дом Натальи",
+"La casa di Natalia",
+"Calle de los Tilos"
+],
+"cat": "casa",
+"x": -330,
+"y": 420,
+"modelo": "hogar",
+"desc": "La casa de Natalia en la calle de los Tilos, con jardín y el piano de cola de la abuela, que le cantaba nanas en ruso. Aquí llega Luis por primera vez en «Крепость в полумраке»: Natalia le cocina ñoquis porque lo leyó en su viejo blog, y de noche él toca el piano mientras sobre Verdegrad caen luces del cielo. Desde el balcón, Natalia mira las estrellas por encima del techo de la panadería de Semión. Todas las mañanas a las seis el autobús azul n.º 7 toca la bocina dos veces bajo sus ventanas: es su padre, Víctor, que así le da los buenos días. En «Onde d'amore», detrás de la casa hay una escalera estrecha, casi secreta.",
+"nombre_ru": "Дом Натальи (и Луиса)",
+"desc_ru": "Дом Натальи на Липовой улице, с садом и бабушкиным роялем — бабушка пела ей на нём колыбельные по-русски. Сюда Луис впервые приезжает в «Крепости в полумраке»: Наталья готовит ему ньокки, потому что прочитала об этом в его старом блоге, а ночью он играет на рояле, пока над Вердеградом падают огни с неба. С балкона Наталья смотрит на звёзды над крышей пекарни Семёна. Каждое утро в шесть синий автобус номер семь сигналит под её окнами два раза: это её отец, Виктор, так говорит ей «доброе утро». В «Onde d'amore» в глубине дома есть узкая, почти тайная лестница.",
+"apar": [
+{
+"n": "volny-lyubvi-narisovannyj-mir",
+"c": [
+[
+"2",
+"Чемодан для лиса"
+],
+[
+"3",
+"Тихая квартира"
+],
+[
+"4",
+"Солнце нарасхват"
+],
+[
+"7",
+"Пустой стул"
+],
+[
+"8",
+"Открытки с той стороны"
+],
+[
+"10",
+"Объявление"
+],
+[
+"12",
+"Невозможно не узнать Солнце"
+]
+]
+},
+{
+"n": "onde-d-amore",
+"c": [
+[
+"11",
+"Il treno per Nuvoletta"
+],
+[
+"15",
+"La fortezza nella penombra"
+],
+[
+"17",
+"Onde d'amore"
+],
+[
+"18",
+"Il ritorno della volpe"
+]
+]
+},
+{
+"n": "volny-lyubvi-labirint-zabveniya",
+"c": [
+[
+"1",
+"Самый зелёный город"
+],
+[
+"2",
+"Запахи"
+],
+[
+"3",
+"Западные ворота"
+],
+[
+"6",
+"Автобус не посигналил"
+]
+]
+},
+{
+"n": "volny-lyubvi-gorod-bez-ulybok",
+"c": [
+[
+"1",
+"Годовщина"
+],
+[
+"3",
+"Станция «Облачко»"
+],
+[
+"43",
+"Волны остались"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Llegué para unos días y me cocinaron ñoquis. Hay un piano de cola que de noche parece esperarme. No es mi casa. Es la de ella. Por eso es la mejor.",
+"ru": "Приехал на несколько дней, а мне приготовили ньокки. Здесь рояль, который ночью будто ждёт меня. Это не мой дом. Это её дом. Поэтому он лучший."
+},
+{
+"a": "El zorro",
+"ar": "Лис",
+"s": 4,
+"es": "Buen alféizar, buena almohada en la canasta. Le saco una estrella porque primero se compra el pan y después el queso. Error de principiantes.",
+"ru": "Хороший подоконник, хорошая подушка в корзине. Минус звезда: сначала покупают хлеб, а потом сыр. Ошибка новичков."
+},
+{
+"a": "Víctor",
+"ar": "Виктор",
+"s": 5,
+"es": "Paso todos los días a las seis con el 7. Dos bocinazos. Ella entiende.",
+"ru": "Проезжаю каждый день в шесть на седьмом. Два сигнала. Она понимает."
+},
+{
+"a": "Antonina Petrovna",
+"ar": "Антонина Петровна",
+"s": 5,
+"es": "Vecina modelo. Le guardé un huesito de pollo a su Pelirrojo y él me miró como si lo hubiera insultado.",
+"ru": "Образцовая соседка. Отложила её Рыжему куриную косточку, а он посмотрел на меня так, будто я его оскорбила."
+}
+],
+"img": {
+"src": "img/lugares/vg-casa-natalia.webp",
+"n": "volny-lyubvi-krepost",
+"c": "3"
+}
+},
+{
+"id": "vg-mercado",
+"nombre": "El mercado y el campanario",
+"otros": [
+"Рынок у колокольни",
+"Колокольня"
+],
+"cat": "plaza",
+"x": 0,
+"y": 0,
+"modelo": "campanario",
+"desc": "El corazón de Verdegrad. Se lo encuentra por el sonido: pesas en las balanzas, cuchillos en las tablas, risas y regateo; y por el olor: eneldo, manzanas, pescado del río y el humo de la parrilla donde el tío Ashot asa choclos desde temprano. Cuando la campana da las ocho, Verdegrad termina de despertarse. Aquí la tía Valia vende los «pepinos del Sol» (en «Лабиринт забвения», con cartel nuevo: frasco 800, foto con frasco 200) y la vendedora de miel jura que cura todo menos el mal carácter del marido. Cuando llega Natalia, alguien grita «¡llegó el Sol!» y corre por los puestos como una ola.",
+"nombre_ru": "Рынок у колокольни",
+"desc_ru": "Сердце Вердеграда. Его можно найти по звуку — звон гирь на весах, стук ножей, смех, торг — и по запаху: укроп, яблоки, свежая рыба из реки и дым от жаровни, где дядя Ашот с утра жарит кукурузу. Когда колокол бьёт восемь, Вердеград просыпается окончательно. Здесь тётя Валя продаёт «огурцы Солнца» (в «Лабиринте забвения» — с новой табличкой: банка 800, фото с банкой 200), а продавщица мёда уверяет, что он лечит всё, кроме дурного характера мужа. Когда приходит Наталья, кто-то кричит «Солнце пришло!», и это катится по рядам, как волна.",
+"apar": [
+{
+"n": "volny-lyubvi-narisovannyj-mir",
+"c": [
+[
+"1",
+"Заявление на отпуск"
+],
+[
+"2",
+"Чемодан для лиса"
+],
+[
+"4",
+"Солнце нарасхват"
+],
+[
+"6",
+"Концерт в парке"
+],
+[
+"8",
+"Открытки с той стороны"
+],
+[
+"10",
+"Объявление"
+],
+[
+"11",
+"Лекция"
+],
+[
+"12",
+"Невозможно не узнать Солнце"
+],
+[
+"13",
+"Лавандовый чай"
+]
+]
+},
+{
+"n": "volny-lyubvi-labirint-zabveniya",
+"c": [
+[
+"1",
+"Самый зелёный город"
+],
+[
+"2",
+"Запахи"
+],
+[
+"4",
+"Д. и Л."
+],
+[
+"5",
+"Через стекло"
+],
+[
+"6",
+"Автобус не посигналил"
+]
+]
+},
+{
+"n": "volny-lyubvi-krepost",
+"c": [
+[
+"19",
+"Тревожное предупреждение"
+],
+[
+"20",
+"Мелодия повиновения"
+]
+]
+}
+],
+"res": [
+{
+"a": "Tía Valia",
+"ar": "Тётя Валя",
+"s": 5,
+"es": "¡Pepinos del Sol! Frasco 800, foto con frasco 200. Ayer vendí veintitrés. El Sol no se enoja. Creo.",
+"ru": "Огурцы Солнца! Банка — 800, фото с банкой — 200. Вчера продала двадцать три. Солнце не сердится. Кажется."
+},
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 4,
+"es": "El mejor mercado del mundo. Le quito una estrella porque ahora mi cara está en los frascos de pepinos.",
+"ru": "Лучший рынок на свете. Минус звезда: теперь моё лицо на банках с огурцами."
+},
+{
+"a": "Tío Ashot",
+"ar": "Дядя Ашот",
+"s": 5,
+"es": "Choclo asado desde las siete. En Sinea hay un tocayo mío con una shawarma. El choclo es mejor.",
+"ru": "Жареная кукуруза с семи утра. В Синее есть мой тёзка с шавермой. Кукуруза лучше."
+},
+{
+"a": "El zorro",
+"ar": "Лис",
+"s": 3,
+"es": "Demasiados turistas. Huelen a protector solar y a selfies.",
+"ru": "Слишком много туристов. Пахнут кремом от загара и селфи."
+}
+],
+"img": {
+"src": "img/lugares/vg-mercado.webp",
+"n": "volny-lyubvi-krepost",
+"c": "19"
+}
+},
+{
+"id": "vg-fuente",
+"nombre": "La plazoleta de la fuente",
+"otros": [
+"Площадь с фонтаном"
+],
+"cat": "plaza",
+"x": -140,
+"y": 170,
+"modelo": "fuente",
+"desc": "Una plaza chica a mitad de la calle de los Tilos, donde los chicos juegan al fútbol: un partido Tilos contra Jardines con Natalia de árbitra. Aquí Petia, el nieto de la tía Elena —el que le dibujó al zorro una cola verde—, pregunta si en el mundo de los dibujos hay fútbol. A las cuatro y media de la mañana, en «Лабиринт забвения», el zorro da dos vueltas a la fuente, estornuda y dobla por la calle del Molino siguiendo un olor a vainilla y hierro.",
+"nombre_ru": "Площадь с фонтаном",
+"desc_ru": "Маленькая площадь на середине Липовой, где мальчишки гоняют мяч — матч «Липовая против Садовой» с Натальей в роли судьи. Здесь Петя, внук тёти Елены (тот, что нарисовал лису зелёный хвост), спрашивает, есть ли в мире рисунков футбол. В половине пятого утра в «Лабиринте забвения» лис делает два круга вокруг чаши, чихает и сворачивает на Мельничную по следу запаха ванили и железа.",
+"apar": [
+{
+"n": "volny-lyubvi-labirint-zabveniya",
+"c": [
+[
+"1",
+"Самый зелёный город"
+],
+[
+"2",
+"Запахи"
+],
+[
+"3",
+"Западные ворота"
+],
+[
+"6",
+"Автобус не посигналил"
+]
+]
+},
+{
+"n": "volny-lyubvi-narisovannyj-mir",
+"c": [
+[
+"3",
+"Тихая квартира"
+],
+[
+"4",
+"Солнце нарасхват"
+]
+]
+}
+]
+},
+{
+"id": "vg-panaderia-semion",
+"nombre": "Panadería de Semión",
+"otros": [
+"Пекарня Семёна"
+],
+"cat": "restaurante",
+"x": -250,
+"y": 315,
+"modelo": "panaderia",
+"desc": "Lo primero que se despierta en Verdegrad: a las cinco ya hay luz amarilla en la ventana y olor a pan caliente. Semión es de pocas palabras pero se acuerda de todos los nombres, hasta de cada perro de la calle de los Tilos: durante veinte años llamó «Natashenka» a Natalia, y desde lo de la fortaleza le dice «Sol». Hornea bollos con forma de cabeza de zorro, los «Amigo Pelirrojo». En «Лабиринт забвения», una mañana no la reconoce, y ahí empieza el misterio.",
+"nombre_ru": "Пекарня Семёна",
+"desc_ru": "Первое, что просыпается в Вердеграде: в пять утра в окнах уже горит жёлтый свет и пахнет тёплым хлебом. Семён немногословен, но помнит все имена — даже каждую собаку на Липовой: двадцать лет он звал Наталью Наташенькой, а после крепости — Солнцем. Он печёт булочки в форме лисьей головы, «Рыжий друг». В «Лабиринте забвения» однажды утром он её не узнаёт — и с этого начинается загадка.",
+"apar": [
+{
+"n": "volny-lyubvi-labirint-zabveniya",
+"c": [
+[
+"1",
+"Самый зелёный город"
+],
+[
+"2",
+"Запахи"
+],
+[
+"3",
+"Западные ворота"
+],
+[
+"4",
+"Д. и Л."
+],
+[
+"5",
+"Через стекло"
+],
+[
+"6",
+"Автобус не посигналил"
+]
+]
+},
+{
+"n": "volny-lyubvi-narisovannyj-mir",
+"c": [
+[
+"2",
+"Чемодан для лиса"
+],
+[
+"4",
+"Солнце нарасхват"
+],
+[
+"7",
+"Пустой стул"
+],
+[
+"8",
+"Открытки с той стороны"
+]
+]
+}
+],
+"res": [
+{
+"a": "Fiódor Ilich",
+"ar": "Фёдор Ильич",
+"s": 5,
+"es": "Paso a las seis con la bicicleta y ya hay pan. No hay cartas para nadie, pero hay pan.",
+"ru": "Проезжаю на велосипеде в шесть, а хлеб уже есть. Писем ни для кого нет, но хлеб есть."
+},
+{
+"a": "El zorro",
+"ar": "Лис",
+"s": 2,
+"es": "Bollos con forma de mi cabeza. Los turistas me muerden la oreja. Exijo derechos de imagen.",
+"ru": "Булочки в форме моей головы. Туристы откусывают мне ухо. Требую авторских отчислений."
+},
+{
+"a": "Semión",
+"ar": "Семён",
+"s": 5,
+"es": "Respuesta del propietario: treinta años horneando. Me acuerdo de todos los nombres. Casi siempre.",
+"ru": "Ответ владельца: тридцать лет пеку. Помню все имена. Почти всегда."
+}
+]
+},
+{
+"id": "vg-cafe-golondrina",
+"nombre": "Café «La Golondrina»",
+"otros": [
+"Кафе «Ласточка»"
+],
+"cat": "restaurante",
+"x": -70,
+"y": 95,
+"modelo": "cafe",
+"desc": "Un café chiquito, de seis mesas. Después de su conferencia en «Нарисованный мир», Alicia, la astróloga de Sinea, toma aquí té de lavanda con Natalia y le dice que «es imposible no reconocer al Sol». Aquí le llega el mensaje de Marcos que lo cambia todo, y desde aquí Alicia lo llama con el teléfono apretado entre las dos manos.",
+"nombre_ru": "Кафе «Ласточка»",
+"desc_ru": "Маленькое кафе на шесть столиков. После лекции в «Нарисованном мире» Алисия, астролог из Синеи, пьёт здесь с Натальей лавандовый чай и говорит: «Невозможно не узнать Солнце». Здесь ей приходит сообщение от Марка, которое всё меняет, и отсюда она звонит ему, прижимая телефон обеими руками.",
+"apar": [
+{
+"n": "volny-lyubvi-narisovannyj-mir",
+"c": [
+[
+"12",
+"Невозможно не узнать Солнце"
+],
+[
+"13",
+"Лавандовый чай"
+]
+]
+}
+],
+"res": [
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 5,
+"es": "Seis mesas, té de lavanda y la mejor conversación que tuve fuera de Sinea. Mercurio estaba retrógrado y aun así funcionó.",
+"ru": "Шесть столиков, лавандовый чай и лучший разговор, который был у меня за пределами Синеи. Меркурий был ретроградным, и всё равно получилось."
+},
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 4,
+"es": "El té, perfecto. El mensaje que le llegó a Alicia en medio del té, no tanto.",
+"ru": "Чай — идеальный. Сообщение, которое пришло Алисии посреди чаепития, — не очень."
+}
+]
+},
+{
+"id": "vg-fortaleza",
+"nombre": "La fortaleza en la penumbra (Parque Viejo)",
+"otros": [
+"Крепость в полумраке",
+"La fortezza nella penombra"
+],
+"cat": "monumento",
+"x": 430,
+"y": 340,
+"modelo": "fortaleza",
+"desc": "En el Parque Viejo, donde la alameda empieza a subir, quedan terraplenes de tierra que la gente toma por colinas: los niños corren, los turistas se sacan fotos, en verano se sientan en el pasto. Según la leyenda, aquí hubo torres de madera, portones y murallas que protegían el camino. «Verdegrad no olvidó lo que fue», dicen los viejos. En «Крепость в полумраке» la fortaleza despierta: murallas que brillan, torres de vigía, guardias nocturnos. Natalia es proclamada Reina de Verdegrad, y más tarde los vecinos quedan convertidos en «un coro mudo de obediencia». Desde entonces todo el pueblo le dice «el Sol». (Se ve desde cualquier calle; de noche, en el mapa, la empalizada vuelve a encenderse.)",
+"nombre_ru": "Крепость в полумраке (Старый парк)",
+"desc_ru": "В Старом парке, там, где аллея начинает подниматься, остались земляные валы, которые многие принимают за холмы: дети бегают, туристы фотографируются, летом сидят на траве. По легенде, здесь стояли деревянные башни, ворота и стены, защищавшие дорогу. «Вердеград не забыл, чем он был», — говорят старики. В «Крепости в полумраке» крепость просыпается: сияющие стены, сторожевые башни, ночная стража. Наталью провозглашают королевой Вердеграда, а потом жители превращаются в «молчаливый хор повиновения». С тех пор весь город зовёт её Солнцем. (Крепость видно с любой улицы; ночью на карте частокол снова загорается.)",
+"apar": [
+{
+"n": "volny-lyubvi-krepost",
+"c": [
+[
+"2",
+"Дорога в Вердеград"
+],
+[
+"3",
+"Ночная мелодия"
+],
+[
+"4",
+"Утро Вердеграда"
+],
+[
+"5",
+"Крепость в полумраке"
+],
+[
+"6",
+"Город под тенями"
+],
+[
+"7",
+"Волны любви"
+],
+[
+"8",
+"Возвращение лиса"
+],
+[
+"9",
+"Книга, которой не было"
+],
+[
+"10",
+"Королева Вердеграда"
+],
+[
+"11",
+"Свет за пределами Вердеграда"
+],
+[
+"12",
+"Тишина, которая слишком похожа на счастье"
+],
+[
+"13",
+"Человек за рулём"
+],
+[
+"14",
+"Первая трещина"
+],
+[
+"15",
+"Музыка в плену"
+],
+[
+"16",
+"Автобус для спасения"
+],
+[
+"17",
+"Мелодия, которая нашла дорогу"
+],
+[
+"18",
+"Душа, которая услышала музыку"
+],
+[
+"19",
+"Тревожное предупреждение"
+],
+[
+"20",
+"Мелодия повиновения"
+],
+[
+"21",
+"Город без сердца"
+],
+[
+"22",
+"Последний план"
+],
+[
+"23",
+"Волны любви"
+],
+[
+"extra-1",
+"Интервью с Алисией о романе «Волны любви. Крепость в полумраке»"
+],
+[
+"extra-2",
+"Мелодия, которую нельзя забыть"
+],
+[
+"extra-3",
+"Обсуждение романа «Волны любви II. Крепость в полумраке»"
+],
+[
+"extra-4",
+"Интервью с Робертом Фадером"
+]
+]
+},
+{
+"n": "onde-d-amore",
+"c": [
+[
+"13",
+"La melodia notturna"
+],
+[
+"14",
+"Il mattino di Verdegrado"
+],
+[
+"15",
+"La fortezza nella penombra"
+],
+[
+"16",
+"La città delle ombre"
+],
+[
+"17",
+"Onde d'amore"
+],
+[
+"18",
+"Il ritorno della volpe"
+],
+[
+"19",
+"Il Sole di Verdegrado"
+],
+[
+"20",
+"La prima crepa"
+]
+]
+},
+{
+"n": "volny-lyubvi-labirint-zabveniya",
+"c": [
+[
+"1",
+"Самый зелёный город"
+],
+[
+"2",
+"Запахи"
+],
+[
+"3",
+"Западные ворота"
+],
+[
+"5",
+"Через стекло"
+],
+[
+"6",
+"Автобус не посигналил"
+]
+]
+},
+{
+"n": "volny-lyubvi-narisovannyj-mir",
+"c": [
+[
+"4",
+"Солнце нарасхват"
+],
+[
+"6",
+"Концерт в парке"
+],
+[
+"8",
+"Открытки с той стороны"
+],
+[
+"12",
+"Невозможно не узнать Солнце"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "De día son colinas con pasto. De noche, a veces, la tierra recuerda las murallas. Me nombraron reina aquí. Prefiero ser maestra de música.",
+"ru": "Днём — холмы с травой. Ночью земля иногда вспоминает стены. Меня здесь провозгласили королевой. Я предпочитаю быть учительницей музыки."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 4,
+"es": "Precioso para pasear. Le saco una estrella porque me tomaron prisionero.",
+"ru": "Прекрасное место для прогулок. Минус звезда за то, что меня взяли в плен."
+},
+{
+"a": "Turista de Moscú",
+"ar": "Турист из Москвы",
+"s": 2,
+"es": "Me dijeron que había una fortaleza. Hay pasto. Muy lindo pasto, eso sí.",
+"ru": "Сказали, что тут крепость. Тут трава. Очень красивая трава, надо признать."
+}
+],
+"img": {
+"src": "img/lugares/vg-fortaleza.webp",
+"n": "volny-lyubvi-krepost",
+"c": "5"
+}
+},
+{
+"id": "vg-parque-estanque",
+"nombre": "El estanque y la glorieta de la banda",
+"otros": [
+"Парк у пруда",
+"Городской духовой оркестр"
+],
+"cat": "parque",
+"x": 230,
+"y": 175,
+"modelo": "glorieta",
+"desc": "El parque del estanque, con patos a los que Natalia les da de comer cuando no soporta el silencio de la casa. Los domingos toca aquí la Banda Municipal de Verdegrad, la misma que en «Нарисованный мир» le manda una carta oficial, con sello y firma del director, para invitarla como huésped de honor al concierto de verano en el que la orquesta interpreta las melodías de Luis.",
+"nombre_ru": "Пруд и эстрада духового оркестра",
+"desc_ru": "Парк у пруда, где Наталья кормит уток, когда не может выносить тишину в доме. По воскресеньям здесь играет Городской духовой оркестр Вердеграда — тот самый, что в «Нарисованном мире» присылает ей официальное письмо с печатью и подписью дирижёра: приглашение почётной гостьей на летний концерт, где оркестр играет мелодии Луиса.",
+"apar": [
+{
+"n": "volny-lyubvi-narisovannyj-mir",
+"c": [
+[
+"3",
+"Тихая квартира"
+],
+[
+"4",
+"Солнце нарасхват"
+],
+[
+"6",
+"Концерт в парке"
+],
+[
+"9",
+"Звёзды над Липовой"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "La banda tocó las melodías de Luis. Lloré en la primera fila y los patos se acercaron a consolarme.",
+"ru": "Оркестр играл мелодии Луиса. Я плакала в первом ряду, а утки подплыли меня утешить."
+},
+{
+"a": "Director de la banda",
+"ar": "Дирижёр оркестра",
+"s": 5,
+"es": "Respuesta del propietario: conciertos todos los domingos. La invitación a la señorita Natalia Víktorovna fue con sello y firma, como corresponde.",
+"ru": "Ответ владельца: концерты каждое воскресенье. Приглашение Наталье Викторовне было с печатью и подписью, как положено."
+}
+],
+"img": {
+"src": "img/lugares/vg-parque-estanque.webp",
+"n": "onde-d-amore",
+"c": "14"
+}
+},
+{
+"id": "vg-calle-molino",
+"nombre": "Calle del Molino y el puente del arroyo",
+"otros": [
+"Мельничная улица",
+"Мост через ручей",
+"Сапожный переулок"
+],
+"cat": "calle",
+"x": -485,
+"y": 135,
+"modelo": "ninguno",
+"desc": "La calle que sale de la fuente hacia el oeste. Cruza un puentecito sobre el arroyo donde por las mañanas se sientan los pescadores (una madrugada solo queda una caña olvidada en el pasto) y sigue por el callejón de los Zapateros, que huele a cuero y pegamento viejo. Es el camino que hace el zorro, nariz al suelo, hacia las Puertas del Oeste.",
+"nombre_ru": "Мельничная улица и мост через ручей",
+"desc_ru": "Улица, ведущая от фонтана на запад. Она пересекает мостик через ручей, где по утрам сидят рыбаки (однажды на рассвете там осталась только забытая в траве удочка), и продолжается Сапожным переулком, где пахнет кожей и старым клеем. Этой дорогой лис, опустив нос к земле, идёт к Западным воротам.",
+"apar": [
+{
+"n": "volny-lyubvi-labirint-zabveniya",
+"c": [
+[
+"3",
+"Западные ворота"
+]
+]
+}
+]
+},
+{
+"id": "vg-santa-ana",
+"nombre": "Iglesia de Santa Ana",
+"otros": [
+"Церковь Святой Анны"
+],
+"cat": "monumento",
+"x": -690,
+"y": 60,
+"modelo": "iglesia",
+"desc": "Una iglesia que huele a cera, a piedra húmeda y, quién sabe por qué, a manzanas. Queda en el camino de la calle del Molino a la calle del Oeste.",
+"nombre_ru": "Церковь Святой Анны",
+"desc_ru": "Церковь, где пахнет воском, сырым камнем и почему-то яблоками. Стоит на пути от Мельничной к Западной улице.",
+"apar": [
+{
+"n": "volny-lyubvi-labirint-zabveniya",
+"c": [
+[
+"3",
+"Западные ворота"
+]
+]
+}
+],
+"res": [
+{
+"a": "Semión",
+"ar": "Семён",
+"s": 5,
+"es": "Huele a cera, a piedra y a manzanas. Como mi panadería, pero sin pan.",
+"ru": "Пахнет воском, камнем и яблоками. Как моя пекарня, только без хлеба."
+}
+]
+},
+{
+"id": "vg-puertas-oeste",
+"nombre": "Las Puertas del Oeste",
+"otros": [
+"Западные ворота",
+"Западная улица"
+],
+"cat": "misterio",
+"x": -1080,
+"y": 90,
+"modelo": "puertas-oeste",
+"desc": "Al final de la calle del Oeste, la última de Verdegrad, quedan dos torrecitas de piedra cubiertas de hiedra y un arco por el que ya nadie pasa, porque el camino lo rodea. Más allá empiezan las huertas, después el campo y después el antiguo camino a Sinea, por donde antes iban las carretas. En «Лабиринт забвения» el zorro se sienta aquí, muy derecho, y huele de dónde viene el olor que hace olvidar.",
+"nombre_ru": "Западные ворота",
+"desc_ru": "В конце Западной — последней улицы Вердеграда — остались две каменные башенки, заросшие плющом, и арка, под которой давно никто не ходит, потому что дорогу проложили сбоку. Дальше начинаются огороды, потом поле, потом старая дорога на Синею, по которой когда-то ходили обозы. В «Лабиринте забвения» лис садится здесь очень прямо и чует, откуда идёт запах, от которого всё забывается.",
+"apar": [
+{
+"n": "volny-lyubvi-labirint-zabveniya",
+"c": [
+[
+"3",
+"Западные ворота"
+],
+[
+"4",
+"Д. и Л."
+],
+[
+"6",
+"Автобус не посигналил"
+]
+]
+}
+],
+"res": [
+{
+"a": "El zorro",
+"ar": "Лис",
+"s": 1,
+"es": "Huele a vainilla y a hierro, y a que te olvidás de para qué entraste a la habitación. No recomiendo quedarse.",
+"ru": "Пахнет ванилью, железом и тем, что забываешь, зачем вошёл в комнату. Не рекомендую задерживаться."
+},
+{
+"a": "Valeria",
+"ar": "Валерия",
+"s": 4,
+"es": "Buen punto de partida para seguir un olor con un narizoscopio. Hiedra muy fotogénica.",
+"ru": "Хорошая отправная точка, чтобы идти по запаху с нюхоскопом. Очень фотогеничный плющ."
+}
+]
+},
+{
+"id": "vg-estacion-nubecita",
+"nombre": "Estación «Nubecita»",
+"otros": [
+"Станция «Облачко»",
+"Stazione Nuvoletta",
+"Puente de Nubecita"
+],
+"cat": "transporte",
+"x": 420,
+"y": -640,
+"modelo": "estacion-chica",
+"desc": "Un edificio chico de columnas blancas con un reloj sobre la entrada, en el borde de Verdegrad, donde las calles se vuelven campo y el campo se vuelve cielo. Le dicen «Nubecita» porque por las mañanas siempre flota una neblina sobre las vías. Aquí baja Luis de la electrichka en «Крепость в полумраке» y sube a la pasarela sobre las vías; aquí la aplicación de taxis dice «no hay taxis por una anomalía». Sobre el río está el puente donde Natalia lo abrazó por la espalda, el que Luis dibuja una y otra vez en su cuaderno. En italiano, el puente de Nuvoletta donde ella sube cantando «atrápame si puedes».",
+"nombre_ru": "Станция «Облачко»",
+"desc_ru": "Маленькое здание с белыми колоннами и часами над входом на краю Вердеграда, там, где улицы переходят в поля, а поля — в небо. «Облачком» её зовут потому, что по утрам над путями всегда висит лёгкий туман. Здесь в «Крепости в полумраке» Луис выходит из электрички и поднимается на пешеходный мост над путями; здесь приложение такси сообщает, что «из-за аномалии машин нет». Над рекой — мост, где Наталья обняла его сзади, тот самый, который Луис снова и снова рисует в своей тетради.",
+"apar": [
+{
+"n": "volny-lyubvi-krepost",
+"c": [
+[
+"1",
+"Станция «Облачко»"
+],
+[
+"2",
+"Дорога в Вердеград"
+],
+[
+"15",
+"Музыка в плену"
+],
+[
+"23",
+"Волны любви"
+],
+[
+"extra-2",
+"Мелодия, которую нельзя забыть"
+]
+]
+},
+{
+"n": "volny-lyubvi-narisovannyj-mir",
+"c": [
+[
+"2",
+"Чемодан для лиса"
+],
+[
+"3",
+"Тихая квартира"
+],
+[
+"7",
+"Пустой стул"
+],
+[
+"8",
+"Открытки с той стороны"
+],
+[
+"9",
+"Звёзды над Липовой"
+]
+]
+},
+{
+"n": "volny-lyubvi-gorod-bez-ulybok",
+"c": [
+[
+"2",
+"Письмо от Марисы"
+],
+[
+"3",
+"Станция «Облачко»"
+],
+[
+"43",
+"Волны остались"
+]
+]
+},
+{
+"n": "volny-lyubvi-labirint-zabveniya",
+"c": [
+[
+"2",
+"Запахи"
+],
+[
+"3",
+"Западные ворота"
+],
+[
+"4",
+"Д. и Л."
+]
+]
+},
+{
+"n": "onde-d-amore",
+"c": [
+[
+"11",
+"Il treno per Nuvoletta"
+],
+[
+"12",
+"La strada per Verdegrado"
+]
+]
+},
+{
+"n": "pokhititel-serdec-portret-osnovatelya",
+"c": [
+[
+"34",
+"Звонок из Вердеграда"
+],
+[
+"37",
+"Поезд на юг"
+]
+]
+},
+{
+"n": "karnaval-sinei",
+"c": [
+[
+"11",
+"Марисы на перроне не было"
+],
+[
+"64",
+"Будка стрелочника"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "La fila del autobús es larga, la aplicación de taxis dice «anomalía» y aun así es la estación más linda del mundo. En el puente me abrazaron por la espalda.",
+"ru": "Очередь на автобус длинная, приложение такси пишет «аномалия», и всё равно это самая красивая станция на свете. На мосту меня обняли сзади."
+},
+{
+"a": "Marisa",
+"ar": "Мариса",
+"s": 3,
+"es": "Bonita, pero cuando esperás a alguien con el corazón en la boca, el reloj de la entrada no se mueve nunca.",
+"ru": "Красивая, но когда ждёшь кого-то с замиранием сердца, часы над входом совсем не двигаются."
+}
+],
+"img": {
+"src": "img/lugares/vg-estacion-nubecita.webp",
+"n": "volny-lyubvi-krepost",
+"c": "1"
+}
+},
+{
+"id": "vg-autobus-7",
+"nombre": "Cocheras del autobús n.º 7",
+"otros": [
+"Автобус номер семь",
+"Депо"
+],
+"cat": "transporte",
+"x": -300,
+"y": -170,
+"modelo": "cocheras",
+"desc": "De aquí sale cada mañana a las seis, puntual, el autobús n.º 7: azul, viejo, con una abolladura en el ala izquierda. Lo maneja Víctor, el padre de Natalia, que nunca dice «buenos días, hija» en voz alta: lo dice la bocina, dos toques bajo su ventana. En «Похититель сердец» Víctor para el 7 en la estación de Verdegrad fuera de recorrido. En «Лабиринт забвения» un capítulo entero se titula «El autobús no tocó la bocina».",
+"nombre_ru": "Депо автобуса номер семь",
+"desc_ru": "Отсюда каждое утро ровно в шесть выезжает автобус номер семь — синий, старый, с вмятиной на левом крыле. Его водит Виктор, отец Натальи, который никогда не говорит вслух «доброе утро, дочка»: за него говорит гудок, два сигнала под её окном. В «Похитителе сердец» Виктор останавливает седьмой у вокзала Вердеграда не по маршруту. В «Лабиринте забвения» целая глава называется «Автобус не посигналил».",
+"apar": [
+{
+"n": "volny-lyubvi-labirint-zabveniya",
+"c": [
+[
+"1",
+"Самый зелёный город"
+],
+[
+"3",
+"Западные ворота"
+],
+[
+"6",
+"Автобус не посигналил"
+]
+]
+},
+{
+"n": "pokhititel-serdec-portret-osnovatelya",
+"c": [
+[
+"4",
+"Мате на балконе"
+],
+[
+"34",
+"Звонок из Вердеграда"
+],
+[
+"52",
+"Слишком много любви"
+]
+]
+},
+{
+"n": "volny-lyubvi-narisovannyj-mir",
+"c": [
+[
+"2",
+"Чемодан для лиса"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Mi papá maneja el 7. Si el 7 no toca la bocina, algo anda muy mal en Verdegrad.",
+"ru": "Мой папа водит седьмой. Если седьмой не посигналил, значит, в Вердеграде что-то очень не так."
+},
+{
+"a": "Víctor",
+"ar": "Виктор",
+"s": 4,
+"es": "Abolladura en el ala izquierda. No pregunten.",
+"ru": "Вмятина на левом крыле. Не спрашивайте."
+}
+],
+"img": {
+"src": "img/lugares/vg-autobus-7.webp",
+"n": "pokhititel-serdec-portret-osnovatelya",
+"c": "4"
+}
+},
+{
+"id": "vg-malecon",
+"nombre": "El malecón del río",
+"otros": [
+"Набережная",
+"Река"
+],
+"cat": "parque",
+"x": -150,
+"y": -235,
+"modelo": "ninguno",
+"desc": "El paseo a lo largo del río, con bancos mojados de rocío y niebla a las cuatro y media de la mañana, la hora de Verdegrad que más le gusta a Natalia. Cuando llegan los turistas, las palomas del campanario se van todas «al otro lado del río» y no vuelven hasta la noche. Al atardecer, en «Лабиринт забвения», Natalia mira el río desde el puente mientras los turistas fotografían el malecón.",
+"nombre_ru": "Набережная",
+"desc_ru": "Прогулка вдоль реки, со скамейками, мокрыми от росы, и туманом в половине пятого утра — в тот час Вердеграда, который Наталья любит больше всего. Когда приезжают туристы, голуби с колокольни в полном составе улетают «за реку» и не возвращаются до вечера. На закате в «Лабиринте забвения» Наталья смотрит на реку с моста, а туристы фотографируют набережную.",
+"apar": [
+{
+"n": "volny-lyubvi-labirint-zabveniya",
+"c": [
+[
+"1",
+"Самый зелёный город"
+],
+[
+"2",
+"Запахи"
+],
+[
+"3",
+"Западные ворота"
+],
+[
+"5",
+"Через стекло"
+]
+]
+},
+{
+"n": "volny-lyubvi-narisovannyj-mir",
+"c": [
+[
+"3",
+"Тихая квартира"
+]
+]
+}
+],
+"img": {
+"src": "img/lugares/vg-malecon.webp",
+"n": "onde-d-amore",
+"c": "16"
+}
+},
+{
+"id": "vg-biblioteca",
+"nombre": "Biblioteca de Verdegrad",
+"otros": [
+"Библиотека Вердеграда"
+],
+"cat": "edificio",
+"x": 140,
+"y": -95,
+"modelo": "biblioteca",
+"desc": "Sobre estrellas tiene exactamente cuatro libros. Uno es «Astronomía recreativa» de 1958, de hojas amarillas, con un sello de «Dado de baja» que alguien tachó para escribir a mano: «¡No dado de baja! ¡Buen libro!». Natalia se los lleva a casa en «Нарисованный мир» y los lee toda la noche.",
+"nombre_ru": "Библиотека Вердеграда",
+"desc_ru": "Книг про звёзды здесь ровно четыре. Одна из них — «Занимательная астрономия» 1958 года, с жёлтыми страницами и штампом «Списано», который кто-то перечеркнул и написал сверху от руки: «Не списано! Хорошая книга!». В «Нарисованном мире» Наталья уносит их домой и читает всю ночь.",
+"apar": [
+{
+"n": "volny-lyubvi-narisovannyj-mir",
+"c": [
+[
+"9",
+"Звёзды над Липовой"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 4,
+"es": "Cuatro libros sobre estrellas. Me los leí todos en una noche. ¡No dado de baja! ¡Buen libro!",
+"ru": "Четыре книги про звёзды. Прочитала все за одну ночь. Не списано! Хорошая книга!"
+}
+]
+},
+{
+"id": "vg-optica",
+"nombre": "Óptica de la calle de los Jardines",
+"otros": [
+"Магазин «Оптика»",
+"Садовая улица"
+],
+"cat": "tienda",
+"x": 160,
+"y": 280,
+"modelo": "cafe",
+"desc": "En Verdegrad no se venden telescopios. Natalia pregunta igual en la «Óptica» de la calle de los Jardines, la noche que quiere ver de verdad los anillos de Saturno.",
+"nombre_ru": "Магазин «Оптика» на Садовой",
+"desc_ru": "Телескопов в Вердеграде не продают. Наталья всё равно спрашивает в «Оптике» на Садовой в ту ночь, когда ей хочется по-настоящему увидеть кольца Сатурна.",
+"apar": [
+{
+"n": "volny-lyubvi-narisovannyj-mir",
+"c": [
+[
+"3",
+"Тихая квартира"
+],
+[
+"4",
+"Солнце нарасхват"
+],
+[
+"7",
+"Пустой стул"
+],
+[
+"8",
+"Открытки с той стороны"
+],
+[
+"9",
+"Звёзды над Липовой"
+],
+[
+"12",
+"Невозможно не узнать Солнце"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 3,
+"es": "No venden telescopios. El vendedor fue muy amable igual.",
+"ru": "Телескопов не продают. Продавец всё равно был очень любезен."
+}
+]
+},
+{
+"id": "vg-hotel-fortaleza",
+"nombre": "Hotel «La Fortaleza»",
+"otros": [
+"Гостиница «Крепость»"
+],
+"cat": "edificio",
+"x": 300,
+"y": 30,
+"modelo": "hotelito",
+"desc": "Uno de los hoteles donde duermen los turistas cuando Verdegrad gana el título de «ciudad más verde del país», en «Лабиринт забвения». Junto con el hotel «Los Tilos» y la vieja residencia del instituto técnico, convertida en una semana en «hotel boutique».",
+"nombre_ru": "Гостиница «Крепость»",
+"desc_ru": "Одна из гостиниц, где спят туристы, когда Вердеград получает звание самого зелёного города страны в «Лабиринте забвения». Вместе с гостиницей «Липы» и бывшим общежитием техникума, которое за неделю переделали в «бутик-отель».",
+"apar": [
+{
+"n": "volny-lyubvi-labirint-zabveniya",
+"c": [
+[
+"3",
+"Западные ворота"
+]
+]
+}
+],
+"res": [
+{
+"a": "Turista de Moscú",
+"ar": "Турист из Москвы",
+"s": 4,
+"es": "Cama cómoda, vista a los tilos. A la mañana no me acordaba de mi propio nombre, pero seguro fue el viaje.",
+"ru": "Удобная кровать, вид на липы. Утром не мог вспомнить собственное имя, но это, наверное, от дороги."
+}
+]
+},
+{
+"id": "vg-hotel-tilos",
+"nombre": "Hotel «Los Tilos»",
+"otros": [
+"Гостиница «Липы»"
+],
+"cat": "edificio",
+"x": -205,
+"y": 255,
+"modelo": "hotelito",
+"desc": "El hotel de la calle de los Tilos. En la madrugada de «Лабиринт забвения» los turistas duermen aquí, en «La Fortaleza» y en veinte departamentos alquilados por día. No duerme nadie más que Semión.",
+"nombre_ru": "Гостиница «Липы»",
+"desc_ru": "Гостиница на Липовой. На рассвете в «Лабиринте забвения» туристы спят здесь, в «Крепости» и в двух десятках квартир, которые сдают посуточно. Не спит только Семён.",
+"apar": [
+{
+"n": "volny-lyubvi-labirint-zabveniya",
+"c": [
+[
+"3",
+"Западные ворота"
+]
+]
+}
+]
+}
+]
+};
 export const NOVELAS = {
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
-"l": "ru",
-"y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
-"tr": {}
-},
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"la-voix": {
-"t": "La voix",
-"es": "La voz (fr.)",
-"l": "fr",
-"y": null,
-"ru": "Голос (фр.)",
-"p": "img/portadas/la-voix.webp",
-"tr": {
-"ru": "golos"
-}
-},
-"il-treno-fantasma": {
-"t": "Il treno fantasma",
-"es": "El tren fantasma (it.)",
-"l": "it",
-"y": null,
-"ru": "Призрачный поезд (ит.)",
-"p": "img/portadas/il-treno-fantasma.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
 "ondas-de-amor": {
 "t": "Ondas de amor",
 "es": "Ondas de amor",
@@ -8910,41 +10085,25 @@ export const NOVELAS = {
 "it": "onde-d-amore"
 }
 },
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
+"tr": {}
+},
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
 "l": "it",
 "y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
-"tr": {}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
-"y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
-"tr": {}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
-"l": "es",
-"y": 2026,
-"ru": "Любовь в космосе",
-"p": "img/portadas/amor-en-el-cosmos.webp",
-"tr": {}
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
+"tr": {
+"ru": "tikhaya-lyubov"
+}
 },
 "tajna-v-biblioteke": {
 "t": "Тайна в библиотеке",
@@ -8953,27 +10112,6 @@ export const NOVELAS = {
 "y": 2026,
 "ru": "Тайна в библиотеке",
 "p": "img/portadas/tajna-v-biblioteke.webp",
-"tr": {}
-},
-"prizrachnyj-poezd": {
-"t": "Призрачный поезд",
-"es": "El tren fantasma (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Призрачный поезд",
-"p": "img/portadas/prizrachnyj-poezd.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"it": "il-treno-fantasma"
-}
-},
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
 "tr": {}
 },
 "grustnyj-gorod": {
@@ -8987,16 +10125,23 @@ export const NOVELAS = {
 "it": "la-citta-triste"
 }
 },
-"la-citta-triste": {
-"t": "La città triste",
-"es": "La ciudad triste (it.)",
-"l": "it",
-"y": 2025,
-"ru": "Грустный город (ит.)",
-"p": "img/portadas/la-citta-triste.webp",
-"tr": {
-"ru": "grustnyj-gorod"
-}
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
+"tr": {}
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
 },
 "pokhititel-serdec-portret-osnovatelya": {
 "t": "Похититель сердец: Портрет основателя",
@@ -9018,52 +10163,14 @@ export const NOVELAS = {
 "ru": "meteoritnyj-dozhd"
 }
 },
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
-"l": "ru",
+"27-ocak": {
+"t": "27 Ocak",
+"es": "27 de enero",
+"l": "tr",
 "y": 2026,
-"ru": "Алмазный дождь",
-"p": "img/portadas/almaznyj-dozhd.webp",
+"ru": "27 января",
+"p": "img/portadas/27-ocak.webp",
 "tr": {}
-},
-"znak": {
-"t": "Знак",
-"es": "El signo",
-"l": "ru",
-"y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
-"tr": {}
-},
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
-"tr": {}
-},
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Люблю тебя молча (ит.)",
-"p": "img/portadas/ti-amo-in-silenzio.webp",
-"tr": {
-"ru": "tikhaya-lyubov"
-}
 },
 "onde-d-amore": {
 "t": "Onde d'amore",
@@ -9076,62 +10183,57 @@ export const NOVELAS = {
 "es": "ondas-de-amor"
 }
 },
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
-"tr": {}
-},
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
-"l": "ru",
-"y": 2026,
-"ru": "Карнавал Синеи",
-"p": "img/portadas/karnaval-sinei.webp",
-"tr": {}
-},
-"el-tren-fantasma": {
-"t": "El tren fantasma",
-"es": "El tren fantasma",
-"l": "es",
-"y": null,
-"ru": "Призрачный поезд (исп.)",
-"p": "img/portadas/el-tren-fantasma.webp",
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
 "tr": {
-"it": "il-treno-fantasma",
-"ru": "prizrachnyj-poezd"
+"it": "ti-amo-in-silenzio"
 }
 },
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
-"l": "ru",
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
+"l": "it",
 "y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
 "tr": {}
 },
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
-"l": "es",
+"la-voix": {
+"t": "La voix",
+"es": "La voz (fr.)",
+"l": "fr",
 "y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
+"ru": "Голос (фр.)",
+"p": "img/portadas/la-voix.webp",
+"tr": {
+"ru": "golos"
+}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
 "tr": {}
 },
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви",
-"p": "img/portadas/volny-lyubvi.webp",
-"tr": {}
+"il-treno-fantasma": {
+"t": "Il treno fantasma",
+"es": "El tren fantasma (it.)",
+"l": "it",
+"y": null,
+"ru": "Призрачный поезд (ит.)",
+"p": "img/portadas/il-treno-fantasma.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"ru": "prizrachnyj-poezd"
+}
 },
 "golos": {
 "t": "Голос",
@@ -9144,42 +10246,22 @@ export const NOVELAS = {
 "fr": "la-voix"
 }
 },
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
-"l": "es",
-"y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
-"tr": {}
-},
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
 "l": "ru",
 "y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
 "tr": {}
 },
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
 "l": "ru",
 "y": 2026,
-"ru": "Тихая любовь",
-"p": "img/portadas/tikhaya-lyubov.webp",
-"tr": {
-"it": "ti-amo-in-silenzio"
-}
-},
-"27-ocak": {
-"t": "27 Ocak",
-"es": "27 de enero",
-"l": "tr",
-"y": 2026,
-"ru": "27 января",
-"p": "img/portadas/27-ocak.webp",
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
 "tr": {}
 },
 "opasnoe-svidanie": {
@@ -9193,13 +10275,147 @@ export const NOVELAS = {
 "en": "the-date"
 }
 },
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
+"el-tren-fantasma": {
+"t": "El tren fantasma",
+"es": "El tren fantasma",
+"l": "es",
+"y": null,
+"ru": "Призрачный поезд (исп.)",
+"p": "img/portadas/el-tren-fantasma.webp",
+"tr": {
+"it": "il-treno-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"la-citta-triste": {
+"t": "La città triste",
+"es": "La ciudad triste (it.)",
+"l": "it",
+"y": 2025,
+"ru": "Грустный город (ит.)",
+"p": "img/portadas/la-citta-triste.webp",
+"tr": {
+"ru": "grustnyj-gorod"
+}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
+"y": 2026,
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"tr": {}
+},
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
+"l": "es",
+"y": 2026,
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
+"tr": {}
+},
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
+"tr": {}
+},
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"tr": {}
+},
+"prizrachnyj-poezd": {
+"t": "Призрачный поезд",
+"es": "El tren fantasma (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Призрачный поезд",
+"p": "img/portadas/prizrachnyj-poezd.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"it": "il-treno-fantasma"
+}
+},
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
+"l": "es",
+"y": null,
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
+"tr": {}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
+"tr": {}
+},
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
+"l": "ru",
+"y": 2026,
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
+"tr": {}
+},
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
+"l": "ru",
+"y": 2026,
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
+"tr": {}
+},
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
+"l": "ru",
+"y": 2026,
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
 "tr": {}
 }
 };

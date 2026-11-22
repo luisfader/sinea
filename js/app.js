@@ -1,10 +1,11 @@
 // Sinea 3D — aplicación principal
 import * as THREE from './vendor/three.module.js';
 import { MapControls } from './vendor/MapControls.js';
-import { LIMITES, BARRIOS, CALLES, BORDES, altura } from './mundo.js';
+import { LIMITES, BARRIOS, CALLES, BORDES, EXTRAS, VISTA, NOMBRE, LEMA, CIUDAD, altura } from './mundo.js';
 import { pintarSuelo, crearTerreno, crearMar, crearEdificios, crearArboles, crearPuentes, crearAfueras } from './escena.js';
 import { construirHitos, crearDelfines, crearTrenFantasma } from './hitos.js';
-import { LUGARES, NOVELAS, IDIOMAS, IDIOMAS_RU } from './datos.js';
+import { CIUDADES, NOVELAS, IDIOMAS, IDIOMAS_RU } from './datos.js';
+const LUGARES = CIUDADES[CIUDAD];
 
 /* ---------------- idioma ---------------- */
 let lang = (new URLSearchParams(location.search).get('lang') || (() => { try { return localStorage.getItem('sinea-lang'); } catch (e) { return null; } })() || (navigator.language || '').slice(0, 2)) === 'ru' ? 'ru' : 'es';
@@ -83,20 +84,21 @@ async function construir() {
   edificios = crearEdificios(hitos.reservas, U); escena.add(edificios);
   progreso('Plantando árboles…', 'Сажаем деревья…'); await espera();
   escena.add(crearArboles(hitos.reservas)); escena.add(crearPuentes());
-  delf = crearDelfines(); escena.add(delf.g);
-  tren = crearTrenFantasma(); escena.add(tren.g);
+  if (EXTRAS.includes('delfines')) { delf = crearDelfines(); escena.add(delf.g); }
+  if (EXTRAS.includes('tren-fantasma')) { tren = crearTrenFantasma(); escena.add(tren.g); }
+  if (EXTRAS.includes('tren-girasoles')) { tren = crearTrenFantasma({ fantasma: false, vagones: 5, s0: 200, s1: 3900, vel: 22 }); escena.add(tren.g); }
 }
 
 /* ------------------------------------------------------------------ */
 const controles = new MapControls(camara, renderer.domElement);
 controles.enableDamping = true; controles.dampingFactor = 0.09;
 controles.zoomToCursor = true; controles.screenSpacePanning = false;
-controles.minDistance = 40; controles.maxDistance = 9500; controles.maxPolarAngle = 1.36;
+controles.minDistance = 40; controles.maxDistance = VISTA.lejos; controles.maxPolarAngle = 1.36;
 controles.zoomSpeed = 1.3;
 
 function vistaInicial() {
-  controles.target.set(700, 0, 500);
-  camara.position.set(-600, 2600, 3300);
+  controles.target.set(VISTA.previa[0], 0, VISTA.previa[1]);
+  camara.position.set(VISTA.previa[0] - 1300, VISTA.lejos * .28, VISTA.previa[1] + VISTA.lejos * .35);
   controles.update();
 }
 
@@ -166,7 +168,8 @@ for (const b of BARRIOS) if (b.nombre) {
   ETQ.push({ el, texto: () => tr(b.nombre, b.ru || b.nombre), x: b.lx, y: b.ly, imp: 3.5, tipo: 'barrio' });
 }
 for (const b of BORDES) {
-  const el = document.createElement('div'); el.className = b.mar ? 'mar' : 'borde'; capa.appendChild(el);
+  const el = document.createElement(b.ciudad ? 'a' : 'div'); el.className = b.mar ? 'mar' : 'borde' + (b.ciudad ? ' enlace' : ''); capa.appendChild(el);
+  if (b.ciudad) el.addEventListener('click', (e) => { e.preventDefault(); irCiudad(b.ciudad); });
   ETQ.push({ el, texto: () => tr(b.texto, b.ru || b.texto), x: b.x, y: b.y, imp: 9, tipo: b.mar ? 'mar' : 'borde' });
 }
 for (const [nombre, t, pts, nru] of CALLES) {
@@ -185,7 +188,7 @@ function proyectar(x, y, h, out) {
 }
 function etiquetas() {
   const dist = camara.position.distanceTo(controles.target);
-  const zoom = Math.log2(9000 / dist); // 0 lejos … 7 cerca
+  const zoom = Math.log2(9000 / dist) + (VISTA.zoomExtra || 0); // 0 lejos … 7 cerca
   const ocupados = [];
   const choca = (r) => ocupados.some(o => r.x < o.x + o.w && r.x + r.w > o.x && r.y < o.y + o.h && r.y + r.h > o.y);
   const o = {};
@@ -312,11 +315,11 @@ const PERSONAJES = {
 /* ------------------------------------------------------------------ */
 let ruta = null;
 const sel = $('#novela');
-const usadas = Object.keys(NOVELAS).map(s => [s, LUGARES.filter(L => L.apar.some(a => a.n === s)).length]).sort((a, b) => tituloNovela(a[0]).localeCompare(tituloNovela(b[0]), 'es'));
+const usadas = Object.keys(NOVELAS).map(s => [s, LUGARES.filter(L => L.apar.some(a => a.n === s)).length]).filter(x => x[1] > 0).sort((a, b) => tituloNovela(a[0]).localeCompare(tituloNovela(b[0]), 'es'));
 function llenarSelect() {
   const v = sel.value;
   const us = usadas.slice().sort((a, b) => tituloNovela(a[0]).localeCompare(tituloNovela(b[0]), lang));
-  sel.innerHTML = `<option value="">${tr('Todas las novelas y personajes', 'Все романы и персонажи')}</option><optgroup label="${tr('En la ciudad', 'В городе')}"><option value="c:casa">${tr('Casas de los personajes', 'Дома персонажей')}</option><option value="c:res">${tr('Lugares con reseñas', 'Места с отзывами')}</option></optgroup><optgroup label="${tr('Personajes', 'Персонажи')}">` + Object.entries(PERSONAJES).map(([k, p]) => `<option value="p:${k}">${esc(pN(p))}</option>`).join('') + `</optgroup><optgroup label="${tr('Novelas', 'Романы')}">` + us.map(([s, n]) => `<option value="${s}">${esc(tituloNovela(s))} (${n})</option>`).join('') + '</optgroup>';
+  sel.innerHTML = `<option value="">${tr('Todas las novelas y personajes', 'Все романы и персонажи')}</option><optgroup label="${tr('En la ciudad', 'В городе')}"><option value="c:casa">${tr('Casas de los personajes', 'Дома персонажей')}</option><option value="c:res">${tr('Lugares con reseñas', 'Места с отзывами')}</option></optgroup><optgroup label="${tr('Personajes', 'Персонажи')}">` + Object.entries(PERSONAJES).filter(([k, p]) => LUGARES.some(L => L.apar.some(a => p[1].includes(a.n)))).map(([k, p]) => `<option value="p:${k}">${esc(pN(p))}</option>`).join('') + `</optgroup><optgroup label="${tr('Novelas', 'Романы')}">` + us.map(([s, n]) => `<option value="${s}">${esc(tituloNovela(s))} (${n})</option>`).join('') + '</optgroup>';
   sel.value = v;
 }
 sel.onchange = () => aplicarFiltro(sel.value || null, true);
@@ -337,7 +340,7 @@ function aplicarFiltro(slug, mover) {
   // panel con el recorrido
   cuerpo.innerHTML = `<div class="cab nv">${n.p ? `<img class="portg" src="${n.p}" alt="">` : ''}<div><span class="cat" style="--c:#444">${tr('Recorrido', 'Маршрут')}</span><h2>${esc(tituloNovela(slug))}</h2><div class="otros">${n.t !== tituloNovela(slug) ? esc(n.t) + ' · ' : ''}${esc(tr(IDIOMAS[n.l], IDIOMAS_RU[n.l]) || '')}${n.y ? ' · ' + n.y : ''}</div>
     <div class="acciones"><a href="${LITMIR}${slug}" target="_blank" rel="noopener">${tr('Leer en LitFader', 'Читать на ЛитФадере')}</a><button data-filtro="">${tr('Quitar filtro', 'Снять фильтр')}</button></div></div></div>
-    <p class="desc">${tr('Los lugares de Sinea por los que pasa la novela, en el orden en que aparecen.', 'Места Синеи, через которые проходит роман, в порядке появления.')}</p>
+    <p class="desc">${tr(`Los lugares de ${NOMBRE.es} por los que pasa la novela, en el orden en que aparecen.`, `Места ${NOMBRE.gen}, через которые проходит роман, в порядке появления.`)}</p>
     <ol class="lista">${lugares.map(({ L, c, a }) => `<li><button data-lugar="${L.id}"><b>${esc(nomL(L))}</b><span>${tr('desde el cap.', 'с главы')} ${c} · ${a.c.length} ${tr('cap.', 'гл.')}</span></button></li>`).join('')}</ol>`;
   panel.classList.add('abierto'); seleccion = null;
   $('#recorrido').hidden = false; $('#recorrido span').textContent = tituloNovela(slug); filtroActual = slug;
@@ -370,7 +373,7 @@ function filtroCategoria(k, mover) {
   panel.classList.add('abierto'); seleccion = null; filtroActual = 'c:' + k;
   $('#recorrido').hidden = false; $('#recorrido span').textContent = tit;
   history.replaceState(null, '', urlCon('#/'));
-  if (mover) volar(500, -300, 3400, 0.85);
+  if (mover) volar(...VISTA.cat);
 }
 function filtroPersonaje(k, mover) {
   const P = PERSONAJES[k]; if (!P) return;
@@ -378,7 +381,7 @@ function filtroPersonaje(k, mover) {
   const lugares = LUGARES.map(L => { const ap = L.apar.filter(a => filtro.has(a.n)); return ap.length ? { L, ap, n: ap.reduce((s, a) => s + a.c.length, 0) } : null; }).filter(Boolean).sort((a, b) => b.n - a.n);
   cuerpo.innerHTML = `<div class="cab"><span class="cat" style="--c:#444">${tr('Personaje', 'Персонаж')}</span><h2>${esc(pN(P))}</h2><div class="otros">${esc(pD(P))}</div>
     <div class="acciones"><button data-filtro="">${tr('Quitar filtro', 'Снять фильтр')}</button></div></div>
-    <p class="desc">${tr('Los lugares de Sinea por los que pasa, ordenados por cuántas veces aparecen en sus novelas.', 'Места Синеи, где бывает герой, — по тому, как часто они встречаются в его романах.')}</p>
+    <p class="desc">${tr(`Los lugares de ${NOMBRE.es} por los que pasa, ordenados por cuántas veces aparecen en sus novelas.`, `Места ${NOMBRE.gen}, где бывает герой, — по тому, как часто они встречаются в его романах.`)}</p>
     <ol class="lista">${lugares.map(({ L, ap, n }) => `<li><button data-lugar="${L.id}"><b>${esc(nomL(L))}</b><span>${ap.map(a => esc(tituloNovela(a.n))).join(' · ')} · ${n} ${tr('cap.', 'гл.')}</span></button></li>`).join('')}</ol>`;
   panel.classList.add('abierto'); seleccion = null;
   $('#recorrido').hidden = false; $('#recorrido span').textContent = pN(P); filtroActual = 'p:' + k;
@@ -406,7 +409,7 @@ bus.addEventListener('input', () => {
   res.innerHTML = pers.map(([k, p]) => `<button data-personaje="${k}"><svg viewBox="0 0 24 24" style="fill:#e8453c"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0z"/></svg><span><b>${esc(pN(p))}</b><small>${tr('Personaje · ver sus lugares', 'Персонаж · его места')}</small></span></button>`).join('') + lug.map(([s, L]) => `<button data-lugar="${L.id}"><svg viewBox="0 0 24 24" style="fill:${(CAT[L.cat] || CAT.edificio)[1]}">${ICONO[L.cat] || ''}</svg><span><b>${esc(nomL(L))}</b><small>${s === 1 ? esc(fragmento(descL(L), q)) : esc(tr((CAT[L.cat] || [''])[0], (CAT[L.cat] || ['', '', ''])[2]))}</small></span></button>`).join('')
     + nov.map(([s, n]) => `<button data-novela="${s}"><svg viewBox="0 0 24 24" style="fill:#444"><path d="M5 3h11a3 3 0 013 3v15H8a3 3 0 01-3-3z"/></svg><span><b>${esc(tituloNovela(s))}</b><small>${tr('Novela · ver su recorrido', 'Роман · маршрут по городу')}</small></span></button>`).join('')
     + calles.map(c => `<button data-calle="${esc(c[0])}"><svg viewBox="0 0 24 24" style="fill:#999"><path d="M10 2h4v20h-4z"/></svg><span><b>${esc(tr(c[0], c[3] || c[0]))}</b><small>${tr('Calle', 'Улица')}</small></span></button>`).join('')
-    || `<div class="nada">${tr('Nada con ese nombre en Sinea… todavía.', 'В Синее такого пока нет…')}</div>`;
+    || `<div class="nada">${tr(`Nada con ese nombre en ${NOMBRE.es}… todavía.`, 'Здесь такого пока нет…')}</div>`;
   res.hidden = false;
 });
 function fragmento(t, q) { const i = norm(t).indexOf(q); return (i > 30 ? '…' : '') + t.slice(Math.max(0, i - 30), i + 50) + '…'; }
@@ -435,7 +438,7 @@ $('#b-3d').onclick = () => {
   const plano = sph.phi < 0.2; volar(t.x, -t.z, sph.radius, plano ? 0.95 : 0.01, null, 800);
   $('#b-3d').textContent = plano ? '2D' : '3D';
 };
-$('#b-casa').onclick = () => { volar(800, -100, 4600, 0.85, 0.5); };
+$('#b-casa').onclick = () => { volar(...VISTA.toda); };
 
 // clic sobre el mapa: lugar más cercano al punto
 const ray = new THREE.Raycaster(), mouse = new THREE.Vector2();
@@ -492,25 +495,31 @@ function cuadro() {
 /* ------------------------------------------------------------------ */
 /* Cambio de idioma                                                    */
 /* ------------------------------------------------------------------ */
-function urlCon(hash) { return location.pathname + (lang === 'ru' ? '?lang=ru' : '') + hash; }
+function urlCon(hash) {
+  const q = new URLSearchParams(); if (CIUDAD !== 'sinea') q.set('ciudad', CIUDAD); if (lang === 'ru') q.set('lang', 'ru');
+  const qs = q.toString(); return location.pathname.replace(/verdegrad\.html$/, 'index.html') + (qs ? '?' + qs : '') + hash;
+}
+function irCiudad(c) { const q = new URLSearchParams(); if (c !== 'sinea') q.set('ciudad', c); if (lang === 'ru') q.set('lang', 'ru'); location.href = location.pathname.replace(/verdegrad\.html$/, 'index.html') + (q.toString() ? '?' + q : ''); }
+document.querySelectorAll('#ciudad button').forEach(b => { b.classList.toggle('on', b.dataset.c === CIUDAD); b.onclick = () => { if (b.dataset.c !== CIUDAD) irCiudad(b.dataset.c); }; });
 const ESTATICO = [
-  ['#buscar', 'placeholder', 'Buscar en Sinea: un lugar, una novela, un personaje…', 'Поиск по Синее: место, роман, персонаж…'],
+  ['#buscar', 'placeholder', `Buscar en ${NOMBRE.es}: un lugar, una novela, un personaje…`, `Поиск по ${NOMBRE.dat}: место, роман, персонаж…`],
   ['#novela', 'aria-label', 'Filtrar por novela', 'Фильтр по роману'],
   ['#b-norte', 'title', 'Mirar al norte', 'На север'], ['#b-3d', 'title', 'Vista 2D / 3D', 'Вид 2D / 3D'],
   ['#b-noche', 'title', 'Hacer de noche', 'Сделать ночь'], ['#b-casa', 'title', 'Ver toda la ciudad', 'Весь город'],
   ['#b-mas', 'title', 'Acercar', 'Приблизить'], ['#b-menos', 'title', 'Alejar', 'Отдалить'],
   ['#panel .cerrar', 'title', 'Cerrar', 'Закрыть'], ['#recorrido button', 'title', 'Quitar filtro', 'Снять фильтр'],
   ['#recorrido b', 'text', 'Recorrido:', 'Маршрут:'],
-  ['#carga .sub', 'text', '«una ciudad de nieblas, de silencio y de deseos no dichos»', '«город туманов, тишины и невысказанных желаний»'],
-  ['#pie', 'html', '<b>Sinea</b> · la ciudad de las novelas de <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Robert Fader</a> · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Faderpedia</a> · <span class="ayuda">arrastrá para moverte · clic derecho o dos dedos para girar · rueda para el zoom</span>',
-    '<b>Синея</b> · город из романов <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Роберта Фадера</a> · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Фадерпедия</a> · <span class="ayuda">тяните, чтобы двигаться · правая кнопка или два пальца — поворот · колесо — масштаб</span>']
+  ['#carga .sub', 'text', LEMA.es, LEMA.ru],
+  ['#pie', 'html', `<b>${NOMBRE.es}</b> · ${CIUDAD === 'sinea' ? 'la ciudad' : 'un pueblo'} de las novelas de <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Robert Fader</a> · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Faderpedia</a> · <span class="ayuda">arrastrá para moverte · clic derecho o dos dedos para girar · rueda para el zoom</span>`,
+    `<b>${NOMBRE.ru}</b> · ${CIUDAD === 'sinea' ? 'город' : 'городок'} из романов <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Роберта Фадера</a> · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Фадерпедия</a> · <span class="ayuda">тяните, чтобы двигаться · правая кнопка или два пальца — поворот · колесо — масштаб</span>`]
 ];
 function ponerIdioma(l, refrescar = true) {
   lang = l === 'ru' ? 'ru' : 'es';
   try { localStorage.setItem('sinea-lang', lang); } catch (e) {}
   document.documentElement.lang = lang;
-  document.title = tr('Sinea — el mapa 3D de la ciudad de Robert Fader', 'Синея — 3D-карта города Роберта Фадера');
-  $('#carga .logo').textContent = tr('Sinea', 'Синея');
+  document.title = tr(`${NOMBRE.es} — el mapa 3D de la ciudad de Robert Fader`, `${NOMBRE.ru} — 3D-карта города Роберта Фадера`);
+  $('#carga .logo').textContent = tr(NOMBRE.es, NOMBRE.ru);
+  document.querySelectorAll('#ciudad button').forEach(b => b.textContent = tr(b.dataset.es, b.dataset.ru));
   for (const [q, at, es, ru] of ESTATICO) { const el = $(q); if (!el) continue; const v = tr(es, ru); if (at === 'text') el.textContent = v; else if (at === 'html') el.innerHTML = v; else el.setAttribute(at, v); }
   document.querySelectorAll('#idioma button').forEach(b => b.classList.toggle('on', b.dataset.l === lang));
   for (const E of ETQ) { const t = E.texto(); const nm = E.el.querySelector('.nm'); (nm || E.el).textContent = t; if (E.titulo) E.el.title = E.titulo(); E.w = 0; E.hh = 0; }
@@ -541,6 +550,6 @@ addEventListener('hashchange', ruta0);
   catch (e) { console.error(e); progreso('Error: ' + e.message); return; }
   $('#carga').classList.add('fuera');
   cuadro();
-  if (!ruta0()) setTimeout(() => volar(1000, -300, 2700, 0.98, 0.62, 3200), 400);
+  if (!ruta0()) setTimeout(() => volar(...VISTA.inicio, 3200), 400);
   window.SINEA = { escena, camara, controles, volar, abrirLugar, aplicarFiltro, noche: (v) => { nocheObj = v; noche = v; }, n: edificios.userData.n };
 })();

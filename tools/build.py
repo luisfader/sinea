@@ -46,6 +46,16 @@ NOVELAS_RU = {
 }
 LANG_RU = {'ru': 'русский', 'es': 'испанский', 'it': 'итальянский', 'fr': 'французский', 'en': 'английский', 'tr': 'турецкий'}
 LANG = {'ru': 'ruso', 'es': 'español', 'it': 'italiano', 'fr': 'francés', 'en': 'inglés', 'tr': 'turco'}
+# Novelas que se buscan para cada ciudad (Sinea usa todas las de NOVELAS)
+CIUDADES = {
+    'sinea': {'dir': 'data', 'novelas': None},
+    'verdegrad': {'dir': os.path.join('data', 'verdegrad'), 'novelas': [
+        'volny-lyubvi-krepost', 'volny-lyubvi-narisovannyj-mir', 'volny-lyubvi-labirint-zabveniya', 'onde-d-amore',
+        'volny-lyubvi-gorod-bez-ulybok', 'pokhititel-serdec-portret-osnovatelya', 'tajna-v-biblioteke', 'karnaval-sinei'],
+     # capítulos que pasan en Verdegrad (el resto ocurre en Sinea, en Новая Любовь o en la Ciudad del Norte)
+     'rangos': {'volny-lyubvi-narisovannyj-mir': [(1, 13)], 'volny-lyubvi-labirint-zabveniya': [(1, 6)],
+                'volny-lyubvi-gorod-bez-ulybok': [(1, 3), (43, 44)], 'onde-d-amore': [(11, 20)]}},
+}
 # Excepciones: patrones demasiado generales que solo valen en ciertas novelas
 SOLO = {
     'faro-ael': None,
@@ -65,15 +75,6 @@ SOLO = {
 def main():
     cat = json.load(open(os.path.join(LIT, 'novels', 'catalog.json')))['novels']
     cat = {n['slug']: n for n in cat}
-    src = json.load(open(os.path.join(ROOT, 'data', 'lugares.json')))
-    lugares = src['lugares']
-    ru = json.load(open(os.path.join(ROOT, 'data', 'lugares.ru.json')))
-    resenas = json.load(open(os.path.join(ROOT, 'data', 'resenas.json')))
-    for k in resenas:
-        if not k.startswith('_') and k not in {L['id'] for L in lugares}:
-            print('  reseñas para un lugar que no existe:', k)
-
-    # textos y rutas de capítulos
     textos, titulos = {}, {}
     seg = _SEG
     for slug in NOVELAS:
@@ -82,10 +83,10 @@ def main():
         for c in n['chapters']:
             f = c['file']
             if c.get('label'):
-                e += 1; s = f'extra-{e}'
+                e += 1; sg = f'extra-{e}'
             else:
-                k += 1; s = str(k)
-            seg[(slug, f)] = s
+                k += 1; sg = str(k)
+            seg[(slug, f)] = sg
             titulos[(slug, f)] = c.get('title', '')
             p = os.path.join(LIT, 'novels', slug, f)
             if os.path.exists(p):
@@ -93,27 +94,63 @@ def main():
                 # glosario de las novelas para estudiantes: **palabra**{traducción|...}
                 t = re.sub(r'\*\*([^*\n]+)\*\*\{[^}\n]*\}', r'\1', t).replace('**', '')
                 textos[(slug, f)] = t
-
-    out_lugares, usadas = [], set()
     os.makedirs(os.path.join(ROOT, 'img', 'lugares'), exist_ok=True)
     os.makedirs(os.path.join(ROOT, 'img', 'portadas'), exist_ok=True)
+    salida, usadas = {}, set()
+    for ciudad, cfg in CIUDADES.items():
+        print(f'== {ciudad}')
+        salida[ciudad] = procesar(cfg, textos, titulos, seg, usadas)
+
+    novelas = {}
+    for slug in usadas:
+        n = cat[slug]
+        portada = reducir(os.path.join(LIT, n['cover']), os.path.join('img', 'portadas', slug + '.webp'), 180) if n.get('cover') else None
+        novelas[slug] = {'t': n['title'], 'es': NOVELAS[slug] or n['title'], 'l': n['lang'], 'y': n.get('year'),
+                         'ru': n['title'] if n['lang'] == 'ru' else NOVELAS_RU.get(slug, n['title']), 'p': portada, 'tr': n.get('translations') or {}}
+    js = ('// Generado por tools/build.py a partir de data/ y de litmir. No editar a mano.\n'
+          'export const CIUDADES = ' + json.dumps(salida, ensure_ascii=False, indent=0) + ';\n'
+          'export const NOVELAS = ' + json.dumps(novelas, ensure_ascii=False, indent=0) + ';\n'
+          'export const IDIOMAS = ' + json.dumps(LANG, ensure_ascii=False) + ';\n'
+          'export const IDIOMAS_RU = ' + json.dumps(LANG_RU, ensure_ascii=False) + ';\n')
+    open(os.path.join(ROOT, 'js', 'datos.js'), 'w', encoding='utf-8').write(js)
+    print(f"{sum(len(v) for v in salida.values())} lugares, {len(novelas)} novelas")
+
+
+def procesar(cfg, textos, titulos, seg, usadas):
+    d = os.path.join(ROOT, cfg['dir'])
+    lugares = json.load(open(os.path.join(d, 'lugares.json')))['lugares']
+    ru = json.load(open(os.path.join(d, 'lugares.ru.json')))
+    resenas = json.load(open(os.path.join(d, 'resenas.json')))
+    ids = {L['id'] for L in lugares}
+    for k in resenas:
+        if not k.startswith('_') and k not in ids:
+            print('  reseñas para un lugar que no existe:', k)
+    novs = cfg['novelas'] or list(NOVELAS)
+    out = []
     for L in lugares:
         rx = re.compile(L['buscar'], re.I) if L.get('buscar') else None
-        solo = SOLO.get(L['id'])
-        hits = collections.OrderedDict()
-        primera = {}
+        solo = L.get('solo') or SOLO.get(L['id'])
+        excl = set(L.get('excluir') or [])
+        hits = collections.OrderedDict(); primera = {}
+        rangos = cfg.get('rangos') or {}
+        def ok(slug, f):
+            if slug not in novs or slug in excl or (solo and slug not in solo):
+                return False
+            if slug in rangos:
+                num = int(f[:2]) if f[:2].isdigit() else 0
+                return any(a <= num <= b for a, b in rangos[slug])
+            return True
         if rx:
             for (slug, f), t in textos.items():
-                if solo and slug not in solo:
+                if not ok(slug, f):
                     continue
                 m = rx.search(t)
                 if m:
-                    hits.setdefault(slug, []).append(f)
-                    primera.setdefault((slug, f), m.start())
+                    hits.setdefault(slug, []).append(f); primera.setdefault((slug, f), m.start())
         for slug, r2 in (L.get('buscar_en') or {}).items():
             r2 = re.compile(r2, re.I)
             for (s2, f), t in textos.items():
-                if s2 == slug:
+                if s2 == slug and ok(slug, f):
                     m = r2.search(t)
                     if m and f not in hits.setdefault(slug, []):
                         hits[slug].append(f); primera.setdefault((slug, f), m.start())
@@ -123,8 +160,8 @@ def main():
                 if f not in hits.setdefault(slug, []):
                     hits[slug].append(f)
         apar = []
-        for slug in NOVELAS:  # orden fijo
-            if slug not in hits:
+        for slug in NOVELAS:
+            if not hits.get(slug):
                 continue
             cs = [[seg.get((slug, f), f[:-3].lstrip('0')), titulos.get((slug, f), '')] for f in set(hits[slug])]
             cs.sort(key=lambda c: (c[0].startswith('extra'), int(re.sub(r'\D', '', c[0]) or 0)))
@@ -133,8 +170,7 @@ def main():
         apar.sort(key=lambda a: -len(a['c']))
         if L.get('ilustracion'):
             sl, fn = L['ilustracion']
-            rel = os.path.join('novels', sl, 'img', fn)
-            r = reducir(os.path.join(LIT, rel), os.path.join('img', 'lugares', L['id'] + '.webp'), 640)
+            r = reducir(os.path.join(LIT, 'novels', sl, 'img', fn), os.path.join('img', 'lugares', L['id'] + '.webp'), 640)
             img = {'src': r, 'n': sl, 'c': seg_of(sl, fn.split('-')[0].split('.')[0] + '.md')} if r else None
         else:
             img = elegir_ilustracion(L['id'], apar, hits, primera, textos)
@@ -148,23 +184,9 @@ def main():
             o['res'] = resenas[L['id']]
         if img:
             o['img'] = img
-        out_lugares.append(o)
-
-    novelas = {}
-    for slug in usadas:
-        n = cat[slug]
-        portada = reducir(os.path.join(LIT, n['cover']), os.path.join('img', 'portadas', slug + '.webp'), 180) if n.get('cover') else None
-        novelas[slug] = {'t': n['title'], 'es': NOVELAS[slug] or n['title'], 'l': n['lang'], 'y': n.get('year'),
-                         'ru': n['title'] if n['lang'] == 'ru' else NOVELAS_RU.get(slug, n['title']), 'p': portada, 'tr': n.get('translations') or {}}
-    js = ('// Generado por tools/build.py a partir de data/lugares.json y de litmir. No editar a mano.\n'
-          'export const LUGARES = ' + json.dumps(out_lugares, ensure_ascii=False, indent=0) + ';\n'
-          'export const NOVELAS = ' + json.dumps(novelas, ensure_ascii=False, indent=0) + ';\n'
-          'export const IDIOMAS = ' + json.dumps(LANG, ensure_ascii=False) + ';\n'
-          'export const IDIOMAS_RU = ' + json.dumps(LANG_RU, ensure_ascii=False) + ';\n')
-    open(os.path.join(ROOT, 'js', 'datos.js'), 'w', encoding='utf-8').write(js)
-    print(f'{len(out_lugares)} lugares, {len(novelas)} novelas')
-    for o in out_lugares:
+        out.append(o)
         print(f"  {o['id']:24} {sum(len(a['c']) for a in o['apar']):3} caps en {len(o['apar']):2} novelas  {'img' if o.get('img') else '---'}")
+    return out
 
 
 IMG_RX = re.compile(r'!\[[^\]]*\]\((novels/[^)]+\.(?:jpe?g|png|webp))\)', re.I)

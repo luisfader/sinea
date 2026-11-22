@@ -1,4 +1,11 @@
-# Sinea — el mapa 3D · Синея — 3D-карта
+# Sinea y Verdegrad — mapas 3D · Синея и Вердеград — 3D-карты
+
+Dos mapas en el mismo sitio, con el selector **Sinea | Verdegrad** arriba:
+
+- **Sinea**, la ciudad junto al mar: `index.html`
+- **Verdegrad**, el pueblo verde de Natalia, con su fortaleza en la penumbra: `index.html?ciudad=verdegrad` (o `verdegrad.html`)
+
+Los rótulos verdes en el borde del mapa también llevan de una ciudad a la otra («← Verdegrad · estación Nubecita» en Sinea; «← Antiguo camino a Sinea» en Verdegrad).
 
 **Bilingüe: español y ruso.** El botón ES/RU de arriba cambia todo al instante (interfaz, lugares, descripciones, calles, barrios, novelas y personajes). El idioma se recuerda, y se puede forzar con `?lang=ru` o `?lang=es` en la dirección: `index.html?lang=ru#/lugar/faro-ael`.
 
@@ -36,17 +43,24 @@ Donde los textos no dicen nada, la ciudad se completó con criterio (casco antig
 index.html            la página
 css/sinea.css         estilos (escritorio y móvil)
 js/app.js             cámara, etiquetas, ficha, búsqueda, filtros, día/noche
-js/mundo.js           geografía: costa, río, colinas, barrios, calles, vías, plazas, parques
+js/mundo.js           elige la ciudad activa y tiene las utilidades geométricas (altura, río, costa)
+js/ciudades/sinea.js  geografía de Sinea: costa, río, colinas, barrios, calles, vías, plazas, parques, vista inicial
+js/ciudades/verdegrad.js  geografía de Verdegrad (sin mar: río, arroyo, estanque, fortaleza, campos)
 js/escena.js          relieve, textura del mapa, mar, edificios generados, árboles, puentes
 js/hitos.js           los edificios famosos en 3D (faro, torre de TV, ayuntamiento, planetario…)
 js/datos.js           GENERADO: lugares + novelas + capítulos
 data/lugares.json     FUENTE: los lugares, escritos a mano
 data/lugares.ru.json  FUENTE: nombre y descripción de cada lugar en ruso (misma clave id)
 data/resenas.json     FUENTE: las reseñas de los personajes (autor ES/RU, estrellas, texto ES/RU)
+data/verdegrad/       lo mismo para Verdegrad: lugares.json, lugares.ru.json, resenas.json
 tools/build.py        cruza data/lugares.json con los textos de litmir y genera js/datos.js e img/
 img/lugares/          una ilustración por lugar (de los capítulos de litmir, reducida a webp)
 img/portadas/         portadas de las novelas
 ```
+
+## Verdegrad
+
+Verdegrad está armado con lo que cuentan «Волны любви: Крепость в полумраке», «Нарисованный мир», «Лабиринт забвения», «Onde d'amore» y «Город без улыбок»: la calle de los Tilos (Липовая) baja suave hasta el mercado junto al campanario, la fortaleza se ve desde cualquier calle, por la calle del Molino se cruza el arroyo, después vienen el callejón de los Zapateros y la iglesia de Santa Ana, y al final de la calle del Oeste están las Puertas del Oeste y el antiguo camino a Sinea. La estación «Nubecita» (Облачко) queda en el borde, donde las calles se vuelven campo. En `tools/build.py` solo se buscan los capítulos que pasan en Verdegrad (por ejemplo, de «Нарисованный мир» solo los capítulos 1–13, porque después la acción se va a Новая Любовь).
 
 ## Añadir o corregir un lugar
 

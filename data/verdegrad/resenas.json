@@ -1,0 +1,57 @@
+{
+ "_info": "Reseñas de los vecinos de Verdegrad. Mismo formato que data/resenas.json.",
+ "vg-casa-natalia": [
+  {"a": "Luis", "ar": "Луис", "s": 5, "es": "Llegué para unos días y me cocinaron ñoquis. Hay un piano de cola que de noche parece esperarme. No es mi casa. Es la de ella. Por eso es la mejor.", "ru": "Приехал на несколько дней, а мне приготовили ньокки. Здесь рояль, который ночью будто ждёт меня. Это не мой дом. Это её дом. Поэтому он лучший."},
+  {"a": "El zorro", "ar": "Лис", "s": 4, "es": "Buen alféizar, buena almohada en la canasta. Le saco una estrella porque primero se compra el pan y después el queso. Error de principiantes.", "ru": "Хороший подоконник, хорошая подушка в корзине. Минус звезда: сначала покупают хлеб, а потом сыр. Ошибка новичков."},
+  {"a": "Víctor", "ar": "Виктор", "s": 5, "es": "Paso todos los días a las seis con el 7. Dos bocinazos. Ella entiende.", "ru": "Проезжаю каждый день в шесть на седьмом. Два сигнала. Она понимает."},
+  {"a": "Antonina Petrovna", "ar": "Антонина Петровна", "s": 5, "es": "Vecina modelo. Le guardé un huesito de pollo a su Pelirrojo y él me miró como si lo hubiera insultado.", "ru": "Образцовая соседка. Отложила её Рыжему куриную косточку, а он посмотрел на меня так, будто я его оскорбила."}
+ ],
+ "vg-mercado": [
+  {"a": "Tía Valia", "ar": "Тётя Валя", "s": 5, "es": "¡Pepinos del Sol! Frasco 800, foto con frasco 200. Ayer vendí veintitrés. El Sol no se enoja. Creo.", "ru": "Огурцы Солнца! Банка — 800, фото с банкой — 200. Вчера продала двадцать три. Солнце не сердится. Кажется."},
+  {"a": "Natalia", "ar": "Наталья", "s": 4, "es": "El mejor mercado del mundo. Le quito una estrella porque ahora mi cara está en los frascos de pepinos.", "ru": "Лучший рынок на свете. Минус звезда: теперь моё лицо на банках с огурцами."},
+  {"a": "Tío Ashot", "ar": "Дядя Ашот", "s": 5, "es": "Choclo asado desde las siete. En Sinea hay un tocayo mío con una shawarma. El choclo es mejor.", "ru": "Жареная кукуруза с семи утра. В Синее есть мой тёзка с шавермой. Кукуруза лучше."},
+  {"a": "El zorro", "ar": "Лис", "s": 3, "es": "Demasiados turistas. Huelen a protector solar y a selfies.", "ru": "Слишком много туристов. Пахнут кремом от загара и селфи."}
+ ],
+ "vg-panaderia-semion": [
+  {"a": "Fiódor Ilich", "ar": "Фёдор Ильич", "s": 5, "es": "Paso a las seis con la bicicleta y ya hay pan. No hay cartas para nadie, pero hay pan.", "ru": "Проезжаю на велосипеде в шесть, а хлеб уже есть. Писем ни для кого нет, но хлеб есть."},
+  {"a": "El zorro", "ar": "Лис", "s": 2, "es": "Bollos con forma de mi cabeza. Los turistas me muerden la oreja. Exijo derechos de imagen.", "ru": "Булочки в форме моей головы. Туристы откусывают мне ухо. Требую авторских отчислений."},
+  {"a": "Semión", "ar": "Семён", "s": 5, "es": "Respuesta del propietario: treinta años horneando. Me acuerdo de todos los nombres. Casi siempre.", "ru": "Ответ владельца: тридцать лет пеку. Помню все имена. Почти всегда."}
+ ],
+ "vg-cafe-golondrina": [
+  {"a": "Alicia", "ar": "Алисия", "s": 5, "es": "Seis mesas, té de lavanda y la mejor conversación que tuve fuera de Sinea. Mercurio estaba retrógrado y aun así funcionó.", "ru": "Шесть столиков, лавандовый чай и лучший разговор, который был у меня за пределами Синеи. Меркурий был ретроградным, и всё равно получилось."},
+  {"a": "Natalia", "ar": "Наталья", "s": 4, "es": "El té, perfecto. El mensaje que le llegó a Alicia en medio del té, no tanto.", "ru": "Чай — идеальный. Сообщение, которое пришло Алисии посреди чаепития, — не очень."}
+ ],
+ "vg-fortaleza": [
+  {"a": "Natalia", "ar": "Наталья", "s": 5, "es": "De día son colinas con pasto. De noche, a veces, la tierra recuerda las murallas. Me nombraron reina aquí. Prefiero ser maestra de música.", "ru": "Днём — холмы с травой. Ночью земля иногда вспоминает стены. Меня здесь провозгласили королевой. Я предпочитаю быть учительницей музыки."},
+  {"a": "Luis", "ar": "Луис", "s": 4, "es": "Precioso para pasear. Le saco una estrella porque me tomaron prisionero.", "ru": "Прекрасное место для прогулок. Минус звезда за то, что меня взяли в плен."},
+  {"a": "Turista de Moscú", "ar": "Турист из Москвы", "s": 2, "es": "Me dijeron que había una fortaleza. Hay pasto. Muy lindo pasto, eso sí.", "ru": "Сказали, что тут крепость. Тут трава. Очень красивая трава, надо признать."}
+ ],
+ "vg-parque-estanque": [
+  {"a": "Natalia", "ar": "Наталья", "s": 5, "es": "La banda tocó las melodías de Luis. Lloré en la primera fila y los patos se acercaron a consolarme.", "ru": "Оркестр играл мелодии Луиса. Я плакала в первом ряду, а утки подплыли меня утешить."},
+  {"a": "Director de la banda", "ar": "Дирижёр оркестра", "s": 5, "es": "Respuesta del propietario: conciertos todos los domingos. La invitación a la señorita Natalia Víktorovna fue con sello y firma, como corresponde.", "ru": "Ответ владельца: концерты каждое воскресенье. Приглашение Наталье Викторовне было с печатью и подписью, как положено."}
+ ],
+ "vg-estacion-nubecita": [
+  {"a": "Luis", "ar": "Луис", "s": 5, "es": "La fila del autobús es larga, la aplicación de taxis dice «anomalía» y aun así es la estación más linda del mundo. En el puente me abrazaron por la espalda.", "ru": "Очередь на автобус длинная, приложение такси пишет «аномалия», и всё равно это самая красивая станция на свете. На мосту меня обняли сзади."},
+  {"a": "Marisa", "ar": "Мариса", "s": 3, "es": "Bonita, pero cuando esperás a alguien con el corazón en la boca, el reloj de la entrada no se mueve nunca.", "ru": "Красивая, но когда ждёшь кого-то с замиранием сердца, часы над входом совсем не двигаются."}
+ ],
+ "vg-autobus-7": [
+  {"a": "Natalia", "ar": "Наталья", "s": 5, "es": "Mi papá maneja el 7. Si el 7 no toca la bocina, algo anda muy mal en Verdegrad.", "ru": "Мой папа водит седьмой. Если седьмой не посигналил, значит, в Вердеграде что-то очень не так."},
+  {"a": "Víctor", "ar": "Виктор", "s": 4, "es": "Abolladura en el ala izquierda. No pregunten.", "ru": "Вмятина на левом крыле. Не спрашивайте."}
+ ],
+ "vg-puertas-oeste": [
+  {"a": "El zorro", "ar": "Лис", "s": 1, "es": "Huele a vainilla y a hierro, y a que te olvidás de para qué entraste a la habitación. No recomiendo quedarse.", "ru": "Пахнет ванилью, железом и тем, что забываешь, зачем вошёл в комнату. Не рекомендую задерживаться."},
+  {"a": "Valeria", "ar": "Валерия", "s": 4, "es": "Buen punto de partida para seguir un olor con un narizoscopio. Hiedra muy fotogénica.", "ru": "Хорошая отправная точка, чтобы идти по запаху с нюхоскопом. Очень фотогеничный плющ."}
+ ],
+ "vg-biblioteca": [
+  {"a": "Natalia", "ar": "Наталья", "s": 4, "es": "Cuatro libros sobre estrellas. Me los leí todos en una noche. ¡No dado de baja! ¡Buen libro!", "ru": "Четыре книги про звёзды. Прочитала все за одну ночь. Не списано! Хорошая книга!"}
+ ],
+ "vg-optica": [
+  {"a": "Natalia", "ar": "Наталья", "s": 3, "es": "No venden telescopios. El vendedor fue muy amable igual.", "ru": "Телескопов не продают. Продавец всё равно был очень любезен."}
+ ],
+ "vg-hotel-fortaleza": [
+  {"a": "Turista de Moscú", "ar": "Турист из Москвы", "s": 4, "es": "Cama cómoda, vista a los tilos. A la mañana no me acordaba de mi propio nombre, pero seguro fue el viaje.", "ru": "Удобная кровать, вид на липы. Утром не мог вспомнить собственное имя, но это, наверное, от дороги."}
+ ],
+ "vg-santa-ana": [
+  {"a": "Semión", "ar": "Семён", "s": 5, "es": "Huele a cera, a piedra y a manzanas. Como mi panadería, pero sin pan.", "ru": "Пахнет воском, камнем и яблоками. Как моя пекарня, только без хлеба."}
+ ]
+}
