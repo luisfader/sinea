@@ -7,8 +7,9 @@ import * as MENDOZA from './ciudades/mendoza.js';
 import * as VENEZIA from './ciudades/venezia.js';
 import * as MADRID from './ciudades/madrid.js';
 import * as PETERSBURGO from './ciudades/petersburgo.js';
+import * as BELGRADO from './ciudades/belgrado.js';
 
-const TODAS = { sinea: SINEA, verdegrad: VERDEGRAD, utopia: UTOPIA, mendoza: MENDOZA, venezia: VENEZIA, madrid: MADRID, petersburgo: PETERSBURGO };
+const TODAS = { sinea: SINEA, verdegrad: VERDEGRAD, utopia: UTOPIA, mendoza: MENDOZA, venezia: VENEZIA, madrid: MADRID, petersburgo: PETERSBURGO, belgrado: BELGRADO };
 export const CIUDAD = TODAS[globalThis.CIUDAD] ? globalThis.CIUDAD : 'sinea';
 const C = TODAS[CIUDAD];
 export const ARROYO = C.ARROYO || [], LAGOS = C.LAGOS || [];

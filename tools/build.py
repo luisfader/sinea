@@ -43,6 +43,7 @@ NOVELAS = {
     'ladro-di-cuori-3': 'Ladrón de corazones 3 (it.)', 'anomalia': None,
     'dikij-chas-karnaval-razdora': 'La hora salvaje: El carnaval de la discordia',
     'rezonans-lyubvi': 'Resonancia del amor',
+    'dikij-chas': 'La hora salvaje', 'divlji-chas': 'La hora salvaje (serbio)',
     'maschera-di-venezia': 'La máscara de Venecia (it.)', 'venecianskaya-maska': 'La máscara de Venecia (ru.)',
 }
 # Título en ruso para las novelas que no están escritas en ruso
@@ -56,6 +57,7 @@ NOVELAS_RU = {
     'el-misterio-de-los-fader': 'Тайна семьи Фадер (исп.)', 'operacion-londres': 'Тайна семьи Фадер: Операция «Лондон» (исп.)',
     'divlji-chas-malbec': 'Дикий час: Любовь со вкусом мальбека (серб.)', 'ladro-di-cuori-3': 'Похититель сердец 3 (ит.)', 'anomalia': 'Аномалия (исп.)',
     'maschera-di-venezia': 'Венецианская маска (ит.)',
+    'divlji-chas': 'Дикий час (серб.)',
 }
 LANG_RU = {'ru': 'русский', 'es': 'испанский', 'it': 'итальянский', 'fr': 'французский', 'en': 'английский', 'tr': 'турецкий', 'cs': 'чешский', 'sr': 'сербский'}
 LANG = {'ru': 'ruso', 'es': 'español', 'it': 'italiano', 'fr': 'francés', 'en': 'inglés', 'tr': 'turco', 'cs': 'checo', 'sr': 'serbio'}
@@ -78,6 +80,7 @@ CIUDADES = {
     'venezia': {'dir': os.path.join('data', 'venezia'), 'geo': 'venezia', 'novelas': ['maschera-di-venezia', 'venecianskaya-maska']},
     'madrid': {'dir': os.path.join('data', 'madrid'), 'geo': 'madrid', 'novelas': ['dikij-chas-karnaval-razdora']},
     'petersburgo': {'dir': os.path.join('data', 'petersburgo'), 'geo': 'petersburgo', 'novelas': ['rezonans-lyubvi']},
+    'belgrado': {'dir': os.path.join('data', 'belgrado'), 'geo': 'belgrado', 'novelas': ['dikij-chas', 'divlji-chas']},
 }
 
 # Mendoza: (0,0) en el centro de la Plaza Independencia; cuadrícula de 122,5 m girada 12,5° (igual que js/ciudades/mendoza.js)
@@ -85,7 +88,7 @@ import math
 _LAT0, _LON0 = -32.8897243, -68.8444983
 _KX, _KY = 111320 * math.cos(math.radians(_LAT0)), 110920
 _TH = math.radians(12.5)
-GEO = {'mendoza': (-32.8897243, -68.8444983, 110920), 'venezia': (45.43416, 12.33845, 111135), 'madrid': (40.41689, -3.70358, 111040), 'petersburgo': (59.9390, 30.3158, 111410)}
+GEO = {'mendoza': (-32.8897243, -68.8444983, 110920), 'venezia': (45.43416, 12.33845, 111135), 'madrid': (40.41689, -3.70358, 111040), 'petersburgo': (59.9390, 30.3158, 111410), 'belgrado': (44.8170, 20.4573, 111140)}
 def geo_xy(L, geo='mendoza'):
     if 'll' in L:
         lat0, lon0, ky = GEO[geo]

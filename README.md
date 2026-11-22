@@ -1,8 +1,8 @@
 # Mapas de los mundos literarios de Robert Fader · Карты миров Роберта Фадера
 
-Sinea, Verdegrad, Nuestra Utopía, Mendoza, Venecia, Madrid y San Petersburgo en 3D. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
+Sinea, Verdegrad, Nuestra Utopía, Mendoza, Venecia, Madrid, San Petersburgo y Belgrado en 3D. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
 
-Siete mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza | Venecia | Madrid | San Petersburgo** arriba:
+Ocho mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza | Venecia | Madrid | San Petersburgo | Belgrado** arriba:
 
 - **Sinea**, la ciudad junto al mar: `index.html`
 - **Verdegrad**, el pueblo verde de Natalia, con su fortaleza en la penumbra: `index.html?ciudad=verdegrad` (o `verdegrad.html`)
@@ -11,6 +11,7 @@ Siete mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | M
 - **Venecia** (Венеция), la ciudad real de «Maschera di Venezia» / «Венецианская маска»: `index.html?ciudad=venezia` (o `venezia.html`)
 - **Madrid** (Мадрид), la ciudad real de «Дикий час: Карнавал раздора»: `index.html?ciudad=madrid` (o `madrid.html`)
 - **San Petersburgo** (Санкт-Петербург), la ciudad real de «Резонанс любви»: `index.html?ciudad=petersburgo` (o `petersburgo.html`)
+- **Belgrado** (Белград), la ciudad real de «Дикий час» y de su versión serbia «Дивљи час»: `index.html?ciudad=belgrado` (o `belgrado.html`)
 
 Los rótulos verdes en el borde del mapa también llevan de una ciudad a la otra («← Verdegrad · estación Nubecita» en Sinea; «← Antiguo camino a Sinea» en Verdegrad).
 
@@ -96,6 +97,10 @@ El Madrid de «Дикий час: Карнавал раздора», del Templo 
 ## San Petersburgo
 
 El Petersburgo de «Резонанс любви», de la isla Vasílievski a la estación de Moscú. Igual que Madrid, el suelo, el agua (el Neva, el Fontanka, el Moika, los canales) y los edificios salen del mapa de OpenStreetMap a 4,79 m por píxel (`img/spb-suelo.png`, `img/spb-tierra.png`, `js/ciudades/spb-lotes.js`). Modelados a mano: la Casa Singer con su globo, los atlantes de la Millónnaya, la Columna de Alejandro, el Palacio de Invierno, las esfinges, el Puente del Banco con los grifos, San Isaac, el puente Anichkov, el Museo Ruso, el Mariinski, el Puente del Palacio (que de noche se abre) y el Puente de los Besos, que es «el puente que callaba» del final. Datos: `data/petersburgo/`.
+
+## Belgrado
+
+El Belgrado de «Дикий час» (ruso) y «Дивљи час» (serbio): cada lugar muestra los capítulos de las dos versiones. Suelo, ríos y edificios del mapa de OpenStreetMap a 6,78 m por píxel (`img/bg-suelo.png`, `img/bg-tierra.png`, `js/ciudades/bg-lotes.js`), generados con `tools/mapa_osm.py` a partir de las teselas. Modelados a mano: el Pobednik sobre Kalemegdan, la torre Nebojša, el príncipe Mihailo y el Museo Nacional, el edificio bombardeado del Estado Mayor, el templo de San Sava con su cruz ortodoxa y el Puente Branko. Datos: `data/belgrado/`.
 
 ## Añadir o corregir un lugar
 

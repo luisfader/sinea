@@ -1,0 +1,181 @@
+{
+ "_info": "Reseñas de Belgrado escritas por los personajes de «Дикий час». s = estrellas.",
+ "bg-knez": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Iba dibujando fachadas de memoria y me atropelló un monopatín. Fue lo mejor que me pasó en la vida. Ojo con los monopatines.",
+   "ru": "Шёл и запоминал фасады, чтобы нарисовать, — и в меня врезался самокат. Лучшее, что со мной случилось. Осторожно, самокаты."
+  },
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Si choco con alguien, me hago responsable. Le mostré Belgrado y me lo quedé.",
+   "ru": "Если я в кого-то врезалась — это моя ответственность. Показала ему Белград и оставила себе."
+  }
+ ],
+ "bg-kalemegdan": [
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Al atardecer los ríos se juntan en una sola línea de luz. Acá le dije «sos mío». Y acá me casé. Belgrado no quiere a los débiles.",
+   "ru": "На закате реки сливаются в одну светлую линию. Здесь я сказала «ты мой». И здесь вышла замуж. Белград не любит слабых."
+  },
+  {
+   "a": "Zmaj",
+   "ar": "Змай",
+   "s": 5,
+   "es": "Volé sobre la boda y nadie gritó. Por fin una ciudad educada.",
+   "ru": "Пролетел над свадьбой — и никто не закричал. Наконец-то воспитанный город."
+  },
+  {
+   "a": "La pelirroja",
+   "ar": "Рыжая",
+   "s": 1,
+   "es": "Me acerqué a un pintor y me mordieron. No recomiendo.",
+   "ru": "Подошла к художнику — и меня укусили. Не рекомендую."
+  }
+ ],
+ "bg-nebojsa": [
+  {
+   "a": "Sofía",
+   "ar": "София",
+   "s": 2,
+   "es": "Buena mesa para conspirar, paredes gruesas, vista al Danubio. Al final me dieron una cachetada. Esperaba otra cosa.",
+   "ru": "Хороший стол для заговоров, толстые стены, вид на Дунай. В конце мне дали пощёчину. Я ждала другого."
+  },
+  {
+   "a": "John",
+   "ar": "Джон",
+   "s": 2,
+   "es": "Me dijeron que el Danubio no pasa por Canadá. Me caí al piso de abajo. Mala experiencia.",
+   "ru": "Мне сказали, что Дунай не протекает через Канаду. Я упал на нижний ярус. Плохой опыт."
+  },
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Años haciendo visitas guiadas acá y por fin usé el pasadizo secreto para algo útil.",
+   "ru": "Годами водила здесь экскурсии — и наконец использовала тайный ход с пользой."
+  }
+ ],
+ "bg-dunav": [
+  {
+   "a": "Irina",
+   "ar": "Ирина",
+   "s": 3,
+   "es": "Un río que vio todo y no cuenta nada. Profesional.",
+   "ru": "Река, которая видела всё и ничего не рассказывает. Профессионально."
+  }
+ ],
+ "bg-republika": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "Nos citamos «junto al caballo», como todos. El día de la Hora Salvaje mejor citarse en otro lado.",
+   "ru": "Договорились встретиться «у коня», как все. В Дикий час лучше назначать встречи в другом месте."
+  }
+ ],
+ "bg-skadarlija": [
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Adoquines, música por las ventanas y orgullo serbio. Traé zapatos cómodos y hambre.",
+   "ru": "Брусчатка, музыка из окон и сербская гордость. Приходите в удобной обуви и голодными."
+  },
+  {
+   "a": "John",
+   "ar": "Джон",
+   "s": 3,
+   "es": "Lindo barrio para encuentros discretos. Demasiados pintores mirando.",
+   "ru": "Хороший квартал для тайных встреч. Слишком много художников смотрят."
+  }
+ ],
+ "bg-muro": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "En la piedra apareció mi propio dibujo. No es un lugar lindo: es un lugar que hay que ver.",
+   "ru": "На камне проступил мой рисунок. Это не красивое место — это место, которое нужно увидеть."
+  },
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Me acuerdo de las sirenas. Nunca más.",
+   "ru": "Я помню сирены. Никогда больше."
+  }
+ ],
+ "bg-biblioteca": [
+  {
+   "a": "El bibliotecario",
+   "ar": "Библиотекарь",
+   "s": 2,
+   "es": "Un extranjero muy amable me preguntó por la Biblia durante media hora. Después faltaba una página.",
+   "ru": "Очень вежливый иностранец полчаса расспрашивал меня о Библии. Потом не хватало одной страницы."
+  },
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 4,
+   "es": "La tomé prestada, por una buena causa. Los manuscritos, un tesoro. Prohibido fotografiar, eso sí.",
+   "ru": "Временно заимствовала, ради благого дела. Рукописи — сокровище. Фотографировать, правда, нельзя."
+  }
+ ],
+ "bg-sava": [
+  {
+   "a": "Marina",
+   "ar": "Марина",
+   "s": 3,
+   "es": "Encontramos la piedra detrás del pilar. Yo todavía tenía moretones de esa bruja. Templo precioso.",
+   "ru": "Нашли камень за столбом. У меня ещё не прошли синяки от этой ведьмы. Храм прекрасный."
+  },
+  {
+   "a": "Katarina",
+   "ar": "Катарина",
+   "s": 4,
+   "es": "Mucha luz, mucho silencio. Ojalá la bruja no aparezca.",
+   "ru": "Много света, много тишины. Надеюсь, ведьма не появится."
+  }
+ ],
+ "bg-brankov": [
+  {
+   "a": "Un conductor",
+   "ar": "Водитель",
+   "s": 1,
+   "es": "No me acuerdo de nada. Tengo un chichón y el capó abollado.",
+   "ru": "Ничего не помню. Шишка на лбу и вмятина на капоте."
+  }
+ ],
+ "bg-avala": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Me dio el manubrio por primera vez. «Mi rey.» La nota bajo la piedra, menos romántica.",
+   "ru": "Она впервые отдала мне руль. «Мой король». Записка под камнем — уже не так романтично."
+  }
+ ],
+ "bg-zedanj": [
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 1,
+   "es": "Dardos tranquilizantes. Voy a volver. Y lo van a pagar todos.",
+   "ru": "Дротики с транквилизатором. Я вернусь. И за это заплатят все."
+  },
+  {
+   "a": "Marina",
+   "ar": "Марина",
+   "s": 2,
+   "es": "Me mordió otra vez. Pero cumplimos la misión.",
+   "ru": "Она снова меня укусила. Но задание мы выполнили."
+  }
+ ]
+}

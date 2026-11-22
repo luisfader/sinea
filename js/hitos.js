@@ -25,6 +25,17 @@ function luz(color, inten, dist, x, y, z) { const l = new THREE.PointLight(color
 const brillo = (c) => new THREE.MeshBasicMaterial({ color: c });
 
 /* -------------------------- modelos ----------------------------- */
+// cruz ortodoxa de ocho puntas: travesaño corto arriba (el titulus), el principal y el inclinado abajo
+function cruzOrtodoxa(h, mat) {
+  const g = new THREE.Group(), t = h * .07;
+  g.add(caja(t, h, t, mat, 0, 0, 0));
+  g.add(caja(h * .3, t, t, mat, 0, h * .84, 0));
+  g.add(caja(h * .56, t * 1.1, t, mat, 0, h * .66, 0));
+  const b = caja(h * .36, t, t, mat, 0, 0, 0); b.position.y = h * .2; b.rotation.z = -.38; g.add(b);
+  g.add(esfera(t * .9, mat, 0, h, 0));
+  return g;
+}
+
 const MODELOS = {
   faro(u) {
     const g = new THREE.Group();
@@ -841,8 +852,8 @@ const MODELOS = {
     const g = new THREE.Group(), p = M(0xc8bfae), oro = M(0xd9ae4c, { metalness: .8, roughness: .3 }), col = M(0x8a4f48);
     g.add(caja(70, 34, 50, p)); for (const [x, z, w, d] of [[-38, 0, 6, 34], [38, 0, 6, 34], [0, -28, 34, 6], [0, 28, 34, 6]]) { g.add(caja(w, 30, d, col, x, 0, z)); const fr = new THREE.Mesh(prismaGeo(), p); fr.scale.set(w > d ? w + 2 : 8, 8, w > d ? 8 : d + 2); fr.position.set(x, 30, z); if (d > w) fr.rotation.y = Math.PI / 2; g.add(fr); }
     g.add(cil(15, 15, 18, p, 0, 34, 0, 24)); for (let i = 0; i < 24; i++) { const a = i / 24 * Math.PI * 2; g.add(cil(.8, .8, 16, col, Math.cos(a) * 16.5, 35, Math.sin(a) * 16.5, 6)); }
-    g.add(esfera(15, oro, 0, 52, 0, {}, [24, 12, 0, Math.PI * 2, 0, Math.PI / 2])); g.add(cil(3, 3, 8, p, 0, 66, 0, 12)); g.add(esfera(3.2, oro, 0, 74, 0, {}, [12, 6, 0, Math.PI * 2, 0, Math.PI / 2])); g.add(caja(.5, 5, .5, oro, 0, 77, 0));
-    for (const [x, z] of [[-28, -18], [28, -18], [-28, 18], [28, 18]]) { g.add(cil(3.4, 3.4, 8, p, x, 34, z, 12)); g.add(esfera(3.4, oro, x, 42, z, {}, [12, 6, 0, Math.PI * 2, 0, Math.PI / 2])); }
+    g.add(esfera(15, oro, 0, 52, 0, {}, [24, 12, 0, Math.PI * 2, 0, Math.PI / 2])); g.add(cil(3, 3, 8, p, 0, 66, 0, 12)); g.add(esfera(3.2, oro, 0, 74, 0, {}, [12, 6, 0, Math.PI * 2, 0, Math.PI / 2])); { const c = cruzOrtodoxa(11, M(0xf2c75a, { metalness: .85, roughness: .25, emissive: 0x3a2a00 })); c.position.y = 77; g.add(c); }
+    for (const [x, z] of [[-28, -18], [28, -18], [-28, 18], [28, 18]]) { g.add(cil(3.4, 3.4, 8, p, x, 34, z, 12)); g.add(esfera(3.4, oro, x, 42, z, {}, [12, 6, 0, Math.PI * 2, 0, Math.PI / 2])); const c = cruzOrtodoxa(4.5, oro); c.position.set(x, 45.2, z); g.add(c); }
     return { g, r: 46 };
   },
   anichkov() { // el Puente Anichkov sobre el Fontanka, con los cuatro domadores de caballos
@@ -881,6 +892,53 @@ const MODELOS = {
     g.rotation.y = Math.PI / 2;
     return { g, r: 18, anim(t, n) { for (const l of luces) l.material.emissiveIntensity = .2 + 2.4 * n; } };
   },
+  // ---- Belgrado ----
+  pobednik() { // el «Vencedor» de Meštrović sobre su columna, en el borde de Kalemegdan, y un trozo de muralla
+    const g = new THREE.Group(), p = M(0xd8d0c0), b = M(0x4e5a4c, { metalness: .5, roughness: .45 }), lad = M(0xb79a78);
+    g.add(caja(10, 2, 10, p)); g.add(cil(1.6, 1.9, 14, p, 0, 2, 0, 16)); g.add(caja(4, 1.2, 4, p, 0, 16));
+    g.add(caja(1.2, 3.6, .9, b, 0, 17.2, 0)); g.add(esfera(.55, b, 0, 21.4, 0)); g.add(caja(.4, 2.6, .4, b, .9, 18.6, 0)); g.add(esfera(.45, b, 1.2, 21.2, .3)); // el halcón en la mano
+    g.add(caja(.4, 3, .3, b, -.8, 18, 0)); // la espada
+    for (let i = 0; i < 7; i++) g.add(caja(14, 7, 5, lad, -40 + i * 12, 0, 22 + Math.sin(i) * 4));
+    for (let i = 0; i < 14; i++) g.add(caja(2, 1.6, 5, lad, -45 + i * 6.5, 7, 22 + Math.sin(i / 2) * 4));
+    return { g, r: 22 };
+  },
+  nebojsa() { // la torre Nebojša: torre redonda de piedra con techo cónico, junto al Danubio
+    const g = new THREE.Group(), p = M(0xc9b89a);
+    g.add(cil(9, 10, 24, p, 0, 0, 0, 20)); for (let i = 0; i < 4; i++) { const a = i * Math.PI / 2; g.add(caja(1.2, 2, .4, 0x2b2b2b, Math.cos(a) * 9.4, 16, Math.sin(a) * 9.4).rotateY(-a)); }
+    const t = new THREE.Mesh(new THREE.ConeGeometry(10.5, 8, 20), M(0x8a5a3a)); t.position.y = 28; g.add(t);
+    g.add(caja(30, 5, 4, p, -18, 0, 6));
+    return { g, r: 14 };
+  },
+  'knez-mihailo'() { // el monumento ecuestre al príncipe Mihailo en la Plaza de la República, con el Museo Nacional detrás
+    const g = new THREE.Group(), p = M(0xd9d0be), b = M(0x3c4a3c, { metalness: .5, roughness: .45 });
+    g.add(caja(9, 5, 5, p)); g.add(caja(7, 2.6, 2, b, 0, 5, 0)); g.add(caja(1.6, 2.2, 1.6, b, 2.8, 7, 0)); g.add(caja(1, 2.4, 1, b, -.4, 7.6, 0)); g.add(esfera(.5, b, -.4, 10.4, 0));
+    for (const x of [-3, -1, 1, 3]) g.add(caja(.7, 2.6, .7, b, x * .9, 2.4, x > 0 ? .8 : -.8));
+    g.add(caja(70, 20, 40, 0xe3dac8, -10, 0, -60)); const c = cil(9, 9, 6, 0xe3dac8, -10, 20, -60, 16); g.add(c); g.add(esfera(9, M(0x6f8f86, { metalness: .4 }), -10, 26, -60, {}, [16, 8, 0, Math.PI * 2, 0, Math.PI / 2]));
+    return { g, r: 40 };
+  },
+  'ruina-bombas'() { // el edificio del Estado Mayor bombardeado en 1999: bloques de piedra rojiza con el centro hundido
+    const g = new THREE.Group(), r = M(0xa8644c), gr = M(0x7a7066);
+    g.add(caja(40, 30, 22, r, -32, 0, 0)); g.add(caja(26, 22, 22, r, -6, 0, 0)); g.add(caja(16, 9, 22, gr, 14, 0, 0)); g.add(caja(24, 26, 22, r, 36, 0, 0));
+    for (let i = 0; i < 9; i++) g.add(caja(3 + (i % 3), 2 + (i % 4), 3, gr, 6 + i * 2.5, 9 + (i % 3) * 2, -6 + (i % 5) * 3));
+    for (let y = 4; y < 28; y += 5) for (let x = -50; x < -14; x += 5) g.add(caja(2, 2.6, .3, 0x2a2a2a, x, y, 11.1));
+    return { g, r: 52 };
+  },
+  'hram-sava'() { // el templo de San Sava: mármol blanco, cúpula verde, cuatro torres y la gran cruz ortodoxa dorada
+    const g = new THREE.Group(), bl = M(0xf1eee6), verde = M(0x6f9a86, { metalness: .4, roughness: .45 }), oro = M(0xf2c75a, { metalness: .85, roughness: .25, emissive: 0x3a2a00 });
+    g.add(caja(72, 30, 72, bl)); for (const [x, z] of [[0, -40], [0, 40], [-40, 0], [40, 0]]) { g.add(caja(x ? 12 : 44, 26, x ? 44 : 12, bl, x, 0, z)); g.add(esfera(x ? 6 : 22, verde, x * 1.08, 26, z * 1.08, {}, [16, 8, 0, Math.PI * 2, 0, Math.PI / 2])); }
+    g.add(cil(26, 26, 14, bl, 0, 30, 0, 32)); g.add(esfera(26, verde, 0, 44, 0, {}, [32, 14, 0, Math.PI * 2, 0, Math.PI / 2]));
+    g.add(cil(4, 4, 6, bl, 0, 70, 0, 12)); g.add(esfera(4.2, oro, 0, 76, 0, {}, [12, 6, 0, Math.PI * 2, 0, Math.PI / 2]));
+    { const c = cruzOrtodoxa(13, oro); c.position.y = 80; g.add(c); }
+    for (const [x, z] of [[-34, -34], [34, -34], [-34, 34], [34, 34]]) { g.add(cil(5, 5, 40, bl, x, 0, z, 12)); g.add(esfera(5.4, verde, x, 40, z, {}, [12, 6, 0, Math.PI * 2, 0, Math.PI / 2])); const c = cruzOrtodoxa(5, oro); c.position.set(x, 45, z); g.add(c); }
+    return { g, r: 54 };
+  },
+  'puente-branko'() { // el Puente Branko sobre el Sava
+    const g = new THREE.Group(), gr = M(0x8d9298, { metalness: .3 });
+    g.add(caja(28, 3, 450, gr, 0, 14, 0)); for (const z of [-150, -50, 50, 150]) g.add(caja(8, 14, 10, 0x9a948a, 0, 0, z));
+    for (const s of [-1, 1]) g.add(caja(.4, 1.2, 450, 0x333333, s * 14, 17, 0));
+    g.rotation.y = Math.PI / 2;
+    return { g, r: 30 };
+  },
   'tren-fantasma'() { return { g: new THREE.Group(), r: 0 }; }
 };
 
@@ -902,7 +960,7 @@ export function construirHitos(lugares, u) {
     grupo.add(m.g);
     if (m.anim) anims.push(m.anim);
     if (m.r) reservas.push([L.x, L.y, m.r]);
-    L._h = h + ({ singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 80, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
+    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
   }
   // reserva extra: la plaza Dante entera y el puerto
   reservas.push(...RESERVAS);

@@ -20594,340 +20594,907 @@ export const CIUDADES = {
 "c": "24"
 }
 }
+],
+"belgrado": [
+{
+"id": "bg-knez",
+"nombre": "Calle Knez Mihailova",
+"cat": "calle",
+"x": 0,
+"y": 0,
+"modelo": "ninguno",
+"desc": "La calle peatonal principal de Belgrado, de la Plaza de la República a Kalemegdan, con casas del siglo XIX protegidas como monumento. Acá empieza todo: Luis camina mirando las fachadas para dibujarlas de memoria y un monopatín eléctrico lo atropella de costado. «Soy Natasha. Con el acento en la primera sílaba.» Como fue ella la que chocó, es su responsabilidad mostrarle Belgrado.",
+"nombre_ru": "Улица Кнез-Михайлова",
+"desc_ru": "Главная пешеходная улица Белграда от площади Республики к Калемегдану, её дома XIX века охраняются как памятник. Здесь всё началось: Луис идёт и разглядывает дома, чтобы потом нарисовать их по памяти, и сбоку в него врезается электросамокат. «Я Наташа. С ударением на первый слог». Раз уж она в него врезалась — это её ответственность показать ему Белград.",
+"apar": [
+{
+"n": "divlji-chas",
+"c": [
+[
+"1",
+"Сусрет у Београду"
+],
+[
+"extra-1",
+"Завршни тест"
+]
+]
+},
+{
+"n": "dikij-chas",
+"c": [
+[
+"1",
+"Встреча в Белграде"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Iba dibujando fachadas de memoria y me atropelló un monopatín. Fue lo mejor que me pasó en la vida. Ojo con los monopatines.",
+"ru": "Шёл и запоминал фасады, чтобы нарисовать, — и в меня врезался самокат. Лучшее, что со мной случилось. Осторожно, самокаты."
+},
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "Si choco con alguien, me hago responsable. Le mostré Belgrado y me lo quedé.",
+"ru": "Если я в кого-то врезалась — это моя ответственность. Показала ему Белград и оставила себе."
+}
+],
+"img": {
+"src": "img/lugares/bg-knez.webp",
+"n": "dikij-chas",
+"c": "1"
+}
+},
+{
+"id": "bg-kalemegdan",
+"nombre": "Kalemegdan y el Pobednik",
+"cat": "monumento",
+"x": -584,
+"y": 700,
+"modelo": "pobednik",
+"desc": "La fortaleza y el parque sobre el promontorio donde el Sava desemboca en el Danubio, con el «Vencedor» de Ivan Meštrović (1928) mirando el agua. Natasha trae a Luis al atardecer: «Belgrado no quiere a los débiles. Pero si te acepta… ya no te vas siendo el mismo». Es el primer punto del mapa de las piedras: acá ella le toma la mano y le dice «Sos mío», acá muerde a la pelirroja que se acerca a Luis, y acá él encuentra la primera piedra con el amuleto de Zark. Meses después, en Kalemegdan se hace la boda simbólica, sin altar ni cura, con Zmaj volando tranquilo sobre la fortaleza.",
+"nombre_ru": "Калемегдан и «Победитель»",
+"desc_ru": "Крепость и парк на высоком мысу, где Сава впадает в Дунай, с «Победителем» Ивана Мештровича (1928), смотрящим на воду. Наташа приводит Луиса сюда на закате: «Белград не любит слабых. Но если он тебя примет… ты уже не уйдёшь прежним». Это первая точка на карте камней: здесь она берёт его за руку — «Ты мой», здесь кусает рыжеволосую, которая бросается к Луису, и здесь он находит первый камень с амулетом Зарка. Через несколько месяцев на Калемегдане проходит символическая свадьба — без алтаря и священника, а над крепостью спокойно пролетает Змай.",
+"apar": [
+{
+"n": "divlji-chas",
+"c": [
+[
+"1",
+"Сусрет у Београду"
+],
+[
+"4",
+"Завера у кули"
+],
+[
+"10",
+"Мапа и страст"
+],
+[
+"12",
+"Калемегдан – прво место"
+],
+[
+"13",
+"Сукоб са Рускињама"
+],
+[
+"19",
+"Сладолед и логика"
+],
+[
+"20",
+"Трећи камен"
+],
+[
+"28",
+"Припреме за битку"
+],
+[
+"29",
+"Епска битка за Београд"
+],
+[
+"30",
+"Крај хаоса и почетак љубави"
+],
+[
+"extra-1",
+"Завршни тест"
+]
+]
+},
+{
+"n": "dikij-chas",
+"c": [
+[
+"1",
+"Встреча в Белграде"
+],
+[
+"10",
+"Карта и напряжение"
+],
+[
+"12",
+"Калемегдан — первое место"
+],
+[
+"13",
+"Когда просыпается зверь"
+],
+[
+"18",
+"Тайна Софии"
+],
+[
+"19",
+"Холодный свет"
+],
+[
+"22",
+"Предложение"
+],
+[
+"26",
+"Откровение"
+],
+[
+"35",
+"Свадьба"
+],
+[
+"extra-1",
+"Интервью с Наташей"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "Al atardecer los ríos se juntan en una sola línea de luz. Acá le dije «sos mío». Y acá me casé. Belgrado no quiere a los débiles.",
+"ru": "На закате реки сливаются в одну светлую линию. Здесь я сказала «ты мой». И здесь вышла замуж. Белград не любит слабых."
+},
+{
+"a": "Zmaj",
+"ar": "Змай",
+"s": 5,
+"es": "Volé sobre la boda y nadie gritó. Por fin una ciudad educada.",
+"ru": "Пролетел над свадьбой — и никто не закричал. Наконец-то воспитанный город."
+},
+{
+"a": "La pelirroja",
+"ar": "Рыжая",
+"s": 1,
+"es": "Me acerqué a un pintor y me mordieron. No recomiendo.",
+"ru": "Подошла к художнику — и меня укусили. Не рекомендую."
+}
+],
+"img": {
+"src": "img/lugares/bg-kalemegdan.webp",
+"n": "dikij-chas",
+"c": "1"
+}
+},
+{
+"id": "bg-nebojsa",
+"nombre": "Torre Nebojša",
+"cat": "monumento",
+"x": -513,
+"y": 1011,
+"modelo": "nebojsa",
+"desc": "La torre medieval del siglo XV en la Ciudad Baja, junto al Danubio; con los turcos fue cárcel. Es el cuartel de la conspiración: de noche, Artan, Sofía y John se sientan a una mesa maciza a esperar la Hora Salvaje. Acá termina el ritual: «Hace años que hago visitas guiadas acá», dice Natasha, y conoce un pasadizo que no está en ningún plano. Desde arriba de la torre ella aparta los misiles como en 1999, de las piedras nace Zmaj, y al pie de la torre Luis-gigante pelea con Ala, el demonio de las tormentas.",
+"nombre_ru": "Башня Небойша",
+"desc_ru": "Средневековая башня XV века в Нижнем городе у самого Дуная; при турках здесь была тюрьма. Штаб заговора: ночью Артан, София и Джон сидят за массивным столом и ждут Дикого часа. Здесь завершается ритуал: «Я годами водила здесь экскурсии», — говорит Наташа и знает тайный ход, которого нет ни в одном плане. С вершины башни она отводит ракеты, как в 1999 году, из камней рождается Змай, а у подножия Луис-великан бьётся с Алой, демоном бурь.",
+"apar": [
+{
+"n": "dikij-chas",
+"c": [
+[
+"4",
+"Заговор в башне"
+],
+[
+"11",
+"Досье и сомнение"
+],
+[
+"18",
+"Тайна Софии"
+],
+[
+"27",
+"Столкновение интересов"
+],
+[
+"28",
+"Когда небо выдаёт тайны"
+],
+[
+"29",
+"Когда всё начинает дрожать"
+],
+[
+"30",
+"Когда город теряет лицо"
+],
+[
+"32",
+"Битва."
+]
+]
+},
+{
+"n": "divlji-chas",
+"c": [
+[
+"4",
+"Завера у кули"
+],
+[
+"11",
+"План у кули"
+],
+[
+"27",
+"Судар интереса"
+],
+[
+"28",
+"Припреме за битку"
+],
+[
+"extra-1",
+"Завршни тест"
+]
+]
+}
+],
+"res": [
+{
+"a": "Sofía",
+"ar": "София",
+"s": 2,
+"es": "Buena mesa para conspirar, paredes gruesas, vista al Danubio. Al final me dieron una cachetada. Esperaba otra cosa.",
+"ru": "Хороший стол для заговоров, толстые стены, вид на Дунай. В конце мне дали пощёчину. Я ждала другого."
+},
+{
+"a": "John",
+"ar": "Джон",
+"s": 2,
+"es": "Me dijeron que el Danubio no pasa por Canadá. Me caí al piso de abajo. Mala experiencia.",
+"ru": "Мне сказали, что Дунай не протекает через Канаду. Я упал на нижний ярус. Плохой опыт."
+},
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "Años haciendo visitas guiadas acá y por fin usé el pasadizo secreto para algo útil.",
+"ru": "Годами водила здесь экскурсии — и наконец использовала тайный ход с пользой."
+}
+],
+"img": {
+"src": "img/lugares/bg-nebojsa.webp",
+"n": "dikij-chas",
+"c": "30"
+}
+},
+{
+"id": "bg-dunav",
+"nombre": "La orilla del Danubio",
+"cat": "parque",
+"x": -24,
+"y": 1167,
+"modelo": "ninguno",
+"desc": "El Danubio recibe al Sava bajo la fortaleza y gira al este. «Natasha está con nosotros. Orilla del Danubio. Vení solo.» Artan cree el mensaje, y en la orilla oscura John le dispara dos veces con silenciador; la corriente se lo lleva. En la Hora Salvaje uno de los misiles cae al Danubio sin llegar a la orilla, y del río sale Ala, el demonio de las tormentas… con la cara de Artan.",
+"nombre_ru": "Берег Дуная",
+"desc_ru": "Под крепостью Дунай принимает Саву и поворачивает на восток. «Наташа у нас. Берег Дуная. Приходи один». Артан верит сразу, и на тёмном берегу Джон дважды стреляет из пистолета с глушителем; течение уносит Артана. В Дикий час одна из ракет падает в Дунай, не долетев до берега, а из реки поднимается Ала — демон бурь… с лицом Артана.",
+"apar": [
+{
+"n": "dikij-chas",
+"c": [
+[
+"12",
+"Калемегдан — первое место"
+],
+[
+"23",
+"Судьба Артана"
+],
+[
+"27",
+"Столкновение интересов"
+],
+[
+"28",
+"Когда небо выдаёт тайны"
+],
+[
+"30",
+"Когда город теряет лицо"
+],
+[
+"31",
+"Рождение Гиганта"
+],
+[
+"32",
+"Битва."
+],
+[
+"35",
+"Свадьба"
+]
+]
+},
+{
+"n": "divlji-chas",
+"c": [
+[
+"1",
+"Сусрет у Београду"
+],
+[
+"4",
+"Завера у кули"
+],
+[
+"23",
+"Артанова судбина"
+],
+[
+"29",
+"Епска битка за Београд"
+],
+[
+"extra-1",
+"Завршни тест"
+]
+]
+}
+],
+"res": [
+{
+"a": "Irina",
+"ar": "Ирина",
+"s": 3,
+"es": "Un río que vio todo y no cuenta nada. Profesional.",
+"ru": "Река, которая видела всё и ничего не рассказывает. Профессионально."
+}
+],
+"img": {
+"src": "img/lugares/bg-dunav.webp",
+"n": "dikij-chas",
+"c": "23"
+}
+},
+{
+"id": "bg-republika",
+"nombre": "Plaza de la República",
+"cat": "plaza",
+"x": 229,
+"y": -78,
+"modelo": "knez-mihailo",
+"desc": "La plaza principal, con el monumento ecuestre al príncipe Mihailo (1882), el Museo Nacional y el Teatro Nacional; los belgradenses se citan «kod konja», junto al caballo. Acá empieza la Hora Salvaje casi sin que se note: la gente se queda quieta, alguien se ríe demasiado fuerte y demasiado tiempo. Después, un destello, y los hombres de una vidriera se tiran unos contra otros.",
+"nombre_ru": "Площадь Республики",
+"desc_ru": "Главная площадь города с конным памятником князю Михаилу (1882), Национальным музеем и Национальным театром; белградцы договариваются о встрече «код коња» — «у коня». Здесь Дикий час начинается почти незаметно: люди замирают, кто-то смеётся слишком громко и слишком долго. Потом — вспышка, и мужчины у витрины бросаются друг на друга.",
+"apar": [
+{
+"n": "dikij-chas",
+"c": [
+[
+"30",
+"Когда город теряет лицо"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 4,
+"es": "Nos citamos «junto al caballo», como todos. El día de la Hora Salvaje mejor citarse en otro lado.",
+"ru": "Договорились встретиться «у коня», как все. В Дикий час лучше назначать встречи в другом месте."
+}
+]
+},
+{
+"id": "bg-skadarlija",
+"nombre": "Skadarlija",
+"cat": "restaurante",
+"x": 616,
+"y": 89,
+"modelo": "cafe",
+"desc": "La vieja calle bohemia de adoquines, el «Montmartre de Belgrado», con kafanas donde desde el siglo XIX se juntaban poetas y pintores. De día Natasha lleva ahí a Luis: música por las ventanas abiertas, fachadas viejas. «Estoy orgullosa de ser serbia. Y de ser eslava.» Es el segundo punto del mapa: de una casa vieja sale Sofía, nerviosa, y en la esquina la espera John, el que ofrecía clases gratis de inglés a los turistas en la entrada de Kalemegdan.",
+"nombre_ru": "Скадарлия",
+"desc_ru": "Старая богемная улица с брусчаткой, «белградский Монмартр», где с XIX века в кафанах собирались поэты и художники. Днём Наташа ведёт туда Луиса: музыка из открытых окон, старинные фасады. «Я горжусь тем, что я сербка. И тем, что я славянка». Это вторая точка на карте: из старого дома выходит нервная София, а на углу её ждёт Джон — тот, что предлагал туристам бесплатные уроки английского у входа в Калемегдан.",
+"apar": [
+{
+"n": "divlji-chas",
+"c": [
+[
+"7",
+"Улицама Београда"
+],
+[
+"10",
+"Мапа и страст"
+],
+[
+"12",
+"Калемегдан – прво место"
+],
+[
+"18",
+"Софијина тајна"
+],
+[
+"19",
+"Сладолед и логика"
+],
+[
+"28",
+"Припреме за битку"
+],
+[
+"extra-1",
+"Завршни тест"
+]
+]
+},
+{
+"n": "dikij-chas",
+"c": [
+[
+"7",
+"Улицами Белграда"
+],
+[
+"10",
+"Карта и напряжение"
+],
+[
+"18",
+"Тайна Софии"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "Adoquines, música por las ventanas y orgullo serbio. Traé zapatos cómodos y hambre.",
+"ru": "Брусчатка, музыка из окон и сербская гордость. Приходите в удобной обуви и голодными."
+},
+{
+"a": "John",
+"ar": "Джон",
+"s": 3,
+"es": "Lindo barrio para encuentros discretos. Demasiados pintores mirando.",
+"ru": "Хороший квартал для тайных встреч. Слишком много художников смотрят."
+}
+],
+"img": {
+"src": "img/lugares/bg-skadarlija.webp",
+"n": "dikij-chas",
+"c": "18"
+}
+},
+{
+"id": "bg-muro",
+"nombre": "El muro con marcas de bombas",
+"cat": "monumento",
+"x": 134,
+"y": -1278,
+"modelo": "ruina-bombas",
+"desc": "«Acá cayeron bombas.» En la piedra herida aparece una mujer a caballo, de pelo claro y espada, con Belgrado ardiendo detrás: es exactamente el dibujo del cuaderno de Luis, y él entiende que sus dibujos dejan huellas. Natasha recuerda el 99: las sirenas, las ventanas que temblaban. «No quiero que Belgrado vuelva a arder. Nunca.» La novela no nombra la calle; el marcador está en el edificio del Estado Mayor de la calle Kneza Miloša, la huella más conocida de los bombardeos de 1999.",
+"nombre_ru": "Стена со следами бомб",
+"desc_ru": "«Здесь падали бомбы». На изуродованном камне проступает женщина на коне со светлыми волосами и мечом, а за ней горит Белград — в точности рисунок из тетради Луиса, и он понимает, что его рисунки оставляют следы. Наташа вспоминает девяносто девятый: сирены, дрожащие окна. «Я не хочу, чтобы Белград снова горел. Никогда». Улица в романе не названа; метка стоит у здания Генштаба на улице Кнеза Милоша — самого известного следа бомбардировок 1999 года.",
+"apar": [
+{
+"n": "dikij-chas",
+"c": [
+[
+"7",
+"Улицами Белграда"
+],
+[
+"11",
+"Досье и сомнение"
+],
+[
+"17",
+"Тайна министерства"
+],
+[
+"26",
+"Откровение"
+],
+[
+"extra-3",
+"Интервью с Робертом Фадером, автором романа «Дикий час»"
+]
+]
+},
+{
+"n": "divlji-chas",
+"c": [
+[
+"7",
+"Улицама Београда"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "En la piedra apareció mi propio dibujo. No es un lugar lindo: es un lugar que hay que ver.",
+"ru": "На камне проступил мой рисунок. Это не красивое место — это место, которое нужно увидеть."
+},
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 5,
+"es": "Me acuerdo de las sirenas. Nunca más.",
+"ru": "Я помню сирены. Никогда больше."
+}
+],
+"img": {
+"src": "img/lugares/bg-muro.webp",
+"n": "dikij-chas",
+"c": "7"
+}
+},
+{
+"id": "bg-biblioteca",
+"nombre": "Biblioteca Nacional de Serbia",
+"cat": "edificio",
+"x": 1058,
+"y": -2178,
+"modelo": "biblioteca-nacional",
+"desc": "La biblioteca principal del país, junto al templo de San Sava; el edificio viejo ardió con sus manuscritos en el bombardeo alemán de 1941. Bajo un dibujo de Luis aparecen las palabras «Hora Salvaje» y Natasha decide buscar la respuesta en los libros: un hecho que pasa una vez cada mil años. No se pueden fotografiar los manuscritos: «Distraelo. Preguntale algo… de la Biblia». Mientras Luis entretiene al bibliotecario, Natasha arranca la página. «La tomé prestada. Por una buena causa.»",
+"nombre_ru": "Национальная библиотека Сербии",
+"desc_ru": "Главная библиотека страны рядом с храмом Святого Саввы; прежнее здание сгорело вместе с рукописями при немецкой бомбардировке 1941 года. Под рисунком Луиса проступает «Дикий час», и Наташа решает искать ответ в книгах: событие, происходящее раз в тысячу лет. Фотографировать рукописи нельзя: «Отвлеки его. Спроси что-нибудь… про Библию». Пока Луис расспрашивает библиотекаря, Наташа вырывает страницу. «Временно заимствовала. И ради благого дела».",
+"apar": [
+{
+"n": "divlji-chas",
+"c": [
+[
+"8",
+"Тајна порука"
+],
+[
+"9",
+"Тајна страница"
+],
+[
+"12",
+"Калемегдан – прво место"
+],
+[
+"16",
+"Легенда и страст"
+],
+[
+"18",
+"Софијина тајна"
+],
+[
+"19",
+"Сладолед и логика"
+],
+[
+"extra-1",
+"Завршни тест"
+]
+]
+},
+{
+"n": "dikij-chas",
+"c": [
+[
+"8",
+"Тайное сообщение"
+],
+[
+"9",
+"Тайная страница"
+],
+[
+"10",
+"Карта и напряжение"
+]
+]
+}
+],
+"res": [
+{
+"a": "El bibliotecario",
+"ar": "Библиотекарь",
+"s": 2,
+"es": "Un extranjero muy amable me preguntó por la Biblia durante media hora. Después faltaba una página.",
+"ru": "Очень вежливый иностранец полчаса расспрашивал меня о Библии. Потом не хватало одной страницы."
+},
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 4,
+"es": "La tomé prestada, por una buena causa. Los manuscritos, un tesoro. Prohibido fotografiar, eso sí.",
+"ru": "Временно заимствовала, ради благого дела. Рукописи — сокровище. Фотографировать, правда, нельзя."
+}
+],
+"img": {
+"src": "img/lugares/bg-biblioteca.webp",
+"n": "dikij-chas",
+"c": "9"
+}
+},
+{
+"id": "bg-sava",
+"nombre": "Templo de San Sava",
+"cat": "monumento",
+"x": 915,
+"y": -2105,
+"modelo": "hram-sava",
+"desc": "Uno de los templos ortodoxos más grandes del mundo, sobre la meseta de Vračar, donde según la tradición los turcos quemaron en 1594 las reliquias de san Sava. Es el tercer punto del mapa de las piedras: bajo los reflectores, en un jardín cercano, Marina y Katarina, todavía con moretones del encuentro con Natasha, encuentran una piedra detrás de un pilar macizo. «Ojalá esa bruja no aparezca más.»",
+"nombre_ru": "Храм Святого Саввы",
+"desc_ru": "Один из крупнейших православных храмов мира на Врачарском плато, где, по преданию, турки в 1594 году сожгли мощи святого Саввы. Третья точка на карте камней: в свете прожекторов, в саду неподалёку, Марина и Катарина, ещё в синяках после встречи с Наташей, находят камень за массивным столбом. «Надеюсь, эта ведьма больше не появится».",
+"apar": [
+{
+"n": "divlji-chas",
+"c": [
+[
+"10",
+"Мапа и страст"
+],
+[
+"19",
+"Сладолед и логика"
+],
+[
+"20",
+"Трећи камен"
+],
+[
+"extra-1",
+"Завршни тест"
+]
+]
+},
+{
+"n": "dikij-chas",
+"c": [
+[
+"20",
+"Ещё один камень"
+]
+]
+}
+],
+"res": [
+{
+"a": "Marina",
+"ar": "Марина",
+"s": 3,
+"es": "Encontramos la piedra detrás del pilar. Yo todavía tenía moretones de esa bruja. Templo precioso.",
+"ru": "Нашли камень за столбом. У меня ещё не прошли синяки от этой ведьмы. Храм прекрасный."
+},
+{
+"a": "Katarina",
+"ar": "Катарина",
+"s": 4,
+"es": "Mucha luz, mucho silencio. Ojalá la bruja no aparezca.",
+"ru": "Много света, много тишины. Надеюсь, ведьма не появится."
+}
+]
+},
+{
+"id": "bg-brankov",
+"nombre": "Puente Branko",
+"cat": "monumento",
+"x": -1224,
+"y": -111,
+"modelo": "puente-branko",
+"desc": "Uno de los grandes puentes sobre el Sava, entre la Ciudad Vieja y Nuevo Belgrado. En la Hora Salvaje los autos se detienen en el puente; los conductores bajan y golpean la cabeza contra el metal, como si quisieran sacarse de adentro lo que se les escapa. La ciudad pierde la razón.",
+"nombre_ru": "Бранков мост",
+"desc_ru": "Один из главных мостов через Саву, между Старым городом и Новым Белградом. В Дикий час машины на мосту встают; водители выходят и бьются лбами о металл, будто хотят выбить из себя то, что рвётся наружу. Город сходит с ума.",
+"apar": [
+{
+"n": "dikij-chas",
+"c": [
+[
+"30",
+"Когда город теряет лицо"
+]
+]
+}
+],
+"res": [
+{
+"a": "Un conductor",
+"ar": "Водитель",
+"s": 1,
+"es": "No me acuerdo de nada. Tengo un chichón y el capó abollado.",
+"ru": "Ничего не помню. Шишка на лбу и вмятина на капоте."
+}
+]
+},
+{
+"id": "bg-avala",
+"nombre": "Avala",
+"cat": "monumento",
+"x": 4675,
+"y": -14159,
+"modelo": "ninguno",
+"desc": "La montaña de 511 metros al sur de Belgrado, con el Monumento al Héroe Desconocido y la torre de televisión que destruyeron las bombas en 1999. Es uno de los cinco puntos del mapa de Natasha. La moto vuela entre los bosques y por primera vez ella le da el manubrio: «Sos mío. Mi rey». Arriba el lugar está vacío y bajo una piedra hay una nota: «La Hora Salvaje está cerca. Si quieren detener el caos, búsquennos».",
+"nombre_ru": "Авала",
+"desc_ru": "Гора высотой 511 метров к югу от Белграда с Памятником Неизвестному герою и телебашней, разрушенной бомбами в 1999 году. Одна из пяти точек на карте Наташи. Мотоцикл мчится через леса, и Наташа впервые отдаёт руль: «Ты мой. Мой король». На вершине место пустое, а под камнем лежит записка: «Дикий час близок. Если хотите остановить хаос — найдите нас».",
+"apar": [
+{
+"n": "dikij-chas",
+"c": [
+[
+"5",
+"Картины будущего"
+],
+[
+"6",
+"Камень и тайна"
+],
+[
+"10",
+"Карта и напряжение"
+],
+[
+"11",
+"Досье и сомнение"
+],
+[
+"14",
+"Между тишиной и дыханием"
+],
+[
+"15",
+"Объект: Наташа"
+],
+[
+"20",
+"Ещё один камень"
+],
+[
+"24",
+"В поисках камня"
+],
+[
+"27",
+"Столкновение интересов"
+],
+[
+"29",
+"Когда всё начинает дрожать"
+],
+[
+"35",
+"Свадьба"
+]
+]
+},
+{
+"n": "divlji-chas",
+"c": [
+[
+"10",
+"Мапа и страст"
+],
+[
+"12",
+"Калемегдан – прво место"
+],
+[
+"19",
+"Сладолед и логика"
+],
+[
+"20",
+"Трећи камен"
+],
+[
+"24",
+"Трагање за четвртим каменом"
+],
+[
+"extra-1",
+"Завршни тест"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Me dio el manubrio por primera vez. «Mi rey.» La nota bajo la piedra, menos romántica.",
+"ru": "Она впервые отдала мне руль. «Мой король». Записка под камнем — уже не так романтично."
+}
+],
+"img": {
+"src": "img/lugares/bg-avala.webp",
+"n": "dikij-chas",
+"c": "24"
+}
+},
+{
+"id": "bg-zedanj",
+"nombre": "Zedanj",
+"cat": "misterio",
+"x": 12848,
+"y": 2001,
+"modelo": "ninguno",
+"desc": "Una meseta de piedra sobre el río, el último punto del mapa. No sale en las guías: según la novela, se llega por casualidad o porque alguien te manda. Luis levanta la última piedra, pero de las sombras salen Marina y Katarina; Natasha muerde a Marina y los dardos tranquilizantes los tiran primero a él y después a ella. «Voy a volver. Y esto lo van a pagar todos.» El marcador va, de forma aproximada, sobre las colinas del Danubio al este de la ciudad.",
+"nombre_ru": "Зедань",
+"desc_ru": "Каменное плато над рекой, последняя точка на карте. В путеводителях его нет: по словам романа, сюда приходят случайно или по наводке. Луис поднимает последний камень, но из теней выходят Марина и Катарина; Наташа кусает Марину, а дротики с транквилизатором валят с ног сначала Луиса, потом её. «Я вернусь. И за это заплатят все». Метка условно стоит на холмах над Дунаем к востоку от города.",
+"apar": [
+{
+"n": "dikij-chas",
+"c": [
+[
+"20",
+"Ещё один камень"
+],
+[
+"24",
+"В поисках камня"
+],
+[
+"25",
+"Пленники"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natasha",
+"ar": "Наташа",
+"s": 1,
+"es": "Dardos tranquilizantes. Voy a volver. Y lo van a pagar todos.",
+"ru": "Дротики с транквилизатором. Я вернусь. И за это заплатят все."
+},
+{
+"a": "Marina",
+"ar": "Марина",
+"s": 2,
+"es": "Me mordió otra vez. Pero cumplimos la misión.",
+"ru": "Она снова меня укусила. Но задание мы выполнили."
+}
+],
+"img": {
+"src": "img/lugares/bg-zedanj.webp",
+"n": "dikij-chas",
+"c": "25"
+}
+}
 ]
 };
 export const NOVELAS = {
-"dikij-chas-2": {
-"t": "Дикий час: Духи гор",
-"es": "La hora salvaje: Los espíritus de la montaña",
-"l": "ru",
-"y": null,
-"ru": "Дикий час: Духи гор",
-"p": "img/portadas/dikij-chas-2.webp",
-"tr": {}
-},
-"dikij-chas-karnaval-razdora": {
-"t": "Дикий час: Карнавал раздора",
-"es": "La hora salvaje: El carnaval de la discordia",
-"l": "ru",
-"y": 2026,
-"ru": "Дикий час: Карнавал раздора",
-"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
-"tr": {}
-},
-"la-reina-de-la-vendimia": {
-"t": "La reina de la Vendimia",
-"es": "La reina de la Vendimia",
-"l": "es",
-"y": 2026,
-"ru": "Королева Вендимии (исп.)",
-"p": "img/portadas/la-reina-de-la-vendimia.webp",
-"tr": {
-"cs": "kralovna-vinobrani"
-}
-},
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
-"l": "ru",
-"y": 2026,
-"ru": "Тихая любовь",
-"p": "img/portadas/tikhaya-lyubov.webp",
-"tr": {
-"it": "ti-amo-in-silenzio"
-}
-},
-"ladro-di-cuori-3": {
-"t": "Ladro di cuori 3",
-"es": "Ladrón de corazones 3 (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Похититель сердец 3 (ит.)",
-"p": "img/portadas/ladro-di-cuori-3.webp",
-"tr": {}
-},
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
-"tr": {}
-},
-"divlji-chas-malbec": {
-"t": "Дивљи час: Љубав укуса малбека",
-"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
-"p": "img/portadas/divlji-chas-malbec.webp",
-"tr": {}
-},
-"golos": {
-"t": "Голос",
-"es": "La voz",
-"l": "ru",
-"y": 2026,
-"ru": "Голос",
-"p": "img/portadas/golos.webp",
-"tr": {
-"fr": "la-voix"
-}
-},
-"tajna-v-biblioteke": {
-"t": "Тайна в библиотеке",
-"es": "El misterio de la biblioteca",
-"l": "ru",
-"y": 2026,
-"ru": "Тайна в библиотеке",
-"p": "img/portadas/tajna-v-biblioteke.webp",
-"tr": {}
-},
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
-"l": "ru",
-"y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
-"tr": {
-"en": "the-date"
-}
-},
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
-"l": "ru",
-"y": 2026,
-"ru": "Карнавал Синеи",
-"p": "img/portadas/karnaval-sinei.webp",
-"tr": {}
-},
-"grustnyj-gorod": {
-"t": "Грустный город",
-"es": "La ciudad triste",
-"l": "ru",
-"y": 2026,
-"ru": "Грустный город",
-"p": "img/portadas/grustnyj-gorod.webp",
-"tr": {
-"it": "la-citta-triste"
-}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
-"l": "es",
-"y": 2026,
-"ru": "Любовь в космосе",
-"p": "img/portadas/amor-en-el-cosmos.webp",
-"tr": {}
-},
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
-"l": "es",
-"y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
-"tr": {}
-},
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
-},
-"predchuvstvie-2-4": {
-"t": "Предчувствие 2.4",
-"es": "El presentimiento 2.4",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.4",
-"p": "img/portadas/predchuvstvie-2-4.webp",
-"tr": {}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"maschera-di-venezia": {
-"t": "Maschera di Venezia",
-"es": "La máscara de Venecia (it.)",
-"l": "it",
-"y": null,
-"ru": "Венецианская маска (ит.)",
-"p": "img/portadas/maschera-di-venezia.webp",
-"tr": {
-"ru": "venecianskaya-maska"
-}
-},
-"anomalia": {
-"t": "Anomalía",
-"es": "Anomalía",
-"l": "es",
-"y": null,
-"ru": "Аномалия (исп.)",
-"p": "img/portadas/anomalia.webp",
-"tr": {}
-},
-"operacion-londres": {
-"t": "El misterio de los Fader: Operación Londres",
-"es": "El misterio de los Fader: Operación Londres",
-"l": "es",
-"y": 2026,
-"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
-"p": "img/portadas/operacion-londres.webp",
-"tr": {}
-},
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви (ит.)",
-"p": "img/portadas/onde-d-amore.webp",
-"tr": {
-"es": "ondas-de-amor"
-}
-},
-"znak": {
-"t": "Знак",
-"es": "El signo",
-"l": "ru",
-"y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
-"tr": {}
-},
-"venecianskaya-maska": {
-"t": "Венецианская маска",
-"es": "La máscara de Venecia (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Венецианская маска",
-"p": "img/portadas/venecianskaya-maska.webp",
-"tr": {
-"it": "maschera-di-venezia"
-}
-},
-"prizrachnyj-poezd": {
-"t": "Призрачный поезд",
-"es": "El tren fantasma (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Призрачный поезд",
-"p": "img/portadas/prizrachnyj-poezd.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"it": "il-treno-fantasma"
-}
-},
-"ondas-de-amor": {
-"t": "Ondas de amor",
-"es": "Ondas de amor",
-"l": "es",
-"y": 2026,
-"ru": "Волны любви (исп.)",
-"p": "img/portadas/ondas-de-amor.webp",
-"tr": {
-"it": "onde-d-amore"
-}
-},
-"tajna-semi-fader": {
-"t": "Тайна семьи Фадер",
-"es": "El misterio de los Fader (ru.)",
-"l": "ru",
-"y": null,
-"ru": "Тайна семьи Фадер",
-"p": "img/portadas/tajna-semi-fader.webp",
-"tr": {
-"es": "el-misterio-de-los-fader"
-}
-},
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
-"tr": {}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
-"y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
-"tr": {}
-},
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
-"l": "it",
-"y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
-"tr": {}
-},
-"el-misterio-de-los-fader": {
-"t": "El misterio de los Fader",
-"es": "El misterio de los Fader",
-"l": "es",
-"y": 2025,
-"ru": "Тайна семьи Фадер (исп.)",
-"p": "img/portadas/el-misterio-de-los-fader.webp",
-"tr": {
-"ru": "tajna-semi-fader"
-}
-},
-"pokhititel-serdec-portret-osnovatelya": {
-"t": "Похититель сердец: Портрет основателя",
-"es": "Ladrón de corazones: El retrato del fundador",
-"l": "ru",
-"y": 2026,
-"ru": "Похититель сердец: Портрет основателя",
-"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
-"tr": {}
-},
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
-"l": "es",
-"y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
-"tr": {}
-},
-"predchuvstvie-2-2": {
-"t": "Предчувствие 2.2",
-"es": "El presentimiento 2.2",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.2",
-"p": "img/portadas/predchuvstvie-2-2.webp",
-"tr": {}
-},
 "volny-lyubvi": {
 "t": "Волны любви",
 "es": "Ondas de amor (ru.)",
@@ -20937,67 +21504,13 @@ export const NOVELAS = {
 "p": "img/portadas/volny-lyubvi.webp",
 "tr": {}
 },
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
-"l": "ru",
-"y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
-"tr": {}
-},
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
+"ladro-di-cuori-3": {
+"t": "Ladro di cuori 3",
+"es": "Ladrón de corazones 3 (it.)",
 "l": "it",
 "y": 2026,
-"ru": "Люблю тебя молча (ит.)",
-"p": "img/portadas/ti-amo-in-silenzio.webp",
-"tr": {
-"ru": "tikhaya-lyubov"
-}
-},
-"lluvia-de-meteoritos": {
-"t": "Lluvia de meteoritos",
-"es": "Lluvia de meteoritos",
-"l": "es",
-"y": null,
-"ru": "Метеоритный дождь (исп.)",
-"p": "img/portadas/lluvia-de-meteoritos.webp",
-"tr": {
-"ru": "meteoritnyj-dozhd"
-}
-},
-"la-citta-triste": {
-"t": "La città triste",
-"es": "La ciudad triste (it.)",
-"l": "it",
-"y": 2025,
-"ru": "Грустный город (ит.)",
-"p": "img/portadas/la-citta-triste.webp",
-"tr": {
-"ru": "grustnyj-gorod"
-}
-},
-"el-tren-fantasma": {
-"t": "El tren fantasma",
-"es": "El tren fantasma",
-"l": "es",
-"y": null,
-"ru": "Призрачный поезд (исп.)",
-"p": "img/portadas/el-tren-fantasma.webp",
-"tr": {
-"it": "il-treno-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"ru": "Похититель сердец 3 (ит.)",
+"p": "img/portadas/ladro-di-cuori-3.webp",
 "tr": {}
 },
 "kralovna-vinobrani": {
@@ -21011,13 +21524,91 @@ export const NOVELAS = {
 "es": "la-reina-de-la-vendimia"
 }
 },
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
 "l": "it",
 "y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
+"tr": {
+"ru": "tikhaya-lyubov"
+}
+},
+"el-misterio-de-los-fader": {
+"t": "El misterio de los Fader",
+"es": "El misterio de los Fader",
+"l": "es",
+"y": 2025,
+"ru": "Тайна семьи Фадер (исп.)",
+"p": "img/portadas/el-misterio-de-los-fader.webp",
+"tr": {
+"ru": "tajna-semi-fader"
+}
+},
+"tajna-v-biblioteke": {
+"t": "Тайна в библиотеке",
+"es": "El misterio de la biblioteca",
+"l": "ru",
+"y": 2026,
+"ru": "Тайна в библиотеке",
+"p": "img/portadas/tajna-v-biblioteke.webp",
+"tr": {}
+},
+"maschera-di-venezia": {
+"t": "Maschera di Venezia",
+"es": "La máscara de Venecia (it.)",
+"l": "it",
+"y": null,
+"ru": "Венецианская маска (ит.)",
+"p": "img/portadas/maschera-di-venezia.webp",
+"tr": {
+"ru": "venecianskaya-maska"
+}
+},
+"predchuvstvie-2-3": {
+"t": "Предчувствие 2.3",
+"es": "El presentimiento 2.3",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.3",
+"p": "img/portadas/predchuvstvie-2-3.webp",
+"tr": {}
+},
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
+"l": "ru",
+"y": 2026,
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
+"tr": {}
+},
+"anomalia": {
+"t": "Anomalía",
+"es": "Anomalía",
+"l": "es",
+"y": null,
+"ru": "Аномалия (исп.)",
+"p": "img/portadas/anomalia.webp",
+"tr": {}
+},
+"divlji-chas-malbec": {
+"t": "Дивљи час: Љубав укуса малбека",
+"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
+"p": "img/portadas/divlji-chas-malbec.webp",
+"tr": {}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
 "tr": {}
 },
 "il-treno-fantasma": {
@@ -21029,6 +21620,29 @@ export const NOVELAS = {
 "p": "img/portadas/il-treno-fantasma.webp",
 "tr": {
 "es": "el-tren-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"divlji-chas": {
+"t": "Дивљи час",
+"es": "La hora salvaje (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час (серб.)",
+"p": "img/portadas/divlji-chas.webp",
+"tr": {
+"ru": "dikij-chas"
+}
+},
+"el-tren-fantasma": {
+"t": "El tren fantasma",
+"es": "El tren fantasma",
+"l": "es",
+"y": null,
+"ru": "Призрачный поезд (исп.)",
+"p": "img/portadas/el-tren-fantasma.webp",
+"tr": {
+"it": "il-treno-fantasma",
 "ru": "prizrachnyj-poezd"
 }
 },
@@ -21064,42 +21678,6 @@ export const NOVELAS = {
 "pl": "przeczucie"
 }
 },
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
-"tr": {}
-},
-"rezonans-lyubvi": {
-"t": "Резонанс любви",
-"es": "Resonancia del amor",
-"l": "ru",
-"y": null,
-"ru": "Резонанс любви",
-"p": "img/portadas/rezonans-lyubvi.webp",
-"tr": {}
-},
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
-"l": "ru",
-"y": 2026,
-"ru": "Алмазный дождь",
-"p": "img/portadas/almaznyj-dozhd.webp",
-"tr": {}
-},
-"predchuvstvie-2-3": {
-"t": "Предчувствие 2.3",
-"es": "El presentimiento 2.3",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.3",
-"p": "img/portadas/predchuvstvie-2-3.webp",
-"tr": {}
-},
 "strateg": {
 "t": "Стратег",
 "es": "El estratega",
@@ -21107,6 +21685,55 @@ export const NOVELAS = {
 "y": 2026,
 "ru": "Стратег",
 "p": "img/portadas/strateg.webp",
+"tr": {}
+},
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
+"l": "ru",
+"y": 2026,
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
+"tr": {}
+},
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
+"tr": {
+"es": "ondas-de-amor"
+}
+},
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
+"l": "es",
+"y": null,
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
+"tr": {}
+},
+"lluvia-de-meteoritos": {
+"t": "Lluvia de meteoritos",
+"es": "Lluvia de meteoritos",
+"l": "es",
+"y": null,
+"ru": "Метеоритный дождь (исп.)",
+"p": "img/portadas/lluvia-de-meteoritos.webp",
+"tr": {
+"ru": "meteoritnyj-dozhd"
+}
+},
+"pokhititel-serdec-portret-osnovatelya": {
+"t": "Похититель сердец: Портрет основателя",
+"es": "Ladrón de corazones: El retrato del fundador",
+"l": "ru",
+"y": 2026,
+"ru": "Похититель сердец: Портрет основателя",
+"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
 "tr": {}
 },
 "la-voix": {
@@ -21120,6 +21747,66 @@ export const NOVELAS = {
 "ru": "golos"
 }
 },
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
+"l": "ru",
+"y": 2026,
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
+"tr": {}
+},
+"la-reina-de-la-vendimia": {
+"t": "La reina de la Vendimia",
+"es": "La reina de la Vendimia",
+"l": "es",
+"y": 2026,
+"ru": "Королева Вендимии (исп.)",
+"p": "img/portadas/la-reina-de-la-vendimia.webp",
+"tr": {
+"cs": "kralovna-vinobrani"
+}
+},
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"tr": {}
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
+},
+"venecianskaya-maska": {
+"t": "Венецианская маска",
+"es": "La máscara de Venecia (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Венецианская маска",
+"p": "img/portadas/venecianskaya-maska.webp",
+"tr": {
+"it": "maschera-di-venezia"
+}
+},
+"golos": {
+"t": "Голос",
+"es": "La voz",
+"l": "ru",
+"y": 2026,
+"ru": "Голос",
+"p": "img/portadas/golos.webp",
+"tr": {
+"fr": "la-voix"
+}
+},
 "predchuvstvie-2": {
 "t": "Предчувствие 2",
 "es": "El presentimiento 2",
@@ -21127,6 +21814,239 @@ export const NOVELAS = {
 "y": 2024,
 "ru": "Предчувствие 2",
 "p": "img/portadas/predchuvstvie-2.webp",
+"tr": {}
+},
+"operacion-londres": {
+"t": "El misterio de los Fader: Operación Londres",
+"es": "El misterio de los Fader: Operación Londres",
+"l": "es",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
+"p": "img/portadas/operacion-londres.webp",
+"tr": {}
+},
+"grustnyj-gorod": {
+"t": "Грустный город",
+"es": "La ciudad triste",
+"l": "ru",
+"y": 2026,
+"ru": "Грустный город",
+"p": "img/portadas/grustnyj-gorod.webp",
+"tr": {
+"it": "la-citta-triste"
+}
+},
+"ondas-de-amor": {
+"t": "Ondas de amor",
+"es": "Ondas de amor",
+"l": "es",
+"y": 2026,
+"ru": "Волны любви (исп.)",
+"p": "img/portadas/ondas-de-amor.webp",
+"tr": {
+"it": "onde-d-amore"
+}
+},
+"la-citta-triste": {
+"t": "La città triste",
+"es": "La ciudad triste (it.)",
+"l": "it",
+"y": 2025,
+"ru": "Грустный город (ит.)",
+"p": "img/portadas/la-citta-triste.webp",
+"tr": {
+"ru": "grustnyj-gorod"
+}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
+"tr": {}
+},
+"dikij-chas": {
+"t": "Дикий час",
+"es": "La hora salvaje",
+"l": "ru",
+"y": null,
+"ru": "Дикий час",
+"p": "img/portadas/dikij-chas.webp",
+"tr": {
+"sr": "divlji-chas"
+}
+},
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
+"tr": {}
+},
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
+"l": "es",
+"y": 2026,
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
+"tr": {}
+},
+"prizrachnyj-poezd": {
+"t": "Призрачный поезд",
+"es": "El tren fantasma (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Призрачный поезд",
+"p": "img/portadas/prizrachnyj-poezd.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"it": "il-treno-fantasma"
+}
+},
+"dikij-chas-karnaval-razdora": {
+"t": "Дикий час: Карнавал раздора",
+"es": "La hora salvaje: El carnaval de la discordia",
+"l": "ru",
+"y": 2026,
+"ru": "Дикий час: Карнавал раздора",
+"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
+"tr": {}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"rezonans-lyubvi": {
+"t": "Резонанс любви",
+"es": "Resonancia del amor",
+"l": "ru",
+"y": null,
+"ru": "Резонанс любви",
+"p": "img/portadas/rezonans-lyubvi.webp",
+"tr": {}
+},
+"predchuvstvie-2-2": {
+"t": "Предчувствие 2.2",
+"es": "El presentimiento 2.2",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.2",
+"p": "img/portadas/predchuvstvie-2-2.webp",
+"tr": {}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
+"y": 2026,
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"dikij-chas-2": {
+"t": "Дикий час: Духи гор",
+"es": "La hora salvaje: Los espíritus de la montaña",
+"l": "ru",
+"y": null,
+"ru": "Дикий час: Духи гор",
+"p": "img/portadas/dikij-chas-2.webp",
+"tr": {}
+},
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
+"l": "ru",
+"y": 2026,
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
+"tr": {
+"it": "ti-amo-in-silenzio"
+}
+},
+"predchuvstvie-2-4": {
+"t": "Предчувствие 2.4",
+"es": "El presentimiento 2.4",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.4",
+"p": "img/portadas/predchuvstvie-2-4.webp",
+"tr": {}
+},
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
+"l": "ru",
+"y": 2026,
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"tajna-semi-fader": {
+"t": "Тайна семьи Фадер",
+"es": "El misterio de los Fader (ru.)",
+"l": "ru",
+"y": null,
+"ru": "Тайна семьи Фадер",
+"p": "img/portadas/tajna-semi-fader.webp",
+"tr": {
+"es": "el-misterio-de-los-fader"
+}
+},
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
+"tr": {}
+},
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"tr": {}
+},
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
+"tr": {}
+},
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
 "tr": {}
 }
 };

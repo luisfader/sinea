@@ -1,0 +1,267 @@
+{
+ "_info": "Lugares de «Дикий час» / «Дивљи час» en Belgrado. «ll» = [lat, lon] reales.",
+ "lugares": [
+  {
+   "id": "bg-knez",
+   "nombre": "Calle Knez Mihailova",
+   "cat": "calle",
+   "ll": [
+    44.817,
+    20.4573
+   ],
+   "modelo": "ninguno",
+   "desc": "La calle peatonal principal de Belgrado, de la Plaza de la República a Kalemegdan, con casas del siglo XIX protegidas como monumento. Acá empieza todo: Luis camina mirando las fachadas para dibujarlas de memoria y un monopatín eléctrico lo atropella de costado. «Soy Natasha. Con el acento en la primera sílaba.» Como fue ella la que chocó, es su responsabilidad mostrarle Belgrado.",
+   "buscar": "Кнез[- ]Михаил\\w*",
+   "extra": {
+    "dikij-chas": [
+     1
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas",
+    "01-samokat.jpg"
+   ]
+  },
+  {
+   "id": "bg-kalemegdan",
+   "nombre": "Kalemegdan y el Pobednik",
+   "cat": "monumento",
+   "ll": [
+    44.8233,
+    20.4499
+   ],
+   "modelo": "pobednik",
+   "desc": "La fortaleza y el parque sobre el promontorio donde el Sava desemboca en el Danubio, con el «Vencedor» de Ivan Meštrović (1928) mirando el agua. Natasha trae a Luis al atardecer: «Belgrado no quiere a los débiles. Pero si te acepta… ya no te vas siendo el mismo». Es el primer punto del mapa de las piedras: acá ella le toma la mano y le dice «Sos mío», acá muerde a la pelirroja que se acerca a Luis, y acá él encuentra la primera piedra con el amuleto de Zark. Meses después, en Kalemegdan se hace la boda simbólica, sin altar ni cura, con Zmaj volando tranquilo sobre la fortaleza.",
+   "buscar": "Калемегдан\\w*",
+   "extra": {
+    "dikij-chas": [
+     1,
+     12,
+     13,
+     26,
+     35,
+     36
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas",
+    "01-kalemegdan.jpg"
+   ]
+  },
+  {
+   "id": "bg-nebojsa",
+   "nombre": "Torre Nebojša",
+   "cat": "monumento",
+   "ll": [
+    44.8261,
+    20.4508
+   ],
+   "modelo": "nebojsa",
+   "desc": "La torre medieval del siglo XV en la Ciudad Baja, junto al Danubio; con los turcos fue cárcel. Es el cuartel de la conspiración: de noche, Artan, Sofía y John se sientan a una mesa maciza a esperar la Hora Salvaje. Acá termina el ritual: «Hace años que hago visitas guiadas acá», dice Natasha, y conoce un pasadizo que no está en ningún plano. Desde arriba de la torre ella aparta los misiles como en 1999, de las piedras nace Zmaj, y al pie de la torre Luis-gigante pelea con Ala, el demonio de las tormentas.",
+   "buscar": "Небойш\\w*|Небојш\\w*",
+   "extra": {
+    "dikij-chas": [
+     4,
+     11,
+     27,
+     28,
+     29,
+     30,
+     32
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas",
+    "30-zmaj.jpg"
+   ]
+  },
+  {
+   "id": "bg-dunav",
+   "nombre": "La orilla del Danubio",
+   "cat": "parque",
+   "ll": [
+    44.8275,
+    20.457
+   ],
+   "modelo": "ninguno",
+   "desc": "El Danubio recibe al Sava bajo la fortaleza y gira al este. «Natasha está con nosotros. Orilla del Danubio. Vení solo.» Artan cree el mensaje, y en la orilla oscura John le dispara dos veces con silenciador; la corriente se lo lleva. En la Hora Salvaje uno de los misiles cae al Danubio sin llegar a la orilla, y del río sale Ala, el demonio de las tormentas… con la cara de Artan.",
+   "buscar": "Дуна[йяюев]\\w*|Дунав\\w*",
+   "extra": {
+    "dikij-chas": [
+     23,
+     30,
+     31
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas",
+    "23-reka.jpg"
+   ]
+  },
+  {
+   "id": "bg-republika",
+   "nombre": "Plaza de la República",
+   "cat": "plaza",
+   "ll": [
+    44.8163,
+    20.4602
+   ],
+   "modelo": "knez-mihailo",
+   "desc": "La plaza principal, con el monumento ecuestre al príncipe Mihailo (1882), el Museo Nacional y el Teatro Nacional; los belgradenses se citan «kod konja», junto al caballo. Acá empieza la Hora Salvaje casi sin que se note: la gente se queda quieta, alguien se ríe demasiado fuerte y demasiado tiempo. Después, un destello, y los hombres de una vidriera se tiran unos contra otros.",
+   "buscar": "площад\\w* Республики|Трг\\w* Републик\\w*",
+   "extra": {
+    "dikij-chas": [
+     30
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "bg-skadarlija",
+   "nombre": "Skadarlija",
+   "cat": "restaurante",
+   "ll": [
+    44.8178,
+    20.4651
+   ],
+   "modelo": "cafe",
+   "desc": "La vieja calle bohemia de adoquines, el «Montmartre de Belgrado», con kafanas donde desde el siglo XIX se juntaban poetas y pintores. De día Natasha lleva ahí a Luis: música por las ventanas abiertas, fachadas viejas. «Estoy orgullosa de ser serbia. Y de ser eslava.» Es el segundo punto del mapa: de una casa vieja sale Sofía, nerviosa, y en la esquina la espera John, el que ofrecía clases gratis de inglés a los turistas en la entrada de Kalemegdan.",
+   "buscar": "Скадарли\\w*",
+   "extra": {
+    "dikij-chas": [
+     7,
+     18
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas",
+    "18-sofija-i-dzhon.jpg"
+   ]
+  },
+  {
+   "id": "bg-muro",
+   "nombre": "El muro con marcas de bombas",
+   "cat": "monumento",
+   "ll": [
+    44.8055,
+    20.459
+   ],
+   "modelo": "ruina-bombas",
+   "desc": "«Acá cayeron bombas.» En la piedra herida aparece una mujer a caballo, de pelo claro y espada, con Belgrado ardiendo detrás: es exactamente el dibujo del cuaderno de Luis, y él entiende que sus dibujos dejan huellas. Natasha recuerda el 99: las sirenas, las ventanas que temblaban. «No quiero que Belgrado vuelva a arder. Nunca.» La novela no nombra la calle; el marcador está en el edificio del Estado Mayor de la calle Kneza Miloša, la huella más conocida de los bombardeos de 1999.",
+   "buscar": "Здесь падали бомбы|Овде су падале бомбе|бомб\\w*",
+   "extra": {
+    "dikij-chas": [
+     7,
+     17
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas",
+    "07-stena.jpg"
+   ]
+  },
+  {
+   "id": "bg-biblioteca",
+   "nombre": "Biblioteca Nacional de Serbia",
+   "cat": "edificio",
+   "ll": [
+    44.7974,
+    20.4707
+   ],
+   "modelo": "biblioteca-nacional",
+   "desc": "La biblioteca principal del país, junto al templo de San Sava; el edificio viejo ardió con sus manuscritos en el bombardeo alemán de 1941. Bajo un dibujo de Luis aparecen las palabras «Hora Salvaje» y Natasha decide buscar la respuesta en los libros: un hecho que pasa una vez cada mil años. No se pueden fotografiar los manuscritos: «Distraelo. Preguntale algo… de la Biblia». Mientras Luis entretiene al bibliotecario, Natasha arranca la página. «La tomé prestada. Por una buena causa.»",
+   "buscar": "библиотек\\w*",
+   "extra": {
+    "dikij-chas": [
+     8,
+     9,
+     10
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas",
+    "09-stranica.jpg"
+   ]
+  },
+  {
+   "id": "bg-sava",
+   "nombre": "Templo de San Sava",
+   "cat": "monumento",
+   "ll": [
+    44.79806,
+    20.46889
+   ],
+   "modelo": "hram-sava",
+   "desc": "Uno de los templos ortodoxos más grandes del mundo, sobre la meseta de Vračar, donde según la tradición los turcos quemaron en 1594 las reliquias de san Sava. Es el tercer punto del mapa de las piedras: bajo los reflectores, en un jardín cercano, Marina y Katarina, todavía con moretones del encuentro con Natasha, encuentran una piedra detrás de un pilar macizo. «Ojalá esa bruja no aparezca más.»",
+   "buscar": "Свят\\w+ Савв\\w*|Светог Саве",
+   "extra": {
+    "dikij-chas": [
+     20
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "bg-brankov",
+   "nombre": "Puente Branko",
+   "cat": "monumento",
+   "ll": [
+    44.816,
+    20.4418
+   ],
+   "modelo": "puente-branko",
+   "desc": "Uno de los grandes puentes sobre el Sava, entre la Ciudad Vieja y Nuevo Belgrado. En la Hora Salvaje los autos se detienen en el puente; los conductores bajan y golpean la cabeza contra el metal, como si quisieran sacarse de adentro lo que se les escapa. La ciudad pierde la razón.",
+   "buscar": "Бранков\\w* мост\\w*",
+   "extra": {
+    "dikij-chas": [
+     30
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "bg-avala",
+   "nombre": "Avala",
+   "cat": "monumento",
+   "ll": [
+    44.6896,
+    20.5165
+   ],
+   "modelo": "ninguno",
+   "desc": "La montaña de 511 metros al sur de Belgrado, con el Monumento al Héroe Desconocido y la torre de televisión que destruyeron las bombas en 1999. Es uno de los cinco puntos del mapa de Natasha. La moto vuela entre los bosques y por primera vez ella le da el manubrio: «Sos mío. Mi rey». Arriba el lugar está vacío y bajo una piedra hay una nota: «La Hora Salvaje está cerca. Si quieren detener el caos, búsquennos».",
+   "buscar": "Авал\\w*",
+   "extra": {
+    "dikij-chas": [
+     10,
+     24
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas",
+    "24-avala.jpg"
+   ]
+  },
+  {
+   "id": "bg-zedanj",
+   "nombre": "Zedanj",
+   "cat": "misterio",
+   "ll": [
+    44.835,
+    20.62
+   ],
+   "modelo": "ninguno",
+   "desc": "Una meseta de piedra sobre el río, el último punto del mapa. No sale en las guías: según la novela, se llega por casualidad o porque alguien te manda. Luis levanta la última piedra, pero de las sombras salen Marina y Katarina; Natasha muerde a Marina y los dardos tranquilizantes los tiran primero a él y después a ella. «Voy a volver. Y esto lo van a pagar todos.» El marcador va, de forma aproximada, sobre las colinas del Danubio al este de la ciudad.",
+   "buscar": "Зедан\\w*|Зедањ\\w*",
+   "extra": {
+    "dikij-chas": [
+     20,
+     25
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas",
+    "25-zedanj.jpg"
+   ]
+  }
+ ]
+}
