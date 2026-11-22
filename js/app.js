@@ -3,7 +3,7 @@ import * as THREE from './vendor/three.module.js';
 import { MapControls } from './vendor/MapControls.js';
 import { LIMITES, BARRIOS, CALLES, BORDES, EXTRAS, VISTA, NOMBRE, LEMA, CIUDAD, altura } from './mundo.js';
 import { pintarSuelo, crearTerreno, crearMar, crearEdificios, crearArboles, crearPuentes, crearAfueras } from './escena.js';
-import { construirHitos, crearDelfines, crearTrenFantasma, crearAutobus, crearDrones, crearAndes } from './hitos.js';
+import { construirHitos, crearDelfines, crearTrenFantasma, crearAutobus, crearDrones, crearAndes, crearGondolas } from './hitos.js';
 import { CIUDADES, NOVELAS, IDIOMAS, IDIOMAS_RU } from './datos.js';
 const LUGARES = CIUDADES[CIUDAD];
 // Lugares fuera del mapa (Potrerillos, el Aconcagua…): se ponen en el borde, en su dirección real, con la distancia
@@ -77,7 +77,7 @@ const cielo = new THREE.HemisphereLight(0xdfeeff, 0xcbb894, 1.25); escena.add(ci
 const progreso = (es, ru) => { $('#carga p').textContent = tr(es, ru || es); };
 const espera = () => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0)));
 
-let hitos, delf, tren, edificios, autobus;
+let hitos, delf, tren, edificios, autobus, gond;
 async function construir() {
   progreso('Pintando el mapa…', 'Рисуем карту…'); await espera();
   const S = renderer.capabilities.maxTextureSize >= 8192 && innerWidth > 900 ? 8192 : 4096;
@@ -97,6 +97,7 @@ async function construir() {
   if (EXTRAS.includes('drones-gaviota')) { delf = crearDrones(); escena.add(delf.g); }
   if (EXTRAS.includes('autobus-7')) { autobus = crearAutobus(); escena.add(autobus.g); }
   if (EXTRAS.includes('andes')) escena.add(crearAndes());
+  if (EXTRAS.includes('gondolas')) { gond = crearGondolas(); escena.add(gond.g); }
   if (EXTRAS.includes('tren-girasoles')) { tren = crearTrenFantasma({ fantasma: false, vagones: 5, s0: 200, s1: 3900, vel: 22 }); escena.add(tren.g); }
 }
 
@@ -514,7 +515,7 @@ function cuadro() {
   sc.left = sc.bottom = -ext; sc.right = sc.top = ext; sc.updateProjectionMatrix();
   sol.position.set(T.x + 1400, T.y + 2600, T.z + 900); sol.target.position.copy(T);
   if (hitos) hitos.anims.forEach(f => f(t, noche));
-  if (delf) delf.anim(t); if (tren) tren.anim(t, noche);
+  if (delf) delf.anim(t); if (tren) tren.anim(t, noche); if (gond) gond.anim(t, noche);
   if (autobus) {
     autobus.anim(t, noche);
     if (siguiendo) { const h = altura(autobus.estado.x, autobus.estado.y); const nt = new THREE.Vector3(autobus.estado.x, h, -autobus.estado.y); const d = nt.sub(controles.target).multiplyScalar(.08); controles.target.add(d); camara.position.add(d); }
@@ -531,9 +532,9 @@ function cuadro() {
 /* ------------------------------------------------------------------ */
 function urlCon(hash) {
   const q = new URLSearchParams(); if (CIUDAD !== 'sinea') q.set('ciudad', CIUDAD); if (lang === 'ru') q.set('lang', 'ru');
-  const qs = q.toString(); return location.pathname.replace(/(verdegrad|utopia|mendoza)\.html$/, 'index.html') + (qs ? '?' + qs : '') + hash;
+  const qs = q.toString(); return location.pathname.replace(/(verdegrad|utopia|mendoza|venezia)\.html$/, 'index.html') + (qs ? '?' + qs : '') + hash;
 }
-function irCiudad(c) { const q = new URLSearchParams(); if (c !== 'sinea') q.set('ciudad', c); if (lang === 'ru') q.set('lang', 'ru'); location.href = location.pathname.replace(/(verdegrad|utopia|mendoza)\.html$/, 'index.html') + (q.toString() ? '?' + q : ''); }
+function irCiudad(c) { const q = new URLSearchParams(); if (c !== 'sinea') q.set('ciudad', c); if (lang === 'ru') q.set('lang', 'ru'); location.href = location.pathname.replace(/(verdegrad|utopia|mendoza|venezia)\.html$/, 'index.html') + (q.toString() ? '?' + q : ''); }
 document.querySelectorAll('#ciudad button').forEach(b => { b.classList.toggle('on', b.dataset.c === CIUDAD); b.onclick = () => { if (b.dataset.c !== CIUDAD) irCiudad(b.dataset.c); }; });
 const ESTATICO = [
   ['#buscar', 'placeholder', `Buscar en ${NOMBRE.es}: un lugar, una novela, un personaje…`, `Поиск по ${NOMBRE.dat}: место, роман, персонаж…`],
@@ -544,8 +545,8 @@ const ESTATICO = [
   ['#panel .cerrar', 'title', 'Cerrar', 'Закрыть'], ['#recorrido button', 'title', 'Quitar filtro', 'Снять фильтр'],
   ['#recorrido b', 'text', 'Recorrido:', 'Маршрут:'],
   ['#carga .sub', 'text', LEMA.es, LEMA.ru],
-  ['#pie', 'html', `<b>${NOMBRE.es}</b> · ${CIUDAD === 'sinea' ? 'la ciudad' : CIUDAD === 'utopia' ? 'la fortaleza' : CIUDAD === 'mendoza' ? 'la ciudad real' : 'un pueblo'} de las novelas de <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Robert Fader</a>${CIUDAD === 'mendoza' ? ' · mapa: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>' : ''} · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Faderpedia</a> · <span class="ayuda">arrastrá para moverte · clic derecho o dos dedos para girar · rueda para el zoom</span>`,
-    `<b>${NOMBRE.ru}</b> · ${CIUDAD === 'sinea' ? 'город' : CIUDAD === 'utopia' ? 'крепость' : CIUDAD === 'mendoza' ? 'настоящий город' : 'городок'} из романов <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Роберта Фадера</a>${CIUDAD === 'mendoza' ? ' · карта: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>' : ''} · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Фадерпедия</a> · <span class="ayuda">тяните, чтобы двигаться · правая кнопка или два пальца — поворот · колесо — масштаб</span>`]
+  ['#pie', 'html', `<b>${NOMBRE.es}</b> · ${CIUDAD === 'sinea' ? 'la ciudad' : CIUDAD === 'utopia' ? 'la fortaleza' : CIUDAD === 'mendoza' || CIUDAD === 'venezia' ? 'la ciudad real' : 'un pueblo'} de las novelas de <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Robert Fader</a>${CIUDAD === 'mendoza' || CIUDAD === 'venezia' ? ' · mapa: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>' : ''} · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Faderpedia</a> · <span class="ayuda">arrastrá para moverte · clic derecho o dos dedos para girar · rueda para el zoom</span>`,
+    `<b>${NOMBRE.ru}</b> · ${CIUDAD === 'sinea' ? 'город' : CIUDAD === 'utopia' ? 'крепость' : CIUDAD === 'mendoza' || CIUDAD === 'venezia' ? 'настоящий город' : 'городок'} из романов <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Роберта Фадера</a>${CIUDAD === 'mendoza' || CIUDAD === 'venezia' ? ' · карта: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>' : ''} · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Фадерпедия</a> · <span class="ayuda">тяните, чтобы двигаться · правая кнопка или два пальца — поворот · колесо — масштаб</span>`]
 ];
 function ponerIdioma(l, refrescar = true) {
   lang = l === 'ru' ? 'ru' : 'es';

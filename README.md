@@ -1,13 +1,14 @@
 # Mapas de los mundos literarios de Robert Fader · Карты миров Роберта Фадера
 
-Sinea, Verdegrad, Nuestra Utopía y Mendoza en 3D. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
+Sinea, Verdegrad, Nuestra Utopía, Mendoza y Venecia en 3D. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
 
-Cuatro mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza** arriba:
+Cinco mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza | Venecia** arriba:
 
 - **Sinea**, la ciudad junto al mar: `index.html`
 - **Verdegrad**, el pueblo verde de Natalia, con su fortaleza en la penumbra: `index.html?ciudad=verdegrad` (o `verdegrad.html`)
 - **Nuestra Utopía** (Наша Утопия), la fortaleza de Robert en «Предчувствие»: `index.html?ciudad=utopia` (o `utopia.html`)
 - **Mendoza** (Мендоса), la ciudad real de «La reina de la Vendimia», «El misterio de los Fader», «Дикий час: Духи гор» y otras: `index.html?ciudad=mendoza` (o `mendoza.html`)
+- **Venecia** (Венеция), la ciudad real de «Maschera di Venezia» / «Венецианская маска»: `index.html?ciudad=venezia` (o `venezia.html`)
 
 Los rótulos verdes en el borde del mapa también llevan de una ciudad a la otra («← Verdegrad · estación Nubecita» en Sinea; «← Antiguo camino a Sinea» en Verdegrad).
 
@@ -81,6 +82,10 @@ A diferencia de las otras tres, Mendoza es una ciudad real y el mapa sigue su ge
 - **Fuera del mapa**: Potrerillos, Cacheuta, Uspallata, el Aconcagua, el Valle de Uco, Malargüe y otros aparecen en el borde, en la dirección en que hay que ir, con la distancia en km.
 
 Las reseñas (`data/mendoza/resenas.json`) son de Jana, Mirta, Julieta Arancibia, Natalia, Natasha, Luis, Sergio, Karl Fader, Carlita Martínez, Estela González, Zmaj y otros personajes.
+
+## Venecia
+
+El mapa de «Maschera di Venezia» (y de su versión rusa, «Венецианская маска», que agrega el Arsenal, la Salute, San Giorgio, San Michele y la red de cartas). La forma de las islas y de los canales grandes es la real: sale de una máscara tierra/agua de OpenStreetMap a 6,7 m por píxel, guardada como campo de distancias en `img/venezia-tierra.png` y leída por `js/ciudades/venezia.js`. Los canales chicos (rii) no entran a esa resolución. Los monumentos (Basílica, Campanile, Palacio Ducal, Puente de los Suspiros, Rialto, Salute, San Giorgio, la Porta Magna del Arsenal) están en sus coordenadas reales y modelados a mano; por el Canal Grande andan góndolas y vaporetti. Los lugares subterráneos de la novela (la Venecia perdida, las mazmorras de la Logia, el nivel sumergido, San Michele dell'Abisso, el palacio de Natalia) van debajo del sitio que dice el texto; los que la novela no ubica lo dicen en su ficha. Datos: `data/venezia/`.
 
 ## Añadir o corregir un lugar
 

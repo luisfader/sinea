@@ -1,7 +1,7 @@
 // Edificios y lugares famosos de Sinea modelados en 3D.
 // Cada modelo devuelve { g: THREE.Group, r: radio libre de edificios, anim?(t, noche) }.
 import * as THREE from './vendor/three.module.js';
-import { altura, rio, distLinea, VIAS, RESERVAS, RUTA_BUS } from './mundo.js';
+import { altura, rio, distLinea, costa, VIAS, RESERVAS, RUTA_BUS, CANAL_GRANDE } from './mundo.js';
 import { ventanas } from './escena.js';
 
 const mats = {};
@@ -605,6 +605,87 @@ const MODELOS = {
     g.add(caja(26, .6, 16, 0xd8cdb8, 0, 0, 24));
     return { g, r: 38 };
   },
+  // ---- Venecia ----
+  'campanile-sm'() { // el Campanile de San Marco: ladrillo, celda de campanas blanca, cubo y pirámide verde, el ángel dorado
+    const g = new THREE.Group(), lad = M(0xb5674a), piedra = M(0xeee6d6);
+    g.add(caja(12, 50, 12, lad)); for (let i = 0; i < 4; i++) { const a = i * Math.PI / 2; g.add(caja(2.2, 46, .6, M(0xa45b40), Math.cos(a) * 6.1, 2, Math.sin(a) * 6.1).rotateY(a)); }
+    g.add(caja(12.6, 2, 12.6, piedra, 0, 50)); g.add(caja(11, 9, 11, piedra, 0, 52));
+    for (let i = 0; i < 4; i++) { const a = i * Math.PI / 2; for (const d of [-3, 0, 3]) g.add(caja(1.6, 6, .4, 0x2d2a26, Math.cos(a) * 5.6 - Math.sin(a) * d, 53.2, Math.sin(a) * 5.6 + Math.cos(a) * d).rotateY(a)); }
+    g.add(caja(12, 2, 12, piedra, 0, 61)); g.add(caja(10, 8, 10, lad, 0, 63));
+    const pir = new THREE.Mesh(new THREE.ConeGeometry(7.4, 22, 4), M(0x6f9f86, { metalness: .3, roughness: .5 })); pir.position.y = 82; pir.rotation.y = Math.PI / 4; g.add(pir);
+    g.add(esfera(1.2, M(0xd8b04a, { metalness: .8, roughness: .3 }), 0, 94)); g.add(caja(.8, 3, .8, M(0xd8b04a, { metalness: .8, roughness: .3 }), 0, 94.5));
+    return { g, r: 12 };
+  },
+  'basilica-sm'() { // la Basílica: cinco cúpulas de plomo sobre cruz griega, fachada con arcos dorados
+    const g = new THREE.Group(), m = M(0xe7dccb), plomo = M(0x9da3a6, { metalness: .4, roughness: .45 }), oro = M(0xd4aa48, { metalness: .7, roughness: .35 });
+    g.add(caja(52, 22, 30, m)); g.add(caja(30, 22, 62, m));
+    for (const [x, z, r] of [[0, 0, 7.5], [-17, 0, 6], [17, 0, 6], [0, -20, 6], [0, 20, 6]]) {
+      g.add(cil(r * .85, r * .85, 5, m, x, 22, z, 16)); g.add(esfera(r, plomo, x, 27, z, {}, [18, 10, 0, Math.PI * 2, 0, Math.PI / 2]));
+      g.add(caja(.6, 4, .6, oro, x, 27 + r, z)); g.add(esfera(.9, oro, x, 27.5 + r + 3.2, z));
+    }
+    for (let i = -2; i <= 2; i++) { const a = new THREE.Mesh(new THREE.CylinderGeometry(4, 4, 1.2, 16, 1, false, 0, Math.PI), oro); a.rotation.set(Math.PI / 2, 0, Math.PI / 2); a.position.set(-26.3, 15, i * 6); g.add(a); }
+    g.add(caja(1.4, 3, 1.4, oro, -26.5, 22, 0));
+    return { g, r: 34 };
+  },
+  ducale() { // el Palacio Ducal: logia blanca abajo, muro de rombos rosados arriba
+    const g = new THREE.Group(), blanco = M(0xf1ebe0), rosa = M(0xe6b9a8);
+    g.add(caja(70, 8, 4, blanco, 0, 0, 34)); g.add(caja(4, 8, 70, blanco, 34, 0, 0));
+    for (let i = -8; i <= 8; i++) { g.add(caja(1.2, 7, 1.2, 0xe9e2d4, i * 4, 0, 36.5)); g.add(caja(1.2, 7, 1.2, 0xe9e2d4, 36.5, 0, i * 4)); }
+    g.add(caja(74, 6, 74, blanco, 0, 8)); g.add(caja(74, 12, 74, rosa, 0, 14));
+    g.add(caja(52, 26, 52, 0xd9c8b4, 0, 0, 0));
+    for (let i = -6; i <= 6; i++) { g.add(caja(1.6, 1.6, .4, blanco, i * 5.5, 26, 37.2)); g.add(caja(.4, 1.6, 1.6, blanco, 37.2, 26, i * 5.5)); }
+    const t = new THREE.Mesh(prismaGeo(), M(0xb0674c)); t.scale.set(74, 5, 74); t.position.y = 26; g.add(t);
+    g.rotation.y = -0.19;
+    return { g, r: 44 };
+  },
+  'ponte-sospiri'() { // el Puente de los Suspiros, cerrado y de piedra blanca, sobre el Rio di Palazzo
+    const g = new THREE.Group(), p = M(0xf0ece2);
+    g.add(caja(4.5, 4, 11, p, 0, 6)); const a = new THREE.Mesh(new THREE.CylinderGeometry(4.6, 4.6, 4.5, 20, 1, false, -Math.PI / 2, Math.PI), p); a.rotation.z = Math.PI / 2; a.position.y = 9.4; a.scale.set(1, 1, .3); g.add(a);
+    g.add(caja(1, 1.2, 1.6, 0x4a4a52, 2.3, 7.5, -2)); g.add(caja(1, 1.2, 1.6, 0x4a4a52, 2.3, 7.5, 2));
+    g.rotation.y = -0.19;
+    return { g, r: 6 };
+  },
+  rialto() { // el puente de Rialto: un solo arco de piedra con tiendas encima
+    const g = new THREE.Group(), p = M(0xefe7d6);
+    const arco = new THREE.Mesh(new THREE.TorusGeometry(15, 2.4, 8, 24, Math.PI), p); arco.scale.set(1.55, .55, 9); arco.position.y = -1; g.add(arco);
+    for (const z of [-7, 7]) for (let i = -3; i <= 3; i++) { const h = 7.5 - Math.abs(i) * 1.6; g.add(caja(4.6, 4, 3, i % 2 ? 0xe9dcc4 : 0xf2e8d6, i * 4.8, h, z * .75)); const t = new THREE.Mesh(prismaGeo(), M(0xb1603f)); t.scale.set(4.8, 1.6, 3.4); t.position.set(i * 4.8, h + 4, z * .75); g.add(t); }
+    g.add(caja(8, 4, 20, p, 0, 7.5)); const t = new THREE.Mesh(prismaGeo(), M(0xb1603f)); t.scale.set(9, 3, 21); t.position.y = 11.5; t.rotation.y = Math.PI / 2; g.add(t);
+    g.rotation.y = 0.95;
+    return { g, r: 16 };
+  },
+  salute() { // Santa Maria della Salute: octógono blanco, gran cúpula con volutas y linterna
+    const g = new THREE.Group(), b = M(0xf3eee4), plomo = M(0xb7bcc0, { metalness: .3, roughness: .5 });
+    g.add(cil(26, 26, 22, b, 0, 0, 0, 8)); g.add(cil(18, 20, 10, b, 0, 22, 0, 8));
+    g.add(esfera(18.5, plomo, 0, 32, 0, {}, [24, 12, 0, Math.PI * 2, 0, Math.PI / 2])); g.add(cil(3.5, 3.5, 6, b, 0, 50, 0, 12)); g.add(esfera(3.6, plomo, 0, 56, 0, {}, [12, 8, 0, Math.PI * 2, 0, Math.PI / 2])); g.add(caja(.6, 3, .6, 0x777777, 0, 59));
+    for (let i = 0; i < 8; i++) { const a = i * Math.PI / 4; g.add(esfera(3.2, b, Math.cos(a) * 21, 23, Math.sin(a) * 21)); }
+    g.add(cil(10, 10, 14, b, 34, 0, 0, 16)); g.add(esfera(10, plomo, 34, 14, 0, {}, [18, 8, 0, Math.PI * 2, 0, Math.PI / 2]));
+    for (const z of [-11, 11]) g.add(cil(2.4, 2.4, 26, b, 46, 0, z, 10));
+    g.add(caja(16, 2, 30, 0xe8e1d4, -28, 0, 0)); g.add(caja(10, 16, 18, b, -24, 0, 0));
+    g.rotation.y = 0.1;
+    return { g, r: 40 };
+  },
+  'san-giorgio'() { // San Giorgio Maggiore: fachada blanca de Palladio, cúpula y campanile puntiagudo
+    const g = new THREE.Group(), b = M(0xf5f1e8);
+    g.add(caja(26, 22, 60, b)); g.add(caja(44, 18, 22, b, 0, 0, 6));
+    const t = new THREE.Mesh(prismaGeo(), M(0xb87256)); t.scale.set(28, 7, 62); t.position.y = 22; t.rotation.y = 0; g.add(t);
+    g.add(cil(9, 9, 6, b, 0, 22, 8, 16)); g.add(esfera(9, M(0xa9adb0, { metalness: .3 }), 0, 28, 8, {}, [16, 8, 0, Math.PI * 2, 0, Math.PI / 2]));
+    for (const x of [-9, -3, 3, 9]) g.add(cil(1.2, 1.2, 20, b, x, 0, -31, 10));
+    const fr = new THREE.Mesh(prismaGeo(), b); fr.scale.set(24, 6, 2); fr.position.set(0, 20, -31); g.add(fr);
+    g.add(caja(8, 52, 8, 0xd4a07e, -22, 0, 28)); g.add(caja(8.6, 7, 8.6, b, -22, 52, 28));
+    const pu = new THREE.Mesh(new THREE.ConeGeometry(5.4, 18, 8), M(0x6f9f86, { metalness: .3 })); pu.position.set(-22, 68, 28); g.add(pu);
+    g.add(caja(40, 12, 50, 0xe6dccb, 34, 0, 20));
+    g.rotation.y = Math.PI / 2 - 0.15;
+    return { g, r: 45 };
+  },
+  arsenale() { // la Porta Magna del Arsenal: dos torres almenadas sobre el canal y los leones de piedra
+    const g = new THREE.Group(), lad = M(0xb6694c), p = M(0xece4d4);
+    for (const x of [-14, 14]) { g.add(caja(10, 26, 10, lad, x, 0, 0)); for (let i = -1; i <= 1; i++) for (const s of [-1, 1]) { g.add(caja(2.2, 2.6, 1.4, lad, x + i * 3.6, 26, s * 4.3)); g.add(caja(1.4, 2.6, 2.2, lad, x + s * 4.3, 26, i * 3.6)); } }
+    g.add(caja(18, 6, 4, lad, 0, 16, 0));
+    g.add(caja(10, 12, 3, p, -26, 0, -12)); const fr = new THREE.Mesh(prismaGeo(), p); fr.scale.set(10, 3, 3); fr.position.set(-26, 12, -12); g.add(fr);
+    for (const x of [-34, -38, -18]) { g.add(caja(2.8, 1.6, 1.2, p, x, 0, -15)); g.add(caja(2.2, 2.4, 1.4, 0xd9cfbd, x, 1.6, -15)); }
+    g.add(caja(140, 9, 6, lad, 70, 0, -4)); g.add(caja(6, 9, 120, lad, 140, 0, 56));
+    return { g, r: 30 };
+  },
   'tren-fantasma'() { return { g: new THREE.Group(), r: 0 }; }
 };
 
@@ -626,7 +707,7 @@ export function construirHitos(lugares, u) {
     grupo.add(m.g);
     if (m.anim) anims.push(m.anim);
     if (m.r) reservas.push([L.x, L.y, m.r]);
-    L._h = h + ({ anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
+    L._h = h + ({ 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
   }
   // reserva extra: la plaza Dante entera y el puerto
   reservas.push(...RESERVAS);
@@ -763,4 +844,49 @@ export function crearAndes() {
   // el Tupungato, al sudoeste
   const d2 = Math.hypot(-86100, -51800), k2 = 32000 / d2; monte(-86100 * k2, -51800 * k2, 5400, 7000, lejos);
   return g;
+}
+
+// Venecia: góndolas negras y un vaporetto que recorren el Canal Grande, y góndolas amarradas frente a la Piazzetta
+export function crearGondolas() {
+  const g = new THREE.Group(), lista = [];
+  const negro = new THREE.MeshStandardMaterial({ color: 0x141416, roughness: .4, metalness: .2 });
+  const rojo = new THREE.MeshStandardMaterial({ color: 0x8a2230, roughness: .6 }), metal = new THREE.MeshStandardMaterial({ color: 0xd8d8d8, metalness: .8, roughness: .3 });
+  const gondola = () => {
+    const o = new THREE.Group();
+    const casco = new THREE.Mesh(new THREE.CapsuleGeometry(.7, 9, 4, 10), negro); casco.rotation.z = Math.PI / 2; casco.scale.set(1, 1, .9); casco.position.y = .25; o.add(casco);
+    const proa = new THREE.Mesh(new THREE.BoxGeometry(.25, 1.6, .9), metal); proa.position.set(5.2, 1.1, 0); o.add(proa);
+    const asiento = new THREE.Mesh(new THREE.BoxGeometry(1.6, .5, 1), rojo); asiento.position.set(-.5, .8, 0); o.add(asiento);
+    const gond = new THREE.Group(); gond.add(new THREE.Mesh(new THREE.CylinderGeometry(.22, .25, 1.4, 6), new THREE.MeshStandardMaterial({ color: 0xf2f2f2 })));
+    const rayas = new THREE.Mesh(new THREE.CylinderGeometry(.23, .23, .25, 6), new THREE.MeshStandardMaterial({ color: 0x1d3f8a })); rayas.position.y = .2; gond.add(rayas);
+    const cab = new THREE.Mesh(new THREE.SphereGeometry(.22, 8, 6), new THREE.MeshStandardMaterial({ color: 0xe0b08c })); cab.position.y = .9; gond.add(cab);
+    const remo = new THREE.Mesh(new THREE.CylinderGeometry(.05, .05, 4, 4), new THREE.MeshStandardMaterial({ color: 0x8a6a45 })); remo.rotation.z = .5; remo.position.set(-.8, .2, .6); gond.add(remo);
+    gond.position.set(-4, 1.6, .2); o.add(gond); o.scale.setScalar(1.4); return o;
+  };
+  const vaporetto = () => {
+    const o = new THREE.Group();
+    const casco = new THREE.Mesh(new THREE.BoxGeometry(22, 1.6, 5), new THREE.MeshStandardMaterial({ color: 0xf2f2ee })); casco.position.y = .6; o.add(casco);
+    const franja = new THREE.Mesh(new THREE.BoxGeometry(22.1, .5, 5.05), new THREE.MeshStandardMaterial({ color: 0xe9b62e })); franja.position.y = .3; o.add(franja);
+    const cab = new THREE.Mesh(new THREE.BoxGeometry(14, 2.2, 4.2), new THREE.MeshStandardMaterial({ color: 0xe8e8e2, emissive: 0xffd58a, emissiveIntensity: 0 })); cab.position.set(-1, 2.5, 0); o.add(cab);
+    const pil = new THREE.Mesh(new THREE.BoxGeometry(2.4, 1.6, 2.4), new THREE.MeshStandardMaterial({ color: 0x3a3a3a })); pil.position.set(6.6, 2.4, 0); o.add(pil);
+    o.userData.cab = cab; return o;
+  };
+  const P = CANAL_GRANDE, L = [0];
+  for (let i = 1; i < P.length; i++) L.push(L[i - 1] + Math.hypot(P[i][0] - P[i - 1][0], P[i][1] - P[i - 1][1]));
+  const total = L[L.length - 1];
+  const punto = (s) => { s = ((s % total) + total) % total; let i = 1; while (L[i] < s) i++; const k = (s - L[i - 1]) / (L[i] - L[i - 1]); const a = P[i - 1], b = P[i]; return [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, Math.atan2(b[1] - a[1], b[0] - a[0])]; };
+  let sem = 3; const r = () => ((sem = (sem * 16807) % 2147483647) / 2147483647);
+  for (let i = 0; i < 16; i++) { const o = gondola(); g.add(o); lista.push({ o, s0: r() * total, v: (r() < .5 ? 1 : -1) * (1.1 + r() * .9), lado: (r() - .5) * 22, f: r() * 6 }); }
+  for (let i = 0; i < 2; i++) { const o = vaporetto(); g.add(o); lista.push({ o, s0: i * total / 2, v: i ? -5 : 5, lado: i ? 9 : -9, f: 0, vap: true }); }
+  // amarradas frente a la Piazzetta, sobre el Bacino
+  const amarre = [];
+  for (let i = 0; i < 9; i++) { const o = gondola(); const x = 40 + i * 9; let y = -60; while (costa(x, y) > -5 && y > -400) y -= 4; y -= (i % 2) * 2; o.position.set(x, .2, -y); o.rotation.y = Math.PI / 2 + .19; g.add(o); amarre.push({ o, f: i }); }
+  return { g, anim(t, n) {
+    for (const q of lista) {
+      const [x, y, a] = punto(q.s0 + t * q.v), nx = -Math.sin(a), ny = Math.cos(a);
+      q.o.position.set(x + nx * q.lado, .2 + Math.sin(t * 1.6 + q.f) * .12, -(y + ny * q.lado));
+      q.o.rotation.y = a + (q.v < 0 ? Math.PI : 0);
+      if (q.vap) q.o.userData.cab.material.emissiveIntensity = 1.4 * n;
+    }
+    for (const q of amarre) { q.o.position.y = .2 + Math.sin(t * 1.3 + q.f) * .15; q.o.rotation.z = Math.sin(t * 1.1 + q.f) * .04; }
+  } };
 }

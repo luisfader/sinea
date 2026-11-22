@@ -3143,6 +3143,15 @@ export const CIUDADES = {
 "Возвращение Василия"
 ]
 ]
+},
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"7",
+"Допрос"
+]
+]
 }
 ],
 "res": [
@@ -5704,6 +5713,15 @@ export const CIUDADES = {
 [
 "4",
 "Конь бледный"
+]
+]
+},
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"2",
+"L’Incontro nella Folla"
 ]
 ]
 }
@@ -17201,105 +17219,1269 @@ export const CIUDADES = {
 }
 ]
 }
+],
+"venezia": [
+{
+"id": "vz-piazza",
+"nombre": "Piazza San Marco",
+"otros": [
+"Площадь Сан-Марко"
+],
+"cat": "plaza",
+"x": -51,
+"y": 10,
+"modelo": "ninguno",
+"desc": "El corazón de Venecia, cerrado por las Procuratie, la Basílica y el Campanile. Acá empieza todo: Venecia, 20 de febrero de 2025, noche de Carnaval, un torbellino de luces, colores y risas. Roberto, argentino de nacimiento y viajero de alma, por fin está en la ciudad que siempre soñó, con sus amigos Alessio y Laura. Durante el Vuelo del Ángel aparece a su lado Natalia y lo lleva hasta un canal lateral donde los espera una góndola sin gondolero. La noche de la revolución, a pocos pasos de la plaza, Alessio está en medio del caos detrás de la falsa «procesión del Alcalde del Pueblo», con decenas de gondoleros cantando contra la Logia y una lluvia de fuegos artificiales. Al amanecer, los hombres de negro aparecen dormidos, uno al lado del otro, en las escalinatas de San Marco.",
+"nombre_ru": "Площадь Сан-Марко",
+"desc_ru": "Сердце Венеции между Прокурациями, Базиликой и Кампанилой. Здесь всё начинается: Венеция, 20 февраля 2025 года, карнавальная ночь — вихрь огней, красок и смеха. Аргентинец Роберто, путешественник по духу, наконец оказывается в городе своей мечты вместе с друзьями Алессио и Лаурой. Во время «Полёта Ангела» рядом с ним появляется Наталья и уводит его к боковому каналу, где ждёт гондола без гондольера. В ночь восстания, в двух шагах от площади, Алессио оказывается в центре хаоса — за фальшивой «процессией Народного мэра», с десятками гондольеров, которые поют против Ордена, под дождём фейерверков. На рассвете людей в чёрном находят спящими рядом друг с другом на ступенях Сан-Марко.",
+"apar": [
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"1",
+"Карнавал"
+],
+[
+"4",
+"Бег"
+],
+[
+"8",
+"Поцелуй в хаосе"
+],
+[
+"44",
+"Остров между светом и водой"
+],
+[
+"53",
+"Возрождение Венеции"
+],
+[
+"57",
+"Голос города"
+],
+[
+"58",
+"Маска, которая изменила всё"
+],
+[
+"59",
+"Дуэль и корона"
+],
+[
+"extra-2",
+"Путеводитель по размещению венецианских карт"
+]
+]
+},
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"1",
+"Il Carnevale"
+],
+[
+"2",
+"L’Incontro nella Folla"
+],
+[
+"8",
+"Il Bacio nel Caos"
+],
+[
+"29",
+"L'Assalto e la Purificazione"
+],
+[
+"30",
+"La Chiamata di Roma"
+]
+]
+}
+],
+"res": [
+{
+"a": "Roberto",
+"ar": "Роберто",
+"s": 5,
+"es": "Toda la vida soñé con esta plaza. Llegué en Carnaval, me di vuelta durante el Vuelo del Ángel y ahí estaba ella. Cinco estrellas no alcanzan.",
+"ru": "Всю жизнь мечтал об этой площади. Приехал на карнавал, обернулся во время «Полёта Ангела» — а рядом она. Пяти звёзд мало."
+},
+{
+"a": "Alessio",
+"ar": "Алессио",
+"s": 4,
+"es": "Fuegos artificiales, gondoleros cantando y una procesión falsa: la mejor fiesta de mi vida. Le saco una estrella por los precios del café.",
+"ru": "Фейерверки, поющие гондольеры и фальшивая процессия — лучший праздник в моей жизни. Минус звезда за цены на кофе."
+},
+{
+"a": "Un hombre de negro",
+"ar": "Человек в чёрном",
+"s": 1,
+"es": "Me desperté en las escalinatas de San Marco al lado de mis compañeros. No recuerdo nada. Muy incómodo para dormir.",
+"ru": "Проснулся на ступенях Сан-Марко рядом с коллегами. Ничего не помню. Спать очень неудобно."
+}
+],
+"img": {
+"src": "img/lugares/vz-piazza.webp",
+"n": "venecianskaya-maska",
+"c": "1"
+}
+},
+{
+"id": "vz-campanile",
+"nombre": "Campanile di San Marco",
+"cat": "monumento",
+"x": 46,
+"y": -14,
+"modelo": "campanile-sm",
+"desc": "La torre más alta de la ciudad, casi cien metros de ladrillo con la celda de las campanas y el ángel dorado en la punta. Desde acá, durante el Vuelo del Ángel, una acróbata vestida de ángel baja sobre la multitud del Carnaval. Mientras la Logia prepara su trampa, las campanas de San Marco empiezan a tocar a muerto; al final, con Venecia salvada, tocan una sinfonía de libertad.",
+"nombre_ru": "Кампанила Сан-Марко",
+"desc_ru": "Самая высокая башня города — почти сто метров кирпича, звонница и золотой ангел на шпиле. Отсюда во время «Полёта Ангела» над карнавальной толпой спускается акробатка в костюме ангела. Пока Орден готовит ловушку, колокола Сан-Марко начинают звонить по покойнику, а в финале, когда Венеция спасена, играют симфонию свободы.",
+"apar": [
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"8",
+"Поцелуй в хаосе"
+],
+[
+"44",
+"Остров между светом и водой"
+],
+[
+"48",
+"Маски карантина"
+],
+[
+"49",
+"Пицца, маски и колокольня"
+],
+[
+"50",
+"Выбор"
+],
+[
+"extra-2",
+"Путеводитель по размещению венецианских карт"
+]
+]
+},
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"8",
+"Il Bacio nel Caos"
+],
+[
+"18",
+"L'Ordine del Coprifuoco"
+],
+[
+"30",
+"La Chiamata di Roma"
+]
+]
+}
+],
+"res": [
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 5,
+"es": "Mirar el Vuelo del Ángel con la nariz para arriba, entre miles de máscaras. Al final las campanas tocaron por la libertad y lloré.",
+"ru": "Смотреть «Полёт Ангела», задрав голову, среди тысяч масок. В конце колокола звонили в честь свободы, и я плакала."
+},
+{
+"a": "Il Provveditore",
+"ar": "Проведитор",
+"s": 2,
+"es": "Las campanas tocaban a muerto y me pareció un buen augurio. Me equivoqué.",
+"ru": "Колокола звонили по покойнику, и мне это показалось хорошим знаком. Я ошибся."
+}
+],
+"img": {
+"src": "img/lugares/vz-campanile.webp",
+"n": "venecianskaya-maska",
+"c": "8"
+}
+},
+{
+"id": "vz-basilica",
+"nombre": "Basilica di San Marco",
+"cat": "monumento",
+"x": 107,
+"y": 43,
+"modelo": "basilica-sm",
+"desc": "La basílica de las cinco cúpulas y los mosaicos dorados. En la novela es la entrada al reino perdido: la góndola de Roberto vuelve a moverse sola y se desliza hacia un túnel escondido debajo de la Basílica. Alessio y Laura tienen que bajarse antes; el comisario Zancan llega por un viejo canal de servicio. A la salida del túnel lo esperan Zancan y sus agentes, empapados y furiosos, con Alessio y Laura esposados junto a la lancha de la policía.",
+"nombre_ru": "Базилика Сан-Марко",
+"desc_ru": "Базилика с пятью куполами и золотыми мозаиками. В романе это вход в затерянный мир: гондола Роберто снова сама трогается с места и скользит к тайному туннелю под Базиликой. Алессио и Лауру высаживают раньше; комиссар Занкан приплывает по старому служебному каналу. На выходе из туннеля Роберто ждут промокшие и разъярённые Занкан и его агенты — и Алессио с Лаурой в наручниках у полицейского катера.",
+"apar": [
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"13",
+"La Prova del Cuore Puro"
+],
+[
+"15",
+"Il Tradimento del Sangue"
+]
+]
+},
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"14",
+"Испытание чистого сердца"
+]
+]
+}
+],
+"res": [
+{
+"a": "Roberto",
+"ar": "Роберто",
+"s": 5,
+"es": "La góndola se movió sola hacia un túnel bajo la Basílica. Lo que hay abajo no sale en ninguna guía.",
+"ru": "Гондола сама поплыла к туннелю под Базиликой. То, что внизу, не описано ни в одном путеводителе."
+},
+{
+"a": "Commissario Zancan",
+"ar": "Комиссар Занкан",
+"s": 2,
+"es": "Llegué por un canal de servicio y salí empapado. El argentino, seco. Inaceptable.",
+"ru": "Приплыл по служебному каналу и вылез насквозь мокрый. Аргентинец — сухой. Недопустимо."
+}
+]
+},
+{
+"id": "vz-ducale",
+"nombre": "Palazzo Ducale",
+"cat": "edificio",
+"x": 167,
+"y": 6,
+"modelo": "ducale",
+"desc": "El palacio de los dux, sobre el agua, al lado de la Piazzetta: logia blanca abajo y muro rosado arriba. «Estoy en una góndola, cerca del Palazzo Ducale», dice Roberto, y diez minutos después un taxi acuático con Alessio y Laura se pone a su lado. Más tarde Natalia señala un punto en el mapa: la verdadera Máscara está en las mazmorras de la Logia, justo debajo del palacio.",
+"nombre_ru": "Дворец дожей",
+"desc_ru": "Дворец дожей у самой воды, рядом с Пьяццеттой: белая лоджия внизу и розовая стена наверху. «Я в гондоле, рядом с Дворцом дожей», — говорит Роберто, и через десять минут к гондоле подходит водное такси с Алессио и Лаурой. Позже Наталья показывает точку на карте: настоящая Маска — в подземельях Ордена, прямо под дворцом.",
+"apar": [
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"12",
+"Лунный путь Венеции"
+],
+[
+"43",
+"Шёпот воды и огонь ожидания"
+],
+[
+"45",
+"Двойка мечей на Мосту вздохов"
+],
+[
+"extra-2",
+"Путеводитель по размещению венецианских карт"
+]
+]
+},
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"11",
+"La Gondola dei Segreti"
+],
+[
+"28",
+"La Rivolta e il Ritorno della Maschera"
+],
+[
+"29",
+"L'Assalto e la Purificazione"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 4,
+"es": "Por arriba, el palacio más elegante de Venecia. Por abajo, lo que la Logia esconde. Hay que mirarlo dos veces.",
+"ru": "Сверху — самый изящный дворец Венеции. Снизу — то, что прячет Орден. На него нужно смотреть дважды."
+},
+{
+"a": "Alessio",
+"ar": "Алессио",
+"s": 5,
+"es": "Diez minutos y ya estábamos en taxi acuático al lado de la góndola. Servicio impecable.",
+"ru": "Десять минут — и мы уже на водном такси рядом с гондолой. Безупречный сервис."
+}
+]
+},
+{
+"id": "vz-sospiri",
+"nombre": "Ponte dei Sospiri",
+"cat": "monumento",
+"x": 188,
+"y": -11,
+"modelo": "ponte-sospiri",
+"desc": "El puente cerrado de piedra blanca que une el Palacio Ducal con las viejas prisiones, sobre el Rio di Palazzo. Es el puente que Roberto ve todas las noches desde la ventana de su departamento, con las góndolas que pasan en silencio por debajo; de noche, iluminado, parece suspendido entre el cielo y el agua. En la versión rusa es una de las cinco cartas de la red: el Dos de Espadas.",
+"nombre_ru": "Мост вздохов",
+"desc_ru": "Крытый мост из белого камня между Дворцом дожей и старой тюрьмой, над каналом Рио-ди-Палаццо. Этот мост Роберто видит каждый вечер из окна своей квартиры: под его аркой бесшумно скользят гондолы, а ночью, подсвеченный, он будто висит между небом и водой. В русской версии это одна из пяти точек сети — Двойка мечей.",
+"apar": [
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"5",
+"Тайна символов"
+],
+[
+"43",
+"Шёпот воды и огонь ожидания"
+],
+[
+"45",
+"Двойка мечей на Мосту вздохов"
+],
+[
+"47",
+"Прямая трансляция"
+],
+[
+"52",
+"Туз кубков"
+],
+[
+"extra-2",
+"Путеводитель по размещению венецианских карт"
+]
+]
+},
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"5",
+"Il Segreto dei Simboli"
+]
+]
+}
+],
+"res": [
+{
+"a": "Roberto",
+"ar": "Роберто",
+"s": 5,
+"es": "Lo veo cada noche desde mi ventana. Iluminado, parece colgado entre el cielo y el agua. Las góndolas pasan sin hacer ruido.",
+"ru": "Вижу его каждый вечер из окна. Подсвеченный, он будто висит между небом и водой. Гондолы проплывают бесшумно."
+},
+{
+"a": "Un gondoliere",
+"ar": "Гондольер",
+"s": 4,
+"es": "Paso por abajo veinte veces por día. Los turistas suspiran, yo remo.",
+"ru": "Проплываю под ним двадцать раз в день. Туристы вздыхают, я гребу."
+}
+]
+},
+{
+"id": "vz-casa-roberto",
+"nombre": "L'appartamento di Roberto",
+"cat": "casa",
+"x": 227,
+"y": 32,
+"modelo": "hogar",
+"desc": "Un departamento alquilado en un palacio antiguo, con la ventana del living mirando al Puente de los Suspiros. Roberto llena las paredes de fotos: un laberinto, un ojo, una estrella de siete puntas. Una noche se oye un disparo en el patio interno: Roberto baja corriendo y encuentra a un anciano en el suelo. Al rato llega Zancan: «Usted viene con nosotros a la questura». El departamento es de la novela; está puesto del lado de Castello, frente al puente.",
+"nombre_ru": "Квартира Роберто",
+"desc_ru": "Съёмная квартира в старинном палаццо: окно гостиной смотрит на Мост вздохов. Роберто развешивает по стенам фотографии — лабиринт, глаз, семиконечную звезду. Однажды ночью во внутреннем дворе гремит выстрел: Роберто сбегает вниз и находит на земле старика. Вскоре появляется Занкан: «Вы поедете с нами в квестуру». Квартира — из романа; на карте она стоит со стороны Кастелло, напротив моста.",
+"apar": [
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"5",
+"Il Segreto dei Simboli"
+]
+]
+},
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"5",
+"Тайна символов"
+]
+]
+}
+],
+"res": [
+{
+"a": "Roberto",
+"ar": "Роберто",
+"s": 4,
+"es": "Ventana al Puente de los Suspiros, paredes llenas de mis fotos. Le saco una estrella por el disparo en el patio y la visita de la policía.",
+"ru": "Окно на Мост вздохов, стены в моих фотографиях. Минус звезда за выстрел во дворе и визит полиции."
+},
+{
+"a": "Commissario Zancan",
+"ar": "Комиссар Занкан",
+"s": 3,
+"es": "Un laberinto, un ojo, una estrella de siete puntas en la pared. Sospechoso. Vino con nosotros a la questura.",
+"ru": "Лабиринт, глаз и семиконечная звезда на стене. Подозрительно. Поехал с нами в квестуру."
+}
+],
+"img": {
+"src": "img/lugares/vz-casa-roberto.webp",
+"n": "maschera-di-venezia",
+"c": "5"
+}
+},
+{
+"id": "vz-rialto",
+"nombre": "Rialto: el puente y el mercado",
+"cat": "monumento",
+"x": -191,
+"y": 440,
+"modelo": "rialto",
+"desc": "El puente de piedra de un solo arco sobre el Canal Grande, con tiendas encima, y al lado el mercado de Rialto. En la revuelta del pueblo las calles se llenan de barricadas hechas con tablas, góndolas dadas vuelta y hasta los puestos del mercado de Rialto.",
+"nombre_ru": "Риальто: мост и рынок",
+"desc_ru": "Однопролётный каменный мост через Большой канал с лавками наверху, а рядом — рынок Риальто. Во время народного восстания улицы перегораживают баррикадами из досок, перевёрнутых гондол и даже прилавков рынка Риальто.",
+"apar": [
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"28",
+"La Rivolta e il Ritorno della Maschera"
+]
+]
+}
+],
+"res": [
+{
+"a": "Un gondoliere",
+"ar": "Гондольер",
+"s": 5,
+"es": "Dimos vuelta las góndolas y las pusimos de barricada con los puestos del mercado. Nunca Rialto fue tan nuestro.",
+"ru": "Мы перевернули гондолы и сделали из них баррикады вместе с прилавками рынка. Никогда Риальто не был настолько нашим."
+},
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 4,
+"es": "El puente más lindo del Canal Grande. Mucha gente; vengan temprano o en plena revolución.",
+"ru": "Самый красивый мост на Большом канале. Много народу: приходите рано утром или прямо во время революции."
+}
+]
+},
+{
+"id": "vz-canal-grande",
+"nombre": "Canal Grande",
+"cat": "calle",
+"x": -660,
+"y": 794,
+"modelo": "ninguno",
+"desc": "La gran vía de agua de Venecia, en forma de S, de la estación hasta San Marco. En góndola, bajo las mantas de lana, Roberto cuenta por fin su teoría de las aguas: Venecia fue construida en tierra firme y después quedó sumergida. En la góndola de al lado viaja una mujer misteriosa. En la niebla de la tarde, Roberto aprieta la llave de oro que le confió Natalia, y más tarde hay una persecución: una lancha de la policía los descubre y Roberto, con la Máscara, le lanza una ola.",
+"nombre_ru": "Большой канал",
+"desc_ru": "Главная водная улица Венеции, изогнутая буквой S, от вокзала до Сан-Марко. В гондоле, под шерстяными пледами, Роберто наконец рассказывает свою теорию вод: Венецию построили на суше, а потом город ушёл под воду. В соседней гондоле сидит загадочная женщина. В вечернем тумане Роберто сжимает золотой ключ, который доверила ему Наталья, а позже начинается погоня: полицейский катер замечает их, и Роберто с помощью Маски обрушивает на него волну.",
+"apar": [
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"3",
+"La Teoria delle Acque"
+],
+[
+"11",
+"La Gondola dei Segreti"
+],
+[
+"25",
+"La Caccia all'Argentino"
+]
+]
+},
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"2",
+"Теория вод"
+],
+[
+"26",
+"Охота на Роберто"
+],
+[
+"33",
+"Под водой"
+]
+]
+}
+],
+"res": [
+{
+"a": "Roberto",
+"ar": "Роберто",
+"s": 5,
+"es": "En góndola, bajo las mantas, conté por fin mi teoría: Venecia fue construida en tierra firme. Nadie se rió. Bueno, Alessio un poco.",
+"ru": "В гондоле, под пледами, я наконец рассказал свою теорию: Венецию построили на суше. Никто не засмеялся. Ну, Алессио чуть-чуть."
+},
+{
+"a": "Commissario Zancan",
+"ar": "Комиссар Занкан",
+"s": 1,
+"es": "Perseguíamos al argentino en lancha y nos tiró una ola. Una ola. Con una máscara.",
+"ru": "Мы гнались за аргентинцем на катере, а он швырнул в нас волну. Волну. Маской."
+}
+],
+"img": {
+"src": "img/lugares/vz-canal-grande.webp",
+"n": "maschera-di-venezia",
+"c": "3"
+}
+},
+{
+"id": "vz-loggia",
+"nombre": "La sala de la Logia (cerca de San Polo)",
+"cat": "misterio",
+"x": -605,
+"y": 427,
+"modelo": "villa",
+"desc": "Hombres vestidos de negro alrededor de una mesa de madera antigua, libros polvorientos y mapas amarillentos; debajo de las losas, el agua golpea los cimientos del palacio. El jefe secreto es el Provveditore Ludovico Gradenigo, y después Marco Dandolo. Zancan termina confesando: «Un palacio antiguo cerca de San Polo. Ahí se reúnen». En la prisión de la Logia, Alessio se presenta como experto en vinos toscanos y les ofrece a los guardias una «degustación» de Chianti; en el asalto final, Natalia sopla una nube de polvo dorado contra los hombres de negro. La novela no da la dirección exacta: el mapa lo pone junto al Campo San Polo.",
+"nombre_ru": "Тайный зал Ордена (у Сан-Поло)",
+"desc_ru": "Люди в чёрном вокруг старинного деревянного стола, пыльные книги и пожелтевшие карты; внизу под плитами вода плещется о фундамент дворца. Тайный глава — проведитор Лудовико Градениго, потом Марко Дандоло. Занкан в конце концов признаётся: «Старый дворец. Где-то у Сан-Поло». В тюрьме Ордена Алессио выдаёт себя за знатока тосканских вин и устраивает охранникам «дегустацию» кьянти, а при штурме Наталья сдувает на людей в чёрном облако золотой пыли. Точного адреса в романе нет: на карте зал стоит у кампо Сан-Поло.",
+"apar": [
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"6",
+"La Loggia"
+],
+[
+"15",
+"Il Tradimento del Sangue"
+],
+[
+"22",
+"Fuga nella Laguna"
+],
+[
+"26",
+"La Caduta della Maschera"
+]
+]
+},
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"6",
+"Тень Ордена"
+],
+[
+"16",
+"Предательство крови"
+],
+[
+"26",
+"Охота на Роберто"
+]
+]
+}
+],
+"res": [
+{
+"a": "Alessio",
+"ar": "Алессио",
+"s": 3,
+"es": "Celda húmeda, guardias aburridos. Les ofrecí una degustación de Chianti como experto en vinos toscanos y aceptaron. Prisión mejorable, público excelente.",
+"ru": "Сырая камера, скучающие охранники. Я предложил им дегустацию кьянти как знаток тосканских вин — и они согласились. Тюрьма так себе, публика отличная."
+},
+{
+"a": "Marco Dandolo",
+"ar": "Марко Дандоло",
+"s": 2,
+"es": "Mesa antigua, mapas valiosos, agua golpeando los cimientos. Una señora con polvo dorado arruinó la reunión.",
+"ru": "Старинный стол, ценные карты, вода плещется о фундамент. Одна дама с золотой пылью испортила собрание."
+}
+],
+"img": {
+"src": "img/lugares/vz-loggia.webp",
+"n": "maschera-di-venezia",
+"c": "6"
+}
+},
+{
+"id": "vz-cannaregio",
+"nombre": "Cannaregio",
+"cat": "barrio",
+"x": -777,
+"y": 1138,
+"modelo": "ninguno",
+"desc": "El barrio del norte, el más grande y popular de Venecia, de fondamente largas junto a canales rectos. En «Венецианская маска», por radio les ordenan a las patrullas de médicos de la peste ir enseguida a Cannaregio, y la plaza del Campanile se vacía.",
+"nombre_ru": "Каннареджо",
+"desc_ru": "Северный квартал, самый большой и самый народный в Венеции, с длинными набережными вдоль прямых каналов. В «Венецианской маске» по рации патрулям чумных докторов приказывают немедленно отправляться в Каннареджо — и площадь у колокольни пустеет.",
+"apar": [
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"49",
+"Пицца, маски и колокольня"
+]
+]
+}
+]
+},
+{
+"id": "vz-arsenale",
+"nombre": "Arsenale",
+"cat": "monumento",
+"x": 926,
+"y": 82,
+"modelo": "arsenale",
+"desc": "El viejo astillero de la república marinera: torres almenadas, murallas antiguas, diques viejos y, en la entrada, los leones de piedra de San Marcos que parecen seguir custodiando la ciudad. En «Венецианская маска» Alessio mete el As de Bastos en una grieta bajo el friso: es la primera chispa de la nueva red. Adentro hay una sorpresa: oro, cofres y objetos antiguos ya cargados en una lancha, como si alguien estuviera por escapar. Después, el Arsenal se enciende segundo y una columna rosada sube de los cimientos hacia la plaza.",
+"nombre_ru": "Арсенал",
+"desc_ru": "Старая верфь морской республики: зубчатые башни, древние стены, старые доки, а у входа — каменные львы Святого Марка, которые будто до сих пор охраняют город. В «Венецианской маске» Алессио вставляет «Туз жезлов» глубоко в щель под фризом — первая искра новой сети. Внутри сюрприз: золото, сундуки и древние предметы уже погружены в лодку, как будто кто-то собрался бежать. Потом Арсенал вспыхивает вторым: из фундамента к площади поднимается мощный розовый столб.",
+"apar": [
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"43",
+"Шёпот воды и огонь ожидания"
+],
+[
+"46",
+"Туз жезлов у стен Арсенала"
+],
+[
+"47",
+"Прямая трансляция"
+],
+[
+"50",
+"Выбор"
+],
+[
+"51",
+"Огни над Арсеналом"
+],
+[
+"52",
+"Туз кубков"
+],
+[
+"extra-2",
+"Путеводитель по размещению венецианских карт"
+]
+]
+}
+],
+"res": [
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 5,
+"es": "Los leones de piedra en la entrada parecen vivos. Adentro había oro cargado en una lancha. Alguien se iba con prisa.",
+"ru": "Каменные львы у входа как живые. Внутри золото уже погрузили в лодку. Кто-то очень спешил уехать."
+},
+{
+"a": "Alessio",
+"ar": "Алессио",
+"s": 5,
+"es": "Metí el As de Bastos bajo el friso y saltó la primera chispa. Me siento parte de la historia de la República.",
+"ru": "Вставил «Туз жезлов» под фриз — и вспыхнула первая искра. Чувствую себя частью истории Республики."
+}
+]
+},
+{
+"id": "vz-salute",
+"nombre": "Santa Maria della Salute",
+"cat": "monumento",
+"x": -290,
+"y": -399,
+"modelo": "salute",
+"desc": "La gran iglesia blanca de la cúpula, en la punta de Dorsoduro, levantada en agradecimiento por el fin de la peste de 1630. En «Венецианская маска» es el punto de la Reina de Copas, la carta que une la fuerza de Roberto con los sentimientos de Natalia: está escondida en la base de la terraza exterior, y el agua bajo el templo empieza a brillar desde adentro.",
+"nombre_ru": "Санта-Мария-делла-Салюте",
+"desc_ru": "Большой белый храм с куполом на мысу Дорсодуро, построенный в благодарность за избавление от чумы 1630 года. В «Венецианской маске» это точка «Королевы кубков» — карты, которая связывает силу Роберто с чувствами Натальи: она спрятана в основании внешней террасы, и вода под храмом начинает светиться изнутри.",
+"apar": [
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"52",
+"Туз кубков"
+],
+[
+"extra-2",
+"Путеводитель по размещению венецианских карт"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "La Reina de Copas está escondida en la base de la terraza. Cuando el agua bajo el templo se encendió, entendí lo que sentía.",
+"ru": "«Королева кубков» спрятана в основании террасы. Когда вода под храмом засветилась, я поняла, что чувствую."
+}
+]
+},
+{
+"id": "vz-san-giorgio",
+"nombre": "San Giorgio Maggiore",
+"cat": "monumento",
+"x": 377,
+"y": -530,
+"modelo": "san-giorgio",
+"desc": "La isla frente a la Piazzetta, con la basílica blanca de Palladio y el campanile «como una lanza oscura»; al otro lado de la laguna titilan las luces de San Marco. En «Венецианская маска» Alessio y Laura llegan de noche en motos de agua, rodean la basílica hasta el muelle del fondo y esconden una carta en la grieta de un viejo poste de amarre.",
+"nombre_ru": "Сан-Джорджо-Маджоре",
+"desc_ru": "Остров напротив Пьяццетты с белой палладианской базиликой и кампанилой, «похожей на тёмное копьё»; через лагуну мерцают огни Сан-Марко. В «Венецианской маске» Алессио и Лаура приплывают ночью на гидроциклах, обходят базилику к дальнему причалу и прячут карту в трещине старого швартовочного столба.",
+"apar": [
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"43",
+"Шёпот воды и огонь ожидания"
+],
+[
+"44",
+"Остров между светом и водой"
+]
+]
+}
+],
+"res": [
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 5,
+"es": "Llegamos de noche en moto de agua. Del otro lado titilaban las luces de San Marco. Escondimos la carta en un poste viejo. Romántico y peligroso.",
+"ru": "Приплыли ночью на гидроциклах. На другом берегу мерцали огни Сан-Марко. Спрятали карту в старом столбе. Романтично и опасно."
+}
+]
+},
+{
+"id": "vz-san-michele",
+"nombre": "San Michele, la isla del cementerio",
+"cat": "parque",
+"x": 562,
+"y": 1388,
+"modelo": "ninguno",
+"desc": "La isla-cementerio al norte de la ciudad, rodeada de un muro, con tumbas y cipreses. En «Венецианская маска», de noche, un aeróstato sale de debajo del agua y baja sobre el cementerio.",
+"nombre_ru": "Сан-Микеле, остров-кладбище",
+"desc_ru": "Тихий остров-кладбище к северу от города, за стеной — могилы и кипарисы. В «Венецианской маске» ночью над кладбищем опускается аэростат, поднявшийся прямо из-под воды.",
+"apar": [
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"34",
+"Под поверхностью"
+],
+[
+"38",
+"Принц Венеции"
+],
+[
+"41",
+"Прыжок в бездну"
+],
+[
+"42",
+"Прыжок во тьму"
+],
+[
+"43",
+"Шёпот воды и огонь ожидания"
+],
+[
+"extra-4",
+"Интервью с Робертом Фадером: вторая встреча"
+]
+]
+}
+],
+"res": [
+{
+"a": "Roberto",
+"ar": "Роберто",
+"s": 4,
+"es": "Cipreses, silencio y tumbas. Y de noche, un aeróstato que sale del agua. Venecia nunca deja de sorprender.",
+"ru": "Кипарисы, тишина и могилы. А ночью — аэростат, выныривающий из воды. Венеция не перестаёт удивлять."
+}
+]
+},
+{
+"id": "vz-laguna",
+"nombre": "La laguna",
+"cat": "parque",
+"x": 1215,
+"y": -1185,
+"modelo": "ninguno",
+"desc": "El agua poco profunda que rodea Venecia, con sus canales marcados por postes de madera. Alessio y Laura escapan por la laguna en un barquito a motor robado, mientras médicos de la peste y agentes patrullan los canales buscando a «un argentino». En «Венецианская маска», de noche, cuatro motos de agua cortan la superficie negra, y al final la laguna se abre y desde el fondo asoman arcos y columnas de piedra. El Provveditore es arrestado cuando intenta huir en una lancha cargada de lingotes de oro.",
+"nombre_ru": "Лагуна",
+"desc_ru": "Мелководье вокруг Венеции с фарватерами, размеченными деревянными сваями. Алессио и Лаура бегут по лагуне на угнанной моторке, пока чумные доктора и агенты прочёсывают каналы в поисках «какого-то аргентинца». В «Венецианской маске» ночью чёрную гладь режут четыре гидроцикла, а в финале лагуна расступается, и из глубины проступают каменные арки и колонны. Проведитора арестовывают, когда он пытается бежать на катере, гружённом золотыми слитками.",
+"apar": [
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"23",
+"Бегство в лагуне"
+],
+[
+"43",
+"Шёпот воды и огонь ожидания"
+],
+[
+"53",
+"Возрождение Венеции"
+]
+]
+},
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"22",
+"Fuga nella Laguna"
+],
+[
+"30",
+"La Chiamata di Roma"
+]
+]
+}
+],
+"res": [
+{
+"a": "Alessio",
+"ar": "Алессио",
+"s": 4,
+"es": "Escapamos en un barquito robado con médicos de la peste detrás. Laura manejaba. Mejor no hablar de cómo.",
+"ru": "Сбежали на угнанной моторке, а за нами — чумные доктора. Рулила Лаура. Лучше не вспоминать как."
+},
+{
+"a": "Il Provveditore",
+"ar": "Проведитор",
+"s": 1,
+"es": "Intenté irme en lancha con unos lingotes. Me arrestaron en el agua. La laguna no es discreta.",
+"ru": "Пытался уехать на катере с парой слитков. Арестовали прямо на воде. Лагуна совсем не умеет хранить тайны."
+}
+]
+},
+{
+"id": "vz-perduta",
+"nombre": "La Venecia perdida (bajo la Basílica)",
+"cat": "misterio",
+"x": 78,
+"y": 69,
+"modelo": "ninguno",
+"desc": "Bajo la Basílica, una puerta se abre con un trueno: un mundo subterráneo dorado, vivo, con mosaicos, estatuas y bóvedas. Sobre el arco, en veneciano antiguo: «Solo l'omo dal cuor neto pol 'rivar a la Maschera» (solo el hombre de corazón limpio puede llegar a la Máscara). Roberto entra solo; sobre el altar de mármol blanco está la Máscara, y cuando llegan los enemigos, el agua del canal subterráneo se levanta como una pared.",
+"nombre_ru": "Затонувшая Венеция (под Базиликой)",
+"desc_ru": "Под Базиликой дверь открывается с громовым гулом: подземный город — сияющий, золотой, живой, с мозаиками, статуями и сводами. Над аркой на старовенецианском: «Solo l'omo dal cuor neto pol 'rivar a la Maschera» — только человек с чистым сердцем дойдёт до Маски. Роберто идёт сюда один; на алтаре из белого мрамора лежит Маска, а когда появляются враги, вода в подземном канале встаёт стеной.",
+"apar": [
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"9",
+"Тайна утраченных вод"
+],
+[
+"12",
+"Лунный путь Венеции"
+],
+[
+"14",
+"Испытание чистого сердца"
+],
+[
+"15",
+"Сила Маски"
+],
+[
+"16",
+"Предательство крови"
+],
+[
+"18",
+"Ловушка ордена"
+],
+[
+"25",
+"Ужин и подземные признания"
+],
+[
+"extra-4",
+"Интервью с Робертом Фадером: вторая встреча"
+]
+]
+},
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"9",
+"Il Segreto delle Acque Perdute"
+],
+[
+"13",
+"La Prova del Cuore Puro"
+],
+[
+"14",
+"Il Potere della Maschera"
+]
+]
+}
+],
+"res": [
+{
+"a": "Roberto",
+"ar": "Роберто",
+"s": 5,
+"es": "«Solo el hombre de corazón limpio puede llegar a la Máscara.» Llegué. Mi teoría de las aguas tenía razón.",
+"ru": "«Только человек с чистым сердцем дойдёт до Маски». Я дошёл. Моя теория вод оказалась верной."
+}
+],
+"img": {
+"src": "img/lugares/vz-perduta.webp",
+"n": "maschera-di-venezia",
+"c": "13"
+}
+},
+{
+"id": "vz-segrete",
+"nombre": "Las mazmorras de la Logia (bajo el Palacio Ducal)",
+"cat": "misterio",
+"x": 152,
+"y": -34,
+"modelo": "ninguno",
+"desc": "Se llega solo por los túneles subterráneos, un laberinto de piedra y agua que conocen únicamente los Custodios. Acá la Logia esconde la verdadera Máscara de Venecia. Laura desactiva las trampas una tras otra y Natalia abre la cerradura con un antiguo canto veneciano; un código escondido en una canción infantil veneciana abre una celda, y de ella salen los padres de Natalia, después de diez años presos.",
+"nombre_ru": "Подземелья Ордена (под Дворцом дожей)",
+"desc_ru": "Сюда можно попасть только по подземным туннелям — лабиринту камня и воды, который знают лишь Хранители. Здесь Орден прячет настоящую Венецианскую маску. Лаура обезвреживает ловушки одну за другой, Наталья открывает замок старинной венецианской песней, а код, спрятанный в детской венецианской считалке, открывает камеру — из неё выходят родители Натальи после десяти лет плена.",
+"apar": [
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"28",
+"La Rivolta e il Ritorno della Maschera"
+],
+[
+"29",
+"L'Assalto e la Purificazione"
+],
+[
+"30",
+"La Chiamata di Roma"
+]
+]
+}
+],
+"res": [
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 4,
+"es": "Desactivé todas las trampas. Natalia abrió la cerradura cantando. Trabajo en equipo de diez.",
+"ru": "Обезвредила все ловушки. Наталья открыла замок песней. Командная работа на десятку."
+},
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Una canción infantil abrió la última celda y salieron mis padres, después de diez años. No necesito más estrellas.",
+"ru": "Детская считалка открыла последнюю камеру, и вышли мои родители — через десять лет. Больше звёзд мне не нужно."
+}
+],
+"img": {
+"src": "img/lugares/vz-segrete.webp",
+"n": "maschera-di-venezia",
+"c": "29"
+}
+},
+{
+"id": "vz-cripta",
+"nombre": "El nivel sumergido (bajo las Procuratie)",
+"cat": "misterio",
+"x": -66,
+"y": -20,
+"modelo": "ninguno",
+"desc": "En «Венецианская маска», debajo de la vieja cripta y más abajo que los cimientos de las Procuratie: un pedestal en el centro y cinco canales subterráneos estrechos alrededor, adonde llegan todas las líneas de la red de cartas. Natalia pone el As de Copas sobre el pedestal; Zancan levanta la mano y de los canales sale un torrente de agua.",
+"nombre_ru": "Затопленный уровень (под Прокурациями)",
+"desc_ru": "В «Венецианской маске» — под старой криптой, ниже фундамента Прокураций: в центре постамент, вокруг него пять узких подземных каналов, сюда сходятся все линии сети карт. Наталья кладёт «Туз кубков» на каменный постамент. Занкан поднимает руку — и из подземных каналов вырывается поток воды.",
+"apar": [
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"52",
+"Туз кубков"
+]
+]
+}
+]
+},
+{
+"id": "vz-abisso",
+"nombre": "San Michele dell'Abisso (bajo el cementerio)",
+"cat": "misterio",
+"x": 531,
+"y": 1344,
+"modelo": "ninguno",
+"desc": "En «Венецианская маска», bajo la isla-cementerio, un lugar que no está en ningún mapa y al que no se llega por el camino normal. Por los ojos de buey se ven palacios hundidos, fachadas, columnas y balcones, «capa sobre capa», y en el fondo un palacio de piedra rosa y turquesa. Ahí viven Tatiana y Antonio, los padres de Natalia; Tatiana cuenta por qué Venecia quedó bajo el agua. De vuelta, suben en aeróstato a través del agua hasta el cielo de la noche.",
+"nombre_ru": "Сан-Микеле-дель-Абиссо (под кладбищем)",
+"desc_ru": "В «Венецианской маске» — под островом-кладбищем, место, которого нет на картах и куда нельзя попасть обычным путём. Через иллюминаторы видны затонувшие дворцы, фасады, колонны и балконы — «слой под слоем», а в глубине — дворец из розового и бирюзового камня. Здесь живут Татьяна и Антонио, родители Натальи; Татьяна рассказывает, почему Венеция оказалась под водой. Обратно наверх — на аэростате сквозь толщу воды к ночному небу.",
+"apar": [
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"34",
+"Под поверхностью"
+],
+[
+"38",
+"Принц Венеции"
+],
+[
+"42",
+"Прыжок во тьму"
+]
+]
+},
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"9",
+"Il Segreto delle Acque Perdute"
+]
+]
+}
+],
+"res": [
+{
+"a": "Tatiana",
+"ar": "Татьяна",
+"s": 5,
+"es": "Palacios hundidos detrás de los ojos de buey, capa sobre capa. No sale en los mapas, y así está bien.",
+"ru": "Затонувшие дворцы за иллюминаторами, слой под слоем. Его нет на картах — и пусть так и будет."
+}
+]
+},
+{
+"id": "vz-rifugio",
+"nombre": "El palacio secreto de Natalia (bajo el agua)",
+"cat": "misterio",
+"x": 59,
+"y": -262,
+"modelo": "ninguno",
+"desc": "La góndola dobla por un canal escondido entre dos edificios en ruinas, el canal se abre en un remolino y detrás de una puerta aparece un refugio submarino: mosaicos dorados y un techo de vidrio antiguo a través del cual se ve el agua y pasa la luna llena. Se llega por un túnel sumergido con faroles azules. Ahí Natalia le confiesa a Roberto que hace diez años la Logia capturó a sus padres; una mañana, Alessio posa orgulloso junto a la mesa después de su «hazaña culinaria». La novela no dice dónde está: el mapa lo pone bajo el agua del Bacino.",
+"nombre_ru": "Скрытый дворец Натальи (под водой)",
+"desc_ru": "Гондола сворачивает в скрытый канал между двумя полуразрушенными зданиями, вода закручивается воронкой — и за дверью открывается подводное убежище: золотые мозаики и потолок из старинного стекла, сквозь который видна вода и проходит полная луна. Сюда ведёт затопленный туннель с голубыми фонарями. Здесь Наталья признаётся Роберто, что десять лет назад Орден схватил её родителей, а однажды утром Алессио гордо стоит у стола после «кулинарного подвига». Где находится дворец, роман не говорит: на карте он под водой бассейна Сан-Марко.",
+"apar": [
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"9",
+"Тайна утраченных вод"
+],
+[
+"11",
+"Там, где рождается «мы»"
+],
+[
+"25",
+"Ужин и подземные признания"
+],
+[
+"34",
+"Под поверхностью"
+],
+[
+"36",
+"Под водой Венеция открывалась совсем иной"
+],
+[
+"38",
+"Принц Венеции"
+],
+[
+"41",
+"Прыжок в бездну"
+]
+]
+},
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"9",
+"Il Segreto delle Acque Perdute"
+],
+[
+"21",
+"Il Segreto del Cuore"
+],
+[
+"23",
+"Il Messaggio e la Battaglia"
+],
+[
+"24",
+"Cena e Confessioni Sotterranee"
+]
+]
+}
+],
+"res": [
+{
+"a": "Alessio",
+"ar": "Алессио",
+"s": 5,
+"es": "Mosaicos dorados, techo de vidrio con la luna llena encima y una cocina donde hice mi hazaña culinaria. Volvería a vivir bajo el agua.",
+"ru": "Золотые мозаики, стеклянный потолок с полной луной над головой и кухня, где я совершил кулинарный подвиг. Я бы снова пожил под водой."
+},
+{
+"a": "Roberto",
+"ar": "Роберто",
+"s": 5,
+"es": "El canal se abrió en un remolino y detrás de una puerta estaba la verdadera Venecia. Y ella.",
+"ru": "Канал закрутился воронкой, а за дверью оказалась истинная Венеция. И она."
+}
+],
+"img": {
+"src": "img/lugares/vz-rifugio.webp",
+"n": "venecianskaya-maska",
+"c": "9"
+}
+},
+{
+"id": "vz-questura",
+"nombre": "La questura",
+"cat": "edificio",
+"x": -9417,
+"y": 3825,
+"modelo": "ninguno",
+"desc": "Paredes descascaradas, tubos de neón que parpadean y una pregunta: ¿qué hace un argentino en Venecia tratando de demostrar que la ciudad estaba en tierra firme? Acá interroga a Roberto el comisario Zancan. La novela no da la dirección; la Questura de Venecia real está en tierra firme, en Marghera, por eso el marcador queda en el borde del mapa.",
+"nombre_ru": "Квестура",
+"desc_ru": "Облупленные стены, мигающие неоновые лампы и вопрос: что делает аргентинец в Венеции, пытаясь доказать, что город стоял на суше? Здесь Роберто допрашивает комиссар Занкан. Адреса в романе нет; настоящая квестура Венеции находится на материке, в Маргере, поэтому метка стоит на краю карты.",
+"apar": [
+{
+"n": "maschera-di-venezia",
+"c": [
+[
+"5",
+"Il Segreto dei Simboli"
+],
+[
+"7",
+"L’Interrogatorio"
+],
+[
+"15",
+"Il Tradimento del Sangue"
+]
+]
+},
+{
+"n": "venecianskaya-maska",
+"c": [
+[
+"7",
+"Допрос"
+]
+]
+}
+],
+"res": [
+{
+"a": "Roberto",
+"ar": "Роберто",
+"s": 2,
+"es": "Neón que parpadea y la misma pregunta toda la noche: qué hace un argentino en Venecia. Café malo.",
+"ru": "Мигающий неон и один и тот же вопрос всю ночь: что делает аргентинец в Венеции. Кофе плохой."
+},
+{
+"a": "Commissario Zancan",
+"ar": "Комиссар Занкан",
+"s": 4,
+"es": "Respuesta del propietario: el café es el reglamentario. Y la pregunta sigue siendo válida.",
+"ru": "Ответ владельца: кофе по уставу. А вопрос по-прежнему актуален."
+}
+],
+"img": {
+"src": "img/lugares/vz-questura.webp",
+"n": "maschera-di-venezia",
+"c": "7"
+}
+}
 ]
 };
 export const NOVELAS = {
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
-"l": "it",
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
+"tr": {}
+},
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
+"l": "ru",
 "y": 2026,
-"ru": "Люблю тебя молча (ит.)",
-"p": "img/portadas/ti-amo-in-silenzio.webp",
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
+"tr": {}
+},
+"kralovna-vinobrani": {
+"t": "Královna vinobraní",
+"es": "La reina de la Vendimia (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Королева Вендимии (чеш.)",
+"p": "img/portadas/kralovna-vinobrani.webp",
 "tr": {
-"ru": "tikhaya-lyubov"
+"es": "la-reina-de-la-vendimia"
 }
 },
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"predchuvstvie-2": {
-"t": "Предчувствие 2",
-"es": "El presentimiento 2",
+"tajna-semi-fader": {
+"t": "Тайна семьи Фадер",
+"es": "El misterio de los Fader (ru.)",
 "l": "ru",
-"y": 2024,
-"ru": "Предчувствие 2",
-"p": "img/portadas/predchuvstvie-2.webp",
-"tr": {}
-},
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
-"tr": {}
-},
-"pokhititel-serdec-portret-osnovatelya": {
-"t": "Похититель сердец: Портрет основателя",
-"es": "Ladrón de corazones: El retrato del fundador",
-"l": "ru",
-"y": 2026,
-"ru": "Похититель сердец: Портрет основателя",
-"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
-"tr": {}
-},
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви",
-"p": "img/portadas/volny-lyubvi.webp",
-"tr": {}
-},
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
-"tr": {}
-},
-"ondas-de-amor": {
-"t": "Ondas de amor",
-"es": "Ondas de amor",
-"l": "es",
-"y": 2026,
-"ru": "Волны любви (исп.)",
-"p": "img/portadas/ondas-de-amor.webp",
+"y": null,
+"ru": "Тайна семьи Фадер",
+"p": "img/portadas/tajna-semi-fader.webp",
 "tr": {
-"it": "onde-d-amore"
+"es": "el-misterio-de-los-fader"
 }
-},
-"prizrachnyj-poezd": {
-"t": "Призрачный поезд",
-"es": "El tren fantasma (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Призрачный поезд",
-"p": "img/portadas/prizrachnyj-poezd.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"it": "il-treno-fantasma"
-}
-},
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
-"l": "ru",
-"y": 2026,
-"ru": "Алмазный дождь",
-"p": "img/portadas/almaznyj-dozhd.webp",
-"tr": {}
 },
 "predchuvstvie": {
 "t": "Предчувствие",
@@ -17324,52 +18506,56 @@ export const NOVELAS = {
 "pl": "przeczucie"
 }
 },
-"divlji-chas-malbec": {
-"t": "Дивљи час: Љубав укуса малбека",
-"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
-"p": "img/portadas/divlji-chas-malbec.webp",
-"tr": {}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
+"ondas-de-amor": {
+"t": "Ondas de amor",
+"es": "Ondas de amor",
+"l": "es",
 "y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
-"tr": {}
-},
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
-"l": "ru",
-"y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
-"tr": {}
-},
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви (ит.)",
-"p": "img/portadas/onde-d-amore.webp",
+"ru": "Волны любви (исп.)",
+"p": "img/portadas/ondas-de-amor.webp",
 "tr": {
-"es": "ondas-de-amor"
+"it": "onde-d-amore"
 }
 },
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
+"dikij-chas-2": {
+"t": "Дикий час: Духи гор",
+"es": "La hora salvaje: Los espíritus de la montaña",
+"l": "ru",
+"y": null,
+"ru": "Дикий час: Духи гор",
+"p": "img/portadas/dikij-chas-2.webp",
+"tr": {}
+},
+"venecianskaya-maska": {
+"t": "Венецианская маска",
+"es": "La máscara de Venecia (ru.)",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"ru": "Венецианская маска",
+"p": "img/portadas/venecianskaya-maska.webp",
+"tr": {
+"it": "maschera-di-venezia"
+}
+},
+"predchuvstvie-2-4": {
+"t": "Предчувствие 2.4",
+"es": "El presentimiento 2.4",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.4",
+"p": "img/portadas/predchuvstvie-2-4.webp",
 "tr": {}
+},
+"el-misterio-de-los-fader": {
+"t": "El misterio de los Fader",
+"es": "El misterio de los Fader",
+"l": "es",
+"y": 2025,
+"ru": "Тайна семьи Фадер (исп.)",
+"p": "img/portadas/el-misterio-de-los-fader.webp",
+"tr": {
+"ru": "tajna-semi-fader"
+}
 },
 "la-reina-de-la-vendimia": {
 "t": "La reina de la Vendimia",
@@ -17380,17 +18566,6 @@ export const NOVELAS = {
 "p": "img/portadas/la-reina-de-la-vendimia.webp",
 "tr": {
 "cs": "kralovna-vinobrani"
-}
-},
-"golos": {
-"t": "Голос",
-"es": "La voz",
-"l": "ru",
-"y": 2026,
-"ru": "Голос",
-"p": "img/portadas/golos.webp",
-"tr": {
-"fr": "la-voix"
 }
 },
 "grustnyj-gorod": {
@@ -17404,76 +18579,42 @@ export const NOVELAS = {
 "it": "la-citta-triste"
 }
 },
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
+"l": "ru",
+"y": 2026,
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
+"tr": {}
+},
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
 "l": "it",
 "y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
 "tr": {}
 },
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
+"tr": {
+"es": "ondas-de-amor"
+}
 },
-"tajna-v-biblioteke": {
-"t": "Тайна в библиотеке",
-"es": "El misterio de la biblioteca",
+"znak": {
+"t": "Знак",
+"es": "El signo",
 "l": "ru",
-"y": 2026,
-"ru": "Тайна в библиотеке",
-"p": "img/portadas/tajna-v-biblioteke.webp",
-"tr": {}
-},
-"predchuvstvie-2-3": {
-"t": "Предчувствие 2.3",
-"es": "El presentimiento 2.3",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.3",
-"p": "img/portadas/predchuvstvie-2-3.webp",
-"tr": {}
-},
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
-"tr": {}
-},
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
-"l": "ru",
-"y": 2026,
-"ru": "Карнавал Синеи",
-"p": "img/portadas/karnaval-sinei.webp",
-"tr": {}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
-"l": "es",
-"y": 2026,
-"ru": "Любовь в космосе",
-"p": "img/portadas/amor-en-el-cosmos.webp",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
 "tr": {}
 },
 "predchuvstvie-2-2": {
@@ -17485,109 +18626,31 @@ export const NOVELAS = {
 "p": "img/portadas/predchuvstvie-2-2.webp",
 "tr": {}
 },
-"anomalia": {
-"t": "Anomalía",
-"es": "Anomalía",
-"l": "es",
-"y": null,
-"ru": "Аномалия (исп.)",
-"p": "img/portadas/anomalia.webp",
-"tr": {}
-},
-"kralovna-vinobrani": {
-"t": "Královna vinobraní",
-"es": "La reina de la Vendimia (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Королева Вендимии (чеш.)",
-"p": "img/portadas/kralovna-vinobrani.webp",
-"tr": {
-"es": "la-reina-de-la-vendimia"
-}
-},
-"predchuvstvie-2-4": {
-"t": "Предчувствие 2.4",
-"es": "El presentimiento 2.4",
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
 "l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.4",
-"p": "img/portadas/predchuvstvie-2-4.webp",
-"tr": {}
-},
-"tajna-semi-fader": {
-"t": "Тайна семьи Фадер",
-"es": "El misterio de los Fader (ru.)",
-"l": "ru",
-"y": null,
-"ru": "Тайна семьи Фадер",
-"p": "img/portadas/tajna-semi-fader.webp",
-"tr": {
-"es": "el-misterio-de-los-fader"
-}
-},
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
-"l": "es",
-"y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
-"tr": {}
-},
-"ladro-di-cuori-3": {
-"t": "Ladro di cuori 3",
-"es": "Ladrón de corazones 3 (it.)",
-"l": "it",
 "y": 2026,
-"ru": "Похититель сердец 3 (ит.)",
-"p": "img/portadas/ladro-di-cuori-3.webp",
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
 "tr": {}
 },
-"znak": {
-"t": "Знак",
-"es": "El signo",
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
+"tr": {}
+},
+"predchuvstvie-2": {
+"t": "Предчувствие 2",
+"es": "El presentimiento 2",
 "l": "ru",
 "y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
-"tr": {}
-},
-"27-ocak": {
-"t": "27 Ocak",
-"es": "27 de enero",
-"l": "tr",
-"y": 2026,
-"ru": "27 января",
-"p": "img/portadas/27-ocak.webp",
-"tr": {}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
-"l": "ru",
-"y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
-"tr": {
-"en": "the-date"
-}
-},
-"operacion-londres": {
-"t": "El misterio de los Fader: Operación Londres",
-"es": "El misterio de los Fader: Operación Londres",
-"l": "es",
-"y": 2026,
-"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
-"p": "img/portadas/operacion-londres.webp",
+"ru": "Предчувствие 2",
+"p": "img/portadas/predchuvstvie-2.webp",
 "tr": {}
 },
 "la-voix": {
@@ -17601,23 +18664,25 @@ export const NOVELAS = {
 "ru": "golos"
 }
 },
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
 "l": "ru",
 "y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
 "tr": {}
 },
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
-"l": "es",
+"maschera-di-venezia": {
+"t": "Maschera di Venezia",
+"es": "La máscara de Venecia (it.)",
+"l": "it",
 "y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
-"tr": {}
+"ru": "Венецианская маска (ит.)",
+"p": "img/portadas/maschera-di-venezia.webp",
+"tr": {
+"ru": "venecianskaya-maska"
+}
 },
 "lluvia-de-meteoritos": {
 "t": "Lluvia de meteoritos",
@@ -17628,29 +18693,6 @@ export const NOVELAS = {
 "p": "img/portadas/lluvia-de-meteoritos.webp",
 "tr": {
 "ru": "meteoritnyj-dozhd"
-}
-},
-"il-treno-fantasma": {
-"t": "Il treno fantasma",
-"es": "El tren fantasma (it.)",
-"l": "it",
-"y": null,
-"ru": "Призрачный поезд (ит.)",
-"p": "img/portadas/il-treno-fantasma.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
-"l": "ru",
-"y": 2026,
-"ru": "Тихая любовь",
-"p": "img/portadas/tikhaya-lyubov.webp",
-"tr": {
-"it": "ti-amo-in-silenzio"
 }
 },
 "el-tren-fantasma": {
@@ -17665,14 +18707,64 @@ export const NOVELAS = {
 "ru": "prizrachnyj-poezd"
 }
 },
-"dikij-chas-2": {
-"t": "Дикий час: Духи гор",
-"es": "La hora salvaje: Los espíritus de la montaña",
-"l": "ru",
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
+"l": "es",
 "y": null,
-"ru": "Дикий час: Духи гор",
-"p": "img/portadas/dikij-chas-2.webp",
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
 "tr": {}
+},
+"tajna-v-biblioteke": {
+"t": "Тайна в библиотеке",
+"es": "El misterio de la biblioteca",
+"l": "ru",
+"y": 2026,
+"ru": "Тайна в библиотеке",
+"p": "img/portadas/tajna-v-biblioteke.webp",
+"tr": {}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
+"y": 2026,
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"anomalia": {
+"t": "Anomalía",
+"es": "Anomalía",
+"l": "es",
+"y": null,
+"ru": "Аномалия (исп.)",
+"p": "img/portadas/anomalia.webp",
+"tr": {}
+},
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
+"l": "ru",
+"y": 2026,
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
+},
+"il-treno-fantasma": {
+"t": "Il treno fantasma",
+"es": "El tren fantasma (it.)",
+"l": "it",
+"y": null,
+"ru": "Призрачный поезд (ит.)",
+"p": "img/portadas/il-treno-fantasma.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"ru": "prizrachnyj-poezd"
+}
 },
 "la-citta-triste": {
 "t": "La città triste",
@@ -17685,16 +18777,185 @@ export const NOVELAS = {
 "ru": "grustnyj-gorod"
 }
 },
-"el-misterio-de-los-fader": {
-"t": "El misterio de los Fader",
-"es": "El misterio de los Fader",
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
 "l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
+},
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"tr": {}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
+"tr": {}
+},
+"27-ocak": {
+"t": "27 Ocak",
+"es": "27 de enero",
+"l": "tr",
+"y": 2026,
+"ru": "27 января",
+"p": "img/portadas/27-ocak.webp",
+"tr": {}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
+"ladro-di-cuori-3": {
+"t": "Ladro di cuori 3",
+"es": "Ladrón de corazones 3 (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Похититель сердец 3 (ит.)",
+"p": "img/portadas/ladro-di-cuori-3.webp",
+"tr": {}
+},
+"predchuvstvie-2-3": {
+"t": "Предчувствие 2.3",
+"es": "El presentimiento 2.3",
+"l": "ru",
 "y": 2025,
-"ru": "Тайна семьи Фадер (исп.)",
-"p": "img/portadas/el-misterio-de-los-fader.webp",
+"ru": "Предчувствие 2.3",
+"p": "img/portadas/predchuvstvie-2-3.webp",
+"tr": {}
+},
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"tr": {}
+},
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
 "tr": {
-"ru": "tajna-semi-fader"
+"ru": "tikhaya-lyubov"
 }
+},
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
+"l": "ru",
+"y": 2026,
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
+"tr": {
+"it": "ti-amo-in-silenzio"
+}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
+"tr": {}
+},
+"pokhititel-serdec-portret-osnovatelya": {
+"t": "Похититель сердец: Портрет основателя",
+"es": "Ladrón de corazones: El retrato del fundador",
+"l": "ru",
+"y": 2026,
+"ru": "Похититель сердец: Портрет основателя",
+"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
+"tr": {}
+},
+"operacion-londres": {
+"t": "El misterio de los Fader: Operación Londres",
+"es": "El misterio de los Fader: Operación Londres",
+"l": "es",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
+"p": "img/portadas/operacion-londres.webp",
+"tr": {}
+},
+"golos": {
+"t": "Голос",
+"es": "La voz",
+"l": "ru",
+"y": 2026,
+"ru": "Голос",
+"p": "img/portadas/golos.webp",
+"tr": {
+"fr": "la-voix"
+}
+},
+"prizrachnyj-poezd": {
+"t": "Призрачный поезд",
+"es": "El tren fantasma (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Призрачный поезд",
+"p": "img/portadas/prizrachnyj-poezd.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"it": "il-treno-fantasma"
+}
+},
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
+"l": "es",
+"y": 2026,
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
+"tr": {}
+},
+"divlji-chas-malbec": {
+"t": "Дивљи час: Љубав укуса малбека",
+"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
+"p": "img/portadas/divlji-chas-malbec.webp",
+"tr": {}
 }
 };
 export const IDIOMAS = {"ru": "ruso", "es": "español", "it": "italiano", "fr": "francés", "en": "inglés", "tr": "turco", "cs": "checo", "sr": "serbio"};

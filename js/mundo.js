@@ -4,13 +4,15 @@ import * as SINEA from './ciudades/sinea.js';
 import * as VERDEGRAD from './ciudades/verdegrad.js';
 import * as UTOPIA from './ciudades/utopia.js';
 import * as MENDOZA from './ciudades/mendoza.js';
+import * as VENEZIA from './ciudades/venezia.js';
 
-const TODAS = { sinea: SINEA, verdegrad: VERDEGRAD, utopia: UTOPIA, mendoza: MENDOZA };
+const TODAS = { sinea: SINEA, verdegrad: VERDEGRAD, utopia: UTOPIA, mendoza: MENDOZA, venezia: VENEZIA };
 export const CIUDAD = TODAS[globalThis.CIUDAD] ? globalThis.CIUDAD : 'sinea';
 const C = TODAS[CIUDAD];
 export const ARROYO = C.ARROYO || [], LAGOS = C.LAGOS || [];
 export const AFUERAS_HUECO = C.AFUERAS_HUECO ?? (CIUDAD !== 'sinea');
 export const AFUERAS_COLOR = C.AFUERAS_COLOR ?? (CIUDAD === 'sinea' ? 0xd6debe : 0xc4d6a4);
+export const PLAYA = C.PLAYA ?? 22, MARGEN_AGUA = C.MARGEN_AGUA ?? 18, AGUA_ENCIMA = !!C.AGUA_ENCIMA, MAR_COLOR = C.MAR_COLOR || null, CANAL_GRANDE = C.CANAL_GRANDE || [];
 export const colorSuelo = C.colorSuelo || null, zonaArboles = C.zonaArboles || null, ARBOLES_CALLES = !!C.ARBOLES_CALLES;
 export const { LIMITES, COSTA, TIERRA, RIO, COLINAS, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, BORDES, AFUERAS, MUELLES, RESERVAS, EXTRAS, VISTA, NOMBRE, LEMA, RUTA_BUS } = C;
 
@@ -53,6 +55,7 @@ export function rio(px, py) {
 
 // distancia con signo a la costa (positiva en tierra)
 export function costa(px, py) {
+  if (C.costa) return C.costa(px, py);
   const d = distLinea(px, py, COSTA);
   return dentro([px, py], TIERRA) ? d : -d;
 }
@@ -66,6 +69,7 @@ function ruido(x, y) {
 
 // altura del terreno (m). El mar está a 0.
 export function altura(x, y) {
+  if (C.alturaFn) return C.alturaFn(x, y);
   const c = costa(x, y);
   let h = C.ALTURA_BASE + ruido(x, y) * 1.5;
   for (const [cx, cy, r, a, , tipo] of COLINAS) {

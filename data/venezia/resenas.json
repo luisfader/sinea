@@ -1,0 +1,279 @@
+{
+ "_info": "Reseñas de Venecia escritas por los personajes de «Maschera di Venezia». s = estrellas.",
+ "vz-piazza": [
+  {
+   "a": "Roberto",
+   "ar": "Роберто",
+   "s": 5,
+   "es": "Toda la vida soñé con esta plaza. Llegué en Carnaval, me di vuelta durante el Vuelo del Ángel y ahí estaba ella. Cinco estrellas no alcanzan.",
+   "ru": "Всю жизнь мечтал об этой площади. Приехал на карнавал, обернулся во время «Полёта Ангела» — а рядом она. Пяти звёзд мало."
+  },
+  {
+   "a": "Alessio",
+   "ar": "Алессио",
+   "s": 4,
+   "es": "Fuegos artificiales, gondoleros cantando y una procesión falsa: la mejor fiesta de mi vida. Le saco una estrella por los precios del café.",
+   "ru": "Фейерверки, поющие гондольеры и фальшивая процессия — лучший праздник в моей жизни. Минус звезда за цены на кофе."
+  },
+  {
+   "a": "Un hombre de negro",
+   "ar": "Человек в чёрном",
+   "s": 1,
+   "es": "Me desperté en las escalinatas de San Marco al lado de mis compañeros. No recuerdo nada. Muy incómodo para dormir.",
+   "ru": "Проснулся на ступенях Сан-Марко рядом с коллегами. Ничего не помню. Спать очень неудобно."
+  }
+ ],
+ "vz-campanile": [
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 5,
+   "es": "Mirar el Vuelo del Ángel con la nariz para arriba, entre miles de máscaras. Al final las campanas tocaron por la libertad y lloré.",
+   "ru": "Смотреть «Полёт Ангела», задрав голову, среди тысяч масок. В конце колокола звонили в честь свободы, и я плакала."
+  },
+  {
+   "a": "Il Provveditore",
+   "ar": "Проведитор",
+   "s": 2,
+   "es": "Las campanas tocaban a muerto y me pareció un buen augurio. Me equivoqué.",
+   "ru": "Колокола звонили по покойнику, и мне это показалось хорошим знаком. Я ошибся."
+  }
+ ],
+ "vz-basilica": [
+  {
+   "a": "Roberto",
+   "ar": "Роберто",
+   "s": 5,
+   "es": "La góndola se movió sola hacia un túnel bajo la Basílica. Lo que hay abajo no sale en ninguna guía.",
+   "ru": "Гондола сама поплыла к туннелю под Базиликой. То, что внизу, не описано ни в одном путеводителе."
+  },
+  {
+   "a": "Commissario Zancan",
+   "ar": "Комиссар Занкан",
+   "s": 2,
+   "es": "Llegué por un canal de servicio y salí empapado. El argentino, seco. Inaceptable.",
+   "ru": "Приплыл по служебному каналу и вылез насквозь мокрый. Аргентинец — сухой. Недопустимо."
+  }
+ ],
+ "vz-ducale": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 4,
+   "es": "Por arriba, el palacio más elegante de Venecia. Por abajo, lo que la Logia esconde. Hay que mirarlo dos veces.",
+   "ru": "Сверху — самый изящный дворец Венеции. Снизу — то, что прячет Орден. На него нужно смотреть дважды."
+  },
+  {
+   "a": "Alessio",
+   "ar": "Алессио",
+   "s": 5,
+   "es": "Diez minutos y ya estábamos en taxi acuático al lado de la góndola. Servicio impecable.",
+   "ru": "Десять минут — и мы уже на водном такси рядом с гондолой. Безупречный сервис."
+  }
+ ],
+ "vz-sospiri": [
+  {
+   "a": "Roberto",
+   "ar": "Роберто",
+   "s": 5,
+   "es": "Lo veo cada noche desde mi ventana. Iluminado, parece colgado entre el cielo y el agua. Las góndolas pasan sin hacer ruido.",
+   "ru": "Вижу его каждый вечер из окна. Подсвеченный, он будто висит между небом и водой. Гондолы проплывают бесшумно."
+  },
+  {
+   "a": "Un gondoliere",
+   "ar": "Гондольер",
+   "s": 4,
+   "es": "Paso por abajo veinte veces por día. Los turistas suspiran, yo remo.",
+   "ru": "Проплываю под ним двадцать раз в день. Туристы вздыхают, я гребу."
+  }
+ ],
+ "vz-casa-roberto": [
+  {
+   "a": "Roberto",
+   "ar": "Роберто",
+   "s": 4,
+   "es": "Ventana al Puente de los Suspiros, paredes llenas de mis fotos. Le saco una estrella por el disparo en el patio y la visita de la policía.",
+   "ru": "Окно на Мост вздохов, стены в моих фотографиях. Минус звезда за выстрел во дворе и визит полиции."
+  },
+  {
+   "a": "Commissario Zancan",
+   "ar": "Комиссар Занкан",
+   "s": 3,
+   "es": "Un laberinto, un ojo, una estrella de siete puntas en la pared. Sospechoso. Vino con nosotros a la questura.",
+   "ru": "Лабиринт, глаз и семиконечная звезда на стене. Подозрительно. Поехал с нами в квестуру."
+  }
+ ],
+ "vz-rialto": [
+  {
+   "a": "Un gondoliere",
+   "ar": "Гондольер",
+   "s": 5,
+   "es": "Dimos vuelta las góndolas y las pusimos de barricada con los puestos del mercado. Nunca Rialto fue tan nuestro.",
+   "ru": "Мы перевернули гондолы и сделали из них баррикады вместе с прилавками рынка. Никогда Риальто не был настолько нашим."
+  },
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 4,
+   "es": "El puente más lindo del Canal Grande. Mucha gente; vengan temprano o en plena revolución.",
+   "ru": "Самый красивый мост на Большом канале. Много народу: приходите рано утром или прямо во время революции."
+  }
+ ],
+ "vz-canal-grande": [
+  {
+   "a": "Roberto",
+   "ar": "Роберто",
+   "s": 5,
+   "es": "En góndola, bajo las mantas, conté por fin mi teoría: Venecia fue construida en tierra firme. Nadie se rió. Bueno, Alessio un poco.",
+   "ru": "В гондоле, под пледами, я наконец рассказал свою теорию: Венецию построили на суше. Никто не засмеялся. Ну, Алессио чуть-чуть."
+  },
+  {
+   "a": "Commissario Zancan",
+   "ar": "Комиссар Занкан",
+   "s": 1,
+   "es": "Perseguíamos al argentino en lancha y nos tiró una ola. Una ola. Con una máscara.",
+   "ru": "Мы гнались за аргентинцем на катере, а он швырнул в нас волну. Волну. Маской."
+  }
+ ],
+ "vz-loggia": [
+  {
+   "a": "Alessio",
+   "ar": "Алессио",
+   "s": 3,
+   "es": "Celda húmeda, guardias aburridos. Les ofrecí una degustación de Chianti como experto en vinos toscanos y aceptaron. Prisión mejorable, público excelente.",
+   "ru": "Сырая камера, скучающие охранники. Я предложил им дегустацию кьянти как знаток тосканских вин — и они согласились. Тюрьма так себе, публика отличная."
+  },
+  {
+   "a": "Marco Dandolo",
+   "ar": "Марко Дандоло",
+   "s": 2,
+   "es": "Mesa antigua, mapas valiosos, agua golpeando los cimientos. Una señora con polvo dorado arruinó la reunión.",
+   "ru": "Старинный стол, ценные карты, вода плещется о фундамент. Одна дама с золотой пылью испортила собрание."
+  }
+ ],
+ "vz-arsenale": [
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 5,
+   "es": "Los leones de piedra en la entrada parecen vivos. Adentro había oro cargado en una lancha. Alguien se iba con prisa.",
+   "ru": "Каменные львы у входа как живые. Внутри золото уже погрузили в лодку. Кто-то очень спешил уехать."
+  },
+  {
+   "a": "Alessio",
+   "ar": "Алессио",
+   "s": 5,
+   "es": "Metí el As de Bastos bajo el friso y saltó la primera chispa. Me siento parte de la historia de la República.",
+   "ru": "Вставил «Туз жезлов» под фриз — и вспыхнула первая искра. Чувствую себя частью истории Республики."
+  }
+ ],
+ "vz-salute": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "La Reina de Copas está escondida en la base de la terraza. Cuando el agua bajo el templo se encendió, entendí lo que sentía.",
+   "ru": "«Королева кубков» спрятана в основании террасы. Когда вода под храмом засветилась, я поняла, что чувствую."
+  }
+ ],
+ "vz-san-giorgio": [
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 5,
+   "es": "Llegamos de noche en moto de agua. Del otro lado titilaban las luces de San Marco. Escondimos la carta en un poste viejo. Romántico y peligroso.",
+   "ru": "Приплыли ночью на гидроциклах. На другом берегу мерцали огни Сан-Марко. Спрятали карту в старом столбе. Романтично и опасно."
+  }
+ ],
+ "vz-san-michele": [
+  {
+   "a": "Roberto",
+   "ar": "Роберто",
+   "s": 4,
+   "es": "Cipreses, silencio y tumbas. Y de noche, un aeróstato que sale del agua. Venecia nunca deja de sorprender.",
+   "ru": "Кипарисы, тишина и могилы. А ночью — аэростат, выныривающий из воды. Венеция не перестаёт удивлять."
+  }
+ ],
+ "vz-laguna": [
+  {
+   "a": "Alessio",
+   "ar": "Алессио",
+   "s": 4,
+   "es": "Escapamos en un barquito robado con médicos de la peste detrás. Laura manejaba. Mejor no hablar de cómo.",
+   "ru": "Сбежали на угнанной моторке, а за нами — чумные доктора. Рулила Лаура. Лучше не вспоминать как."
+  },
+  {
+   "a": "Il Provveditore",
+   "ar": "Проведитор",
+   "s": 1,
+   "es": "Intenté irme en lancha con unos lingotes. Me arrestaron en el agua. La laguna no es discreta.",
+   "ru": "Пытался уехать на катере с парой слитков. Арестовали прямо на воде. Лагуна совсем не умеет хранить тайны."
+  }
+ ],
+ "vz-perduta": [
+  {
+   "a": "Roberto",
+   "ar": "Роберто",
+   "s": 5,
+   "es": "«Solo el hombre de corazón limpio puede llegar a la Máscara.» Llegué. Mi teoría de las aguas tenía razón.",
+   "ru": "«Только человек с чистым сердцем дойдёт до Маски». Я дошёл. Моя теория вод оказалась верной."
+  }
+ ],
+ "vz-segrete": [
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 4,
+   "es": "Desactivé todas las trampas. Natalia abrió la cerradura cantando. Trabajo en equipo de diez.",
+   "ru": "Обезвредила все ловушки. Наталья открыла замок песней. Командная работа на десятку."
+  },
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "Una canción infantil abrió la última celda y salieron mis padres, después de diez años. No necesito más estrellas.",
+   "ru": "Детская считалка открыла последнюю камеру, и вышли мои родители — через десять лет. Больше звёзд мне не нужно."
+  }
+ ],
+ "vz-abisso": [
+  {
+   "a": "Tatiana",
+   "ar": "Татьяна",
+   "s": 5,
+   "es": "Palacios hundidos detrás de los ojos de buey, capa sobre capa. No sale en los mapas, y así está bien.",
+   "ru": "Затонувшие дворцы за иллюминаторами, слой под слоем. Его нет на картах — и пусть так и будет."
+  }
+ ],
+ "vz-rifugio": [
+  {
+   "a": "Alessio",
+   "ar": "Алессио",
+   "s": 5,
+   "es": "Mosaicos dorados, techo de vidrio con la luna llena encima y una cocina donde hice mi hazaña culinaria. Volvería a vivir bajo el agua.",
+   "ru": "Золотые мозаики, стеклянный потолок с полной луной над головой и кухня, где я совершил кулинарный подвиг. Я бы снова пожил под водой."
+  },
+  {
+   "a": "Roberto",
+   "ar": "Роберто",
+   "s": 5,
+   "es": "El canal se abrió en un remolino y detrás de una puerta estaba la verdadera Venecia. Y ella.",
+   "ru": "Канал закрутился воронкой, а за дверью оказалась истинная Венеция. И она."
+  }
+ ],
+ "vz-questura": [
+  {
+   "a": "Roberto",
+   "ar": "Роберто",
+   "s": 2,
+   "es": "Neón que parpadea y la misma pregunta toda la noche: qué hace un argentino en Venecia. Café malo.",
+   "ru": "Мигающий неон и один и тот же вопрос всю ночь: что делает аргентинец в Венеции. Кофе плохой."
+  },
+  {
+   "a": "Commissario Zancan",
+   "ar": "Комиссар Занкан",
+   "s": 4,
+   "es": "Respuesta del propietario: el café es el reglamentario. Y la pregunta sigue siendo válida.",
+   "ru": "Ответ владельца: кофе по уставу. А вопрос по-прежнему актуален."
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 // Construcción de la escena 3D de Sinea: relieve, agua, calles, edificios e hitos.
 import * as THREE from './vendor/three.module.js';
 import {
-  LIMITES, COSTA, RIO, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, AFUERAS, MUELLES, CIUDAD, AFUERAS_HUECO, AFUERAS_COLOR, colorSuelo, zonaArboles, ARBOLES_CALLES, altura, costa, rio, dentro, distLinea, distSeg
+  LIMITES, COSTA, RIO, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, AFUERAS, MUELLES, CIUDAD, AFUERAS_HUECO, AFUERAS_COLOR, colorSuelo, zonaArboles, ARBOLES_CALLES, PLAYA, MARGEN_AGUA, AGUA_ENCIMA, MAR_COLOR, altura, costa, rio, dentro, distLinea, distSeg
 } from './mundo.js';
 
 // mundo (x este, y norte) → three (X, Y arriba, Z sur)
@@ -21,6 +21,7 @@ export function pintarSuelo(S, minimas) {
   // 1) base por muestreo (relieve, playa, vegetación)
   const B = 768, base = document.createElement('canvas'); base.width = base.height = B;
   const bg = base.getContext('2d'), img = bg.createImageData(B, B);
+  const aguaCv = document.createElement('canvas'); aguaCv.width = aguaCv.height = B; const ag = aguaCv.getContext('2d'), aimg = ag.createImageData(B, B);
   for (let j = 0; j < B; j++) for (let i = 0; i < B; i++) {
     const x = LIMITES.x0 + (i + .5) / B * W, y = LIMITES.y1 - (j + .5) / B * H;
     const h = altura(x, y), c = costa(x, y);
@@ -28,12 +29,12 @@ export function pintarSuelo(S, minimas) {
     const luz = Math.max(-1, Math.min(1, (-hx * 0.7 + hy * 0.7) * 0.35));
     let r, gg, b;
     if (c < 0) { const k = Math.min(1, -c / 260); r = 120 - 70 * k; gg = 200 - 70 * k; b = 210 - 40 * k; }
-    else if (c < 22) { r = 236; gg = 222; b = 184; }
+    else if (c < PLAYA) { r = 236; gg = 222; b = 184; }
     else {
       const v = Math.min(1, Math.max(0, (h - 6) / 70));
       r = 214 - 60 * v; gg = 222 - 30 * v; b = 190 - 70 * v;
     }
-    if (colorSuelo && c >= 22) { [r, gg, b] = colorSuelo(x, y, h, c); }
+    if (colorSuelo && c >= PLAYA) { [r, gg, b] = colorSuelo(x, y, h, c); }
     if (CIUDAD === 'verdegrad' && !BARRIOS.some(B => B.nombre && dentro([x, y], B.pol)) && !PARQUES.some(P => dentro([x, y], P.pol)) && h < 22) {
       // campos alrededor del pueblo: girasoles, trigo, huertas y prados
       const a = Math.floor((x + y * 0.35) / 170), bb = Math.floor((y - x * 0.25) / 130);
@@ -46,7 +47,9 @@ export function pintarSuelo(S, minimas) {
     if (c >= 0 && dr < w * 0.5 + 4) { r = 110; gg = 175; b = 200; }
     const o = (j * B + i) * 4;
     img.data[o] = r + luz * 30; img.data[o + 1] = gg + luz * 30; img.data[o + 2] = b + luz * 26; img.data[o + 3] = 255;
+    if (AGUA_ENCIMA && c < 0) { aimg.data[o] = r; aimg.data[o + 1] = gg; aimg.data[o + 2] = b; aimg.data[o + 3] = 255; }
   }
+  ag.putImageData(aimg, 0, 0);
   bg.putImageData(img, 0, 0);
   g.imageSmoothingEnabled = true; g.drawImage(base, 0, 0, S, S);
 
@@ -70,6 +73,7 @@ export function pintarSuelo(S, minimas) {
     }
     g.stroke(); g.restore();
   }
+  if (AGUA_ENCIMA) g.drawImage(aguaCv, 0, 0, S, S); // los canales por encima de los barrios
   // 3) parques y plazas
   for (const p of PARQUES) {
     poli(p.pol); g.fillStyle = p.cem ? '#b5c9a6' : '#b9dc9e'; g.fill();
@@ -137,7 +141,7 @@ export function crearMar(uniforms) {
         vec3 n=normalize(vec3(cos(p.x*.031+uT*1.1)*.031+cos((p.x+p.y)*.017+uT*.7)*.014, 1., cos(p.y*.027-uT*.9)*.027));
         vec3 v=normalize(cameraPosition-vP);
         float fres=pow(1.-max(dot(n,v),0.),3.);
-        vec3 dia=mix(vec3(.16,.47,.66),vec3(.55,.78,.9),fres*.8);
+        vec3 dia=mix(vec3(${MAR_COLOR ? MAR_COLOR[0].join(',') : '.16,.47,.66'}),vec3(${MAR_COLOR ? MAR_COLOR[1].join(',') : '.55,.78,.9'}),fres*.8);
         vec3 noc=mix(vec3(.02,.05,.12),vec3(.10,.16,.28),fres);
         vec3 c=mix(dia,noc,uNoche);
         float spec=pow(max(dot(reflect(-uSol,n),v),0.),90.)*(1.-uNoche);
@@ -188,11 +192,11 @@ export function crearEdificios(reservas, uniforms) {
         const lu = u + calle / 2 + cell * (i + .5), lv = v + calle / 2 + cell * (j + .5);
         const x = cx + ca * lu - sa * lv, y = cy + sa * lu + ca * lv;
         if (!dentro([x, y], b.pol)) continue;
-        if (costa(x, y) < 18) continue;
+        if (costa(x, y) < MARGEN_AGUA) continue;
         const [dr, w] = rio(x, y); if (dr < w / 2 + 16) continue;
         if (plazaDentro(x, y) || parqueDentro(x, y)) continue;
         if (reservas.some(([rx, ry, rr]) => (x - rx) ** 2 + (y - ry) ** 2 < rr * rr)) continue;
-        const fw = cell * (0.62 + r() * 0.3), fd = cell * (0.62 + r() * 0.3);
+        const rl = b.relleno || 0.62, fw = cell * (rl + r() * (0.92 - rl)), fd = cell * (rl + r() * (0.92 - rl));
         if (calleCerca(x, y, Math.max(fw, fd) * 0.55)) continue;
         const h0 = altura(x, y), hs = [altura(x + fw / 2, y), altura(x - fw / 2, y), altura(x, y + fd / 2), altura(x, y - fd / 2)];
         const mn = Math.min(h0, ...hs), mx = Math.max(h0, ...hs);
@@ -360,6 +364,7 @@ export function crearPuentes() {
 /* Campo más allá del mapa, para que no se vea el borde del mundo      */
 /* ------------------------------------------------------------------ */
 export function crearAfueras() {
+  if (!AFUERAS.length) return new THREE.Group();
   const sh = new THREE.Shape();
   AFUERAS.forEach(([x, y], i) => i ? sh.lineTo(x, -y) : sh.moveTo(x, -y)); sh.closePath();
   if (AFUERAS_HUECO) { // la ciudad está rodeada de campo: agujero donde está el terreno detallado

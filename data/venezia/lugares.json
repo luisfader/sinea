@@ -1,0 +1,450 @@
+{
+ "_info": "Lugares de «Maschera di Venezia» / «Венецианская маска». «ll» = [lat, lon] reales (OpenStreetMap).",
+ "lugares": [
+  {
+   "id": "vz-piazza",
+   "nombre": "Piazza San Marco",
+   "otros": [
+    "Площадь Сан-Марко"
+   ],
+   "cat": "plaza",
+   "ll": [
+    45.43425,
+    12.3378
+   ],
+   "modelo": "ninguno",
+   "desc": "El corazón de Venecia, cerrado por las Procuratie, la Basílica y el Campanile. Acá empieza todo: Venecia, 20 de febrero de 2025, noche de Carnaval, un torbellino de luces, colores y risas. Roberto, argentino de nacimiento y viajero de alma, por fin está en la ciudad que siempre soñó, con sus amigos Alessio y Laura. Durante el Vuelo del Ángel aparece a su lado Natalia y lo lleva hasta un canal lateral donde los espera una góndola sin gondolero. La noche de la revolución, a pocos pasos de la plaza, Alessio está en medio del caos detrás de la falsa «procesión del Alcalde del Pueblo», con decenas de gondoleros cantando contra la Logia y una lluvia de fuegos artificiales. Al amanecer, los hombres de negro aparecen dormidos, uno al lado del otro, en las escalinatas de San Marco.",
+   "buscar": "Piazza San Marco|площад\\w* Сан-Марко",
+   "extra": {
+    "maschera-di-venezia": [
+     1,
+     8,
+     29,
+     30
+    ],
+    "venecianskaya-maska": [
+     1,
+     8,
+     56,
+     63
+    ]
+   }
+  },
+  {
+   "id": "vz-campanile",
+   "nombre": "Campanile di San Marco",
+   "cat": "monumento",
+   "ll": [
+    45.4340361,
+    12.3390443
+   ],
+   "modelo": "campanile-sm",
+   "desc": "La torre más alta de la ciudad, casi cien metros de ladrillo con la celda de las campanas y el ángel dorado en la punta. Desde acá, durante el Vuelo del Ángel, una acróbata vestida de ángel baja sobre la multitud del Carnaval. Mientras la Logia prepara su trampa, las campanas de San Marco empiezan a tocar a muerto; al final, con Venecia salvada, tocan una sinfonía de libertad.",
+   "buscar": "Campanile|Кампанил\\w*|Volo dell.Angelo|Полёт\\w* Ангела",
+   "extra": {
+    "maschera-di-venezia": [
+     8,
+     18,
+     30
+    ],
+    "venecianskaya-maska": [
+     8,
+     52
+    ]
+   }
+  },
+  {
+   "id": "vz-basilica",
+   "nombre": "Basilica di San Marco",
+   "cat": "monumento",
+   "ll": [
+    45.4345479,
+    12.3398218
+   ],
+   "modelo": "basilica-sm",
+   "desc": "La basílica de las cinco cúpulas y los mosaicos dorados. En la novela es la entrada al reino perdido: la góndola de Roberto vuelve a moverse sola y se desliza hacia un túnel escondido debajo de la Basílica. Alessio y Laura tienen que bajarse antes; el comisario Zancan llega por un viejo canal de servicio. A la salida del túnel lo esperan Zancan y sus agentes, empapados y furiosos, con Alessio y Laura esposados junto a la lancha de la policía.",
+   "buscar": "Basilica di San Marco|Базилик\\w* Сан-Марко",
+   "extra": {
+    "maschera-di-venezia": [
+     13,
+     15
+    ],
+    "venecianskaya-maska": [
+     14
+    ]
+   }
+  },
+  {
+   "id": "vz-ducale",
+   "nombre": "Palazzo Ducale",
+   "cat": "edificio",
+   "ll": [
+    45.4342108,
+    12.340592
+   ],
+   "modelo": "ducale",
+   "desc": "El palacio de los dux, sobre el agua, al lado de la Piazzetta: logia blanca abajo y muro rosado arriba. «Estoy en una góndola, cerca del Palazzo Ducale», dice Roberto, y diez minutos después un taxi acuático con Alessio y Laura se pone a su lado. Más tarde Natalia señala un punto en el mapa: la verdadera Máscara está en las mazmorras de la Logia, justo debajo del palacio.",
+   "buscar": "Palazzo Ducale|Дворец дожей|Дворц\\w* дожей",
+   "extra": {
+    "maschera-di-venezia": [
+     11,
+     28
+    ],
+    "venecianskaya-maska": [
+     12
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "vz-sospiri",
+   "nombre": "Ponte dei Sospiri",
+   "cat": "monumento",
+   "ll": [
+    45.4340597,
+    12.3408609
+   ],
+   "modelo": "ponte-sospiri",
+   "desc": "El puente cerrado de piedra blanca que une el Palacio Ducal con las viejas prisiones, sobre el Rio di Palazzo. Es el puente que Roberto ve todas las noches desde la ventana de su departamento, con las góndolas que pasan en silencio por debajo; de noche, iluminado, parece suspendido entre el cielo y el agua. En la versión rusa es una de las cinco cartas de la red: el Dos de Espadas.",
+   "buscar": "Ponte dei Sospiri|Мост\\w* вздохов",
+   "extra": {
+    "maschera-di-venezia": [
+     5
+    ],
+    "venecianskaya-maska": [
+     5,
+     47,
+     55
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "vz-casa-roberto",
+   "nombre": "L'appartamento di Roberto",
+   "cat": "casa",
+   "ll": [
+    45.43445,
+    12.34135
+   ],
+   "modelo": "hogar",
+   "desc": "Un departamento alquilado en un palacio antiguo, con la ventana del living mirando al Puente de los Suspiros. Roberto llena las paredes de fotos: un laberinto, un ojo, una estrella de siete puntas. Una noche se oye un disparo en el patio interno: Roberto baja corriendo y encuentra a un anciano en el suelo. Al rato llega Zancan: «Usted viene con nosotros a la questura». El departamento es de la novela; está puesto del lado de Castello, frente al puente.",
+   "buscar": "квартир\\w+ Роберто",
+   "extra": {
+    "maschera-di-venezia": [
+     5
+    ],
+    "venecianskaya-maska": [
+     5
+    ]
+   }
+  },
+  {
+   "id": "vz-rialto",
+   "nombre": "Rialto: el puente y el mercado",
+   "cat": "monumento",
+   "ll": [
+    45.4381226,
+    12.3360112
+   ],
+   "modelo": "rialto",
+   "desc": "El puente de piedra de un solo arco sobre el Canal Grande, con tiendas encima, y al lado el mercado de Rialto. En la revuelta del pueblo las calles se llenan de barricadas hechas con tablas, góndolas dadas vuelta y hasta los puestos del mercado de Rialto.",
+   "buscar": "Rialto|Риальто",
+   "extra": {
+    "maschera-di-venezia": [
+     28
+    ]
+   }
+  },
+  {
+   "id": "vz-canal-grande",
+   "nombre": "Canal Grande",
+   "cat": "calle",
+   "ll": [
+    45.4413,
+    12.33
+   ],
+   "modelo": "ninguno",
+   "desc": "La gran vía de agua de Venecia, en forma de S, de la estación hasta San Marco. En góndola, bajo las mantas de lana, Roberto cuenta por fin su teoría de las aguas: Venecia fue construida en tierra firme y después quedó sumergida. En la góndola de al lado viaja una mujer misteriosa. En la niebla de la tarde, Roberto aprieta la llave de oro que le confió Natalia, y más tarde hay una persecución: una lancha de la policía los descubre y Roberto, con la Máscara, le lanza una ola.",
+   "buscar": "Canal Grande|Большо\\w+ канал\\w*",
+   "extra": {
+    "maschera-di-venezia": [
+     3,
+     11,
+     25
+    ],
+    "venecianskaya-maska": [
+     2,
+     26,
+     34
+    ]
+   }
+  },
+  {
+   "id": "vz-loggia",
+   "nombre": "La sala de la Logia (cerca de San Polo)",
+   "cat": "misterio",
+   "ll": [
+    45.438,
+    12.3307
+   ],
+   "modelo": "villa",
+   "desc": "Hombres vestidos de negro alrededor de una mesa de madera antigua, libros polvorientos y mapas amarillentos; debajo de las losas, el agua golpea los cimientos del palacio. El jefe secreto es el Provveditore Ludovico Gradenigo, y después Marco Dandolo. Zancan termina confesando: «Un palacio antiguo cerca de San Polo. Ahí se reúnen». En la prisión de la Logia, Alessio se presenta como experto en vinos toscanos y les ofrece a los guardias una «degustación» de Chianti; en el asalto final, Natalia sopla una nube de polvo dorado contra los hombres de negro. La novela no da la dirección exacta: el mapa lo pone junto al Campo San Polo.",
+   "extra": {
+    "maschera-di-venezia": [
+     6,
+     15,
+     22,
+     26
+    ],
+    "venecianskaya-maska": [
+     6,
+     16,
+     26
+    ]
+   }
+  },
+  {
+   "id": "vz-cannaregio",
+   "nombre": "Cannaregio",
+   "cat": "barrio",
+   "ll": [
+    45.4444,
+    12.3285
+   ],
+   "modelo": "ninguno",
+   "desc": "El barrio del norte, el más grande y popular de Venecia, de fondamente largas junto a canales rectos. En «Венецианская маска», por radio les ordenan a las patrullas de médicos de la peste ir enseguida a Cannaregio, y la plaza del Campanile se vacía.",
+   "buscar": "Cannaregio|Каннаредж\\w*",
+   "extra": {
+    "venecianskaya-maska": [
+     52
+    ]
+   }
+  },
+  {
+   "id": "vz-arsenale",
+   "nombre": "Arsenale",
+   "cat": "monumento",
+   "ll": [
+    45.4349,
+    12.3503
+   ],
+   "modelo": "arsenale",
+   "desc": "El viejo astillero de la república marinera: torres almenadas, murallas antiguas, diques viejos y, en la entrada, los leones de piedra de San Marcos que parecen seguir custodiando la ciudad. En «Венецианская маска» Alessio mete el As de Bastos en una grieta bajo el friso: es la primera chispa de la nueva red. Adentro hay una sorpresa: oro, cofres y objetos antiguos ya cargados en una lancha, como si alguien estuviera por escapar. Después, el Arsenal se enciende segundo y una columna rosada sube de los cimientos hacia la plaza.",
+   "buscar": "Arsenale|Арсенал\\w*",
+   "extra": {
+    "venecianskaya-maska": [
+     49,
+     54,
+     55
+    ]
+   }
+  },
+  {
+   "id": "vz-salute",
+   "nombre": "Santa Maria della Salute",
+   "cat": "monumento",
+   "ll": [
+    45.4305726,
+    12.3347318
+   ],
+   "modelo": "salute",
+   "desc": "La gran iglesia blanca de la cúpula, en la punta de Dorsoduro, levantada en agradecimiento por el fin de la peste de 1630. En «Венецианская маска» es el punto de la Reina de Copas, la carta que une la fuerza de Roberto con los sentimientos de Natalia: está escondida en la base de la terraza exterior, y el agua bajo el templo empieza a brillar desde adentro.",
+   "buscar": "Salute|Салюте",
+   "extra": {
+    "venecianskaya-maska": [
+     44,
+     55
+    ]
+   }
+  },
+  {
+   "id": "vz-san-giorgio",
+   "nombre": "San Giorgio Maggiore",
+   "cat": "monumento",
+   "ll": [
+    45.4293889,
+    12.3432792
+   ],
+   "modelo": "san-giorgio",
+   "desc": "La isla frente a la Piazzetta, con la basílica blanca de Palladio y el campanile «como una lanza oscura»; al otro lado de la laguna titilan las luces de San Marco. En «Венецианская маска» Alessio y Laura llegan de noche en motos de agua, rodean la basílica hasta el muelle del fondo y esconden una carta en la grieta de un viejo poste de amarre.",
+   "buscar": "San Giorgio|Сан-Джорджо",
+   "extra": {
+    "venecianskaya-maska": [
+     46
+    ]
+   }
+  },
+  {
+   "id": "vz-san-michele",
+   "nombre": "San Michele, la isla del cementerio",
+   "cat": "parque",
+   "ll": [
+    45.4466494,
+    12.3456381
+   ],
+   "modelo": "ninguno",
+   "desc": "La isla-cementerio al norte de la ciudad, rodeada de un muro, con tumbas y cipreses. En «Венецианская маска», de noche, un aeróstato sale de debajo del agua y baja sobre el cementerio.",
+   "buscar": "San Michele|Сан-Микеле",
+   "extra": {
+    "venecianskaya-maska": [
+     39,
+     43
+    ]
+   }
+  },
+  {
+   "id": "vz-laguna",
+   "nombre": "La laguna",
+   "cat": "parque",
+   "ll": [
+    45.4235,
+    12.354
+   ],
+   "modelo": "ninguno",
+   "desc": "El agua poco profunda que rodea Venecia, con sus canales marcados por postes de madera. Alessio y Laura escapan por la laguna en un barquito a motor robado, mientras médicos de la peste y agentes patrullan los canales buscando a «un argentino». En «Венецианская маска», de noche, cuatro motos de agua cortan la superficie negra, y al final la laguna se abre y desde el fondo asoman arcos y columnas de piedra. El Provveditore es arrestado cuando intenta huir en una lancha cargada de lingotes de oro.",
+   "extra": {
+    "maschera-di-venezia": [
+     22,
+     30
+    ],
+    "venecianskaya-maska": [
+     23,
+     45,
+     56
+    ]
+   }
+  },
+  {
+   "id": "vz-perduta",
+   "nombre": "La Venecia perdida (bajo la Basílica)",
+   "cat": "misterio",
+   "ll": [
+    45.43478,
+    12.33945
+   ],
+   "modelo": "ninguno",
+   "desc": "Bajo la Basílica, una puerta se abre con un trueno: un mundo subterráneo dorado, vivo, con mosaicos, estatuas y bóvedas. Sobre el arco, en veneciano antiguo: «Solo l'omo dal cuor neto pol 'rivar a la Maschera» (solo el hombre de corazón limpio puede llegar a la Máscara). Roberto entra solo; sobre el altar de mármol blanco está la Máscara, y cuando llegan los enemigos, el agua del canal subterráneo se levanta como una pared.",
+   "buscar": "Venezia perduta|затонувш\\w+ Венеци\\w*|Затонувш\\w+",
+   "extra": {
+    "maschera-di-venezia": [
+     13,
+     14
+    ],
+    "venecianskaya-maska": [
+     14,
+     15
+    ]
+   },
+   "ilustracion": [
+    "maschera-di-venezia",
+    "13.jpg"
+   ]
+  },
+  {
+   "id": "vz-segrete",
+   "nombre": "Las mazmorras de la Logia (bajo el Palacio Ducal)",
+   "cat": "misterio",
+   "ll": [
+    45.43385,
+    12.3404
+   ],
+   "modelo": "ninguno",
+   "desc": "Se llega solo por los túneles subterráneos, un laberinto de piedra y agua que conocen únicamente los Custodios. Acá la Logia esconde la verdadera Máscara de Venecia. Laura desactiva las trampas una tras otra y Natalia abre la cerradura con un antiguo canto veneciano; un código escondido en una canción infantil veneciana abre una celda, y de ella salen los padres de Natalia, después de diez años presos.",
+   "buscar": "segrete della Loggia",
+   "extra": {
+    "maschera-di-venezia": [
+     28,
+     29,
+     30
+    ]
+   }
+  },
+  {
+   "id": "vz-cripta",
+   "nombre": "El nivel sumergido (bajo las Procuratie)",
+   "cat": "misterio",
+   "ll": [
+    45.43398,
+    12.3376
+   ],
+   "modelo": "ninguno",
+   "desc": "En «Венецианская маска», debajo de la vieja cripta y más abajo que los cimientos de las Procuratie: un pedestal en el centro y cinco canales subterráneos estrechos alrededor, adonde llegan todas las líneas de la red de cartas. Natalia pone el As de Copas sobre el pedestal; Zancan levanta la mano y de los canales sale un torrente de agua.",
+   "buscar": "Затопленн\\w+ уров\\w+|Прокураци\\w*",
+   "extra": {
+    "venecianskaya-maska": [
+     55
+    ]
+   }
+  },
+  {
+   "id": "vz-abisso",
+   "nombre": "San Michele dell'Abisso (bajo el cementerio)",
+   "cat": "misterio",
+   "ll": [
+    45.44625,
+    12.34525
+   ],
+   "modelo": "ninguno",
+   "desc": "En «Венецианская маска», bajo la isla-cementerio, un lugar que no está en ningún mapa y al que no se llega por el camino normal. Por los ojos de buey se ven palacios hundidos, fachadas, columnas y balcones, «capa sobre capa», y en el fondo un palacio de piedra rosa y turquesa. Ahí viven Tatiana y Antonio, los padres de Natalia; Tatiana cuenta por qué Venecia quedó bajo el agua. De vuelta, suben en aeróstato a través del agua hasta el cielo de la noche.",
+   "buscar": "Абиссо|Abisso",
+   "extra": {
+    "venecianskaya-maska": [
+     35,
+     39,
+     43
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "vz-rifugio",
+   "nombre": "El palacio secreto de Natalia (bajo el agua)",
+   "cat": "misterio",
+   "ll": [
+    45.4318,
+    12.3392
+   ],
+   "modelo": "ninguno",
+   "desc": "La góndola dobla por un canal escondido entre dos edificios en ruinas, el canal se abre en un remolino y detrás de una puerta aparece un refugio submarino: mosaicos dorados y un techo de vidrio antiguo a través del cual se ve el agua y pasa la luna llena. Se llega por un túnel sumergido con faroles azules. Ahí Natalia le confiesa a Roberto que hace diez años la Logia capturó a sus padres; una mañana, Alessio posa orgulloso junto a la mesa después de su «hazaña culinaria». La novela no dice dónde está: el mapa lo pone bajo el agua del Bacino.",
+   "buscar": "rifugio|palazzo segreto|подводн\\w+ двор\\w+|Подводн\\w+ собор\\w*",
+   "extra": {
+    "maschera-di-venezia": [
+     9,
+     21,
+     24
+    ],
+    "venecianskaya-maska": [
+     9,
+     11,
+     25,
+     35
+    ]
+   }
+  },
+  {
+   "id": "vz-questura",
+   "nombre": "La questura",
+   "cat": "edificio",
+   "ll": [
+    45.4685795,
+    12.2178947
+   ],
+   "modelo": "ninguno",
+   "desc": "Paredes descascaradas, tubos de neón que parpadean y una pregunta: ¿qué hace un argentino en Venecia tratando de demostrar que la ciudad estaba en tierra firme? Acá interroga a Roberto el comisario Zancan. La novela no da la dirección; la Questura de Venecia real está en tierra firme, en Marghera, por eso el marcador queda en el borde del mapa.",
+   "buscar": "questura|квестур\\w*",
+   "extra": {
+    "maschera-di-venezia": [
+     7
+    ],
+    "venecianskaya-maska": [
+     7
+    ]
+   },
+   "ilustracion": [
+    "maschera-di-venezia",
+    "07.jpg"
+   ]
+  }
+ ]
+}
