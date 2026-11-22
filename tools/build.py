@@ -36,6 +36,15 @@ NOVELAS = {
     'amor-en-el-cosmos': None, 'lluvia-de-meteoritos': None, 'la-chica-del-retrato': None,
     'el-impostor': None, 'the-immigrant': 'El inmigrante', '27-ocak': '27 de enero',
 }
+# Título en ruso para las novelas que no están escritas en ruso
+NOVELAS_RU = {
+    'la-citta-triste': 'Грустный город (ит.)', 'el-tren-fantasma': 'Призрачный поезд (исп.)', 'il-treno-fantasma': 'Призрачный поезд (ит.)',
+    'el-tren': 'Поезд', 'la-voix': 'Голос (фр.)', 'ondas-de-amor': 'Волны любви (исп.)', 'onde-d-amore': 'Волны любви (ит.)',
+    'onde-d-amore-3': 'Волны любви 3: Лицо зла (ит.)', 'chi-ha-visto-sasha': 'Кто видел Сашу?', 'ti-amo-in-silenzio': 'Люблю тебя молча (ит.)',
+    'amor-en-el-cosmos': 'Любовь в космосе', 'lluvia-de-meteoritos': 'Метеоритный дождь (исп.)', 'la-chica-del-retrato': 'Девушка с портрета',
+    'el-impostor': 'Самозванец', 'the-immigrant': 'Иммигрант', '27-ocak': '27 января',
+}
+LANG_RU = {'ru': 'русский', 'es': 'испанский', 'it': 'итальянский', 'fr': 'французский', 'en': 'английский', 'tr': 'турецкий'}
 LANG = {'ru': 'ruso', 'es': 'español', 'it': 'italiano', 'fr': 'francés', 'en': 'inglés', 'tr': 'turco'}
 # Excepciones: patrones demasiado generales que solo valen en ciertas novelas
 SOLO = {
@@ -57,6 +66,7 @@ def main():
     cat = {n['slug']: n for n in cat}
     src = json.load(open(os.path.join(ROOT, 'data', 'lugares.json')))
     lugares = src['lugares']
+    ru = json.load(open(os.path.join(ROOT, 'data', 'lugares.ru.json')))
 
     # textos y rutas de capítulos
     textos, titulos = {}, {}
@@ -124,6 +134,10 @@ def main():
         else:
             img = elegir_ilustracion(L['id'], apar, hits, primera, textos)
         o = {k: L[k] for k in ('id', 'nombre', 'otros', 'cat', 'x', 'y', 'modelo', 'desc') if k in L}
+        if L['id'] in ru:
+            o['nombre_ru'] = ru[L['id']]['nombre']; o['desc_ru'] = ru[L['id']]['desc']
+        else:
+            print('  FALTA traducción rusa:', L['id'])
         o['apar'] = apar
         if img:
             o['img'] = img
@@ -134,11 +148,12 @@ def main():
         n = cat[slug]
         portada = reducir(os.path.join(LIT, n['cover']), os.path.join('img', 'portadas', slug + '.webp'), 180) if n.get('cover') else None
         novelas[slug] = {'t': n['title'], 'es': NOVELAS[slug] or n['title'], 'l': n['lang'], 'y': n.get('year'),
-                         'p': portada, 'tr': n.get('translations') or {}}
+                         'ru': n['title'] if n['lang'] == 'ru' else NOVELAS_RU.get(slug, n['title']), 'p': portada, 'tr': n.get('translations') or {}}
     js = ('// Generado por tools/build.py a partir de data/lugares.json y de litmir. No editar a mano.\n'
           'export const LUGARES = ' + json.dumps(out_lugares, ensure_ascii=False, indent=0) + ';\n'
           'export const NOVELAS = ' + json.dumps(novelas, ensure_ascii=False, indent=0) + ';\n'
-          'export const IDIOMAS = ' + json.dumps(LANG, ensure_ascii=False) + ';\n')
+          'export const IDIOMAS = ' + json.dumps(LANG, ensure_ascii=False) + ';\n'
+          'export const IDIOMAS_RU = ' + json.dumps(LANG_RU, ensure_ascii=False) + ';\n')
     open(os.path.join(ROOT, 'js', 'datos.js'), 'w', encoding='utf-8').write(js)
     print(f'{len(out_lugares)} lugares, {len(novelas)} novelas')
     for o in out_lugares:

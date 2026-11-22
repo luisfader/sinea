@@ -4,16 +4,28 @@ import { MapControls } from './vendor/MapControls.js';
 import { LIMITES, BARRIOS, CALLES, BORDES, altura } from './mundo.js';
 import { pintarSuelo, crearTerreno, crearMar, crearEdificios, crearArboles, crearPuentes, crearAfueras } from './escena.js';
 import { construirHitos, crearDelfines, crearTrenFantasma } from './hitos.js';
-import { LUGARES, NOVELAS, IDIOMAS } from './datos.js';
+import { LUGARES, NOVELAS, IDIOMAS, IDIOMAS_RU } from './datos.js';
+
+/* ---------------- idioma ---------------- */
+let lang = (new URLSearchParams(location.search).get('lang') || (() => { try { return localStorage.getItem('sinea-lang'); } catch (e) { return null; } })() || (navigator.language || '').slice(0, 2)) === 'ru' ? 'ru' : 'es';
+const tr = (es, ru) => lang === 'ru' ? ru : es;
+const plural = (n, es1, esN, r1, r2, r5) => {
+  if (lang !== 'ru') return n === 1 ? es1 : esN;
+  const a = n % 10, b = n % 100; return a === 1 && b !== 11 ? r1 : a >= 2 && a <= 4 && (b < 12 || b > 14) ? r2 : r5;
+};
+const nomL = (L) => tr(L.nombre, L.nombre_ru || L.nombre);
+const descL = (L) => tr(L.desc, L.desc_ru || L.desc);
+const cir = /[А-Яа-яЁё]/;
+const otrosL = (L) => lang === 'ru' ? [L.nombre, ...(L.otros || []).filter(o => !cir.test(o))] : (L.otros || []);
 
 const LITMIR = 'https://luisfader.github.io/litmir/#/';
-const FADERPEDIA = 'https://luisfader.github.io/faderpedia/#/es/a/';
+const FADERPEDIA = () => `https://luisfader.github.io/faderpedia/#/${lang}/a/`;
 const FP = { 'faro-ael': 'ael', 'parque-delfines': 'ael', ministerio: 'ministerio-sentimientos', 'tren-fantasma': 'tren-fantasma', 'estacion-central': 'tren-fantasma',
   brecha: 'brecha', 'taller-geppetto': 'risatomat', 'rincon-suspiros': 'subconsciente', 'plaza-dante': 'sinea-ciudad', ayuntamiento: 'octavio-grande',
   'calle-castanos': 'marcos', 'calle-violinistas': 'vasili', 'central-electrica': 'brecha', 'estacion-cero': 'tren-fantasma', 'cafe-centro': 'olas' };
 const CAT = {
-  monumento: ['Monumento', '#d24f3f'], plaza: ['Plaza', '#b57a2c'], cafe: ['Café', '#c2456b'], edificio: ['Edificio', '#5b6fb5'],
-  transporte: ['Transporte', '#2f7fb8'], parque: ['Parque', '#3d9a53'], barrio: ['Barrio', '#7d6b5c'], calle: ['Calle', '#8a7a6a'], misterio: ['Misterio', '#7a4fc4']
+  monumento: ['Monumento', '#d24f3f', 'Памятник'], plaza: ['Plaza', '#b57a2c', 'Площадь'], cafe: ['Café', '#c2456b', 'Кафе'], edificio: ['Edificio', '#5b6fb5', 'Здание'],
+  transporte: ['Transporte', '#2f7fb8', 'Транспорт'], parque: ['Parque', '#3d9a53', 'Парк'], barrio: ['Barrio', '#7d6b5c', 'Район'], calle: ['Calle', '#8a7a6a', 'Улица'], misterio: ['Misterio', '#7a4fc4', 'Тайна']
 };
 const ICONO = {
   monumento: '<path d="M12 2l2.6 6.3 6.4.5-4.9 4.2 1.5 6.4L12 16l-5.6 3.4 1.5-6.4L3 8.8l6.4-.5z"/>',
@@ -49,23 +61,23 @@ const sc = sol.shadow.camera; sc.left = sc.bottom = -900; sc.right = sc.top = 90
 escena.add(sol, sol.target);
 const cielo = new THREE.HemisphereLight(0xdfeeff, 0xcbb894, 1.25); escena.add(cielo);
 
-const progreso = (t) => { $('#carga p').textContent = t; };
+const progreso = (es, ru) => { $('#carga p').textContent = tr(es, ru || es); };
 const espera = () => new Promise(r => requestAnimationFrame(() => setTimeout(r, 0)));
 
 let hitos, delf, tren, edificios;
 async function construir() {
-  progreso('Pintando el mapa…'); await espera();
+  progreso('Pintando el mapa…', 'Рисуем карту…'); await espera();
   const S = renderer.capabilities.maxTextureSize >= 8192 && innerWidth > 900 ? 8192 : 4096;
   const tex = new THREE.CanvasTexture(pintarSuelo(S));
   tex.colorSpace = THREE.SRGBColorSpace; tex.anisotropy = renderer.capabilities.getMaxAnisotropy(); tex.generateMipmaps = true; tex.minFilter = THREE.LinearMipmapLinearFilter;
-  progreso('Levantando colinas…'); await espera();
+  progreso('Levantando colinas…', 'Поднимаем холмы…'); await espera();
   escena.add(crearTerreno(tex));
   escena.add(crearMar(U)); escena.add(crearAfueras());
-  progreso('Construyendo los edificios famosos…'); await espera();
+  progreso('Construyendo los edificios famosos…', 'Строим знаменитые здания…'); await espera();
   hitos = construirHitos(LUGARES, U); escena.add(hitos.grupo);
-  progreso('Construyendo la ciudad…'); await espera();
+  progreso('Construyendo la ciudad…', 'Строим город…'); await espera();
   edificios = crearEdificios(hitos.reservas, U); escena.add(edificios);
-  progreso('Plantando árboles…'); await espera();
+  progreso('Plantando árboles…', 'Сажаем деревья…'); await espera();
   escena.add(crearArboles(hitos.reservas)); escena.add(crearPuentes());
   delf = crearDelfines(); escena.add(delf.g);
   tren = crearTrenFantasma(); escena.add(tren.g);
@@ -139,27 +151,26 @@ for (const L of LUGARES) {
   const soloTexto = L.cat === 'barrio' || L.cat === 'calle';
   el.className = 'pin' + (soloTexto ? ' texto' : '');
   el.style.setProperty('--c', col);
-  el.innerHTML = (soloTexto ? '' : `<span class="ic"><svg viewBox="0 0 24 24">${ICONO[L.cat] || ICONO.edificio}</svg></span>`) + `<span class="nm">${esc(L.nombre.replace(/ \(.*\)$/, ''))}</span>`;
-  el.title = L.nombre;
+  el.innerHTML = (soloTexto ? '' : `<span class="ic"><svg viewBox="0 0 24 24">${ICONO[L.cat] || ICONO.edificio}</svg></span>`) + `<span class="nm"></span>`;
   el.addEventListener('click', (e) => { e.stopPropagation(); abrirLugar(L.id, true); });
   capa.appendChild(el);
   const p = peso(L);
-  ETQ.push({ el, L, imp: Math.log2(2 + p) + (L.cat === 'monumento' ? 2.2 : L.cat === 'plaza' ? 1.4 : 0) + (L.id === 'plaza-dante' || L.id === 'faro-ael' ? 3 : 0), w: 0, h: 0, tipo: 'lugar' });
+  ETQ.push({ el, L, texto: () => nomL(L).replace(/ \(.*\)$/, ''), titulo: () => nomL(L), imp: Math.log2(2 + p) + (L.cat === 'monumento' ? 2.2 : L.cat === 'plaza' ? 1.4 : 0) + (L.id === 'plaza-dante' || L.id === 'faro-ael' ? 3 : 0), w: 0, h: 0, tipo: 'lugar' });
 }
 for (const b of BARRIOS) if (b.nombre) {
-  const el = document.createElement('div'); el.className = 'barrio'; el.textContent = b.nombre; capa.appendChild(el);
-  ETQ.push({ el, x: b.lx, y: b.ly, imp: 3.5, tipo: 'barrio' });
+  const el = document.createElement('div'); el.className = 'barrio'; capa.appendChild(el);
+  ETQ.push({ el, texto: () => tr(b.nombre, b.ru || b.nombre), x: b.lx, y: b.ly, imp: 3.5, tipo: 'barrio' });
 }
 for (const b of BORDES) {
-  const el = document.createElement('div'); el.className = b.mar ? 'mar' : 'borde'; el.textContent = b.texto; capa.appendChild(el);
-  ETQ.push({ el, x: b.x, y: b.y, imp: 9, tipo: b.mar ? 'mar' : 'borde' });
+  const el = document.createElement('div'); el.className = b.mar ? 'mar' : 'borde'; capa.appendChild(el);
+  ETQ.push({ el, texto: () => tr(b.texto, b.ru || b.texto), x: b.x, y: b.y, imp: 9, tipo: b.mar ? 'mar' : 'borde' });
 }
-for (const [nombre, t, pts] of CALLES) {
+for (const [nombre, t, pts, nru] of CALLES) {
   // segmento más largo
   let best = 0, bi = 0; for (let i = 0; i < pts.length - 1; i++) { const l = Math.hypot(pts[i + 1][0] - pts[i][0], pts[i + 1][1] - pts[i][1]); if (l > best) { best = l; bi = i; } }
   const a = pts[bi], b = pts[bi + 1];
-  const el = document.createElement('div'); el.className = 'calle ' + t; el.textContent = nombre; capa.appendChild(el);
-  ETQ.push({ el, x: (a[0] + b[0]) / 2, y: (a[1] + b[1]) / 2, a, b, imp: t === 'c' ? 1 : 2, tipo: 'calle', largo: best });
+  const el = document.createElement('div'); el.className = 'calle ' + t; capa.appendChild(el);
+  ETQ.push({ el, texto: () => tr(nombre, nru || nombre), x: (a[0] + b[0]) / 2, y: (a[1] + b[1]) / 2, a, b, imp: t === 'c' ? 1 : 2, tipo: 'calle', largo: best });
 }
 
 const vp = new THREE.Vector3(), vp2 = new THREE.Vector3();
@@ -220,46 +231,46 @@ function etiquetas() {
 /* Panel lateral                                                       */
 /* ------------------------------------------------------------------ */
 const panel = $('#panel'), cuerpo = $('#panel .cuerpo');
-function tituloNovela(slug) { const n = NOVELAS[slug]; return n ? n.es : slug; }
+function tituloNovela(slug) { const n = NOVELAS[slug]; return n ? tr(n.es, n.ru || n.t) : slug; }
 function capitulos(a, max = 6) {
   const n = NOVELAS[a.n];
-  const chips = a.c.map(([seg, t]) => `<a class="cap" target="_blank" rel="noopener" href="${LITMIR}${a.n}/${seg}" title="${esc(t)}">${seg.startsWith('extra') ? '✦' : 'Cap. ' + seg}${t ? ' · ' + esc(t) : ''}</a>`);
-  const mas = chips.length > max ? `<button class="mas">+ ${chips.length - max} capítulos más</button>` : '';
+  const chips = a.c.map(([seg, t]) => `<a class="cap" target="_blank" rel="noopener" href="${LITMIR}${a.n}/${seg}" title="${esc(t)}">${seg.startsWith('extra') ? '✦' : tr('Cap. ', 'Гл. ') + seg}${t ? ' · ' + esc(t) : ''}</a>`);
+  const mas = chips.length > max ? `<button class="mas">+ ${chips.length - max} ${tr('capítulos más', 'ещё')}</button>` : '';
   return `<div class="caps">${chips.slice(0, max).join('')}${chips.length > max ? `<span class="ocultos">${chips.slice(max).join('')}</span>` : ''}${mas}</div>`;
 }
 function fichaNovela(a) {
   const n = NOVELAS[a.n] || {};
-  const orig = n.t && n.t !== n.es ? `<i>${esc(n.t)}</i> · ` : '';
+  const princ = tituloNovela(a.n), orig = n.t && n.t !== princ ? `<i>${esc(n.t)}</i> · ` : '';
   return `<div class="nov">
     ${n.p ? `<img class="port" src="${n.p}" alt="" loading="lazy">` : '<div class="port"></div>'}
-    <div class="txt"><a class="tn" href="${LITMIR}${a.n}" target="_blank" rel="noopener">${esc(n.es || a.n)}</a>
-    <div class="meta">${orig}${esc(IDIOMAS[n.l] || n.l || '')}${n.y ? ' · ' + n.y : ''} · <button class="lnk" data-filtro="${a.n}">ver sus lugares en el mapa</button></div>
+    <div class="txt"><a class="tn" href="${LITMIR}${a.n}" target="_blank" rel="noopener">${esc(princ)}</a>
+    <div class="meta">${orig}${esc(tr(IDIOMAS[n.l], IDIOMAS_RU[n.l]) || n.l || '')}${n.y ? ' · ' + n.y : ''} · <button class="lnk" data-filtro="${a.n}">${tr('ver sus lugares en el mapa', 'места на карте')}</button></div>
     ${capitulos(a)}</div></div>`;
 }
 function abrirLugar(id, mover = false) {
   const L = LUGARES.find(l => l.id === id); if (!L) return;
   seleccion = id;
-  const [cn, col] = CAT[L.cat] || CAT.edificio;
+  const [cnEs, col, cnRu] = CAT[L.cat] || CAT.edificio, cn = tr(cnEs, cnRu);
   const total = peso(L);
-  const im = L.img ? `<figure class="foto"><img src="${L.img.src}" alt=""><figcaption>Ilustración de <a href="${LITMIR}${L.img.n}/${L.img.c}" target="_blank" rel="noopener">${esc(tituloNovela(L.img.n))}, cap. ${esc(L.img.c)}</a></figcaption></figure>` : '';
+  const im = L.img ? `<figure class="foto"><img src="${L.img.src}" alt=""><figcaption>${tr('Ilustración de', 'Иллюстрация:')} <a href="${LITMIR}${L.img.n}/${L.img.c}" target="_blank" rel="noopener">${esc(tituloNovela(L.img.n))}, ${tr('cap.', 'гл.')} ${esc(L.img.c)}</a></figcaption></figure>` : '';
   cuerpo.innerHTML = `${im}
     <div class="cab"><span class="cat" style="--c:${col}">${esc(cn)}</span>
-    <h2>${esc(L.nombre)}</h2>
-    ${L.otros && L.otros.length ? `<div class="otros">${L.otros.map(esc).join(' · ')}</div>` : ''}</div>
-    <div class="acciones"><button data-acc="volar">Acercarse</button><button data-acc="girar">Dar la vuelta</button><button data-acc="link">Copiar enlace</button>${FP[L.id] ? `<a href="${FADERPEDIA}${FP[L.id]}" target="_blank" rel="noopener">Faderpedia</a>` : ''}</div>
-    <p class="desc">${esc(L.desc)}</p>
-    <h3>Aparece en ${L.apar.length === 1 ? 'una novela' : L.apar.length + ' novelas'} <small>${total} capítulo${total === 1 ? '' : 's'}</small></h3>
-    ${L.apar.map(fichaNovela).join('') || '<p class="vacio">Todavía no se encontró en el texto de las novelas.</p>'}`;
+    <h2>${esc(nomL(L))}</h2>
+    ${otrosL(L).length ? `<div class="otros">${otrosL(L).map(esc).join(' · ')}</div>` : ''}</div>
+    <div class="acciones"><button data-acc="volar">${tr('Acercarse', 'Приблизить')}</button><button data-acc="girar">${tr('Dar la vuelta', 'Облететь')}</button><button data-acc="link">${tr('Copiar enlace', 'Скопировать ссылку')}</button>${FP[L.id] ? `<a href="${FADERPEDIA()}${FP[L.id]}" target="_blank" rel="noopener">${tr('Faderpedia', 'Фадерпедия')}</a>` : ''}</div>
+    <p class="desc">${esc(descL(L))}</p>
+    <h3>${lang === 'ru' ? `Встречается в ${L.apar.length} ${plural(L.apar.length, '', '', 'романе', 'романах', 'романах')}` : `Aparece en ${L.apar.length === 1 ? 'una novela' : L.apar.length + ' novelas'}`} <small>${total} ${plural(total, 'capítulo', 'capítulos', 'глава', 'главы', 'глав')}</small></h3>
+    ${L.apar.map(fichaNovela).join('') || `<p class="vacio">${tr('Todavía no se encontró en el texto de las novelas.', 'Пока не найдено в тексте романов.')}</p>`}`;
   panel.classList.add('abierto'); panel.scrollTop = 0; cuerpo.scrollTop = 0;
   if (mover) volar(L.x, L.y, distanciaPara(L), 0.98);
   cuerpo.querySelector('[data-acc=volar]').onclick = () => volar(L.x, L.y, distanciaPara(L), 0.98);
   cuerpo.querySelector('[data-acc=girar]').onclick = () => { volar(L.x, L.y, distanciaPara(L), 1.05); orbita = performance.now(); };
-  cuerpo.querySelector('[data-acc=link]').onclick = (e) => { navigator.clipboard?.writeText(location.href); e.target.textContent = 'Enlace copiado'; };
-  history.replaceState(null, '', '#/lugar/' + id);
+  cuerpo.querySelector('[data-acc=link]').onclick = (e) => { navigator.clipboard?.writeText(location.href); e.target.textContent = tr('Enlace copiado', 'Ссылка скопирована'); };
+  history.replaceState(null, '', urlCon('#/lugar/' + id));
 }
 const distanciaPara = (L) => ({ 'torre-tv': 700, laberinto: 700, 'colina-oeste': 900, 'rio-sina': 1400, 'barrio-ricos': 900, 'estacion-central': 520, brecha: 700 }[L.modelo] || { barrio: 900, calle: 520 }[L.cat] || 380);
 let orbita = 0;
-function cerrarPanel() { panel.classList.remove('abierto'); seleccion = null; if (!filtro) history.replaceState(null, '', '#/'); }
+function cerrarPanel() { panel.classList.remove('abierto'); seleccion = null; if (!filtro) history.replaceState(null, '', urlCon('#/')); }
 $('#panel .cerrar').onclick = cerrarPanel;
 cuerpo.addEventListener('click', (e) => {
   const b = e.target.closest('.mas'); if (b) { b.parentElement.classList.add('todo'); b.remove(); }
@@ -267,15 +278,16 @@ cuerpo.addEventListener('click', (e) => {
   const l = e.target.closest('[data-lugar]'); if (l) abrirLugar(l.dataset.lugar, true);
 });
 
+const pN = (P) => tr(P[0], P[3]), pD = (P) => tr(P[2], P[4]);
 const PERSONAJES = {
-  vasili: ['El detective Vasili', ['opasnoe-svidanie', 'almaznyj-dozhd', 'chi-ha-visto-sasha', 'el-tren', 'strateg'], 'Detective privado: «Una cita peligrosa», «Lluvia de diamantes», «¿Quién ha visto a Sasha?», «El tren», «El estratega»…'],
-  sasha: ['Sasha, la que oye', ['golos', 'la-voix', 'chi-ha-visto-sasha', 'almaznyj-dozhd'], 'La oficinista que escuchó al delfín Ael y hoy dirige el Centro de Anomalías del faro.'],
-  marcos: ['Marcos y Alicia', ['el-tren-fantasma', 'prizrachnyj-poezd', 'il-treno-fantasma', 'znak', 'bezumie-v-poezde'], 'El detective que no cree en las estrellas y la astróloga que lo hace subir al tren fantasma.'],
-  irina: ['Irina, la psicóloga', ['mashina-snov'], '«La máquina de los sueños»: los cuatro jinetes, la cita en la Fucsia, el viejo faro.'],
-  franco: ['Franco y Chiara', ['grustnyj-gorod', 'la-citta-triste'], 'Los que devolvieron la risa a la ciudad triste.'],
-  natalia: ['Luis, Natalia y el zorro', ['volny-lyubvi', 'ondas-de-amor', 'onde-d-amore', 'volny-lyubvi-gorod-bez-ulybok', 'volny-lyubvi-narisovannyj-mir', 'volny-lyubvi-krepost', 'volny-lyubvi-labirint-zabveniya', 'onde-d-amore-3'], '«Ondas de amor»: el dibujo del zorro, la torre, las ondas rosas y turquesas.'],
-  alessio: ['Alessio, Laura y Tatiana', ['pokhititel-serdec-portret-osnovatelya', 'la-chica-del-retrato'], '«Ladrón de corazones» y «La chica del retrato».'],
-  fabrizio: ['Fabrizio y Lucía', ['tikhaya-lyubov', 'ti-amo-in-silenzio'], '«Amor en silencio»: la carrera al faro del verano de 1997.']
+  vasili: ['El detective Vasili', ['opasnoe-svidanie', 'almaznyj-dozhd', 'chi-ha-visto-sasha', 'el-tren', 'strateg'], 'Detective privado: «Una cita peligrosa», «Lluvia de diamantes», «¿Quién ha visto a Sasha?», «El tren», «El estratega»…', 'Детектив Василий', 'Частный детектив: «Опасное свидание», «Алмазный дождь», «Кто видел Сашу?», «Поезд», «Стратег»…'],
+  sasha: ['Sasha, la que oye', ['golos', 'la-voix', 'chi-ha-visto-sasha', 'almaznyj-dozhd'], 'La oficinista que escuchó al delfín Ael y hoy dirige el Centro de Anomalías del faro.', 'Саша, которая слышит', 'Офисная работница, услышавшая дельфина Аэля, а теперь — глава Центра аномалий на маяке.'],
+  marcos: ['Marcos y Alicia', ['el-tren-fantasma', 'prizrachnyj-poezd', 'il-treno-fantasma', 'znak', 'bezumie-v-poezde'], 'El detective que no cree en las estrellas y la astróloga que lo hace subir al tren fantasma.', 'Марк и Алисия', 'Детектив, который не верит в звёзды, и астролог, из-за которой он садится в призрачный поезд.'],
+  irina: ['Irina, la psicóloga', ['mashina-snov'], '«La máquina de los sueños»: los cuatro jinetes, la cita en la Fucsia, el viejo faro.', 'Ирина, психолог', '«Машина снов»: четыре всадника, свидание в «Фуксии», старый маяк.'],
+  franco: ['Franco y Chiara', ['grustnyj-gorod', 'la-citta-triste'], 'Los que devolvieron la risa a la ciudad triste.', 'Франко и Кьяра', 'Те, кто вернул смех грустному городу.'],
+  natalia: ['Luis, Natalia y el zorro', ['volny-lyubvi', 'ondas-de-amor', 'onde-d-amore', 'volny-lyubvi-gorod-bez-ulybok', 'volny-lyubvi-narisovannyj-mir', 'volny-lyubvi-krepost', 'volny-lyubvi-labirint-zabveniya', 'onde-d-amore-3'], '«Ondas de amor»: el dibujo del zorro, la torre, las ondas rosas y turquesas.', 'Луис, Наталья и лис', '«Волны любви»: рисунок лиса, башня, розовые и бирюзовые волны.'],
+  alessio: ['Alessio, Laura y Tatiana', ['pokhititel-serdec-portret-osnovatelya', 'la-chica-del-retrato'], '«Ladrón de corazones» y «La chica del retrato».', 'Алессио, Лаура и Татьяна', '«Похититель сердец» и «Девушка с портрета».'],
+  fabrizio: ['Fabrizio y Lucía', ['tikhaya-lyubov', 'ti-amo-in-silenzio'], '«Amor en silencio»: la carrera al faro del verano de 1997.', 'Фабрицио и Лючия', '«Тихая любовь»: гонка к маяку летом 1997 года.']
 };
 
 /* ------------------------------------------------------------------ */
@@ -284,13 +296,19 @@ const PERSONAJES = {
 let ruta = null;
 const sel = $('#novela');
 const usadas = Object.keys(NOVELAS).map(s => [s, LUGARES.filter(L => L.apar.some(a => a.n === s)).length]).sort((a, b) => tituloNovela(a[0]).localeCompare(tituloNovela(b[0]), 'es'));
-sel.innerHTML = '<option value="">Todas las novelas y personajes</option><optgroup label="Personajes">' + Object.entries(PERSONAJES).map(([k, p]) => `<option value="p:${k}">${esc(p[0])}</option>`).join('') + '</optgroup><optgroup label="Novelas">' + usadas.map(([s, n]) => `<option value="${s}">${esc(tituloNovela(s))} (${n})</option>`).join('') + '</optgroup>';
+function llenarSelect() {
+  const v = sel.value;
+  const us = usadas.slice().sort((a, b) => tituloNovela(a[0]).localeCompare(tituloNovela(b[0]), lang));
+  sel.innerHTML = `<option value="">${tr('Todas las novelas y personajes', 'Все романы и персонажи')}</option><optgroup label="${tr('Personajes', 'Персонажи')}">` + Object.entries(PERSONAJES).map(([k, p]) => `<option value="p:${k}">${esc(pN(p))}</option>`).join('') + `</optgroup><optgroup label="${tr('Novelas', 'Романы')}">` + us.map(([s, n]) => `<option value="${s}">${esc(tituloNovela(s))} (${n})</option>`).join('') + '</optgroup>';
+  sel.value = v;
+}
 sel.onchange = () => aplicarFiltro(sel.value || null, true);
 
+let filtroActual = null;
 function aplicarFiltro(slug, mover) {
   if (ruta) { escena.remove(ruta); ruta.geometry.dispose(); ruta = null; }
   sel.value = slug || '';
-  if (!slug) { filtro = null; if (!seleccion) history.replaceState(null, '', '#/'); $('#recorrido').hidden = true; return; }
+  if (!slug) { filtroActual = null; filtro = null; if (!seleccion) history.replaceState(null, '', urlCon('#/')); $('#recorrido').hidden = true; return; }
   if (slug.startsWith('p:')) return filtroPersonaje(slug.slice(2), mover);
   const n = NOVELAS[slug];
   const fam = new Set([slug, ...Object.values(n.tr || {}).filter(s => NOVELAS[s])]);
@@ -298,13 +316,13 @@ function aplicarFiltro(slug, mover) {
   // orden de aparición: primer capítulo en que se menciona
   const lugares = LUGARES.map(L => { const a = L.apar.find(a => a.n === slug); return a ? { L, c: Math.min(...a.c.map(c => parseInt(c[0]) || 999)), a } : null; }).filter(Boolean).sort((a, b) => a.c - b.c);
   // panel con el recorrido
-  cuerpo.innerHTML = `<div class="cab nv">${n.p ? `<img class="portg" src="${n.p}" alt="">` : ''}<div><span class="cat" style="--c:#444">Recorrido</span><h2>${esc(n.es)}</h2><div class="otros">${n.t !== n.es ? esc(n.t) + ' · ' : ''}${esc(IDIOMAS[n.l] || '')}${n.y ? ' · ' + n.y : ''}</div>
-    <div class="acciones"><a href="${LITMIR}${slug}" target="_blank" rel="noopener">Leer en Litmir</a><button data-filtro="">Quitar filtro</button></div></div></div>
-    <p class="desc">Los lugares de Sinea por los que pasa la novela, en el orden en que aparecen.</p>
-    <ol class="lista">${lugares.map(({ L, c, a }) => `<li><button data-lugar="${L.id}"><b>${esc(L.nombre)}</b><span>desde el cap. ${c} · ${a.c.length} cap.</span></button></li>`).join('')}</ol>`;
+  cuerpo.innerHTML = `<div class="cab nv">${n.p ? `<img class="portg" src="${n.p}" alt="">` : ''}<div><span class="cat" style="--c:#444">${tr('Recorrido', 'Маршрут')}</span><h2>${esc(tituloNovela(slug))}</h2><div class="otros">${n.t !== tituloNovela(slug) ? esc(n.t) + ' · ' : ''}${esc(tr(IDIOMAS[n.l], IDIOMAS_RU[n.l]) || '')}${n.y ? ' · ' + n.y : ''}</div>
+    <div class="acciones"><a href="${LITMIR}${slug}" target="_blank" rel="noopener">${tr('Leer en LitFader', 'Читать на ЛитФадере')}</a><button data-filtro="">${tr('Quitar filtro', 'Снять фильтр')}</button></div></div></div>
+    <p class="desc">${tr('Los lugares de Sinea por los que pasa la novela, en el orden en que aparecen.', 'Места Синеи, через которые проходит роман, в порядке появления.')}</p>
+    <ol class="lista">${lugares.map(({ L, c, a }) => `<li><button data-lugar="${L.id}"><b>${esc(nomL(L))}</b><span>${tr('desde el cap.', 'с главы')} ${c} · ${a.c.length} ${tr('cap.', 'гл.')}</span></button></li>`).join('')}</ol>`;
   panel.classList.add('abierto'); seleccion = null;
-  $('#recorrido').hidden = false; $('#recorrido span').textContent = n.es;
-  history.replaceState(null, '', '#/novela/' + slug);
+  $('#recorrido').hidden = false; $('#recorrido span').textContent = tituloNovela(slug); filtroActual = slug;
+  history.replaceState(null, '', urlCon('#/novela/' + slug));
   // línea del recorrido
   if (lugares.length > 1) {
     const pts = [];
@@ -327,13 +345,13 @@ function filtroPersonaje(k, mover) {
   const P = PERSONAJES[k]; if (!P) return;
   filtro = new Set(P[1]);
   const lugares = LUGARES.map(L => { const ap = L.apar.filter(a => filtro.has(a.n)); return ap.length ? { L, ap, n: ap.reduce((s, a) => s + a.c.length, 0) } : null; }).filter(Boolean).sort((a, b) => b.n - a.n);
-  cuerpo.innerHTML = `<div class="cab"><span class="cat" style="--c:#444">Personaje</span><h2>${esc(P[0])}</h2><div class="otros">${esc(P[2])}</div>
-    <div class="acciones"><button data-filtro="">Quitar filtro</button></div></div>
-    <p class="desc">Los lugares de Sinea por los que pasa, ordenados por cuántas veces aparecen en sus novelas.</p>
-    <ol class="lista">${lugares.map(({ L, ap, n }) => `<li><button data-lugar="${L.id}"><b>${esc(L.nombre)}</b><span>${ap.map(a => esc(tituloNovela(a.n))).join(' · ')} · ${n} cap.</span></button></li>`).join('')}</ol>`;
+  cuerpo.innerHTML = `<div class="cab"><span class="cat" style="--c:#444">${tr('Personaje', 'Персонаж')}</span><h2>${esc(pN(P))}</h2><div class="otros">${esc(pD(P))}</div>
+    <div class="acciones"><button data-filtro="">${tr('Quitar filtro', 'Снять фильтр')}</button></div></div>
+    <p class="desc">${tr('Los lugares de Sinea por los que pasa, ordenados por cuántas veces aparecen en sus novelas.', 'Места Синеи, где бывает герой, — по тому, как часто они встречаются в его романах.')}</p>
+    <ol class="lista">${lugares.map(({ L, ap, n }) => `<li><button data-lugar="${L.id}"><b>${esc(nomL(L))}</b><span>${ap.map(a => esc(tituloNovela(a.n))).join(' · ')} · ${n} ${tr('cap.', 'гл.')}</span></button></li>`).join('')}</ol>`;
   panel.classList.add('abierto'); seleccion = null;
-  $('#recorrido').hidden = false; $('#recorrido span').textContent = P[0];
-  history.replaceState(null, '', '#/personaje/' + k);
+  $('#recorrido').hidden = false; $('#recorrido span').textContent = pN(P); filtroActual = 'p:' + k;
+  history.replaceState(null, '', urlCon('#/personaje/' + k));
   if (mover && lugares.length) {
     let x0 = 1e9, x1 = -1e9, y0 = 1e9, y1 = -1e9; lugares.forEach(({ L }) => { x0 = Math.min(x0, L.x); x1 = Math.max(x1, L.x); y0 = Math.min(y0, L.y); y1 = Math.max(y1, L.y); });
     volar((x0 + x1) / 2, (y0 + y1) / 2, Math.max(900, Math.max(x1 - x0, y1 - y0) * 1.2), 0.8);
@@ -348,16 +366,16 @@ const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 bus.addEventListener('input', () => {
   const q = norm(bus.value.trim()); if (!q) { res.hidden = true; return; }
   const lug = LUGARES.map(L => {
-    const nom = norm(L.nombre + ' ' + (L.otros || []).join(' ')); const d = norm(L.desc);
+    const nom = norm(L.nombre + ' ' + (L.nombre_ru || '') + ' ' + (L.otros || []).join(' ')); const d = norm(descL(L));
     const s = nom.includes(q) ? 3 : d.includes(q) ? 1 : 0; return [s, L];
   }).filter(x => x[0]).sort((a, b) => b[0] - a[0] || peso(b[1]) - peso(a[1])).slice(0, 8);
-  const nov = Object.entries(NOVELAS).filter(([s, n]) => norm(n.es + ' ' + n.t).includes(q)).slice(0, 5);
-  const calles = CALLES.filter(c => norm(c[0]).includes(q)).slice(0, 3);
-  const pers = Object.entries(PERSONAJES).filter(([k, p]) => norm(p[0] + ' ' + k).includes(q) || (q === 'vasily' && k === 'vasili'));
-  res.innerHTML = pers.map(([k, p]) => `<button data-personaje="${k}"><svg viewBox="0 0 24 24" style="fill:#e8453c"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0z"/></svg><span><b>${esc(p[0])}</b><small>Personaje · ver sus lugares</small></span></button>`).join('') + lug.map(([s, L]) => `<button data-lugar="${L.id}"><svg viewBox="0 0 24 24" style="fill:${(CAT[L.cat] || CAT.edificio)[1]}">${ICONO[L.cat] || ''}</svg><span><b>${esc(L.nombre)}</b><small>${s === 1 ? esc(fragmento(L.desc, q)) : esc((CAT[L.cat] || [''])[0])}</small></span></button>`).join('')
-    + nov.map(([s, n]) => `<button data-novela="${s}"><svg viewBox="0 0 24 24" style="fill:#444"><path d="M5 3h11a3 3 0 013 3v15H8a3 3 0 01-3-3z"/></svg><span><b>${esc(n.es)}</b><small>Novela · ver su recorrido</small></span></button>`).join('')
-    + calles.map(c => `<button data-calle="${esc(c[0])}"><svg viewBox="0 0 24 24" style="fill:#999"><path d="M10 2h4v20h-4z"/></svg><span><b>${esc(c[0])}</b><small>Calle</small></span></button>`).join('')
-    || '<div class="nada">Nada con ese nombre en Sinea… todavía.</div>';
+  const nov = Object.entries(NOVELAS).filter(([s, n]) => norm(n.es + ' ' + n.t + ' ' + (n.ru || '')).includes(q)).slice(0, 5);
+  const calles = CALLES.filter(c => norm(c[0] + ' ' + (c[3] || '')).includes(q)).slice(0, 3);
+  const pers = Object.entries(PERSONAJES).filter(([k, p]) => norm(p[0] + ' ' + p[3] + ' ' + k).includes(q) || (q === 'vasily' && k === 'vasili'));
+  res.innerHTML = pers.map(([k, p]) => `<button data-personaje="${k}"><svg viewBox="0 0 24 24" style="fill:#e8453c"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0116 0z"/></svg><span><b>${esc(pN(p))}</b><small>${tr('Personaje · ver sus lugares', 'Персонаж · его места')}</small></span></button>`).join('') + lug.map(([s, L]) => `<button data-lugar="${L.id}"><svg viewBox="0 0 24 24" style="fill:${(CAT[L.cat] || CAT.edificio)[1]}">${ICONO[L.cat] || ''}</svg><span><b>${esc(nomL(L))}</b><small>${s === 1 ? esc(fragmento(descL(L), q)) : esc(tr((CAT[L.cat] || [''])[0], (CAT[L.cat] || ['', '', ''])[2]))}</small></span></button>`).join('')
+    + nov.map(([s, n]) => `<button data-novela="${s}"><svg viewBox="0 0 24 24" style="fill:#444"><path d="M5 3h11a3 3 0 013 3v15H8a3 3 0 01-3-3z"/></svg><span><b>${esc(tituloNovela(s))}</b><small>${tr('Novela · ver su recorrido', 'Роман · маршрут по городу')}</small></span></button>`).join('')
+    + calles.map(c => `<button data-calle="${esc(c[0])}"><svg viewBox="0 0 24 24" style="fill:#999"><path d="M10 2h4v20h-4z"/></svg><span><b>${esc(tr(c[0], c[3] || c[0]))}</b><small>${tr('Calle', 'Улица')}</small></span></button>`).join('')
+    || `<div class="nada">${tr('Nada con ese nombre en Sinea… todavía.', 'В Синее такого пока нет…')}</div>`;
   res.hidden = false;
 });
 function fragmento(t, q) { const i = norm(t).indexOf(q); return (i > 30 ? '…' : '') + t.slice(Math.max(0, i - 30), i + 50) + '…'; }
@@ -376,7 +394,7 @@ addEventListener('keydown', (e) => { if (e.key === '/' && document.activeElement
 /* Controles de la interfaz                                            */
 /* ------------------------------------------------------------------ */
 let noche = 0, nocheObj = 0;
-$('#b-noche').onclick = () => { nocheObj = nocheObj ? 0 : 1; $('#b-noche').classList.toggle('on', !!nocheObj); $('#b-noche').title = nocheObj ? 'Hacer de día' : 'Hacer de noche'; };
+$('#b-noche').onclick = () => { nocheObj = nocheObj ? 0 : 1; $('#b-noche').classList.toggle('on', !!nocheObj); $('#b-noche').title = nocheObj ? tr('Hacer de día', 'Сделать день') : tr('Hacer de noche', 'Сделать ночь'); };
 $('#b-mas').onclick = () => zoomPaso(0.6);
 $('#b-menos').onclick = () => zoomPaso(1.6);
 function zoomPaso(f) { const off = camara.position.clone().sub(controles.target); const l = THREE.MathUtils.clamp(off.length() * f, controles.minDistance, controles.maxDistance); vuelo = { t0: controles.target.clone(), t1: controles.target.clone(), p0: camara.position.clone(), p1: controles.target.clone().add(off.setLength(l)), ini: performance.now(), ms: 450 }; }
@@ -439,6 +457,42 @@ function cuadro() {
   etiquetas();
   requestAnimationFrame(cuadro);
 }
+
+/* ------------------------------------------------------------------ */
+/* Cambio de idioma                                                    */
+/* ------------------------------------------------------------------ */
+function urlCon(hash) { return location.pathname + (lang === 'ru' ? '?lang=ru' : '') + hash; }
+const ESTATICO = [
+  ['#buscar', 'placeholder', 'Buscar en Sinea: un lugar, una novela, un personaje…', 'Поиск по Синее: место, роман, персонаж…'],
+  ['#novela', 'aria-label', 'Filtrar por novela', 'Фильтр по роману'],
+  ['#b-norte', 'title', 'Mirar al norte', 'На север'], ['#b-3d', 'title', 'Vista 2D / 3D', 'Вид 2D / 3D'],
+  ['#b-noche', 'title', 'Hacer de noche', 'Сделать ночь'], ['#b-casa', 'title', 'Ver toda la ciudad', 'Весь город'],
+  ['#b-mas', 'title', 'Acercar', 'Приблизить'], ['#b-menos', 'title', 'Alejar', 'Отдалить'],
+  ['#panel .cerrar', 'title', 'Cerrar', 'Закрыть'], ['#recorrido button', 'title', 'Quitar filtro', 'Снять фильтр'],
+  ['#recorrido b', 'text', 'Recorrido:', 'Маршрут:'],
+  ['#carga .sub', 'text', '«una ciudad de nieblas, de silencio y de deseos no dichos»', '«город туманов, тишины и невысказанных желаний»'],
+  ['#pie', 'html', '<b>Sinea</b> · la ciudad de las novelas de <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Robert Fader</a> · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Faderpedia</a> · <span class="ayuda">arrastrá para moverte · clic derecho o dos dedos para girar · rueda para el zoom</span>',
+    '<b>Синея</b> · город из романов <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Роберта Фадера</a> · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Фадерпедия</a> · <span class="ayuda">тяните, чтобы двигаться · правая кнопка или два пальца — поворот · колесо — масштаб</span>']
+];
+function ponerIdioma(l, refrescar = true) {
+  lang = l === 'ru' ? 'ru' : 'es';
+  try { localStorage.setItem('sinea-lang', lang); } catch (e) {}
+  document.documentElement.lang = lang;
+  document.title = tr('Sinea — el mapa 3D de la ciudad de Robert Fader', 'Синея — 3D-карта города Роберта Фадера');
+  $('#carga .logo').textContent = tr('Sinea', 'Синея');
+  for (const [q, at, es, ru] of ESTATICO) { const el = $(q); if (!el) continue; const v = tr(es, ru); if (at === 'text') el.textContent = v; else if (at === 'html') el.innerHTML = v; else el.setAttribute(at, v); }
+  document.querySelectorAll('#idioma button').forEach(b => b.classList.toggle('on', b.dataset.l === lang));
+  for (const E of ETQ) { const t = E.texto(); const nm = E.el.querySelector('.nm'); (nm || E.el).textContent = t; if (E.titulo) E.el.title = E.titulo(); E.w = 0; E.hh = 0; }
+  llenarSelect();
+  if (!refrescar) return;
+  if (bus.value) bus.dispatchEvent(new Event('input'));
+  if (seleccion) abrirLugar(seleccion, false);
+  else if (filtroActual) aplicarFiltro(filtroActual, false);
+  else history.replaceState(null, '', urlCon(location.hash || '#/'));
+  const ab = panel.classList.contains('abierto'); if (!seleccion && !filtroActual && ab) cerrarPanel();
+}
+document.querySelectorAll('#idioma button').forEach(b => b.onclick = () => ponerIdioma(b.dataset.l));
+ponerIdioma(lang, false);
 
 /* ------------------------------------------------------------------ */
 function ruta0() {

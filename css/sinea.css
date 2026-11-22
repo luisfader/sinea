@@ -44,7 +44,11 @@ body.noche .barrio { color: rgba(240,230,210,.75); text-shadow: 0 0 4px #000; }
 #resultados .nada { padding: 14px 16px; color: var(--suave); }
 #novela { height: 48px; border: 0; border-radius: 24px; padding: 0 16px; font-size: 14px; box-shadow: var(--sombra); background: #fff; max-width: 290px; }
 
-#recorrido { position: fixed; top: 72px; left: 50%; transform: translateX(-50%); background: #fff; border-radius: 20px; padding: 8px 10px 8px 16px; box-shadow: var(--sombra); z-index: 15; font-size: 14px; }
+#idioma { display: flex; height: 48px; border-radius: 24px; background: #fff; box-shadow: var(--sombra); padding: 5px; gap: 2px; }
+#idioma button { border: 0; background: none; border-radius: 19px; padding: 0 13px; font-weight: 700; font-size: 13px; color: #5f6b76; letter-spacing: .04em; }
+#idioma button.on { background: var(--acento); color: #fff; }
+#recorrido { position: fixed; top: 72px; left: 50%; transform: translateX(-50%); background: #fff; border-radius: 20px; padding: 8px 10px 8px 16px; box-shadow: var(--sombra); z-index: 15; font-size: 14px; display: flex; align-items: center; gap: 5px; white-space: nowrap; max-width: 92vw; }
+#recorrido span { overflow: hidden; text-overflow: ellipsis; }
 #recorrido button { border: 0; background: #eef0f3; border-radius: 50%; width: 26px; height: 26px; margin-left: 6px; }
 
 /* ---------- panel lateral ---------- */
@@ -115,7 +119,8 @@ body.noche #pie { color: #c9d2dc; background: linear-gradient(transparent, rgba(
 @media (max-width: 720px) {
   #barra { top: 8px; left: 8px; right: 8px; }
   .caja-busqueda { width: 100%; }
-  #novela { width: 100%; max-width: none; height: 40px; }
+  #novela { flex: 1; max-width: none; height: 40px; min-width: 0; }
+  #idioma { height: 40px; padding: 3px; }
   #panel { top: auto; width: 100%; height: 62vh; border-radius: 16px 16px 0 0; transform: translateY(105%); }
   #panel.abierto { transform: none; }
   #panel .cuerpo { padding-top: 0; }

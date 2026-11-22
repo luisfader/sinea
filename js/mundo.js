@@ -41,29 +41,29 @@ const PAL_VIEJO = ['#e9d8b8', '#f1e4c8', '#e2c9a0', '#efd9b0', '#d9b98c', '#f4ea
 const PAL_MOD = ['#d7d9dc', '#c9ced3', '#e3e1dc', '#bfc6cc', '#d9d3c7', '#cfd6db', '#e6e6e3'];
 const PAL_PUERTO = ['#c7b8a2', '#b9a98f', '#cfc3ad', '#a99b86', '#d3c7b4'];
 export const BARRIOS = [
-  { id: 'casco', nombre: 'Casco Antiguo', lx: 420, ly: -760, alt: [8, 17], lote: 46, ang: 12, techo: 'teja', dens: .93, pal: PAL_VIEJO,
+  { id: 'casco', nombre: 'Casco Antiguo', ru: 'Старый город', lx: 420, ly: -760, alt: [8, 17], lote: 46, ang: 12, techo: 'teja', dens: .93, pal: PAL_VIEJO,
     pol: [[-180, -1150], [300, -1200], [1060, -1190], [1100, -820], [1080, -260], [620, -230], [200, -170], [-170, -380], [-120, -760]] },
-  { id: 'puerto', nombre: 'Puerto y Cordeleros', lx: 1380, ly: -880, alt: [7, 15], lote: 62, ang: 3, techo: 'plano', dens: .8, pal: PAL_PUERTO,
+  { id: 'puerto', nombre: 'Puerto y Cordeleros', ru: 'Порт и Канатчики', lx: 1380, ly: -880, alt: [7, 15], lote: 62, ang: 3, techo: 'plano', dens: .8, pal: PAL_PUERTO,
     pol: [[1060, -1190], [1820, -1140], [2000, -760], [1960, -420], [1500, -330], [1100, -360], [1100, -820]] },
-  { id: 'ensanche', nombre: 'Ensanche', lx: 820, ly: 40, alt: [14, 30], lote: 78, ang: -7, techo: 'plano', dens: .9, pal: PAL_MOD,
+  { id: 'ensanche', nombre: 'Ensanche', ru: 'Новый город', lx: 820, ly: 40, alt: [14, 30], lote: 78, ang: -7, techo: 'plano', dens: .9, pal: PAL_MOD,
     pol: [[-160, -360], [200, -170], [620, -230], [1080, -260], [1500, -330], [1960, -420], [2040, -60], [1700, 90], [1300, 200], [800, 300], [400, 370], [0, 430], [-120, 120]] },
-  { id: 'artesanos', nombre: 'Barrio de los Artesanos', lx: -520, ly: -420, alt: [6, 12], lote: 42, ang: 24, techo: 'teja', dens: .92, pal: PAL_VIEJO,
+  { id: 'artesanos', nombre: 'Barrio de los Artesanos', ru: 'Район Ремесленников', lx: -520, ly: -420, alt: [6, 12], lote: 42, ang: 24, techo: 'teja', dens: .92, pal: PAL_VIEJO,
     pol: [[-900, -700], [-120, -760], [-170, -380], [-120, 120], [-860, -60]] },
-  { id: 'norte', nombre: 'Orilla Norte', lx: 860, ly: 640, alt: [18, 46], lote: 86, ang: 2, techo: 'plano', dens: .9, pal: PAL_MOD,
+  { id: 'norte', nombre: 'Orilla Norte', ru: 'Северный берег', lx: 860, ly: 640, alt: [18, 46], lote: 86, ang: 2, techo: 'plano', dens: .9, pal: PAL_MOD,
     pol: [[-250, 560], [400, 450], [800, 380], [1300, 280], [1700, 170], [2110, 120], [2150, 600], [2200, 900], [1300, 1020], [0, 1000]] },
-  { id: 'estacion', nombre: 'Los Tulipanes', lx: 760, ly: 1420, alt: [9, 20], lote: 74, ang: -4, techo: 'plano', dens: .85, pal: PAL_MOD,
+  { id: 'estacion', nombre: 'Los Tulipanes', ru: 'Квартал Тюльпанов', lx: 760, ly: 1420, alt: [9, 20], lote: 74, ang: -4, techo: 'plano', dens: .85, pal: PAL_MOD,
     pol: [[0, 1000], [1300, 1020], [1500, 1350], [1400, 1750], [400, 1750], [300, 1300]] },
-  { id: 'locos', nombre: 'Barrio de los Locos', lx: -560, ly: 1560, alt: [6, 13], lote: 58, ang: 18, techo: 'teja', dens: .78, pal: PAL_VIEJO,
+  { id: 'locos', nombre: 'Barrio de los Locos', ru: 'Квартал сумасшедших', lx: -560, ly: 1560, alt: [6, 13], lote: 58, ang: 18, techo: 'teja', dens: .78, pal: PAL_VIEJO,
     pol: [[-1100, 1050], [0, 1000], [300, 1300], [400, 1750], [-1000, 1800]] },
-  { id: 'amanecer', nombre: 'Barrio del Amanecer', lx: -820, ly: 820, alt: [10, 24], lote: 80, ang: -12, techo: 'plano', dens: .86, pal: PAL_MOD,
+  { id: 'amanecer', nombre: 'Barrio del Amanecer', ru: 'Район Рассвета', lx: -820, ly: 820, alt: [10, 24], lote: 80, ang: -12, techo: 'plano', dens: .86, pal: PAL_MOD,
     pol: [[-1900, 640], [-1100, 600], [-250, 560], [0, 1000], [-1100, 1050], [-1900, 1000]] },
-  { id: 'este', nombre: 'Barrio Este', lx: 1750, ly: 820, alt: [10, 24], lote: 82, ang: 10, techo: 'plano', dens: .82, pal: PAL_MOD,
+  { id: 'este', nombre: 'Barrio Este', ru: 'Восточный квартал', lx: 1750, ly: 820, alt: [10, 24], lote: 82, ang: 10, techo: 'plano', dens: .82, pal: PAL_MOD,
     pol: [[1300, 1020], [2200, 900], [2550, 1250], [2500, 1700], [1500, 1350]] },
-  { id: 'oeste', nombre: 'Barrio del Planetario', lx: -1520, ly: 330, alt: [7, 14], lote: 64, ang: -16, techo: 'teja', dens: .8, pal: PAL_VIEJO,
+  { id: 'oeste', nombre: 'Barrio del Planetario', ru: 'Район Планетария', lx: -1520, ly: 330, alt: [7, 14], lote: 64, ang: -16, techo: 'teja', dens: .8, pal: PAL_VIEJO,
     pol: [[-1950, -650], [-900, -700], [-860, -60], [-120, 120], [0, 430], [-500, 480], [-1100, 520], [-1800, 480], [-1950, 0]] },
-  { id: 'pescadores', nombre: 'Los Pescadores', lx: -560, ly: -1080, alt: [5, 10], lote: 40, ang: 38, techo: 'teja', dens: .88, pal: PAL_VIEJO,
+  { id: 'pescadores', nombre: 'Los Pescadores', ru: 'Рыбацкий квартал', lx: -560, ly: -1080, alt: [5, 10], lote: 40, ang: 38, techo: 'teja', dens: .88, pal: PAL_VIEJO,
     pol: [[-900, -700], [-120, -760], [-180, -1150], [-520, -1260], [-950, -1420]] },
-  { id: 'ricos', nombre: 'Ricos Tristes', lx: -1560, ly: -1180, alt: [6, 11], lote: 120, ang: -20, techo: 'teja', dens: .55, pal: ['#f6f1e7', '#efe7d8', '#f8f4ec', '#e9dfcc'],
+  { id: 'ricos', nombre: 'Ricos Tristes', ru: 'Грустные Богачи', lx: -1560, ly: -1180, alt: [6, 11], lote: 120, ang: -20, techo: 'teja', dens: .55, pal: ['#f6f1e7', '#efe7d8', '#f8f4ec', '#e9dfcc'],
     pol: [[-2500, -1760], [-1500, -1600], [-950, -1420], [-900, -700], [-1950, -650], [-2600, -900]] },
   { id: 'afueras', nombre: '', lx: 0, ly: 2100, alt: [5, 9], lote: 110, ang: 6, techo: 'teja', dens: .3, pal: PAL_VIEJO,
     pol: [[-1000, 1800], [1400, 1750], [2400, 2000], [2400, 2600], [-1200, 2600]] }
@@ -71,33 +71,33 @@ export const BARRIOS = [
 
 // Calles con nombre: [nombre, tipo, puntos]. tipo: 'av' avenida, 'c' calle, 'ca' carretera
 export const CALLES = [
-  ['Avenida de la Independencia', 'av', [[600, -580], [608, -200], [612, 100], [604, 330], [600, 420], [560, 800], [430, 1080]]],
-  ['Bulevar Marítimo', 'av', [[-560, -1240], [-100, -1180], [300, -1215], [700, -1235], [1100, -1195], [1460, -1150], [1850, -1110], [2150, -1050], [2290, -950]]],
-  ['Carretera del Puerto', 'ca', [[2200, -880], [2010, -620], [1960, -300], [2010, 60], [2070, 600], [2240, 980], [2560, 1300], [2560, 2100], [2650, 3000], [2800, 3800]]],
-  ['Carretera del Norte', 'ca', [[430, 1080], [400, 1600], [380, 2450], [300, 3200], [260, 3800]]],
-  ['Avenida del Amanecer', 'av', [[0, 470], [-260, 760], [-620, 1080], [-1000, 1380]]],
-  ['Avenida de los Emperadores', 'av', [[-860, -620], [-1180, -840], [-1450, -1040], [-1800, -1260], [-2200, -1500]]],
-  ['Ronda del Oeste', 'ca', [[-120, 120], [-800, 90], [-1500, 140], [-2000, 150], [-2600, 160], [-3300, 220], [-4200, 300]]],
-  ['Calle de la Colina', 'c', [[330, -760], [60, -690], [-80, -660], [-250, -740]]],
-  ['Calle de la Paciencia', 'c', [[400, -540], [240, -430], [120, -330], [-40, -210]]],
-  ['Calle de los Violinistas', 'c', [[80, -120], [300, -150], [560, -190]]],
-  ['Calle de los Castaños', 'c', [[-860, -20], [-560, 40], [-260, 70]]],
-  ['Calle de las Mimosas', 'c', [[300, -1110], [460, -960], [600, -860]]],
-  ['Calle de los Pescadores', 'c', [[-560, -1220], [-320, -1120], [-140, -980]]],
-  ['Calle de las Conchas', 'c', [[-60, -1150], [80, -1020], [200, -930]]],
-  ['Calle de los Tejedores', 'c', [[40, 430], [60, 120], [80, -120]]],
-  ['Malecón del Sina', 'c', [[-250, 560], [400, 445], [800, 375], [1300, 275], [1700, 165]]],
-  ['Calle Marítima', 'c', [[900, -1150], [980, -960], [1060, -700], [1120, -420]]],
-  ['Calle de los Emperadores Viejos', 'c', [[600, -580], [430, -440], [260, -520], [100, -640]]],
-  ['Avenida del Puerto', 'av', [[600, -700], [700, -950], [760, -1180]]],
-  ['Calle de San Michele', 'c', [[680, -720], [900, -640], [1100, -560], [1250, -500]]],
-  ['Camino del Faro', 'c', [[1850, -1110], [1990, -900], [2160, -760], [2330, -940]]],
-  ['Calle del Planetario', 'c', [[-250, -100], [-650, -150], [-1000, -180], [-1150, -180]]],
-  ['Avenida del Este', 'av', [[1300, 270], [1550, 650], [1700, 1050], [1900, 1500]]],
-  ['Calle de los Tulipanes', 'c', [[430, 1080], [700, 1250], [1000, 1400]]],
-  ['Camino del Cementerio', 'c', [[-620, 1080], [-1000, 1250], [-1250, 1350]]],
-  ['Calle del Ministerio', 'c', [[612, -300], [930, -330], [1200, -320]]],
-  ['Camino del Cabo', 'c', [[2240, 980], [2600, 1300], [2780, 1450]]]
+  ['Avenida de la Independencia', 'av', [[600, -580], [608, -200], [612, 100], [604, 330], [600, 420], [560, 800], [430, 1080]], 'Проспект Независимости'],
+  ['Bulevar Marítimo', 'av', [[-560, -1240], [-100, -1180], [300, -1215], [700, -1235], [1100, -1195], [1460, -1150], [1850, -1110], [2150, -1050], [2290, -950]], 'Приморский бульвар'],
+  ['Carretera del Puerto', 'ca', [[2200, -880], [2010, -620], [1960, -300], [2010, 60], [2070, 600], [2240, 980], [2560, 1300], [2560, 2100], [2650, 3000], [2800, 3800]], 'Портовое шоссе'],
+  ['Carretera del Norte', 'ca', [[430, 1080], [400, 1600], [380, 2450], [300, 3200], [260, 3800]], 'Северная дорога'],
+  ['Avenida del Amanecer', 'av', [[0, 470], [-260, 760], [-620, 1080], [-1000, 1380]], 'Проспект Рассвета'],
+  ['Avenida de los Emperadores', 'av', [[-860, -620], [-1180, -840], [-1450, -1040], [-1800, -1260], [-2200, -1500]], 'Проспект Императоров'],
+  ['Ronda del Oeste', 'ca', [[-120, 120], [-800, 90], [-1500, 140], [-2000, 150], [-2600, 160], [-3300, 220], [-4200, 300]], 'Западное шоссе'],
+  ['Calle de la Colina', 'c', [[330, -760], [60, -690], [-80, -660], [-250, -740]], 'Улица Холма'],
+  ['Calle de la Paciencia', 'c', [[400, -540], [240, -430], [120, -330], [-40, -210]], 'Улица Терпения'],
+  ['Calle de los Violinistas', 'c', [[80, -120], [300, -150], [560, -190]], 'Улица Скрипачей'],
+  ['Calle de los Castaños', 'c', [[-860, -20], [-560, 40], [-260, 70]], 'Улица Каштанов'],
+  ['Calle de las Mimosas', 'c', [[300, -1110], [460, -960], [600, -860]], 'Улица Мимоз'],
+  ['Calle de los Pescadores', 'c', [[-560, -1220], [-320, -1120], [-140, -980]], 'Улица Рыбаков'],
+  ['Calle de las Conchas', 'c', [[-60, -1150], [80, -1020], [200, -930]], 'Улица Ракушек'],
+  ['Calle de los Tejedores', 'c', [[40, 430], [60, 120], [80, -120]], 'Улица Ткачей'],
+  ['Malecón del Sina', 'c', [[-250, 560], [400, 445], [800, 375], [1300, 275], [1700, 165]], 'Набережная Сины'],
+  ['Calle Marítima', 'c', [[900, -1150], [980, -960], [1060, -700], [1120, -420]], 'Морская улица'],
+  ['Calle de los Emperadores Viejos', 'c', [[600, -580], [430, -440], [260, -520], [100, -640]], 'Улица Старых Императоров'],
+  ['Avenida del Puerto', 'av', [[600, -700], [700, -950], [760, -1180]], 'Портовый проспект'],
+  ['Calle de San Michele', 'c', [[680, -720], [900, -640], [1100, -560], [1250, -500]], 'Улица Сан-Микеле'],
+  ['Camino del Faro', 'c', [[1850, -1110], [1990, -900], [2160, -760], [2330, -940]], 'Дорога к маяку'],
+  ['Calle del Planetario', 'c', [[-250, -100], [-650, -150], [-1000, -180], [-1150, -180]], 'Улица Планетария'],
+  ['Avenida del Este', 'av', [[1300, 270], [1550, 650], [1700, 1050], [1900, 1500]], 'Восточный проспект'],
+  ['Calle de los Tulipanes', 'c', [[430, 1080], [700, 1250], [1000, 1400]], 'Улица Тюльпанов'],
+  ['Camino del Cementerio', 'c', [[-620, 1080], [-1000, 1250], [-1250, 1350]], 'Кладбищенская дорога'],
+  ['Calle del Ministerio', 'c', [[612, -300], [930, -330], [1200, -320]], 'Улица Министерства'],
+  ['Camino del Cabo', 'c', [[2240, 980], [2600, 1300], [2780, 1450]], 'Дорога на мыс']
 ];
 
 // Ferrocarril (la estación central está en [320, 1180])
@@ -123,10 +123,10 @@ export const PARQUES = [
 
 // Lugares fuera del mapa
 export const BORDES = [
-  { texto: 'Ciudad del Norte ↑', x: 300, y: 3500 },
-  { texto: '← Verdegrad · estación «Nubecita»', x: -3800, y: 420 },
-  { texto: 'Bahía de Sinea', x: 900, y: -1700, mar: true },
-  { texto: 'Mar', x: 3400, y: 200, mar: true }
+  { texto: 'Ciudad del Norte ↑', ru: 'Северный город ↑', x: 300, y: 3500 },
+  { texto: '← Verdegrad · estación «Nubecita»', ru: '← Вердеград · станция «Облачко»', x: -3800, y: 420 },
+  { texto: 'Bahía de Sinea', ru: 'Бухта Синеи', x: 900, y: -1700, mar: true },
+  { texto: 'Mar', ru: 'Море', x: 3400, y: 200, mar: true }
 ];
 
 /* ---------- utilidades geométricas ---------- */

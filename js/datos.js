@@ -12,6 +12,8 @@ export const LUGARES = [
 "y": -640,
 "modelo": "plaza-dante",
 "desc": "El corazón de Sinea. En el centro, la fuente con la estatua de mármol del poeta; al sur, el Ayuntamiento con su balcón y su torre del reloj. Aquí terminan las fiestas, los desfiles y las revoluciones: aquí Franco y Chiara devuelven la risa a la ciudad, aquí se abre el Carnaval con el himno «Смейся» y aquí Alessio, con los años, abre su Café Ladrón de Corazones.",
+"nombre_ru": "Площадь Данте",
+"desc_ru": "Сердце Синеи. В центре — фонтан с мраморной статуей поэта, на южной стороне — мэрия с балконом и часовой башней. Здесь заканчиваются праздники, парады и революции: здесь Франко и Кьяра возвращают городу смех, здесь открывается Карнавал гимном «Смейся», и здесь же, спустя время, Алессио открывает своё кафе «Похититель сердец».",
 "apar": [
 {
 "n": "karnaval-sinei",
@@ -475,6 +477,8 @@ export const LUGARES = [
 "y": -790,
 "modelo": "ayuntamiento",
 "desc": "La sede de los alcaldes de Sinea, que rara vez tienen suerte: Octavio Grande y su prohibición de la risa, el corrupto Martin, Alfredo Grande y su carnaval. Su torre guarda el carillón y el Reloj del Carnaval, que en «Карнавал Синеи» da una decimotercera campanada. En la partida de ajedrez de Miguel es el rey blanco, en e1.",
+"nombre_ru": "Мэрия и Часы карнавала",
+"desc_ru": "Резиденция мэров Синеи, которым редко везёт: Октавио Гранде с его запретом смеха, продажный Мартин, Альфредо Гранде с его карнавалом. В башне хранятся карильон и Часы карнавала, которые в «Карнавале Синеи» бьют тринадцатый раз. В шахматной партии Мигеля мэрия — белый король на e1.",
 "apar": [
 {
 "n": "karnaval-sinei",
@@ -1141,6 +1145,8 @@ export const LUGARES = [
 "y": -420,
 "modelo": "plaza",
 "desc": "Plaza pequeña frente a la fachada norte del Ayuntamiento, con palomas en las cornisas. En «Стратег» es la casilla e3: allí debían reunirse a las cuatro de la madrugada las tres columnas de camiones de los golpistas. En una esquina, el café Tre Sorelle, con dos puertas: una a la plaza y otra al patio.",
+"nombre_ru": "Площадь Часов",
+"desc_ru": "Небольшая площадь у северного фасада мэрии, с голубями на карнизах. В «Стратеге» это поле e3: здесь в четыре утра должны были сойтись три колонны грузовиков заговорщиков. На углу — кафе «Тре Сорелле» с двумя дверями: одна на площадь, другая во двор.",
 "apar": [
 {
 "n": "strateg",
@@ -1232,6 +1238,8 @@ export const LUGARES = [
 "y": -520,
 "modelo": "obelisco",
 "desc": "La plaza del casco antiguo donde estaba el mercado de flores más grande de la costa y una fuente con una sirena de piedra. En «Волны любви: Город без улыбок» la sirena desaparece «para restaurarla» y en su lugar se levanta el negro Obelisco de la Tranquilidad, una de las cuatro torres que roban las sonrisas. Tiene campanario, y en la esquina está «Casa Celeste», la tienda de velas y cartas de Alicia.",
+"nombre_ru": "Площадь Порядка (бывшая площадь Цветов)",
+"desc_ru": "Площадь старого города, где был самый большой цветочный рынок на побережье и фонтан с каменной русалкой. В «Волнах любви: Город без улыбок» русалку увозят «на реставрацию», а на её месте вырастает чёрный Обелиск Спокойствия — одна из четырёх башен, которые крадут улыбки. Рядом колокольня, а на углу — «Casa Celeste», лавка свечей и карт Алисии.",
 "apar": [
 {
 "n": "volny-lyubvi-gorod-bez-ulybok",
@@ -1397,6 +1405,8 @@ export const LUGARES = [
 "y": -330,
 "modelo": "mercado",
 "desc": "Calles estrechas alrededor del mercado antiguo. En la calle de la Paciencia vive la bruja Nadia, encima de una librería, con la biblioteca que le dejó su abuela; por aquí pasan Franco en su moto de repartidor y Luis, Natalia y el zorro huyendo por el mercado.",
+"nombre_ru": "Старый рынок и улица Терпения",
+"desc_ru": "Узкие улочки вокруг старого рынка. На улице Терпения, над книжной лавкой, живёт ведьма Надя с библиотекой, доставшейся от бабушки; здесь проезжает на мотоцикле курьер Франко, и здесь же Луис, Наталья и лис убегают через рынок.",
 "apar": [
 {
 "n": "pokhititel-serdec-portret-osnovatelya",
@@ -1536,6 +1546,8 @@ export const LUGARES = [
 "y": -300,
 "modelo": "cafe",
 "desc": "Un café pequeño y tibio, de ventanas empañadas. Una tarde de lluvia de octubre, Lusiana, ilustradora, se sienta frente a Celestio, estudiante de arquitectura, y le dice que imagina el subconsciente como «un enorme sótano». Esa noche cada uno sueña con el otro.",
+"nombre_ru": "Кафе «Уголок вздохов»",
+"desc_ru": "Маленькое тёплое кафе с запотевшими окнами. Дождливым октябрьским вечером иллюстратор Лусиана подсаживается к студенту-архитектору Селестио и говорит, что представляет подсознание «огромным подвалом». В ту же ночь каждому снится другой.",
 "apar": [
 {
 "n": "sny-i-zver",
@@ -1582,6 +1594,8 @@ export const LUGARES = [
 "y": -520,
 "modelo": "cafe",
 "desc": "En este café chiquito, a un paso de la plaza Dante, Luis le regala a Natalia el dibujo de un zorro. La ciudad se cubre de una oscuridad azul, se besan, el tiempo se detiene… y el zorro salta del papel: «Me dibujaste pensando en ella». Aquí empieza todo «Ondas de amor».",
+"nombre_ru": "Кафе в центре (где родился лис)",
+"desc_ru": "В этом крошечном кафе в двух шагах от площади Данте Луис дарит Наталье рисунок лиса. Город накрывает синяя тьма, они целуются, время останавливается… и лис выпрыгивает с бумаги: «Ты рисовал меня, думая о ней». Здесь начинаются «Волны любви».",
 "apar": [
 {
 "n": "onde-d-amore",
@@ -1740,6 +1754,8 @@ export const LUGARES = [
 "y": -560,
 "modelo": "cafe",
 "desc": "En la plaza Dante. Primero es el café donde Alessio, recién llegado de Argentina, trabaja de barista y derrama un café sobre la camisa blanca de Tatiana, la chica del retrato. Un año después abre aquí su propio local, con un cartel en la puerta: aquí no se roba nada, salvo el corazón.",
+"nombre_ru": "Кафе «Похититель сердец»",
+"desc_ru": "На площади Данте. Сначала это кафе, где Алессио, только что приехавший из Аргентины, работает бариста и проливает кофе на белую рубашку Татьяны — девушки с портрета. Через год он открывает здесь собственное заведение с табличкой на двери: здесь ничего не крадут, кроме сердца.",
 "apar": [
 {
 "n": "pokhititel-serdec-portret-osnovatelya",
@@ -1799,6 +1815,8 @@ export const LUGARES = [
 "y": -330,
 "modelo": "ministerio",
 "desc": "Un edificio enorme y sin ventanas, la maquinaria del régimen de Octavio Grande: cámaras que vigilan el estado emocional de la gente, multas por sonreír, un «Departamento de la Alegría». Franco trabajó aquí antes de volverse mensajero. Años después, en «Amor en el cosmos», alguien recorre el Ministerio vacío.",
+"nombre_ru": "Министерство чувств",
+"desc_ru": "Огромное здание без окон, машина режима Октавио Гранде: камеры, следящие за настроением горожан, штрафы за улыбку, «Отдел радости». Франко работал здесь, прежде чем стать курьером. Спустя годы, в «Amor en el cosmos», кто-то бродит по опустевшему Министерству.",
 "apar": [
 {
 "n": "grustnyj-gorod",
@@ -1938,6 +1956,8 @@ export const LUGARES = [
 "y": -560,
 "modelo": "torre-tv",
 "desc": "La gran antena en la colina de San Michele, detrás del Ayuntamiento, alta y fina como una aguja, con una luz roja en la punta. Desde aquí se transmite casi toda la televisión… y, según la novela, también el mal: la oscuridad que roba el alma en «Ondas de amor», los hilos grises en «Город без улыбок», el acorde de trece notas en el Carnaval. Los golpistas de «Стратег» quieren tomarla a las seis de la mañana.",
+"nombre_ru": "Телебашня Синеи",
+"desc_ru": "Большая антенна на холме Сан-Микеле за мэрией, высокая и тонкая, как игла, с красным огоньком на вершине. Отсюда идёт почти всё телевидение города… и, смотря по роману, зло: тьма, крадущая души в «Волнах любви», серые нити в «Городе без улыбок», аккорд из тринадцати нот на Карнавале. Заговорщики из «Стратега» хотят захватить её к шести утра.",
 "apar": [
 {
 "n": "volny-lyubvi-gorod-bez-ulybok",
@@ -2262,6 +2282,8 @@ export const LUGARES = [
 "y": -470,
 "modelo": "ninguno",
 "desc": "La colina sobre la ciudad donde se alza la torre de televisión. Desde arriba se ven el puerto viejo, la bahía y, en los días claros, el Faro de Ael.",
+"nombre_ru": "Холм Сан-Микеле",
+"desc_ru": "Холм над городом, на котором стоит телебашня. Сверху видны старый порт, бухта, а в ясные дни — и Маяк Аэля.",
 "apar": [
 {
 "n": "volny-lyubvi-gorod-bez-ulybok",
@@ -2309,6 +2331,8 @@ export const LUGARES = [
 "y": -760,
 "modelo": "museo",
 "desc": "Un edificio blanco con columnas al final de la calle de la Colina. De aquí roban el diamante turquesa en «The Immigrant» y el retrato de Luis Fader, fundador de Sinea, en «Похититель сердец: Портрет основателя» (el alcalde ofrece un millón de dragones de recompensa). Livia, la restauradora de «Машина снов», trabaja aquí.",
+"nombre_ru": "Музей искусств Синеи",
+"desc_ru": "Белое здание с колоннами в конце улицы Холма. Отсюда крадут бирюзовый алмаз в «The Immigrant» и портрет Луиса Фадера, основателя Синеи, в «Похитителе сердец: Портрет основателя» (мэр объявляет награду в миллион драконов). Здесь работает Ливия, реставратор из «Машины снов».",
 "apar": [
 {
 "n": "pokhititel-serdec-portret-osnovatelya",
@@ -2419,6 +2443,8 @@ export const LUGARES = [
 "y": -650,
 "modelo": "ninguno",
 "desc": "Sube desde el casco antiguo hasta el Museo de Arte. Laura y Marisa siguen por el teléfono el punto azul de Alessio que trepa por esta calle hacia el museo… a pesar de que había prometido no acercarse a menos de un kilómetro.",
+"nombre_ru": "Улица Холма",
+"desc_ru": "Поднимается от старого города к Музею искусств. Лаура и Мариса следят по телефону, как синяя точка Алессио ползёт по этой улице к музею… хотя он обещал не подходить к нему ближе чем на километр.",
 "apar": [
 {
 "n": "pokhititel-serdec-portret-osnovatelya",
@@ -2463,6 +2489,8 @@ export const LUGARES = [
 "y": -300,
 "modelo": "taller",
 "desc": "Una casa de postigos verdes en el barrio de los Artesanos. Detrás de un armario, el viejo carpintero esconde una habitación llena de engranajes donde nace el Risatomat, la regadera que dispara sonrisas verdaderas. Es refugio en «Грустный город», en «Тайна в библиотеке» y en el Carnaval, y guarda el punto débil de Octavio Grande.",
+"nombre_ru": "Мастерская Джеппетто (Район Ремесленников)",
+"desc_ru": "Дом с зелёными ставнями в Районе Ремесленников. За шкафом старый столяр прячет комнату, полную шестерёнок, где рождается Ризатомат — лейка, стреляющая настоящими улыбками. Это убежище в «Грустном городе», в «Тайне в библиотеке» и на Карнавале, и здесь хранится слабое место Октавио Гранде.",
 "apar": [
 {
 "n": "karnaval-sinei",
@@ -2665,6 +2693,8 @@ export const LUGARES = [
 "y": 40,
 "modelo": "casa",
 "desc": "Aquí está el piso de Marcos y Alicia, «estrecho como una cajita donde dos personas intentan guardar dos vidas». En la pared, un mapa de Sinea lleno de alfileres: rojos para los casos, azules para los sospechosos… y doce blancos que, en «Знак», dibujan un círculo alrededor del Planetario.",
+"nombre_ru": "Улица Каштанов",
+"desc_ru": "Здесь квартира Марка и Алисии, тесная, «как шкатулка, куда два человека пытаются сложить две жизни». На стене — карта Синеи в булавках: красные — дела, синие — подозреваемые… и двенадцать белых, которые в «Знаке» складываются в круг вокруг Планетария.",
 "apar": [
 {
 "n": "znak",
@@ -2817,6 +2847,8 @@ export const LUGARES = [
 "y": -150,
 "modelo": "casa",
 "desc": "En un tercer piso, detrás de una puerta con el cartel «Sin preguntas innecesarias», está la oficina del detective Vasili. Miguel, el Ajedrecista de «Стратег», llama tres veces corto y una largo y extiende sobre la mesa un viejo mapa de Sinea cuadriculado de ocho por ocho. En la esquina hay una panadería donde se discute de fútbol.",
+"nombre_ru": "Улица Скрипачей (контора Василия)",
+"desc_ru": "На третьем этаже, за дверью с табличкой «Без лишних вопросов», — контора детектива Василия. Мигель, Шахматист из «Стратега», стучит три раза коротко и один длинно и расстилает на столе старую карту Синеи, расчерченную на восемь на восемь. На углу пекарня, где спорят о футболе.",
 "apar": [
 {
 "n": "strateg",
@@ -2876,6 +2908,8 @@ export const LUGARES = [
 "y": -180,
 "modelo": "planetario",
 "desc": "Una colina al oeste del centro con el viejo Planetario de cúpula de cobre. Cada febrero, bajo el signo de Acuario, los astrólogos de toda la ciudad se reúnen aquí tres días; en «Знак» Alicia da su primera ponencia, «Los cuatro Acuarios», mientras cuatro hombres de gris lo anotan todo. Las doce líneas trazadas desde los doce alfileres del mapa de Marcos se cruzan exactamente aquí.",
+"nombre_ru": "Холм Звездочётов и Планетарий",
+"desc_ru": "Холм к западу от центра со старым Планетарием под медным куполом. Каждый февраль, когда Солнце в Водолее, здесь три дня собираются астрологи со всего города; в «Знаке» Алисия делает свой первый доклад «Четыре Водолея», а четверо в сером записывают каждое слово. Двенадцать линий от двенадцати булавок на карте Марка сходятся именно здесь.",
 "apar": [
 {
 "n": "znak",
@@ -2956,6 +2990,8 @@ export const LUGARES = [
 "y": 260,
 "modelo": "parque",
 "desc": "El gran parque del centro, con una fuente donde una noche el agua corrió hacia arriba durante tres minutos. Lusiana va a dibujar aquí y encuentra a Celestio en un banco de piedra; en «El impostor» Leonardo pide matrimonio a Sofía en un parque de Sinea, y en «27 Ocak» Mateo ayuda a Rosa a recoger manzanas caídas.",
+"nombre_ru": "Парк Солнца",
+"desc_ru": "Большой парк в центре с фонтаном, где однажды вечером вода три минуты текла вверх. Лусиана приходит сюда рисовать и находит Селестио на каменной скамье; в «El impostor» Леонардо делает Софии предложение в парке Синеи, а в «27 Ocak» Матео помогает Розе собрать рассыпанные яблоки.",
 "apar": [
 {
 "n": "znak",
@@ -3032,6 +3068,8 @@ export const LUGARES = [
 "y": 470,
 "modelo": "puente",
 "desc": "El viejo puente de piedra sobre el río Sina y la calle de las tiendas de vinilos. En «Знак», el vendedor de discos de la calle de los Tejedores está en el chat «Bichos raros de Sinea».",
+"nombre_ru": "Мост и улица Ткачей",
+"desc_ru": "Старый каменный мост через реку Сину и улица виниловых лавок. В «Знаке» продавец пластинок с улицы Ткачей сидит в чате «Чудики Синеи».",
 "apar": [
 {
 "n": "strateg",
@@ -3073,6 +3111,8 @@ export const LUGARES = [
 "y": 400,
 "modelo": "puente",
 "desc": "El puente por donde entra la carretera del norte. En el mapa-tablero de Miguel es la columna «e»: por aquí debía bajar la segunda columna de camiones de la Ciudad del Norte en la noche del golpe.",
+"nombre_ru": "Северный мост",
+"desc_ru": "Мост, по которому в город входит северная дорога. На карте-доске Мигеля это вертикаль «e»: здесь в ночь переворота должна была спуститься вторая колонна грузовиков из Северного города.",
 "apar": [
 {
 "n": "strateg",
@@ -3118,6 +3158,8 @@ export const LUGARES = [
 "y": 560,
 "modelo": "ninguno",
 "desc": "El río que parte la ciudad en dos y desemboca en el mar al este. Miguel confunde sus afluentes en clase de geografía; en «Опасное свидание» se rumorea que Vasili acabó en su fondo «con botas de cemento».",
+"nombre_ru": "Река Сина",
+"desc_ru": "Река, которая делит город надвое и впадает в море на востоке. Мигель путает её притоки на уроке географии; в «Опасном свидании» ходят слухи, что Василий лежит на её дне «в бетонных сапогах».",
 "apar": [
 {
 "n": "strateg",
@@ -3161,6 +3203,8 @@ export const LUGARES = [
 "y": 1180,
 "modelo": "estacion",
 "desc": "De aquí salen los trenes a Venecia, a Belgrado y a Verdegrad… y, de noche, el tren fantasma. Marcos interroga al jefe de estación y al Hombre Gordo, que cuenta alegremente que el tren se llevó a su suegra. En «Безумие в поезде» es el Tren de la Locura, con diez vagones que son diez lecciones de ruso.",
+"nombre_ru": "Центральный вокзал",
+"desc_ru": "Отсюда уходят поезда в Венецию, Белград и Вердеград… а ночью — призрачный поезд. Марк расспрашивает начальника вокзала и Толстяка, который весело рассказывает, что поезд увёз его тёщу. В «Безумии в поезде» это Поезд Безумия: десять вагонов — десять уроков русского.",
 "apar": [
 {
 "n": "karnaval-sinei",
@@ -3526,6 +3570,8 @@ export const LUGARES = [
 "y": 1080,
 "modelo": "fantasma",
 "desc": "La estación que no existe, al final del «metro que no existía»: estaciones del grito, del susurro, de la tormenta, de los perdidos, de las casas olvidadas, de la elección… hasta la Estación Cero, una hora fuera de la hora. En «Карнавал Синеи» la Estación Cero «espera a los que recuerdan».",
+"nombre_ru": "Нулевая станция",
+"desc_ru": "Станция, которой нет, в конце «метро, которого не было»: станции крика, шёпота, бури, потерянных, забытых домов, выбора… и наконец Нулевая станция — час вне часа. В «Карнавале Синеи» Нулевая станция «ждёт тех, кто помнит».",
 "apar": [
 {
 "n": "prizrachnyj-poezd",
@@ -3641,6 +3687,8 @@ export const LUGARES = [
 "y": 1300,
 "modelo": "ninguno",
 "desc": "El barrio junto a la estación donde vive Roberto «Bobby» López Mendoza, el Hombre Gordo de «El tren fantasma», que sueña con abrir una parrilla llamada El Yerno en Llamas.",
+"nombre_ru": "Квартал Тюльпанов",
+"desc_ru": "Квартал у вокзала, где живёт Роберто «Бобби» Лопес Мендоса — Толстяк из «El tren fantasma», который мечтает открыть гриль-бар «Зять в огне».",
 "apar": [
 {
 "n": "el-tren-fantasma",
@@ -3680,6 +3728,8 @@ export const LUGARES = [
 "y": 1420,
 "modelo": "ninguno",
 "desc": "Un barrio de niebla junto a las vías. Aquí, a las dos y cuarto de la madrugada, sale del humo el tren sin locomotora: lo toma el detective Vasily en «El tren», lo cruzan Vasili y el lector en «Тайна в библиотеке».",
+"nombre_ru": "Квартал сумасшедших",
+"desc_ru": "Туманный квартал у железной дороги. Здесь в четверть третьего ночи из дыма выплывает поезд без локомотива: на него садится детектив Василий в «El tren», через этот квартал проходят Василий и читатель в «Тайне в библиотеке».",
 "apar": [
 {
 "n": "tajna-v-biblioteke",
@@ -3823,6 +3873,8 @@ export const LUGARES = [
 "y": 1290,
 "modelo": "tren-fantasma",
 "desc": "La leyenda urbana más famosa de Sinea: un convoy que aparece de noche y se lleva a la gente. Vagón restaurante, biblioteca, piscina, discoteca secreta, confesionario y el Vagón del Juicio Final, presidido por el juez Casimiro Condena, que termina convertido en rata y lanzado por la ventanilla «en algún punto entre Sinea y la nada».",
+"nombre_ru": "Пути призрачного поезда",
+"desc_ru": "Самая известная городская легенда Синеи: состав, который появляется ночью и увозит людей. Вагон-ресторан, библиотека, бассейн, тайная дискотека, исповедальня и Вагон Страшного суда, где председательствует судья Казимиро Кондена, — в конце он превращается в крысу и вылетает в окно «где-то между Синеей и пустотой».",
 "apar": [
 {
 "n": "el-tren-fantasma",
@@ -4216,6 +4268,8 @@ export const LUGARES = [
 "y": 760,
 "modelo": "rascacielos",
 "desc": "El rascacielos de cristal de la orilla norte. En el último piso hay un restaurante con toda la ciudad a los pies: allí cita Vasili a Alexandra en «Опасное свидание», para «probarla en las alturas».",
+"nombre_ru": "Башня «Север»",
+"desc_ru": "Стеклянный небоскрёб на северном берегу. На верхнем этаже — ресторан с видом на весь город: туда Василий приглашает Александру в «Опасном свидании», чтобы «проверить её на высоте».",
 "apar": [
 {
 "n": "opasnoe-svidanie",
@@ -4239,6 +4293,8 @@ export const LUGARES = [
 "y": 500,
 "modelo": "casa",
 "desc": "Un club pequeño y cerrado en el malecón del río. María ordena a Vasili esperar en el coche, en la vereda de enfrente, a las nueve de la noche: «Nada de movimientos heroicos».",
+"nombre_ru": "Клуб «Северный берег»",
+"desc_ru": "Маленький закрытый клуб на набережной реки. Мария велит Василию ждать в машине на противоположной стороне улицы в девять вечера: «Никаких героических движений».",
 "apar": [
 {
 "n": "opasnoe-svidanie",
@@ -4278,6 +4334,8 @@ export const LUGARES = [
 "y": 120,
 "modelo": "ninguno",
 "desc": "La gran avenida de las boutiques que une la plaza Dante con la estación. Aquí cae uno de los primeros meteoritos de «Алмазный дождь», y en «Тайна в библиотеке» una vecina ve pasar a un hombre con armadura que pregunta, muy educado, por dónde se va al mar.",
+"nombre_ru": "Проспект Независимости",
+"desc_ru": "Главный проспект бутиков, соединяющий площадь Данте с вокзалом. Здесь падает один из первых метеоритов «Алмазного дождя», а в «Тайне в библиотеке» соседка видит мужчину в доспехах, который очень вежливо спрашивает дорогу к морю.",
 "apar": [
 {
 "n": "almaznyj-dozhd",
@@ -4340,6 +4398,8 @@ export const LUGARES = [
 "y": 760,
 "modelo": "redondo",
 "desc": "En esta avenida se alza un gran edificio claro de ventanas redondas: una de las cuatro torres que, en «Город без улыбок», tiran de los hilos grises que salen de la cabeza de la gente.",
+"nombre_ru": "Проспект Рассвета",
+"desc_ru": "Здесь стоит большое светлое здание с круглыми окнами — одна из четырёх башен, которые в «Городе без улыбок» тянут серые нити из голов горожан.",
 "apar": [
 {
 "n": "volny-lyubvi-gorod-bez-ulybok",
@@ -4384,6 +4444,8 @@ export const LUGARES = [
 "y": 1760,
 "modelo": "galpon",
 "desc": "Los galpones de la Comisión, adonde en «Алмазный дождь» se llevan las «muestras» de meteorito… y algo más. Enfrente, en la planta baja de una casa vieja, brilla un cafecito de cortinas amarillas desde el que se ven perfectamente los portones.",
+"nombre_ru": "Северное депо",
+"desc_ru": "Склады Комиссии, куда в «Алмазном дожде» увозят «образцы» метеоритов… и не только их. Напротив, на первом этаже старого дома, светится маленькое кафе с жёлтыми занавесками, из окна которого ворота видны как на ладони.",
 "apar": [
 {
 "n": "almaznyj-dozhd",
@@ -4436,6 +4498,8 @@ export const LUGARES = [
 "y": 1350,
 "modelo": "puertas",
 "desc": "Sus portones son uno de los doce puntos altos y viejos del círculo de «Знак», donde ocurren cosas pequeñas e inexplicables la misma noche.",
+"nombre_ru": "Старое кладбище",
+"desc_ru": "Его ворота — одна из двенадцати высоких и старых точек круга из «Знака», где в одну ночь происходят мелкие необъяснимые события.",
 "apar": [
 {
 "n": "znak",
@@ -4468,6 +4532,8 @@ export const LUGARES = [
 "y": 2450,
 "modelo": "molino",
 "desc": "Un viejo molino de viento sin mecanismo desde hace años. En «Знак», a las tres de la tarde, sus aspas giran solas, contra el viento. Más al norte, la carretera lleva a la Ciudad del Norte, que «hace cien años no soporta a Sinea».",
+"nombre_ru": "Мельница на Северной дороге",
+"desc_ru": "Старая ветряная мельница, в которой давно нет механизма. В «Знаке» в три часа дня её крылья поворачиваются сами, против ветра. Дальше на север дорога ведёт в Северный город, который «сто лет терпеть не может Синею».",
 "apar": [
 {
 "n": "znak",
@@ -4504,6 +4570,8 @@ export const LUGARES = [
 "y": 2150,
 "modelo": "laberinto",
 "desc": "Una mañana de primavera aparece al norte de Sinea un laberinto de cristal azul con una luna de utilería encima: el reality más romántico del universo. Cinco parejas, la Plaza de las Constelaciones en el centro y, a medianoche, las ondas de amor. La Ciudad del Norte compra todas las entradas para reírse de los «paranoicos de Sinea».",
+"nombre_ru": "Стеклянный лабиринт «Amor en el cosmos»",
+"desc_ru": "Однажды весенним утром к северу от Синеи появляется лабиринт из синего стекла с бутафорской луной над ним — самое романтичное реалити-шоу во вселенной. Пять пар, площадь Созвездий в центре и, в полночь, волны любви. Северный город скупает все билеты, чтобы посмеяться над «параноиками из Синеи».",
 "apar": [
 {
 "n": "amor-en-el-cosmos",
@@ -4692,6 +4760,8 @@ export const LUGARES = [
 "y": 1050,
 "modelo": "torre-agua",
 "desc": "En «Знак», a la medianoche y media, alguien ve en su techo una luz azul «como de un cartel de neón, pero sin cartel». Es uno de los doce alfileres blancos.",
+"nombre_ru": "Водонапорная башня Восточного квартала",
+"desc_ru": "В «Знаке» в половине первого ночи на её крыше видят голубой свет — «как от неоновой вывески, только без вывески». Это одна из двенадцати белых булавок.",
 "apar": [
 {
 "n": "znak",
@@ -4742,6 +4812,8 @@ export const LUGARES = [
 "y": 1450,
 "modelo": "aerogenerador",
 "desc": "El cabo del noreste, con su molino de viento moderno. Otro de los doce puntos del círculo de «Знак».",
+"nombre_ru": "Мыс Ласточек",
+"desc_ru": "Северо-восточный мыс с ветряком. Ещё одна из двенадцати точек круга из «Знака».",
 "apar": [
 {
 "n": "znak",
@@ -4771,6 +4843,8 @@ export const LUGARES = [
 "y": -1060,
 "modelo": "iglesia",
 "desc": "La colina que mira al puerto viejo. En la torre de la iglesia de Santa Clara, en «Знак», la veleta gira y se queda quieta aunque sople el viento del mar.",
+"nombre_ru": "Холм Рыбаков и церковь Святой Клары",
+"desc_ru": "Холм над старым портом. В «Знаке» флюгер на церкви Святой Клары поворачивается и замирает, хотя дует ветер с моря.",
 "apar": [
 {
 "n": "znak",
@@ -4808,6 +4882,8 @@ export const LUGARES = [
 "y": -1000,
 "modelo": "casa-amarilla",
 "desc": "Una casita amarilla en la colina sobre el puerto, con paredes, puertas y hasta el techo cubiertos de dibujos de la misma chica. Aquí la periodista Chiara Bellini consigue que el dibujante Fabrizio cuente, después de veintinueve años, lo que hizo en el verano de 1997. Abajo, en la calle de los Pescadores, estaba la panadería de su familia.",
+"nombre_ru": "Жёлтый дом Фабрицио Орсини",
+"desc_ru": "Маленький жёлтый дом на холме над портом; стены, двери и даже потолок покрыты рисунками одной и той же девушки. Здесь журналистка Кьяра Беллини уговаривает художника Фабрицио спустя двадцать девять лет рассказать, что он сделал летом 1997 года. Внизу, на улице Рыбаков, была пекарня его семьи.",
 "apar": [
 {
 "n": "ti-amo-in-silenzio",
@@ -4850,6 +4926,8 @@ export const LUGARES = [
 "y": -760,
 "modelo": "ninguno",
 "desc": "La carrera de motos que cada verano termina en el faro. En 1997, Lucía, la campeona invencible, entra a la plaza en una moto roja, y el tímido hijo del panadero aprende a manejar, a hacer el café perfecto y a reparar motores solo para que ella lo mire.",
+"nombre_ru": "Гонка к маяку",
+"desc_ru": "Мотогонка, которая каждое лето финиширует у маяка. В 1997 году Лючия, непобедимая чемпионка, въезжает на площадь на красном мотоцикле, а застенчивый сын пекаря учится ездить, варить идеальный кофе и чинить моторы, только чтобы она его заметила.",
 "apar": [
 {
 "n": "ti-amo-in-silenzio",
@@ -4928,6 +5006,8 @@ export const LUGARES = [
 "y": -880,
 "modelo": "fantasma",
 "desc": "Bajo el casco antiguo corren túneles, galerías técnicas y sótanos: los recorren Fabrizio y Lucía en «Тихая любовь», los usa Vasili para llegar a la plaza por la sala de bombas de la fuente durante el Carnaval, y debajo de la ciudad zumba la máquina REINA de «Тайна в библиотеке».",
+"nombre_ru": "Тоннели под городом",
+"desc_ru": "Под старым городом проходят тоннели, технические галереи и подвалы: по ним бегут Фабрицио и Лючия в «Тихой любви», через насосную у фонтана Василий пробирается на площадь во время Карнавала, а глубоко под городом гудит машина КОРОЛЕВА из «Тайны в библиотеке».",
 "apar": [
 {
 "n": "ti-amo-in-silenzio",
@@ -5032,6 +5112,8 @@ export const LUGARES = [
 "y": -1110,
 "modelo": "puerto",
 "desc": "El puerto de la bahía, con barcos de paseo, grúas y gaviotas. Aquí baja del barco Charles, sin dinero ni papeles, en «The Immigrant»; aquí se pierden los conocimientos de embarque que investiga Marcos; aquí hay un restaurante donde Vasili se encuentra con dos mujeres a la vez, y el bar Ancora, de madera oscura, donde lo espera Oxana.",
+"nombre_ru": "Старый порт",
+"desc_ru": "Порт в бухте, с прогулочными катерами, кранами и чайками. Здесь сходит с корабля Чарльз — без денег и без документов — в «The Immigrant»; здесь пропадают накладные, которые расследует Марк; здесь ресторан, где Василий встречается сразу с двумя женщинами, и бар «Якорь» из тёмного дерева, где его ждёт Оксана.",
 "apar": [
 {
 "n": "pokhititel-serdec-portret-osnovatelya",
@@ -5270,6 +5352,8 @@ export const LUGARES = [
 "y": -1060,
 "modelo": "atracciones",
 "desc": "El paseo junto al mar, con acacias, quioscos y atracciones cerradas en invierno. Irina, la psicóloga de «Машина снов», lo recorre cada mañana odiando por igual el olor del mar, el asfalto mojado y el pan recién hecho; en sus sueños, cuatro jinetes suben por aquí desde el mar. Beppe toca valses en el malecón durante horas cuando Sinea vuelve a reír.",
+"nombre_ru": "Приморский бульвар и набережная",
+"desc_ru": "Прогулочная улица вдоль моря с акациями, киосками и закрытыми на зиму аттракционами. Ирина, психолог из «Машины снов», проходит здесь каждое утро, одинаково ненавидя запах моря, мокрого асфальта и свежего хлеба; в её снах по бульвару поднимаются от моря четыре всадника. Беппе часами играет вальсы на набережной, когда Синея снова смеётся.",
 "apar": [
 {
 "n": "volny-lyubvi-gorod-bez-ulybok",
@@ -5351,6 +5435,8 @@ export const LUGARES = [
 "y": -960,
 "modelo": "cafe",
 "desc": "Una cadena de cafeterías que en Sinea se ama o se odia: todo es rosa fuerte, las paredes, los sillones, las tazas y hasta el azúcar. Pero hace los mejores croissants de almendra de la ciudad. Aquí, a las cuatro, Irina tiene su cita con Mateo, profesor de literatura, que le habla de Bunin y de García Márquez y le presta «Предчувствие».",
+"nombre_ru": "Кофейня «Фуксия»",
+"desc_ru": "Сеть кофеен, которую в Синее либо любят, либо ненавидят: всё ярко-розовое — стены, диваны, чашки и даже сахар. Зато здесь лучшие в городе круассаны с миндальным кремом. Здесь в четыре часа у Ирины свидание с Матео, учителем литературы, который говорит о Бунине и Маркесе и даёт ей почитать «Предчувствие».",
 "apar": [
 {
 "n": "mashina-snov",
@@ -5379,6 +5465,8 @@ export const LUGARES = [
 "y": -880,
 "modelo": "casa",
 "desc": "El supermercado de la esquina de Irina. Un día aparece en la caja una pirámide de cajas color caqui: el «Kit para el fin del mundo», a la venta justo desde que miles de personas sueñan con los cuatro jinetes.",
+"nombre_ru": "Супермаркет «Чайка»",
+"desc_ru": "Супермаркет на углу улицы Ирины. Однажды у кассы появляется пирамида коробок цвета хаки — «Набор на конец света», который поступил в продажу как раз тогда, когда тысячам людей начали сниться четыре всадника.",
 "apar": [
 {
 "n": "mashina-snov",
@@ -5416,6 +5504,8 @@ export const LUGARES = [
 "y": -1130,
 "modelo": "casa",
 "desc": "Un tercer piso sin ascensor con balcón al puerto viejo. Alessio y Laura llegan de Argentina a empezar de cero; su vecina Marisa, con su gato Pochoclo, toma mate con ellos a través de la reja de hierro. En «Алмазный дождь» el balcón de Marisa es un capítulo entero.",
+"nombre_ru": "Балкон Алессио, Лауры и Марисы",
+"desc_ru": "Третий этаж без лифта с балконом на старый порт. Алессио и Лаура приезжают из Аргентины, чтобы начать всё сначала; соседка Мариса с котом Пончиком пьёт с ними мате через кованую решётку. В «Алмазном дожде» балкону Марисы посвящена целая глава.",
 "apar": [
 {
 "n": "pokhititel-serdec-portret-osnovatelya",
@@ -5467,6 +5557,8 @@ export const LUGARES = [
 "y": -1020,
 "modelo": "casa",
 "desc": "Callejuelas de pescadores junto al puerto. En el cibercafé «Red» de la calle de las Conchas, Laura busca lo que no quiere buscar desde su ordenador; en la casa número 9 del callejón de las Redes, de puerta verde y buzones sin nombre, entra la chica de los retratos.",
+"nombre_ru": "Переулок Сетей и улица Ракушек",
+"desc_ru": "Рыбацкие улочки у порта. В интернет-кафе «Сеть» на улице Ракушек Лаура ищет то, что не хочет искать со своего компьютера; в дом девять по переулку Сетей, с зелёной дверью и безымянными почтовыми ящиками, входит девушка с портретов.",
 "apar": [
 {
 "n": "pokhititel-serdec-portret-osnovatelya",
@@ -5563,6 +5655,8 @@ export const LUGARES = [
 "y": -960,
 "modelo": "casa",
 "desc": "Una calle en pendiente donde Alessio persigue a una chica que camina demasiado rápido; en la esquina, la panadería de Toni vende unos zorritos de masa que nadie se anima a comer.",
+"nombre_ru": "Улица Мимоз и пекарня Тони",
+"desc_ru": "Улица на склоне, где Алессио догоняет девушку, которая идёт слишком быстро; на углу пекарня Тони продаёт булочки-лисички, которые никто не решается съесть.",
 "apar": [
 {
 "n": "pokhititel-serdec-portret-osnovatelya",
@@ -5639,6 +5733,8 @@ export const LUGARES = [
 "y": -900,
 "modelo": "hotel",
 "desc": "El hotel elegante del paseo marítimo. Aquí se celebra la cena benéfica de Morales, sábado a las ocho, en «Похититель сердец»: la ocasión de mirarlo a los ojos y averiguar cuándo no estará en su villa.",
+"nombre_ru": "Отель «Лазурь»",
+"desc_ru": "Элегантный отель на набережной. Здесь в субботу в восемь проходит благотворительный вечер Моралеса в «Похитителе сердец» — шанс посмотреть ему в глаза и узнать, когда его не будет на вилле.",
 "apar": [
 {
 "n": "pokhititel-serdec-portret-osnovatelya",
@@ -5686,6 +5782,8 @@ export const LUGARES = [
 "y": -700,
 "modelo": "hotel",
 "desc": "El gran hotel histórico junto a la plaza Dante. En la habitación 512 vive un comerciante de «piedras con historia»: un capítulo de «Алмазный дождь» lleva ese número, y otro, el nombre del hotel.",
+"nombre_ru": "Гранд-отель «Синея»",
+"desc_ru": "Большой исторический отель у площади Данте. В номере 512 живёт торговец «камнями с историей»: одна глава «Алмазного дождя» носит этот номер, другая — название отеля.",
 "apar": [
 {
 "n": "almaznyj-dozhd",
@@ -5730,6 +5828,8 @@ export const LUGARES = [
 "y": -980,
 "modelo": "hotel",
 "desc": "Un hotel de ventanas grandes y cortinas cansadas en el camino del faro. El señor E. Valli, sombrero gris, abrigo gris, alquila aquí la barca «Gaviota» la noche en que desaparece Sasha, en «Chi ha visto Sasha?».",
+"nombre_ru": "Отель «Мирамаре»",
+"desc_ru": "Отель с большими окнами и усталыми шторами на дороге к маяку. Синьор Э. Валли — серая шляпа, серое пальто — берёт здесь лодку «Чайка» в ночь, когда исчезает Саша, в «Chi ha visto Sasha?».",
 "apar": [
 {
 "n": "chi-ha-visto-sasha",
@@ -5777,6 +5877,8 @@ export const LUGARES = [
 "y": -760,
 "modelo": "observatorio",
 "desc": "Junto al puerto. En «Знак» su campana suena sola: otro alfiler blanco en el mapa de Marcos.",
+"nombre_ru": "Обсерватория старой мореходной школы",
+"desc_ru": "У порта. В «Знаке» её колокол звонит сам — ещё одна белая булавка на карте Марка.",
 "apar": [
 {
 "n": "znak",
@@ -5806,6 +5908,8 @@ export const LUGARES = [
 "y": -720,
 "modelo": "galpon",
 "desc": "El barrio obrero del puerto, con casas viejas llenas de antenas y las cocheras donde duermen los tranvías. En «Знак» alguien aquí «suena como una orquesta entera» de Acuarios; en «Стратег» es parte del tablero.",
+"nombre_ru": "Квартал Канатчиков и трамвайное депо",
+"desc_ru": "Рабочий квартал у порта со старыми домами в антеннах и депо, где ночуют трамваи. В «Знаке» кто-то здесь «звучит как целый оркестр» Водолеев; в «Стратеге» он — часть доски.",
 "apar": [
 {
 "n": "znak",
@@ -5865,6 +5969,8 @@ export const LUGARES = [
 "y": -1130,
 "modelo": "delfinario",
 "desc": "El famoso parque marino de Sinea. Una noche, sin forzar nada, sin testigos, con las cámaras llenas de interferencias, desaparece de aquí un grupo entero de delfines. Esa misma noche Sasha, una oficinista cansada, sueña con un delfín plateado que intenta decirle algo: es Ael.",
+"nombre_ru": "Парк дельфинов",
+"desc_ru": "Знаменитый морской парк Синеи. Однажды ночью — без взлома, без свидетелей, только с помехами на камерах — отсюда исчезает целый косяк дельфинов. В ту же ночь уставшей офисной работнице Саше снится серебристый дельфин, который пытается ей что-то сказать: это Аэль.",
 "apar": [
 {
 "n": "golos",
@@ -5903,6 +6009,8 @@ export const LUGARES = [
 "y": -1080,
 "modelo": "muelle",
 "desc": "Un parque viejo junto al agua, al lado del muelle abandonado: el lugar más oscuro de la costa. «La alegría recuerda el nombre del mar», escribe Sasha casi sin pensar, y a las dos de la mañana despierta a Oxana para ir hasta aquí. Los delfines las están esperando.",
+"nombre_ru": "Парк Радости и заброшенный пирс",
+"desc_ru": "Старый парк у воды рядом с заброшенным пирсом — самое тёмное место на побережье. «Радость помнит имя моря», — пишет Саша почти машинально и в два часа ночи будит Оксану, чтобы ехать сюда. Дельфины уже ждут.",
 "apar": [
 {
 "n": "golos",
@@ -5957,6 +6065,8 @@ export const LUGARES = [
 "y": -820,
 "modelo": "central",
 "desc": "La central abandonada junto al faro. En «Голос» esconde, en niveles ocultos y pasadizos, el laboratorio secreto que amplifica la brecha bajo el mar y la Sala del Corazón Negro. En «Карнавал Синеи» vuelve a brillar de noche: es la fábrica «Maskera», donde se fabrican las 300.000 máscaras con el rostro de Tatiana. «Алмазный дождь» termina con una noche junto a ella.",
+"nombre_ru": "Старая электростанция",
+"desc_ru": "Заброшенная станция рядом с маяком. В «Голосе» в её скрытых уровнях и подземных ходах прячется тайная лаборатория, усиливающая разлом под морем, и Зал Чёрного Сердца. В «Карнавале Синеи» она снова светится по ночам: это фабрика «Маскера», где шьют 300 000 масок с лицом Татьяны. «Алмазный дождь» заканчивается ночью у её стен.",
 "apar": [
 {
 "n": "karnaval-sinei",
@@ -6135,6 +6245,8 @@ export const LUGARES = [
 "y": -1040,
 "modelo": "faro",
 "desc": "El faro famoso de Sinea, al final del muelle. Se levantó en el lugar de la vieja estación después de «Голос», como agradecimiento al delfín Ael, que se sacrificó para cerrar la brecha; en su linterna se guarda la cáscara apagada del Corazón del Mar. Hoy Sasha dirige aquí el Centro de Anomalías con Dima y la delfín Nira. Su haz no se detiene nunca… salvo siete segundos en «Знак» y siete minutos en «Chi ha visto Sasha?», cuando Sasha desaparece.",
+"nombre_ru": "Маяк Аэля",
+"desc_ru": "Знаменитый маяк Синеи в конце пирса. Его построили на месте старой станции после «Голоса» в благодарность дельфину Аэлю, который пожертвовал собой, чтобы закрыть разлом; в фонаре хранится погасшая оболочка Сердца Моря. Сегодня Саша руководит здесь Центром аномалий вместе с Димой и дельфинкой Нирой. Луч маяка никогда не останавливается… кроме семи секунд в «Знаке» и семи минут в «Chi ha visto Sasha?», когда исчезает Саша.",
 "apar": [
 {
 "n": "karnaval-sinei",
@@ -6672,6 +6784,8 @@ export const LUGARES = [
 "y": -1450,
 "modelo": "brecha",
 "desc": "Bajo las aguas de Sinea, justo donde la ciudad saca su energía, se abre una brecha antigua. Los delfines intentaron avisar a los gobernantes; nadie escuchó. Una noche la ciudad queda aislada del mundo y de las viejas leyendas salen sombras y leshis. Hace falta un «ancla» junto al punto de la brecha… y el sacrificio de Ael.",
+"nombre_ru": "Разлом под морем",
+"desc_ru": "Под водами Синеи, как раз там, откуда город берёт энергию, открывается древний разлом. Дельфины пытались предупредить власти — никто не слушал. Однажды ночью город оказывается отрезан от мира, и из старых легенд выходят тени и лешие. Нужен «Якорь» рядом с точкой разлома… и жертва Аэля.",
 "apar": [
 {
 "n": "golos",
@@ -6731,6 +6845,8 @@ export const LUGARES = [
 "y": -1050,
 "modelo": "villa",
 "desc": "Uno de los barrios más caros de Sinea: casas enormes, jardines y cámaras del Ministerio incluso aquí. Franco detesta los pedidos de esta zona; en «Грустный город» lleva uno del restaurante «La Rosa Blanca» a la avenida de los Emperadores 56. Más allá, sobre el mar, está la villa de Morales con su invernadero de cristal.",
+"nombre_ru": "Район Грустных Богачей и проспект Императоров",
+"desc_ru": "Один из самых дорогих районов Синеи: огромные дома, сады и камеры Министерства даже здесь. Франко терпеть не может заказы отсюда; в «Грустном городе» он везёт заказ из ресторана «Белая роза» на проспект Императоров, 56. Дальше, над морем, — вилла Моралеса со стеклянной оранжереей.",
 "apar": [
 {
 "n": "pokhititel-serdec-portret-osnovatelya",
@@ -6813,6 +6929,8 @@ export const LUGARES = [
 "y": 150,
 "modelo": "tunel",
 "desc": "La colina que cierra la ciudad por el oeste. Por el Túnel Viejo, debajo de ella, debía entrar la primera columna de camiones del golpe en «Стратег». Más allá, el camino a Verdegrad y a la estación «Nubecita».",
+"nombre_ru": "Западный холм и Старый тоннель",
+"desc_ru": "Холм, замыкающий город с запада. Через Старый тоннель под ним должна была войти первая колонна грузовиков в «Стратеге». За холмом — дорога на Вердеград и станцию «Облачко».",
 "apar": [
 {
 "n": "strateg",
@@ -6866,6 +6984,8 @@ export const LUGARES = [
 "y": -540,
 "modelo": "atalaya",
 "desc": "Lo que queda de la muralla medieval que rodeaba el casco antiguo. Uno de los doce puntos de «Знак».",
+"nombre_ru": "Сторожевая башня старой городской стены",
+"desc_ru": "Всё, что осталось от средневековой стены вокруг старого города. Одна из двенадцати точек «Знака».",
 "apar": [
 {
 "n": "volny-lyubvi-krepost",
@@ -6907,6 +7027,8 @@ export const LUGARES = [
 "y": -700,
 "modelo": "biblioteca",
 "desc": "Al fondo de un callejón sin salida del casco antiguo. Una vez cada cien años los lugares de Sinea recuerdan lo que deben ser —la estación quiere trenes, el mar quiere voces, el parque quiere bosque— y esa noche se abre la biblioteca donde están todas las novelas de Robert Fader. La bibliotecaria Rosa y el zorro rojo explican las reglas: un libro solo te suelta por el marcapáginas.",
+"nombre_ru": "Библиотека Любви",
+"desc_ru": "В глухом переулке старого города. Раз в сто лет места Синеи вспоминают, чем они должны быть: вокзал хочет поездов, море — голосов, парк — леса, — и в такую ночь открывается библиотека, где стоят все романы Роберта Фадера. Библиотекарь Роза и рыжий лис объясняют правила: книга отпускает только через закладку.",
 "apar": [
 {
 "n": "tajna-v-biblioteke",
@@ -7010,6 +7132,8 @@ export const LUGARES = [
 "y": -420,
 "modelo": "mercado",
 "desc": "Uno de los bordes del tablero de Miguel: la ciudad se extiende «desde el Mercado del Este hasta la Colina del Oeste».",
+"nombre_ru": "Восточный рынок",
+"desc_ru": "Один из краёв доски Мигеля: город тянется «от Восточного рынка до Западного холма».",
 "apar": [
 {
 "n": "strateg",
@@ -7038,6 +7162,8 @@ export const LUGARES = [
 "y": 300,
 "modelo": "ninguno",
 "desc": "La carretera que baja por la costa del este. En «Стратег» es la columna «g», la de la tercera columna de camiones.",
+"nombre_ru": "Портовое шоссе",
+"desc_ru": "Дорога вдоль восточного побережья. В «Стратеге» это вертикаль «g» — путь третьей колонны грузовиков.",
 "apar": [
 {
 "n": "strateg",
@@ -7081,11 +7207,79 @@ export const LUGARES = [
 }
 ];
 export const NOVELAS = {
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
+"l": "ru",
+"y": 2026,
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
+"tr": {}
+},
+"la-citta-triste": {
+"t": "La città triste",
+"es": "La ciudad triste (it.)",
+"l": "it",
+"y": 2025,
+"ru": "Грустный город (ит.)",
+"p": "img/portadas/la-citta-triste.webp",
+"tr": {
+"ru": "grustnyj-gorod"
+}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"tr": {}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
+"tr": {}
+},
+"la-voix": {
+"t": "La voix",
+"es": "La voz (fr.)",
+"l": "fr",
+"y": null,
+"ru": "Голос (фр.)",
+"p": "img/portadas/la-voix.webp",
+"tr": {
+"ru": "golos"
+}
+},
 "27-ocak": {
 "t": "27 Ocak",
 "es": "27 de enero",
 "l": "tr",
 "y": 2026,
+"ru": "27 января",
 "p": "img/portadas/27-ocak.webp",
 "tr": {}
 },
@@ -7094,132 +7288,20 @@ export const NOVELAS = {
 "es": "Ondas de amor: El mundo dibujado",
 "l": "ru",
 "y": 2026,
+"ru": "Волны любви: Нарисованный мир",
 "p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
 "tr": {}
-},
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"la-voix": {
-"t": "La voix",
-"es": "La voz (fr.)",
-"l": "fr",
-"y": null,
-"p": "img/portadas/la-voix.webp",
-"tr": {
-"ru": "golos"
-}
-},
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
-"l": "it",
-"y": 2026,
-"p": "img/portadas/onde-d-amore.webp",
-"tr": {
-"es": "ondas-de-amor"
-}
 },
 "il-treno-fantasma": {
 "t": "Il treno fantasma",
 "es": "El tren fantasma (it.)",
 "l": "it",
 "y": null,
+"ru": "Призрачный поезд (ит.)",
 "p": "img/portadas/il-treno-fantasma.webp",
 "tr": {
 "es": "el-tren-fantasma",
 "ru": "prizrachnyj-poezd"
-}
-},
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
-"l": "ru",
-"y": 2026,
-"p": "img/portadas/volny-lyubvi.webp",
-"tr": {}
-},
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
-"l": "ru",
-"y": 2026,
-"p": "img/portadas/mashina-snov.webp",
-"tr": {}
-},
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
-"l": "es",
-"y": null,
-"p": "img/portadas/el-impostor.webp",
-"tr": {}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
-"l": "es",
-"y": 2026,
-"p": "img/portadas/amor-en-el-cosmos.webp",
-"tr": {}
-},
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
-"l": "ru",
-"y": 2026,
-"p": "img/portadas/opasnoe-svidanie.webp",
-"tr": {
-"en": "the-date"
-}
-},
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
-"l": "it",
-"y": 2026,
-"p": "img/portadas/ti-amo-in-silenzio.webp",
-"tr": {
-"ru": "tikhaya-lyubov"
-}
-},
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
-"l": "it",
-"y": 2026,
-"p": "img/portadas/chi-ha-visto-sasha.webp",
-"tr": {}
-},
-"la-citta-triste": {
-"t": "La città triste",
-"es": "La ciudad triste (it.)",
-"l": "it",
-"y": 2025,
-"p": "img/portadas/la-citta-triste.webp",
-"tr": {
-"ru": "grustnyj-gorod"
 }
 },
 "prizrachnyj-poezd": {
@@ -7227,34 +7309,49 @@ export const NOVELAS = {
 "es": "El tren fantasma (ru.)",
 "l": "ru",
 "y": 2026,
+"ru": "Призрачный поезд",
 "p": "img/portadas/prizrachnyj-poezd.webp",
 "tr": {
 "es": "el-tren-fantasma",
 "it": "il-treno-fantasma"
 }
 },
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
 "y": 2026,
-"p": "img/portadas/volny-lyubvi-krepost.webp",
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
 "tr": {}
 },
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
 "l": "ru",
 "y": 2026,
-"p": "img/portadas/almaznyj-dozhd.webp",
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
+},
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
+"l": "ru",
+"y": 2026,
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
 "tr": {}
 },
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
 "l": "ru",
 "y": 2026,
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
 "tr": {}
 },
 "pokhititel-serdec-portret-osnovatelya": {
@@ -7262,6 +7359,7 @@ export const NOVELAS = {
 "es": "Ladrón de corazones: El retrato del fundador",
 "l": "ru",
 "y": 2026,
+"ru": "Похититель сердец: Портрет основателя",
 "p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
 "tr": {}
 },
@@ -7270,24 +7368,41 @@ export const NOVELAS = {
 "es": "La ciudad triste",
 "l": "ru",
 "y": 2026,
+"ru": "Грустный город",
 "p": "img/portadas/grustnyj-gorod.webp",
 "tr": {
 "it": "la-citta-triste"
 }
 },
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
+"golos": {
+"t": "Голос",
+"es": "La voz",
+"l": "ru",
+"y": 2026,
+"ru": "Голос",
+"p": "img/portadas/golos.webp",
+"tr": {
+"fr": "la-voix"
+}
+},
+"el-tren-fantasma": {
+"t": "El tren fantasma",
+"es": "El tren fantasma",
+"l": "es",
+"y": null,
+"ru": "Призрачный поезд (исп.)",
+"p": "img/portadas/el-tren-fantasma.webp",
+"tr": {
+"it": "il-treno-fantasma",
+"ru": "prizrachnyj-poezd"
+}
 },
 "tajna-v-biblioteke": {
 "t": "Тайна в библиотеке",
 "es": "El misterio de la biblioteca",
 "l": "ru",
 "y": 2026,
+"ru": "Тайна в библиотеке",
 "p": "img/portadas/tajna-v-biblioteke.webp",
 "tr": {}
 },
@@ -7296,18 +7411,124 @@ export const NOVELAS = {
 "es": "El signo",
 "l": "ru",
 "y": 2024,
+"ru": "Знак",
 "p": "img/portadas/znak.webp",
 "tr": {}
 },
-"el-tren-fantasma": {
-"t": "El tren fantasma",
-"es": "El tren fantasma",
+"lluvia-de-meteoritos": {
+"t": "Lluvia de meteoritos",
+"es": "Lluvia de meteoritos",
 "l": "es",
 "y": null,
-"p": "img/portadas/el-tren-fantasma.webp",
+"ru": "Метеоритный дождь (исп.)",
+"p": "img/portadas/lluvia-de-meteoritos.webp",
 "tr": {
-"it": "il-treno-fantasma",
-"ru": "prizrachnyj-poezd"
+"ru": "meteoritnyj-dozhd"
+}
+},
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
+"tr": {}
+},
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
+"l": "es",
+"y": 2026,
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
+"tr": {}
+},
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
+"tr": {}
+},
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
+"tr": {}
+},
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"tr": {}
+},
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
+"l": "es",
+"y": null,
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
+"tr": {}
+},
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
+"tr": {
+"es": "ondas-de-amor"
+}
+},
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
+"l": "ru",
+"y": 2026,
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
+"tr": {
+"it": "ti-amo-in-silenzio"
+}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
+"l": "ru",
+"y": 2026,
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
+"tr": {}
+},
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
+"tr": {
+"ru": "tikhaya-lyubov"
 }
 },
 "ondas-de-amor": {
@@ -7315,72 +7536,12 @@ export const NOVELAS = {
 "es": "Ondas de amor",
 "l": "es",
 "y": 2026,
+"ru": "Волны любви (исп.)",
 "p": "img/portadas/ondas-de-amor.webp",
 "tr": {
 "it": "onde-d-amore"
 }
-},
-"lluvia-de-meteoritos": {
-"t": "Lluvia de meteoritos",
-"es": "Lluvia de meteoritos",
-"l": "es",
-"y": null,
-"p": "img/portadas/lluvia-de-meteoritos.webp",
-"tr": {
-"ru": "meteoritnyj-dozhd"
-}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
-"y": 2026,
-"p": "img/portadas/bezumie-v-poezde.webp",
-"tr": {}
-},
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
-"l": "ru",
-"y": 2026,
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
-"tr": {}
-},
-"golos": {
-"t": "Голос",
-"es": "La voz",
-"l": "ru",
-"y": 2026,
-"p": "img/portadas/golos.webp",
-"tr": {
-"fr": "la-voix"
-}
-},
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
-"l": "ru",
-"y": 2026,
-"p": "img/portadas/karnaval-sinei.webp",
-"tr": {}
-},
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
-"l": "ru",
-"y": 2026,
-"p": "img/portadas/tikhaya-lyubov.webp",
-"tr": {
-"it": "ti-amo-in-silenzio"
-}
-},
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
-"l": "ru",
-"y": 2026,
-"p": "img/portadas/strateg.webp",
-"tr": {}
 }
 };
 export const IDIOMAS = {"ru": "ruso", "es": "español", "it": "italiano", "fr": "francés", "en": "inglés", "tr": "turco"};
+export const IDIOMAS_RU = {"ru": "русский", "es": "испанский", "it": "итальянский", "fr": "французский", "en": "английский", "tr": "турецкий"};

@@ -1,4 +1,8 @@
-# Sinea — el mapa 3D
+# Sinea — el mapa 3D · Синея — 3D-карта
+
+**Bilingüe: español y ruso.** El botón ES/RU de arriba cambia todo al instante (interfaz, lugares, descripciones, calles, barrios, novelas y personajes). El idioma se recuerda, y se puede forzar con `?lang=ru` o `?lang=es` en la dirección: `index.html?lang=ru#/lugar/faro-ael`.
+
+**Двуязычная карта: испанский и русский.** Кнопка ES/RU переключает всё сразу; выбор запоминается, а ссылкой можно задать язык: `?lang=ru`.
 
 Mapa interactivo en 3D de **Sinea**, la ciudad de las novelas de Robert Fader: se mueve y se acerca como Google Maps, con calles, barrios, colinas, el río Sina, la bahía y los edificios famosos modelados en 3D. Al tocar un lugar se abre su ficha: qué es, una ilustración de la novela y **en qué novelas y capítulos aparece**, con enlace directo a cada capítulo en [LitFader](https://luisfader.github.io/litmir/).
 
@@ -35,6 +39,7 @@ js/escena.js          relieve, textura del mapa, mar, edificios generados, árbo
 js/hitos.js           los edificios famosos en 3D (faro, torre de TV, ayuntamiento, planetario…)
 js/datos.js           GENERADO: lugares + novelas + capítulos
 data/lugares.json     FUENTE: los lugares, escritos a mano
+data/lugares.ru.json  FUENTE: nombre y descripción de cada lugar en ruso (misma clave id)
 tools/build.py        cruza data/lugares.json con los textos de litmir y genera js/datos.js e img/
 img/lugares/          una ilustración por lugar (de los capítulos de litmir, reducida a webp)
 img/portadas/         portadas de las novelas
@@ -49,20 +54,21 @@ img/portadas/         portadas de las novelas
    - `desc`: la descripción;
    - `buscar`: expresión regular que se busca en los capítulos para saber en qué novelas aparece (por ejemplo `площад\\w* Данте|plaza Dante|piazza Dante`);
    - opcionales: `buscar_en` (patrón que solo vale en ciertas novelas), `extra` (capítulos añadidos a mano: `{"el-impostor": [1]}`), `ilustracion` (elegir la imagen a mano: `["golos", "19-01.jpg"]`).
-2. Regenerar los datos con una copia local de litmir al lado:
+2. Agregar su nombre y descripción en ruso en `data/lugares.ru.json` (el script avisa «FALTA traducción rusa» si falta).
+3. Regenerar los datos con una copia local de litmir al lado:
 
 ```
 python3 tools/build.py ../litmir
 ```
 
-Las calles, barrios y colinas se editan en `js/mundo.js`; un edificio 3D nuevo se agrega como una función más en `MODELOS` de `js/hitos.js`.
+Las calles, barrios y colinas se editan en `js/mundo.js` (cada calle y barrio lleva también su nombre ruso); un edificio 3D nuevo se agrega como una función más en `MODELOS` de `js/hitos.js`.
 
 ## Próximas capas
 
 - Personajes en el mapa: dónde vive cada uno (el piso de Marcos y Alicia, la oficina de Vasili, el balcón de Marisa…).
 - Más interiores y escenas: el metro que no existía y sus estaciones, los vagones del tren fantasma, la Sala del Corazón Negro.
 - Lugares fuera de Sinea conectados: Verdegrad, Armonia, la Ciudad del Norte.
-- Versiones del mapa en ruso, italiano e inglés.
+- Más idiomas: italiano e inglés (los textos de la interfaz están en `js/app.js`, función `tr`).
 - Momentos: ver la ciudad tal como está en cada novela (la ciudad triste, la ciudad sin sonrisas, el Carnaval).
 
 three.js © mrdoob y colaboradores, licencia MIT (`js/vendor/three-LICENSE`).
