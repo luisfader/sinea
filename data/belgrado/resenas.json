@@ -1,5 +1,28 @@
 {
  "_info": "Reseñas de Belgrado escritas por los personajes de «Дикий час». s = estrellas.",
+ "bg-casa-natasha": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Huele a ella: tibio, especiado, a hierbas. Llegué como invitado y me dijeron «desde ahora vivís acá». No discutí.",
+   "ru": "Пахнет ею: тепло, пряно, травами. Пришёл в гости — а мне сказали «с этого момента ты живёшь здесь». Я не спорил."
+  },
+  {
+   "a": "Sofía",
+   "ar": "София",
+   "s": 2,
+   "es": "Entré sin golpear, como siempre. La segunda vez me echaron: «Andate. Ya mismo».",
+   "ru": "Вошла без стука, как всегда. Во второй раз меня выгнали: «Уходи. Сейчас же»."
+  },
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Respuesta de la dueña: la dirección no se la doy a nadie. Y si alguien la busca, recuerden que muerdo.",
+   "ru": "Ответ хозяйки: адрес никому не скажу. А тем, кто будет искать, напоминаю: я кусаюсь."
+  }
+ ],
  "bg-knez": [
   {
    "a": "Luis",

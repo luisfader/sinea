@@ -535,7 +535,12 @@ function urlCon(hash) {
   const qs = q.toString(); return location.pathname.replace(/(verdegrad|utopia|mendoza|venezia|madrid|petersburgo|belgrado)\.html$/, 'index.html') + (qs ? '?' + qs : '') + hash;
 }
 function irCiudad(c) { const q = new URLSearchParams(); if (c !== 'sinea') q.set('ciudad', c); if (lang === 'ru') q.set('lang', 'ru'); location.href = location.pathname.replace(/(verdegrad|utopia|mendoza|venezia|madrid|petersburgo|belgrado)\.html$/, 'index.html') + (q.toString() ? '?' + q : ''); }
-document.querySelectorAll('#ciudad button').forEach(b => { b.classList.toggle('on', b.dataset.c === CIUDAD); b.onclick = () => { if (b.dataset.c !== CIUDAD) irCiudad(b.dataset.c); }; });
+document.querySelectorAll('#ciudad button[data-c]').forEach(b => { b.classList.toggle('on', b.dataset.c === CIUDAD); b.onclick = () => { if (b.dataset.c !== CIUDAD) irCiudad(b.dataset.c); else hojaMapas(false); }; });
+// móvil: el selector de mapas es una hoja que se abre con el botón «Mapas»
+const hojaMapas = (v) => { document.body.classList.toggle('hoja-mapas', v); $('#mapas-btn').setAttribute('aria-expanded', v ? 'true' : 'false'); };
+$('#mapas-btn').onclick = () => hojaMapas(!document.body.classList.contains('hoja-mapas'));
+$('#ciudad .cerrar-hoja').onclick = () => hojaMapas(false);
+$('#ciudad').addEventListener('click', e => { if (e.target.id === 'ciudad') hojaMapas(false); });
 const ESTATICO = [
   ['#buscar', 'placeholder', `Buscar en ${NOMBRE.es}: un lugar, una novela, un personaje…`, `Поиск по ${NOMBRE.dat}: место, роман, персонаж…`],
   ['#novela', 'aria-label', 'Filtrar por novela', 'Фильтр по роману'],
@@ -555,7 +560,8 @@ function ponerIdioma(l, refrescar = true) {
   document.title = tr(`Mapas de los mundos literarios de Robert Fader · ${NOMBRE.es}`, `Карты миров Роберта Фадера · ${NOMBRE.ru}`);
   $('#carga .titulo-mapas').textContent = tr('Mapas de los mundos literarios de Robert Fader', 'Карты миров Роберта Фадера');
   $('#carga .logo').textContent = tr(NOMBRE.es, NOMBRE.ru);
-  document.querySelectorAll('#ciudad button').forEach(b => b.textContent = tr(b.dataset.es, b.dataset.ru));
+  document.querySelectorAll('#ciudad button[data-c]').forEach(b => { b.querySelector('.n').textContent = tr(b.dataset.es, b.dataset.ru); const sb = b.querySelector('.s'); sb.textContent = tr(sb.dataset.es, sb.dataset.ru); });
+  { const t = $('#ciudad .titulo-hoja b'); t.textContent = tr(t.dataset.es, t.dataset.ru); const on = $('#ciudad button.on'); $('#mapas-btn .nombre').textContent = on ? on.querySelector('.n').textContent : ''; }
   for (const [q, at, es, ru] of ESTATICO) { const el = $(q); if (!el) continue; const v = tr(es, ru); if (at === 'text') el.textContent = v; else if (at === 'html') el.innerHTML = v; else el.setAttribute(at, v); }
   document.querySelectorAll('#idioma button').forEach(b => b.classList.toggle('on', b.dataset.l === lang));
   for (const E of ETQ) { const t = E.texto(); const nm = E.el.querySelector('.nm'); (nm || E.el).textContent = t; if (E.titulo) E.el.title = E.titulo(); E.w = 0; E.hh = 0; }

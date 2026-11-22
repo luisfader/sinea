@@ -262,6 +262,33 @@
     "dikij-chas",
     "25-zedanj.jpg"
    ]
+  },
+  {
+   "id": "bg-casa-natasha",
+   "nombre": "El departamento de Natasha",
+   "cat": "casa",
+   "ll": [
+    44.8166,
+    20.4527
+   ],
+   "modelo": "hogar",
+   "desc": "La casa de Natasha, en el casco viejo. Huele a ella: tibio, especiado, un poco a hierbas. Después de la cena, ella sale a ver a Luis con un vestido serbio largo del siglo XIX: «Este vestido es de mi ciudad. Recuerda muchas cosas». Acá Luis le muestra los cuadernos, con un retrato de Natasha dibujado antes de conocerla; a la mañana entra Sofía sin golpear, con una bolsa de piedras oscuras. «Desde este momento vas a vivir acá», decide Natasha. Acá Sofía intenta seducir a Luis, acá Natasha le pregunta «¿Estás listo para hacerme tu mujer?», y acá entran John y Sofía con las armas. La novela no da la dirección —«Natasha muerde», advierte el autor—, así que el marcador va, de forma aproximada, en el casco viejo, en Kosančićev venac, entre Kalemegdan y Knez Mihailova.",
+   "buscar": "квартир\\w* Наташ\\w*|стан\\w* Наташ\\w*|Наташин\\w* стан\\w*",
+   "extra": {
+    "dikij-chas": [
+     3,
+     5,
+     6,
+     14,
+     21,
+     22,
+     27
+    ]
+   },
+   "ilustracion": [
+    "dikij-chas",
+    "03-platje.jpg"
+   ]
   }
  ]
 }
