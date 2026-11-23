@@ -222,7 +222,7 @@ def procesar(cfg, textos, titulos, seg, usadas):
             img = {'src': r, 'n': sl, 'c': seg_of(sl, fn.split('-')[0].split('.')[0] + '.md')} if r else None
         else:
             img = elegir_ilustracion(L['id'], apar, hits, primera, textos)
-        o = {k: L[k] for k in ('id', 'nombre', 'otros', 'cat', 'x', 'y', 'modelo', 'desc') if k in L}
+        o = {k: L[k] for k in ('id', 'nombre', 'otros', 'cat', 'x', 'y', 'modelo', 'borde', 'desc') if k in L}
         if L['id'] in ru:
             o['nombre_ru'] = ru[L['id']]['nombre']; o['desc_ru'] = ru[L['id']]['desc']
         else:

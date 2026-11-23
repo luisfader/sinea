@@ -902,15 +902,15 @@
   },
   {
    "id": "md-cacheuta",
-   "nombre": "Ruinas de la usina de Cacheuta",
+   "nombre": "Ruinas de Fader: la usina de Cacheuta",
    "cat": "misterio",
    "ll": [
     -33.017,
     -69.115
    ],
-   "modelo": "ninguno",
-   "desc": "El esqueleto de hormigón de la vieja central hidroeléctrica junto al río Mendoza, que en «El misterio de los Fader» construyó el ingeniero Carlos Fader. Ahí los mapuches buscan un escondite, aparecen dos gendarmes muertos y Antu encuentra el hidromiel que Karl había enterrado bajo los cimientos. Cacheuta es famosa por sus aguas termales; en enero de 1934 un aluvión destruyó casi todo.",
-   "buscar": "Cacheuta|Качеут\\w*",
+   "modelo": "usina",
+   "desc": "Las «ruinas de Fader», a unos 30 km de la ciudad, junto al río Mendoza en la Ruta 82, camino a Potrerillos. Son el esqueleto de hormigón y hierro retorcido de la usina hidroeléctrica de Cacheuta. En «El misterio de los Fader» la construyó el ingeniero Carlos Fader, que no es otro que Karl: el empleado del puerto le escribió «Carlos» en los papeles. Según la novela, la usina se inauguró en 1926, fue la primera del país y aprovechaba un desnivel de 45 metros del río. El aluvión del 10 de enero de 1934, una ola de siete metros, la arrasó junto con el hotel termal, casas, puentes y vías, y se llevó más de veinte vidas. Debajo de los cimientos Karl había enterrado lo que le quedaba del elixir, el hidromiel que le había fabricado por toneladas a Roca. Ahí lleva el pergamino de los trazos rojos con el símbolo de Treng-Treng. Una noche de luna, Domingo Castro, «Kurüf», llega en su F-150 con la caravana del cacique Nahuel Kallfü y cavan en la sala de máquinas, buscando los túneles de mantenimiento. Aparecen cuadros europeos, platería, candelabros torcidos por el agua y un cofre con monedas de oro y relicarios mapuches, pero falta el noventa por ciento del tesoro. Antu desentierra una placa de bronce, «Karl Fader, 1933. Für die Zukunft», y Kurüf, acorralado, llama a Heinrich. Antes de irse, Antu se guarda una botella verde con la etiqueta «Honigwein — Karl Fader». Llega una camioneta de Gendarmería; Antu enreda a los dos agentes con las boleadoras y, por orden de Nahuel, Domingo los empuja al precipicio. El «macabro hallazgo en las ruinas de Fader» sale en todos los noticieros, el apellido Fader vuelve a estar en boca de todos y terminan arrestando a Adolfo como jefe de la banda. Y el hidromiel de Antu sigue su camino: en la catedral del Challao, el chamán Lautaro rocía con él una piedra sagrada y abre el portal por el que vuelven los guerreros del pasado, la guerra que estalla en el acto central de la Vendimia.",
+   "buscar": "Cacheuta|Качеут\\w*|ruinas de Fader|руин\\w* Фадер\\w*",
    "extra": {
     "el-misterio-de-los-fader": [
      14,
@@ -918,20 +918,24 @@
      21,
      22,
      27,
+     29,
      36,
-     41
+     41,
+     55
     ],
     "tajna-semi-fader": [
-     14,
+     13,
+     19,
      20,
      21,
-     22,
-     27,
-     36,
-     41
+     26,
+     28,
+     35,
+     39
     ]
    },
-   "sin_ilustracion": true
+   "sin_ilustracion": true,
+   "borde": true
   },
   {
    "id": "md-potrerillos",

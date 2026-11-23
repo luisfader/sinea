@@ -592,5 +592,35 @@
    "es": "Tranquilo. Quizás demasiado. Mi enemigo más peligroso es una cabra que se come las camisas tendidas al sol.",
    "ru": "Спокойно. Может, даже слишком. Мой самый опасный враг — коза, которая ест рубашки, развешанные на солнце."
   }
+ ],
+ "md-cacheuta": [
+  {
+   "a": "Karl Fader",
+   "ar": "Карл Фадер",
+   "s": 4,
+   "es": "La construí yo, en 1926: cuarenta y cinco metros de desnivel y toda Mendoza con luz. El río se la llevó en una noche. Debajo dejé algo «para el futuro». El futuro vino con palas.",
+   "ru": "Я построил её сам, в 1926-м: сорок пять метров перепада, и вся Мендоса со светом. Река забрала её за одну ночь. Под ней я оставил кое-что «для будущего». Будущее пришло с лопатами."
+  },
+  {
+   "a": "Nahuel Kallfü",
+   "ar": "Науэль Кальфю",
+   "s": 1,
+   "es": "Nos prometieron el tesoro de nuestros abuelos. Encontramos migajas y una placa en alemán. Falta el noventa por ciento.",
+   "ru": "Нам обещали сокровище наших предков. Нашли крохи и табличку на немецком. Девяноста процентов не хватает."
+  },
+  {
+   "a": "Antu",
+   "ar": "Анту",
+   "s": 5,
+   "es": "Entre los escombros brilló una botella verde. No dije nada y la guardé en la mochila. Después abrió un portal.",
+   "ru": "Среди обломков блеснула зелёная бутылка. Я промолчал и спрятал её в рюкзак. Потом она открыла портал."
+  },
+  {
+   "a": "Domingo Castro (Kurüf)",
+   "ar": "Доминго Кастро (Куруф)",
+   "s": 1,
+   "es": "El mapa marcaba este lugar y nada más. No quería hacerlo. Todavía escucho los gritos en el cañadón.",
+   "ru": "Карта указывала только это место. Я не хотел этого делать. До сих пор слышу крики в ущелье."
+  }
  ]
 }

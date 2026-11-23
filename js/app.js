@@ -12,7 +12,7 @@ for (const L of LUGARES) {
   if (L.x > x0 + m && L.x < x1 - m && L.y > y0 + m && L.y < y1 - m) continue;
   L.lejos = Math.round(Math.hypot(L.x, L.y) / 1000);
   const k = Math.min(...[[L.x, x0 + m], [L.x, x1 - m], [L.y, y0 + m], [L.y, y1 - m]].map(([v, b]) => (v * b > 0 ? b / v : Infinity)));
-  L.x = Math.round(L.x * k); L.y = Math.round(L.y * k); L.modelo = 'ninguno';
+  L.x = Math.round(L.x * k); L.y = Math.round(L.y * k); if (!L.borde) L.modelo = 'ninguno';
 }
 
 /* ---------------- idioma ---------------- */

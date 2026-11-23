@@ -587,6 +587,27 @@ const MODELOS = {
     g.add(caja(26, 7, 2.5, adobe, 8, 0, 18)); g.add(caja(14, 4, 2.5, ladrillo, -20, 0, 18));
     return { g, r: 45 };
   },
+  usina() { // Ruinas de Fader: la usina hidroeléctrica de Cacheuta de Carlos (Karl) Fader, destruida por el aluvión de 1934
+    const g = new THREE.Group(), horm = M(0xa9a39a), horm2 = M(0x8d877e), oxido = M(0x8a4b2a), maleza = M(0x6f8a4a);
+    g.add(caja(90, .8, 60, 0xb7a98f));
+    // sala de máquinas: muros rotos, sin techo
+    g.add(caja(46, 16, 2.5, horm, -6, 0, -14)); g.add(caja(30, 11, 2.5, horm, -14, 0, 14)); g.add(caja(8, 6, 2.5, horm2, 12, 0, 14));
+    g.add(caja(2.5, 14, 28, horm, -29, 0, 0)); g.add(caja(2.5, 7, 12, horm2, 17, 0, -7));
+    for (let i = 0; i < 4; i++) g.add(caja(3, [18, 12, 15, 8][i], 3, horm2, -24 + i * 13, 0, 0)); // pilares
+    g.add(caja(26, 1.6, 3, horm, -17, 17, 0)); // viga que quedó colgando
+    const viga = caja(18, 1.4, 2.6, horm2, 4, 9, 0); viga.rotation.z = -.5; g.add(viga);
+    // ventanales vacíos en el muro del fondo
+    for (let i = 0; i < 4; i++) g.add(caja(5, 6, 3, 0x3b3833, -22 + i * 10, 6, -14));
+    // turbinas semienterradas y caños de hierro retorcido
+    for (let i = 0; i < 3; i++) { const t = cil(4, 4, 3.5, oxido, -18 + i * 11, 0, 4); t.rotation.x = Math.PI / 2; t.position.y = 2.6; g.add(t); }
+    const tubo = cil(1.8, 1.8, 70, oxido, -40, 0, -40, 12); tubo.rotation.set(0, 0, 0); tubo.rotation.x = 1.0; tubo.rotation.z = .25; tubo.position.set(-46, 14, -40); g.add(tubo);
+    const roto = cil(1.8, 1.8, 16, oxido, 0, 0, 0, 12); roto.rotation.z = 1.2; roto.position.set(26, 3, -20); g.add(roto);
+    // maleza y piedras del aluvión
+    for (let i = 0; i < 18; i++) { const a = i * 2.39; g.add(esfera(2 + (i % 3), i % 2 ? maleza : 0x9d927f, Math.cos(a) * (30 + i), 1, Math.sin(a) * (22 + i * .6))); }
+    // la placa de bronce: «Karl Fader, 1933. Für die Zukunft»
+    g.add(caja(3, 2, .4, brillo(0xb08d3c), -6, 5, -12.4));
+    return { g, r: 60 };
+  },
   bodega() { // bodega con nave de techo a dos aguas, toneles y viñas en hileras
     const g = new THREE.Group();
     g.add(caja(46, 9, 20, 0xe9dcc2)); const t = new THREE.Mesh(prismaGeo(), M(0x9a4e34)); t.scale.set(48, 6, 22); t.position.y = 9; g.add(t);
@@ -960,7 +981,7 @@ export function construirHitos(lugares, u) {
     grupo.add(m.g);
     if (m.anim) anims.push(m.anim);
     if (m.r) reservas.push([L.x, L.y, m.r]);
-    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
+    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, usina: 20, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
   }
   // reserva extra: la plaza Dante entera y el puerto
   reservas.push(...RESERVAS);
