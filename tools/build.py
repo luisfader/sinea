@@ -45,6 +45,7 @@ NOVELAS = {
     'rezonans-lyubvi': 'Resonancia del amor',
     'dikij-chas': 'La hora salvaje', 'divlji-chas': 'La hora salvaje (serbio)',
     'maschera-di-venezia': 'La máscara de Venecia (it.)', 'venecianskaya-maska': 'La máscara de Venecia (ru.)',
+    'podzemni-tajemstvi': 'El secreto subterráneo (checo)', 'ostrovy-nad-prahou': 'Las islas sobre Praga (checo)', 'predtucha': 'El presentimiento (checo)',
 }
 # Título en ruso para las novelas que no están escritas en ruso
 NOVELAS_RU = {
@@ -58,6 +59,7 @@ NOVELAS_RU = {
     'divlji-chas-malbec': 'Дикий час: Любовь со вкусом мальбека (серб.)', 'ladro-di-cuori-3': 'Похититель сердец 3 (ит.)', 'anomalia': 'Аномалия (исп.)',
     'maschera-di-venezia': 'Венецианская маска (ит.)',
     'divlji-chas': 'Дикий час (серб.)',
+    'podzemni-tajemstvi': 'Подземная тайна (чеш.)', 'ostrovy-nad-prahou': 'Острова над Прагой (чеш.)', 'predtucha': 'Предчувствие (чеш.)',
 }
 LANG_RU = {'ru': 'русский', 'es': 'испанский', 'it': 'итальянский', 'fr': 'французский', 'en': 'английский', 'tr': 'турецкий', 'cs': 'чешский', 'sr': 'сербский'}
 LANG = {'ru': 'ruso', 'es': 'español', 'it': 'italiano', 'fr': 'francés', 'en': 'inglés', 'tr': 'turco', 'cs': 'checo', 'sr': 'serbio'}
@@ -81,6 +83,10 @@ CIUDADES = {
     'madrid': {'dir': os.path.join('data', 'madrid'), 'geo': 'madrid', 'novelas': ['dikij-chas-karnaval-razdora']},
     'petersburgo': {'dir': os.path.join('data', 'petersburgo'), 'geo': 'petersburgo', 'novelas': ['rezonans-lyubvi']},
     'belgrado': {'dir': os.path.join('data', 'belgrado'), 'geo': 'belgrado', 'novelas': ['dikij-chas', 'divlji-chas']},
+    # Praga: la serie checa de Luis y Jana y los capítulos praguenses de «La reina de la Vendimia»
+    'praga': {'dir': os.path.join('data', 'praga'), 'geo': 'praga', 'novelas': [
+        'podzemni-tajemstvi', 'ostrovy-nad-prahou', 'predtucha', 'la-reina-de-la-vendimia', 'kralovna-vinobrani'],
+     'rangos': {'la-reina-de-la-vendimia': [(1, 2), (49, 50)], 'kralovna-vinobrani': [(1, 2), (30, 30)]}},
 }
 
 # Mendoza: (0,0) en el centro de la Plaza Independencia; cuadrícula de 122,5 m girada 12,5° (igual que js/ciudades/mendoza.js)
@@ -88,7 +94,7 @@ import math
 _LAT0, _LON0 = -32.8897243, -68.8444983
 _KX, _KY = 111320 * math.cos(math.radians(_LAT0)), 110920
 _TH = math.radians(12.5)
-GEO = {'mendoza': (-32.8897243, -68.8444983, 110920), 'venezia': (45.43416, 12.33845, 111135), 'madrid': (40.41689, -3.70358, 111040), 'petersburgo': (59.9390, 30.3158, 111410), 'belgrado': (44.8170, 20.4573, 111140)}
+GEO = {'mendoza': (-32.8897243, -68.8444983, 110920), 'venezia': (45.43416, 12.33845, 111135), 'madrid': (40.41689, -3.70358, 111040), 'petersburgo': (59.9390, 30.3158, 111410), 'belgrado': (44.8170, 20.4573, 111140), 'praga': (50.0875, 14.4213, 111230)}
 def geo_xy(L, geo='mendoza'):
     if 'll' in L:
         lat0, lon0, ky = GEO[geo]
@@ -219,7 +225,8 @@ def procesar(cfg, textos, titulos, seg, usadas):
         elif L.get('ilustracion'):
             sl, fn = L['ilustracion']
             r = reducir(os.path.join(LIT, 'novels', sl, 'img', fn), os.path.join('img', 'lugares', L['id'] + '.webp'), 640)
-            img = {'src': r, 'n': sl, 'c': seg_of(sl, fn.split('-')[0].split('.')[0] + '.md')} if r else None
+            cap = re.match(r'(?:cap)?(\d+)', fn).group(1).zfill(2)  # «05-x.jpg» o «cap05-l3-04.jpg»
+            img = {'src': r, 'n': sl, 'c': seg_of(sl, cap + '.md')} if r else None
         else:
             img = elegir_ilustracion(L['id'], apar, hits, primera, textos)
         o = {k: L[k] for k in ('id', 'nombre', 'otros', 'cat', 'x', 'y', 'modelo', 'borde', 'desc') if k in L}

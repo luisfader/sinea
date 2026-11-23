@@ -1,0 +1,528 @@
+{
+ "_info": "Lugares de Praga en las novelas checas de Luis y Jana y en los capítulos praguenses de «La reina de la Vendimia». «ll» = [lat, lon] reales.",
+ "lugares": [
+  {
+   "id": "pr-karluv-most",
+   "nombre": "Puente de Carlos (Karlův most)",
+   "cat": "monumento",
+   "ll": [
+    50.08655,
+    14.411
+   ],
+   "modelo": "karluv-most",
+   "desc": "El puente de piedra del siglo XIV sobre el Moldava, con sus treinta estatuas y una torre gótica en cada orilla. Es el escenario de los finales. En «Podzemní tajemství» la vieja Škoda voladora aterriza acá en plena lluvia de cerveza encantada: Luis toca su canción entera, Mark lee las notas, Lucie canta y Jana baila con la falda bordó de su madre. Las estatuas vuelven a sus pedestales, Ludmila llora lágrimas de verdad y Luboš llega convertido en dragón para llevársela. En «Ostrovy nad Prahou», la noche en que las sombras bajan por las cadenas, cientos de praguenses con velas cantan sobre el puente y las frenan; al amanecer ven deshacerse las islas en polvo de oro. En «Předtucha» el puente sigue en pie después de la catástrofe, con las estatuas rotas.",
+   "buscar": "Karl\\w* most|Karlov\\w* most|Puente de Carlos",
+   "ilustracion": [
+    "ostrovy-nad-prahou",
+    "14.jpg"
+   ]
+  },
+  {
+   "id": "pr-nepomuk",
+   "nombre": "Estatua de San Juan Nepomuceno",
+   "cat": "monumento",
+   "ll": [
+    50.08672,
+    14.4103
+   ],
+   "modelo": "ninguno",
+   "desc": "La estatua más famosa del puente, con la placa de bronce brillante de tanto tocarla: el que la toca vuelve a Praga, y el que además pide un deseo, «eso ya lo saben solo los praguenses», lo ve cumplido. En «Ostrovy nad Prahou» Luis y Jana la tocan la noche antes de las islas y se prometen contarse el deseo «dentro de un año, en este mismo lugar»; un viejo violinista le dice a Luis que «pronto va a hacer falta música». Un año después, en el epílogo, Luis se arrodilla acá mismo y le pide a Jana que se case con él con el anillo de setecientos años que el caballero de hierro había comprado para Kateřina. En el hombro del santo, un cuervo común y corriente los mira y se va volando.",
+   "buscar": "Nepomuck|Nepomuceno",
+   "extra": {
+    "ostrovy-nad-prahou": [
+     2,
+     27,
+     31
+    ]
+   },
+   "ilustracion": [
+    "ostrovy-nad-prahou",
+    "07.jpg"
+   ]
+  },
+  {
+   "id": "pr-hrad",
+   "nombre": "Castillo de Praga y catedral de San Vito",
+   "cat": "monumento",
+   "ll": [
+    50.0909,
+    14.4005
+   ],
+   "modelo": "hrad-praga",
+   "desc": "El castillo sobre la colina de Hradčany, con las agujas de San Vito. En «Podzemní tajemství» es el «viejo castillo sobre Praga»: en una torre abandonada duerme desde hace cien años la princesa Ludmila. La música de Luis la despierta; desde la torre toca con las gemelas Lindsey y Vanessa una música oscura que despierta a las almas malas de los sótanos y cementerios, y desde el trono se proclama dueña de Praga. Ahí lleva a Jana hipnotizada. En «Ostrovy nad Prahou» la primera de las cinco cadenas baja directo al Castillo, y la isla que la sostiene cuelga frente a la ventana de Jana. En «La reina de la Vendimia» Luis mira el Castillo iluminado bajo la nieve la noche en que recibe la llamada de Mendoza.",
+   "buscar": "Pražsk\\w* hrad|Hradčan|hradní věž|Castillo|San Vito|svat\\w* Vít|nad Hradem|k Hradu|na Hradě",
+   "extra": {
+    "podzemni-tajemstvi": [
+     5,
+     6,
+     11
+    ],
+    "ostrovy-nad-prahou": [
+     2,
+     3,
+     4,
+     9
+    ]
+   },
+   "ilustracion": [
+    "ostrovy-nad-prahou",
+    "cap09-l2-09.jpg"
+   ],
+   "solo": [
+    "podzemni-tajemstvi",
+    "ostrovy-nad-prahou",
+    "la-reina-de-la-vendimia",
+    "kralovna-vinobrani"
+   ]
+  },
+  {
+   "id": "pr-staromestske",
+   "nombre": "Plaza de la Ciudad Vieja, el reloj astronómico y Týn",
+   "cat": "plaza",
+   "ll": [
+    50.0875,
+    14.4213
+   ],
+   "modelo": "tyn",
+   "desc": "La plaza mayor de Praga, con las dos agujas negras de Týn y la torre del Ayuntamiento con el reloj astronómico. En «Podzemní tajemství», la mañana en que suenan los violines de Ludmila, el reloj gira rápido y mal y la gente se queda quieta con los ojos vacíos. Esa noche hay un concierto en la plaza: Lindsey y Vanessa tocan, Ludmila canta «mi corazón es una casa vacía» y Jana, hipnotizada, empuja a Luis y se va hacia el escenario. En «Ostrovy nad Prahou» acá está clavada la tercera cadena; en la segunda Praga suenan las campanas de Týn, y la noche final una multitud ve bajar por la cadena una fila de sombras negras. En «Předtucha», después de la catástrofe, la plaza es un mercado de comerciantes armados que venden comida, remedios y piezas de computadoras.",
+   "buscar": "Staroměstsk|[Oo]rloj|Týn",
+   "ilustracion": [
+    "ostrovy-nad-prahou",
+    "cap09-l2-07.jpg"
+   ]
+  },
+  {
+   "id": "pr-petrin",
+   "nombre": "Colina de Petřín y su mirador",
+   "cat": "parque",
+   "ll": [
+    50.0835,
+    14.3951
+   ],
+   "modelo": "petrin",
+   "desc": "La colina verde sobre Malá Strana, con la torre mirador de hierro. En «Ostrovy nad Prahou» es otoño y los árboles de Petřín están amarillos y rojos cuando Luis escribe su melodía en la ventana de Jana. Después la segunda cadena baja a Petřín, y sobre la isla que flota encima, en un castillo negro, en una sala sin ventanas, zumba la máquina de Černoboh: una lámpara que junta gota a gota la luz que las cadenas le roban a la ciudad. Cuando Jana y Luis salvan el corazón de Praga, la lámpara estalla y la luz turquesa vuela como una bandada de pájaros de vuelta a los faroles, a las ventanas y a los tranvías.",
+   "buscar": "Petřín",
+   "ilustracion": [
+    "ostrovy-nad-prahou",
+    "cap18-l3-02.jpg"
+   ]
+  },
+  {
+   "id": "pr-vysehrad",
+   "nombre": "Vyšehrad",
+   "cat": "monumento",
+   "ll": [
+    50.0644,
+    14.418
+   ],
+   "modelo": "vysehrad",
+   "desc": "La vieja fortaleza sobre la roca del Moldava, con la basílica de San Pedro y San Pablo y la leyenda de la princesa Libuše, que fundó Praga. En «Ostrovy nad Prahou» la cuarta cadena baja al sur, a Vyšehrad. En la Faderpedia de Luis aparece la leyenda: Černoboh, que no tiene corazón, quería el corazón de piedra de Praga, y Libuše lo venció con una canción y le cerró las puertas del subsuelo. Sus profecías, en la escritura de Libuše, aparecen bordadas con hilo de oro en la falda de Jana.",
+   "buscar": "Vyšehrad|Libuš",
+   "sin_ilustracion": true
+  },
+  {
+   "id": "pr-zizkov",
+   "nombre": "Torre de televisión de Žižkov",
+   "cat": "monumento",
+   "ll": [
+    50.0809,
+    14.4511
+   ],
+   "modelo": "zizkov",
+   "desc": "La torre gris de 216 metros que se levanta sobre Žižkov «como un cohete que nunca despegó». En «Ostrovy nad Prahou» la quinta cadena baja lejos, al este, hasta la torre. En «Předtucha» es «los ojos y los oídos» de la Potencia Central en Praga: Luis, Lucie, Jana y Vojta llegan por el túnel del metro, Lucie cruza colgada de un cable mojado a seis pisos de altura y suben 986 escalones hasta la sala de transmisión, donde Kazimír tiene a Vojta con un cuchillo en el cuello y a la pequeña Anička cantando con el suéter de su hermano. Jana se baja de la torre las listas de los salvajes.",
+   "buscar": "Žižkov\\w* věž|televizní věž|věž\\w* na Žižkově|Žižkov",
+   "extra": {
+    "predtucha": [
+     7,
+     14,
+     19,
+     20,
+     25,
+     30
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "pr-kampa",
+   "nombre": "Kampa: la puerta de hierro bajo el puente",
+   "cat": "misterio",
+   "ll": [
+    50.0859,
+    14.4088
+   ],
+   "modelo": "ninguno",
+   "desc": "La isla de Kampa, al pie del Puente de Carlos, separada de Malá Strana por la Čertovka. En «Ostrovy nad Prahou», en un viejo muro de piedra bajo el puente, detrás de la hiedra, hay una puertita de hierro: por ahí bajan Luis y Jana por primera vez al subsuelo, con la linterna que Lucie le dejó a su «guardiana del subsuelo». En Kampa hay también un pozo con su vodník, y el día del final las islas bajan tan cerca que parecen tocar las torres del puente. En el epílogo un joven en un banco de Kampa le regala a Luis el anillo que nunca alcanzó a darle a Kateřina.",
+   "buscar": "Kamp[aěu]\\b",
+   "ilustracion": [
+    "ostrovy-nad-prahou",
+    "cap06-01-puerta-kampa.jpg"
+   ]
+  },
+  {
+   "id": "pr-byt-jany",
+   "nombre": "El departamento de Jana (Malá Strana)",
+   "cat": "casa",
+   "ll": [
+    50.08715,
+    14.40035
+   ],
+   "modelo": "casa",
+   "desc": "Ubicación aproximada: la novela solo dice que Jana vive en Malá Strana, en un departamentito bajo el techo de una casa vieja, con el Castillo y las estrellas en la ventana. En «Podzemní tajemství» Jana saca del armario que huele a lavanda la falda bordó que su madre bordó durante un año, con tulipanes, acianos, espigas, pajaritos, un gran corazón rojo y una línea de notas: la mitad de una melodía que Luis compuso a los dieciocho años. Ahí se dan el primer beso, y ahí, la noche de los violines, un tulipán de la falda se enciende en la oscuridad. En «Ostrovy nad Prahou» desde la misma ventana ven la primera isla. En «La reina de la Vendimia», con Praga nevada, Luis atiende a las tres de la mañana la llamada de Ferrer y decide mentirle a Jana por primera vez; entre las hojas de su cuaderno ella encuentra la foto del gigante en Belgrado.",
+   "buscar": "byt\\w* Jany|u Jany|Janin\\w* byt|departamento bajo el techo|podkrovní\\w* byt",
+   "extra": {
+    "podzemni-tajemstvi": [
+     3,
+     4,
+     8
+    ],
+    "ostrovy-nad-prahou": [
+     2,
+     4,
+     5
+    ],
+    "la-reina-de-la-vendimia": [
+     1,
+     2
+    ],
+    "kralovna-vinobrani": [
+     1,
+     2
+    ]
+   },
+   "ilustracion": [
+    "ostrovy-nad-prahou",
+    "08.jpg"
+   ]
+  },
+  {
+   "id": "pr-pekarna",
+   "nombre": "La panadería de la esquina",
+   "cat": "restaurante",
+   "ll": [
+    50.0868,
+    14.4018
+   ],
+   "modelo": "ninguno",
+   "desc": "Una panadería de Malá Strana que no tiene nombre en la novela; el marcador va cerca de la casa de Jana. En «Ostrovy nad Prahou» Jana baja a las ocho a comprar rohlíky, sale a la calle con olor a pan, da tres pasos, levanta la cabeza… y ve las islas: cinco islas de piedra y tierra con árboles, cascadas y castillos negros, flotando sobre los techos, y de cada una una cadena gruesa clavada en la ciudad. Los tranvías se paran en medio de la calle y la ciudad entera suena a metal.",
+   "buscar": "pekárn",
+   "ilustracion": [
+    "ostrovy-nad-prahou",
+    "03.jpg"
+   ],
+   "solo": [
+    "ostrovy-nad-prahou"
+   ]
+  },
+  {
+   "id": "pr-malostranske",
+   "nombre": "Plaza de Malá Strana y San Nicolás",
+   "cat": "plaza",
+   "ll": [
+    50.08805,
+    14.4035
+   ],
+   "modelo": "mikulas",
+   "desc": "La plaza de Malá Strana bajo la cúpula verde de San Nicolás. En «Ostrovy nad Prahou» Lindsey y Vanessa, libres de Ludmila, tocan acá el violín para los turistas, que les dejan más plata que a todos los demás músicos. La mañana de las islas la plaza es un caos: un hombre en piyama con un paraguas para taparse de las islas, una chica que llora en la escalinata de la iglesia, un policía que no sabe qué hacer. La última noche un nene empieza a cantar, después su mamá y después la plaza entera, y la canción sube hasta la isla de Petřín.",
+   "buscar": "Malostransk\\w* náměst|svatého Mikuláše",
+   "ilustracion": [
+    "ostrovy-nad-prahou",
+    "12.jpg"
+   ]
+  },
+  {
+   "id": "pr-tri-housliky",
+   "nombre": "Casa «U Tří housliček» (Nerudova)",
+   "cat": "casa",
+   "ll": [
+    50.08845,
+    14.40215
+   ],
+   "modelo": "ninguno",
+   "desc": "La casa de los Tres Violines, en la calle Nerudova, que bajo de Hradčany a Malá Strana: en el siglo XVII vivía ahí una familia de luthiers. En «Ostrovy nad Prahou» las gemelas viven en la buhardilla. Ahí Vanessa afina el violín mientras Vran, el sirviente de Černoboh, mira las cadenas por la ventana; ahí después queda encerrada y trata de abrir la cerradura con una horquilla para salir corriendo hacia la estación.",
+   "buscar": "Tří housliček|podkroví",
+   "extra": {
+    "ostrovy-nad-prahou": [
+     12,
+     18
+    ]
+   },
+   "sin_ilustracion": true,
+   "solo": [
+    "ostrovy-nad-prahou"
+   ]
+  },
+  {
+   "id": "pr-restaurace",
+   "nombre": "El restaurante junto al Moldava",
+   "cat": "restaurante",
+   "ll": [
+    50.0838,
+    14.4128
+   ],
+   "modelo": "ninguno",
+   "desc": "Un restaurante chico, sin nombre en la novela, «justo sobre el agua», con una terraza con velas desde la que se ven el Puente de Carlos y, arriba, el Castillo. En «Ostrovy nad Prahou» Luis le compra a Jana una sola rosa roja en el muelle («porque vos también sos una sola») y la invita a cenar: pato con chucrut y knedlíky para ella, svíčková para él, «la comida más pesada de toda Praga». Ahí Jana le pregunta si se va a quedar en Praga para siempre, y Luis, que toda la vida siguió viaje, le contesta que ya no quiere irse.",
+   "buscar": "[Rr]estaurace",
+   "extra": {
+    "ostrovy-nad-prahou": [
+     2
+    ]
+   },
+   "ilustracion": [
+    "ostrovy-nad-prahou",
+    "02.jpg"
+   ],
+   "solo": [
+    "ostrovy-nad-prahou"
+   ]
+  },
+  {
+   "id": "pr-kavarna",
+   "nombre": "El café de la Ciudad Vieja",
+   "cat": "restaurante",
+   "ll": [
+    50.0861,
+    14.4172
+   ],
+   "modelo": "ninguno",
+   "desc": "Un café chico de la Ciudad Vieja; la novela no le da nombre. En «Podzemní tajemství» Luis, recién llegado de Argentina, sin conocer a nadie y sin hablar checo, entra corriendo por la lluvia de septiembre. Junto a la ventana hay una chica de pelo oscuro y falda roja corta. «Perdón, ¿cómo se dice café en checo?» «Káva.» Ahí conoce a Jana, a Lucie y a Mark, y nace la idea del concierto en el subsuelo. Una semana después vuelven a la misma mesa, y Luis aprende la frase más importante del checo: «Miluju tě».",
+   "buscar": "kavárn",
+   "extra": {
+    "podzemni-tajemstvi": [
+     2,
+     16
+    ]
+   },
+   "sin_ilustracion": true,
+   "solo": [
+    "podzemni-tajemstvi"
+   ]
+  },
+  {
+   "id": "pr-sklep",
+   "nombre": "La puerta al subsuelo y la sala del concierto",
+   "cat": "misterio",
+   "ll": [
+    50.08575,
+    14.4198
+   ],
+   "modelo": "ninguno",
+   "desc": "En la Ciudad Vieja, una puertita en una casa vieja que Lucie abre con una llave grande: detrás, escalones de piedra, oscuridad y frío. Debajo de Praga «hay otra Praga», de sótanos, pasillos y salas. En «Podzemní tajemství» Lucie no deja bajar a Jana con falda corta («el subsuelo tiene reglas viejas»), y por eso aparece la falda bordó. En la gran sala con velas Luis toca su canción sobre Praga, la tierra tiembla y por una puerta en la pared salen diez guerreros medievales con armadura, que miran hacia el castillo y se van. En el mismo sótano se reúnen los cuatro para salvar la ciudad.",
+   "buscar": "podzemí|sklep",
+   "extra": {
+    "podzemni-tajemstvi": [
+     3,
+     5,
+     9,
+     10,
+     12
+    ]
+   },
+   "sin_ilustracion": true,
+   "solo": [
+    "podzemni-tajemstvi"
+   ]
+  },
+  {
+   "id": "pr-knihovna",
+   "nombre": "La vieja biblioteca (Klementinum)",
+   "cat": "edificio",
+   "ll": [
+    50.0866,
+    14.416
+   ],
+   "modelo": "ninguno",
+   "desc": "La novela dice solo «la vieja biblioteca»; el marcador va al Klementinum, la gran biblioteca barroca de la Ciudad Vieja. En «Podzemní tajemství» Lucie se sube a una escalera para buscar un libro viejo sobre el subsuelo de Praga, se cae directo en los brazos de Mark («¿Siempre me vas a atajar?» «Siempre»), y lee la leyenda de la princesa Ludmila y del príncipe Luboš: solo la música del amor y un bordado antiguo pueden parar sus violines. Mark mira sus fotos de la falda y descubre que las líneas son notas. Entre libros, sol y polvo, se dan el primer beso.",
+   "buscar": "knihovn",
+   "extra": {
+    "podzemni-tajemstvi": [
+     7
+    ]
+   },
+   "sin_ilustracion": true,
+   "solo": [
+    "podzemni-tajemstvi"
+   ]
+  },
+  {
+   "id": "pr-srdce",
+   "nombre": "El corazón de Praga",
+   "cat": "misterio",
+   "ll": [
+    50.0847,
+    14.417
+   ],
+   "modelo": "ninguno",
+   "desc": "El corazón de piedra de la ciudad, en lo más hondo del subsuelo; el marcador es simbólico. En «Podzemní tajemství» es una sala enorme con un corazón de piedra gris que no late: ahí Ludmila quiere que Jana se saque la falda, hasta que el techo se abre y cae volando la Škoda de Mark. En «Ostrovy nad Prahou» está debajo de las cinco Pragas, en el fondo del mundo: un valle bajo tierra con árboles de piedra caliza, arroyos silenciosos y miles de huellas de manos en las paredes. Ahí llegan las cinco cadenas, y Jana sostiene el corazón con la linterna que calienta «como la mano de mamá». Al final el corazón vuelve a latir, y Lucie y Mark encuentran a Luis y Jana dormidos debajo, tapados con la falda bordó.",
+   "buscar": "srdce Prahy|kamenné srdce|srdc\\w* podzemí",
+   "extra": {
+    "podzemni-tajemstvi": [
+     11,
+     13
+    ],
+    "ostrovy-nad-prahou": [
+     24,
+     28,
+     30
+    ]
+   },
+   "ilustracion": [
+    "ostrovy-nad-prahou",
+    "cap30-l3-10.jpg"
+   ]
+  },
+  {
+   "id": "pr-zelezny-muz",
+   "nombre": "El Hombre de Hierro (calle Platnéřská)",
+   "cat": "monumento",
+   "ll": [
+    50.0871,
+    14.4174
+   ],
+   "modelo": "ninguno",
+   "desc": "En la esquina de la calle Platnéřská hay de verdad una estatua de un caballero de hierro, y la leyenda praguense dice que es el fantasma de un hombre que mató a su novia por celos. En «Ostrovy nad Prahou» el Herrero, el permoník más viejo, cuenta que «arriba, en la calle Platnéřská, hay una estatua en una casa: el Hombre de Hierro». Abajo, en la segunda Praga, Jana lo encuentra de verdad: el caballero que creyó una mentira y mató a su prometida Kateřina. Cuando por fin baja la espada y dice un nombre, queda libre; el anillo que había comprado para ella termina en el dedo de Jana.",
+   "buscar": "Platnéř|Železn\\w* (muž|rytíř)|Kateřin",
+   "sin_ilustracion": true,
+   "solo": [
+    "ostrovy-nad-prahou"
+   ]
+  },
+  {
+   "id": "pr-karlovy-lazne",
+   "nombre": "Karlovy lázně",
+   "cat": "edificio",
+   "ll": [
+    50.0855,
+    14.4138
+   ],
+   "modelo": "ninguno",
+   "desc": "El viejo edificio de baños junto al Puente de Carlos, en la orilla de la Ciudad Vieja. En «Ostrovy nad Prahou» el río subterráneo, «el río debajo del río», lleva hasta acá: «antes había baños de verdad; la gente se bañaba en agua caliente y creía que era agua común». En la barca del barquero, Jana mira la brújula y la aguja apunta al corazón.",
+   "buscar": "Karlov\\w* lázn",
+   "ilustracion": [
+    "ostrovy-nad-prahou",
+    "cap16-l3-06.jpg"
+   ],
+   "solo": [
+    "ostrovy-nad-prahou"
+   ]
+  },
+  {
+   "id": "pr-hlavni-nadrazi",
+   "nombre": "Estación Central (Hlavní nádraží)",
+   "cat": "edificio",
+   "ll": [
+    50.0831,
+    14.4353
+   ],
+   "modelo": "ninguno",
+   "desc": "La estación principal de Praga. En «Ostrovy nad Prahou», con la ciudad sin luz y los tranvías parados, a la estación llegan voluntarios con mantas y comida y salen trenes con gente hacia Viena. Lucie y Mark, que vuelven de Pekín, no pueden llegar en avión: el tren desde Viena se detiene en Úvaly y caminan hasta la Estación Central, donde Lucie pasa la noche esperando. Vanessa corre hacia acá para encontrarla.",
+   "buscar": "Hlavní nádraží|na nádraží|k nádraží",
+   "sin_ilustracion": true,
+   "solo": [
+    "ostrovy-nad-prahou"
+   ]
+  },
+  {
+   "id": "pr-byt-lucie",
+   "nombre": "El departamento de Lucie y Mark (Vinohrady)",
+   "cat": "casa",
+   "ll": [
+    50.076,
+    14.44
+   ],
+   "modelo": "casa",
+   "desc": "Ubicación aproximada en Vinohrady: un departamento lleno de cajas que nunca terminan de desarmar y de fotos de la Gran Muralla China. En «La reina de la Vendimia», con la foto del gigante en la mano, Jana viene un domingo a contarles todo. Lucie prepara té, Mark escucha sin interrumpir y le da su cuaderno negro de detective con sus reglas; con eso Jana cruza medio mundo, se tiñe de rubia y se convierte en Yanina. Cuando vuelve a Praga en marzo, después de treinta y una horas de aeropuertos, la primera visita es otra vez acá.",
+   "buscar": "Vinohrad",
+   "sin_ilustracion": true,
+   "solo": [
+    "la-reina-de-la-vendimia",
+    "kralovna-vinobrani"
+   ]
+  },
+  {
+   "id": "pr-vinohradska",
+   "nombre": "Avenida Vinohradská",
+   "cat": "calle",
+   "ll": [
+    50.0776,
+    14.448
+   ],
+   "modelo": "ninguno",
+   "desc": "La gran avenida que sale de la plaza de Wenceslao hacia el este. En «Předtucha», en los años de la guerra, Lucie vio un tanque en Praga: «Iba por la Vinohradská y detrás no quedaba ni una casa entera». Años después, en la fortaleza, reconoce el ruido de los tanques de la Potencia Central antes que nadie.",
+   "buscar": "Vinohradsk",
+   "sin_ilustracion": true,
+   "solo": [
+    "predtucha"
+   ]
+  },
+  {
+   "id": "pr-zelivskeho",
+   "nombre": "La entrada del metro Želivského",
+   "cat": "misterio",
+   "ll": [
+    50.0785,
+    14.4743
+   ],
+   "modelo": "ninguno",
+   "desc": "Una estación de metro de la línea A, al este de Vinohrady. En «Předtucha» Lucie, que pasó tres años viviendo en los túneles del metro, los lleva por el terraplén de una vía abandonada hasta una entrada cubierta de maleza, bajo un cartel oxidado donde todavía se lee Želivského. De noche caminan por el túnel hasta debajo de Žižkov. Junto a un pilar de hormigón, Lucie se acuerda de cuando se escondió ahí con Luis de una patrulla, y Jana lo ve.",
+   "buscar": "Želivského|tunel\\w* metra|metr[oau]\\b",
+   "sin_ilustracion": true,
+   "solo": [
+    "predtucha"
+   ]
+  },
+  {
+   "id": "pr-holesovice",
+   "nombre": "La azotea de Holešovice",
+   "cat": "casa",
+   "ll": [
+    50.101,
+    14.441
+   ],
+   "modelo": "ninguno",
+   "desc": "Ubicación aproximada en Holešovice, al norte del Moldava. En «Předtucha» es el recuerdo que Lucie no suelta: su primer verano con Luis, la azotea desde donde miraban arder toda la parte norte de Praga sin saber si iban a llegar a la mañana. «Cuando te vi por primera vez, en esa azotea con los binoculares, pensé que eras un idiota creído.» También estuvieron en las trincheras de Holešovice; en la fortaleza, durante el asedio, la frase vuelve: «Como en Holešovice».",
+   "buscar": "Holešov",
+   "sin_ilustracion": true,
+   "solo": [
+    "predtucha"
+   ]
+  },
+  {
+   "id": "pr-smichov",
+   "nombre": "La vieja cervecería de Smíchov",
+   "cat": "edificio",
+   "ll": [
+    50.0685,
+    14.4073
+   ],
+   "modelo": "ninguno",
+   "desc": "La gran cervecería de Smíchov, en la orilla izquierda. En «Předtucha» Vojta confiesa que la Potencia Central tiene ahí un campamento «para los hijos de la gente que necesitan»: ahí tienen a su hermanita Anička, y Kazimír le mandó una foto de ella con su viejo suéter verde. Por ella Vojta traicionó a Utopía, y por ella Luis arma el plan que los lleva a la torre de Žižkov.",
+   "buscar": "pivovar\\w* na Smíchově|Smíchov",
+   "sin_ilustracion": true,
+   "solo": [
+    "predtucha"
+   ]
+  },
+  {
+   "id": "pr-letiste",
+   "nombre": "Aeropuerto Václav Havel",
+   "cat": "edificio",
+   "ll": [
+    50.1008,
+    14.26
+   ],
+   "modelo": "ninguno",
+   "desc": "El aeropuerto de Praga, al oeste de la ciudad. En «Ostrovy nad Prahou» todo empieza acá: Lucie y Mark se van de vacaciones a China, Lucie le deja a Jana su linterna vieja y la nombra guardiana del subsuelo, y desde la terraza mirador Jana ve en la baranda un cuervo grande que la mira con un brillo rojo… y desaparece. Después los aviones ya no pueden aterrizar en Praga. En «La reina de la Vendimia» de acá sale Luis hacia Mendoza, y acá vuelve Jana en marzo.",
+   "buscar": "letiště|Letiště|aeropuerto",
+   "ilustracion": [
+    "ostrovy-nad-prahou",
+    "01.jpg"
+   ],
+   "solo": [
+    "ostrovy-nad-prahou",
+    "la-reina-de-la-vendimia",
+    "kralovna-vinobrani"
+   ]
+  }
+ ]
+}

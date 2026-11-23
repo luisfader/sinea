@@ -1,0 +1,349 @@
+{
+ "_info": "Reseñas de los vecinos de Praga, escritas por los personajes.",
+ "pr-karluv-most": [
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Bailé acá con la falda de mi mamá bajo una lluvia de cerveza. Las estatuas volvieron a su lugar. Un año después me arrodillaron un anillo en las mismas piedras.",
+   "ru": "Я танцевала здесь в маминой юбке под пивным дождём. Статуи вернулись на места. Через год на этих же камнях мне протянули кольцо."
+  },
+  {
+   "a": "Mark",
+   "ar": "Марк",
+   "s": 4,
+   "es": "Aterrizar una Škoda en un puente del siglo XIV: hecho. Detective sin café es como Praga sin puentes. Saqué las mejores fotos de mi vida.",
+   "ru": "Посадить «Шкоду» на мост XIV века — сделано. Детектив без кофе — как Прага без мостов. Лучшие фотографии в моей жизни."
+  },
+  {
+   "a": "El viejo violinista",
+   "ar": "Старый скрипач",
+   "s": 5,
+   "es": "Toco acá todas las noches. A veces hace falta música. Esa noche hizo falta toda.",
+   "ru": "Играю здесь каждый вечер. Иногда нужна музыка. В ту ночь понадобилась вся."
+  }
+ ],
+ "pr-nepomuk": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Pedí tener una razón para quedarme. Se cumplió: casi me muero colgado de una cadena debajo de Praga. Pero se cumplió.",
+   "ru": "Я загадал, чтобы у меня была причина остаться. Сбылось: я чуть не умер на цепи под Прагой. Но сбылось."
+  },
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Los turistas la tocan para volver. Los praguenses, para pedir. Yo pedí que me dijera eso algún día. Lo dijo de rodillas.",
+   "ru": "Туристы трогают её, чтобы вернуться. Пражане — чтобы загадать. Я загадала, чтобы он однажды мне это сказал. Он сказал, стоя на коленях."
+  }
+ ],
+ "pr-hrad": [
+  {
+   "a": "Princesa Ludmila",
+   "ar": "Княжна Людмила",
+   "s": 3,
+   "es": "Cien años durmiendo en una torre. Cuando me desperté, Praga era mía por unos días. Después aprendí que lo que yo quería era otra cosa.",
+   "ru": "Сто лет сна в башне. Когда я проснулась, Прага на несколько дней стала моей. Потом я поняла, что хотела совсем другого."
+  },
+  {
+   "a": "Lindsey",
+   "ar": "Линдси",
+   "s": 2,
+   "es": "Escaleras frías, salas oscuras y un trono. Nos dejaron dos violines en la escalinata y una frase: «Son libres». La mejor reseña que le puedo dar.",
+   "ru": "Холодные лестницы, тёмные залы и трон. На ступенях нам оставили две скрипки и одну фразу: «Вы свободны». Лучший отзыв, какой я могу дать."
+  }
+ ],
+ "pr-staromestske": [
+  {
+   "a": "Lucie",
+   "ar": "Люция",
+   "s": 4,
+   "es": "El reloj giró al revés, la gente se quedó como robots y una princesa cantó en el escenario. Un día normal en Praga.",
+   "ru": "Часы закрутились неправильно, люди застыли, как роботы, а на сцене пела княжна. Обычный день в Праге."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 3,
+   "es": "Me desperté en el piso del sótano con un chichón: Jana me había empujado para ir a escuchar a Ludmila. Tiene una mano fuerte. Y un corazón más fuerte todavía.",
+   "ru": "Я очнулся на полу подвала с шишкой: Яна оттолкнула меня, чтобы пойти слушать Людмилу. У неё сильная рука. А сердце ещё сильнее."
+  }
+ ],
+ "pr-petrin": [
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "En otoño los árboles se ponen amarillos, naranjas y rojos. Encima, por tres días, hubo un castillo negro con una máquina. Ahora hay de nuevo solo árboles.",
+   "ru": "Осенью деревья становятся жёлтыми, оранжевыми и красными. Над ними три дня висел чёрный замок с машиной. Теперь там снова только деревья."
+  },
+  {
+   "a": "Vran",
+   "ar": "Вран",
+   "s": 1,
+   "es": "La lámpara estaba casi llena. Casi.",
+   "ru": "Лампа была почти полной. Почти."
+  }
+ ],
+ "pr-vysehrad": [
+  {
+   "a": "El Herrero",
+   "ar": "Кузнец",
+   "s": 5,
+   "es": "Acá cantó la princesa Libuše y cerró las puertas. Nosotros, los permoníci, todavía nos acordamos de la canción. Los de arriba, no tanto.",
+   "ru": "Здесь пела княжна Либуше и закрыла врата. Мы, пермоники, до сих пор помним ту песню. Те, что наверху, — не очень."
+  }
+ ],
+ "pr-zizkov": [
+  {
+   "a": "Lucie",
+   "ar": "Люция",
+   "s": 4,
+   "es": "986 escalones. Los conté yo, en voz alta. ¿Por qué nunca es en planta baja?",
+   "ru": "986 ступенек. Я считала их сама, вслух. Почему никогда не бывает на первом этаже?"
+  },
+  {
+   "a": "Anička",
+   "ar": "Аничка",
+   "s": 5,
+   "es": "Me hicieron cantar. Después vino mi hermano y la gente de la fortaleza. El suéter verde me llega hasta las rodillas y no me lo saco.",
+   "ru": "Меня заставляли петь. Потом пришёл брат и люди из крепости. Зелёный свитер мне до колен, и я его не снимаю."
+  }
+ ],
+ "pr-kampa": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "Una puertita de hierro detrás de la hiedra, debajo del puente. Si no sabés que está, no la ves. Si sabés, ya no podés dejar de verla.",
+   "ru": "Маленькая железная дверь за плющом под мостом. Если не знаешь о ней — не увидишь. Если знаешь — уже не можешь не видеть."
+  },
+  {
+   "a": "Kamínek",
+   "ar": "Камушек",
+   "s": 5,
+   "es": "Me cantaron una canción de cuna. Después, todo el subsuelo lo vio. Todo el subsuelo lo sintió.",
+   "ru": "Мне спели колыбельную. Потом всё подземье это видело. Всё подземье это чувствовало."
+  }
+ ],
+ "pr-byt-jany": [
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Chiquito, bajo el techo, con el Castillo en la ventana. En el armario huele a lavanda y vive la falda de mi mamá. Descansa.",
+   "ru": "Маленькая, под крышей, с Градом в окне. В шкафу пахнет лавандой и живёт мамина юбка. Отдыхает."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "Acá aprendí a decir «te quiero» en checo. Acá también mentí por primera vez. De lo primero estoy orgulloso.",
+   "ru": "Здесь я научился говорить «люблю» по-чешски. Здесь же я впервые солгал. Первым я горжусь."
+  }
+ ],
+ "pr-pekarna": [
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 4,
+   "es": "Los rohlíky, como siempre, riquísimos. Salí con la bolsa, levanté la cabeza y había cinco castillos negros colgando del cielo. Los rohlíky se me cayeron.",
+   "ru": "Рогалики, как всегда, отличные. Вышла с пакетом, подняла голову — а с неба свисают пять чёрных замков. Рогалики я уронила."
+  }
+ ],
+ "pr-malostranske": [
+  {
+   "a": "Vanessa",
+   "ar": "Ванесса",
+   "s": 5,
+   "es": "Tocamos Mozart para los turistas por monedas, y los turistas nos dan más que a nadie. Somos libres. Eso suena distinto.",
+   "ru": "Мы играем туристам Моцарта за мелочь, и нам дают больше, чем всем. Мы свободны. Это звучит иначе."
+  },
+  {
+   "a": "Un vecino en piyama",
+   "ar": "Сосед в пижаме",
+   "s": 2,
+   "es": "Salí con el paraguas para taparme de las islas. No sirvió de nada, pero me sentí mejor.",
+   "ru": "Вышел с зонтиком, чтобы прятаться от островов. Не помогло, но стало легче."
+  }
+ ],
+ "pr-tri-housliky": [
+  {
+   "a": "Vanessa",
+   "ar": "Ванесса",
+   "s": 3,
+   "es": "Buhardilla con vista a las cadenas. La cerradura se abre con una horquilla si tenés paciencia. Yo no tenía.",
+   "ru": "Мансарда с видом на цепи. Замок открывается шпилькой, если есть терпение. У меня его не было."
+  }
+ ],
+ "pr-restaurace": [
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Una sola rosa, una vela, el puente y el Castillo. Pato con knedlíky. Él dijo que no quería irse. Yo no dije nada y le tomé la mano.",
+   "ru": "Одна роза, одна свеча, мост и Град. Утка с кнедликами. Он сказал, что не хочет уезжать. Я ничего не сказала и взяла его за руку."
+  },
+  {
+   "a": "El mozo",
+   "ar": "Официант",
+   "s": 4,
+   "es": "Les di la mesa del borde, al lado del río. Pidieron lo más pesado de la carta. Se quedaron hasta que apagamos las velas.",
+   "ru": "Я дал им столик с краю, у самой реки. Заказали самое тяжёлое из меню. Сидели, пока мы не погасили свечи."
+  }
+ ],
+ "pr-kavarna": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Entré escapando de la lluvia y pregunté cómo se dice café en checo. «Káva.» Me quedé en Praga.",
+   "ru": "Забежал от дождя и спросил, как по-чешски café. «Káva». Я остался в Праге."
+  },
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "La misma mesa junto a la ventana, una semana después. Le enseñé la frase más importante del checo.",
+   "ru": "Тот же столик у окна, через неделю. Я научила его самой важной фразе на чешском."
+  }
+ ],
+ "pr-sklep": [
+  {
+   "a": "Lucie",
+   "ar": "Люция",
+   "s": 4,
+   "es": "El subsuelo tiene reglas viejas. Con falda corta no se baja. Jana se enojó; después me dio la razón. La acústica, perfecta.",
+   "ru": "У подземья старые правила. В короткой юбке вниз нельзя. Яна обиделась, потом признала, что я права. Акустика идеальная."
+  },
+  {
+   "a": "Mark",
+   "ar": "Марк",
+   "s": 4,
+   "es": "Concierto excelente hasta que salieron diez guerreros de la pared. Agarré a Lucie de la mano. No la solté. No la pienso soltar.",
+   "ru": "Отличный концерт, пока из стены не вышли десять воинов. Я взял Люцию за руку. И не отпустил. И не собираюсь."
+  }
+ ],
+ "pr-knihovna": [
+  {
+   "a": "Lucie",
+   "ar": "Люция",
+   "s": 5,
+   "es": "Me caí de la escalera directo en los brazos de Mark. El libro estaba en el estante de arriba. Valió la pena subir.",
+   "ru": "Я упала со стремянки прямо в руки Марку. Книга стояла на верхней полке. Стоило лезть."
+  }
+ ],
+ "pr-srdce": [
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Al fondo del mundo hay árboles de piedra que florecen y miles de manos en las paredes. Ahí abajo late Praga. Bum.",
+   "ru": "На дне мира есть каменные деревья, которые цветут, и тысячи ладоней на стенах. Там внизу бьётся Прага. Бум."
+  },
+  {
+   "a": "Mark",
+   "ar": "Марк",
+   "s": 5,
+   "es": "Los encontramos dormidos debajo del corazón. Quise sacar una foto. Lucie dijo que no. Tenía razón: eso no es para el archivo.",
+   "ru": "Мы нашли их спящими под сердцем. Я хотел сфотографировать. Люция сказала «нет». Она права: это не для архива."
+  }
+ ],
+ "pr-zelezny-muz": [
+  {
+   "a": "El caballero de hierro",
+   "ar": "Железный рыцарь",
+   "s": 4,
+   "es": "Setecientos años creí una mentira. Una muchacha con una falda bordó me hizo bajar la espada. El anillo de Kateřina por fin lo lleva alguien.",
+   "ru": "Семьсот лет я верил лжи. Девушка в бордовой юбке заставила меня опустить меч. Кольцо Катержины наконец кто-то носит."
+  }
+ ],
+ "pr-karlovy-lazne": [
+  {
+   "a": "El barquero",
+   "ar": "Перевозчик",
+   "s": 4,
+   "es": "La gente se bañaba en agua caliente y creía que era agua común. Abajo corre la hermana mayor del Moldava. Llevo pasajeros desde siempre.",
+   "ru": "Люди купались в тёплой воде и думали, что это обычная вода. Внизу течёт старшая сестра Влтавы. Я вожу пассажиров с незапамятных времён."
+  }
+ ],
+ "pr-hlavni-nadrazi": [
+  {
+   "a": "Lucie",
+   "ar": "Люция",
+   "s": 4,
+   "es": "El tren desde Viena se paró en Úvaly y caminamos. Pasé la noche esperando en la estación. Los voluntarios me dieron un pan envuelto en una servilleta. Lo guardé.",
+   "ru": "Поезд из Вены встал в Увалах, и мы пошли пешком. Я всю ночь ждала на вокзале. Добровольцы дали мне хлеб в салфетке. Я его сохранила."
+  }
+ ],
+ "pr-byt-lucie": [
+  {
+   "a": "Mark",
+   "ar": "Марк",
+   "s": 4,
+   "es": "Cajas sin desarmar y fotos de la Muralla China. Acá le di a Jana mi cuaderno negro. Regla número uno: no confíes en las casualidades.",
+   "ru": "Неразобранные коробки и фото Великой стены. Здесь я отдал Яне свою чёрную тетрадь. Правило номер один: не верь совпадениям."
+  },
+  {
+   "a": "Lucie",
+   "ar": "Люция",
+   "s": 5,
+   "es": "Jana vino con la foto de un gigante. Preparé té. Hay noches para el té y noches para el vino; esa era de té.",
+   "ru": "Яна пришла с фотографией великана. Я заварила чай. Бывают вечера для чая и вечера для вина; тот был для чая."
+  }
+ ],
+ "pr-vinohradska": [
+  {
+   "a": "Lucie",
+   "ar": "Люция",
+   "s": 2,
+   "es": "Vi pasar un tanque por acá. Detrás no quedó una sola casa entera. Ese ruido lo reconozco en cualquier lado.",
+   "ru": "Я видела, как здесь прошёл танк. За ним не осталось ни одного целого дома. Этот звук я узнаю где угодно."
+  }
+ ],
+ "pr-zelivskeho": [
+  {
+   "a": "Lucie",
+   "ar": "Люция",
+   "s": 3,
+   "es": "Tres años viví en estos túneles. Conozco Praga desde abajo mejor que nadie. Hay un pilar de hormigón que prefiero no tocar.",
+   "ru": "Три года я жила в этих туннелях. Знаю Прагу снизу лучше всех. Есть одна бетонная опора, которую я стараюсь не трогать."
+  }
+ ],
+ "pr-holesovice": [
+  {
+   "a": "Lucie",
+   "ar": "Люция",
+   "s": 5,
+   "es": "Desde esta azotea vimos arder el norte de Praga. Él tenía binoculares y se creía muy listo. Era muy listo.",
+   "ru": "С этой крыши мы смотрели, как горит север Праги. У него был бинокль, и он считал себя очень умным. Он и был очень умным."
+  }
+ ],
+ "pr-smichov": [
+  {
+   "a": "Vojta",
+   "ar": "Войта",
+   "s": 1,
+   "es": "Acá tenían a mi hermana. Hice cosas que no quiero recordar para recuperarla. Al final la recuperaron otros.",
+   "ru": "Здесь держали мою сестру. Я делал то, о чём не хочу вспоминать, чтобы её вернуть. В итоге её вернули другие."
+  }
+ ],
+ "pr-letiste": [
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 3,
+   "es": "Despedimos a Lucie y Mark desde la terraza. En la baranda se posó un cuervo con un brillo rojo en los ojos. Cuando Luis se dio vuelta, ya no estaba.",
+   "ru": "Мы провожали Люцию и Марка с террасы. На перила сел ворон с красным блеском в глазах. Когда Луис обернулся, его уже не было."
+  },
+  {
+   "a": "Mark",
+   "ar": "Марк",
+   "s": 4,
+   "es": "Un detective sin café es como Praga sin puentes. El café del aeropuerto, aceptable. Volver, imposible: tuvimos que venir en tren.",
+   "ru": "Детектив без кофе — как Прага без мостов. Кофе в аэропорту приемлемый. Вернуться самолётом — невозможно: пришлось ехать поездом."
+  }
+ ]
+}

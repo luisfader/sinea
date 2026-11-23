@@ -1,8 +1,8 @@
 # Mapas de los mundos literarios de Robert Fader · Карты миров Роберта Фадера
 
-Sinea, Verdegrad, Nuestra Utopía, Mendoza, Venecia, Madrid, San Petersburgo y Belgrado en 3D. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
+Sinea, Verdegrad, Nuestra Utopía, Mendoza, Venecia, Madrid, San Petersburgo, Belgrado y Praga en 3D. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
 
-Ocho mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza | Venecia | Madrid | San Petersburgo | Belgrado** arriba:
+Nueve mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza | Venecia | Madrid | San Petersburgo | Belgrado | Praga** arriba (en el celular, el botón «Mapas ▾» abre la lista):
 
 - **Sinea**, la ciudad junto al mar: `index.html`
 - **Verdegrad**, el pueblo verde de Natalia, con su fortaleza en la penumbra: `index.html?ciudad=verdegrad` (o `verdegrad.html`)
@@ -12,6 +12,7 @@ Ocho mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Me
 - **Madrid** (Мадрид), la ciudad real de «Дикий час: Карнавал раздора»: `index.html?ciudad=madrid` (o `madrid.html`)
 - **San Petersburgo** (Санкт-Петербург), la ciudad real de «Резонанс любви»: `index.html?ciudad=petersburgo` (o `petersburgo.html`)
 - **Belgrado** (Белград), la ciudad real de «Дикий час» y de su versión serbia «Дивљи час»: `index.html?ciudad=belgrado` (o `belgrado.html`)
+- **Praga** (Прага), la ciudad real de «Podzemní tajemství», «Ostrovy nad Prahou», «Předtucha» y los capítulos praguenses de «La reina de la Vendimia»: `index.html?ciudad=praga` (o `praga.html`)
 
 Los rótulos verdes en el borde del mapa también llevan de una ciudad a la otra («← Verdegrad · estación Nubecita» en Sinea; «← Antiguo camino a Sinea» en Verdegrad).
 
@@ -101,6 +102,10 @@ El Petersburgo de «Резонанс любви», de la isla Vasílievski a la 
 ## Belgrado
 
 El Belgrado de «Дикий час» (ruso) y «Дивљи час» (serbio): cada lugar muestra los capítulos de las dos versiones. Suelo, ríos y edificios del mapa de OpenStreetMap a 6,78 m por píxel (`img/bg-suelo.png`, `img/bg-tierra.png`, `js/ciudades/bg-lotes.js`), generados con `tools/mapa_osm.py` a partir de las teselas. Modelados a mano: el Pobednik sobre Kalemegdan, la torre Nebojša, el príncipe Mihailo y el Museo Nacional, el edificio bombardeado del Estado Mayor, el templo de San Sava con su cruz ortodoxa y el Puente Branko. Datos: `data/belgrado/`.
+
+## Praga
+
+La Praga de la serie checa de Luis y Jana: «Podzemní tajemství», «Ostrovy nad Prahou» y «Předtucha», más los capítulos praguenses de «La reina de la Vendimia» y de «Královna vinobraní». Suelo, río y edificios del mapa de OpenStreetMap a 6,13 m por píxel (`img/praga-suelo.png`, `img/praga-tierra.png`, `js/ciudades/praga-lotes.js`, con `tools/mapa_osm.py`). Modelados a mano: el Puente de Carlos con sus estatuas y torres, el Castillo con San Vito, la Plaza de la Ciudad Vieja con Týn, el reloj astronómico y Jan Hus, San Nicolás de Malá Strana, el mirador de Petřín, Vyšehrad y la torre de Žižkov. Encima flotan las cinco islas de Černoboh («Ostrovy nad Prahou»), con sus cadenas azules clavadas en los cinco corazones de la ciudad. Datos: `data/praga/`.
 
 ## Añadir o corregir un lugar
 

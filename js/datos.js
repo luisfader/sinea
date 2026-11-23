@@ -21851,279 +21851,1760 @@ export const CIUDADES = {
 "c": "3"
 }
 }
+],
+"praga": [
+{
+"id": "pr-karluv-most",
+"nombre": "Puente de Carlos (Karlův most)",
+"cat": "monumento",
+"x": -736,
+"y": -106,
+"modelo": "karluv-most",
+"desc": "El puente de piedra del siglo XIV sobre el Moldava, con sus treinta estatuas y una torre gótica en cada orilla. Es el escenario de los finales. En «Podzemní tajemství» la vieja Škoda voladora aterriza acá en plena lluvia de cerveza encantada: Luis toca su canción entera, Mark lee las notas, Lucie canta y Jana baila con la falda bordó de su madre. Las estatuas vuelven a sus pedestales, Ludmila llora lágrimas de verdad y Luboš llega convertido en dragón para llevársela. En «Ostrovy nad Prahou», la noche en que las sombras bajan por las cadenas, cientos de praguenses con velas cantan sobre el puente y las frenan; al amanecer ven deshacerse las islas en polvo de oro. En «Předtucha» el puente sigue en pie después de la catástrofe, con las estatuas rotas.",
+"nombre_ru": "Карлов мост",
+"desc_ru": "Каменный мост XIV века через Влтаву с тридцатью статуями и готическими башнями на обоих берегах. Здесь случаются финалы. В «Podzemní tajemství» сюда под заколдованным пивным дождём садится летающая старая «Шкода»: Луис играет свою песню целиком, Марк читает ноты, Люция поёт, а Яна танцует в бордовой маминой юбке. Статуи возвращаются на постаменты, Людмила плачет настоящими слезами, а Лубош прилетает драконом и уносит её. В «Ostrovy nad Prahou» в ночь, когда тени спускаются по цепям, сотни пражан со свечами поют на мосту и останавливают их, а на рассвете видят, как острова рассыпаются золотой пылью. В «Předtucha» мост стоит и после катастрофы, но статуи на нём разбиты.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"1",
+"Letadlo do Pekingu"
+],
+[
+"2",
+"Noc u Vltavy"
+],
+[
+"4",
+"Faderpedie"
+],
+[
+"5",
+"Chvění pod zemí"
+],
+[
+"6",
+"Teplo v podzemí"
+],
+[
+"7",
+"Ruce ve tmě"
+],
+[
+"9",
+"Mimořádné zprávy"
+],
+[
+"10",
+"Pět Prah"
+],
+[
+"15",
+"Peking"
+],
+[
+"17",
+"Druhá noc"
+],
+[
+"19",
+"Zákaz hudby"
+],
+[
+"22",
+"Návrat do tmy"
+],
+[
+"25",
+"Chléb a sůl"
+],
+[
+"27",
+"Černoboh přichází"
+],
+[
+"28",
+"Tyrkysová lampa"
+],
+[
+"30",
+"Srdce Prahy"
+],
+[
+"extra-1",
+"Za rok, na tomhle místě"
+],
+[
+"extra-2",
+"Test: Pravda, nebo lež?"
+]
+]
+},
+{
+"n": "podzemni-tajemstvi",
+"c": [
+[
+"8",
+"Praha patří princezně"
+],
+[
+"14",
+"Poslední bitva a nový začátek"
+],
+[
+"extra-3",
+"Závěrečný test"
+]
+]
+},
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"1",
+"Praga con nieve"
+],
+[
+"49",
+"Praga sin nieve"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"1",
+"Praha se sněhem"
+],
+[
+"30",
+"Zlatá voda"
+]
+]
+},
+{
+"n": "predtucha",
+"c": [
+[
+"1",
+"Poslední světlo Prahy"
+]
+]
+}
+],
+"res": [
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "Bailé acá con la falda de mi mamá bajo una lluvia de cerveza. Las estatuas volvieron a su lugar. Un año después me arrodillaron un anillo en las mismas piedras.",
+"ru": "Я танцевала здесь в маминой юбке под пивным дождём. Статуи вернулись на места. Через год на этих же камнях мне протянули кольцо."
+},
+{
+"a": "Mark",
+"ar": "Марк",
+"s": 4,
+"es": "Aterrizar una Škoda en un puente del siglo XIV: hecho. Detective sin café es como Praga sin puentes. Saqué las mejores fotos de mi vida.",
+"ru": "Посадить «Шкоду» на мост XIV века — сделано. Детектив без кофе — как Прага без мостов. Лучшие фотографии в моей жизни."
+},
+{
+"a": "El viejo violinista",
+"ar": "Старый скрипач",
+"s": 5,
+"es": "Toco acá todas las noches. A veces hace falta música. Esa noche hizo falta toda.",
+"ru": "Играю здесь каждый вечер. Иногда нужна музыка. В ту ночь понадобилась вся."
+}
+],
+"img": {
+"src": "img/lugares/pr-karluv-most.webp",
+"n": "ostrovy-nad-prahou",
+"c": "14"
+}
+},
+{
+"id": "pr-nepomuk",
+"nombre": "Estatua de San Juan Nepomuceno",
+"cat": "monumento",
+"x": -786,
+"y": -87,
+"modelo": "ninguno",
+"desc": "La estatua más famosa del puente, con la placa de bronce brillante de tanto tocarla: el que la toca vuelve a Praga, y el que además pide un deseo, «eso ya lo saben solo los praguenses», lo ve cumplido. En «Ostrovy nad Prahou» Luis y Jana la tocan la noche antes de las islas y se prometen contarse el deseo «dentro de un año, en este mismo lugar»; un viejo violinista le dice a Luis que «pronto va a hacer falta música». Un año después, en el epílogo, Luis se arrodilla acá mismo y le pide a Jana que se case con él con el anillo de setecientos años que el caballero de hierro había comprado para Kateřina. En el hombro del santo, un cuervo común y corriente los mira y se va volando.",
+"nombre_ru": "Статуя святого Яна Непомуцкого",
+"desc_ru": "Самая знаменитая статуя моста с блестящей от прикосновений бронзовой табличкой: кто её коснётся, вернётся в Прагу, а кто при этом загадает желание — «это знают только пражане» — увидит, как оно сбудется. В «Ostrovy nad Prahou» Луис и Яна касаются её в ночь перед островами и обещают рассказать друг другу желание «через год, на этом самом месте»; старый скрипач говорит Луису, что «скоро понадобится музыка». Через год, в эпилоге, Луис встаёт здесь на колено и делает Яне предложение с семисотлетним кольцом, которое железный рыцарь когда-то купил для Катержины. На плече святого сидит обычный ворон, смотрит на них и улетает.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"2",
+"Noc u Vltavy"
+],
+[
+"15",
+"Peking"
+],
+[
+"17",
+"Druhá noc"
+],
+[
+"27",
+"Černoboh přichází"
+],
+[
+"31",
+""
+],
+[
+"extra-1",
+"Za rok, na tomhle místě"
+],
+[
+"extra-2",
+"Test: Pravda, nebo lež?"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Pedí tener una razón para quedarme. Se cumplió: casi me muero colgado de una cadena debajo de Praga. Pero se cumplió.",
+"ru": "Я загадал, чтобы у меня была причина остаться. Сбылось: я чуть не умер на цепи под Прагой. Но сбылось."
+},
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "Los turistas la tocan para volver. Los praguenses, para pedir. Yo pedí que me dijera eso algún día. Lo dijo de rodillas.",
+"ru": "Туристы трогают её, чтобы вернуться. Пражане — чтобы загадать. Я загадала, чтобы он однажды мне это сказал. Он сказал, стоя на коленях."
+}
+],
+"img": {
+"src": "img/lugares/pr-nepomuk.webp",
+"n": "ostrovy-nad-prahou",
+"c": "7"
+}
+},
+{
+"id": "pr-hrad",
+"nombre": "Castillo de Praga y catedral de San Vito",
+"cat": "monumento",
+"x": -1486,
+"y": 378,
+"modelo": "hrad-praga",
+"desc": "El castillo sobre la colina de Hradčany, con las agujas de San Vito. En «Podzemní tajemství» es el «viejo castillo sobre Praga»: en una torre abandonada duerme desde hace cien años la princesa Ludmila. La música de Luis la despierta; desde la torre toca con las gemelas Lindsey y Vanessa una música oscura que despierta a las almas malas de los sótanos y cementerios, y desde el trono se proclama dueña de Praga. Ahí lleva a Jana hipnotizada. En «Ostrovy nad Prahou» la primera de las cinco cadenas baja directo al Castillo, y la isla que la sostiene cuelga frente a la ventana de Jana. En «La reina de la Vendimia» Luis mira el Castillo iluminado bajo la nieve la noche en que recibe la llamada de Mendoza.",
+"nombre_ru": "Пражский Град и собор Святого Вита",
+"desc_ru": "Замок на Градчанском холме со шпилями собора Святого Вита. В «Podzemní tajemství» это «старый замок над Прагой»: в заброшенной башне сто лет спит княжна Людмила. Музыка Луиса её будит; с башни она вместе с близнецами Линдси и Ванессой играет тёмную музыку, от которой в подвалах и на кладбищах просыпаются злые души, а с трона объявляет себя хозяйкой Праги. Сюда она уводит загипнотизированную Яну. В «Ostrovy nad Prahou» первая из пяти цепей спускается прямо к Граду, а остров, который её держит, висит напротив Яниного окна. В «Королеве Вендимии» Луис смотрит на освещённый Град под снегом в ночь, когда ему звонят из Мендосы.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"2",
+"Noc u Vltavy"
+],
+[
+"3",
+"Ostrovy na nebi"
+],
+[
+"4",
+"Faderpedie"
+],
+[
+"5",
+"Chvění pod zemí"
+],
+[
+"9",
+"Mimořádné zprávy"
+],
+[
+"22",
+"Návrat do tmy"
+],
+[
+"24",
+"Pátá Praha"
+],
+[
+"25",
+"Chléb a sůl"
+],
+[
+"27",
+"Černoboh přichází"
+]
+]
+},
+{
+"n": "podzemni-tajemstvi",
+"c": [
+[
+"4",
+"Koncert v podzemí"
+],
+[
+"5",
+"Princezna z hradu"
+],
+[
+"6",
+"Mark a Lucie"
+],
+[
+"10",
+"Rituál"
+],
+[
+"extra-3",
+"Závěrečný test"
+]
+]
+},
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"1",
+"Praga con nieve"
+],
+[
+"49",
+"Praga sin nieve"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"1",
+"Praha se sněhem"
+]
+]
+}
+],
+"res": [
+{
+"a": "Princesa Ludmila",
+"ar": "Княжна Людмила",
+"s": 3,
+"es": "Cien años durmiendo en una torre. Cuando me desperté, Praga era mía por unos días. Después aprendí que lo que yo quería era otra cosa.",
+"ru": "Сто лет сна в башне. Когда я проснулась, Прага на несколько дней стала моей. Потом я поняла, что хотела совсем другого."
+},
+{
+"a": "Lindsey",
+"ar": "Линдси",
+"s": 2,
+"es": "Escaleras frías, salas oscuras y un trono. Nos dejaron dos violines en la escalinata y una frase: «Son libres». La mejor reseña que le puedo dar.",
+"ru": "Холодные лестницы, тёмные залы и трон. На ступенях нам оставили две скрипки и одну фразу: «Вы свободны». Лучший отзыв, какой я могу дать."
+}
+],
+"img": {
+"src": "img/lugares/pr-hrad.webp",
+"n": "ostrovy-nad-prahou",
+"c": "9"
+}
+},
+{
+"id": "pr-staromestske",
+"nombre": "Plaza de la Ciudad Vieja, el reloj astronómico y Týn",
+"cat": "plaza",
+"x": 0,
+"y": 0,
+"modelo": "tyn",
+"desc": "La plaza mayor de Praga, con las dos agujas negras de Týn y la torre del Ayuntamiento con el reloj astronómico. En «Podzemní tajemství», la mañana en que suenan los violines de Ludmila, el reloj gira rápido y mal y la gente se queda quieta con los ojos vacíos. Esa noche hay un concierto en la plaza: Lindsey y Vanessa tocan, Ludmila canta «mi corazón es una casa vacía» y Jana, hipnotizada, empuja a Luis y se va hacia el escenario. En «Ostrovy nad Prahou» acá está clavada la tercera cadena; en la segunda Praga suenan las campanas de Týn, y la noche final una multitud ve bajar por la cadena una fila de sombras negras. En «Předtucha», después de la catástrofe, la plaza es un mercado de comerciantes armados que venden comida, remedios y piezas de computadoras.",
+"nombre_ru": "Староместская площадь, Орлой и Тынский храм",
+"desc_ru": "Главная площадь Праги с двумя чёрными шпилями Тынского храма и ратушной башней с астрономическими часами. В «Podzemní tajemství» утром, когда звучат скрипки Людмилы, Орлой вертится быстро и неправильно, а люди стоят на месте с пустыми глазами. Вечером на площади концерт: играют Линдси и Ванесса, Людмила поёт «моё сердце — пустой дом», и загипнотизированная Яна отталкивает Луиса и уходит к сцене. В «Ostrovy nad Prahou» здесь закреплена третья цепь; во второй Праге звонят колокола Тына, а в последнюю ночь толпа видит, как по цепи спускается вереница чёрных теней. В «Předtucha» после катастрофы площадь стала рынком вооружённых торговцев, которые продают еду, лекарства и детали от старых компьютеров.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"3",
+"Ostrovy na nebi"
+],
+[
+"9",
+"Mimořádné zprávy"
+],
+[
+"10",
+"Pět Prah"
+],
+[
+"13",
+"Ztracené ulice"
+],
+[
+"15",
+"Peking"
+],
+[
+"22",
+"Návrat do tmy"
+],
+[
+"25",
+"Chléb a sůl"
+],
+[
+"27",
+"Černoboh přichází"
+],
+[
+"extra-2",
+"Test: Pravda, nebo lež?"
+]
+]
+},
+{
+"n": "podzemni-tajemstvi",
+"c": [
+[
+"8",
+"Praha patří princezně"
+],
+[
+"9",
+"Píseň samoty"
+],
+[
+"14",
+"Poslední bitva a nový začátek"
+]
+]
+},
+{
+"n": "predtucha",
+"c": [
+[
+"1",
+"Poslední světlo Prahy"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lucie",
+"ar": "Люция",
+"s": 4,
+"es": "El reloj giró al revés, la gente se quedó como robots y una princesa cantó en el escenario. Un día normal en Praga.",
+"ru": "Часы закрутились неправильно, люди застыли, как роботы, а на сцене пела княжна. Обычный день в Праге."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 3,
+"es": "Me desperté en el piso del sótano con un chichón: Jana me había empujado para ir a escuchar a Ludmila. Tiene una mano fuerte. Y un corazón más fuerte todavía.",
+"ru": "Я очнулся на полу подвала с шишкой: Яна оттолкнула меня, чтобы пойти слушать Людмилу. У неё сильная рука. А сердце ещё сильнее."
+}
+],
+"img": {
+"src": "img/lugares/pr-staromestske.webp",
+"n": "ostrovy-nad-prahou",
+"c": "9"
+}
+},
+{
+"id": "pr-petrin",
+"nombre": "Colina de Petřín y su mirador",
+"cat": "parque",
+"x": -1871,
+"y": -445,
+"modelo": "petrin",
+"desc": "La colina verde sobre Malá Strana, con la torre mirador de hierro. En «Ostrovy nad Prahou» es otoño y los árboles de Petřín están amarillos y rojos cuando Luis escribe su melodía en la ventana de Jana. Después la segunda cadena baja a Petřín, y sobre la isla que flota encima, en un castillo negro, en una sala sin ventanas, zumba la máquina de Černoboh: una lámpara que junta gota a gota la luz que las cadenas le roban a la ciudad. Cuando Jana y Luis salvan el corazón de Praga, la lámpara estalla y la luz turquesa vuela como una bandada de pájaros de vuelta a los faroles, a las ventanas y a los tranvías.",
+"nombre_ru": "Петршин и смотровая башня",
+"desc_ru": "Зелёный холм над Малой Страной с железной смотровой башней. В «Ostrovy nad Prahou» осень, деревья на Петршине жёлтые и красные, когда Луис пишет мелодию у Яниного окна. Потом вторая цепь спускается к Петршину, а на острове над ним, в чёрном замке, в зале без окон, гудит машина Чернобога: лампа, которая капля за каплей собирает свет, украденный цепями у города. Когда Яна и Луис спасают сердце Праги, лампа лопается, и бирюзовый свет стаей птиц летит обратно к фонарям, окнам и трамваям.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"2",
+"Noc u Vltavy"
+],
+[
+"3",
+"Ostrovy na nebi"
+],
+[
+"4",
+"Faderpedie"
+],
+[
+"9",
+"Mimořádné zprávy"
+],
+[
+"18",
+"Vran a houslistka"
+],
+[
+"28",
+"Tyrkysová lampa"
+],
+[
+"30",
+"Srdce Prahy"
+],
+[
+"extra-1",
+"Za rok, na tomhle místě"
+]
+]
+}
+],
+"res": [
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "En otoño los árboles se ponen amarillos, naranjas y rojos. Encima, por tres días, hubo un castillo negro con una máquina. Ahora hay de nuevo solo árboles.",
+"ru": "Осенью деревья становятся жёлтыми, оранжевыми и красными. Над ними три дня висел чёрный замок с машиной. Теперь там снова только деревья."
+},
+{
+"a": "Vran",
+"ar": "Вран",
+"s": 1,
+"es": "La lámpara estaba casi llena. Casi.",
+"ru": "Лампа была почти полной. Почти."
+}
+],
+"img": {
+"src": "img/lugares/pr-petrin.webp",
+"n": "ostrovy-nad-prahou",
+"c": "18"
+}
+},
+{
+"id": "pr-vysehrad",
+"nombre": "Vyšehrad",
+"cat": "monumento",
+"x": -236,
+"y": -2569,
+"modelo": "vysehrad",
+"desc": "La vieja fortaleza sobre la roca del Moldava, con la basílica de San Pedro y San Pablo y la leyenda de la princesa Libuše, que fundó Praga. En «Ostrovy nad Prahou» la cuarta cadena baja al sur, a Vyšehrad. En la Faderpedia de Luis aparece la leyenda: Černoboh, que no tiene corazón, quería el corazón de piedra de Praga, y Libuše lo venció con una canción y le cerró las puertas del subsuelo. Sus profecías, en la escritura de Libuše, aparecen bordadas con hilo de oro en la falda de Jana.",
+"nombre_ru": "Вышеград",
+"desc_ru": "Старая крепость на скале над Влтавой с базиликой святых Петра и Павла и легендой о княжне Либуше, основавшей Прагу. В «Ostrovy nad Prahou» четвёртая цепь уходит на юг, к Вышеграду. В Фадерпедии Луиса находится легенда: Чернобог, у которого нет сердца, хотел каменное сердце Праги, но Либуше победила его песней и закрыла перед ним врата подземья. Её пророчества, написанные её письмом, проступают золотыми стежками на Яниной юбке.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"3",
+"Ostrovy na nebi"
+],
+[
+"4",
+"Faderpedie"
+],
+[
+"8",
+"Praví strážci"
+],
+[
+"9",
+"Mimořádné zprávy"
+],
+[
+"10",
+"Pět Prah"
+],
+[
+"24",
+"Pátá Praha"
+]
+]
+}
+],
+"res": [
+{
+"a": "El Herrero",
+"ar": "Кузнец",
+"s": 5,
+"es": "Acá cantó la princesa Libuše y cerró las puertas. Nosotros, los permoníci, todavía nos acordamos de la canción. Los de arriba, no tanto.",
+"ru": "Здесь пела княжна Либуше и закрыла врата. Мы, пермоники, до сих пор помним ту песню. Те, что наверху, — не очень."
+}
+]
+},
+{
+"id": "pr-zizkov",
+"nombre": "Torre de televisión de Žižkov",
+"cat": "monumento",
+"x": 2128,
+"y": -734,
+"modelo": "zizkov",
+"desc": "La torre gris de 216 metros que se levanta sobre Žižkov «como un cohete que nunca despegó». En «Ostrovy nad Prahou» la quinta cadena baja lejos, al este, hasta la torre. En «Předtucha» es «los ojos y los oídos» de la Potencia Central en Praga: Luis, Lucie, Jana y Vojta llegan por el túnel del metro, Lucie cruza colgada de un cable mojado a seis pisos de altura y suben 986 escalones hasta la sala de transmisión, donde Kazimír tiene a Vojta con un cuchillo en el cuello y a la pequeña Anička cantando con el suéter de su hermano. Jana se baja de la torre las listas de los salvajes.",
+"nombre_ru": "Жижковская телебашня",
+"desc_ru": "216-метровая серая башня, которая поднимается над Жижковом «как огромная ракета, так и не взлетевшая». В «Ostrovy nad Prahou» пятая цепь уходит далеко на восток, к башне. В «Předtucha» это «глаза и уши» Центральной державы в Праге: Луис, Люция, Яна и Войта приходят туннелем метро, Люция перебирается по мокрому кабелю на высоте шести этажей, и они поднимаются на 986 ступенек в вещательный зал, где Казимир держит нож у горла Войты, а маленькая Аничка поёт в свитере брата. Яна скачивает с башни списки дикарей.",
+"apar": [
+{
+"n": "predtucha",
+"c": [
+[
+"7",
+"Červený šátek"
+],
+[
+"14",
+"Vojta"
+],
+[
+"19",
+"Žižkovská věž"
+],
+[
+"20",
+"Anička"
+],
+[
+"25",
+"Obležení"
+],
+[
+"30",
+"Ráno po bitvě"
+],
+[
+"extra-2",
+"Janin deník"
+]
+]
+},
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"3",
+"Ostrovy na nebi"
+],
+[
+"9",
+"Mimořádné zprávy"
+],
+[
+"15",
+"Peking"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lucie",
+"ar": "Люция",
+"s": 4,
+"es": "986 escalones. Los conté yo, en voz alta. ¿Por qué nunca es en planta baja?",
+"ru": "986 ступенек. Я считала их сама, вслух. Почему никогда не бывает на первом этаже?"
+},
+{
+"a": "Anička",
+"ar": "Аничка",
+"s": 5,
+"es": "Me hicieron cantar. Después vino mi hermano y la gente de la fortaleza. El suéter verde me llega hasta las rodillas y no me lo saco.",
+"ru": "Меня заставляли петь. Потом пришёл брат и люди из крепости. Зелёный свитер мне до колен, и я его не снимаю."
+}
+]
+},
+{
+"id": "pr-kampa",
+"nombre": "Kampa: la puerta de hierro bajo el puente",
+"cat": "misterio",
+"x": -893,
+"y": -178,
+"modelo": "ninguno",
+"desc": "La isla de Kampa, al pie del Puente de Carlos, separada de Malá Strana por la Čertovka. En «Ostrovy nad Prahou», en un viejo muro de piedra bajo el puente, detrás de la hiedra, hay una puertita de hierro: por ahí bajan Luis y Jana por primera vez al subsuelo, con la linterna que Lucie le dejó a su «guardiana del subsuelo». En Kampa hay también un pozo con su vodník, y el día del final las islas bajan tan cerca que parecen tocar las torres del puente. En el epílogo un joven en un banco de Kampa le regala a Luis el anillo que nunca alcanzó a darle a Kateřina.",
+"nombre_ru": "Кампа: железная дверь под мостом",
+"desc_ru": "Остров Кампа у подножия Карлова моста, отделённый от Малой Страны Чертовкой. В «Ostrovy nad Prahou» в старой каменной стене под мостом, за плющом, есть маленькая железная дверь: через неё Луис и Яна впервые спускаются в подземье с фонариком, который Люция оставила своей «хранительнице подземья». На Кампе есть и колодец со своим водяным, а в день развязки острова опускаются так низко, что почти касаются башен моста. В эпилоге юноша на скамейке на Кампе дарит Луису кольцо, которое так и не успел подарить Катержине.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"6",
+"Teplo v podzemí"
+],
+[
+"18",
+"Vran a houslistka"
+],
+[
+"22",
+"Návrat do tmy"
+],
+[
+"25",
+"Chléb a sůl"
+],
+[
+"27",
+"Černoboh přichází"
+],
+[
+"28",
+"Tyrkysová lampa"
+],
+[
+"extra-1",
+"Za rok, na tomhle místě"
+],
+[
+"extra-2",
+"Test: Pravda, nebo lež?"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 4,
+"es": "Una puertita de hierro detrás de la hiedra, debajo del puente. Si no sabés que está, no la ves. Si sabés, ya no podés dejar de verla.",
+"ru": "Маленькая железная дверь за плющом под мостом. Если не знаешь о ней — не увидишь. Если знаешь — уже не можешь не видеть."
+},
+{
+"a": "Kamínek",
+"ar": "Камушек",
+"s": 5,
+"es": "Me cantaron una canción de cuna. Después, todo el subsuelo lo vio. Todo el subsuelo lo sintió.",
+"ru": "Мне спели колыбельную. Потом всё подземье это видело. Всё подземье это чувствовало."
+}
+],
+"img": {
+"src": "img/lugares/pr-kampa.webp",
+"n": "ostrovy-nad-prahou",
+"c": "6"
+}
+},
+{
+"id": "pr-byt-jany",
+"nombre": "El departamento de Jana (Malá Strana)",
+"cat": "casa",
+"x": -1496,
+"y": -39,
+"modelo": "casa",
+"desc": "Ubicación aproximada: la novela solo dice que Jana vive en Malá Strana, en un departamentito bajo el techo de una casa vieja, con el Castillo y las estrellas en la ventana. En «Podzemní tajemství» Jana saca del armario que huele a lavanda la falda bordó que su madre bordó durante un año, con tulipanes, acianos, espigas, pajaritos, un gran corazón rojo y una línea de notas: la mitad de una melodía que Luis compuso a los dieciocho años. Ahí se dan el primer beso, y ahí, la noche de los violines, un tulipán de la falda se enciende en la oscuridad. En «Ostrovy nad Prahou» desde la misma ventana ven la primera isla. En «La reina de la Vendimia», con Praga nevada, Luis atiende a las tres de la mañana la llamada de Ferrer y decide mentirle a Jana por primera vez; entre las hojas de su cuaderno ella encuentra la foto del gigante en Belgrado.",
+"nombre_ru": "Квартира Яны (Мала-Страна)",
+"desc_ru": "Местоположение приблизительное: в романе сказано только, что Яна живёт на Малой Стране, в маленькой квартирке под крышей старого дома, с Градом и звёздами в окне. В «Podzemní tajemství» Яна достаёт из пахнущего лавандой шкафа бордовую юбку, которую мама вышивала целый год: тюльпаны, васильки, колосья, птички, большое красное сердце и линия нот — половина мелодии, которую Луис написал в восемнадцать лет. Здесь их первый поцелуй, и здесь в ночь скрипок тюльпан на юбке загорается в темноте. В «Ostrovy nad Prahou» из того же окна они видят первый остров. В «Королеве Вендимии», в заснеженной Праге, Луис в три часа ночи отвечает на звонок Феррера и решает впервые солгать Яне, а она находит между страницами его тетради фото великана в Белграде.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"1",
+"Praga con nieve"
+],
+[
+"2",
+"La foto del gigante"
+],
+[
+"49",
+"Praga sin nieve"
+]
+]
+},
+{
+"n": "podzemni-tajemstvi",
+"c": [
+[
+"2",
+"Krátká sukně"
+],
+[
+"3",
+"Bordó sukně"
+],
+[
+"7",
+"Noc u Jany"
+]
+]
+},
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"2",
+"Noc u Vltavy"
+],
+[
+"4",
+"Faderpedie"
+],
+[
+"5",
+"Chvění pod zemí"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"1",
+"Praha se sněhem"
+],
+[
+"2",
+"Fotka obra"
+]
+]
+}
+],
+"res": [
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "Chiquito, bajo el techo, con el Castillo en la ventana. En el armario huele a lavanda y vive la falda de mi mamá. Descansa.",
+"ru": "Маленькая, под крышей, с Градом в окне. В шкафу пахнет лавандой и живёт мамина юбка. Отдыхает."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 4,
+"es": "Acá aprendí a decir «te quiero» en checo. Acá también mentí por primera vez. De lo primero estoy orgulloso.",
+"ru": "Здесь я научился говорить «люблю» по-чешски. Здесь же я впервые солгал. Первым я горжусь."
+}
+],
+"img": {
+"src": "img/lugares/pr-byt-jany.webp",
+"n": "ostrovy-nad-prahou",
+"c": "8"
+}
+},
+{
+"id": "pr-pekarna",
+"nombre": "La panadería de la esquina",
+"cat": "restaurante",
+"x": -1393,
+"y": -78,
+"modelo": "ninguno",
+"desc": "Una panadería de Malá Strana que no tiene nombre en la novela; el marcador va cerca de la casa de Jana. En «Ostrovy nad Prahou» Jana baja a las ocho a comprar rohlíky, sale a la calle con olor a pan, da tres pasos, levanta la cabeza… y ve las islas: cinco islas de piedra y tierra con árboles, cascadas y castillos negros, flotando sobre los techos, y de cada una una cadena gruesa clavada en la ciudad. Los tranvías se paran en medio de la calle y la ciudad entera suena a metal.",
+"nombre_ru": "Пекарня на углу",
+"desc_ru": "Пекарня на Малой Стране, у которой в романе нет названия; метка стоит рядом с домом Яны. В «Ostrovy nad Prahou» Яна в восемь утра спускается за рогаликами, выходит на улицу, где пахнет хлебом, делает три шага, поднимает голову… и видит острова: пять островов из камня и земли с деревьями, водопадами и чёрными замками, висящих над крышами, и с каждого спускается толстая цепь, вбитая в город. Трамваи останавливаются посреди улицы, и весь город звенит металлом.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"3",
+"Ostrovy na nebi"
+],
+[
+"4",
+"Faderpedie"
+],
+[
+"5",
+"Chvění pod zemí"
+],
+[
+"7",
+"Ruce ve tmě"
+],
+[
+"extra-2",
+"Test: Pravda, nebo lež?"
+]
+]
+}
+],
+"res": [
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 4,
+"es": "Los rohlíky, como siempre, riquísimos. Salí con la bolsa, levanté la cabeza y había cinco castillos negros colgando del cielo. Los rohlíky se me cayeron.",
+"ru": "Рогалики, как всегда, отличные. Вышла с пакетом, подняла голову — а с неба свисают пять чёрных замков. Рогалики я уронила."
+}
+],
+"img": {
+"src": "img/lugares/pr-pekarna.webp",
+"n": "ostrovy-nad-prahou",
+"c": "3"
+}
+},
+{
+"id": "pr-malostranske",
+"nombre": "Plaza de Malá Strana y San Nicolás",
+"cat": "plaza",
+"x": -1271,
+"y": 61,
+"modelo": "mikulas",
+"desc": "La plaza de Malá Strana bajo la cúpula verde de San Nicolás. En «Ostrovy nad Prahou» Lindsey y Vanessa, libres de Ludmila, tocan acá el violín para los turistas, que les dejan más plata que a todos los demás músicos. La mañana de las islas la plaza es un caos: un hombre en piyama con un paraguas para taparse de las islas, una chica que llora en la escalinata de la iglesia, un policía que no sabe qué hacer. La última noche un nene empieza a cantar, después su mamá y después la plaza entera, y la canción sube hasta la isla de Petřín.",
+"nombre_ru": "Малостранская площадь и костёл Святого Микулаша",
+"desc_ru": "Площадь Малой Страны под зелёным куполом костёла Святого Микулаша. В «Ostrovy nad Prahou» Линдси и Ванесса, освободившись от Людмилы, играют здесь на скрипках для туристов, и те дают им больше денег, чем всем остальным музыкантам. Утром, когда появляются острова, на площади хаос: мужчина в пижаме с зонтиком, чтобы прятаться от островов, девушка плачет на ступенях костёла, полицейский не знает, что делать. В последнюю ночь начинает петь маленький мальчик, потом его мама, потом вся площадь, и песня поднимается до острова над Петршином.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"2",
+"Noc u Vltavy"
+],
+[
+"3",
+"Ostrovy na nebi"
+],
+[
+"5",
+"Chvění pod zemí"
+],
+[
+"7",
+"Ruce ve tmě"
+],
+[
+"12",
+"Sestry"
+],
+[
+"18",
+"Vran a houslistka"
+],
+[
+"28",
+"Tyrkysová lampa"
+],
+[
+"29",
+"Záchrana"
+],
+[
+"extra-1",
+"Za rok, na tomhle místě"
+]
+]
+}
+],
+"res": [
+{
+"a": "Vanessa",
+"ar": "Ванесса",
+"s": 5,
+"es": "Tocamos Mozart para los turistas por monedas, y los turistas nos dan más que a nadie. Somos libres. Eso suena distinto.",
+"ru": "Мы играем туристам Моцарта за мелочь, и нам дают больше, чем всем. Мы свободны. Это звучит иначе."
+},
+{
+"a": "Un vecino en piyama",
+"ar": "Сосед в пижаме",
+"s": 2,
+"es": "Salí con el paraguas para taparme de las islas. No sirvió de nada, pero me sentí mejor.",
+"ru": "Вышел с зонтиком, чтобы прятаться от островов. Не помогло, но стало легче."
+}
+],
+"img": {
+"src": "img/lugares/pr-malostranske.webp",
+"n": "ostrovy-nad-prahou",
+"c": "12"
+}
+},
+{
+"id": "pr-tri-housliky",
+"nombre": "Casa «U Tří housliček» (Nerudova)",
+"cat": "casa",
+"x": -1368,
+"y": 106,
+"modelo": "ninguno",
+"desc": "La casa de los Tres Violines, en la calle Nerudova, que bajo de Hradčany a Malá Strana: en el siglo XVII vivía ahí una familia de luthiers. En «Ostrovy nad Prahou» las gemelas viven en la buhardilla. Ahí Vanessa afina el violín mientras Vran, el sirviente de Černoboh, mira las cadenas por la ventana; ahí después queda encerrada y trata de abrir la cerradura con una horquilla para salir corriendo hacia la estación.",
+"nombre_ru": "Дом «У трёх скрипочек» (Нерудова)",
+"desc_ru": "Дом «У трёх скрипочек» на улице Нерудова, спускающейся с Градчан на Малую Страну: в XVII веке здесь жила семья скрипичных мастеров. В «Ostrovy nad Prahou» близнецы живут в мансарде. Здесь Ванесса настраивает скрипку, пока Вран, слуга Чернобога, смотрит в окно на цепи; здесь же её потом запирают, и она пытается открыть замок шпилькой, чтобы бежать к вокзалу.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"11",
+"Rada první Prahy"
+],
+[
+"12",
+"Sestry"
+],
+[
+"18",
+"Vran a houslistka"
+]
+]
+}
+],
+"res": [
+{
+"a": "Vanessa",
+"ar": "Ванесса",
+"s": 3,
+"es": "Buhardilla con vista a las cadenas. La cerradura se abre con una horquilla si tenés paciencia. Yo no tenía.",
+"ru": "Мансарда с видом на цепи. Замок открывается шпилькой, если есть терпение. У меня его не было."
+}
+]
+},
+{
+"id": "pr-restaurace",
+"nombre": "El restaurante junto al Moldava",
+"cat": "restaurante",
+"x": -607,
+"y": -412,
+"modelo": "ninguno",
+"desc": "Un restaurante chico, sin nombre en la novela, «justo sobre el agua», con una terraza con velas desde la que se ven el Puente de Carlos y, arriba, el Castillo. En «Ostrovy nad Prahou» Luis le compra a Jana una sola rosa roja en el muelle («porque vos también sos una sola») y la invita a cenar: pato con chucrut y knedlíky para ella, svíčková para él, «la comida más pesada de toda Praga». Ahí Jana le pregunta si se va a quedar en Praga para siempre, y Luis, que toda la vida siguió viaje, le contesta que ya no quiere irse.",
+"nombre_ru": "Ресторан у Влтавы",
+"desc_ru": "Маленький ресторан без названия «прямо у воды», с террасой со свечами, откуда видны Карлов мост и над ним Град. В «Ostrovy nad Prahou» Луис покупает Яне на набережной одну красную розу («потому что ты тоже одна такая») и ведёт её ужинать: утка с капустой и кнедликами для неё, свичкова для него, «самая тяжёлая еда во всей Праге». Здесь Яна спрашивает, останется ли он в Праге навсегда, и Луис, который всю жизнь ехал дальше, отвечает, что больше не хочет уезжать.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"2",
+"Noc u Vltavy"
+]
+]
+}
+],
+"res": [
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "Una sola rosa, una vela, el puente y el Castillo. Pato con knedlíky. Él dijo que no quería irse. Yo no dije nada y le tomé la mano.",
+"ru": "Одна роза, одна свеча, мост и Град. Утка с кнедликами. Он сказал, что не хочет уезжать. Я ничего не сказала и взяла его за руку."
+},
+{
+"a": "El mozo",
+"ar": "Официант",
+"s": 4,
+"es": "Les di la mesa del borde, al lado del río. Pidieron lo más pesado de la carta. Se quedaron hasta que apagamos las velas.",
+"ru": "Я дал им столик с краю, у самой реки. Заказали самое тяжёлое из меню. Сидели, пока мы не погасили свечи."
+}
+],
+"img": {
+"src": "img/lugares/pr-restaurace.webp",
+"n": "ostrovy-nad-prahou",
+"c": "2"
+}
+},
+{
+"id": "pr-kavarna",
+"nombre": "El café de la Ciudad Vieja",
+"cat": "restaurante",
+"x": -293,
+"y": -156,
+"modelo": "ninguno",
+"desc": "Un café chico de la Ciudad Vieja; la novela no le da nombre. En «Podzemní tajemství» Luis, recién llegado de Argentina, sin conocer a nadie y sin hablar checo, entra corriendo por la lluvia de septiembre. Junto a la ventana hay una chica de pelo oscuro y falda roja corta. «Perdón, ¿cómo se dice café en checo?» «Káva.» Ahí conoce a Jana, a Lucie y a Mark, y nace la idea del concierto en el subsuelo. Una semana después vuelven a la misma mesa, y Luis aprende la frase más importante del checo: «Miluju tě».",
+"nombre_ru": "Кафе в Старом городе",
+"desc_ru": "Маленькое кафе в Старом городе; в романе у него нет названия. В «Podzemní tajemství» Луис, только что приехавший из Аргентины, никого не знающий и не говорящий по-чешски, забегает сюда от сентябрьского дождя. У окна сидит темноволосая девушка в короткой красной юбке. «Простите, как по-чешски café?» — «Káva». Здесь он знакомится с Яной, Люцией и Марком, и рождается идея концерта под землёй. Через неделю они снова садятся за тот же столик, и Луис учит самую важную фразу на чешском: «Miluju tě».",
+"apar": [
+{
+"n": "podzemni-tajemstvi",
+"c": [
+[
+"1",
+"Káva"
+],
+[
+"extra-2",
+"Nejdůležitější věta"
+],
+[
+"extra-3",
+"Závěrečný test"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Entré escapando de la lluvia y pregunté cómo se dice café en checo. «Káva.» Me quedé en Praga.",
+"ru": "Забежал от дождя и спросил, как по-чешски café. «Káva». Я остался в Праге."
+},
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "La misma mesa junto a la ventana, una semana después. Le enseñé la frase más importante del checo.",
+"ru": "Тот же столик у окна, через неделю. Я научила его самой важной фразе на чешском."
+}
+]
+},
+{
+"id": "pr-sklep",
+"nombre": "La puerta al subsuelo y la sala del concierto",
+"cat": "misterio",
+"x": -107,
+"y": -195,
+"modelo": "ninguno",
+"desc": "En la Ciudad Vieja, una puertita en una casa vieja que Lucie abre con una llave grande: detrás, escalones de piedra, oscuridad y frío. Debajo de Praga «hay otra Praga», de sótanos, pasillos y salas. En «Podzemní tajemství» Lucie no deja bajar a Jana con falda corta («el subsuelo tiene reglas viejas»), y por eso aparece la falda bordó. En la gran sala con velas Luis toca su canción sobre Praga, la tierra tiembla y por una puerta en la pared salen diez guerreros medievales con armadura, que miran hacia el castillo y se van. En el mismo sótano se reúnen los cuatro para salvar la ciudad.",
+"nombre_ru": "Дверь в подземье и зал концерта",
+"desc_ru": "В Старом городе — маленькая дверь в старом доме, которую Люция открывает большим ключом: за ней каменные ступени, темнота и холод. Под Прагой «есть вторая Прага» из подвалов, коридоров и залов. В «Podzemní tajemství» Люция не пускает Яну вниз в короткой юбке («у подземья старые правила»), и поэтому появляется бордовая юбка. В большом зале со свечами Луис играет свою песню о Праге, земля дрожит, и из двери в стене выходят десять средневековых воинов в доспехах, смотрят в сторону замка и уходят. В том же подвале все четверо собираются спасать город.",
+"apar": [
+{
+"n": "podzemni-tajemstvi",
+"c": [
+[
+"1",
+"Káva"
+],
+[
+"2",
+"Krátká sukně"
+],
+[
+"3",
+"Bordó sukně"
+],
+[
+"4",
+"Koncert v podzemí"
+],
+[
+"5",
+"Princezna z hradu"
+],
+[
+"6",
+"Mark a Lucie"
+],
+[
+"8",
+"Praha patří princezně"
+],
+[
+"9",
+"Píseň samoty"
+],
+[
+"10",
+"Rituál"
+],
+[
+"11",
+"Strážce podzemí"
+],
+[
+"extra-1",
+"Seznam postav"
+],
+[
+"extra-3",
+"Závěrečný test"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lucie",
+"ar": "Люция",
+"s": 4,
+"es": "El subsuelo tiene reglas viejas. Con falda corta no se baja. Jana se enojó; después me dio la razón. La acústica, perfecta.",
+"ru": "У подземья старые правила. В короткой юбке вниз нельзя. Яна обиделась, потом признала, что я права. Акустика идеальная."
+},
+{
+"a": "Mark",
+"ar": "Марк",
+"s": 4,
+"es": "Concierto excelente hasta que salieron diez guerreros de la pared. Agarré a Lucie de la mano. No la solté. No la pienso soltar.",
+"ru": "Отличный концерт, пока из стены не вышли десять воинов. Я взял Люцию за руку. И не отпустил. И не собираюсь."
+}
+]
+},
+{
+"id": "pr-knihovna",
+"nombre": "La vieja biblioteca (Klementinum)",
+"cat": "edificio",
+"x": -379,
+"y": -100,
+"modelo": "ninguno",
+"desc": "La novela dice solo «la vieja biblioteca»; el marcador va al Klementinum, la gran biblioteca barroca de la Ciudad Vieja. En «Podzemní tajemství» Lucie se sube a una escalera para buscar un libro viejo sobre el subsuelo de Praga, se cae directo en los brazos de Mark («¿Siempre me vas a atajar?» «Siempre»), y lee la leyenda de la princesa Ludmila y del príncipe Luboš: solo la música del amor y un bordado antiguo pueden parar sus violines. Mark mira sus fotos de la falda y descubre que las líneas son notas. Entre libros, sol y polvo, se dan el primer beso.",
+"nombre_ru": "Старая библиотека (Клементинум)",
+"desc_ru": "В романе сказано только «старая библиотека»; метка стоит у Клементинума, большой барочной библиотеки Старого города. В «Podzemní tajemství» Люция лезет по стремянке за старой книгой о пражском подземье, падает прямо в руки Марку («Ты всегда меня поймаешь?» — «Всегда») и читает легенду о княжне Людмиле и князе Лубоше: остановить её скрипки могут только музыка любви и старинная вышивка. Марк смотрит свои фотографии юбки и понимает, что линии — это ноты. Среди книг, солнца и пыли они впервые целуются.",
+"apar": [
+{
+"n": "podzemni-tajemstvi",
+"c": [
+[
+"6",
+"Mark a Lucie"
+],
+[
+"extra-3",
+"Závěrečný test"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lucie",
+"ar": "Люция",
+"s": 5,
+"es": "Me caí de la escalera directo en los brazos de Mark. El libro estaba en el estante de arriba. Valió la pena subir.",
+"ru": "Я упала со стремянки прямо в руки Марку. Книга стояла на верхней полке. Стоило лезть."
+}
+]
+},
+{
+"id": "pr-srdce",
+"nombre": "El corazón de Praga",
+"cat": "misterio",
+"x": -307,
+"y": -311,
+"modelo": "ninguno",
+"desc": "El corazón de piedra de la ciudad, en lo más hondo del subsuelo; el marcador es simbólico. En «Podzemní tajemství» es una sala enorme con un corazón de piedra gris que no late: ahí Ludmila quiere que Jana se saque la falda, hasta que el techo se abre y cae volando la Škoda de Mark. En «Ostrovy nad Prahou» está debajo de las cinco Pragas, en el fondo del mundo: un valle bajo tierra con árboles de piedra caliza, arroyos silenciosos y miles de huellas de manos en las paredes. Ahí llegan las cinco cadenas, y Jana sostiene el corazón con la linterna que calienta «como la mano de mamá». Al final el corazón vuelve a latir, y Lucie y Mark encuentran a Luis y Jana dormidos debajo, tapados con la falda bordó.",
+"nombre_ru": "Сердце Праги",
+"desc_ru": "Каменное сердце города в самой глубине подземья; метка символическая. В «Podzemní tajemství» это огромный зал с серым каменным сердцем, которое не бьётся: здесь Людмила хочет, чтобы Яна сняла юбку, пока не раскалывается потолок и сверху не влетает «Шкода» Марка. В «Ostrovy nad Prahou» оно лежит под пятью Прагами, на дне мира: подземная долина с деревьями из известняка, беззвучными ручьями и тысячами отпечатков ладоней на стенах. Сюда сходятся пять цепей, и Яна держит сердце, а фонарь греет её «как мамина рука». В конце сердце снова бьётся, и Люция с Марком находят Луиса и Яну спящими под ним, укрытыми бордовой юбкой.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"4",
+"Faderpedie"
+],
+[
+"5",
+"Chvění pod zemí"
+],
+[
+"6",
+"Teplo v podzemí"
+],
+[
+"7",
+"Ruce ve tmě"
+],
+[
+"8",
+"Praví strážci"
+],
+[
+"10",
+"Pět Prah"
+],
+[
+"12",
+"Sestry"
+],
+[
+"24",
+"Pátá Praha"
+],
+[
+"26",
+"Detektivní nos"
+],
+[
+"27",
+"Černoboh přichází"
+],
+[
+"28",
+"Tyrkysová lampa"
+],
+[
+"29",
+"Záchrana"
+],
+[
+"30",
+"Srdce Prahy"
+],
+[
+"extra-1",
+"Za rok, na tomhle místě"
+],
+[
+"extra-2",
+"Test: Pravda, nebo lež?"
+]
+]
+},
+{
+"n": "podzemni-tajemstvi",
+"c": [
+[
+"10",
+"Rituál"
+],
+[
+"12",
+"Bitva v srdci podzemí"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"2",
+"Fotka obra"
+]
+]
+}
+],
+"res": [
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 5,
+"es": "Al fondo del mundo hay árboles de piedra que florecen y miles de manos en las paredes. Ahí abajo late Praga. Bum.",
+"ru": "На дне мира есть каменные деревья, которые цветут, и тысячи ладоней на стенах. Там внизу бьётся Прага. Бум."
+},
+{
+"a": "Mark",
+"ar": "Марк",
+"s": 5,
+"es": "Los encontramos dormidos debajo del corazón. Quise sacar una foto. Lucie dijo que no. Tenía razón: eso no es para el archivo.",
+"ru": "Мы нашли их спящими под сердцем. Я хотел сфотографировать. Люция сказала «нет». Она права: это не для архива."
+}
+],
+"img": {
+"src": "img/lugares/pr-srdce.webp",
+"n": "ostrovy-nad-prahou",
+"c": "30"
+}
+},
+{
+"id": "pr-zelezny-muz",
+"nombre": "El Hombre de Hierro (calle Platnéřská)",
+"cat": "monumento",
+"x": -279,
+"y": -44,
+"modelo": "ninguno",
+"desc": "En la esquina de la calle Platnéřská hay de verdad una estatua de un caballero de hierro, y la leyenda praguense dice que es el fantasma de un hombre que mató a su novia por celos. En «Ostrovy nad Prahou» el Herrero, el permoník más viejo, cuenta que «arriba, en la calle Platnéřská, hay una estatua en una casa: el Hombre de Hierro». Abajo, en la segunda Praga, Jana lo encuentra de verdad: el caballero que creyó una mentira y mató a su prometida Kateřina. Cuando por fin baja la espada y dice un nombre, queda libre; el anillo que había comprado para ella termina en el dedo de Jana.",
+"nombre_ru": "Железный человек (улица Платнержска)",
+"desc_ru": "На углу улицы Платнержска действительно стоит статуя железного рыцаря, и пражская легенда говорит, что это призрак человека, убившего невесту из ревности. В «Ostrovy nad Prahou» Кузнец, самый старый из пермоников, рассказывает: «Наверху, на улице Платнержска, на доме есть статуя — Железный человек». Внизу, во второй Праге, Яна встречает его на самом деле: рыцаря, который поверил лжи и убил свою невесту Катержину. Когда он наконец опускает меч и произносит одно имя, он свободен, а кольцо, купленное для неё, оказывается на пальце Яны.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"13",
+"Ztracené ulice"
+],
+[
+"14",
+"Železný rytíř"
+],
+[
+"20",
+"Důkaz"
+],
+[
+"24",
+"Pátá Praha"
+],
+[
+"26",
+"Detektivní nos"
+],
+[
+"30",
+"Srdce Prahy"
+],
+[
+"extra-1",
+"Za rok, na tomhle místě"
+],
+[
+"extra-2",
+"Test: Pravda, nebo lež?"
+]
+]
+}
+],
+"res": [
+{
+"a": "El caballero de hierro",
+"ar": "Железный рыцарь",
+"s": 4,
+"es": "Setecientos años creí una mentira. Una muchacha con una falda bordó me hizo bajar la espada. El anillo de Kateřina por fin lo lleva alguien.",
+"ru": "Семьсот лет я верил лжи. Девушка в бордовой юбке заставила меня опустить меч. Кольцо Катержины наконец кто-то носит."
+}
+]
+},
+{
+"id": "pr-karlovy-lazne",
+"nombre": "Karlovy lázně",
+"cat": "edificio",
+"x": -536,
+"y": -222,
+"modelo": "ninguno",
+"desc": "El viejo edificio de baños junto al Puente de Carlos, en la orilla de la Ciudad Vieja. En «Ostrovy nad Prahou» el río subterráneo, «el río debajo del río», lleva hasta acá: «antes había baños de verdad; la gente se bañaba en agua caliente y creía que era agua común». En la barca del barquero, Jana mira la brújula y la aguja apunta al corazón.",
+"nombre_ru": "Карловы бани (Karlovy lázně)",
+"desc_ru": "Старое здание бань у Карлова моста на староместском берегу. В «Ostrovy nad Prahou» сюда ведёт подземная река, «река под рекой»: «Когда-то здесь были настоящие бани; люди купались в тёплой воде и думали, что это обычная вода». В лодке перевозчика Яна смотрит на компас, и стрелка указывает на сердце.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"16",
+"Řeka pod řekou"
+]
+]
+}
+],
+"res": [
+{
+"a": "El barquero",
+"ar": "Перевозчик",
+"s": 4,
+"es": "La gente se bañaba en agua caliente y creía que era agua común. Abajo corre la hermana mayor del Moldava. Llevo pasajeros desde siempre.",
+"ru": "Люди купались в тёплой воде и думали, что это обычная вода. Внизу течёт старшая сестра Влтавы. Я вожу пассажиров с незапамятных времён."
+}
+],
+"img": {
+"src": "img/lugares/pr-karlovy-lazne.webp",
+"n": "ostrovy-nad-prahou",
+"c": "16"
+}
+},
+{
+"id": "pr-hlavni-nadrazi",
+"nombre": "Estación Central (Hlavní nádraží)",
+"cat": "edificio",
+"x": 1000,
+"y": -489,
+"modelo": "ninguno",
+"desc": "La estación principal de Praga. En «Ostrovy nad Prahou», con la ciudad sin luz y los tranvías parados, a la estación llegan voluntarios con mantas y comida y salen trenes con gente hacia Viena. Lucie y Mark, que vuelven de Pekín, no pueden llegar en avión: el tren desde Viena se detiene en Úvaly y caminan hasta la Estación Central, donde Lucie pasa la noche esperando. Vanessa corre hacia acá para encontrarla.",
+"nombre_ru": "Главный вокзал (Главни-надражи)",
+"desc_ru": "Главный вокзал Праги. В «Ostrovy nad Prahou», когда город без света и трамваи стоят, на вокзал приходят добровольцы с одеялами и едой, а поезда увозят людей в Вену. Люция и Марк возвращаются из Пекина, но самолётом добраться не могут: поезд из Вены останавливается в Увалах, и они пешком доходят до Главного вокзала, где Люция ждёт всю ночь. Ванесса бежит сюда, чтобы найти её.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"9",
+"Mimořádné zprávy"
+],
+[
+"18",
+"Vran a houslistka"
+],
+[
+"22",
+"Návrat do tmy"
+],
+[
+"25",
+"Chléb a sůl"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lucie",
+"ar": "Люция",
+"s": 4,
+"es": "El tren desde Viena se paró en Úvaly y caminamos. Pasé la noche esperando en la estación. Los voluntarios me dieron un pan envuelto en una servilleta. Lo guardé.",
+"ru": "Поезд из Вены встал в Увалах, и мы пошли пешком. Я всю ночь ждала на вокзале. Добровольцы дали мне хлеб в салфетке. Я его сохранила."
+}
+]
+},
+{
+"id": "pr-byt-lucie",
+"nombre": "El departamento de Lucie y Mark (Vinohrady)",
+"cat": "casa",
+"x": 1336,
+"y": -1279,
+"modelo": "casa",
+"desc": "Ubicación aproximada en Vinohrady: un departamento lleno de cajas que nunca terminan de desarmar y de fotos de la Gran Muralla China. En «La reina de la Vendimia», con la foto del gigante en la mano, Jana viene un domingo a contarles todo. Lucie prepara té, Mark escucha sin interrumpir y le da su cuaderno negro de detective con sus reglas; con eso Jana cruza medio mundo, se tiñe de rubia y se convierte en Yanina. Cuando vuelve a Praga en marzo, después de treinta y una horas de aeropuertos, la primera visita es otra vez acá.",
+"nombre_ru": "Квартира Люции и Марка (Винограды)",
+"desc_ru": "Местоположение приблизительное, Винограды: квартира, полная коробок, которые так и не разобрали, и фотографий с Великой Китайской стены. В «Королеве Вендимии» Яна с фото великана в руках приходит сюда в воскресенье и всё рассказывает. Люция заваривает чай, Марк слушает, не перебивая, и отдаёт ей свою чёрную тетрадь детектива с правилами; с ней Яна пересекает полмира, перекрашивается в блондинку и становится Яниной. Когда в марте, после тридцати одного часа аэропортов, она возвращается в Прагу, первым делом снова приходит сюда.",
+"apar": [
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"2",
+"La foto del gigante"
+],
+[
+"49",
+"Praga sin nieve"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"2",
+"Fotka obra"
+]
+]
+}
+],
+"res": [
+{
+"a": "Mark",
+"ar": "Марк",
+"s": 4,
+"es": "Cajas sin desarmar y fotos de la Muralla China. Acá le di a Jana mi cuaderno negro. Regla número uno: no confíes en las casualidades.",
+"ru": "Неразобранные коробки и фото Великой стены. Здесь я отдал Яне свою чёрную тетрадь. Правило номер один: не верь совпадениям."
+},
+{
+"a": "Lucie",
+"ar": "Люция",
+"s": 5,
+"es": "Jana vino con la foto de un gigante. Preparé té. Hay noches para el té y noches para el vino; esa era de té.",
+"ru": "Яна пришла с фотографией великана. Я заварила чай. Бывают вечера для чая и вечера для вина; тот был для чая."
+}
+]
+},
+{
+"id": "pr-vinohradska",
+"nombre": "Avenida Vinohradská",
+"cat": "calle",
+"x": 1907,
+"y": -1101,
+"modelo": "ninguno",
+"desc": "La gran avenida que sale de la plaza de Wenceslao hacia el este. En «Předtucha», en los años de la guerra, Lucie vio un tanque en Praga: «Iba por la Vinohradská y detrás no quedaba ni una casa entera». Años después, en la fortaleza, reconoce el ruido de los tanques de la Potencia Central antes que nadie.",
+"nombre_ru": "Виноградская улица",
+"desc_ru": "Большой проспект, идущий от Вацлавской площади на восток. В «Předtucha» в годы войны Люция видела танк в Праге: «Он ехал по Виноградской, и за ним не оставалось ни одного целого дома». Спустя годы, в крепости, она раньше всех узнаёт звук танков Центральной державы.",
+"apar": [
+{
+"n": "predtucha",
+"c": [
+[
+"31",
+"Ultimátum"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lucie",
+"ar": "Люция",
+"s": 2,
+"es": "Vi pasar un tanque por acá. Detrás no quedó una sola casa entera. Ese ruido lo reconozco en cualquier lado.",
+"ru": "Я видела, как здесь прошёл танк. За ним не осталось ни одного целого дома. Этот звук я узнаю где угодно."
+}
+]
+},
+{
+"id": "pr-zelivskeho",
+"nombre": "La entrada del metro Želivského",
+"cat": "misterio",
+"x": 3786,
+"y": -1001,
+"modelo": "ninguno",
+"desc": "Una estación de metro de la línea A, al este de Vinohrady. En «Předtucha» Lucie, que pasó tres años viviendo en los túneles del metro, los lleva por el terraplén de una vía abandonada hasta una entrada cubierta de maleza, bajo un cartel oxidado donde todavía se lee Želivského. De noche caminan por el túnel hasta debajo de Žižkov. Junto a un pilar de hormigón, Lucie se acuerda de cuando se escondió ahí con Luis de una patrulla, y Jana lo ve.",
+"nombre_ru": "Вход в метро «Желивского»",
+"desc_ru": "Станция метро линии A к востоку от Винограды. В «Předtucha» Люция, которая три года жила в туннелях метро, ведёт их по насыпи заброшенной ветки к заросшему входу под ржавой вывеской, на которой ещё можно прочитать «Želivského». Ночью они идут по туннелю до самого Жижкова. У бетонной опоры Люция вспоминает, как пряталась здесь с Луисом от патруля, и Яна это замечает.",
+"apar": [
+{
+"n": "predtucha",
+"c": [
+[
+"7",
+"Červený šátek"
+],
+[
+"15",
+"Zamčená místnost"
+],
+[
+"19",
+"Žižkovská věž"
+],
+[
+"27",
+"Janina vášeň"
+],
+[
+"extra-3",
+"Babiččina píseň"
+],
+[
+"extra-6",
+"Rozhovor s Janou, Lucií a Luisem"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lucie",
+"ar": "Люция",
+"s": 3,
+"es": "Tres años viví en estos túneles. Conozco Praga desde abajo mejor que nadie. Hay un pilar de hormigón que prefiero no tocar.",
+"ru": "Три года я жила в этих туннелях. Знаю Прагу снизу лучше всех. Есть одна бетонная опора, которую я стараюсь не трогать."
+}
+]
+},
+{
+"id": "pr-holesovice",
+"nombre": "La azotea de Holešovice",
+"cat": "casa",
+"x": 1407,
+"y": 1502,
+"modelo": "ninguno",
+"desc": "Ubicación aproximada en Holešovice, al norte del Moldava. En «Předtucha» es el recuerdo que Lucie no suelta: su primer verano con Luis, la azotea desde donde miraban arder toda la parte norte de Praga sin saber si iban a llegar a la mañana. «Cuando te vi por primera vez, en esa azotea con los binoculares, pensé que eras un idiota creído.» También estuvieron en las trincheras de Holešovice; en la fortaleza, durante el asedio, la frase vuelve: «Como en Holešovice».",
+"nombre_ru": "Крыша в Голешовице",
+"desc_ru": "Местоположение приблизительное, Голешовице, к северу от Влтавы. В «Předtucha» это воспоминание, от которого Люция не может отказаться: их первое лето с Луисом и крыша, с которой они смотрели, как горит весь север Праги, не зная, доживут ли до утра. «Когда я впервые увидела тебя на той крыше с биноклем, я подумала, что ты самовлюблённый идиот». Были у них и окопы в Голешовице; в крепости, во время осады, фраза возвращается: «Как в Голешовице».",
+"apar": [
+{
+"n": "predtucha",
+"c": [
+[
+"7",
+"Červený šátek"
+],
+[
+"15",
+"Zamčená místnost"
+],
+[
+"23",
+"Vlčí kníže"
+],
+[
+"26",
+"Noc ohňů"
+],
+[
+"39",
+"Tři"
+],
+[
+"extra-6",
+"Rozhovor s Janou, Lucií a Luisem"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lucie",
+"ar": "Люция",
+"s": 5,
+"es": "Desde esta azotea vimos arder el norte de Praga. Él tenía binoculares y se creía muy listo. Era muy listo.",
+"ru": "С этой крыши мы смотрели, как горит север Праги. У него был бинокль, и он считал себя очень умным. Он и был очень умным."
+}
+]
+},
+{
+"id": "pr-smichov",
+"nombre": "La vieja cervecería de Smíchov",
+"cat": "edificio",
+"x": -1000,
+"y": -2113,
+"modelo": "ninguno",
+"desc": "La gran cervecería de Smíchov, en la orilla izquierda. En «Předtucha» Vojta confiesa que la Potencia Central tiene ahí un campamento «para los hijos de la gente que necesitan»: ahí tienen a su hermanita Anička, y Kazimír le mandó una foto de ella con su viejo suéter verde. Por ella Vojta traicionó a Utopía, y por ella Luis arma el plan que los lleva a la torre de Žižkov.",
+"nombre_ru": "Старая пивоварня на Смихове",
+"desc_ru": "Большая пивоварня на Смихове, на левом берегу. В «Předtucha» Войта признаётся, что у Центральной державы там лагерь «для детей тех людей, которые им нужны»: там держат его сестрёнку Аничку, и Казимир прислал ему её фото в его старом зелёном свитере. Ради неё Войта предал Утопию, и ради неё Луис придумывает план, который приводит их на Жижковскую башню.",
+"apar": [
+{
+"n": "predtucha",
+"c": [
+[
+"14",
+"Vojta"
+]
+]
+}
+],
+"res": [
+{
+"a": "Vojta",
+"ar": "Войта",
+"s": 1,
+"es": "Acá tenían a mi hermana. Hice cosas que no quiero recordar para recuperarla. Al final la recuperaron otros.",
+"ru": "Здесь держали мою сестру. Я делал то, о чём не хочу вспоминать, чтобы её вернуть. В итоге её вернули другие."
+}
+]
+},
+{
+"id": "pr-letiste",
+"nombre": "Aeropuerto Václav Havel",
+"cat": "edificio",
+"x": -11521,
+"y": 1479,
+"modelo": "ninguno",
+"desc": "El aeropuerto de Praga, al oeste de la ciudad. En «Ostrovy nad Prahou» todo empieza acá: Lucie y Mark se van de vacaciones a China, Lucie le deja a Jana su linterna vieja y la nombra guardiana del subsuelo, y desde la terraza mirador Jana ve en la baranda un cuervo grande que la mira con un brillo rojo… y desaparece. Después los aviones ya no pueden aterrizar en Praga. En «La reina de la Vendimia» de acá sale Luis hacia Mendoza, y acá vuelve Jana en marzo.",
+"nombre_ru": "Аэропорт имени Вацлава Гавела",
+"desc_ru": "Пражский аэропорт к западу от города. В «Ostrovy nad Prahou» всё начинается здесь: Люция и Марк улетают в отпуск в Китай, Люция оставляет Яне свой старый фонарик и называет её хранительницей подземья, а со смотровой террасы Яна видит на перилах большого ворона, который смотрит на неё с красным блеском в глазах… и исчезает. Потом самолёты уже не могут садиться в Праге. В «Королеве Вендимии» отсюда Луис улетает в Мендосу, и сюда в марте возвращается Яна.",
+"apar": [
+{
+"n": "ostrovy-nad-prahou",
+"c": [
+[
+"9",
+"Mimořádné zprávy"
+],
+[
+"11",
+"Rada první Prahy"
+],
+[
+"15",
+"Peking"
+]
+]
+},
+{
+"n": "la-reina-de-la-vendimia",
+"c": [
+[
+"2",
+"La foto del gigante"
+],
+[
+"49",
+"Praga sin nieve"
+]
+]
+},
+{
+"n": "kralovna-vinobrani",
+"c": [
+[
+"30",
+"Zlatá voda"
+]
+]
+}
+],
+"res": [
+{
+"a": "Jana",
+"ar": "Яна",
+"s": 3,
+"es": "Despedimos a Lucie y Mark desde la terraza. En la baranda se posó un cuervo con un brillo rojo en los ojos. Cuando Luis se dio vuelta, ya no estaba.",
+"ru": "Мы провожали Люцию и Марка с террасы. На перила сел ворон с красным блеском в глазах. Когда Луис обернулся, его уже не было."
+},
+{
+"a": "Mark",
+"ar": "Марк",
+"s": 4,
+"es": "Un detective sin café es como Praga sin puentes. El café del aeropuerto, aceptable. Volver, imposible: tuvimos que venir en tren.",
+"ru": "Детектив без кофе — как Прага без мостов. Кофе в аэропорту приемлемый. Вернуться самолётом — невозможно: пришлось ехать поездом."
+}
+],
+"img": {
+"src": "img/lugares/pr-letiste.webp",
+"n": "ostrovy-nad-prahou",
+"c": "1"
+}
+}
 ]
 };
 export const NOVELAS = {
-"lluvia-de-meteoritos": {
-"t": "Lluvia de meteoritos",
-"es": "Lluvia de meteoritos",
-"l": "es",
-"y": null,
-"ru": "Метеоритный дождь (исп.)",
-"p": "img/portadas/lluvia-de-meteoritos.webp",
-"tr": {
-"ru": "meteoritnyj-dozhd"
-}
-},
-"maschera-di-venezia": {
-"t": "Maschera di Venezia",
-"es": "La máscara de Venecia (it.)",
-"l": "it",
-"y": null,
-"ru": "Венецианская маска (ит.)",
-"p": "img/portadas/maschera-di-venezia.webp",
-"tr": {
-"ru": "venecianskaya-maska"
-}
-},
-"dikij-chas-2": {
-"t": "Дикий час: Духи гор",
-"es": "La hora salvaje: Los espíritus de la montaña",
-"l": "ru",
-"y": null,
-"ru": "Дикий час: Духи гор",
-"p": "img/portadas/dikij-chas-2.webp",
-"tr": {}
-},
-"prizrachnyj-poezd": {
-"t": "Призрачный поезд",
-"es": "El tren fantasma (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Призрачный поезд",
-"p": "img/portadas/prizrachnyj-poezd.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"it": "il-treno-fantasma"
-}
-},
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
-"l": "ru",
-"y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
-"tr": {
-"en": "the-date"
-}
-},
-"rezonans-lyubvi": {
-"t": "Резонанс любви",
-"es": "Resonancia del amor",
-"l": "ru",
-"y": null,
-"ru": "Резонанс любви",
-"p": "img/portadas/rezonans-lyubvi.webp",
-"tr": {}
-},
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Люблю тебя молча (ит.)",
-"p": "img/portadas/ti-amo-in-silenzio.webp",
-"tr": {
-"ru": "tikhaya-lyubov"
-}
-},
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
-"l": "ru",
-"y": 2026,
-"ru": "Алмазный дождь",
-"p": "img/portadas/almaznyj-dozhd.webp",
-"tr": {}
-},
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
-"l": "it",
-"y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
-"tr": {}
-},
-"divlji-chas-malbec": {
-"t": "Дивљи час: Љубав укуса малбека",
-"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
-"p": "img/portadas/divlji-chas-malbec.webp",
-"tr": {}
-},
-"27-ocak": {
-"t": "27 Ocak",
-"es": "27 de enero",
-"l": "tr",
-"y": 2026,
-"ru": "27 января",
-"p": "img/portadas/27-ocak.webp",
-"tr": {}
-},
-"golos": {
-"t": "Голос",
-"es": "La voz",
-"l": "ru",
-"y": 2026,
-"ru": "Голос",
-"p": "img/portadas/golos.webp",
-"tr": {
-"fr": "la-voix"
-}
-},
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
-"tr": {}
-},
-"divlji-chas": {
-"t": "Дивљи час",
-"es": "La hora salvaje (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час (серб.)",
-"p": "img/portadas/divlji-chas.webp",
-"tr": {
-"ru": "dikij-chas"
-}
-},
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
-"l": "ru",
-"y": 2026,
-"ru": "Карнавал Синеи",
-"p": "img/portadas/karnaval-sinei.webp",
-"tr": {}
-},
-"kralovna-vinobrani": {
-"t": "Královna vinobraní",
-"es": "La reina de la Vendimia (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Королева Вендимии (чеш.)",
-"p": "img/portadas/kralovna-vinobrani.webp",
-"tr": {
-"es": "la-reina-de-la-vendimia"
-}
-},
-"predchuvstvie-2-4": {
-"t": "Предчувствие 2.4",
-"es": "El presentimiento 2.4",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.4",
-"p": "img/portadas/predchuvstvie-2-4.webp",
-"tr": {}
-},
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
-"l": "ru",
-"y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
-"tr": {}
-},
-"znak": {
-"t": "Знак",
-"es": "El signo",
-"l": "ru",
-"y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
-"tr": {}
-},
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
-"l": "ru",
-"y": 2026,
-"ru": "Тихая любовь",
-"p": "img/portadas/tikhaya-lyubov.webp",
-"tr": {
-"it": "ti-amo-in-silenzio"
-}
-},
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
-},
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
-"l": "es",
-"y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
-"tr": {}
-},
-"la-reina-de-la-vendimia": {
-"t": "La reina de la Vendimia",
-"es": "La reina de la Vendimia",
-"l": "es",
-"y": 2026,
-"ru": "Королева Вендимии (исп.)",
-"p": "img/portadas/la-reina-de-la-vendimia.webp",
-"tr": {
-"cs": "kralovna-vinobrani"
-}
-},
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
-"l": "es",
-"y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
-"tr": {}
-},
-"ondas-de-amor": {
-"t": "Ondas de amor",
-"es": "Ondas de amor",
-"l": "es",
-"y": 2026,
-"ru": "Волны любви (исп.)",
-"p": "img/portadas/ondas-de-amor.webp",
-"tr": {
-"it": "onde-d-amore"
-}
-},
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви (ит.)",
-"p": "img/portadas/onde-d-amore.webp",
-"tr": {
-"es": "ondas-de-amor"
-}
-},
-"tajna-semi-fader": {
-"t": "Тайна семьи Фадер",
-"es": "El misterio de los Fader (ru.)",
-"l": "ru",
-"y": null,
-"ru": "Тайна семьи Фадер",
-"p": "img/portadas/tajna-semi-fader.webp",
-"tr": {
-"es": "el-misterio-de-los-fader"
-}
-},
 "la-citta-triste": {
 "t": "La città triste",
 "es": "La ciudad triste (it.)",
@@ -22133,114 +23614,6 @@ export const NOVELAS = {
 "p": "img/portadas/la-citta-triste.webp",
 "tr": {
 "ru": "grustnyj-gorod"
-}
-},
-"la-voix": {
-"t": "La voix",
-"es": "La voz (fr.)",
-"l": "fr",
-"y": null,
-"ru": "Голос (фр.)",
-"p": "img/portadas/la-voix.webp",
-"tr": {
-"ru": "golos"
-}
-},
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
-"tr": {}
-},
-"el-tren-fantasma": {
-"t": "El tren fantasma",
-"es": "El tren fantasma",
-"l": "es",
-"y": null,
-"ru": "Призрачный поезд (исп.)",
-"p": "img/portadas/el-tren-fantasma.webp",
-"tr": {
-"it": "il-treno-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"predchuvstvie-2": {
-"t": "Предчувствие 2",
-"es": "El presentimiento 2",
-"l": "ru",
-"y": 2024,
-"ru": "Предчувствие 2",
-"p": "img/portadas/predchuvstvie-2.webp",
-"tr": {}
-},
-"anomalia": {
-"t": "Anomalía",
-"es": "Anomalía",
-"l": "es",
-"y": null,
-"ru": "Аномалия (исп.)",
-"p": "img/portadas/anomalia.webp",
-"tr": {}
-},
-"ladro-di-cuori-3": {
-"t": "Ladro di cuori 3",
-"es": "Ladrón de corazones 3 (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Похититель сердец 3 (ит.)",
-"p": "img/portadas/ladro-di-cuori-3.webp",
-"tr": {}
-},
-"predchuvstvie-2-2": {
-"t": "Предчувствие 2.2",
-"es": "El presentimiento 2.2",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.2",
-"p": "img/portadas/predchuvstvie-2-2.webp",
-"tr": {}
-},
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви",
-"p": "img/portadas/volny-lyubvi.webp",
-"tr": {}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"venecianskaya-maska": {
-"t": "Венецианская маска",
-"es": "La máscara de Venecia (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Венецианская маска",
-"p": "img/portadas/venecianskaya-maska.webp",
-"tr": {
-"it": "maschera-di-venezia"
-}
-},
-"el-misterio-de-los-fader": {
-"t": "El misterio de los Fader",
-"es": "El misterio de los Fader",
-"l": "es",
-"y": 2025,
-"ru": "Тайна семьи Фадер (исп.)",
-"p": "img/portadas/el-misterio-de-los-fader.webp",
-"tr": {
-"ru": "tajna-semi-fader"
 }
 },
 "predchuvstvie": {
@@ -22266,53 +23639,6 @@ export const NOVELAS = {
 "pl": "przeczucie"
 }
 },
-"predchuvstvie-2-3": {
-"t": "Предчувствие 2.3",
-"es": "El presentimiento 2.3",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.3",
-"p": "img/portadas/predchuvstvie-2-3.webp",
-"tr": {}
-},
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
-"tr": {}
-},
-"dikij-chas": {
-"t": "Дикий час",
-"es": "La hora salvaje",
-"l": "ru",
-"y": null,
-"ru": "Дикий час",
-"p": "img/portadas/dikij-chas.webp",
-"tr": {
-"sr": "divlji-chas"
-}
-},
-"tajna-v-biblioteke": {
-"t": "Тайна в библиотеке",
-"es": "El misterio de la biblioteca",
-"l": "ru",
-"y": 2026,
-"ru": "Тайна в библиотеке",
-"p": "img/portadas/tajna-v-biblioteke.webp",
-"tr": {}
-},
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
 "amor-en-el-cosmos": {
 "t": "Amor en el cosmos",
 "es": "Amor en el cosmos",
@@ -22320,71 +23646,6 @@ export const NOVELAS = {
 "y": 2026,
 "ru": "Любовь в космосе",
 "p": "img/portadas/amor-en-el-cosmos.webp",
-"tr": {}
-},
-"operacion-londres": {
-"t": "El misterio de los Fader: Operación Londres",
-"es": "El misterio de los Fader: Operación Londres",
-"l": "es",
-"y": 2026,
-"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
-"p": "img/portadas/operacion-londres.webp",
-"tr": {}
-},
-"dikij-chas-karnaval-razdora": {
-"t": "Дикий час: Карнавал раздора",
-"es": "La hora salvaje: El carnaval de la discordia",
-"l": "ru",
-"y": 2026,
-"ru": "Дикий час: Карнавал раздора",
-"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
-"tr": {}
-},
-"grustnyj-gorod": {
-"t": "Грустный город",
-"es": "La ciudad triste",
-"l": "ru",
-"y": 2026,
-"ru": "Грустный город",
-"p": "img/portadas/grustnyj-gorod.webp",
-"tr": {
-"it": "la-citta-triste"
-}
-},
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
-"l": "ru",
-"y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
-"tr": {}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
-"y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
-"tr": {}
-},
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
 "tr": {}
 },
 "il-treno-fantasma": {
@@ -22399,6 +23660,468 @@ export const NOVELAS = {
 "ru": "prizrachnyj-poezd"
 }
 },
+"podzemni-tajemstvi": {
+"t": "Podzemní tajemství",
+"es": "El secreto subterráneo (checo)",
+"l": "cs",
+"y": null,
+"ru": "Подземная тайна (чеш.)",
+"p": "img/portadas/podzemni-tajemstvi.webp",
+"tr": {}
+},
+"predchuvstvie-2-2": {
+"t": "Предчувствие 2.2",
+"es": "El presentimiento 2.2",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.2",
+"p": "img/portadas/predchuvstvie-2-2.webp",
+"tr": {}
+},
+"grustnyj-gorod": {
+"t": "Грустный город",
+"es": "La ciudad triste",
+"l": "ru",
+"y": 2026,
+"ru": "Грустный город",
+"p": "img/portadas/grustnyj-gorod.webp",
+"tr": {
+"it": "la-citta-triste"
+}
+},
+"la-voix": {
+"t": "La voix",
+"es": "La voz (fr.)",
+"l": "fr",
+"y": null,
+"ru": "Голос (фр.)",
+"p": "img/portadas/la-voix.webp",
+"tr": {
+"ru": "golos"
+}
+},
+"el-tren-fantasma": {
+"t": "El tren fantasma",
+"es": "El tren fantasma",
+"l": "es",
+"y": null,
+"ru": "Призрачный поезд (исп.)",
+"p": "img/portadas/el-tren-fantasma.webp",
+"tr": {
+"it": "il-treno-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"el-misterio-de-los-fader": {
+"t": "El misterio de los Fader",
+"es": "El misterio de los Fader",
+"l": "es",
+"y": 2025,
+"ru": "Тайна семьи Фадер (исп.)",
+"p": "img/portadas/el-misterio-de-los-fader.webp",
+"tr": {
+"ru": "tajna-semi-fader"
+}
+},
+"ostrovy-nad-prahou": {
+"t": "Ostrovy nad Prahou",
+"es": "Las islas sobre Praga (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Острова над Прагой (чеш.)",
+"p": "img/portadas/ostrovy-nad-prahou.webp",
+"tr": {}
+},
+"ondas-de-amor": {
+"t": "Ondas de amor",
+"es": "Ondas de amor",
+"l": "es",
+"y": 2026,
+"ru": "Волны любви (исп.)",
+"p": "img/portadas/ondas-de-amor.webp",
+"tr": {
+"it": "onde-d-amore"
+}
+},
+"prizrachnyj-poezd": {
+"t": "Призрачный поезд",
+"es": "El tren fantasma (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Призрачный поезд",
+"p": "img/portadas/prizrachnyj-poezd.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"it": "il-treno-fantasma"
+}
+},
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
+"tr": {}
+},
+"27-ocak": {
+"t": "27 Ocak",
+"es": "27 de enero",
+"l": "tr",
+"y": 2026,
+"ru": "27 января",
+"p": "img/portadas/27-ocak.webp",
+"tr": {}
+},
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"tr": {}
+},
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
+"l": "ru",
+"y": 2026,
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
+"tr": {
+"it": "ti-amo-in-silenzio"
+}
+},
+"dikij-chas": {
+"t": "Дикий час",
+"es": "La hora salvaje",
+"l": "ru",
+"y": null,
+"ru": "Дикий час",
+"p": "img/portadas/dikij-chas.webp",
+"tr": {
+"sr": "divlji-chas"
+}
+},
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
+"l": "ru",
+"y": 2026,
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
+"tr": {}
+},
+"tajna-v-biblioteke": {
+"t": "Тайна в библиотеке",
+"es": "El misterio de la biblioteca",
+"l": "ru",
+"y": 2026,
+"ru": "Тайна в библиотеке",
+"p": "img/portadas/tajna-v-biblioteke.webp",
+"tr": {}
+},
+"maschera-di-venezia": {
+"t": "Maschera di Venezia",
+"es": "La máscara de Venecia (it.)",
+"l": "it",
+"y": null,
+"ru": "Венецианская маска (ит.)",
+"p": "img/portadas/maschera-di-venezia.webp",
+"tr": {
+"ru": "venecianskaya-maska"
+}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
+"l": "ru",
+"y": 2026,
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
+"tr": {}
+},
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
+"tr": {}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
+"tr": {}
+},
+"dikij-chas-2": {
+"t": "Дикий час: Духи гор",
+"es": "La hora salvaje: Los espíritus de la montaña",
+"l": "ru",
+"y": null,
+"ru": "Дикий час: Духи гор",
+"p": "img/portadas/dikij-chas-2.webp",
+"tr": {}
+},
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
+"tr": {}
+},
+"venecianskaya-maska": {
+"t": "Венецианская маска",
+"es": "La máscara de Venecia (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Венецианская маска",
+"p": "img/portadas/venecianskaya-maska.webp",
+"tr": {
+"it": "maschera-di-venezia"
+}
+},
+"golos": {
+"t": "Голос",
+"es": "La voz",
+"l": "ru",
+"y": 2026,
+"ru": "Голос",
+"p": "img/portadas/golos.webp",
+"tr": {
+"fr": "la-voix"
+}
+},
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
+"tr": {}
+},
+"rezonans-lyubvi": {
+"t": "Резонанс любви",
+"es": "Resonancia del amor",
+"l": "ru",
+"y": null,
+"ru": "Резонанс любви",
+"p": "img/portadas/rezonans-lyubvi.webp",
+"tr": {}
+},
+"lluvia-de-meteoritos": {
+"t": "Lluvia de meteoritos",
+"es": "Lluvia de meteoritos",
+"l": "es",
+"y": null,
+"ru": "Метеоритный дождь (исп.)",
+"p": "img/portadas/lluvia-de-meteoritos.webp",
+"tr": {
+"ru": "meteoritnyj-dozhd"
+}
+},
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
+"l": "ru",
+"y": 2026,
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
+"tr": {}
+},
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
+"l": "ru",
+"y": 2026,
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
+"tr": {}
+},
+"divlji-chas-malbec": {
+"t": "Дивљи час: Љубав укуса малбека",
+"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
+"p": "img/portadas/divlji-chas-malbec.webp",
+"tr": {}
+},
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"tr": {}
+},
+"operacion-londres": {
+"t": "El misterio de los Fader: Operación Londres",
+"es": "El misterio de los Fader: Operación Londres",
+"l": "es",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
+"p": "img/portadas/operacion-londres.webp",
+"tr": {}
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
+},
+"kralovna-vinobrani": {
+"t": "Královna vinobraní",
+"es": "La reina de la Vendimia (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Королева Вендимии (чеш.)",
+"p": "img/portadas/kralovna-vinobrani.webp",
+"tr": {
+"es": "la-reina-de-la-vendimia"
+}
+},
+"dikij-chas-karnaval-razdora": {
+"t": "Дикий час: Карнавал раздора",
+"es": "La hora salvaje: El carnaval de la discordia",
+"l": "ru",
+"y": 2026,
+"ru": "Дикий час: Карнавал раздора",
+"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
+"tr": {}
+},
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
+"l": "es",
+"y": null,
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
+"tr": {}
+},
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
+"l": "ru",
+"y": 2026,
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
+},
+"predchuvstvie-2-3": {
+"t": "Предчувствие 2.3",
+"es": "El presentimiento 2.3",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.3",
+"p": "img/portadas/predchuvstvie-2-3.webp",
+"tr": {}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"predtucha": {
+"t": "Předtucha",
+"es": "El presentimiento (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Предчувствие (чеш.)",
+"p": "img/portadas/predtucha.webp",
+"tr": {
+"fr": "reve-turquoise",
+"eo": "la-antausento",
+"it": "presentimento",
+"es": "la-corazonada",
+"isv": "predcutje",
+"tr": "col-gulu",
+"de": "vorahnung",
+"sr": "predosecaj",
+"vo": "fot-latik",
+"ia": "le-presentimento",
+"pt": "mundo-turquesa",
+"pl": "przeczucie",
+"ru": "predchuvstvie"
+}
+},
+"ladro-di-cuori-3": {
+"t": "Ladro di cuori 3",
+"es": "Ladrón de corazones 3 (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Похититель сердец 3 (ит.)",
+"p": "img/portadas/ladro-di-cuori-3.webp",
+"tr": {}
+},
+"divlji-chas": {
+"t": "Дивљи час",
+"es": "La hora salvaje (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час (серб.)",
+"p": "img/portadas/divlji-chas.webp",
+"tr": {
+"ru": "dikij-chas"
+}
+},
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
+"tr": {
+"ru": "tikhaya-lyubov"
+}
+},
+"predchuvstvie-2-4": {
+"t": "Предчувствие 2.4",
+"es": "El presentimiento 2.4",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.4",
+"p": "img/portadas/predchuvstvie-2-4.webp",
+"tr": {}
+},
 "pokhititel-serdec-portret-osnovatelya": {
 "t": "Похититель сердец: Портрет основателя",
 "es": "Ladrón de corazones: El retrato del fundador",
@@ -22406,6 +24129,75 @@ export const NOVELAS = {
 "y": 2026,
 "ru": "Похититель сердец: Портрет основателя",
 "p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
+"tr": {}
+},
+"anomalia": {
+"t": "Anomalía",
+"es": "Anomalía",
+"l": "es",
+"y": null,
+"ru": "Аномалия (исп.)",
+"p": "img/portadas/anomalia.webp",
+"tr": {}
+},
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
+"tr": {
+"es": "ondas-de-amor"
+}
+},
+"tajna-semi-fader": {
+"t": "Тайна семьи Фадер",
+"es": "El misterio de los Fader (ru.)",
+"l": "ru",
+"y": null,
+"ru": "Тайна семьи Фадер",
+"p": "img/portadas/tajna-semi-fader.webp",
+"tr": {
+"es": "el-misterio-de-los-fader"
+}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
+"y": 2026,
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"la-reina-de-la-vendimia": {
+"t": "La reina de la Vendimia",
+"es": "La reina de la Vendimia",
+"l": "es",
+"y": 2026,
+"ru": "Королева Вендимии (исп.)",
+"p": "img/portadas/la-reina-de-la-vendimia.webp",
+"tr": {
+"cs": "kralovna-vinobrani"
+}
+},
+"predchuvstvie-2": {
+"t": "Предчувствие 2",
+"es": "El presentimiento 2",
+"l": "ru",
+"y": 2024,
+"ru": "Предчувствие 2",
+"p": "img/portadas/predchuvstvie-2.webp",
+"tr": {}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
 "tr": {}
 }
 };

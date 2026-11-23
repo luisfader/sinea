@@ -960,6 +960,91 @@ const MODELOS = {
     g.rotation.y = Math.PI / 2;
     return { g, r: 30 };
   },
+  'karluv-most'() { // el Puente de Carlos: 16 arcos de piedra arenisca, 30 estatuas oscuras y las torres góticas de cada orilla
+    const g = new THREE.Group(), pie = M(0xb9ac93), osc = M(0x4b4640), techo = M(0x3d3f44);
+    const Lm = 520, w = 10;
+    g.add(caja(Lm, 2.2, w, pie, 0, 8, 0)); // tablero
+    for (const s of [-1, 1]) g.add(caja(Lm, 1.4, .8, pie, 0, 10.2, s * (w / 2 - .4))); // parapetos
+    for (let i = 0; i < 15; i++) { const x = -Lm / 2 + 30 + i * 32.5; g.add(caja(6, 8, w + 2, pie, x, 0, 0)); const a = cil(0, 3, 3, pie, x, 8, w / 2 + 1.5, 6); a.rotation.x = Math.PI / 2; } // pilares
+    for (let i = 0; i < 15; i++) { const x = -Lm / 2 + 30 + i * 32.5; for (const s of [-1, 1]) { g.add(caja(1.6, 1.6, 1.6, pie, x, 10.4, s * (w / 2 - .6))); g.add(cil(.5, .7, 3.6, osc, x, 12, s * (w / 2 - .6), 6)); g.add(esfera(.55, osc, x, 16, s * (w / 2 - .6))); } }
+    const torre = (x, h, ancho) => { g.add(caja(ancho, h, ancho, 0x6d655a, x, 0, 0)); g.add(caja(ancho * .9, 3.2, w - .5, 0x2b2620, x, 8, 0)); const t = new THREE.Mesh(new THREE.ConeGeometry(ancho * .72, h * .45, 4), techo); t.rotation.y = Math.PI / 4; t.position.set(x, h + h * .225, 0); g.add(t); for (const [dx, dz] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) { const p = new THREE.Mesh(new THREE.ConeGeometry(1.2, 6, 6), techo); p.position.set(x + dx * ancho * .45, h + 3, dz * ancho * .45); g.add(p); } };
+    torre(-Lm / 2 - 6, 30, 14); // torre de la Ciudad Vieja
+    torre(Lm / 2 + 6, 32, 14); g.add(caja(10, 22, 10, 0x6d655a, Lm / 2 + 8, 0, 13)); // las dos torres de Malá Strana
+    { const t = new THREE.Mesh(new THREE.ConeGeometry(6.5, 9, 4), techo); t.rotation.y = Math.PI / 4; t.position.set(Lm / 2 + 8, 26.5, 13); g.add(t); }
+    // farolas
+    for (let i = 0; i < 12; i++) { const x = -Lm / 2 + 45 + i * 40; g.add(cil(.15, .15, 5, 0x222222, x, 10, 3.6, 5)); g.add(esfera(.45, brillo(0xffd58a), x, 15.2, 3.6)); }
+    g.rotation.y = Math.atan2(68, -524);
+    return { g, r: 40 };
+  },
+  'hrad-praga'() { // el Castillo de Praga y la catedral de San Vito sobre la colina
+    const g = new THREE.Group(), pal = M(0xe8e1cf), techo = M(0xa04a32), cat = M(0x8c8378), verde = M(0x5f8f7c, { metalness: .3, roughness: .5 }), oro = M(0xf2c75a, { metalness: .8, roughness: .3 });
+    g.add(caja(380, 3, 120, 0xcfc6b3, -20, 0, 0));
+    for (const [x, z, w, d] of [[-150, -40, 120, 22], [-150, 40, 120, 22], [-205, 0, 22, 100], [70, -48, 150, 22], [70, 48, 160, 20], [150, 0, 22, 96], [-90, 0, 18, 80]]) { g.add(caja(w, 18, d, pal, x, 0, z)); const t = new THREE.Mesh(prismaGeo(), techo); t.scale.set(w, 6, d); t.position.set(x, 18, z); if (d > w) { t.rotation.y = Math.PI / 2; t.scale.set(d, 6, w); } g.add(t); }
+    // catedral: nave alta, contrafuertes, ábside, torre principal y las dos agujas de la fachada oeste
+    g.add(caja(110, 34, 30, cat, 0, 0, 0)); { const t = new THREE.Mesh(prismaGeo(), M(0x4d4a47)); t.scale.set(112, 14, 32); t.position.y = 34; g.add(t); }
+    for (let i = 0; i < 8; i++) for (const s of [-1, 1]) g.add(caja(3, 26, 6, cat, -44 + i * 12, 0, s * 18));
+    g.add(cil(16, 16, 30, cat, 55, 0, 0, 12));
+    g.add(caja(16, 70, 16, cat, 10, 0, 22)); g.add(esfera(8, verde, 10, 70, 22, {}, [12, 8, 0, Math.PI * 2, 0, Math.PI / 2])); g.add(cil(3, 4, 10, verde, 10, 76, 22, 8)); g.add(esfera(2, oro, 10, 88, 22));
+    for (const z of [-10, 10]) { g.add(caja(10, 50, 10, cat, -58, 0, z)); const a = new THREE.Mesh(new THREE.ConeGeometry(5.5, 34, 8), M(0x4d4a47)); a.position.set(-58, 67, z); g.add(a); }
+    // San Jorge: dos torres blancas y fachada roja
+    g.add(caja(36, 16, 18, 0xb2553e, 95, 0, 15)); for (const x of [104, 112]) { g.add(caja(6, 30, 6, 0xf1ece0, x, 0, 6)); const a = new THREE.Mesh(new THREE.ConeGeometry(4, 8, 4), techo); a.position.set(x, 34, 6); g.add(a); }
+    // Daliborka y la Torre Blanca
+    g.add(cil(7, 7, 24, 0xd9cfbc, 175, 0, 50, 12)); { const a = new THREE.Mesh(new THREE.ConeGeometry(8, 10, 12), techo); a.position.set(175, 29, 50); g.add(a); }
+    return { g, r: 150 };
+  },
+  tyn() { // la Plaza de la Ciudad Vieja: la iglesia de Týn, la torre del Ayuntamiento con el reloj astronómico y el monumento a Jan Hus
+    const g = new THREE.Group(), gris = M(0x6a655d), techo = M(0x33302d), oro = M(0xe9c25a, { metalness: .8, roughness: .3 });
+    // Týn, al este (detrás de una fila de casas)
+    g.add(caja(26, 30, 50, 0xb9b0a0, 110, 0, -5)); { const t = new THREE.Mesh(prismaGeo(), techo); t.scale.set(28, 16, 52); t.rotation.y = Math.PI / 2; t.scale.set(52, 16, 28); t.position.set(110, 30, -5); g.add(t); }
+    for (const z of [-16, 10]) { g.add(caja(12, 50, 12, gris, 92, 0, z)); const a = new THREE.Mesh(new THREE.ConeGeometry(7.5, 30, 8), techo); a.position.set(92, 65, z); g.add(a); for (const [dx, dz] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) { const p = new THREE.Mesh(new THREE.ConeGeometry(1.2, 9, 6), techo); p.position.set(92 + dx * 5, 55, z + dz * 5); g.add(p); } g.add(esfera(1.2, oro, 92, 81, z)); }
+    g.add(caja(10, 18, 44, 0xe7d9bd, 78, 0, -3)); // casas delante (la escuela de Týn)
+    // Ayuntamiento y su torre con el reloj astronómico (orloj)
+    g.add(caja(40, 18, 22, 0xe1d7c2, -60, 0, 60)); { const t = new THREE.Mesh(prismaGeo(), M(0x8e3e2c)); t.scale.set(40, 7, 22); t.position.set(-60, 18, 60); g.add(t); }
+    g.add(caja(11, 66, 11, 0x8a7f70, -38, 0, 52)); { const a = new THREE.Mesh(new THREE.ConeGeometry(7, 12, 4), techo); a.rotation.y = Math.PI / 4; a.position.set(-38, 72, 52); g.add(a); }
+    for (const [dx, dz] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) { const p = new THREE.Mesh(new THREE.ConeGeometry(1.1, 6, 6), techo); p.position.set(-38 + dx * 6, 69, 52 + dz * 6); g.add(p); }
+    const orloj = cil(3.4, 3.4, .5, brillo(0x2d5d8c), -38, 22, 57.9, 24); orloj.rotation.x = Math.PI / 2; g.add(orloj);
+    const anillo = new THREE.Mesh(new THREE.TorusGeometry(3.4, .35, 6, 24), oro); anillo.position.set(-38, 22, 58.3); g.add(anillo);
+    const aguja = caja(.4, 3, .2, oro, -38, 22, 58.5); g.add(aguja);
+    // Jan Hus en el centro de la plaza
+    g.add(caja(16, 3, 9, 0x7f7a70, 10, 0, 0)); g.add(caja(3, 6, 3, M(0x3f5b4f), 10, 3, 0)); for (let i = 0; i < 5; i++) g.add(cil(.8, 1, 4, M(0x3f5b4f), 2 + i * 4, 3, 2.5, 6));
+    return { g, r: 70, anim(t) { aguja.rotation.z = -t * .5; } };
+  },
+  petrin() { // la torre mirador de Petřín: una pequeña Torre Eiffel de hierro sobre la colina
+    const g = new THREE.Group(), hierro = M(0x6a5f52, { metalness: .5, roughness: .5 }), H = 60;
+    const pata = (a) => { const b = 7, t = 1.6; const p = new THREE.Vector3(Math.cos(a) * b, 0, Math.sin(a) * b), q = new THREE.Vector3(Math.cos(a) * t, H, Math.sin(a) * t); const l = p.distanceTo(q); const m = new THREE.Mesh(new THREE.BoxGeometry(.8, l, .8), hierro); m.position.copy(p).add(q).multiplyScalar(.5); m.lookAt(q); m.rotateX(Math.PI / 2); g.add(m); };
+    for (let i = 0; i < 8; i++) pata(i * Math.PI / 4 + Math.PI / 8);
+    for (let k = 1; k < 7; k++) { const y = k * 9, r = 7 - (7 - 1.6) * y / H; const ring = new THREE.Mesh(new THREE.TorusGeometry(r, .35, 4, 8), hierro); ring.rotation.x = Math.PI / 2; ring.position.y = y; g.add(ring); }
+    g.add(cil(3.6, 3.6, 3, hierro, 0, 51, 0, 8)); g.add(cil(2.6, 2.6, 2.6, hierro, 0, 60, 0, 8)); g.add(cil(.3, .3, 8, 0x222222, 0, 62, 0, 4));
+    g.add(cil(6, 6, 4, 0xe2d6bd, 0, 0, 0, 8)); // el pabellón de la base
+    return { g, r: 18 };
+  },
+  vysehrad() { // Vyšehrad: la basílica de San Pedro y San Pablo, con sus dos agujas oscuras, sobre la roca y las murallas
+    const g = new THREE.Group(), piedra = M(0xa59b88), osc = M(0x2f3a35), verde = M(0x5a7d6b, { metalness: .3 });
+    g.add(caja(70, 26, 26, piedra, 0, 0, 0)); { const t = new THREE.Mesh(prismaGeo(), verde); t.scale.set(72, 10, 28); t.position.y = 26; g.add(t); }
+    for (const z of [-7, 7]) { g.add(caja(9, 44, 9, piedra, -38, 0, z)); const a = new THREE.Mesh(new THREE.ConeGeometry(5.5, 26, 8), osc); a.position.set(-38, 57, z); g.add(a); }
+    g.add(cil(12, 12, 22, piedra, 38, 0, 0, 12));
+    // murallas en zigzag con baluartes
+    const mur = M(0x8b7f6b);
+    for (const [x, z, w, d] of [[-60, 70, 160, 6], [70, 40, 6, 120], [-140, 10, 6, 120], [-60, -60, 160, 6]]) g.add(caja(w, 10, d, mur, x, 0, z));
+    return { g, r: 90 };
+  },
+  zizkov() { // la torre de televisión de Žižkov: tres columnas, cabinas y la antena (en «Předtucha», ya sin los bebés de plástico)
+    const g = new THREE.Group(), gris = M(0xb9bec4, { metalness: .4, roughness: .4 }), osc = M(0x5c6168, { metalness: .5 });
+    const cols = [[0, 0, 6.5, 216], [-11, 6, 4.2, 134], [11, 6, 4.2, 134]];
+    for (const [x, z, r, h] of cols) g.add(cil(r, r, h, gris, x, 0, z, 16));
+    g.add(caja(26, 6, 14, gris, 0, 0, 4));
+    for (const [y, w] of [[63, 22], [93, 26], [130, 18]]) { g.add(caja(w, 10, 12, osc, 0, y, 4)); g.add(caja(w + .2, 2, 12.2, brillo(0x9fd3ff), 0, y + 4, 4)); }
+    g.add(cil(1.4, 1.4, 20, gris, 0, 216, 0, 8));
+    const luz = esfera(1.3, brillo(0xff3030), 0, 237, 0); g.add(luz);
+    return { g, r: 30, anim(t) { luz.visible = Math.sin(t * 3) > 0; } };
+  },
+  mikulas() { // San Nicolás de Malá Strana: la gran cúpula verde y el campanario
+    const g = new THREE.Group(), bl = M(0xefe6d2), verde = M(0x5c8c78, { metalness: .35, roughness: .45 });
+    g.add(caja(60, 26, 34, bl)); { const t = new THREE.Mesh(prismaGeo(), M(0x6d8a7b)); t.scale.set(62, 9, 36); t.position.y = 26; g.add(t); }
+    g.add(cil(13, 13, 14, bl, 16, 26, 0, 16)); g.add(esfera(13, verde, 16, 40, 0, {}, [16, 10, 0, Math.PI * 2, 0, Math.PI / 2])); g.add(cil(2.5, 2.5, 8, verde, 16, 52, 0, 8));
+    g.add(caja(10, 52, 10, bl, 40, 0, 10)); g.add(esfera(6, verde, 40, 52, 10, {}, [12, 8, 0, Math.PI * 2, 0, Math.PI / 2])); g.add(cil(1.5, 2.5, 10, verde, 40, 57, 10, 8));
+    return { g, r: 40 };
+  },
   'tren-fantasma'() { return { g: new THREE.Group(), r: 0 }; }
 };
 
@@ -981,7 +1066,7 @@ export function construirHitos(lugares, u) {
     grupo.add(m.g);
     if (m.anim) anims.push(m.anim);
     if (m.r) reservas.push([L.x, L.y, m.r]);
-    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, usina: 20, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
+    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, usina: 20, 'karluv-most': 22, 'hrad-praga': 92, tyn: 82, petrin: 64, vysehrad: 60, zizkov: 230, mikulas: 62, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
   }
   // reserva extra: la plaza Dante entera y el puerto
   reservas.push(...RESERVAS);
@@ -1163,4 +1248,48 @@ export function crearGondolas() {
     }
     for (const q of amarre) { q.o.position.y = .2 + Math.sin(t * 1.3 + q.f) * .15; q.o.rotation.z = Math.sin(t * 1.1 + q.f) * .04; }
   } };
+}
+
+// «Ostrovy nad Prahou»: las cinco islas de piedra de Černoboh, con castillos negros, flotando sobre Praga;
+// de cada una baja una cadena con luz azul que bebe la fuerza de uno de los cinco corazones de la ciudad
+export function crearOstrovy(anclas) {
+  const g = new THREE.Group(), lista = [];
+  const roca = new THREE.MeshStandardMaterial({ color: 0x6b5d50, roughness: .95, flatShading: true });
+  const pasto = new THREE.MeshStandardMaterial({ color: 0x5f7d48, roughness: .9, flatShading: true });
+  const negro = new THREE.MeshStandardMaterial({ color: 0x1b1c22, roughness: .7 });
+  const azul = new THREE.MeshStandardMaterial({ color: 0x1f4f9a, emissive: 0x3a8cff, emissiveIntensity: 1.2, metalness: .6, roughness: .3 });
+  const agua = new THREE.MeshBasicMaterial({ color: 0xcfe7ff, transparent: true, opacity: .55 });
+  const eslabon = new THREE.TorusGeometry(5, 1.5, 6, 10), alma = new THREE.MeshBasicMaterial({ color: 0x6fb6ff, transparent: true, opacity: .55 });
+  anclas.forEach((L, i) => {
+    const isla = new THREE.Group();
+    const R = 70 + (i % 3) * 14;
+    const cono = new THREE.Mesh(new THREE.ConeGeometry(R, R * 1.5, 9, 3), roca); cono.rotation.x = Math.PI; cono.position.y = -R * .75; isla.add(cono);
+    const tapa = new THREE.Mesh(new THREE.CylinderGeometry(R * 1.02, R, 8, 9), pasto); tapa.position.y = 4; isla.add(tapa);
+    // el castillo negro: muralla, torre del homenaje y torres puntiagudas
+    isla.add(caja(R * .9, 22, R * .7, negro, 0, 8, 0));
+    isla.add(caja(R * .32, 58, R * .32, negro, -R * .12, 8, -R * .05));
+    for (const [dx, dz, h] of [[-.42, -.32, 40], [.42, -.32, 34], [-.42, .32, 36], [.42, .32, 44], [.1, -.1, 72]]) {
+      isla.add(cil(5, 5, h, negro, dx * R, 8, dz * R, 8));
+      const p = new THREE.Mesh(new THREE.ConeGeometry(7, 20, 8), negro); p.position.set(dx * R, 8 + h + 10, dz * R); isla.add(p);
+    }
+    for (let k = 0; k < 6; k++) { const a = k * 1.05 + i; isla.add(esfera(6 + (k % 3) * 3, pasto, Math.cos(a) * R * .75, 10, Math.sin(a) * R * .75)); }
+    const cascada = new THREE.Mesh(new THREE.PlaneGeometry(10, 120), agua); cascada.position.set(R * .95, -55, 0); cascada.rotation.y = Math.PI / 2; isla.add(cascada);
+    const alto = 420 + i * 35, ox = (i % 2 ? 1 : -1) * 90, oz = (i % 3 - 1) * 70;
+    isla.position.set(L.x + ox, alto, -L.y + oz); g.add(isla);
+    // la cadena: eslabones alternados desde el fondo de la isla hasta el corazón
+    const ini = new THREE.Vector3(L.x + ox, alto - R * 1.4, -L.y + oz), fin = new THREE.Vector3(L.x, (L._h || 20) * .4, -L.y);
+    const n = Math.floor(ini.distanceTo(fin) / 8.6), cad = new THREE.InstancedMesh(eslabon, azul, n), m = new THREE.Matrix4(), q = new THREE.Quaternion(), dir = fin.clone().sub(ini).normalize();
+    const base = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), dir);
+    for (let k = 0; k < n; k++) {
+      const p = ini.clone().lerp(fin, k / (n - 1));
+      q.copy(base).multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), k % 2 ? Math.PI / 2 : 0)).multiply(new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1, 0, 0), Math.PI / 2));
+      m.compose(p, q, new THREE.Vector3(1, 1.5, 1)); cad.setMatrixAt(k, m);
+    }
+    g.add(cad);
+    // un hilo de luz por dentro, para que la cadena se vea también de lejos
+    const largo = ini.distanceTo(fin), hilo = new THREE.Mesh(new THREE.CylinderGeometry(1.6, 1.6, largo, 6), alma);
+    hilo.position.copy(ini).lerp(fin, .5); hilo.quaternion.copy(base); g.add(hilo);
+    lista.push({ isla, y0: alto, f: i * 1.3 });
+  });
+  return { g, anim(t) { for (const o of lista) { o.isla.position.y = o.y0 + Math.sin(t * .35 + o.f) * 4; o.isla.rotation.y = Math.sin(t * .08 + o.f) * .03; } } };
 }
