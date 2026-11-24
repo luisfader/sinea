@@ -45,6 +45,7 @@ NOVELAS = {
     'rezonans-lyubvi': 'Resonancia del amor',
     'dikij-chas': 'La hora salvaje', 'divlji-chas': 'La hora salvaje (serbio)',
     'maschera-di-venezia': 'La máscara de Venecia (it.)', 'venecianskaya-maska': 'La máscara de Venecia (ru.)',
+    'zvezdnyj-roman': 'Novela estelar', 'la-ciudad-secreta': None,
     'podzemni-tajemstvi': 'El secreto subterráneo (checo)', 'ostrovy-nad-prahou': 'Las islas sobre Praga (checo)', 'predtucha': 'El presentimiento (checo)',
 }
 # Título en ruso para las novelas que no están escritas en ruso
@@ -59,6 +60,7 @@ NOVELAS_RU = {
     'divlji-chas-malbec': 'Дикий час: Любовь со вкусом мальбека (серб.)', 'ladro-di-cuori-3': 'Похититель сердец 3 (ит.)', 'anomalia': 'Аномалия (исп.)',
     'maschera-di-venezia': 'Венецианская маска (ит.)',
     'divlji-chas': 'Дикий час (серб.)',
+    'la-ciudad-secreta': 'Тайный город (исп.)',
     'podzemni-tajemstvi': 'Подземная тайна (чеш.)', 'ostrovy-nad-prahou': 'Острова над Прагой (чеш.)', 'predtucha': 'Предчувствие (чеш.)',
 }
 LANG_RU = {'ru': 'русский', 'es': 'испанский', 'it': 'итальянский', 'fr': 'французский', 'en': 'английский', 'tr': 'турецкий', 'cs': 'чешский', 'sr': 'сербский'}
@@ -87,6 +89,8 @@ CIUDADES = {
     'praga': {'dir': os.path.join('data', 'praga'), 'geo': 'praga', 'novelas': [
         'podzemni-tajemstvi', 'ostrovy-nad-prahou', 'predtucha', 'la-reina-de-la-vendimia', 'kralovna-vinobrani'],
      'rangos': {'la-reina-de-la-vendimia': [(1, 2), (49, 50)], 'kralovna-vinobrani': [(1, 2), (30, 30)]}},
+    'atlantida': {'dir': os.path.join('data', 'atlantida'), 'novelas': ['zvezdnyj-roman']},
+    'secreta': {'dir': os.path.join('data', 'secreta'), 'novelas': ['la-ciudad-secreta'], 'rangos': {'la-ciudad-secreta': [(1, 8)]}},
 }
 
 # Mendoza: (0,0) en el centro de la Plaza Independencia; cuadrícula de 122,5 m girada 12,5° (igual que js/ciudades/mendoza.js)

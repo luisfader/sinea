@@ -3,7 +3,7 @@ import * as THREE from './vendor/three.module.js';
 import { MapControls } from './vendor/MapControls.js';
 import { LIMITES, BARRIOS, CALLES, BORDES, EXTRAS, VISTA, NOMBRE, LEMA, CIUDAD, altura } from './mundo.js';
 import { pintarSuelo, crearTerreno, crearMar, crearEdificios, crearArboles, crearPuentes, crearAfueras } from './escena.js';
-import { construirHitos, crearDelfines, crearTrenFantasma, crearAutobus, crearDrones, crearAndes, crearGondolas, crearOstrovy } from './hitos.js';
+import { construirHitos, crearDelfines, crearTrenFantasma, crearAutobus, crearDrones, crearAndes, crearGondolas, crearOstrovy, crearCupulaAtlantida, crearCristalesTecho } from './hitos.js';
 import { CIUDADES, NOVELAS, IDIOMAS, IDIOMAS_RU } from './datos.js';
 const LUGARES = CIUDADES[CIUDAD];
 // Lugares fuera del mapa (Potrerillos, el Aconcagua…): se ponen en el borde, en su dirección real, con la distancia
@@ -98,6 +98,8 @@ async function construir() {
   if (EXTRAS.includes('autobus-7')) { autobus = crearAutobus(); escena.add(autobus.g); }
   if (EXTRAS.includes('andes')) escena.add(crearAndes());
   if (EXTRAS.includes('gondolas')) { gond = crearGondolas(); escena.add(gond.g); }
+  if (EXTRAS.includes('cupula-atlantida')) { gond = crearCupulaAtlantida(1500, -100); escena.add(gond.g); }
+  if (EXTRAS.includes('cristales-techo')) { gond = crearCristalesTecho(); escena.add(gond.g); }
   // «Ostrovy nad Prahou»: las cinco islas de Černoboh con sus cadenas clavadas en los cinco corazones de Praga
   if (EXTRAS.includes('ostrovy')) { gond = crearOstrovy(['pr-hrad', 'pr-petrin', 'pr-staromestske', 'pr-vysehrad', 'pr-zizkov'].map(id => LUGARES.find(L => L.id === id)).filter(Boolean)); escena.add(gond.g); }
   if (EXTRAS.includes('tren-girasoles')) { tren = crearTrenFantasma({ fantasma: false, vagones: 5, s0: 200, s1: 3900, vel: 22 }); escena.add(tren.g); }
@@ -534,9 +536,9 @@ function cuadro() {
 /* ------------------------------------------------------------------ */
 function urlCon(hash) {
   const q = new URLSearchParams(); if (CIUDAD !== 'sinea') q.set('ciudad', CIUDAD); if (lang === 'ru') q.set('lang', 'ru');
-  const qs = q.toString(); return location.pathname.replace(/(verdegrad|utopia|mendoza|venezia|madrid|petersburgo|belgrado|praga)\.html$/, 'index.html') + (qs ? '?' + qs : '') + hash;
+  const qs = q.toString(); return location.pathname.replace(/(verdegrad|utopia|mendoza|venezia|madrid|petersburgo|belgrado|praga|atlantida|secreta)\.html$/, 'index.html') + (qs ? '?' + qs : '') + hash;
 }
-function irCiudad(c) { const q = new URLSearchParams(); if (c !== 'sinea') q.set('ciudad', c); if (lang === 'ru') q.set('lang', 'ru'); location.href = location.pathname.replace(/(verdegrad|utopia|mendoza|venezia|madrid|petersburgo|belgrado|praga)\.html$/, 'index.html') + (q.toString() ? '?' + q : ''); }
+function irCiudad(c) { const q = new URLSearchParams(); if (c !== 'sinea') q.set('ciudad', c); if (lang === 'ru') q.set('lang', 'ru'); location.href = location.pathname.replace(/(verdegrad|utopia|mendoza|venezia|madrid|petersburgo|belgrado|praga|atlantida|secreta)\.html$/, 'index.html') + (q.toString() ? '?' + q : ''); }
 document.querySelectorAll('#ciudad button[data-c]').forEach(b => { b.classList.toggle('on', b.dataset.c === CIUDAD); b.onclick = () => { if (b.dataset.c !== CIUDAD) irCiudad(b.dataset.c); else hojaMapas(false); }; });
 // móvil: el selector de mapas es una hoja que se abre con el botón «Mapas»
 const hojaMapas = (v) => { document.body.classList.toggle('hoja-mapas', v); $('#mapas-btn').setAttribute('aria-expanded', v ? 'true' : 'false'); };
@@ -552,8 +554,8 @@ const ESTATICO = [
   ['#panel .cerrar', 'title', 'Cerrar', 'Закрыть'], ['#recorrido button', 'title', 'Quitar filtro', 'Снять фильтр'],
   ['#recorrido b', 'text', 'Recorrido:', 'Маршрут:'],
   ['#carga .sub', 'text', LEMA.es, LEMA.ru],
-  ['#pie', 'html', `<b>${NOMBRE.es}</b> · ${CIUDAD === 'sinea' ? 'la ciudad' : CIUDAD === 'utopia' ? 'la fortaleza' : ['mendoza', 'venezia', 'madrid', 'petersburgo', 'belgrado', 'praga'].includes(CIUDAD) ? 'la ciudad real' : 'un pueblo'} de las novelas de <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Robert Fader</a>${['mendoza', 'venezia', 'madrid', 'petersburgo', 'belgrado', 'praga'].includes(CIUDAD) ? ' · mapa: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>' : ''} · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Faderpedia</a> · <span class="ayuda">arrastrá para moverte · clic derecho o dos dedos para girar · rueda para el zoom</span>`,
-    `<b>${NOMBRE.ru}</b> · ${CIUDAD === 'sinea' ? 'город' : CIUDAD === 'utopia' ? 'крепость' : ['mendoza', 'venezia', 'madrid', 'petersburgo', 'belgrado', 'praga'].includes(CIUDAD) ? 'настоящий город' : 'городок'} из романов <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Роберта Фадера</a>${['mendoza', 'venezia', 'madrid', 'petersburgo', 'belgrado', 'praga'].includes(CIUDAD) ? ' · карта: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>' : ''} · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Фадерпедия</a> · <span class="ayuda">тяните, чтобы двигаться · правая кнопка или два пальца — поворот · колесо — масштаб</span>`]
+  ['#pie', 'html', `<b>${NOMBRE.es}</b> · ${CIUDAD === 'sinea' ? 'la ciudad' : CIUDAD === 'utopia' ? 'la fortaleza' : CIUDAD === 'atlantida' ? 'los dos mundos' : CIUDAD === 'secreta' ? 'la ciudad escondida' : ['mendoza', 'venezia', 'madrid', 'petersburgo', 'belgrado', 'praga'].includes(CIUDAD) ? 'la ciudad real' : 'un pueblo'} de las novelas de <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Robert Fader</a>${['mendoza', 'venezia', 'madrid', 'petersburgo', 'belgrado', 'praga'].includes(CIUDAD) ? ' · mapa: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>' : ''} · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Faderpedia</a> · <span class="ayuda">arrastrá para moverte · clic derecho o dos dedos para girar · rueda para el zoom</span>`,
+    `<b>${NOMBRE.ru}</b> · ${CIUDAD === 'sinea' ? 'город' : CIUDAD === 'utopia' ? 'крепость' : CIUDAD === 'atlantida' ? 'два мира' : CIUDAD === 'secreta' ? 'спрятанный город' : ['mendoza', 'venezia', 'madrid', 'petersburgo', 'belgrado', 'praga'].includes(CIUDAD) ? 'настоящий город' : 'городок'} из романов <a href="https://luisfader.github.io/litmir/" target="_blank" rel="noopener">Роберта Фадера</a>${['mendoza', 'venezia', 'madrid', 'petersburgo', 'belgrado', 'praga'].includes(CIUDAD) ? ' · карта: © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>' : ''} · <a href="https://luisfader.github.io/faderpedia/" target="_blank" rel="noopener">Фадерпедия</a> · <span class="ayuda">тяните, чтобы двигаться · правая кнопка или два пальца — поворот · колесо — масштаб</span>`]
 ];
 function ponerIdioma(l, refrescar = true) {
   lang = l === 'ru' ? 'ru' : 'es';

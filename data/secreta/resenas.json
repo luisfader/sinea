@@ -1,0 +1,146 @@
+{
+ "_info": "Reseñas de los vecinos de la Ciudad Secreta (y de alguno de la superficie).",
+ "cs-parque": [
+  {
+   "a": "Martín",
+   "ar": "Мартин",
+   "s": 5,
+   "es": "Vengo a buscar ideas. Un sábado encontré una mujer que leía sobre ciudades antiguas. Mejor idea, imposible.",
+   "ru": "Прихожу сюда за идеями. Однажды в субботу нашёл женщину, читавшую о древних городах. Лучше идеи не бывает."
+  },
+  {
+   "a": "Marina",
+   "ar": "Марина",
+   "s": 4,
+   "es": "Bancos cómodos, mucho sol. Desde acá se ven las montañas. Yo siempre miraba las montañas.",
+   "ru": "Удобные скамейки, много солнца. Отсюда видны горы. Я всегда смотрела на горы."
+  }
+ ],
+ "cs-cafeteria": [
+  {
+   "a": "Marina",
+   "ar": "Марина",
+   "s": 5,
+   "es": "Café rico. Él hablaba de libros y yo de casi nada. Igual me pidió el teléfono.",
+   "ru": "Вкусный кофе. Он говорил о книгах, а я почти ни о чём. И всё равно попросил мой телефон."
+  }
+ ],
+ "cs-casa-martin": [
+  {
+   "a": "Martín",
+   "ar": "Мартин",
+   "s": 4,
+   "es": "Una guitarra, muchos dibujos y un despertador que esa mañana no hizo falta.",
+   "ru": "Гитара, много рисунков и будильник, который в то утро не понадобился."
+  }
+ ],
+ "cs-montanas": [
+  {
+   "a": "Martín",
+   "ar": "Мартин",
+   "s": 5,
+   "es": "Acá me dijo la verdad. Pensé que era una broma. No era.",
+   "ru": "Здесь она сказала мне правду. Я думал, это шутка. Это была не шутка."
+  }
+ ],
+ "cs-roca": [
+  {
+   "a": "Marina",
+   "ar": "Марина",
+   "s": 5,
+   "es": "Una llave pequeña, una roca muy grande. Cuidado con quién te mira cuando entras.",
+   "ru": "Маленький ключ, очень большая скала. Осторожно, кто смотрит, когда входишь."
+  },
+  {
+   "a": "El jefe de los invasores",
+   "ar": "Главарь захватчиков",
+   "s": 1,
+   "es": "Me ofrecieron medicina, ciencia y arte. Yo quería oro. Después me dieron vino. Ahora me visita la policía.",
+   "ru": "Мне предложили медицину, науку и искусство. Я хотел золота. Потом мне дали вина. Теперь меня навещает полиция."
+  }
+ ],
+ "cs-escalera": [
+  {
+   "a": "Martín",
+   "ar": "Мартин",
+   "s": 4,
+   "es": "Poca luz, antorchas y una mano que te dice «tranquilo». Al final, una puerta de madera y lo más increíble que vi en mi vida.",
+   "ru": "Мало света, факелы и рука, которая говорит «спокойно». В конце деревянная дверь и самое невероятное, что я видел в жизни."
+  }
+ ],
+ "cs-cristales": [
+  {
+   "a": "Carlos",
+   "ar": "Карлос",
+   "s": 5,
+   "es": "Arriba tienen sol de verdad. Nosotros tenemos esto, y amanece todos los días a la misma hora.",
+   "ru": "У них наверху настоящее солнце. А у нас вот это, и рассвет каждый день в одно и то же время."
+  }
+ ],
+ "cs-plaza": [
+  {
+   "a": "Julián",
+   "ar": "Хулиан",
+   "s": 5,
+   "es": "Ganamos y nadie salió herido. Hace muchos años que no veía la plaza tan llena. Votar juntos también es una forma de ser fuertes.",
+   "ru": "Мы победили, и никто не ранен. Много лет я не видел площадь такой полной. Голосовать вместе — тоже способ быть сильными."
+  },
+  {
+   "a": "Marco",
+   "ar": "Марко",
+   "s": 5,
+   "es": "A esos hombres les gustaba el oro… pero más el vino. Mi plan. Lo digo con modestia.",
+   "ru": "Этим людям нравилось золото… но вино ещё больше. Мой план. Говорю скромно."
+  },
+  {
+   "a": "Elena",
+   "ar": "Елена",
+   "s": 4,
+   "es": "Como médica, le doy cinco estrellas a una batalla sin heridos. Una menos por el dolor de cabeza de los invasores.",
+   "ru": "Как врач, ставлю пять звёзд битве без раненых. Минус одна — за головную боль захватчиков."
+  }
+ ],
+ "cs-mercado": [
+  {
+   "a": "Una vendedora de flores",
+   "ar": "Цветочница",
+   "s": 4,
+   "es": "Me rompieron el puesto y me robaron. Después llegaron todos los vecinos con mesas y sillas. Las flores volvieron a crecer.",
+   "ru": "Мне сломали прилавок и обокрали. Потом пришли все соседи со столами и стульями. Цветы снова выросли."
+  }
+ ],
+ "cs-casa-marina": [
+  {
+   "a": "La madre de Marina",
+   "ar": "Мама Марины",
+   "s": 5,
+   "es": "Nuestra hija trajo a un muchacho de arriba. Lo abracé enseguida. Tiene buena mirada y come todo.",
+   "ru": "Наша дочь привела парня сверху. Я сразу его обняла. У него хороший взгляд, и он всё ест."
+  },
+  {
+   "a": "Martín",
+   "ar": "Мартин",
+   "s": 5,
+   "es": "El mejor balcón del mundo, debajo de la tierra.",
+   "ru": "Лучший балкон в мире — под землёй."
+  }
+ ],
+ "cs-torre": [
+  {
+   "a": "Carlos",
+   "ar": "Карлос",
+   "s": 5,
+   "es": "Me dijeron que era muy joven para el Consejo. Pero la señal la di yo. La bandera era roja. Muy roja.",
+   "ru": "Мне сказали, что я слишком молод для Совета. Но сигнал подал я. Флаг был красный. Очень красный."
+  }
+ ],
+ "cs-jardines": [
+  {
+   "a": "Marina",
+   "ar": "Марина",
+   "s": 5,
+   "es": "Acá jugaba de chica. Las fuentes cantan si te quedás en silencio.",
+   "ru": "Здесь я играла в детстве. Фонтаны поют, если помолчать."
+  }
+ ]
+}

@@ -1,0 +1,235 @@
+{
+ "_info": "Lugares de «La ciudad secreta». Mapa imaginado a partir de la novela.",
+ "lugares": [
+  {
+   "id": "cs-parque",
+   "nombre": "El banco del parque",
+   "cat": "parque",
+   "x": 1400,
+   "y": -1300,
+   "modelo": "ninguno",
+   "desc": "El parque del pueblito de Martín, donde él pasea en su tiempo libre buscando ideas para sus cuentos, sus canciones y sus dibujos. Un sábado a la tarde ve en un banco a una mujer rubia de ojos azules que lee con mucha atención un libro sobre ciudades antiguas. «Hola. ¿Qué libro lees?» Se llama Marina. Durante las semanas siguientes pasean muchas veces por acá, aunque ella nunca habla de su casa y siempre mira hacia las montañas.",
+   "buscar": "parque|banco",
+   "extra": {
+    "la-ciudad-secreta": [
+     1,
+     2
+    ]
+   },
+   "ilustracion": [
+    "la-ciudad-secreta",
+    "01.jpg"
+   ]
+  },
+  {
+   "id": "cs-cafeteria",
+   "nombre": "La cafetería cerca del parque",
+   "cat": "restaurante",
+   "x": 1560,
+   "y": -1180,
+   "modelo": "cafe",
+   "desc": "«¿Quieres tomar un café conmigo?» Marina lo piensa un momento y dice que sí con la cabeza. En esta cafetería pasan toda la tarde hablando de libros, de música y de viajes. Ella pregunta mucho y cuenta poco. «¿Dónde vives, Marina?» «Cerca de aquí… más o menos», y mira hacia las montañas. Antes de despedirse se dan los números de teléfono.",
+   "buscar": "cafetería",
+   "extra": {
+    "la-ciudad-secreta": [
+     1
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "cs-casa-martin",
+   "nombre": "La casa de Martín",
+   "cat": "casa",
+   "x": 1750,
+   "y": -1320,
+   "modelo": "casa",
+   "desc": "La casa del profesor de español, que también escribe cuentos, toca la guitarra y dibuja. La mañana de la visita Martín se despierta muy temprano, nervioso: se ducha, se viste rápido y desayuna solo un café. A las siete en punto llega Marina. «¿Estás listo?» «¡Sí, listo!»",
+   "buscar": "su casa",
+   "extra": {
+    "la-ciudad-secreta": [
+     3
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "cs-montanas",
+   "nombre": "Al pie de las montañas",
+   "cat": "parque",
+   "x": 1150,
+   "y": -860,
+   "modelo": "ninguno",
+   "desc": "Un domingo caminan cerca de las montañas y Marina se para de repente, muy seria. «No soy de aquí. Vengo de una ciudad que está debajo de la tierra, dentro de las montañas. Se llama la Ciudad Secreta.» Martín cree que es una broma. «No quiero tener secretos con la persona que quiero.» Confundido pero muy curioso, Martín pide verla. «Mañana vamos juntos.» Al día siguiente suben por acá, por un caminito entre los árboles, con aire fresco y pájaros que cantan.",
+   "buscar": "montañas",
+   "extra": {
+    "la-ciudad-secreta": [
+     2,
+     3
+    ]
+   },
+   "ilustracion": [
+    "la-ciudad-secreta",
+    "02.jpg"
+   ]
+  },
+  {
+   "id": "cs-roca",
+   "nombre": "La roca de la llave",
+   "cat": "misterio",
+   "x": 760,
+   "y": -700,
+   "modelo": "roca-llave",
+   "desc": "Después de una hora de subida, una roca muy grande. Marina saca una llave pequeña del bolsillo y la pone en un agujero: ¡la roca se mueve!, y detrás hay una puerta secreta. Ese día unos hombres malos ven entrar a Martín y a Marina. Más tarde, cuando la ciudad elige la paz, Martín y Marina salen por acá a hablar con los invasores, que esperan afuera. Su jefe, alto y de ojos fríos, se ríe de la propuesta: «¿Conocimientos? ¡No necesito libros! Solo quiero una cosa: oro.»",
+   "buscar": "roca|llave",
+   "extra": {
+    "la-ciudad-secreta": [
+     3,
+     4,
+     6
+    ]
+   },
+   "ilustracion": [
+    "la-ciudad-secreta",
+    "06.jpg"
+   ]
+  },
+  {
+   "id": "cs-escalera",
+   "nombre": "La escalera de las antorchas",
+   "cat": "misterio",
+   "x": 470,
+   "y": -450,
+   "modelo": "ninguno",
+   "desc": "Detrás de la roca, una escalera de piedra baja en la oscuridad; en las paredes hay antorchas. «Tranquilo. No pasa nada», dice Marina, y le toma la mano. Al final hay una puerta de madera. Marina la abre y Martín ve algo increíble: la Ciudad Secreta entera, enorme, con luz dorada. Por los mismos túneles oscuros vuelven después los invasores, con palos y cuchillos, buscando el oro.",
+   "buscar": "escalera|antorchas|túneles",
+   "extra": {
+    "la-ciudad-secreta": [
+     3,
+     4
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "cs-cristales",
+   "nombre": "Los cristales del techo",
+   "cat": "misterio",
+   "x": 120,
+   "y": -120,
+   "modelo": "ninguno",
+   "desc": "«En el techo hay cristales grandes que dan una luz dorada, como la luz del sol.» Cada mañana se encienden poco a poco, como un amanecer, y a la noche la ciudad entera brilla con luces doradas. En el mapa flotan sobre el valle.",
+   "buscar": "cristales",
+   "extra": {
+    "la-ciudad-secreta": [
+     3,
+     4
+    ]
+   },
+   "ilustracion": [
+    "la-ciudad-secreta",
+    "03.jpg"
+   ]
+  },
+  {
+   "id": "cs-plaza",
+   "nombre": "La plaza central",
+   "cat": "plaza",
+   "x": 0,
+   "y": 0,
+   "modelo": "mesas-trampa",
+   "desc": "El centro de todo. Acá Martín y sus amigos toman un té cuando gritan que la ciudad está siendo atacada. A la mañana siguiente todos los vecinos se reúnen y Julián, el más viejo y sabio, sube a un lugar alto: Martín propone muros más fuertes, pero también hablar, porque «arriba hay personas malas, pero también hay personas buenas». Nace el Consejo de la Ciudad. Acá votan por la paz, y acá se arma la trampa de Marco: mesas largas con pan, queso, fruta y mucho vino dulce y fuerte. Los invasores comen, beben y cantan hasta dormirse; el jefe ronca debajo de una mesa. Los atan sin que nadie salga herido. Dos días después la plaza vota la alianza con los pueblos de la superficie, y Martín no tiene que irse como embajador.",
+   "buscar": "plaza",
+   "extra": {
+    "la-ciudad-secreta": [
+     4,
+     5,
+     6,
+     7,
+     8
+    ]
+   },
+   "ilustracion": [
+    "la-ciudad-secreta",
+    "05.jpg"
+   ]
+  },
+  {
+   "id": "cs-mercado",
+   "nombre": "El mercado",
+   "cat": "plaza",
+   "x": -300,
+   "y": 210,
+   "modelo": "ninguno",
+   "desc": "Calles con mercados de frutas, flores y ropa de muchos colores. Una tarde, una mujer corre gritando: «¡Ayuda! ¡Nos están atacando!». En el mercado hay hombres con palos y cuchillos que rompen las tiendas y roban comida y oro. Martín reparte tareas: Marina lleva a los niños y a los abuelos a un lugar seguro, Elena atiende a los heridos, Marco y Carlos van con él. Los vecinos cierran el paso con mesas y sillas; un hombre enorme va hacia Martín y llega Marco con un palo: «¡No vas a destruir nuestra casa!». Llegan más y más vecinos, y los invasores huyen por los túneles.",
+   "buscar": "mercado",
+   "extra": {
+    "la-ciudad-secreta": [
+     3,
+     4
+    ]
+   },
+   "ilustracion": [
+    "la-ciudad-secreta",
+    "04.jpg"
+   ]
+  },
+  {
+   "id": "cs-casa-marina",
+   "nombre": "La casa de los padres de Marina",
+   "cat": "casa",
+   "x": 260,
+   "y": 290,
+   "modelo": "casa",
+   "desc": "Una casa blanca donde viven los padres de Marina, con los mismos ojos azules que ella. La madre lo abraza («Bienvenido, Martín»), el padre le da la mano: «Esta es tu casa». Martín duerme acá varios días. Desde el balcón, a la noche, se ve toda la ciudad con sus luces doradas: «Me gusta mucho tu ciudad». «Y tú le gustas a mi ciudad.» Acá Marina les cuenta a sus padres el día de la trampa, y acá, al final, Martín y Marina miran otra vez las luces: «Esta es nuestra historia. Y la vamos a escribir juntos».",
+   "buscar": "balcón|sus padres|casa de su familia",
+   "extra": {
+    "la-ciudad-secreta": [
+     3,
+     4,
+     7,
+     8
+    ]
+   },
+   "ilustracion": [
+    "la-ciudad-secreta",
+    "08.jpg"
+   ]
+  },
+  {
+   "id": "cs-torre",
+   "nombre": "La torre más alta",
+   "cat": "monumento",
+   "x": -180,
+   "y": -230,
+   "modelo": "torre-bandera",
+   "desc": "Carlos, el más joven y curioso («¿Es verdad que en la superficie hay coches que vuelan?»), no puede entrar al Consejo, pero Julián le promete otra misión. El día de la trampa todos se esconden en sus casas y solo Carlos sube a la torre más alta, desde donde se ve toda la ciudad. Cuando los invasores ya roncan, mueve la bandera roja: es la señal. Las puertas se abren y los vecinos salen con cuerdas.",
+   "buscar": "torre|bandera",
+   "extra": {
+    "la-ciudad-secreta": [
+     7
+    ]
+   },
+   "ilustracion": [
+    "la-ciudad-secreta",
+    "07.jpg"
+   ]
+  },
+  {
+   "id": "cs-jardines",
+   "nombre": "Los jardines y las fuentes",
+   "cat": "parque",
+   "x": -310,
+   "y": -190,
+   "modelo": "fuente",
+   "desc": "Casas blancas, torres altas, jardines y fuentes: así ve Martín la ciudad la primera vez. Hay personas de todas las edades, niños, jóvenes y abuelos, y todos parecen felices. Pasea todo el día con Marina y entiende por qué la ciudad es un secreto: es un lugar tranquilo, donde todos viven en paz.",
+   "buscar": "jardines|fuentes",
+   "extra": {
+    "la-ciudad-secreta": [
+     3
+    ]
+   },
+   "sin_ilustracion": true
+  }
+ ]
+}

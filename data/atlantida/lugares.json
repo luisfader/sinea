@@ -1,0 +1,300 @@
+{
+ "_info": "Lugares de la Atlántida y de la Tierra en «Звёздный роман». Mapa imaginado.",
+ "lugares": [
+  {
+   "id": "at-casa-laura",
+   "nombre": "La casa de Laura",
+   "cat": "casa",
+   "x": -1760,
+   "y": -330,
+   "modelo": "casa",
+   "desc": "Una vieja casa de madera en la aldea, con olor a manzanas, a tablas secas y a polvo, y un banco de mimbre en la galería. Laura vino a esconderse un tiempo de su pasado y se aburre: la ciudad la llama. Una noche, mirando el cielo con el té ya frío, ve caer una estrella que no se apaga y se estrella detrás del bosque. Después de huir de acá en diez minutos, con documentos, plata y un abrigo en la mochila, Laura vuelve al final de la novela: en una sola habitación con luz de atardecer, ella y Lusiano entienden que, en cualquiera de los dos mundos, siempre vuelven el uno al otro.",
+   "buscar": "веранд|дом\\w* Лауры|деревянн\\w* дом",
+   "extra": {
+    "zvezdnyj-roman": [
+     1,
+     6,
+     19
+    ]
+   },
+   "ilustracion": [
+    "zvezdnyj-roman",
+    "01.jpg"
+   ]
+  },
+  {
+   "id": "at-aldea",
+   "nombre": "La calle de la aldea",
+   "cat": "barrio",
+   "x": -1560,
+   "y": -260,
+   "modelo": "ninguno",
+   "desc": "La aldea entre manzanos, donde el tiempo corre lento «como la miel de un frasco dado vuelta». A la mañana siguiente de la caída los vecinos se juntan en la calle: la tía Zina, de la última casa, cree que empezó una guerra; el abuelo Yegor, apoyado en su bastón, dice que fue una explosión; Vitka, que suelda en su garaje, jura que vio una bola de fuego. Cuando Laura vuelve del bosque con Lusiano, las cortinas se mueven y la aldea la recibe con susurros sobre «el forastero del diablo»; a la noche salen a buscarlos con linternas y escopetas.",
+   "buscar": "тётя Зина|дед Егор|сосед",
+   "extra": {
+    "zvezdnyj-roman": [
+     2,
+     6,
+     8
+    ]
+   },
+   "ilustracion": [
+    "zvezdnyj-roman",
+    "02.jpg"
+   ]
+  },
+  {
+   "id": "at-crater",
+   "nombre": "El cráter de la estrella caída",
+   "cat": "misterio",
+   "x": -1100,
+   "y": 350,
+   "modelo": "piedra-negra",
+   "desc": "Al final de un sendero viejo que ya casi no usan ni los que juntan hongos, en un claro donde se callan hasta los pájaros: un círculo quemado y, en el medio, una piedra negra con vetas de metal azulado, lisa como pulida, que todavía echa humo. Huele a ceniza y a ozono. Laura agarra a Vitka de la manga: esa piedra no se toca. Entre los árboles se mueve una sombra enorme. Lusiano explicará después que no es un pedazo de meteorito sino una llave, la que tenía que llevarlo de vuelta a casa.",
+   "buscar": "чёрн\\w* камен|выжженн",
+   "extra": {
+    "zvezdnyj-roman": [
+     3,
+     5
+    ]
+   },
+   "ilustracion": [
+    "zvezdnyj-roman",
+    "03.jpg"
+   ]
+  },
+  {
+   "id": "at-linde",
+   "nombre": "El borde del bosque",
+   "cat": "parque",
+   "x": -1300,
+   "y": 120,
+   "modelo": "ninguno",
+   "desc": "Laura, Vitka y los hombres de la aldea salen corriendo del bosque y, en la linde, Laura se da vuelta. A la sombra de los árboles hay un hombre alto, de pelo casi negro y ojos color miel con chispitas doradas, «como si de verdad ardieran estrellas lejanas». Mira solo a ella. «Viste la piedra.» Se llama Lusiano, viene de un planeta lejano, y su pueblo, hace mucho, fue igual que el nuestro.",
+   "buscar": "опушк",
+   "extra": {
+    "zvezdnyj-roman": [
+     4,
+     5
+    ]
+   },
+   "ilustracion": [
+    "zvezdnyj-roman",
+    "04.jpg"
+   ]
+  },
+  {
+   "id": "at-claro",
+   "nombre": "El claro de las estrellas",
+   "cat": "parque",
+   "x": -1350,
+   "y": 720,
+   "modelo": "ninguno",
+   "desc": "Un claro viejo en medio del bosque, desde donde se ve el cielo estrellado entre las ramas. La noche de la huida, Laura y Lusiano se detienen acá por primera vez, y su primer encuentro de amor despierta la llave: en lo hondo del bosque se enciende una luz azul que late como un corazón. A partir de ahí ya no pueden esconderse.",
+   "buscar": "поляне|синий свет",
+   "extra": {
+    "zvezdnyj-roman": [
+     7
+    ]
+   },
+   "ilustracion": [
+    "zvezdnyj-roman",
+    "07.jpg"
+   ]
+  },
+  {
+   "id": "at-cueva",
+   "nombre": "La entrada: la cueva redonda",
+   "cat": "misterio",
+   "x": -1000,
+   "y": 820,
+   "modelo": "ninguno",
+   "desc": "Con los vecinos atrás, con linternas y escopetas, Lusiano arrastra a Laura hacia la luz azul. La tierra se vuelve blanda, los pies se hunden, él la abraza y da un paso adentro del resplandor. Aparecen en una cueva redonda de paredes que brillan azules; en el medio está la piedra, ahora partida, con una sustancia plateada viva adentro, como mercurio. «Esto es la entrada… al lugar donde tenía que despertar, donde está lo que queda de mi nave.»",
+   "buscar": "пещер|Это вход",
+   "extra": {
+    "zvezdnyj-roman": [
+     8
+    ]
+   },
+   "ilustracion": [
+    "zvezdnyj-roman",
+    "08.jpg"
+   ]
+  },
+  {
+   "id": "at-gruta",
+   "nombre": "La gruta de las luces azules",
+   "cat": "misterio",
+   "x": -860,
+   "y": 880,
+   "modelo": "ninguno",
+   "desc": "Al final de un túnel húmedo que huele a sal y a libro viejo, las paredes se abren en una gruta enorme. El techo está cubierto de miles de lucecitas azules, microorganismos que brillan cuando sienten movimiento, y se reflejan en el agua oscura: parece que alguien dio vuelta el cielo bajo tierra. «Te parecés a ellas.» «¿A quiénes?» «A las estrellas.» Dentro del agua tibia Laura puede respirar, y la unión de los dos funde los mundos: el alma de ella responde a la llave.",
+   "buscar": "грот|биолюминес|огоньк",
+   "extra": {
+    "zvezdnyj-roman": [
+     9,
+     10
+    ]
+   },
+   "ilustracion": [
+    "zvezdnyj-roman",
+    "09.jpg"
+   ]
+  },
+  {
+   "id": "at-faro",
+   "nombre": "El viejo faro en ruinas",
+   "cat": "monumento",
+   "x": -680,
+   "y": 700,
+   "modelo": "faro-ruina",
+   "desc": "Una torre medio derruida al borde del bosque, sobre una pendiente alta donde pega el viento: hace mucho fue un faro y guiaba a los barcos. Acá descansan por fin, y después de su noche las paredes se cubren de signos dorados que antes no estaban; Laura descubre en su muñeca un dibujo que late al ritmo de su corazón y ve, en una visión, el hundimiento de la Atlántida. Es también el Lugar de Fuerza: bajo la cúpula, sobre un pedestal de piedra negra, flota un pequeño cristal azul. Ahí los espera la guardiana de armadura oscura; Laura apoya la muñeca en el cristal, la torre responde con una ola que baja a la tierra y sube al cielo, y saltan por un hueco de la pared un instante antes de que la punta estalle de luz.",
+   "buscar": "башн|маяк",
+   "extra": {
+    "zvezdnyj-roman": [
+     11,
+     12,
+     14,
+     15
+    ]
+   },
+   "ilustracion": [
+    "zvezdnyj-roman",
+    "12.jpg"
+   ]
+  },
+  {
+   "id": "at-sala-corazon",
+   "nombre": "La sala del Corazón del Mundo",
+   "cat": "misterio",
+   "x": -620,
+   "y": 610,
+   "modelo": "ninguno",
+   "desc": "Un túnel bajo la torre lleva a una sala inmensa donde flota, sin tocar el piso, un núcleo como de cristal, vivo, que late con una luz dorada: el Corazón del Mundo, corazón de la nave de Lusiano y de toda su red. Laura no le exige nada: le muestra su cansancio, su miedo y su amor, y el Corazón responde. En las paredes aparecen mapas estelares y ríos de signos, y el Guardián se funde en la luz. Ahí Laura sabe que es la Sello, la otra mitad de la llave, un código guardado en su linaje. Y ahí el Corazón se pone rojo: decenas de puntos se acercan a la Tierra. Vuelven los que destruyeron la Atlántida.",
+   "buscar": "Сердц\\w* Мира|Печат",
+   "extra": {
+    "zvezdnyj-roman": [
+     13,
+     14
+    ]
+   },
+   "ilustracion": [
+    "zvezdnyj-roman",
+    "13.jpg"
+   ]
+  },
+  {
+   "id": "at-grieta",
+   "nombre": "La grieta entre las raíces",
+   "cat": "misterio",
+   "x": -840,
+   "y": 560,
+   "modelo": "ninguno",
+   "desc": "Al pie del faro, en el bosque, una grieta estrecha entre raíces y piedra, una gruta seca y diminuta. Laura arrastra hasta acá a Lusiano herido y le sopla en la boca no aire sino luz: el resplandor dorado de la Atlántida que ahora arde en ella. Lusiano revive, pero esa luz es un faro perfecto para los que los buscan: tres guerreros de armadura brillante aparecen de la nada y se los llevan a la nave enemiga.",
+   "buscar": "расщелин",
+   "extra": {
+    "zvezdnyj-roman": [
+     16
+    ]
+   },
+   "ilustracion": [
+    "zvezdnyj-roman",
+    "16.jpg"
+   ]
+  },
+  {
+   "id": "at-nave",
+   "nombre": "La nave enemiga entre las nubes",
+   "cat": "misterio",
+   "x": 150,
+   "y": 650,
+   "modelo": "nave-enemiga",
+   "desc": "La nave de los que hundieron la Atlántida, escondida en las nubes; la novela no dice dónde, y el marcador la pone sobre el mar. Al corazón de la nave llevaron también al Corazón del Mundo herido, cuya energía, sin una voluntad que la guíe, gira en remolinos ciegos. Rodeados de enemigos, Laura entiende que buscaban un arma donde no la hay: el Corazón no quiere que lo capturen. La luz dorada de Lusiano se junta con la azul de la Sello, una ola apaga las armas sin herir a nadie, y se abre un portal turquesa hacia una ciudad lejana. Detrás de ellos, el Corazón se suelta de sus cadenas y los sigue como un río de oro.",
+   "buscar": "корабл",
+   "extra": {
+    "zvezdnyj-roman": [
+     14,
+     16,
+     17
+    ]
+   },
+   "ilustracion": [
+    "zvezdnyj-roman",
+    "17.jpg"
+   ]
+  },
+  {
+   "id": "at-portal",
+   "nombre": "El portal de luz azul",
+   "cat": "misterio",
+   "x": 870,
+   "y": -180,
+   "modelo": "portal-azul",
+   "desc": "Por un portal que se cierra detrás de ellos con un susurro de energía, Laura y Lusiano llegan a la Atlántida. Para volver, el Corazón les abre otro paso: esta vez el portal no parece una herida en el espacio sino una puerta tranquila de luz azul. De la mano, bajo las miradas agradecidas y preocupadas del pueblo antiguo, cruzan de vuelta hacia la Tierra.",
+   "buscar": "портал",
+   "extra": {
+    "zvezdnyj-roman": [
+     17,
+     18
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "at-templo",
+   "nombre": "El templo del Corazón (Atlántida)",
+   "cat": "monumento",
+   "x": 1500,
+   "y": -100,
+   "modelo": "templo-corazon",
+   "desc": "En el centro de la Atlántida, en la isla rodeada por los anillos de agua, el Corazón del Mundo vuelve a casa. La planta de la ciudad es imaginada: la novela solo cuenta torres blancas y de cristal bajo un cielo turquesa. El anciano revela que la huida de Lusiano no fue casualidad: él llevaba escondida la última chispa del Corazón, su núcleo más puro, y al encontrarse con la Sello que la familia de Laura guardó durante siglos, la chispa despertó. «Su unión no solo abrió el portal. Le devolvió a la Atlántida su alma.»",
+   "buscar": "искр\\w* Сердца|душу",
+   "extra": {
+    "zvezdnyj-roman": [
+     17,
+     18
+    ]
+   },
+   "ilustracion": [
+    "zvezdnyj-roman",
+    "10.jpg"
+   ]
+  },
+  {
+   "id": "at-ancianos",
+   "nombre": "La plaza de los ancianos",
+   "cat": "plaza",
+   "x": 1500,
+   "y": 250,
+   "modelo": "ninguno",
+   "desc": "De la multitud sale el anciano de pelo largo plateado y barba luminosa, con una voz como un repique de campanas de cristal. Lusiano mira su patria como si tuviera miedo de parpadear y volver a perderla. Pero Laura no puede quedarse: piensa en la aldea, en los vecinos asustados, en la casa abandonada. Los ancianos aceptan, con una sombra de inquietud: los enemigos no van a retroceder, y los dos tienen que ser un puente no solo entre mundos, sino entre el pasado y el futuro.",
+   "buscar": "старейшин",
+   "extra": {
+    "zvezdnyj-roman": [
+     18
+    ]
+   },
+   "ilustracion": [
+    "zvezdnyj-roman",
+    "18.jpg"
+   ]
+  },
+  {
+   "id": "at-torres",
+   "nombre": "Las torres caracola",
+   "cat": "monumento",
+   "x": 1180,
+   "y": 330,
+   "modelo": "torres-caracola",
+   "desc": "Lo primero que ve Laura al salir del portal: hasta el horizonte se extiende la Atlántida, con torres de piedra blanca y de cristal parecidas a enormes caracolas brillantes, que suben hacia el cielo turquesa. En la visión del faro había visto lo contrario: el agua golpeando las paredes de cristal, los puentes que se caían y la gente que no llegaba a salvarse. Ahora la ciudad está entera, en paz, bajo la masa del océano.",
+   "buscar": "раковин|кристальн\\w* стен",
+   "extra": {
+    "zvezdnyj-roman": [
+     12,
+     18
+    ]
+   },
+   "sin_ilustracion": true
+  }
+ ]
+}

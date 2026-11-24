@@ -1,0 +1,173 @@
+{
+ "_info": "Reseñas de los personajes de «Звёздный роман».",
+ "at-casa-laura": [
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 5,
+   "es": "Vine a aburrirme y me cayó una estrella en el patio de atrás. El té se enfría rápido en la galería. Volví, y ahora la casa es para dos.",
+   "ru": "Приехала скучать, а мне за огородом упала звезда. Чай на веранде остывает быстро. Я вернулась, и теперь дом на двоих."
+  },
+  {
+   "a": "Lusiano",
+   "ar": "Лусиано",
+   "s": 5,
+   "es": "Huele a manzanas y a madera seca. Vi palacios de cristal, y este cuarto me gusta más.",
+   "ru": "Пахнет яблоками и сухим деревом. Я видел хрустальные дворцы, но эта комната мне нравится больше."
+  }
+ ],
+ "at-aldea": [
+  {
+   "a": "Tía Zina",
+   "ar": "Тётя Зина",
+   "s": 3,
+   "es": "No dormí en toda la noche, pensé que había empezado la guerra. Y la chica de la ciudad se fue con un forastero. Yo ya lo decía.",
+   "ru": "Всю ночь не спала, думала, война началась. А городская ушла с каким-то пришельцем. Я так и знала."
+  },
+  {
+   "a": "Vitka",
+   "ar": "Витька",
+   "s": 4,
+   "es": "Bola de fuego, cien por ciento. Después en el bosque vi una cosa que no le cuento a nadie. Bueno, a ustedes sí.",
+   "ru": "Огненный шар, сто процентов. Потом в лесу видел такое, что никому не расскажу. Ну, вам расскажу."
+  }
+ ],
+ "at-crater": [
+  {
+   "a": "Vitka",
+   "ar": "Витька",
+   "s": 2,
+   "es": "No toquen la piedra. Lo digo en serio. Ni las moscas se acercan.",
+   "ru": "Камень не трогайте. Я серьёзно. Даже мухи не подлетают."
+  },
+  {
+   "a": "Abuelo Yegor",
+   "ar": "Дед Егор",
+   "s": 3,
+   "es": "Dicen que un oso. Yo, a mis años, sé distinguir un oso. Eso no era un oso.",
+   "ru": "Говорят, медведь. Я в мои годы медведя отличу. Это был не медведь."
+  }
+ ],
+ "at-linde": [
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 5,
+   "es": "Me di vuelta y ahí estaba, mirándome solo a mí. Sus ojos tenían estrellas. No exagero: se ven.",
+   "ru": "Я обернулась, а он стоял и смотрел только на меня. В его глазах были звёзды. Не преувеличиваю: их видно."
+  }
+ ],
+ "at-claro": [
+  {
+   "a": "Lusiano",
+   "ar": "Лусиано",
+   "s": 5,
+   "es": "Desde acá se ve el cielo entre las ramas. Esa noche la llave despertó. Yo también.",
+   "ru": "Отсюда сквозь ветви видно небо. В ту ночь проснулся ключ. И я тоже."
+  }
+ ],
+ "at-cueva": [
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 4,
+   "es": "Por un segundo sentí que me deshacía en mil millones de partículas. Después, silencio y paredes azules. «Después te explico.» Sigo esperando.",
+   "ru": "На миг мне показалось, что я рассыпалась на миллиард частиц. Потом тишина и синие стены. «Потом всё объясню». Жду до сих пор."
+  }
+ ],
+ "at-gruta": [
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 5,
+   "es": "El cielo, dado vuelta bajo tierra. Las luces se encienden cuando te movés. Te movés mucho.",
+   "ru": "Небо, опрокинутое под землю. Огоньки загораются, когда двигаешься. Двигаешься много."
+  },
+  {
+   "a": "Lusiano",
+   "ar": "Лусиано",
+   "s": 5,
+   "es": "Le dije que se parecía a las estrellas. Las lucecitas me dieron la razón.",
+   "ru": "Я сказал ей, что она похожа на звёзды. Огоньки со мной согласились."
+  }
+ ],
+ "at-faro": [
+  {
+   "a": "La guardiana",
+   "ar": "Стражница",
+   "s": 1,
+   "es": "Esperé siglos junto al cristal. Una muchacha de pueblo apoyó la muñeca y se terminó todo.",
+   "ru": "Я веками ждала у кристалла. Деревенская девушка приложила запястье — и всё закончилось."
+  },
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 4,
+   "es": "Hermosa vista al mar, viento fuerte, signos dorados en las paredes. La salida es por el agujero de la pared, sin aviso.",
+   "ru": "Красивый вид на море, сильный ветер, золотые знаки на стенах. Выход — через пролом в стене, без предупреждения."
+  }
+ ],
+ "at-sala-corazon": [
+  {
+   "a": "Lusiano",
+   "ar": "Лусиано",
+   "s": 5,
+   "es": "El corazón de mi nave y de todo mi pueblo. No le pedimos nada, y respondió.",
+   "ru": "Сердце моего корабля и всего моего народа. Мы ничего у него не просили — и оно ответило."
+  }
+ ],
+ "at-grieta": [
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 4,
+   "es": "Chiquita, seca, escondida. Le devolví la vida con un beso de luz. Lo malo: esa luz se ve desde el espacio.",
+   "ru": "Крошечная, сухая, укромная. Я вернула ему жизнь поцелуем света. Плохо одно: этот свет видно из космоса."
+  }
+ ],
+ "at-nave": [
+  {
+   "a": "Lusiano",
+   "ar": "Лусиано",
+   "s": 1,
+   "es": "Muchas armas, ninguna sirve. Pasillos fríos. Lo mejor: la salida por el portal turquesa.",
+   "ru": "Много оружия, и всё бесполезно. Холодные коридоры. Лучшее — выход через бирюзовый портал."
+  }
+ ],
+ "at-portal": [
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 5,
+   "es": "A la ida era una herida en el espacio; a la vuelta, una puerta tranquila. Se nota cuando alguien te espera del otro lado.",
+   "ru": "Туда это была рана в пространстве, обратно — спокойная дверь. Чувствуется, когда тебя ждут на той стороне."
+  }
+ ],
+ "at-templo": [
+  {
+   "a": "El anciano",
+   "ar": "Старейшина",
+   "s": 5,
+   "es": "La última chispa volvió a casa y nos devolvió el alma. Los dos jóvenes no se quedaron. Así son los puentes.",
+   "ru": "Последняя искра вернулась домой и вернула нам душу. Двое молодых не остались. Таковы мосты."
+  }
+ ],
+ "at-ancianos": [
+  {
+   "a": "Lusiano",
+   "ar": "Лусиано",
+   "s": 5,
+   "es": "Tenía miedo de parpadear y volver a perderla. Igual me fui. Volvemos después; lo prometí.",
+   "ru": "Боялся моргнуть и снова её потерять. И всё равно ушёл. Мы вернёмся потом — я обещал."
+  }
+ ],
+ "at-torres": [
+  {
+   "a": "Laura",
+   "ar": "Лаура",
+   "s": 5,
+   "es": "Caracolas de cristal hasta el horizonte y un cielo turquesa. Parecía un sueño. Igual extrañé las manzanas.",
+   "ru": "Хрустальные раковины до горизонта и бирюзовое небо. Было похоже на сон. И всё равно я скучала по яблокам."
+  }
+ ]
+}

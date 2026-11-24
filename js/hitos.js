@@ -1045,6 +1045,91 @@ const MODELOS = {
     g.add(caja(10, 52, 10, bl, 40, 0, 10)); g.add(esfera(6, verde, 40, 52, 10, {}, [12, 8, 0, Math.PI * 2, 0, Math.PI / 2])); g.add(cil(1.5, 2.5, 10, verde, 40, 57, 10, 8));
     return { g, r: 40 };
   },
+  'faro-ruina'() { // el viejo faro en ruinas de «Звёздный роман»: torre de piedra rota, signos dorados y el cristal azul bajo la cúpula
+    const g = new THREE.Group(), piedra = M(0x9b9488), osc = M(0x6f6a62), oro = brillo(0xf5c35a), azul = brillo(0x6fc8ff);
+    g.add(cil(9, 11, 4, osc, 0, 0, 0, 16));
+    g.add(cil(6.5, 8.5, 34, piedra, 0, 4, 0, 14));
+    for (let i = 0; i < 6; i++) { const a = i * 1.05; g.add(caja(1.6, 3, .5, 0x2b2a28, Math.cos(a) * 7.6, 10 + (i % 3) * 8, Math.sin(a) * 7.6)); }
+    // la linterna rota: medio anillo de pilares y la cúpula partida
+    g.add(cil(7, 7, 1.4, osc, 0, 38, 0, 14));
+    for (let i = 0; i < 5; i++) { const a = i * .9; g.add(caja(.8, 6 - (i % 2) * 2, .8, osc, Math.cos(a) * 5.5, 39.4, Math.sin(a) * 5.5)); }
+    g.add(esfera(5.6, osc, 0, 45, 0, {}, [12, 8, 0, Math.PI * 1.2, 0, Math.PI / 2]));
+    const cristal = new THREE.Mesh(new THREE.OctahedronGeometry(1.8), azul); cristal.position.set(0, 42, 0); g.add(cristal);
+    // signos dorados que aparecieron en las paredes
+    for (let i = 0; i < 10; i++) { const a = i * .63; g.add(caja(.4, 1.6, .3, oro, Math.cos(a) * 8.2, 8 + (i * 7 % 22), Math.sin(a) * 8.2)); }
+    // piedras caídas del pedazo que explotó
+    for (let i = 0; i < 7; i++) g.add(caja(2 + i % 3, 1.5, 2, piedra, -14 + i * 4.5, 0, 12 + (i % 2) * 4));
+    return { g, r: 26, anim(t) { cristal.rotation.y = t * .8; cristal.position.y = 42 + Math.sin(t * 1.5) * .4; } };
+  },
+  'piedra-negra'() { // la estrella caída: piedra negra con vetas azules en un círculo quemado
+    const g = new THREE.Group();
+    const quemado = cil(26, 26, .3, 0x2c2620, 0, 0, 0, 24); g.add(quemado);
+    const p = new THREE.Mesh(new THREE.DodecahedronGeometry(5, 0), M(0x16171c, { metalness: .6, roughness: .25 })); p.position.y = 3.5; p.scale.set(1.3, .8, 1); g.add(p);
+    for (let i = 0; i < 5; i++) { const v = caja(.3, .3, 6, brillo(0x4fa8ff), 0, 3.5 + (i - 2) * .9, 0); v.rotation.y = i * .7; g.add(v); }
+    for (let i = 0; i < 9; i++) { const a = i * .7; const r = caja(.5, .5, 9, 0x3a3027, Math.cos(a) * 15, .3, Math.sin(a) * 15); r.rotation.y = a; g.add(r); }
+    return { g, r: 26 };
+  },
+  'templo-corazon'() { // el templo central de la Atlántida con el Corazón del Mundo flotando, golden
+    const g = new THREE.Group(), bl = M(0xf6f8fa, { roughness: .35 }), cristal = new THREE.MeshStandardMaterial({ color: 0xbfefff, transparent: true, opacity: .55, metalness: .3, roughness: .05 });
+    g.add(cil(70, 80, 6, bl, 0, 0, 0, 32));
+    for (let i = 0; i < 16; i++) { const a = i / 16 * Math.PI * 2; g.add(cil(2.2, 2.6, 34, bl, Math.cos(a) * 52, 6, Math.sin(a) * 52, 10)); }
+    g.add(new THREE.Mesh(new THREE.TorusGeometry(52, 3, 6, 40), bl)); g.children[g.children.length - 1].rotation.x = Math.PI / 2; g.children[g.children.length - 1].position.y = 41;
+    const cup = esfera(50, cristal, 0, 42, 0, {}, [32, 16, 0, Math.PI * 2, 0, Math.PI / 2]); g.add(cup);
+    const nucleo = new THREE.Mesh(new THREE.IcosahedronGeometry(11, 1), new THREE.MeshStandardMaterial({ color: 0xffd36a, emissive: 0xffb02e, emissiveIntensity: 1.4, flatShading: true })); nucleo.position.y = 52; g.add(nucleo);
+    const halo = new THREE.Mesh(new THREE.TorusGeometry(18, .8, 6, 40), brillo(0xffe28a)); halo.position.y = 52; g.add(halo);
+    return { g, r: 90, anim(t) { nucleo.rotation.y = t * .4; nucleo.rotation.x = t * .2; nucleo.position.y = 52 + Math.sin(t) * 2; halo.rotation.x = Math.PI / 2 + Math.sin(t * .5) * .4; halo.rotation.y = t * .3; } };
+  },
+  'torres-caracola'() { // torres de piedra blanca y de cristal «como enormes caracolas brillantes»
+    const g = new THREE.Group(), bl = M(0xf3f6f8, { roughness: .3 }), cr = new THREE.MeshStandardMaterial({ color: 0x9fe3f0, transparent: true, opacity: .7, metalness: .4, roughness: .05 });
+    const caracola = (x, z, h, r, mat) => { const q = new THREE.Group(); const n = 9; for (let k = 0; k < n; k++) { const t = k / n; const c = new THREE.Mesh(new THREE.ConeGeometry(r * (1 - t * .85), h / n * 1.8, 10), mat); c.position.y = h * t + h / n; c.rotation.y = k * .6; c.position.x = Math.cos(k * 1.3) * r * .15 * (1 - t); q.add(c); } q.position.set(x, 0, z); g.add(q); };
+    caracola(0, 0, 90, 14, bl); caracola(30, 18, 64, 10, cr); caracola(-28, 14, 70, 11, bl); caracola(10, -32, 54, 9, cr); caracola(-12, -20, 40, 8, bl);
+    return { g, r: 50 };
+  },
+  'portal-azul'() { // el portal de luz azul, «una puerta tranquila de luz»
+    const g = new THREE.Group(), anillo = new THREE.Mesh(new THREE.TorusGeometry(14, 1.6, 10, 48), new THREE.MeshStandardMaterial({ color: 0x8fd8ff, emissive: 0x3aa8ff, emissiveIntensity: 1.5 }));
+    anillo.position.y = 17; anillo.rotation.y = Math.PI / 2; g.add(anillo);
+    const velo = new THREE.Mesh(new THREE.CircleGeometry(13, 40), new THREE.MeshBasicMaterial({ color: 0x9fe6ff, transparent: true, opacity: .45, side: THREE.DoubleSide })); velo.position.y = 17; velo.rotation.y = Math.PI / 2; g.add(velo);
+    g.add(cil(16, 18, 1.5, M(0xeef4f6), 0, 0, 0, 24));
+    return { g, r: 22, anim(t) { velo.material.opacity = .35 + Math.sin(t * 2) * .12; anillo.rotation.x = Math.sin(t * .7) * .05; } };
+  },
+  'nave-enemiga'() { // la nave de los que destruyeron la Atlántida, escondida en las nubes sobre el mar
+    const g = new THREE.Group(), osc = M(0x22252d, { metalness: .7, roughness: .35 }), rojo = brillo(0xff3b3b);
+    const casco = new THREE.Mesh(new THREE.ConeGeometry(36, 150, 6), osc); casco.rotation.z = Math.PI / 2; casco.scale.set(1, 1, .45); casco.position.y = 300; g.add(casco);
+    for (const s of [-1, 1]) { const ala = caja(60, 3, 30, osc, 25, 296, s * 30); ala.rotation.x = s * .25; g.add(ala); g.add(esfera(2.4, rojo, 50, 296, s * 42)); }
+    g.add(caja(30, 12, 18, osc, 40, 312, 0));
+    for (let i = 0; i < 4; i++) g.add(esfera(1.8, rojo, -40 + i * 22, 292, 0));
+    const nube = new THREE.MeshBasicMaterial({ color: 0xf2f4f8, transparent: true, opacity: .55, depthWrite: false });
+    for (let i = 0; i < 9; i++) g.add(esfera(26 + (i % 3) * 10, nube, -90 + i * 24, 285 + (i % 2) * 14, (i % 3 - 1) * 26));
+    return { g, r: 0, anim(t) { g.position.y = Math.sin(t * .4) * 6; } };
+  },
+  'roca-llave'() { // la roca muy grande de la entrada, con el agujero de la llave y la puerta secreta
+    const g = new THREE.Group(), roca = new THREE.MeshStandardMaterial({ color: 0x8d8579, roughness: 1, flatShading: true });
+    const r = new THREE.Mesh(new THREE.DodecahedronGeometry(16, 1), roca); r.position.y = 11; r.scale.set(1.3, 1, 1); g.add(r);
+    g.add(caja(6, 9, 1, 0x2a2016, 0, 0, 13.5)); // la puerta que aparece cuando la roca se mueve
+    g.add(esfera(.6, brillo(0xf2c75a), 4, 7, 14.6));
+    for (const s of [-1, 1]) { g.add(cil(.25, .25, 3, 0x3a2b1c, s * 5, 5, 14, 5)); g.add(esfera(.7, brillo(0xffa040), s * 5, 8.4, 14)); }
+    return { g, r: 22 };
+  },
+  'torre-bandera'() { // la torre más alta de la Ciudad Secreta: desde ahí Carlos mueve la bandera roja
+    const g = new THREE.Group(), bl = M(0xfbf7ee);
+    g.add(cil(7, 8, 60, bl, 0, 0, 0, 16));
+    for (let k = 1; k < 5; k++) g.add(cil(8.4, 8.4, 1, M(0xe6dcc6), 0, k * 12, 0, 16));
+    g.add(cil(9, 9, 3, bl, 0, 60, 0, 16)); for (let i = 0; i < 10; i++) { const a = i / 10 * Math.PI * 2; g.add(caja(1.4, 2.5, 1.4, bl, Math.cos(a) * 8.4, 63, Math.sin(a) * 8.4)); }
+    const tejado = new THREE.Mesh(new THREE.ConeGeometry(8, 14, 16), M(0xd8b96a, { metalness: .5, roughness: .4 })); tejado.position.y = 70; g.add(tejado);
+    g.add(cil(.25, .25, 10, 0x333333, 5, 63, 0, 5));
+    const bandera = caja(5, 3, .2, M(0xd8262b), 7.5, 70, 0); g.add(bandera);
+    return { g, r: 16, anim(t) { bandera.rotation.y = Math.sin(t * 6) * .35; } };
+  },
+  'mesas-trampa'() { // la plaza central: el lugar alto de Julián y las mesas largas con pan, queso, fruta y vino dulce
+    const g = new THREE.Group(), madera = M(0x8a5a32), piedra = M(0xe9e0cc);
+    g.add(cil(9, 10, 2.5, piedra, 0, 0, 0, 16)); g.add(cil(5, 6, 2.5, piedra, 0, 2.5, 0, 16));
+    for (let f = 0; f < 3; f++) {
+      const z = -22 + f * 22; g.add(caja(36, .5, 3.4, madera, 0, 2.2, z));
+      for (const x of [-16, 0, 16]) g.add(caja(.5, 2.2, 3, madera, x, 0, z));
+      for (let i = 0; i < 10; i++) { const x = -16 + i * 3.5; g.add(cil(.25, .3, 1.1, i % 2 ? M(0x5b1222) : M(0x2f5a2a), x, 2.7, z + .6, 6)); g.add(esfera(.45, i % 3 ? M(0xe8b04a) : M(0xd8442b), x + 1.2, 2.9, z - .7)); }
+    }
+    return { g, r: 40 };
+  },
   'tren-fantasma'() { return { g: new THREE.Group(), r: 0 }; }
 };
 
@@ -1066,7 +1151,7 @@ export function construirHitos(lugares, u) {
     grupo.add(m.g);
     if (m.anim) anims.push(m.anim);
     if (m.r) reservas.push([L.x, L.y, m.r]);
-    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, usina: 20, 'karluv-most': 22, 'hrad-praga': 92, tyn: 82, petrin: 64, vysehrad: 60, zizkov: 230, mikulas: 62, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
+    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, usina: 20, 'faro-ruina': 50, 'piedra-negra': 10, 'templo-corazon': 96, 'torres-caracola': 96, 'portal-azul': 34, 'nave-enemiga': 330, 'roca-llave': 28, 'torre-bandera': 80, 'mesas-trampa': 10, 'karluv-most': 22, 'hrad-praga': 92, tyn: 82, petrin: 64, vysehrad: 60, zizkov: 230, mikulas: 62, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
   }
   // reserva extra: la plaza Dante entera y el puerto
   reservas.push(...RESERVAS);
@@ -1292,4 +1377,27 @@ export function crearOstrovy(anclas) {
     lista.push({ isla, y0: alto, f: i * 1.3 });
   });
   return { g, anim(t) { for (const o of lista) { o.isla.position.y = o.y0 + Math.sin(t * .35 + o.f) * 4; o.isla.rotation.y = Math.sin(t * .08 + o.f) * .03; } } };
+}
+
+// «Звёздный роман»: la cúpula de agua sobre la Atlántida, que vive «bajo la masa del océano»
+export function crearCupulaAtlantida(x, y) {
+  const g = new THREE.Group();
+  const mat = new THREE.MeshPhysicalMaterial({ color: 0x8fe0ec, transparent: true, opacity: .16, roughness: .05, metalness: .1, side: THREE.DoubleSide, depthWrite: false });
+  const cup = new THREE.Mesh(new THREE.SphereGeometry(760, 48, 20, 0, Math.PI * 2, 0, Math.PI / 2), mat);
+  cup.scale.y = .42; cup.position.set(x, 0, -y); g.add(cup);
+  const borde = new THREE.Mesh(new THREE.TorusGeometry(760, 4, 6, 96), new THREE.MeshBasicMaterial({ color: 0xbff4ff, transparent: true, opacity: .5 }));
+  borde.rotation.x = Math.PI / 2; borde.position.set(x, 1, -y); g.add(borde);
+  return { g, anim(t) { mat.opacity = .14 + Math.sin(t * .5) * .03; } };
+}
+// «La ciudad secreta»: los cristales grandes del techo, que dan una luz dorada como la del sol
+export function crearCristalesTecho() {
+  const g = new THREE.Group(), lista = [];
+  const mat = new THREE.MeshStandardMaterial({ color: 0xfff1b8, emissive: 0xffc94a, emissiveIntensity: 1.1, transparent: true, opacity: .85, flatShading: true });
+  for (let i = 0; i < 38; i++) {
+    const a = i * 2.399, r = 60 + Math.sqrt(i / 38) * 620;
+    const c = new THREE.Mesh(new THREE.OctahedronGeometry(10 + (i % 4) * 6, 0), mat);
+    c.scale.y = 2.4; c.position.set(Math.cos(a) * r, 230 + (i % 5) * 14, -Math.sin(a) * r * .85); c.rotation.z = Math.PI; g.add(c); lista.push([c, i]);
+  }
+  const luz = new THREE.PointLight(0xffd27a, 1.2, 1800, 1.2); luz.position.set(0, 260, 0); g.add(luz);
+  return { g, anim(t, noche) { for (const [c, i] of lista) c.rotation.y = t * .1 + i; mat.emissiveIntensity = noche ? 1.6 : 1.1; } };
 }

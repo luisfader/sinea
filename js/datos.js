@@ -23602,64 +23602,1317 @@ export const CIUDADES = {
 "c": "1"
 }
 }
+],
+"atlantida": [
+{
+"id": "at-casa-laura",
+"nombre": "La casa de Laura",
+"cat": "casa",
+"x": -1760,
+"y": -330,
+"modelo": "casa",
+"desc": "Una vieja casa de madera en la aldea, con olor a manzanas, a tablas secas y a polvo, y un banco de mimbre en la galería. Laura vino a esconderse un tiempo de su pasado y se aburre: la ciudad la llama. Una noche, mirando el cielo con el té ya frío, ve caer una estrella que no se apaga y se estrella detrás del bosque. Después de huir de acá en diez minutos, con documentos, plata y un abrigo en la mochila, Laura vuelve al final de la novela: en una sola habitación con luz de atardecer, ella y Lusiano entienden que, en cualquiera de los dos mundos, siempre vuelven el uno al otro.",
+"nombre_ru": "Дом Лауры",
+"desc_ru": "Старый деревянный дом в деревне, пропахший яблоками, сухими досками и пылью, с плетёной скамьёй на веранде. Лаура приехала ненадолго спрятаться от прошлого и скучает: город зовёт её обратно. Однажды ночью, глядя в небо с давно остывшим чаем, она видит падающую звезду, которая не гаснет и рушится за лесом. Сбежав отсюда за десять минут — деньги, документы и тёплая кофта в рюкзаке, — Лаура возвращается в конце романа: в одной-единственной комнате, залитой закатным светом, они с Лусиано понимают, что в каком бы из двух миров ни оказались, всегда возвращаются друг к другу.",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"1",
+"Падение"
+],
+[
+"6",
+"Бегство"
+],
+[
+"19",
+"В двух мирах"
+]
+]
+}
+],
+"res": [
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 5,
+"es": "Vine a aburrirme y me cayó una estrella en el patio de atrás. El té se enfría rápido en la galería. Volví, y ahora la casa es para dos.",
+"ru": "Приехала скучать, а мне за огородом упала звезда. Чай на веранде остывает быстро. Я вернулась, и теперь дом на двоих."
+},
+{
+"a": "Lusiano",
+"ar": "Лусиано",
+"s": 5,
+"es": "Huele a manzanas y a madera seca. Vi palacios de cristal, y este cuarto me gusta más.",
+"ru": "Пахнет яблоками и сухим деревом. Я видел хрустальные дворцы, но эта комната мне нравится больше."
+}
+],
+"img": {
+"src": "img/lugares/at-casa-laura.webp",
+"n": "zvezdnyj-roman",
+"c": "1"
+}
+},
+{
+"id": "at-aldea",
+"nombre": "La calle de la aldea",
+"cat": "barrio",
+"x": -1560,
+"y": -260,
+"modelo": "ninguno",
+"desc": "La aldea entre manzanos, donde el tiempo corre lento «como la miel de un frasco dado vuelta». A la mañana siguiente de la caída los vecinos se juntan en la calle: la tía Zina, de la última casa, cree que empezó una guerra; el abuelo Yegor, apoyado en su bastón, dice que fue una explosión; Vitka, que suelda en su garaje, jura que vio una bola de fuego. Cuando Laura vuelve del bosque con Lusiano, las cortinas se mueven y la aldea la recibe con susurros sobre «el forastero del diablo»; a la noche salen a buscarlos con linternas y escopetas.",
+"nombre_ru": "Деревенская улица",
+"desc_ru": "Деревня среди яблонь, где время течёт медленно, «как мёд из перевёрнутой банки». Наутро после падения соседи собираются на улице: тётя Зина с крайнего дома думает, что началась война, дед Егор, опираясь на палку, говорит про взрыв, а Витька, который возится со сваркой в гараже, клянётся, что видел огненный шар. Когда Лаура возвращается из леса с Лусиано, занавески шевелятся и деревня встречает её шёпотом о «дьявольском пришельце», а ночью соседи выходят искать их с фонарями и ружьями.",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"2",
+"Соседские слухи"
+],
+[
+"6",
+"Бегство"
+],
+[
+"8",
+"Потом всё объясню"
+],
+[
+"18",
+"Возвращение к истокам"
+],
+[
+"extra-1",
+"Итоговый тест"
+]
+]
+}
+],
+"res": [
+{
+"a": "Tía Zina",
+"ar": "Тётя Зина",
+"s": 3,
+"es": "No dormí en toda la noche, pensé que había empezado la guerra. Y la chica de la ciudad se fue con un forastero. Yo ya lo decía.",
+"ru": "Всю ночь не спала, думала, война началась. А городская ушла с каким-то пришельцем. Я так и знала."
+},
+{
+"a": "Vitka",
+"ar": "Витька",
+"s": 4,
+"es": "Bola de fuego, cien por ciento. Después en el bosque vi una cosa que no le cuento a nadie. Bueno, a ustedes sí.",
+"ru": "Огненный шар, сто процентов. Потом в лесу видел такое, что никому не расскажу. Ну, вам расскажу."
+}
+],
+"img": {
+"src": "img/lugares/at-aldea.webp",
+"n": "zvezdnyj-roman",
+"c": "2"
+}
+},
+{
+"id": "at-crater",
+"nombre": "El cráter de la estrella caída",
+"cat": "misterio",
+"x": -1100,
+"y": 350,
+"modelo": "piedra-negra",
+"desc": "Al final de un sendero viejo que ya casi no usan ni los que juntan hongos, en un claro donde se callan hasta los pájaros: un círculo quemado y, en el medio, una piedra negra con vetas de metal azulado, lisa como pulida, que todavía echa humo. Huele a ceniza y a ozono. Laura agarra a Vitka de la manga: esa piedra no se toca. Entre los árboles se mueve una sombra enorme. Lusiano explicará después que no es un pedazo de meteorito sino una llave, la que tenía que llevarlo de vuelta a casa.",
+"nombre_ru": "Место падения звезды",
+"desc_ru": "В конце старой тропы, по которой почти не ходят даже грибники, на поляне, где замолкают даже птицы: выжженный круг, а в центре — чёрный камень с прожилками синеватого металла, гладкий, будто отполированный, и всё ещё дымящийся. Пахнет пеплом и озоном. Лаура хватает Витьку за рукав: этот камень трогать нельзя. За деревьями шевелится огромная тень. Потом Лусиано объяснит, что это не осколок метеорита, а ключ, который должен был вернуть его домой.",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"3",
+"Чёрный камень"
+],
+[
+"5",
+"Лусиано"
+],
+[
+"6",
+"Бегство"
+],
+[
+"extra-1",
+"Итоговый тест"
+]
+]
+}
+],
+"res": [
+{
+"a": "Vitka",
+"ar": "Витька",
+"s": 2,
+"es": "No toquen la piedra. Lo digo en serio. Ni las moscas se acercan.",
+"ru": "Камень не трогайте. Я серьёзно. Даже мухи не подлетают."
+},
+{
+"a": "Abuelo Yegor",
+"ar": "Дед Егор",
+"s": 3,
+"es": "Dicen que un oso. Yo, a mis años, sé distinguir un oso. Eso no era un oso.",
+"ru": "Говорят, медведь. Я в мои годы медведя отличу. Это был не медведь."
+}
+],
+"img": {
+"src": "img/lugares/at-crater.webp",
+"n": "zvezdnyj-roman",
+"c": "3"
+}
+},
+{
+"id": "at-linde",
+"nombre": "El borde del bosque",
+"cat": "parque",
+"x": -1300,
+"y": 120,
+"modelo": "ninguno",
+"desc": "Laura, Vitka y los hombres de la aldea salen corriendo del bosque y, en la linde, Laura se da vuelta. A la sombra de los árboles hay un hombre alto, de pelo casi negro y ojos color miel con chispitas doradas, «como si de verdad ardieran estrellas lejanas». Mira solo a ella. «Viste la piedra.» Se llama Lusiano, viene de un planeta lejano, y su pueblo, hace mucho, fue igual que el nuestro.",
+"nombre_ru": "Опушка леса",
+"desc_ru": "Лаура, Витька и деревенские мужики выбегают из леса, и на опушке Лаура оборачивается. В тени крон стоит высокий мужчина с почти чёрными волосами и медовыми глазами с золотыми искорками, «будто там и правда горели далёкие звёзды». Он смотрит только на неё. «Ты видела камень». Его зовут Лусиано, он с далёкой планеты, и когда-то давно его народ был таким же, как мы.",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"4",
+"Он"
+],
+[
+"5",
+"Лусиано"
+]
+]
+}
+],
+"res": [
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 5,
+"es": "Me di vuelta y ahí estaba, mirándome solo a mí. Sus ojos tenían estrellas. No exagero: se ven.",
+"ru": "Я обернулась, а он стоял и смотрел только на меня. В его глазах были звёзды. Не преувеличиваю: их видно."
+}
+],
+"img": {
+"src": "img/lugares/at-linde.webp",
+"n": "zvezdnyj-roman",
+"c": "4"
+}
+},
+{
+"id": "at-claro",
+"nombre": "El claro de las estrellas",
+"cat": "parque",
+"x": -1350,
+"y": 720,
+"modelo": "ninguno",
+"desc": "Un claro viejo en medio del bosque, desde donde se ve el cielo estrellado entre las ramas. La noche de la huida, Laura y Lusiano se detienen acá por primera vez, y su primer encuentro de amor despierta la llave: en lo hondo del bosque se enciende una luz azul que late como un corazón. A partir de ahí ya no pueden esconderse.",
+"nombre_ru": "Поляна под звёздами",
+"desc_ru": "Старая поляна посреди леса, откуда сквозь ветви видно звёздное небо. В ночь бегства Лаура и Лусиано впервые останавливаются здесь, и их первая близость пробуждает ключ: в глубине леса вспыхивает синий свет, пульсирующий, как сердце. С этого момента спрятаться им уже не удастся.",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"7",
+"Пробуждение ключа"
+],
+[
+"8",
+"Потом всё объясню"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lusiano",
+"ar": "Лусиано",
+"s": 5,
+"es": "Desde acá se ve el cielo entre las ramas. Esa noche la llave despertó. Yo también.",
+"ru": "Отсюда сквозь ветви видно небо. В ту ночь проснулся ключ. И я тоже."
+}
+],
+"img": {
+"src": "img/lugares/at-claro.webp",
+"n": "zvezdnyj-roman",
+"c": "7"
+}
+},
+{
+"id": "at-cueva",
+"nombre": "La entrada: la cueva redonda",
+"cat": "misterio",
+"x": -1000,
+"y": 820,
+"modelo": "ninguno",
+"desc": "Con los vecinos atrás, con linternas y escopetas, Lusiano arrastra a Laura hacia la luz azul. La tierra se vuelve blanda, los pies se hunden, él la abraza y da un paso adentro del resplandor. Aparecen en una cueva redonda de paredes que brillan azules; en el medio está la piedra, ahora partida, con una sustancia plateada viva adentro, como mercurio. «Esto es la entrada… al lugar donde tenía que despertar, donde está lo que queda de mi nave.»",
+"nombre_ru": "Вход: круглая пещера",
+"desc_ru": "Позади соседи с фонарями и ружьями, и Лусиано тянет Лауру к синему свету. Земля становится мягкой, ноги проваливаются, он обнимает её и шагает прямо в сияние. Они оказываются в круглой пещере со светящимися синими стенами; в центре лежит камень, теперь расколотый, а внутри переливается живая серебристая субстанция, похожая на ртуть. «Это вход… в место, где я должен был проснуться. Где хранится то, что осталось от моего корабля».",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"8",
+"Потом всё объясню"
+],
+[
+"9",
+"Там, где светятся звёзды"
+]
+]
+}
+],
+"res": [
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 4,
+"es": "Por un segundo sentí que me deshacía en mil millones de partículas. Después, silencio y paredes azules. «Después te explico.» Sigo esperando.",
+"ru": "На миг мне показалось, что я рассыпалась на миллиард частиц. Потом тишина и синие стены. «Потом всё объясню». Жду до сих пор."
+}
+],
+"img": {
+"src": "img/lugares/at-cueva.webp",
+"n": "zvezdnyj-roman",
+"c": "8"
+}
+},
+{
+"id": "at-gruta",
+"nombre": "La gruta de las luces azules",
+"cat": "misterio",
+"x": -860,
+"y": 880,
+"modelo": "ninguno",
+"desc": "Al final de un túnel húmedo que huele a sal y a libro viejo, las paredes se abren en una gruta enorme. El techo está cubierto de miles de lucecitas azules, microorganismos que brillan cuando sienten movimiento, y se reflejan en el agua oscura: parece que alguien dio vuelta el cielo bajo tierra. «Te parecés a ellas.» «¿A quiénes?» «A las estrellas.» Dentro del agua tibia Laura puede respirar, y la unión de los dos funde los mundos: el alma de ella responde a la llave.",
+"nombre_ru": "Грот с голубыми огоньками",
+"desc_ru": "В конце сырого туннеля, где пахнет солью и старыми книгами, стены расступаются в огромный грот. Свод усыпан тысячами голубых огоньков — микроорганизмов, которые светятся, когда чувствуют движение, — и они отражаются в тёмной воде: кажется, будто звёздное небо опрокинули под землю. «Ты похожа на них». — «На кого?» — «На звёзды». В тёплой воде Лаура может дышать, и их единение соединяет миры: её душа откликается на ключ.",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"6",
+"Бегство"
+],
+[
+"9",
+"Там, где светятся звёзды"
+],
+[
+"10",
+"Слияние миров"
+],
+[
+"11",
+"Энергия звёзд"
+],
+[
+"13",
+"Сердце мира"
+],
+[
+"16",
+"Дыхание жизни"
+],
+[
+"17",
+"Рождённые от света"
+]
+]
+}
+],
+"res": [
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 5,
+"es": "El cielo, dado vuelta bajo tierra. Las luces se encienden cuando te movés. Te movés mucho.",
+"ru": "Небо, опрокинутое под землю. Огоньки загораются, когда двигаешься. Двигаешься много."
+},
+{
+"a": "Lusiano",
+"ar": "Лусиано",
+"s": 5,
+"es": "Le dije que se parecía a las estrellas. Las lucecitas me dieron la razón.",
+"ru": "Я сказал ей, что она похожа на звёзды. Огоньки со мной согласились."
+}
+],
+"img": {
+"src": "img/lugares/at-gruta.webp",
+"n": "zvezdnyj-roman",
+"c": "9"
+}
+},
+{
+"id": "at-faro",
+"nombre": "El viejo faro en ruinas",
+"cat": "monumento",
+"x": -680,
+"y": 700,
+"modelo": "faro-ruina",
+"desc": "Una torre medio derruida al borde del bosque, sobre una pendiente alta donde pega el viento: hace mucho fue un faro y guiaba a los barcos. Acá descansan por fin, y después de su noche las paredes se cubren de signos dorados que antes no estaban; Laura descubre en su muñeca un dibujo que late al ritmo de su corazón y ve, en una visión, el hundimiento de la Atlántida. Es también el Lugar de Fuerza: bajo la cúpula, sobre un pedestal de piedra negra, flota un pequeño cristal azul. Ahí los espera la guardiana de armadura oscura; Laura apoya la muñeca en el cristal, la torre responde con una ola que baja a la tierra y sube al cielo, y saltan por un hueco de la pared un instante antes de que la punta estalle de luz.",
+"nombre_ru": "Старый разрушенный маяк",
+"desc_ru": "Полуразрушенная башня на краю леса, на высоком склоне, о который бьётся ветер: когда-то это был маяк, указывавший путь кораблям. Здесь они наконец отдыхают, и после их ночи на стенах проступают золотые знаки, которых раньше не было; Лаура находит на запястье узор, пульсирующий в такт сердцу, и видит в видении гибель Атлантиды. Это и есть Место Силы: под куполом на пьедестале из чёрного камня парит маленький голубой кристалл. Там их ждёт стражница в тёмных доспехах; Лаура прижимает запястье к кристаллу, башня отвечает волной, ушедшей в землю и в небо, и они прыгают в пролом в стене за миг до того, как верх башни взрывается светом.",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"7",
+"Пробуждение ключа"
+],
+[
+"10",
+"Слияние миров"
+],
+[
+"11",
+"Энергия звёзд"
+],
+[
+"12",
+"Цена силы"
+],
+[
+"13",
+"Сердце мира"
+],
+[
+"14",
+"Печать пробуждения"
+],
+[
+"15",
+"Цена крови"
+],
+[
+"16",
+"Дыхание жизни"
+],
+[
+"17",
+"Рождённые от света"
+],
+[
+"18",
+"Возвращение к истокам"
+],
+[
+"extra-1",
+"Итоговый тест"
+]
+]
+}
+],
+"res": [
+{
+"a": "La guardiana",
+"ar": "Стражница",
+"s": 1,
+"es": "Esperé siglos junto al cristal. Una muchacha de pueblo apoyó la muñeca y se terminó todo.",
+"ru": "Я веками ждала у кристалла. Деревенская девушка приложила запястье — и всё закончилось."
+},
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 4,
+"es": "Hermosa vista al mar, viento fuerte, signos dorados en las paredes. La salida es por el agujero de la pared, sin aviso.",
+"ru": "Красивый вид на море, сильный ветер, золотые знаки на стенах. Выход — через пролом в стене, без предупреждения."
+}
+],
+"img": {
+"src": "img/lugares/at-faro.webp",
+"n": "zvezdnyj-roman",
+"c": "12"
+}
+},
+{
+"id": "at-sala-corazon",
+"nombre": "La sala del Corazón del Mundo",
+"cat": "misterio",
+"x": -620,
+"y": 610,
+"modelo": "ninguno",
+"desc": "Un túnel bajo la torre lleva a una sala inmensa donde flota, sin tocar el piso, un núcleo como de cristal, vivo, que late con una luz dorada: el Corazón del Mundo, corazón de la nave de Lusiano y de toda su red. Laura no le exige nada: le muestra su cansancio, su miedo y su amor, y el Corazón responde. En las paredes aparecen mapas estelares y ríos de signos, y el Guardián se funde en la luz. Ahí Laura sabe que es la Sello, la otra mitad de la llave, un código guardado en su linaje. Y ahí el Corazón se pone rojo: decenas de puntos se acercan a la Tierra. Vuelven los que destruyeron la Atlántida.",
+"nombre_ru": "Зал Сердца Мира",
+"desc_ru": "Туннель под башней выводит в огромный зал, где, не касаясь пола, парит ядро, похожее на живой кристалл, пульсирующее тёплым золотым светом: Сердце Мира, сердце корабля Лусиано и всей их сети. Лаура ничего от него не требует: она показывает свою усталость, страх и любовь, и Сердце отвечает. На стенах проступают звёздные карты и реки знаков, а Страж растворяется в сиянии. Здесь Лаура узнаёт, что она Печать, вторая половина ключа, древний код её рода. И здесь Сердце вспыхивает красным: к Земле приближаются десятки точек. Возвращаются те, кто погубил Атлантиду.",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"13",
+"Сердце мира"
+],
+[
+"14",
+"Печать пробуждения"
+],
+[
+"15",
+"Цена крови"
+],
+[
+"16",
+"Дыхание жизни"
+],
+[
+"17",
+"Рождённые от света"
+],
+[
+"18",
+"Возвращение к истокам"
+],
+[
+"19",
+"В двух мирах"
+],
+[
+"extra-1",
+"Итоговый тест"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lusiano",
+"ar": "Лусиано",
+"s": 5,
+"es": "El corazón de mi nave y de todo mi pueblo. No le pedimos nada, y respondió.",
+"ru": "Сердце моего корабля и всего моего народа. Мы ничего у него не просили — и оно ответило."
+}
+],
+"img": {
+"src": "img/lugares/at-sala-corazon.webp",
+"n": "zvezdnyj-roman",
+"c": "13"
+}
+},
+{
+"id": "at-grieta",
+"nombre": "La grieta entre las raíces",
+"cat": "misterio",
+"x": -840,
+"y": 560,
+"modelo": "ninguno",
+"desc": "Al pie del faro, en el bosque, una grieta estrecha entre raíces y piedra, una gruta seca y diminuta. Laura arrastra hasta acá a Lusiano herido y le sopla en la boca no aire sino luz: el resplandor dorado de la Atlántida que ahora arde en ella. Lusiano revive, pero esa luz es un faro perfecto para los que los buscan: tres guerreros de armadura brillante aparecen de la nada y se los llevan a la nave enemiga.",
+"nombre_ru": "Расщелина между корнями",
+"desc_ru": "У подножия маяка, в лесу, узкая расщелина между корнями и камнем — крошечный сухой грот. Лаура втаскивает сюда раненого Лусиано и выдыхает в него не воздух, а свет — золотое сияние Атлантиды, которое теперь горит в ней. Лусиано оживает, но этот свет становится идеальным маяком для тех, кто их ищет: трое воинов в сияющих доспехах возникают из воздуха и переносят их на вражеский корабль.",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"16",
+"Дыхание жизни"
+]
+]
+}
+],
+"res": [
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 4,
+"es": "Chiquita, seca, escondida. Le devolví la vida con un beso de luz. Lo malo: esa luz se ve desde el espacio.",
+"ru": "Крошечная, сухая, укромная. Я вернула ему жизнь поцелуем света. Плохо одно: этот свет видно из космоса."
+}
+],
+"img": {
+"src": "img/lugares/at-grieta.webp",
+"n": "zvezdnyj-roman",
+"c": "16"
+}
+},
+{
+"id": "at-nave",
+"nombre": "La nave enemiga entre las nubes",
+"cat": "misterio",
+"x": 150,
+"y": 650,
+"modelo": "nave-enemiga",
+"desc": "La nave de los que hundieron la Atlántida, escondida en las nubes; la novela no dice dónde, y el marcador la pone sobre el mar. Al corazón de la nave llevaron también al Corazón del Mundo herido, cuya energía, sin una voluntad que la guíe, gira en remolinos ciegos. Rodeados de enemigos, Laura entiende que buscaban un arma donde no la hay: el Corazón no quiere que lo capturen. La luz dorada de Lusiano se junta con la azul de la Sello, una ola apaga las armas sin herir a nadie, y se abre un portal turquesa hacia una ciudad lejana. Detrás de ellos, el Corazón se suelta de sus cadenas y los sigue como un río de oro.",
+"nombre_ru": "Вражеский корабль в облаках",
+"desc_ru": "Корабль тех, кто погубил Атлантиду, скрытый в облаках; где именно, роман не говорит, и метка стоит над морем. В самое сердце корабля перенесено и раненое Сердце Мира, чья энергия без направляющей воли мечется слепыми вихрями. Окружённая врагами, Лаура понимает, что оружие искали там, где его нет: Сердцу не нужно, чтобы его захватили. Золотое сияние Лусиано встречается с голубым светом Печати, волна гасит оружие, не раня никого живого, и открывается бирюзовый портал к далёкому городу. За ними, вырвавшись из оков, золотым потоком летит Сердце.",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"8",
+"Потом всё объясню"
+],
+[
+"10",
+"Слияние миров"
+],
+[
+"11",
+"Энергия звёзд"
+],
+[
+"13",
+"Сердце мира"
+],
+[
+"14",
+"Печать пробуждения"
+],
+[
+"16",
+"Дыхание жизни"
+],
+[
+"17",
+"Рождённые от света"
+],
+[
+"extra-1",
+"Итоговый тест"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lusiano",
+"ar": "Лусиано",
+"s": 1,
+"es": "Muchas armas, ninguna sirve. Pasillos fríos. Lo mejor: la salida por el portal turquesa.",
+"ru": "Много оружия, и всё бесполезно. Холодные коридоры. Лучшее — выход через бирюзовый портал."
+}
+],
+"img": {
+"src": "img/lugares/at-nave.webp",
+"n": "zvezdnyj-roman",
+"c": "17"
+}
+},
+{
+"id": "at-portal",
+"nombre": "El portal de luz azul",
+"cat": "misterio",
+"x": 870,
+"y": -180,
+"modelo": "portal-azul",
+"desc": "Por un portal que se cierra detrás de ellos con un susurro de energía, Laura y Lusiano llegan a la Atlántida. Para volver, el Corazón les abre otro paso: esta vez el portal no parece una herida en el espacio sino una puerta tranquila de luz azul. De la mano, bajo las miradas agradecidas y preocupadas del pueblo antiguo, cruzan de vuelta hacia la Tierra.",
+"nombre_ru": "Портал из голубого света",
+"desc_ru": "Через портал, который смыкается за их спинами с тихим шелестом энергии, Лаура и Лусиано попадают в Атлантиду. Для возвращения Сердце открывает новый проход: на этот раз портал выглядит не раной в пространстве, а спокойной дверью из голубого света. Держась за руки, под благодарными и тревожными взглядами древнего народа они шагают обратно на Землю.",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"7",
+"Пробуждение ключа"
+],
+[
+"12",
+"Цена силы"
+],
+[
+"17",
+"Рождённые от света"
+],
+[
+"18",
+"Возвращение к истокам"
+],
+[
+"19",
+"В двух мирах"
+]
+]
+}
+],
+"res": [
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 5,
+"es": "A la ida era una herida en el espacio; a la vuelta, una puerta tranquila. Se nota cuando alguien te espera del otro lado.",
+"ru": "Туда это была рана в пространстве, обратно — спокойная дверь. Чувствуется, когда тебя ждут на той стороне."
+}
+]
+},
+{
+"id": "at-templo",
+"nombre": "El templo del Corazón (Atlántida)",
+"cat": "monumento",
+"x": 1500,
+"y": -100,
+"modelo": "templo-corazon",
+"desc": "En el centro de la Atlántida, en la isla rodeada por los anillos de agua, el Corazón del Mundo vuelve a casa. La planta de la ciudad es imaginada: la novela solo cuenta torres blancas y de cristal bajo un cielo turquesa. El anciano revela que la huida de Lusiano no fue casualidad: él llevaba escondida la última chispa del Corazón, su núcleo más puro, y al encontrarse con la Sello que la familia de Laura guardó durante siglos, la chispa despertó. «Su unión no solo abrió el portal. Le devolvió a la Atlántida su alma.»",
+"nombre_ru": "Храм Сердца (Атлантида)",
+"desc_ru": "В центре Атлантиды, на острове, окружённом кольцами воды, Сердце Мира возвращается домой. План города придуман: роман рассказывает только о белых и хрустальных башнях под бирюзовым небом. Старейшина открывает, что бегство Лусиано не было случайностью: в нём была спрятана последняя искра Сердца, его чистейшее ядро, и когда он встретил Печать, которую веками хранил род Лауры, искра проснулась. «Ваш союз не просто открыл портал. Он вернул Атлантиде её душу».",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"13",
+"Сердце мира"
+],
+[
+"15",
+"Цена крови"
+],
+[
+"16",
+"Дыхание жизни"
+],
+[
+"17",
+"Рождённые от света"
+],
+[
+"18",
+"Возвращение к истокам"
+]
+]
+}
+],
+"res": [
+{
+"a": "El anciano",
+"ar": "Старейшина",
+"s": 5,
+"es": "La última chispa volvió a casa y nos devolvió el alma. Los dos jóvenes no se quedaron. Así son los puentes.",
+"ru": "Последняя искра вернулась домой и вернула нам душу. Двое молодых не остались. Таковы мосты."
+}
+],
+"img": {
+"src": "img/lugares/at-templo.webp",
+"n": "zvezdnyj-roman",
+"c": "10"
+}
+},
+{
+"id": "at-ancianos",
+"nombre": "La plaza de los ancianos",
+"cat": "plaza",
+"x": 1500,
+"y": 250,
+"modelo": "ninguno",
+"desc": "De la multitud sale el anciano de pelo largo plateado y barba luminosa, con una voz como un repique de campanas de cristal. Lusiano mira su patria como si tuviera miedo de parpadear y volver a perderla. Pero Laura no puede quedarse: piensa en la aldea, en los vecinos asustados, en la casa abandonada. Los ancianos aceptan, con una sombra de inquietud: los enemigos no van a retroceder, y los dos tienen que ser un puente no solo entre mundos, sino entre el pasado y el futuro.",
+"nombre_ru": "Площадь старейшин",
+"desc_ru": "Из толпы выходит старейшина с длинными серебряными волосами и светящейся бородой, с голосом, похожим на перезвон хрустальных колоколов. Лусиано смотрит на родину так, будто боится моргнуть и снова её потерять. Но Лаура не может остаться: она думает о деревне, об испуганных соседях, о брошенном доме. Старейшины соглашаются, хотя по их лицам скользит тень тревоги: враги не отступят, и им двоим предстоит стать мостом не только между мирами, но и между прошлым и будущим.",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"18",
+"Возвращение к истокам"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lusiano",
+"ar": "Лусиано",
+"s": 5,
+"es": "Tenía miedo de parpadear y volver a perderla. Igual me fui. Volvemos después; lo prometí.",
+"ru": "Боялся моргнуть и снова её потерять. И всё равно ушёл. Мы вернёмся потом — я обещал."
+}
+],
+"img": {
+"src": "img/lugares/at-ancianos.webp",
+"n": "zvezdnyj-roman",
+"c": "18"
+}
+},
+{
+"id": "at-torres",
+"nombre": "Las torres caracola",
+"cat": "monumento",
+"x": 1180,
+"y": 330,
+"modelo": "torres-caracola",
+"desc": "Lo primero que ve Laura al salir del portal: hasta el horizonte se extiende la Atlántida, con torres de piedra blanca y de cristal parecidas a enormes caracolas brillantes, que suben hacia el cielo turquesa. En la visión del faro había visto lo contrario: el agua golpeando las paredes de cristal, los puentes que se caían y la gente que no llegaba a salvarse. Ahora la ciudad está entera, en paz, bajo la masa del océano.",
+"nombre_ru": "Башни-раковины",
+"desc_ru": "Первое, что видит Лаура, выйдя из портала: до самого горизонта простирается Атлантида, белокаменные и хрустальные башни, похожие на гигантские сверкающие раковины, поднимаются в бирюзовую высь. В видении на маяке она видела обратное: воду, хлещущую по кристальным стенам, рушащиеся мосты и людей, которые не успевали спастись. Теперь город цел и спокоен под толщей океана.",
+"apar": [
+{
+"n": "zvezdnyj-roman",
+"c": [
+[
+"12",
+"Цена силы"
+],
+[
+"18",
+"Возвращение к истокам"
+]
+]
+}
+],
+"res": [
+{
+"a": "Laura",
+"ar": "Лаура",
+"s": 5,
+"es": "Caracolas de cristal hasta el horizonte y un cielo turquesa. Parecía un sueño. Igual extrañé las manzanas.",
+"ru": "Хрустальные раковины до горизонта и бирюзовое небо. Было похоже на сон. И всё равно я скучала по яблокам."
+}
+]
+}
+],
+"secreta": [
+{
+"id": "cs-parque",
+"nombre": "El banco del parque",
+"cat": "parque",
+"x": 1400,
+"y": -1300,
+"modelo": "ninguno",
+"desc": "El parque del pueblito de Martín, donde él pasea en su tiempo libre buscando ideas para sus cuentos, sus canciones y sus dibujos. Un sábado a la tarde ve en un banco a una mujer rubia de ojos azules que lee con mucha atención un libro sobre ciudades antiguas. «Hola. ¿Qué libro lees?» Se llama Marina. Durante las semanas siguientes pasean muchas veces por acá, aunque ella nunca habla de su casa y siempre mira hacia las montañas.",
+"nombre_ru": "Скамейка в парке",
+"desc_ru": "Парк в городке Мартина, где он гуляет в свободное время и ищет идеи для рассказов, песен и рисунков. Однажды в субботу он видит на скамейке светловолосую женщину с голубыми глазами, которая очень внимательно читает книгу о древних городах. «Привет. Что читаешь?» Её зовут Марина. В следующие недели они часто гуляют здесь, хотя она никогда не говорит о своём доме и всё время смотрит в сторону гор.",
+"apar": [
+{
+"n": "la-ciudad-secreta",
+"c": [
+[
+"1",
+"Se conocen"
+],
+[
+"2",
+"Marina confiesa la verdad"
+]
+]
+}
+],
+"res": [
+{
+"a": "Martín",
+"ar": "Мартин",
+"s": 5,
+"es": "Vengo a buscar ideas. Un sábado encontré una mujer que leía sobre ciudades antiguas. Mejor idea, imposible.",
+"ru": "Прихожу сюда за идеями. Однажды в субботу нашёл женщину, читавшую о древних городах. Лучше идеи не бывает."
+},
+{
+"a": "Marina",
+"ar": "Марина",
+"s": 4,
+"es": "Bancos cómodos, mucho sol. Desde acá se ven las montañas. Yo siempre miraba las montañas.",
+"ru": "Удобные скамейки, много солнца. Отсюда видны горы. Я всегда смотрела на горы."
+}
+],
+"img": {
+"src": "img/lugares/cs-parque.webp",
+"n": "la-ciudad-secreta",
+"c": "1"
+}
+},
+{
+"id": "cs-cafeteria",
+"nombre": "La cafetería cerca del parque",
+"cat": "restaurante",
+"x": 1560,
+"y": -1180,
+"modelo": "cafe",
+"desc": "«¿Quieres tomar un café conmigo?» Marina lo piensa un momento y dice que sí con la cabeza. En esta cafetería pasan toda la tarde hablando de libros, de música y de viajes. Ella pregunta mucho y cuenta poco. «¿Dónde vives, Marina?» «Cerca de aquí… más o menos», y mira hacia las montañas. Antes de despedirse se dan los números de teléfono.",
+"nombre_ru": "Кафе рядом с парком",
+"desc_ru": "«Выпьешь со мной кофе?» Марина думает минуту и кивает. В этом кафе они весь вечер говорят о книгах, музыке и путешествиях. Она много спрашивает и мало рассказывает. «Где ты живёшь, Марина?» — «Недалеко… более-менее», — и смотрит в сторону гор. Перед прощанием они обмениваются номерами телефонов.",
+"apar": [
+{
+"n": "la-ciudad-secreta",
+"c": [
+[
+"1",
+"Se conocen"
+]
+]
+}
+],
+"res": [
+{
+"a": "Marina",
+"ar": "Марина",
+"s": 5,
+"es": "Café rico. Él hablaba de libros y yo de casi nada. Igual me pidió el teléfono.",
+"ru": "Вкусный кофе. Он говорил о книгах, а я почти ни о чём. И всё равно попросил мой телефон."
+}
+]
+},
+{
+"id": "cs-casa-martin",
+"nombre": "La casa de Martín",
+"cat": "casa",
+"x": 1750,
+"y": -1320,
+"modelo": "casa",
+"desc": "La casa del profesor de español, que también escribe cuentos, toca la guitarra y dibuja. La mañana de la visita Martín se despierta muy temprano, nervioso: se ducha, se viste rápido y desayuna solo un café. A las siete en punto llega Marina. «¿Estás listo?» «¡Sí, listo!»",
+"nombre_ru": "Дом Мартина",
+"desc_ru": "Дом преподавателя испанского, который ещё пишет рассказы, играет на гитаре и рисует. Утром перед походом Мартин просыпается очень рано и нервничает: принимает душ, быстро одевается и завтракает одним кофе. Ровно в семь приходит Марина. «Готов?» — «Да, готов!»",
+"apar": [
+{
+"n": "la-ciudad-secreta",
+"c": [
+[
+"2",
+"Marina confiesa la verdad"
+],
+[
+"3",
+"La visita a la Ciudad Secreta"
+],
+[
+"4",
+"La amenaza"
+],
+[
+"7",
+"La trampa"
+]
+]
+}
+],
+"res": [
+{
+"a": "Martín",
+"ar": "Мартин",
+"s": 4,
+"es": "Una guitarra, muchos dibujos y un despertador que esa mañana no hizo falta.",
+"ru": "Гитара, много рисунков и будильник, который в то утро не понадобился."
+}
+]
+},
+{
+"id": "cs-montanas",
+"nombre": "Al pie de las montañas",
+"cat": "parque",
+"x": 1150,
+"y": -860,
+"modelo": "ninguno",
+"desc": "Un domingo caminan cerca de las montañas y Marina se para de repente, muy seria. «No soy de aquí. Vengo de una ciudad que está debajo de la tierra, dentro de las montañas. Se llama la Ciudad Secreta.» Martín cree que es una broma. «No quiero tener secretos con la persona que quiero.» Confundido pero muy curioso, Martín pide verla. «Mañana vamos juntos.» Al día siguiente suben por acá, por un caminito entre los árboles, con aire fresco y pájaros que cantan.",
+"nombre_ru": "У подножия гор",
+"desc_ru": "Однажды в воскресенье они гуляют у гор, и Марина вдруг останавливается, очень серьёзная. «Я не отсюда. Я из города, который находится под землёй, внутри гор. Он называется Тайный город». Мартин думает, что это шутка. «Я не хочу иметь секретов от человека, которого люблю». Растерянный, но очень любопытный, Мартин просит показать город. «Завтра пойдём вместе». На следующий день они поднимаются здесь по тропинке среди деревьев, где свежий воздух и поют птицы.",
+"apar": [
+{
+"n": "la-ciudad-secreta",
+"c": [
+[
+"1",
+"Se conocen"
+],
+[
+"2",
+"Marina confiesa la verdad"
+],
+[
+"3",
+"La visita a la Ciudad Secreta"
+]
+]
+}
+],
+"res": [
+{
+"a": "Martín",
+"ar": "Мартин",
+"s": 5,
+"es": "Acá me dijo la verdad. Pensé que era una broma. No era.",
+"ru": "Здесь она сказала мне правду. Я думал, это шутка. Это была не шутка."
+}
+],
+"img": {
+"src": "img/lugares/cs-montanas.webp",
+"n": "la-ciudad-secreta",
+"c": "2"
+}
+},
+{
+"id": "cs-roca",
+"nombre": "La roca de la llave",
+"cat": "misterio",
+"x": 760,
+"y": -700,
+"modelo": "roca-llave",
+"desc": "Después de una hora de subida, una roca muy grande. Marina saca una llave pequeña del bolsillo y la pone en un agujero: ¡la roca se mueve!, y detrás hay una puerta secreta. Ese día unos hombres malos ven entrar a Martín y a Marina. Más tarde, cuando la ciudad elige la paz, Martín y Marina salen por acá a hablar con los invasores, que esperan afuera. Su jefe, alto y de ojos fríos, se ríe de la propuesta: «¿Conocimientos? ¡No necesito libros! Solo quiero una cosa: oro.»",
+"nombre_ru": "Скала с ключом",
+"desc_ru": "Через час подъёма — очень большая скала. Марина достаёт из кармана маленький ключ и вставляет его в отверстие: скала двигается! — и за ней тайная дверь. В тот день какие-то плохие люди видят, как Мартин и Марина входят внутрь. Позже, когда город выбирает мир, Мартин и Марина выходят здесь поговорить с захватчиками, которые ждут снаружи. Их главарь, высокий, с холодными глазами, смеётся над предложением: «Знания? Мне не нужны книги! Мне нужно только одно: золото».",
+"apar": [
+{
+"n": "la-ciudad-secreta",
+"c": [
+[
+"3",
+"La visita a la Ciudad Secreta"
+],
+[
+"4",
+"La amenaza"
+],
+[
+"6",
+"La decisión de la ciudad"
+]
+]
+}
+],
+"res": [
+{
+"a": "Marina",
+"ar": "Марина",
+"s": 5,
+"es": "Una llave pequeña, una roca muy grande. Cuidado con quién te mira cuando entras.",
+"ru": "Маленький ключ, очень большая скала. Осторожно, кто смотрит, когда входишь."
+},
+{
+"a": "El jefe de los invasores",
+"ar": "Главарь захватчиков",
+"s": 1,
+"es": "Me ofrecieron medicina, ciencia y arte. Yo quería oro. Después me dieron vino. Ahora me visita la policía.",
+"ru": "Мне предложили медицину, науку и искусство. Я хотел золота. Потом мне дали вина. Теперь меня навещает полиция."
+}
+],
+"img": {
+"src": "img/lugares/cs-roca.webp",
+"n": "la-ciudad-secreta",
+"c": "6"
+}
+},
+{
+"id": "cs-escalera",
+"nombre": "La escalera de las antorchas",
+"cat": "misterio",
+"x": 470,
+"y": -450,
+"modelo": "ninguno",
+"desc": "Detrás de la roca, una escalera de piedra baja en la oscuridad; en las paredes hay antorchas. «Tranquilo. No pasa nada», dice Marina, y le toma la mano. Al final hay una puerta de madera. Marina la abre y Martín ve algo increíble: la Ciudad Secreta entera, enorme, con luz dorada. Por los mismos túneles oscuros vuelven después los invasores, con palos y cuchillos, buscando el oro.",
+"nombre_ru": "Лестница с факелами",
+"desc_ru": "За скалой в темноту спускается каменная лестница; на стенах горят факелы. «Спокойно. Ничего страшного», — говорит Марина и берёт его за руку. Внизу деревянная дверь. Марина открывает её, и Мартин видит невероятное: весь Тайный город, огромный, в золотом свете. По тем же тёмным туннелям потом приходят захватчики с палками и ножами — искать золото.",
+"apar": [
+{
+"n": "la-ciudad-secreta",
+"c": [
+[
+"3",
+"La visita a la Ciudad Secreta"
+],
+[
+"4",
+"La amenaza"
+],
+[
+"6",
+"La decisión de la ciudad"
+]
+]
+}
+],
+"res": [
+{
+"a": "Martín",
+"ar": "Мартин",
+"s": 4,
+"es": "Poca luz, antorchas y una mano que te dice «tranquilo». Al final, una puerta de madera y lo más increíble que vi en mi vida.",
+"ru": "Мало света, факелы и рука, которая говорит «спокойно». В конце деревянная дверь и самое невероятное, что я видел в жизни."
+}
+]
+},
+{
+"id": "cs-cristales",
+"nombre": "Los cristales del techo",
+"cat": "misterio",
+"x": 120,
+"y": -120,
+"modelo": "ninguno",
+"desc": "«En el techo hay cristales grandes que dan una luz dorada, como la luz del sol.» Cada mañana se encienden poco a poco, como un amanecer, y a la noche la ciudad entera brilla con luces doradas. En el mapa flotan sobre el valle.",
+"nombre_ru": "Кристаллы на своде",
+"desc_ru": "«На своде большие кристаллы, которые дают золотой свет, как солнечный». Каждое утро они зажигаются понемногу, как рассвет, а ночью весь город сияет золотыми огнями. На карте они парят над долиной.",
+"apar": [
+{
+"n": "la-ciudad-secreta",
+"c": [
+[
+"3",
+"La visita a la Ciudad Secreta"
+],
+[
+"4",
+"La amenaza"
+]
+]
+}
+],
+"res": [
+{
+"a": "Carlos",
+"ar": "Карлос",
+"s": 5,
+"es": "Arriba tienen sol de verdad. Nosotros tenemos esto, y amanece todos los días a la misma hora.",
+"ru": "У них наверху настоящее солнце. А у нас вот это, и рассвет каждый день в одно и то же время."
+}
+],
+"img": {
+"src": "img/lugares/cs-cristales.webp",
+"n": "la-ciudad-secreta",
+"c": "3"
+}
+},
+{
+"id": "cs-plaza",
+"nombre": "La plaza central",
+"cat": "plaza",
+"x": 0,
+"y": 0,
+"modelo": "mesas-trampa",
+"desc": "El centro de todo. Acá Martín y sus amigos toman un té cuando gritan que la ciudad está siendo atacada. A la mañana siguiente todos los vecinos se reúnen y Julián, el más viejo y sabio, sube a un lugar alto: Martín propone muros más fuertes, pero también hablar, porque «arriba hay personas malas, pero también hay personas buenas». Nace el Consejo de la Ciudad. Acá votan por la paz, y acá se arma la trampa de Marco: mesas largas con pan, queso, fruta y mucho vino dulce y fuerte. Los invasores comen, beben y cantan hasta dormirse; el jefe ronca debajo de una mesa. Los atan sin que nadie salga herido. Dos días después la plaza vota la alianza con los pueblos de la superficie, y Martín no tiene que irse como embajador.",
+"nombre_ru": "Центральная площадь",
+"desc_ru": "Центр всего. Здесь Мартин с друзьями пьют чай, когда раздаётся крик, что на город напали. Наутро все жители собираются, и Хулиан, самый старый и мудрый, поднимается на возвышение: Мартин предлагает строить стены крепче, но и разговаривать, ведь «наверху есть плохие люди, но есть и хорошие». Так рождается Совет города. Здесь голосуют за мир, и здесь устраивают ловушку Марко: длинные столы с хлебом, сыром, фруктами и множеством бутылок сладкого и крепкого вина. Захватчики едят, пьют и поют, пока не засыпают; главарь храпит под столом. Их связывают, и никто не ранен. Через два дня площадь голосует за союз с людьми с поверхности, и Мартину не приходится уходить послом.",
+"apar": [
+{
+"n": "la-ciudad-secreta",
+"c": [
+[
+"4",
+"La amenaza"
+],
+[
+"5",
+"El Consejo de la Ciudad"
+],
+[
+"6",
+"La decisión de la ciudad"
+],
+[
+"7",
+"La trampa"
+],
+[
+"8",
+"La decisión de todos"
+]
+]
+}
+],
+"res": [
+{
+"a": "Julián",
+"ar": "Хулиан",
+"s": 5,
+"es": "Ganamos y nadie salió herido. Hace muchos años que no veía la plaza tan llena. Votar juntos también es una forma de ser fuertes.",
+"ru": "Мы победили, и никто не ранен. Много лет я не видел площадь такой полной. Голосовать вместе — тоже способ быть сильными."
+},
+{
+"a": "Marco",
+"ar": "Марко",
+"s": 5,
+"es": "A esos hombres les gustaba el oro… pero más el vino. Mi plan. Lo digo con modestia.",
+"ru": "Этим людям нравилось золото… но вино ещё больше. Мой план. Говорю скромно."
+},
+{
+"a": "Elena",
+"ar": "Елена",
+"s": 4,
+"es": "Como médica, le doy cinco estrellas a una batalla sin heridos. Una menos por el dolor de cabeza de los invasores.",
+"ru": "Как врач, ставлю пять звёзд битве без раненых. Минус одна — за головную боль захватчиков."
+}
+],
+"img": {
+"src": "img/lugares/cs-plaza.webp",
+"n": "la-ciudad-secreta",
+"c": "5"
+}
+},
+{
+"id": "cs-mercado",
+"nombre": "El mercado",
+"cat": "plaza",
+"x": -300,
+"y": 210,
+"modelo": "ninguno",
+"desc": "Calles con mercados de frutas, flores y ropa de muchos colores. Una tarde, una mujer corre gritando: «¡Ayuda! ¡Nos están atacando!». En el mercado hay hombres con palos y cuchillos que rompen las tiendas y roban comida y oro. Martín reparte tareas: Marina lleva a los niños y a los abuelos a un lugar seguro, Elena atiende a los heridos, Marco y Carlos van con él. Los vecinos cierran el paso con mesas y sillas; un hombre enorme va hacia Martín y llega Marco con un palo: «¡No vas a destruir nuestra casa!». Llegan más y más vecinos, y los invasores huyen por los túneles.",
+"nombre_ru": "Рынок",
+"desc_ru": "Улицы с рынками, где продают фрукты, цветы и разноцветную одежду. Однажды вечером женщина бежит с криком: «Помогите! На нас напали!» На рынке люди с палками и ножами ломают лавки и крадут еду и золото. Мартин раздаёт задания: Марина уводит детей и стариков в безопасное место, Елена помогает раненым, Марко и Карлос идут с ним. Жители перегораживают улицы столами и стульями; огромный мужчина идёт на Мартина, и тут появляется Марко с палкой: «Ты не разрушишь наш дом!» Подходят всё новые соседи, и захватчики убегают по туннелям.",
+"apar": [
+{
+"n": "la-ciudad-secreta",
+"c": [
+[
+"3",
+"La visita a la Ciudad Secreta"
+],
+[
+"4",
+"La amenaza"
+],
+[
+"5",
+"El Consejo de la Ciudad"
+]
+]
+}
+],
+"res": [
+{
+"a": "Una vendedora de flores",
+"ar": "Цветочница",
+"s": 4,
+"es": "Me rompieron el puesto y me robaron. Después llegaron todos los vecinos con mesas y sillas. Las flores volvieron a crecer.",
+"ru": "Мне сломали прилавок и обокрали. Потом пришли все соседи со столами и стульями. Цветы снова выросли."
+}
+],
+"img": {
+"src": "img/lugares/cs-mercado.webp",
+"n": "la-ciudad-secreta",
+"c": "4"
+}
+},
+{
+"id": "cs-casa-marina",
+"nombre": "La casa de los padres de Marina",
+"cat": "casa",
+"x": 260,
+"y": 290,
+"modelo": "casa",
+"desc": "Una casa blanca donde viven los padres de Marina, con los mismos ojos azules que ella. La madre lo abraza («Bienvenido, Martín»), el padre le da la mano: «Esta es tu casa». Martín duerme acá varios días. Desde el balcón, a la noche, se ve toda la ciudad con sus luces doradas: «Me gusta mucho tu ciudad». «Y tú le gustas a mi ciudad.» Acá Marina les cuenta a sus padres el día de la trampa, y acá, al final, Martín y Marina miran otra vez las luces: «Esta es nuestra historia. Y la vamos a escribir juntos».",
+"nombre_ru": "Дом родителей Марины",
+"desc_ru": "Белый дом, где живут родители Марины, с такими же голубыми глазами, как у неё. Мама обнимает его («Добро пожаловать, Мартин»), папа жмёт руку: «Это твой дом». Мартин живёт здесь несколько дней. С балкона ночью виден весь город в золотых огнях: «Мне очень нравится твой город». — «А ты нравишься моему городу». Здесь Марина рассказывает родителям о дне ловушки, и здесь в конце Мартин и Марина снова смотрят на огни: «Это наша история. И мы напишем её вместе».",
+"apar": [
+{
+"n": "la-ciudad-secreta",
+"c": [
+[
+"3",
+"La visita a la Ciudad Secreta"
+],
+[
+"4",
+"La amenaza"
+],
+[
+"7",
+"La trampa"
+],
+[
+"8",
+"La decisión de todos"
+]
+]
+}
+],
+"res": [
+{
+"a": "La madre de Marina",
+"ar": "Мама Марины",
+"s": 5,
+"es": "Nuestra hija trajo a un muchacho de arriba. Lo abracé enseguida. Tiene buena mirada y come todo.",
+"ru": "Наша дочь привела парня сверху. Я сразу его обняла. У него хороший взгляд, и он всё ест."
+},
+{
+"a": "Martín",
+"ar": "Мартин",
+"s": 5,
+"es": "El mejor balcón del mundo, debajo de la tierra.",
+"ru": "Лучший балкон в мире — под землёй."
+}
+],
+"img": {
+"src": "img/lugares/cs-casa-marina.webp",
+"n": "la-ciudad-secreta",
+"c": "8"
+}
+},
+{
+"id": "cs-torre",
+"nombre": "La torre más alta",
+"cat": "monumento",
+"x": -180,
+"y": -230,
+"modelo": "torre-bandera",
+"desc": "Carlos, el más joven y curioso («¿Es verdad que en la superficie hay coches que vuelan?»), no puede entrar al Consejo, pero Julián le promete otra misión. El día de la trampa todos se esconden en sus casas y solo Carlos sube a la torre más alta, desde donde se ve toda la ciudad. Cuando los invasores ya roncan, mueve la bandera roja: es la señal. Las puertas se abren y los vecinos salen con cuerdas.",
+"nombre_ru": "Самая высокая башня",
+"desc_ru": "Карлос, самый младший и любопытный («Правда, что на поверхности есть летающие машины?»), не может войти в Совет, но Хулиан обещает ему другое задание. В день ловушки все прячутся по домам, и только Карлос поднимается на самую высокую башню, откуда виден весь город. Когда захватчики уже храпят, он машет красным флагом: это сигнал. Двери открываются, и жители выходят с верёвками.",
+"apar": [
+{
+"n": "la-ciudad-secreta",
+"c": [
+[
+"3",
+"La visita a la Ciudad Secreta"
+],
+[
+"7",
+"La trampa"
+],
+[
+"8",
+"La decisión de todos"
+]
+]
+}
+],
+"res": [
+{
+"a": "Carlos",
+"ar": "Карлос",
+"s": 5,
+"es": "Me dijeron que era muy joven para el Consejo. Pero la señal la di yo. La bandera era roja. Muy roja.",
+"ru": "Мне сказали, что я слишком молод для Совета. Но сигнал подал я. Флаг был красный. Очень красный."
+}
+],
+"img": {
+"src": "img/lugares/cs-torre.webp",
+"n": "la-ciudad-secreta",
+"c": "7"
+}
+},
+{
+"id": "cs-jardines",
+"nombre": "Los jardines y las fuentes",
+"cat": "parque",
+"x": -310,
+"y": -190,
+"modelo": "fuente",
+"desc": "Casas blancas, torres altas, jardines y fuentes: así ve Martín la ciudad la primera vez. Hay personas de todas las edades, niños, jóvenes y abuelos, y todos parecen felices. Pasea todo el día con Marina y entiende por qué la ciudad es un secreto: es un lugar tranquilo, donde todos viven en paz.",
+"nombre_ru": "Сады и фонтаны",
+"desc_ru": "Белые дома, высокие башни, сады и фонтаны — таким Мартин впервые видит город. Здесь люди всех возрастов, дети, молодые и старики, и все кажутся счастливыми. Он весь день гуляет с Мариной и понимает, почему город держат в тайне: это спокойное место, где все живут в мире.",
+"apar": [
+{
+"n": "la-ciudad-secreta",
+"c": [
+[
+"3",
+"La visita a la Ciudad Secreta"
+]
+]
+}
+],
+"res": [
+{
+"a": "Marina",
+"ar": "Марина",
+"s": 5,
+"es": "Acá jugaba de chica. Las fuentes cantan si te quedás en silencio.",
+"ru": "Здесь я играла в детстве. Фонтаны поют, если помолчать."
+}
+]
+}
 ]
 };
 export const NOVELAS = {
-"la-citta-triste": {
-"t": "La città triste",
-"es": "La ciudad triste (it.)",
-"l": "it",
-"y": 2025,
-"ru": "Грустный город (ит.)",
-"p": "img/portadas/la-citta-triste.webp",
-"tr": {
-"ru": "grustnyj-gorod"
-}
-},
-"predchuvstvie": {
-"t": "Предчувствие",
-"es": "El presentimiento",
-"l": "ru",
-"y": 2023,
-"ru": "Предчувствие",
-"p": "img/portadas/predchuvstvie.webp",
-"tr": {
-"fr": "reve-turquoise",
-"eo": "la-antausento",
-"it": "presentimento",
-"es": "la-corazonada",
-"isv": "predcutje",
-"tr": "col-gulu",
-"de": "vorahnung",
-"sr": "predosecaj",
-"vo": "fot-latik",
-"ia": "le-presentimento",
-"pt": "mundo-turquesa",
-"cs": "predtucha",
-"pl": "przeczucie"
-}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
-"l": "es",
-"y": 2026,
-"ru": "Любовь в космосе",
-"p": "img/portadas/amor-en-el-cosmos.webp",
-"tr": {}
-},
-"il-treno-fantasma": {
-"t": "Il treno fantasma",
-"es": "El tren fantasma (it.)",
-"l": "it",
-"y": null,
-"ru": "Призрачный поезд (ит.)",
-"p": "img/portadas/il-treno-fantasma.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
 "podzemni-tajemstvi": {
 "t": "Podzemní tajemství",
 "es": "El secreto subterráneo (checo)",
@@ -23667,69 +24920,6 @@ export const NOVELAS = {
 "y": null,
 "ru": "Подземная тайна (чеш.)",
 "p": "img/portadas/podzemni-tajemstvi.webp",
-"tr": {}
-},
-"predchuvstvie-2-2": {
-"t": "Предчувствие 2.2",
-"es": "El presentimiento 2.2",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.2",
-"p": "img/portadas/predchuvstvie-2-2.webp",
-"tr": {}
-},
-"grustnyj-gorod": {
-"t": "Грустный город",
-"es": "La ciudad triste",
-"l": "ru",
-"y": 2026,
-"ru": "Грустный город",
-"p": "img/portadas/grustnyj-gorod.webp",
-"tr": {
-"it": "la-citta-triste"
-}
-},
-"la-voix": {
-"t": "La voix",
-"es": "La voz (fr.)",
-"l": "fr",
-"y": null,
-"ru": "Голос (фр.)",
-"p": "img/portadas/la-voix.webp",
-"tr": {
-"ru": "golos"
-}
-},
-"el-tren-fantasma": {
-"t": "El tren fantasma",
-"es": "El tren fantasma",
-"l": "es",
-"y": null,
-"ru": "Призрачный поезд (исп.)",
-"p": "img/portadas/el-tren-fantasma.webp",
-"tr": {
-"it": "il-treno-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"el-misterio-de-los-fader": {
-"t": "El misterio de los Fader",
-"es": "El misterio de los Fader",
-"l": "es",
-"y": 2025,
-"ru": "Тайна семьи Фадер (исп.)",
-"p": "img/portadas/el-misterio-de-los-fader.webp",
-"tr": {
-"ru": "tajna-semi-fader"
-}
-},
-"ostrovy-nad-prahou": {
-"t": "Ostrovy nad Prahou",
-"es": "Las islas sobre Praga (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Острова над Прагой (чеш.)",
-"p": "img/portadas/ostrovy-nad-prahou.webp",
 "tr": {}
 },
 "ondas-de-amor": {
@@ -23743,170 +24933,6 @@ export const NOVELAS = {
 "it": "onde-d-amore"
 }
 },
-"prizrachnyj-poezd": {
-"t": "Призрачный поезд",
-"es": "El tren fantasma (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Призрачный поезд",
-"p": "img/portadas/prizrachnyj-poezd.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"it": "il-treno-fantasma"
-}
-},
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"27-ocak": {
-"t": "27 Ocak",
-"es": "27 de enero",
-"l": "tr",
-"y": 2026,
-"ru": "27 января",
-"p": "img/portadas/27-ocak.webp",
-"tr": {}
-},
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
-"tr": {}
-},
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
-"l": "ru",
-"y": 2026,
-"ru": "Тихая любовь",
-"p": "img/portadas/tikhaya-lyubov.webp",
-"tr": {
-"it": "ti-amo-in-silenzio"
-}
-},
-"dikij-chas": {
-"t": "Дикий час",
-"es": "La hora salvaje",
-"l": "ru",
-"y": null,
-"ru": "Дикий час",
-"p": "img/portadas/dikij-chas.webp",
-"tr": {
-"sr": "divlji-chas"
-}
-},
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
-"l": "ru",
-"y": 2026,
-"ru": "Карнавал Синеи",
-"p": "img/portadas/karnaval-sinei.webp",
-"tr": {}
-},
-"tajna-v-biblioteke": {
-"t": "Тайна в библиотеке",
-"es": "El misterio de la biblioteca",
-"l": "ru",
-"y": 2026,
-"ru": "Тайна в библиотеке",
-"p": "img/portadas/tajna-v-biblioteke.webp",
-"tr": {}
-},
-"maschera-di-venezia": {
-"t": "Maschera di Venezia",
-"es": "La máscara de Venecia (it.)",
-"l": "it",
-"y": null,
-"ru": "Венецианская маска (ит.)",
-"p": "img/portadas/maschera-di-venezia.webp",
-"tr": {
-"ru": "venecianskaya-maska"
-}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
-"l": "ru",
-"y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
-"tr": {}
-},
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
-},
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
-"l": "it",
-"y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
-"tr": {}
-},
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви",
-"p": "img/portadas/volny-lyubvi.webp",
-"tr": {}
-},
-"dikij-chas-2": {
-"t": "Дикий час: Духи гор",
-"es": "La hora salvaje: Los espíritus de la montaña",
-"l": "ru",
-"y": null,
-"ru": "Дикий час: Духи гор",
-"p": "img/portadas/dikij-chas-2.webp",
-"tr": {}
-},
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
-"tr": {}
-},
-"venecianskaya-maska": {
-"t": "Венецианская маска",
-"es": "La máscara de Venecia (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Венецианская маска",
-"p": "img/portadas/venecianskaya-maska.webp",
-"tr": {
-"it": "maschera-di-venezia"
-}
-},
 "golos": {
 "t": "Голос",
 "es": "La voz",
@@ -23918,145 +24944,13 @@ export const NOVELAS = {
 "fr": "la-voix"
 }
 },
-"znak": {
-"t": "Знак",
-"es": "El signo",
-"l": "ru",
-"y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
-"tr": {}
-},
-"rezonans-lyubvi": {
-"t": "Резонанс любви",
-"es": "Resonancia del amor",
-"l": "ru",
-"y": null,
-"ru": "Резонанс любви",
-"p": "img/portadas/rezonans-lyubvi.webp",
-"tr": {}
-},
-"lluvia-de-meteoritos": {
-"t": "Lluvia de meteoritos",
-"es": "Lluvia de meteoritos",
-"l": "es",
-"y": null,
-"ru": "Метеоритный дождь (исп.)",
-"p": "img/portadas/lluvia-de-meteoritos.webp",
-"tr": {
-"ru": "meteoritnyj-dozhd"
-}
-},
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
-"l": "ru",
-"y": 2026,
-"ru": "Алмазный дождь",
-"p": "img/portadas/almaznyj-dozhd.webp",
-"tr": {}
-},
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
-"l": "ru",
-"y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
-"tr": {}
-},
-"divlji-chas-malbec": {
-"t": "Дивљи час: Љубав укуса малбека",
-"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
-"p": "img/portadas/divlji-chas-malbec.webp",
-"tr": {}
-},
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
-"tr": {}
-},
-"operacion-londres": {
-"t": "El misterio de los Fader: Operación Londres",
-"es": "El misterio de los Fader: Operación Londres",
-"l": "es",
-"y": 2026,
-"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
-"p": "img/portadas/operacion-londres.webp",
-"tr": {}
-},
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
-"l": "es",
-"y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
-"tr": {}
-},
-"kralovna-vinobrani": {
-"t": "Královna vinobraní",
-"es": "La reina de la Vendimia (checo)",
+"ostrovy-nad-prahou": {
+"t": "Ostrovy nad Prahou",
+"es": "Las islas sobre Praga (checo)",
 "l": "cs",
 "y": 2026,
-"ru": "Королева Вендимии (чеш.)",
-"p": "img/portadas/kralovna-vinobrani.webp",
-"tr": {
-"es": "la-reina-de-la-vendimia"
-}
-},
-"dikij-chas-karnaval-razdora": {
-"t": "Дикий час: Карнавал раздора",
-"es": "La hora salvaje: El carnaval de la discordia",
-"l": "ru",
-"y": 2026,
-"ru": "Дикий час: Карнавал раздора",
-"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
-"tr": {}
-},
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
-"l": "es",
-"y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
-"tr": {}
-},
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
-"l": "ru",
-"y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
-"tr": {
-"en": "the-date"
-}
-},
-"predchuvstvie-2-3": {
-"t": "Предчувствие 2.3",
-"es": "El presentimiento 2.3",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.3",
-"p": "img/portadas/predchuvstvie-2-3.webp",
-"tr": {}
-},
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
+"ru": "Острова над Прагой (чеш.)",
+"p": "img/portadas/ostrovy-nad-prahou.webp",
 "tr": {}
 },
 "predtucha": {
@@ -24082,25 +24976,52 @@ export const NOVELAS = {
 "ru": "predchuvstvie"
 }
 },
-"ladro-di-cuori-3": {
-"t": "Ladro di cuori 3",
-"es": "Ladrón de corazones 3 (it.)",
-"l": "it",
+"pokhititel-serdec-portret-osnovatelya": {
+"t": "Похититель сердец: Портрет основателя",
+"es": "Ladrón de corazones: El retrato del fundador",
+"l": "ru",
 "y": 2026,
-"ru": "Похититель сердец 3 (ит.)",
-"p": "img/portadas/ladro-di-cuori-3.webp",
+"ru": "Похититель сердец: Портрет основателя",
+"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
 "tr": {}
 },
-"divlji-chas": {
-"t": "Дивљи час",
-"es": "La hora salvaje (serbio)",
-"l": "sr",
+"tajna-semi-fader": {
+"t": "Тайна семьи Фадер",
+"es": "El misterio de los Fader (ru.)",
+"l": "ru",
 "y": null,
-"ru": "Дикий час (серб.)",
-"p": "img/portadas/divlji-chas.webp",
+"ru": "Тайна семьи Фадер",
+"p": "img/portadas/tajna-semi-fader.webp",
 "tr": {
-"ru": "dikij-chas"
+"es": "el-misterio-de-los-fader"
 }
+},
+"dikij-chas-2": {
+"t": "Дикий час: Духи гор",
+"es": "La hora salvaje: Los espíritus de la montaña",
+"l": "ru",
+"y": null,
+"ru": "Дикий час: Духи гор",
+"p": "img/portadas/dikij-chas-2.webp",
+"tr": {}
+},
+"zvezdnyj-roman": {
+"t": "Звёздный роман",
+"es": "Novela estelar",
+"l": "ru",
+"y": null,
+"ru": "Звёздный роман",
+"p": "img/portadas/zvezdnyj-roman.webp",
+"tr": {}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
 },
 "ti-amo-in-silenzio": {
 "t": "Ti amo in silenzio",
@@ -24113,31 +25034,83 @@ export const NOVELAS = {
 "ru": "tikhaya-lyubov"
 }
 },
-"predchuvstvie-2-4": {
-"t": "Предчувствие 2.4",
-"es": "El presentimiento 2.4",
+"predchuvstvie-2-3": {
+"t": "Предчувствие 2.3",
+"es": "El presentimiento 2.3",
 "l": "ru",
 "y": 2025,
-"ru": "Предчувствие 2.4",
-"p": "img/portadas/predchuvstvie-2-4.webp",
+"ru": "Предчувствие 2.3",
+"p": "img/portadas/predchuvstvie-2-3.webp",
 "tr": {}
 },
-"pokhititel-serdec-portret-osnovatelya": {
-"t": "Похититель сердец: Портрет основателя",
-"es": "Ladrón de corazones: El retrato del fundador",
-"l": "ru",
-"y": 2026,
-"ru": "Похититель сердец: Портрет основателя",
-"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
+"la-citta-triste": {
+"t": "La città triste",
+"es": "La ciudad triste (it.)",
+"l": "it",
+"y": 2025,
+"ru": "Грустный город (ит.)",
+"p": "img/portadas/la-citta-triste.webp",
+"tr": {
+"ru": "grustnyj-gorod"
+}
+},
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
 "tr": {}
 },
-"anomalia": {
-"t": "Anomalía",
-"es": "Anomalía",
+"el-tren-fantasma": {
+"t": "El tren fantasma",
+"es": "El tren fantasma",
 "l": "es",
 "y": null,
-"ru": "Аномалия (исп.)",
-"p": "img/portadas/anomalia.webp",
+"ru": "Призрачный поезд (исп.)",
+"p": "img/portadas/el-tren-fantasma.webp",
+"tr": {
+"it": "il-treno-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"divlji-chas": {
+"t": "Дивљи час",
+"es": "La hora salvaje (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час (серб.)",
+"p": "img/portadas/divlji-chas.webp",
+"tr": {
+"ru": "dikij-chas"
+}
+},
+"la-ciudad-secreta": {
+"t": "La ciudad secreta",
+"es": "La ciudad secreta",
+"l": "es",
+"y": null,
+"ru": "Тайный город (исп.)",
+"p": "img/portadas/la-ciudad-secreta.webp",
+"tr": {}
+},
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"tr": {}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
 "tr": {}
 },
 "onde-d-amore": {
@@ -24151,26 +25124,6 @@ export const NOVELAS = {
 "es": "ondas-de-amor"
 }
 },
-"tajna-semi-fader": {
-"t": "Тайна семьи Фадер",
-"es": "El misterio de los Fader (ru.)",
-"l": "ru",
-"y": null,
-"ru": "Тайна семьи Фадер",
-"p": "img/portadas/tajna-semi-fader.webp",
-"tr": {
-"es": "el-misterio-de-los-fader"
-}
-},
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
 "la-reina-de-la-vendimia": {
 "t": "La reina de la Vendimia",
 "es": "La reina de la Vendimia",
@@ -24182,13 +25135,95 @@ export const NOVELAS = {
 "cs": "kralovna-vinobrani"
 }
 },
-"predchuvstvie-2": {
-"t": "Предчувствие 2",
-"es": "El presentimiento 2",
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
 "l": "ru",
-"y": 2024,
-"ru": "Предчувствие 2",
-"p": "img/portadas/predchuvstvie-2.webp",
+"y": 2026,
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
+"tr": {}
+},
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
+"l": "ru",
+"y": 2026,
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
+"tr": {}
+},
+"prizrachnyj-poezd": {
+"t": "Призрачный поезд",
+"es": "El tren fantasma (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Призрачный поезд",
+"p": "img/portadas/prizrachnyj-poezd.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"it": "il-treno-fantasma"
+}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
+"y": 2026,
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"kralovna-vinobrani": {
+"t": "Královna vinobraní",
+"es": "La reina de la Vendimia (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Королева Вендимии (чеш.)",
+"p": "img/portadas/kralovna-vinobrani.webp",
+"tr": {
+"es": "la-reina-de-la-vendimia"
+}
+},
+"predchuvstvie": {
+"t": "Предчувствие",
+"es": "El presentimiento",
+"l": "ru",
+"y": 2023,
+"ru": "Предчувствие",
+"p": "img/portadas/predchuvstvie.webp",
+"tr": {
+"fr": "reve-turquoise",
+"eo": "la-antausento",
+"it": "presentimento",
+"es": "la-corazonada",
+"isv": "predcutje",
+"tr": "col-gulu",
+"de": "vorahnung",
+"sr": "predosecaj",
+"vo": "fot-latik",
+"ia": "le-presentimento",
+"pt": "mundo-turquesa",
+"cs": "predtucha",
+"pl": "przeczucie"
+}
+},
+"anomalia": {
+"t": "Anomalía",
+"es": "Anomalía",
+"l": "es",
+"y": null,
+"ru": "Аномалия (исп.)",
+"p": "img/portadas/anomalia.webp",
+"tr": {}
+},
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
+"l": "ru",
+"y": 2026,
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
 "tr": {}
 },
 "bezumie-v-poezde": {
@@ -24199,6 +25234,297 @@ export const NOVELAS = {
 "ru": "Безумие в поезде",
 "p": "img/portadas/bezumie-v-poezde.webp",
 "tr": {}
+},
+"dikij-chas-karnaval-razdora": {
+"t": "Дикий час: Карнавал раздора",
+"es": "La hora salvaje: El carnaval de la discordia",
+"l": "ru",
+"y": 2026,
+"ru": "Дикий час: Карнавал раздора",
+"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
+"tr": {}
+},
+"27-ocak": {
+"t": "27 Ocak",
+"es": "27 de enero",
+"l": "tr",
+"y": 2026,
+"ru": "27 января",
+"p": "img/portadas/27-ocak.webp",
+"tr": {}
+},
+"dikij-chas": {
+"t": "Дикий час",
+"es": "La hora salvaje",
+"l": "ru",
+"y": null,
+"ru": "Дикий час",
+"p": "img/portadas/dikij-chas.webp",
+"tr": {
+"sr": "divlji-chas"
+}
+},
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"tr": {}
+},
+"lluvia-de-meteoritos": {
+"t": "Lluvia de meteoritos",
+"es": "Lluvia de meteoritos",
+"l": "es",
+"y": null,
+"ru": "Метеоритный дождь (исп.)",
+"p": "img/portadas/lluvia-de-meteoritos.webp",
+"tr": {
+"ru": "meteoritnyj-dozhd"
+}
+},
+"predchuvstvie-2-4": {
+"t": "Предчувствие 2.4",
+"es": "El presentimiento 2.4",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.4",
+"p": "img/portadas/predchuvstvie-2-4.webp",
+"tr": {}
+},
+"ladro-di-cuori-3": {
+"t": "Ladro di cuori 3",
+"es": "Ladrón de corazones 3 (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Похититель сердец 3 (ит.)",
+"p": "img/portadas/ladro-di-cuori-3.webp",
+"tr": {}
+},
+"divlji-chas-malbec": {
+"t": "Дивљи час: Љубав укуса малбека",
+"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
+"p": "img/portadas/divlji-chas-malbec.webp",
+"tr": {}
+},
+"maschera-di-venezia": {
+"t": "Maschera di Venezia",
+"es": "La máscara de Venecia (it.)",
+"l": "it",
+"y": null,
+"ru": "Венецианская маска (ит.)",
+"p": "img/portadas/maschera-di-venezia.webp",
+"tr": {
+"ru": "venecianskaya-maska"
+}
+},
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
+"l": "es",
+"y": null,
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
+"tr": {}
+},
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
+"tr": {}
+},
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
+"l": "ru",
+"y": 2026,
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
+"tr": {}
+},
+"venecianskaya-maska": {
+"t": "Венецианская маска",
+"es": "La máscara de Venecia (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Венецианская маска",
+"p": "img/portadas/venecianskaya-maska.webp",
+"tr": {
+"it": "maschera-di-venezia"
+}
+},
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
+"l": "ru",
+"y": 2026,
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
+},
+"rezonans-lyubvi": {
+"t": "Резонанс любви",
+"es": "Resonancia del amor",
+"l": "ru",
+"y": null,
+"ru": "Резонанс любви",
+"p": "img/portadas/rezonans-lyubvi.webp",
+"tr": {}
+},
+"predchuvstvie-2": {
+"t": "Предчувствие 2",
+"es": "El presentimiento 2",
+"l": "ru",
+"y": 2024,
+"ru": "Предчувствие 2",
+"p": "img/portadas/predchuvstvie-2.webp",
+"tr": {}
+},
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
+"l": "es",
+"y": 2026,
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
+"tr": {}
+},
+"operacion-londres": {
+"t": "El misterio de los Fader: Operación Londres",
+"es": "El misterio de los Fader: Operación Londres",
+"l": "es",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
+"p": "img/portadas/operacion-londres.webp",
+"tr": {}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
+"il-treno-fantasma": {
+"t": "Il treno fantasma",
+"es": "El tren fantasma (it.)",
+"l": "it",
+"y": null,
+"ru": "Призрачный поезд (ит.)",
+"p": "img/portadas/il-treno-fantasma.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
+"tr": {}
+},
+"tajna-v-biblioteke": {
+"t": "Тайна в библиотеке",
+"es": "El misterio de la biblioteca",
+"l": "ru",
+"y": 2026,
+"ru": "Тайна в библиотеке",
+"p": "img/portadas/tajna-v-biblioteke.webp",
+"tr": {}
+},
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
+"l": "ru",
+"y": 2026,
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
+"tr": {
+"it": "ti-amo-in-silenzio"
+}
+},
+"predchuvstvie-2-2": {
+"t": "Предчувствие 2.2",
+"es": "El presentimiento 2.2",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.2",
+"p": "img/portadas/predchuvstvie-2-2.webp",
+"tr": {}
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
+},
+"el-misterio-de-los-fader": {
+"t": "El misterio de los Fader",
+"es": "El misterio de los Fader",
+"l": "es",
+"y": 2025,
+"ru": "Тайна семьи Фадер (исп.)",
+"p": "img/portadas/el-misterio-de-los-fader.webp",
+"tr": {
+"ru": "tajna-semi-fader"
+}
+},
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
+"tr": {}
+},
+"grustnyj-gorod": {
+"t": "Грустный город",
+"es": "La ciudad triste",
+"l": "ru",
+"y": 2026,
+"ru": "Грустный город",
+"p": "img/portadas/grustnyj-gorod.webp",
+"tr": {
+"it": "la-citta-triste"
+}
+},
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
+"tr": {}
+},
+"la-voix": {
+"t": "La voix",
+"es": "La voz (fr.)",
+"l": "fr",
+"y": null,
+"ru": "Голос (фр.)",
+"p": "img/portadas/la-voix.webp",
+"tr": {
+"ru": "golos"
+}
 }
 };
 export const IDIOMAS = {"ru": "ruso", "es": "español", "it": "italiano", "fr": "francés", "en": "inglés", "tr": "turco", "cs": "checo", "sr": "serbio"};

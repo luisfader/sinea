@@ -130,23 +130,7 @@ body.noche #pie { color: #c9d2dc; background: linear-gradient(transparent, rgba(
   .caja-busqueda { width: 100%; }
   #novela { flex: 1; max-width: none; height: 40px; min-width: 0; }
   #idioma { height: 40px; padding: 3px; }
-  #mapas-btn { display: inline-flex; flex: 1; justify-content: flex-start; }
-  #mapas-btn .nombre { flex: 1; text-align: left; }
   /* la lista de mapas como hoja inferior */
-  #ciudad { display: none; position: fixed; inset: 0; height: auto; border-radius: 0; background: rgba(20, 30, 40, .45); box-shadow: none; padding: 0; z-index: 60; align-items: flex-end; }
-  body.hoja-mapas #ciudad { display: grid; grid-template-columns: 1fr 1fr; align-content: end; gap: 0; }
-  body.hoja-mapas #barra { z-index: 100; }
-  #ciudad .titulo-hoja { grid-column: 1 / -1; display: flex; box-sizing: border-box; width: 100%; align-items: center; justify-content: space-between; background: #fff; border-radius: 18px 18px 0 0; padding: 16px 16px 8px; font-size: 16px; color: #23303b; }
-  #ciudad .cerrar-hoja { border: 0; background: #eef1f4; width: 34px; height: 34px; border-radius: 17px; font-size: 15px; color: #5f6b76; }
-  #ciudad button[data-c] { box-sizing: border-box; margin: 0; width: 100%; height: auto; align-self: stretch; height: auto; min-height: 64px; border-radius: 0; background: #fff; padding: 10px 16px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; text-align: left; border-top: 1px solid #eef1f4; }
-  #ciudad button[data-c]:nth-of-type(odd):last-of-type { grid-column: 1 / -1; } /* si el último queda solo, ocupa la fila entera */
-  #ciudad button[data-c]:nth-of-type(odd) { border-right: 1px solid #eef1f4; }
-  #ciudad button[data-c]:last-of-type, #ciudad button[data-c]:nth-last-of-type(2) { padding-bottom: calc(10px + env(safe-area-inset-bottom)); }
-  #ciudad button[data-c] .n { font-size: 16px; font-weight: 700; color: #23303b; }
-  #ciudad button[data-c] .s { display: block; font-size: 12px; font-weight: 500; color: #7a8590; margin-top: 3px; line-height: 1.25; }
-  #ciudad button[data-c].on { background: #e8f3ec; color: inherit; }
-  #ciudad button[data-c].on .n { color: #2e7d4f; }
-  #ciudad button[data-c].on .n::before { content: '● '; font-size: 11px; vertical-align: 2px; }
   #panel { top: auto; width: 100%; height: 62vh; border-radius: 16px 16px 0 0; transform: translateY(105%); }
   #panel.abierto { transform: none; }
   #panel .cuerpo { padding-top: 0; }
@@ -178,3 +162,23 @@ body.noche #pie { color: #c9d2dc; background: linear-gradient(transparent, rgba(
 .pin .bip { position: absolute; left: 30px; top: -26px; background: #fff; color: #1f4f8f; font-weight: 700; font-size: 12px; padding: 4px 9px; border-radius: 12px; box-shadow: 0 2px 6px rgba(0,0,0,.25); white-space: nowrap; animation: bip .5s ease-in-out infinite alternate; }
 @keyframes bip { from { transform: scale(1); } to { transform: scale(1.08); } }
 .lejos{background:#f3efe4;border-left:3px solid #b57a2c;padding:6px 10px;font-size:13px;color:#5b4b33;margin:8px 0}
+
+/* selector de mapas en hoja inferior: en celulares y en pantallas donde la fila de once mapas no entra */
+@media (max-width: 1180px) {
+  #mapas-btn { display: inline-flex; flex: 1; justify-content: flex-start; }
+  #mapas-btn .nombre { flex: 1; text-align: left; }
+  #ciudad { display: none; position: fixed; inset: 0; height: auto; border-radius: 0; background: rgba(20, 30, 40, .45); box-shadow: none; padding: 0; z-index: 60; align-items: flex-end; }
+  body.hoja-mapas #ciudad { display: grid; grid-template-columns: 1fr 1fr; align-content: end; gap: 0; }
+  body.hoja-mapas #barra { z-index: 100; }
+  #ciudad .titulo-hoja { grid-column: 1 / -1; display: flex; box-sizing: border-box; width: 100%; align-items: center; justify-content: space-between; background: #fff; border-radius: 18px 18px 0 0; padding: 16px 16px 8px; font-size: 16px; color: #23303b; }
+  #ciudad .cerrar-hoja { border: 0; background: #eef1f4; width: 34px; height: 34px; border-radius: 17px; font-size: 15px; color: #5f6b76; }
+  #ciudad button[data-c] { box-sizing: border-box; margin: 0; width: 100%; height: auto; align-self: stretch; height: auto; min-height: 64px; border-radius: 0; background: #fff; padding: 10px 16px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; text-align: left; border-top: 1px solid #eef1f4; }
+  #ciudad button[data-c]:nth-of-type(odd):last-of-type { grid-column: 1 / -1; } /* si el último queda solo, ocupa la fila entera */
+  #ciudad button[data-c]:nth-of-type(odd) { border-right: 1px solid #eef1f4; }
+  #ciudad button[data-c]:last-of-type, #ciudad button[data-c]:nth-last-of-type(2) { padding-bottom: calc(10px + env(safe-area-inset-bottom)); }
+  #ciudad button[data-c] .n { font-size: 16px; font-weight: 700; color: #23303b; }
+  #ciudad button[data-c] .s { display: block; font-size: 12px; font-weight: 500; color: #7a8590; margin-top: 3px; line-height: 1.25; }
+  #ciudad button[data-c].on { background: #e8f3ec; color: inherit; }
+  #ciudad button[data-c].on .n { color: #2e7d4f; }
+  #ciudad button[data-c].on .n::before { content: '● '; font-size: 11px; vertical-align: 2px; }
+}
