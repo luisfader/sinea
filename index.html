@@ -8,6 +8,7 @@
 <meta name="theme-color" content="#1d2a38">
 <link rel="icon" href="img/icono.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/sinea.css">
+<script>if (new URLSearchParams(location.search).get('ciudad') === 'metro') location.replace('metro.html' + (new URLSearchParams(location.search).get('lang') === 'ru' ? '?lang=ru' : ''));</script>
 <script>globalThis.CIUDAD = (c => ['verdegrad', 'utopia', 'mendoza', 'venezia', 'madrid', 'petersburgo', 'belgrado', 'praga', 'atlantida', 'secreta'].includes(c) ? c : 'sinea')(new URLSearchParams(location.search).get('ciudad'));</script>
 </head>
 <body>
@@ -54,6 +55,6 @@
   <p>Cargando…</p>
 </div>
 
-<script type="module" src="js/app.js"></script>
+<script type="module" src="js/app.js?v=12"></script>
 </body>
 </html>
