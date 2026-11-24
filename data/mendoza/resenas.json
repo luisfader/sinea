@@ -28,6 +28,27 @@
    "s": 3,
    "es": "Linda plaza. Lástima lo de aquella noche: la rusa se subió al escenario y se llevó toda la atención. Igual, al final la reina fui yo.",
    "ru": "Красивая площадь. Жаль ту ночь: русская вышла на сцену и забрала всё внимание. Впрочем, в итоге королевой стала я."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "A los diez años, en los hombros de mi papá, vi acá la elección de la reina. Esta plaza es el mapa de mi vida. Ahora Natalia también está en el mapa.",
+   "ru": "В десять лет, на плечах у папы, я увидел здесь выборы королевы. Эта площадь — карта моей жизни. Теперь на карте и Наталья."
+  },
+  {
+   "a": "María Silvana Roca",
+   "ar": "Мария Сильвана Рока",
+   "s": 4,
+   "es": "Subí al escenario a hablar entre gritos y carteles. Me escucharon. No todos estuvieron de acuerdo. Eso también es una plaza.",
+   "ru": "Я вышла на сцену говорить среди криков и плакатов. Меня услышали. Не все согласились. Это тоже площадь."
+  },
+  {
+   "a": "Adolfo",
+   "ar": "Адольфо",
+   "s": 1,
+   "es": "Entré con el Torino a la plaza y la fuente central no se corrió. Auto destruido, frasco perdido, zorro burlón. No vuelvo.",
+   "ru": "Въехал на «Торино» на площадь, а центральный фонтан не подвинулся. Машина разбита, банка потеряна, лис издевается. Не вернусь."
   }
  ],
  "md-hotel-plaza": [
@@ -83,6 +104,27 @@
    "s": 4,
    "es": "Los artesanos, el olor a madera y a pintura, la fuente. Una estrella menos porque mi novia da discursos de fuego sin avisar.",
    "ru": "Ремесленники, запах дерева и краски, фонтан. Минус звезда: моя девушка произносит огненные речи без предупреждения."
+  },
+  {
+   "a": "Julieta",
+   "ar": "Хулиета",
+   "s": 4,
+   "es": "Entré a una tiendita de artesanías y salí en Buenos Aires. Volví por la misma puerta. Linda plaza; las puertas, revisar.",
+   "ru": "Зашла в лавочку ремесленников и вышла в Буэнос-Айресе. Вернулась через ту же дверь. Красивая площадь, двери — проверить."
+  },
+  {
+   "a": "Mauro",
+   "ar": "Мауро",
+   "s": 3,
+   "es": "Tallé un zorro de madera y se lo regalé a una chica. Después el zorro me habló y me desmayé. Atención correcta; zorro, demasiado conversador.",
+   "ru": "Вырезал деревянного лиса и подарил девушке. Потом лис заговорил со мной, и я упал в обморок. Обслуживание нормальное, лис — слишком болтливый."
+  },
+  {
+   "a": "El zorro",
+   "ar": "Лис",
+   "s": 5,
+   "es": "Mosaicos andaluces, mate a la sombra, gente que se desmaya. Plaza ideal.",
+   "ru": "Андалузская мозаика, мате в тени, люди падают в обморок. Идеальная площадь."
   }
  ],
  "md-casa-gobierno": [
@@ -621,6 +663,212 @@
    "s": 1,
    "es": "El mapa marcaba este lugar y nada más. No quería hacerlo. Todavía escucho los gritos en el cañadón.",
    "ru": "Карта указывала только это место. Я не хотел этого делать. До сих пор слышу крики в ущелье."
+  }
+ ],
+ "md-casa-luis-heras": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "A doscientos metros de El Plumerillo. Acá aprendí a pararme derecho. Y a no querer ser soldado, que también se aprende.",
+   "ru": "В двухстах метрах от Эль-Плумерильо. Здесь я научился держаться прямо. И не хотеть быть солдатом — этому тоже учатся."
+  },
+  {
+   "a": "Mónica",
+   "ar": "Моника",
+   "s": 5,
+   "es": "Ponía música clásica y él se sentaba en el piso a escuchar. Los demás chicos querían a Madonna. El mío, a Chaikovski.",
+   "ru": "Я ставила классику, и он садился на пол слушать. Другие дети хотели Мадонну. Мой — Чайковского."
+  },
+  {
+   "a": "Sergio",
+   "ar": "Серхио",
+   "s": 4,
+   "es": "Fue boy scout y no encajó. Pintor que no fue, periodista que no fue. Y un día: «Papá, me voy a Rusia». Desde entonces, admiración y nada más.",
+   "ru": "Был бойскаутом — не вписался. Несостоявшийся художник, несостоявшийся журналист. А однажды: «Папа, я уезжаю в Россию». С тех пор — только восхищение."
+  },
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Me la mostró desde el campo histórico, con la ciudad tomada y la cumbia sonando. Salté de alegría. Después bailé. No pude evitarlo.",
+   "ru": "Он показал мне его с исторического поля, когда город был захвачен и играла кумбия. Я подпрыгнула от радости. Потом танцевала. Не могла удержаться."
+  },
+  {
+   "a": "Señorita Silvia",
+   "ar": "Сеньорита Сильвия",
+   "s": 4,
+   "es": "Luis Fader, segundo grado, guardapolvo siempre con tiza. Preguntaba cosas que no estaban en el manual. Me hacía pensar. Me cansaba un poco.",
+   "ru": "Луис Фадер, второй класс, халат вечно в мелу. Задавал вопросы, которых не было в учебнике. Заставлял думать. Немного утомлял."
+  },
+  {
+   "a": "Juanca",
+   "ar": "Хуанка",
+   "s": 5,
+   "es": "Yo era el gracioso del curso. Él era el que se reía después, cuando ya nadie se acordaba del chiste. Buen vecino.",
+   "ru": "Я был клоуном класса. А он смеялся потом, когда шутку уже все забыли. Хороший сосед."
+  },
+  {
+   "a": "Una vecina de Las Heras",
+   "ar": "Соседка из Лас-Эраса",
+   "s": 5,
+   "es": "El chico de los Fader dibujaba la cordillera en la vereda con tiza. Ahora sale en la tele con una reina. Yo siempre dije.",
+   "ru": "Мальчишка Фадеров рисовал мелом Кордильеру на тротуаре. А теперь он по телевизору с королевой. Я всегда говорила."
+  }
+ ],
+ "md-plaza-san-martin": [
+  {
+   "a": "Jana",
+   "ar": "Яна",
+   "s": 5,
+   "es": "Llegué con la capa de peluquería y los ruleros puestos. Me fui sabiendo que los pactos se cumplen. Y con un rulero menos: me lo sacó ella.",
+   "ru": "Пришла в парикмахерской накидке и бигуди. Ушла, зная, что договоры выполняются. И без одного бигуди: она его сняла."
+  },
+  {
+   "a": "Nátasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Una bruja y una falda en el borde de una fuente: alrededor, la locura; adentro del círculo, nada. Mejor lugar para hablar de un desastre hermoso.",
+   "ru": "Ведьма и юбка на краю фонтана: вокруг безумие, внутри круга — ничего. Лучшее место, чтобы поговорить о прекрасной катастрофе."
+  },
+  {
+   "a": "Marina",
+   "ar": "Марина",
+   "s": 4,
+   "es": "Informe: alrededor de las dos, en un círculo de tres metros, la gente se portaba bien. En el resto de la plaza, no. Pedí explicaciones. Nadie me las dio.",
+   "ru": "Отчёт: около двух часов дня в круге радиусом три метра люди вели себя прилично. На остальной площади — нет. Запросила объяснений. Никто не дал."
+  },
+  {
+   "a": "Un señor de setenta años",
+   "ar": "Семидесятилетний сеньор",
+   "s": 5,
+   "es": "Me declaré de rodillas a la vendedora de lotería. No sé qué me pasó. Ella tampoco. Igual compré un billete.",
+   "ru": "Признался на коленях продавщице лотереи. Не знаю, что на меня нашло. Она тоже не знает. Билет всё равно купил."
+  },
+  {
+   "a": "Una poeta",
+   "ar": "Поэтесса",
+   "s": 3,
+   "es": "Leí mis versos parada arriba de un tacho de basura. Nadie escuchó. Dos chicas en la fuente se reían de una vaca. Tres estrellas para el público.",
+   "ru": "Читала стихи, стоя на мусорном баке. Никто не слушал. Две девушки у фонтана смеялись над какой-то коровой. Три звезды публике."
+  },
+  {
+   "a": "Un pibe del Tomba",
+   "ar": "Пацан из «Томбы»",
+   "s": 5,
+   "es": "Le puse la gorra del Tomba al caballo del general. Le queda mejor que a mí. Que la dejen.",
+   "ru": "Надел кепку «Томбы» на коня генерала. Ему идёт больше, чем мне. Пусть оставят."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "La llamé doce veces a Jana y no atendía. Estaba con Nátasha, hablando de mí. No sé si me alegra o me asusta. Las dos cosas.",
+   "ru": "Я звонил Яне двенадцать раз — не отвечала. Она была с Наташей и говорила обо мне. Не знаю, радоваться или бояться. И то и другое."
+  }
+ ],
+ "md-plaza-italia": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "La loba con Rómulo y Remo me impresionaba de chico. Mi viejo decía que los italianos trajeron la mitad de las parras de Mendoza. La otra mitad la trajo el viento.",
+   "ru": "Волчица с Ромулом и Ремом поражала меня в детстве. Отец говорил, что итальянцы привезли половину лоз Мендосы. Другую половину принёс ветер."
+  },
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "Mayólicas, fuente y sombra en pleno marzo. Me senté a dibujar y un abuelo me corrigió la perspectiva en italiano. Tenía razón.",
+   "ru": "Майолика, фонтан и тень в разгар марта. Села рисовать, и дедушка поправил мне перспективу по-итальянски. Он был прав."
+  },
+  {
+   "a": "Mirta",
+   "ar": "Мирта",
+   "s": 4,
+   "es": "Acá vengo a comer el helado de los domingos. Tranquila, linda, sin turistas gritando. Le falta una peluquería, nada más.",
+   "ru": "Сюда я хожу есть мороженое по воскресеньям. Спокойно, красиво, без орущих туристов. Не хватает только парикмахерской."
+  }
+ ],
+ "md-plaza-chile": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "San Martín y O'Higgins con las manos sobre la misma espada, de un solo bloque de piedra de Las Heras. Hasta la piedra es de mi barrio.",
+   "ru": "Сан-Мартин и О’Хиггинс, положившие руки на одну шпагу, из одного камня из Лас-Эраса. Даже камень — из моего района."
+  },
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 4,
+   "es": "Dos libertadores de piedra que se dan la mano. Le pregunté a Luis si eran pareja. Me explicó la historia de Chile durante cuarenta minutos.",
+   "ru": "Два каменных освободителя держатся за руки. Я спросила Луиса, не пара ли они. Он сорок минут рассказывал мне историю Чили."
+  },
+  {
+   "a": "Irina",
+   "ar": "Ирина",
+   "s": 4,
+   "es": "Buen lugar para recordar que los vecinos ayudan después de un terremoto. Lo tomo como modelo de política exterior.",
+   "ru": "Хорошее место, чтобы помнить: соседи помогают после землетрясения. Беру как образец внешней политики."
+  }
+ ],
+ "md-plaza-las-heras": [
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Les grité el nombre del dragón y toda la plaza lo repitió: «¡Zmaj!». Desde entonces soy la reina de Las Heras. Para siempre, me dicen.",
+   "ru": "Я крикнула имя дракона, и вся площадь повторила: «З’май!». С тех пор я королева Лас-Эраса. Навсегда, говорят."
+  },
+  {
+   "a": "Zmaj",
+   "ar": "Змай",
+   "s": 5,
+   "es": "Grrr. (Cinco cóndores, cero muertos. Uno me tocó el ala después. Aliados.)",
+   "ru": "Ррр. (Пять кондоров, ноль погибших. Один потом коснулся моего крыла. Союзники.)"
+  },
+  {
+   "a": "Katarina",
+   "ar": "Катарина",
+   "s": 5,
+   "es": "Les saqué los chips de la nuca uno por uno. El primero me quiso picar. El último me hizo una reverencia.",
+   "ru": "Я вынула чипы из затылков, одного за другим. Первый хотел меня клюнуть. Последний поклонился."
+  },
+  {
+   "a": "Un cóndor",
+   "ar": "Кондор",
+   "s": 5,
+   "es": "Volaba con una voz ajena en la cabeza. Me bajó un dragón y me la sacó una señora. Ahora vuelo por Mendoza. Gratis.",
+   "ru": "Летал с чужим голосом в голове. Меня сбил дракон, а голос вынула сеньора. Теперь летаю за Мендосу. Бесплатно."
+  },
+  {
+   "a": "Jack",
+   "ar": "Джек",
+   "s": 1,
+   "es": "Mandé cinco cóndores con tecnología de punta. Volvieron del lado de ellos. Pésimo servicio de los cóndores.",
+   "ru": "Отправил пять кондоров с передовыми технологиями. Они перешли на их сторону. Ужасный сервис у кондоров."
+  },
+  {
+   "a": "Un viejo de boina",
+   "ar": "Старик в берете",
+   "s": 5,
+   "es": "Yo estaba en la plaza. ¡La que bajó los cóndores! Se lo grité en el Carrusel al año siguiente y me saludó.",
+   "ru": "Я был на площади. Та, что сбила кондоров! Я крикнул ей это на Карусели через год, и она мне помахала."
+  },
+  {
+   "a": "Una nena de siete años",
+   "ar": "Девочка семи лет",
+   "s": 5,
+   "es": "Le hice un dibujo cuando bailaba y me lo firmó. Lo tengo en la heladera.",
+   "ru": "Я нарисовала её, когда она танцевала, и она подписала. Рисунок висит у меня на холодильнике."
+  },
+  {
+   "a": "Sergio",
+   "ar": "Серхио",
+   "s": 4,
+   "es": "En la tele dijeron «dron gigante con forma de dragón». Mi nuera le enseñó el nombre a todo Las Heras. Eso no lo dijeron en la tele.",
+   "ru": "По телевизору сказали «гигантский дрон в форме дракона». Моя невестка научила его имени весь Лас-Эрас. Этого по телевизору не сказали."
   }
  ]
 }

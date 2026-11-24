@@ -172,6 +172,84 @@
    ]
   },
   {
+   "id": "md-plaza-san-martin",
+   "nombre": "Plaza San Martín",
+   "cat": "plaza",
+   "ll": [
+    -32.8876419,
+    -68.8406505
+   ],
+   "modelo": "fuente",
+   "desc": "La plaza satélite del noreste, a dos cuadras de la Plaza Independencia, con palmeras, jacarandás, la estatua ecuestre del general San Martín rumbo a los Andes y una fuente redonda. En «La reina de la Vendimia», durante la hora salvaje fabricada que deja a la gente «sin borde», la plaza es un manicomio: dos señores de traje se pelean un banco a empujones, un pibe le pone una gorra del Tomba al caballo de bronce, una mujer lee poesía parada arriba de un tacho de basura, chicos bailan cuarteto sobre el techo de un auto con el dueño bailando con ellos, un señor de setenta años se declara de rodillas a una vendedora de lotería. Y en un círculo de dos o tres metros alrededor de la fuente no pasa nada: ahí están sentadas Jana, con la capa de peluquería y los ruleros puestos, y Nátasha. «Somos dos: una bruja y una falda.» Hablan de Luis: el monopatín en Belgrado, el «café» en Malá Strana, el cubo Rubik en veintidós segundos, la mandíbula «como una vaca», las chispas rosadas de la Vendimia pasada. Jana pregunta por qué se separaron, y Nátasha contesta: «Hicimos un pacto. Y los pactos se cumplen. ¿Entendés?». Esa frase vuelve varias veces en la novela, hasta el final.",
+   "buscar": "plaza San Martín",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     26,
+     27,
+     32,
+     35,
+     43,
+     49
+    ]
+   },
+   "sin_ilustracion": true,
+   "excluir": [
+    "anomalia"
+   ]
+  },
+  {
+   "id": "md-plaza-italia",
+   "nombre": "Plaza Italia",
+   "cat": "plaza",
+   "ll": [
+    -32.8918099,
+    -68.848419
+   ],
+   "modelo": "fuente",
+   "desc": "La plaza satélite del suroeste, a dos cuadras de la Plaza Independencia, homenaje a los inmigrantes italianos que tanto hicieron por los viñedos de Mendoza. Desde 1919 está la Loba Capitolina amamantando a Rómulo y Remo; en 1951 la plaza se remodeló con una fuente central rodeada de mayólicas y un friso. Con España, Chile y San Martín forma el anillo de cuatro plazas alrededor de la Independencia por el que pasean los personajes cuando van y vienen por el centro.",
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-plaza-chile",
+   "nombre": "Plaza Chile",
+   "cat": "plaza",
+   "ll": [
+    -32.8864264,
+    -68.8469811
+   ],
+   "modelo": "fuente",
+   "desc": "La plaza satélite del noroeste, a dos cuadras de la Plaza Independencia, con el nombre del país hermano en agradecimiento por su ayuda después del terremoto de 1861. En el centro, San Martín y O'Higgins, los dos libertadores que cruzaron los Andes con el ejército armado en El Plumerillo, juntos, con las manos sobre una espada: un solo bloque de piedra de 22 toneladas sacado de la Quebrada del Toro, en Las Heras. Al lado, un friso de bronce con la batalla de Chacabuco. Con España, Italia y San Martín forma el anillo de cuatro plazas alrededor de la Independencia.",
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-plaza-las-heras",
+   "nombre": "Plaza Las Heras: Zmaj y los cóndores",
+   "cat": "plaza",
+   "ll": [
+    -32.8387993,
+    -68.8389575
+   ],
+   "modelo": "ninguno",
+   "desc": "La plaza de Las Heras, el departamento del norte donde creció Luis, cerca del Campo Histórico El Plumerillo. En «Дикий час: Духи гор», con el centro tomado por Jack y los soldados zombis, Luis junta ahí al pueblo de Las Heras y presenta a «Natasha Primera, reina de Las Heras»; la plaza responde con una ovación y Marina y Katarina reparten dragonetas. Entonces llegan cinco cóndores gigantes con chips en la nuca, mandados por Jack. Zmaj los baja sin matarlos —un aletazo, una llamarada, uno agarrado con las garras y dejado en la tierra blanda fuera de la plaza—, Katarina les saca los chips y los cóndores, libres, se quedan como fuerza aérea de Mendoza. La gente grita «¡Zmaj! ¡Zmaj!», porque Natasha les enseñó el nombre del dragón. En «La reina de la Vendimia», un año después, Sergio todavía lo cuenta tomando mate, y en el Carrusel un viejo de boina grita: «¡La que bajó los cóndores en la plaza de Las Heras!».",
+   "extra": {
+    "dikij-chas-2": [
+     51,
+     52
+    ],
+    "la-reina-de-la-vendimia": [
+     17,
+     23,
+     26
+    ],
+    "kralovna-vinobrani": [
+     17,
+     23,
+     26
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
    "id": "md-patricias",
    "nombre": "Calle Patricias Mendocinas",
    "cat": "calle",
@@ -637,12 +715,21 @@
    "nombre": "La casa de la infancia de Luis (Las Heras)",
    "cat": "casa",
    "ll": [
-    -32.853,
-    -68.835
+    -32.8447,
+    -68.8203
    ],
    "modelo": "hogar",
-   "desc": "En «El misterio de los Fader: Operación Londres», la casa familiar de Luis en Las Heras, en 1992: la sala en silencio, el televisor encendido y la madre que recuerda que hace diez años se recuperaron las islas. Ahí empieza la memoria de Luis. La casa es de la novela; el departamento es real.",
-   "buscar": "Casa familiar, Las Heras"
+   "desc": "La casa donde creció Luis, en Las Heras, «el departamento más trabajador y más pobre de Mendoza», a doscientos metros del Campo Histórico El Plumerillo. En «El misterio de los Fader: Operación Londres» empieza acá, el 2 de abril de 1992: la sala en silencio, el televisor encendido y la madre de Luis que recuerda la guerra de Malvinas, «los milicos mandaron a esos pibes a una batalla imposible»; Luis, chico, piensa «yo no quiero ser soldado» y se refugia en la música clásica, que comparte con su mamá. En octubre de ese año, en la escuela Juan Martínez de Rosas, con guardapolvo blanco, no entiende por qué al Día de la Raza le pusieron ese nombre. Según su padre, de chico fue boy scout y nunca terminó de encajar en ningún lado. En «Дикий час: Духи гор», con la ciudad tomada, Luis lleva a todos a El Plumerillo y le dice a Natasha: «A doscientos metros de acá está la casa donde viví de chico. Acá aprendí a pararme derecho». Esa misma tarde, en un departamento de Las Heras, su mamá Mónica mira la Vía Blanca por televisión y se ríe: «Qué suerte tiene Luis». La casa es de la novela; el barrio es real.",
+   "buscar": "Casa familiar, Las Heras|дом, где я жил в детстве",
+   "extra": {
+    "dikij-chas-2": [
+     8,
+     50
+    ],
+    "tajna-semi-fader": [
+     46
+    ]
+   }
   },
   {
    "id": "md-dalvian",
