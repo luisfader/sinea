@@ -1,8 +1,8 @@
 # Mapas de los mundos literarios de Robert Fader · Карты миров Роберта Фадера
 
-Sinea, Verdegrad, Nuestra Utopía, Mendoza, Venecia, Madrid, San Petersburgo, Belgrado, Praga, la Atlántida, la Ciudad Secreta y el fiordo de Sofía y Román en 3D, más el esquema del metro del Tren Fantasma. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
+Sinea, Verdegrad, Nuestra Utopía, Mendoza, Venecia, Madrid, San Petersburgo, Belgrado, Praga, la Atlántida, la Ciudad Secreta y el fiordo de Sofía y Román en 3D, más el esquema del metro del Tren Fantasma. La página principal (`index.html`) abre una portada con una ilustración de cada historia, desde donde se elige el mapa sin cargar ninguno antes (`index.html?portada` vuelve a ella). Dentro de cada mapa, el botón «Mapas ▾» abre el panel con todos los mundos.
 
-Doce mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza | Venecia | Madrid | San Petersburgo | Belgrado | Praga | Atlántida | Ciudad Secreta | Fiordo** arriba (en el celular y en pantallas de menos de 1320 px, el botón «Mapas ▾» abre la lista):
+Doce mapas en el mismo sitio, que se eligen en la portada o con el botón «Mapas ▾» (un panel con imágenes; en el celular, una hoja desde abajo):
 
 - **Sinea**, la ciudad junto al mar: `index.html`
 - **Verdegrad**, el pueblo verde de Natalia, con su fortaleza en la penumbra: `index.html?ciudad=verdegrad` (o `verdegrad.html`)
