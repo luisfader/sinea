@@ -297,6 +297,18 @@
    "sin_ilustracion": true
   },
   {
+   "id": "md-bellas-artes",
+   "nombre": "Escuela Provincial de Bellas Artes",
+   "cat": "edificio",
+   "ll": [
+    -32.89684,
+    -68.84467
+   ],
+   "modelo": "museo",
+   "desc": "La Escuela Provincial de Bellas Artes, en la esquina de Patricias Mendocinas y Pedro Molina. Nació en 1933 como Academia Provincial de Bellas Artes y hoy es la escuela n.º 4-024 «Bellas Artes»: pintura, escultura, grabado, talleres que huelen a trementina y murales pintados por sus ex alumnos en las paredes de afuera. De acá salieron generaciones de artistas mendocinos. Acá estudió Luis Fader, el que escribe estas novelas.",
+   "sin_ilustracion": true
+  },
+  {
    "id": "md-patricias",
    "nombre": "Calle Patricias Mendocinas",
    "cat": "calle",

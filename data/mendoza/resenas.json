@@ -946,5 +946,35 @@
    "es": "Monobloc 1. Olivos cerca, vino cerca, metrotranvía cerca. Buen lugar para escribir novelas con zorros.",
    "ru": "Монобллок 1. Оливы рядом, вино рядом, метротрамвай рядом. Хорошее место, чтобы писать романы с лисами."
   }
+ ],
+ "md-bellas-artes": [
+  {
+   "a": "Tía Adriana",
+   "ar": "Тётя Адриана",
+   "s": 5,
+   "es": "A mí me rechazaban todos los cuadros. A mi sobrino también. Para eso están las escuelas: para pintar igual.",
+   "ru": "Мне отказывали во всех картинах. Моему племяннику тоже. Для того и существуют школы: чтобы всё равно писать."
+  },
+  {
+   "a": "Sergio",
+   "ar": "Серхио",
+   "s": 4,
+   "es": "Lo traía y lo buscaba con el Gacel, con las manos llenas de carbonilla. El tapizado todavía tiene las huellas.",
+   "ru": "Я привозил и забирал его на «Гаселе», с руками в угле. На обивке до сих пор следы."
+  },
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "Me mostró la esquina y el mural de afuera. Dijo que acá aprendió a mirar. Después le pedí que me dibujara. Sigue sabiendo.",
+   "ru": "Он показал мне угол и фреску снаружи. Сказал, что здесь научился смотреть. Потом я попросила его меня нарисовать. До сих пор умеет."
+  },
+  {
+   "a": "El zorro",
+   "ar": "Лис",
+   "s": 4,
+   "es": "Huele a trementina y a pibes que van a ser pintores, escritores o las dos cosas. Buen semillero.",
+   "ru": "Пахнет скипидаром и ребятами, которые станут художниками, писателями или и тем и другим. Хорошая грядка."
+  }
  ]
 }

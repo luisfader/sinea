@@ -13662,6 +13662,48 @@ export const CIUDADES = {
 ]
 },
 {
+"id": "md-bellas-artes",
+"nombre": "Escuela Provincial de Bellas Artes",
+"cat": "edificio",
+"x": -16,
+"y": -789,
+"modelo": "museo",
+"desc": "La Escuela Provincial de Bellas Artes, en la esquina de Patricias Mendocinas y Pedro Molina. Nació en 1933 como Academia Provincial de Bellas Artes y hoy es la escuela n.º 4-024 «Bellas Artes»: pintura, escultura, grabado, talleres que huelen a trementina y murales pintados por sus ex alumnos en las paredes de afuera. De acá salieron generaciones de artistas mendocinos. Acá estudió Luis Fader, el que escribe estas novelas.",
+"nombre_ru": "Провинциальная школа изящных искусств",
+"desc_ru": "Провинциальная школа изящных искусств на углу улиц Патрисиас Мендосинас и Педро Молина. Она родилась в 1933 году как Провинциальная академия изящных искусств, а сегодня это школа № 4-024 «Изящные искусства»: живопись, скульптура, гравюра, мастерские, пахнущие скипидаром, и фрески бывших учеников на наружных стенах. Отсюда вышли поколения мендосских художников. Здесь учился Луис Фадер — тот, кто пишет эти романы.",
+"apar": [],
+"res": [
+{
+"a": "Tía Adriana",
+"ar": "Тётя Адриана",
+"s": 5,
+"es": "A mí me rechazaban todos los cuadros. A mi sobrino también. Para eso están las escuelas: para pintar igual.",
+"ru": "Мне отказывали во всех картинах. Моему племяннику тоже. Для того и существуют школы: чтобы всё равно писать."
+},
+{
+"a": "Sergio",
+"ar": "Серхио",
+"s": 4,
+"es": "Lo traía y lo buscaba con el Gacel, con las manos llenas de carbonilla. El tapizado todavía tiene las huellas.",
+"ru": "Я привозил и забирал его на «Гаселе», с руками в угле. На обивке до сих пор следы."
+},
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Me mostró la esquina y el mural de afuera. Dijo que acá aprendió a mirar. Después le pedí que me dibujara. Sigue sabiendo.",
+"ru": "Он показал мне угол и фреску снаружи. Сказал, что здесь научился смотреть. Потом я попросила его меня нарисовать. До сих пор умеет."
+},
+{
+"a": "El zorro",
+"ar": "Лис",
+"s": 4,
+"es": "Huele a trementina y a pibes que van a ser pintores, escritores o las dos cosas. Buen semillero.",
+"ru": "Пахнет скипидаром и ребятами, которые станут художниками, писателями или и тем и другим. Хорошая грядка."
+}
+]
+},
+{
 "id": "md-patricias",
 "nombre": "Calle Patricias Mendocinas",
 "cat": "calle",
@@ -27848,67 +27890,6 @@ export const CIUDADES = {
 ]
 };
 export const NOVELAS = {
-"venecianskaya-maska": {
-"t": "Венецианская маска",
-"es": "La máscara de Venecia (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Венецианская маска",
-"p": "img/portadas/venecianskaya-maska.webp",
-"tr": {
-"it": "maschera-di-venezia"
-}
-},
-"il-treno-fantasma": {
-"t": "Il treno fantasma",
-"es": "El tren fantasma (it.)",
-"l": "it",
-"y": null,
-"ru": "Призрачный поезд (ит.)",
-"p": "img/portadas/il-treno-fantasma.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
-"l": "ru",
-"y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
-"tr": {}
-},
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
-"l": "ru",
-"y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
-"tr": {
-"en": "the-date"
-}
-},
-"ostrovy-nad-prahou": {
-"t": "Ostrovy nad Prahou",
-"es": "Las islas sobre Praga (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Острова над Прагой (чеш.)",
-"p": "img/portadas/ostrovy-nad-prahou.webp",
-"tr": {}
-},
-"predchuvstvie-2-4": {
-"t": "Предчувствие 2.4",
-"es": "El presentimiento 2.4",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.4",
-"p": "img/portadas/predchuvstvie-2-4.webp",
-"tr": {}
-},
 "27-ocak": {
 "t": "27 Ocak",
 "es": "27 de enero",
@@ -27918,16 +27899,32 @@ export const NOVELAS = {
 "p": "img/portadas/27-ocak.webp",
 "tr": {}
 },
-"dikij-chas": {
-"t": "Дикий час",
-"es": "La hora salvaje",
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
 "l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"tr": {}
+},
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"tr": {}
+},
+"anomalia": {
+"t": "Anomalía",
+"es": "Anomalía",
+"l": "es",
 "y": null,
-"ru": "Дикий час",
-"p": "img/portadas/dikij-chas.webp",
-"tr": {
-"sr": "divlji-chas"
-}
+"ru": "Аномалия (исп.)",
+"p": "img/portadas/anomalia.webp",
+"tr": {}
 },
 "mashina-snov": {
 "t": "Машина снов",
@@ -27938,172 +27935,13 @@ export const NOVELAS = {
 "p": "img/portadas/mashina-snov.webp",
 "tr": {}
 },
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
-"tr": {}
-},
-"golos": {
-"t": "Голос",
-"es": "La voz",
-"l": "ru",
-"y": 2026,
-"ru": "Голос",
-"p": "img/portadas/golos.webp",
-"tr": {
-"fr": "la-voix"
-}
-},
-"kralovna-vinobrani": {
-"t": "Královna vinobraní",
-"es": "La reina de la Vendimia (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Королева Вендимии (чеш.)",
-"p": "img/portadas/kralovna-vinobrani.webp",
-"tr": {
-"es": "la-reina-de-la-vendimia"
-}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
-"y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
-"tr": {}
-},
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви",
-"p": "img/portadas/volny-lyubvi.webp",
-"tr": {}
-},
-"lluvia-de-meteoritos": {
-"t": "Lluvia de meteoritos",
-"es": "Lluvia de meteoritos",
-"l": "es",
-"y": null,
-"ru": "Метеоритный дождь (исп.)",
-"p": "img/portadas/lluvia-de-meteoritos.webp",
-"tr": {
-"ru": "meteoritnyj-dozhd"
-}
-},
-"znak": {
-"t": "Знак",
-"es": "El signo",
+"predchuvstvie-2": {
+"t": "Предчувствие 2",
+"es": "El presentimiento 2",
 "l": "ru",
 "y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
-"tr": {}
-},
-"severnaya-lyubov": {
-"t": "Северная любовь",
-"es": "Amor del Norte",
-"l": "ru",
-"y": 2025,
-"ru": "Северная любовь",
-"p": "img/portadas/severnaya-lyubov.webp",
-"tr": {}
-},
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"ondas-de-amor": {
-"t": "Ondas de amor",
-"es": "Ondas de amor",
-"l": "es",
-"y": 2026,
-"ru": "Волны любви (исп.)",
-"p": "img/portadas/ondas-de-amor.webp",
-"tr": {
-"it": "onde-d-amore"
-}
-},
-"el-tren-fantasma": {
-"t": "El tren fantasma",
-"es": "El tren fantasma",
-"l": "es",
-"y": null,
-"ru": "Призрачный поезд (исп.)",
-"p": "img/portadas/el-tren-fantasma.webp",
-"tr": {
-"it": "il-treno-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"pokhititel-serdec-portret-osnovatelya": {
-"t": "Похититель сердец: Портрет основателя",
-"es": "Ladrón de corazones: El retrato del fundador",
-"l": "ru",
-"y": 2026,
-"ru": "Похититель сердец: Портрет основателя",
-"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
-"tr": {}
-},
-"la-citta-triste": {
-"t": "La città triste",
-"es": "La ciudad triste (it.)",
-"l": "it",
-"y": 2025,
-"ru": "Грустный город (ит.)",
-"p": "img/portadas/la-citta-triste.webp",
-"tr": {
-"ru": "grustnyj-gorod"
-}
-},
-"la-reina-de-la-vendimia": {
-"t": "La reina de la Vendimia",
-"es": "La reina de la Vendimia",
-"l": "es",
-"y": 2026,
-"ru": "Королева Вендимии (исп.)",
-"p": "img/portadas/la-reina-de-la-vendimia.webp",
-"tr": {
-"cs": "kralovna-vinobrani"
-}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
-"l": "es",
-"y": 2026,
-"ru": "Любовь в космосе",
-"p": "img/portadas/amor-en-el-cosmos.webp",
+"ru": "Предчувствие 2",
+"p": "img/portadas/predchuvstvie-2.webp",
 "tr": {}
 },
 "prizrachnyj-poezd": {
@@ -28118,31 +27956,13 @@ export const NOVELAS = {
 "it": "il-treno-fantasma"
 }
 },
-"divlji-chas-malbec": {
-"t": "Дивљи час: Љубав укуса малбека",
-"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
-"p": "img/portadas/divlji-chas-malbec.webp",
-"tr": {}
-},
-"anomalia": {
-"t": "Anomalía",
-"es": "Anomalía",
-"l": "es",
-"y": null,
-"ru": "Аномалия (исп.)",
-"p": "img/portadas/anomalia.webp",
-"tr": {}
-},
-"dikij-chas-2": {
-"t": "Дикий час: Духи гор",
-"es": "La hora salvaje: Los espíritus de la montaña",
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
 "l": "ru",
-"y": null,
-"ru": "Дикий час: Духи гор",
-"p": "img/portadas/dikij-chas-2.webp",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
 "tr": {}
 },
 "la-ciudad-secreta": {
@@ -28154,63 +27974,35 @@ export const NOVELAS = {
 "p": "img/portadas/la-ciudad-secreta.webp",
 "tr": {}
 },
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
-"tr": {}
-},
-"predtucha": {
-"t": "Předtucha",
-"es": "El presentimiento (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Предчувствие (чеш.)",
-"p": "img/portadas/predtucha.webp",
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
 "tr": {
-"fr": "reve-turquoise",
-"eo": "la-antausento",
-"it": "presentimento",
-"es": "la-corazonada",
-"isv": "predcutje",
-"tr": "col-gulu",
-"de": "vorahnung",
-"sr": "predosecaj",
-"vo": "fot-latik",
-"ia": "le-presentimento",
-"pt": "mundo-turquesa",
-"pl": "przeczucie",
-"ru": "predchuvstvie"
+"it": "ti-amo-in-silenzio"
 }
 },
-"severnaya-lyubov-2": {
-"t": "Северная любовь: Плач с севера",
-"es": "Amor del Norte 2: Llanto del norte",
-"l": "ru",
+"el-misterio-de-los-fader": {
+"t": "El misterio de los Fader",
+"es": "El misterio de los Fader",
+"l": "es",
 "y": 2025,
-"ru": "Северная любовь: Плач с севера",
-"p": "img/portadas/severnaya-lyubov-2.webp",
-"tr": {}
+"ru": "Тайна семьи Фадер (исп.)",
+"p": "img/portadas/el-misterio-de-los-fader.webp",
+"tr": {
+"ru": "tajna-semi-fader"
+}
 },
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
-"l": "ru",
-"y": 2026,
-"ru": "Алмазный дождь",
-"p": "img/portadas/almaznyj-dozhd.webp",
-"tr": {}
-},
-"predchuvstvie-2-3": {
-"t": "Предчувствие 2.3",
-"es": "El presentimiento 2.3",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.3",
-"p": "img/portadas/predchuvstvie-2-3.webp",
+"podzemni-tajemstvi": {
+"t": "Podzemní tajemství",
+"es": "El secreto subterráneo (checo)",
+"l": "cs",
+"y": null,
+"ru": "Подземная тайна (чеш.)",
+"p": "img/portadas/podzemni-tajemstvi.webp",
 "tr": {}
 },
 "maschera-di-venezia": {
@@ -28224,31 +28016,42 @@ export const NOVELAS = {
 "ru": "venecianskaya-maska"
 }
 },
-"podzemni-tajemstvi": {
-"t": "Podzemní tajemství",
-"es": "El secreto subterráneo (checo)",
-"l": "cs",
-"y": null,
-"ru": "Подземная тайна (чеш.)",
-"p": "img/portadas/podzemni-tajemstvi.webp",
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
+"l": "es",
+"y": 2026,
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
 "tr": {}
 },
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
-"tr": {}
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
 },
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
+"ladro-di-cuori-3": {
+"t": "Ladro di cuori 3",
+"es": "Ladrón de corazones 3 (it.)",
 "l": "it",
 "y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
+"ru": "Похититель сердец 3 (ит.)",
+"p": "img/portadas/ladro-di-cuori-3.webp",
+"tr": {}
+},
+"rezonans-lyubvi": {
+"t": "Резонанс любви",
+"es": "Resonancia del amor",
+"l": "ru",
+"y": null,
+"ru": "Резонанс любви",
+"p": "img/portadas/rezonans-lyubvi.webp",
 "tr": {}
 },
 "divlji-chas": {
@@ -28273,79 +28076,76 @@ export const NOVELAS = {
 "it": "la-citta-triste"
 }
 },
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
-"l": "it",
+"la-reina-de-la-vendimia": {
+"t": "La reina de la Vendimia",
+"es": "La reina de la Vendimia",
+"l": "es",
 "y": 2026,
-"ru": "Волны любви (ит.)",
-"p": "img/portadas/onde-d-amore.webp",
+"ru": "Королева Вендимии (исп.)",
+"p": "img/portadas/la-reina-de-la-vendimia.webp",
 "tr": {
-"es": "ondas-de-amor"
+"cs": "kralovna-vinobrani"
 }
 },
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
-},
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
-"l": "es",
+"dikij-chas": {
+"t": "Дикий час",
+"es": "La hora salvaje",
+"l": "ru",
 "y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
-"tr": {}
+"ru": "Дикий час",
+"p": "img/portadas/dikij-chas.webp",
+"tr": {
+"sr": "divlji-chas"
+}
 },
-"tajna-v-biblioteke": {
-"t": "Тайна в библиотеке",
-"es": "El misterio de la biblioteca",
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
 "l": "ru",
 "y": 2026,
-"ru": "Тайна в библиотеке",
-"p": "img/portadas/tajna-v-biblioteke.webp",
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
 "tr": {}
 },
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
-"l": "es",
-"y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
-"tr": {}
-},
-"ladro-di-cuori-3": {
-"t": "Ladro di cuori 3",
-"es": "Ladrón de corazones 3 (it.)",
+"la-citta-triste": {
+"t": "La città triste",
+"es": "La ciudad triste (it.)",
 "l": "it",
-"y": 2026,
-"ru": "Похититель сердец 3 (ит.)",
-"p": "img/portadas/ladro-di-cuori-3.webp",
-"tr": {}
+"y": 2025,
+"ru": "Грустный город (ит.)",
+"p": "img/portadas/la-citta-triste.webp",
+"tr": {
+"ru": "grustnyj-gorod"
+}
 },
-"severnaya-lyubov-3": {
-"t": "Северная любовь: Восточный ветер",
-"es": "Amor del Norte 3: Viento del este",
+"pokhititel-serdec-portret-osnovatelya": {
+"t": "Похититель сердец: Портрет основателя",
+"es": "Ladrón de corazones: El retrato del fundador",
 "l": "ru",
 "y": 2026,
-"ru": "Северная любовь: Восточный ветер",
-"p": "img/portadas/severnaya-lyubov-3.webp",
+"ru": "Похититель сердец: Портрет основателя",
+"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
 "tr": {}
 },
-"dikij-chas-karnaval-razdora": {
-"t": "Дикий час: Карнавал раздора",
-"es": "La hora salvaje: El carnaval de la discordia",
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
 "l": "ru",
 "y": 2026,
-"ru": "Дикий час: Карнавал раздора",
-"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
 "tr": {}
+},
+"kralovna-vinobrani": {
+"t": "Královna vinobraní",
+"es": "La reina de la Vendimia (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Королева Вендимии (чеш.)",
+"p": "img/portadas/kralovna-vinobrani.webp",
+"tr": {
+"es": "la-reina-de-la-vendimia"
+}
 },
 "la-voix": {
 "t": "La voix",
@@ -28358,43 +28158,160 @@ export const NOVELAS = {
 "ru": "golos"
 }
 },
-"rezonans-lyubvi": {
-"t": "Резонанс любви",
-"es": "Resonancia del amor",
-"l": "ru",
-"y": null,
-"ru": "Резонанс любви",
-"p": "img/portadas/rezonans-lyubvi.webp",
-"tr": {}
+"predtucha": {
+"t": "Předtucha",
+"es": "El presentimiento (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Предчувствие (чеш.)",
+"p": "img/portadas/predtucha.webp",
+"tr": {
+"fr": "reve-turquoise",
+"eo": "la-antausento",
+"it": "presentimento",
+"es": "la-corazonada",
+"isv": "predcutje",
+"tr": "col-gulu",
+"de": "vorahnung",
+"sr": "predosecaj",
+"vo": "fot-latik",
+"ia": "le-presentimento",
+"pt": "mundo-turquesa",
+"pl": "przeczucie",
+"ru": "predchuvstvie"
+}
 },
-"predchuvstvie-2": {
-"t": "Предчувствие 2",
-"es": "El presentimiento 2",
-"l": "ru",
-"y": 2024,
-"ru": "Предчувствие 2",
-"p": "img/portadas/predchuvstvie-2.webp",
-"tr": {}
-},
-"zvezdnyj-roman": {
-"t": "Звёздный роман",
-"es": "Novela estelar",
-"l": "ru",
-"y": null,
-"ru": "Звёздный роман",
-"p": "img/portadas/zvezdnyj-roman.webp",
-"tr": {}
-},
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
+"golos": {
+"t": "Голос",
+"es": "La voz",
 "l": "ru",
 "y": 2026,
-"ru": "Тихая любовь",
-"p": "img/portadas/tikhaya-lyubov.webp",
+"ru": "Голос",
+"p": "img/portadas/golos.webp",
 "tr": {
-"it": "ti-amo-in-silenzio"
+"fr": "la-voix"
 }
+},
+"operacion-londres": {
+"t": "El misterio de los Fader: Operación Londres",
+"es": "El misterio de los Fader: Operación Londres",
+"l": "es",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
+"p": "img/portadas/operacion-londres.webp",
+"tr": {}
+},
+"severnaya-lyubov-2": {
+"t": "Северная любовь: Плач с севера",
+"es": "Amor del Norte 2: Llanto del norte",
+"l": "ru",
+"y": 2025,
+"ru": "Северная любовь: Плач с севера",
+"p": "img/portadas/severnaya-lyubov-2.webp",
+"tr": {}
+},
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
+"l": "ru",
+"y": 2026,
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
+"tr": {}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
+"y": 2026,
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
+"tr": {
+"ru": "tikhaya-lyubov"
+}
+},
+"severnaya-lyubov-3": {
+"t": "Северная любовь: Восточный ветер",
+"es": "Amor del Norte 3: Viento del este",
+"l": "ru",
+"y": 2026,
+"ru": "Северная любовь: Восточный ветер",
+"p": "img/portadas/severnaya-lyubov-3.webp",
+"tr": {}
+},
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
+"tr": {}
+},
+"divlji-chas-malbec": {
+"t": "Дивљи час: Љубав укуса малбека",
+"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
+"p": "img/portadas/divlji-chas-malbec.webp",
+"tr": {}
+},
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
+"tr": {}
+},
+"dikij-chas-karnaval-razdora": {
+"t": "Дикий час: Карнавал раздора",
+"es": "La hora salvaje: El carnaval de la discordia",
+"l": "ru",
+"y": 2026,
+"ru": "Дикий час: Карнавал раздора",
+"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
+"tr": {}
+},
+"venecianskaya-maska": {
+"t": "Венецианская маска",
+"es": "La máscara de Venecia (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Венецианская маска",
+"p": "img/portadas/venecianskaya-maska.webp",
+"tr": {
+"it": "maschera-di-venezia"
+}
+},
+"predchuvstvie-2-4": {
+"t": "Предчувствие 2.4",
+"es": "El presentimiento 2.4",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.4",
+"p": "img/portadas/predchuvstvie-2-4.webp",
+"tr": {}
+},
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
+"l": "es",
+"y": null,
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
+"tr": {}
 },
 "predchuvstvie": {
 "t": "Предчувствие",
@@ -28419,6 +28336,99 @@ export const NOVELAS = {
 "pl": "przeczucie"
 }
 },
+"ondas-de-amor": {
+"t": "Ondas de amor",
+"es": "Ondas de amor",
+"l": "es",
+"y": 2026,
+"ru": "Волны любви (исп.)",
+"p": "img/portadas/ondas-de-amor.webp",
+"tr": {
+"it": "onde-d-amore"
+}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
+"lluvia-de-meteoritos": {
+"t": "Lluvia de meteoritos",
+"es": "Lluvia de meteoritos",
+"l": "es",
+"y": null,
+"ru": "Метеоритный дождь (исп.)",
+"p": "img/portadas/lluvia-de-meteoritos.webp",
+"tr": {
+"ru": "meteoritnyj-dozhd"
+}
+},
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
+"tr": {}
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
+},
+"el-tren-fantasma": {
+"t": "El tren fantasma",
+"es": "El tren fantasma",
+"l": "es",
+"y": null,
+"ru": "Призрачный поезд (исп.)",
+"p": "img/portadas/el-tren-fantasma.webp",
+"tr": {
+"it": "il-treno-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
+"tr": {
+"es": "ondas-de-amor"
+}
+},
+"il-treno-fantasma": {
+"t": "Il treno fantasma",
+"es": "El tren fantasma (it.)",
+"l": "it",
+"y": null,
+"ru": "Призрачный поезд (ит.)",
+"p": "img/portadas/il-treno-fantasma.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
+"tr": {}
+},
 "karnaval-sinei": {
 "t": "Карнавал Синеи",
 "es": "El Carnaval de Sinea",
@@ -28437,45 +28447,32 @@ export const NOVELAS = {
 "p": "img/portadas/predchuvstvie-2-2.webp",
 "tr": {}
 },
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
 "tr": {}
 },
-"operacion-londres": {
-"t": "El misterio de los Fader: Operación Londres",
-"es": "El misterio de los Fader: Operación Londres",
-"l": "es",
+"ostrovy-nad-prahou": {
+"t": "Ostrovy nad Prahou",
+"es": "Las islas sobre Praga (checo)",
+"l": "cs",
 "y": 2026,
-"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
-"p": "img/portadas/operacion-londres.webp",
+"ru": "Острова над Прагой (чеш.)",
+"p": "img/portadas/ostrovy-nad-prahou.webp",
 "tr": {}
-},
-"el-misterio-de-los-fader": {
-"t": "El misterio de los Fader",
-"es": "El misterio de los Fader",
-"l": "es",
-"y": 2025,
-"ru": "Тайна семьи Фадер (исп.)",
-"p": "img/portadas/el-misterio-de-los-fader.webp",
-"tr": {
-"ru": "tajna-semi-fader"
-}
-},
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Люблю тебя молча (ит.)",
-"p": "img/portadas/ti-amo-in-silenzio.webp",
-"tr": {
-"ru": "tikhaya-lyubov"
-}
 },
 "tajna-semi-fader": {
 "t": "Тайна семьи Фадер",
@@ -28487,6 +28484,51 @@ export const NOVELAS = {
 "tr": {
 "es": "el-misterio-de-los-fader"
 }
+},
+"tajna-v-biblioteke": {
+"t": "Тайна в библиотеке",
+"es": "El misterio de la biblioteca",
+"l": "ru",
+"y": 2026,
+"ru": "Тайна в библиотеке",
+"p": "img/portadas/tajna-v-biblioteke.webp",
+"tr": {}
+},
+"severnaya-lyubov": {
+"t": "Северная любовь",
+"es": "Amor del Norte",
+"l": "ru",
+"y": 2025,
+"ru": "Северная любовь",
+"p": "img/portadas/severnaya-lyubov.webp",
+"tr": {}
+},
+"dikij-chas-2": {
+"t": "Дикий час: Духи гор",
+"es": "La hora salvaje: Los espíritus de la montaña",
+"l": "ru",
+"y": null,
+"ru": "Дикий час: Духи гор",
+"p": "img/portadas/dikij-chas-2.webp",
+"tr": {}
+},
+"zvezdnyj-roman": {
+"t": "Звёздный роман",
+"es": "Novela estelar",
+"l": "ru",
+"y": null,
+"ru": "Звёздный роман",
+"p": "img/portadas/zvezdnyj-roman.webp",
+"tr": {}
+},
+"predchuvstvie-2-3": {
+"t": "Предчувствие 2.3",
+"es": "El presentimiento 2.3",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.3",
+"p": "img/portadas/predchuvstvie-2-3.webp",
+"tr": {}
 }
 };
 export const IDIOMAS = {"ru": "ruso", "es": "español", "it": "italiano", "fr": "francés", "en": "inglés", "tr": "turco", "cs": "checo", "sr": "serbio"};
