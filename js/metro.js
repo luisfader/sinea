@@ -1,7 +1,7 @@
 // Esquema del metro de «Призрачный поезд»: la línea del Tren Fantasma (sus vagones, en el orden en que Marcos los recorre)
 // y la línea del metro anómalo que aparece en Sinea, hasta la Estación Cero, donde se juntan todas las líneas.
 // Los datos (descripciones, capítulos, reseñas, ilustraciones) salen de data/metro/ a través de tools/build.py.
-import { CIUDADES, NOVELAS, IDIOMAS, IDIOMAS_RU } from './datos.js';
+import { CIUDADES, NOVELAS, IDIOMAS, IDIOMAS_RU } from './datos.js?v=12';
 
 const LITMIR = 'https://luisfader.github.io/litmir/#/';
 const $ = (s) => document.querySelector(s);
