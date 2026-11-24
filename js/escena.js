@@ -1,7 +1,7 @@
 // Construcción de la escena 3D de Sinea: relieve, agua, calles, edificios e hitos.
 import * as THREE from './vendor/three.module.js';
 import {
-  LIMITES, COSTA, RIO, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, AFUERAS, MUELLES, CIUDAD, AFUERAS_HUECO, AFUERAS_COLOR, colorSuelo, zonaArboles, ARBOLES_CALLES, PLAYA, MARGEN_AGUA, AGUA_ENCIMA, MAR_COLOR, SUELO_IMG, LOTES, LOTE_W, ARBOLES, CALLES_SOLO_ETIQUETA, altura, costa, rio, dentro, distLinea, distSeg
+  LIMITES, COSTA, RIO, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, AFUERAS, MUELLES, CIUDAD, AFUERAS_HUECO, AFUERAS_COLOR, colorSuelo, zonaArboles, ARBOLES_CALLES, PLAYA, MARGEN_AGUA, AGUA_ENCIMA, MAR_COLOR, SUELO_IMG, LOTES, LOTE_W, ARBOLES, CALLES_SOLO_ETIQUETA, TECHO_HSL, altura, costa, rio, dentro, distLinea, distSeg
 } from './mundo.js';
 
 // mundo (x este, y norte) → three (X, Y arriba, Z sur)
@@ -238,7 +238,7 @@ export function crearEdificios(reservas, uniforms) {
     if (l.techo === 'teja') {
       P.set(l.x, l.base + alto, -l.y); S.set(l.w * 1.06, Math.min(l.w, l.d) * 0.38, l.d * 1.06);
       M.compose(P, Q, S); techos.setMatrixAt(k, M);
-      c.setHSL(0.03 + Math.random() * 0.03, 0.55 + Math.random() * 0.15, 0.42 + Math.random() * 0.1); techos.setColorAt(k++, c);
+      if (TECHO_HSL) c.setHSL(TECHO_HSL[0] + (Math.random() - .5) * .03, TECHO_HSL[1], TECHO_HSL[2] + (Math.random() - .5) * .08); else c.setHSL(0.03 + Math.random() * 0.03, 0.55 + Math.random() * 0.15, 0.42 + Math.random() * 0.1); techos.setColorAt(k++, c);
     }
   });
   cuerpos.castShadow = cuerpos.receiveShadow = true; techos.castShadow = techos.receiveShadow = true;

@@ -45,7 +45,7 @@ NOVELAS = {
     'rezonans-lyubvi': 'Resonancia del amor',
     'dikij-chas': 'La hora salvaje', 'divlji-chas': 'La hora salvaje (serbio)',
     'maschera-di-venezia': 'La máscara de Venecia (it.)', 'venecianskaya-maska': 'La máscara de Venecia (ru.)',
-    'zvezdnyj-roman': 'Novela estelar', 'la-ciudad-secreta': None,
+    'zvezdnyj-roman': 'Novela estelar', 'severnaya-lyubov': 'Amor del Norte', 'severnaya-lyubov-2': 'Amor del Norte 2: Llanto del norte', 'severnaya-lyubov-3': 'Amor del Norte 3: Viento del este', 'la-ciudad-secreta': None,
     'podzemni-tajemstvi': 'El secreto subterráneo (checo)', 'ostrovy-nad-prahou': 'Las islas sobre Praga (checo)', 'predtucha': 'El presentimiento (checo)',
 }
 # Título en ruso para las novelas que no están escritas en ruso
@@ -92,6 +92,8 @@ CIUDADES = {
     'atlantida': {'dir': os.path.join('data', 'atlantida'), 'novelas': ['zvezdnyj-roman']},
     # el esquema del metro: solo la versión rusa de «El tren fantasma»
     'metro': {'dir': os.path.join('data', 'metro'), 'novelas': ['prizrachnyj-poezd'], 'rangos': {'prizrachnyj-poezd': [(1, 46)]}},
+    # el fiordo de Sofía y Román: la tercera parte de «Северная любовь», con las dos primeras
+    'fiordo': {'dir': os.path.join('data', 'fiordo'), 'novelas': ['severnaya-lyubov-3', 'severnaya-lyubov-2', 'severnaya-lyubov']},
     'secreta': {'dir': os.path.join('data', 'secreta'), 'novelas': ['la-ciudad-secreta'], 'rangos': {'la-ciudad-secreta': [(1, 8)]}},
 }
 
@@ -231,7 +233,7 @@ def procesar(cfg, textos, titulos, seg, usadas):
         elif L.get('ilustracion'):
             sl, fn = L['ilustracion']
             r = reducir(os.path.join(LIT, 'novels', sl, 'img', fn), os.path.join('img', 'lugares', L['id'] + '.webp'), 640)
-            cap = re.match(r'(?:cap)?(\d+)', fn).group(1).zfill(2)  # «05-x.jpg» o «cap05-l3-04.jpg»
+            cap = re.search(r'(\d+)', fn).group(1).zfill(2)  # «05-x.jpg» o «cap05-l3-04.jpg»
             img = {'src': r, 'n': sl, 'c': seg_of(sl, cap + '.md')} if r else None
         else:
             img = elegir_ilustracion(L['id'], apar, hits, primera, textos)

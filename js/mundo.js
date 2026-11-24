@@ -11,8 +11,9 @@ import * as BELGRADO from './ciudades/belgrado.js';
 import * as PRAGA from './ciudades/praga.js';
 import * as ATLANTIDA from './ciudades/atlantida.js';
 import * as SECRETA from './ciudades/secreta.js';
+import * as FIORDO from './ciudades/fiordo.js';
 
-const TODAS = { sinea: SINEA, verdegrad: VERDEGRAD, utopia: UTOPIA, mendoza: MENDOZA, venezia: VENEZIA, madrid: MADRID, petersburgo: PETERSBURGO, belgrado: BELGRADO, praga: PRAGA, atlantida: ATLANTIDA, secreta: SECRETA };
+const TODAS = { sinea: SINEA, verdegrad: VERDEGRAD, utopia: UTOPIA, mendoza: MENDOZA, venezia: VENEZIA, madrid: MADRID, petersburgo: PETERSBURGO, belgrado: BELGRADO, praga: PRAGA, atlantida: ATLANTIDA, secreta: SECRETA, fiordo: FIORDO };
 export const CIUDAD = TODAS[globalThis.CIUDAD] ? globalThis.CIUDAD : 'sinea';
 const C = TODAS[CIUDAD];
 export const ARROYO = C.ARROYO || [], LAGOS = C.LAGOS || [];
@@ -20,6 +21,7 @@ export const AFUERAS_HUECO = C.AFUERAS_HUECO ?? (CIUDAD !== 'sinea');
 export const AFUERAS_COLOR = C.AFUERAS_COLOR ?? (CIUDAD === 'sinea' ? 0xd6debe : 0xc4d6a4);
 export const PLAYA = C.PLAYA ?? 22, MARGEN_AGUA = C.MARGEN_AGUA ?? 18, AGUA_ENCIMA = !!C.AGUA_ENCIMA, MAR_COLOR = C.MAR_COLOR || null, CANAL_GRANDE = C.CANAL_GRANDE || [];
 export const SUELO_IMG = C.SUELO_IMG || null, LOTES = C.LOTES || null, LOTE_W = C.LOTE_W || 12.2, ARBOLES = C.ARBOLES || null, CALLES_SOLO_ETIQUETA = !!C.CALLES_SOLO_ETIQUETA;
+export const TECHO_HSL = C.TECHO_HSL || null; // color de los techos de teja [h, s, l] (p. ej. los techos azules del Nuevo Nordholm)
 export const colorSuelo = C.colorSuelo || null, zonaArboles = C.zonaArboles || null, ARBOLES_CALLES = !!C.ARBOLES_CALLES;
 export const { LIMITES, COSTA, TIERRA, RIO, COLINAS, BARRIOS, CALLES, VIAS, PLAZAS, PARQUES, BORDES, AFUERAS, MUELLES, RESERVAS, EXTRAS, VISTA, NOMBRE, LEMA, RUTA_BUS } = C;
 

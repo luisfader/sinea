@@ -25782,6 +25782,990 @@ export const CIUDADES = {
 ]
 }
 ],
+"fiordo": [
+{
+"id": "fj-palacio",
+"nombre": "El palacio de hielo",
+"cat": "monumento",
+"x": -230,
+"y": -150,
+"modelo": "palacio-hielo",
+"desc": "El hogar de Sofía y Román, sobre una roca encima del fiordo. Nació el día en que la Guardiana de Piedra abrió los brazos y de la montaña brotó la luz dorada; primero fue un cuarto con una ventana al fiordo, un piano y el arpa de hielo de Sofía flotando en el aire, después una galería, una escalera, una torre y una sala de música donde cada nota suena como si la repitieran las estrellas. Los duendes domésticos viven en los cuartos de abajo y de noche pulen, tallan alféizares y dejan lamparitas con forma de copo. En la tercera parte, cuando llega el viento cálido del este y todo se derrite, el palacio no se derrite: «no es hielo común, es nuestra música; la música no se derrite con el calor». Solo de mañana las paredes se empañan un poco, y los duendes, rezongando, las secan con trapitos. Por la gran ventana del norte Sofía y Román miran la aurora.",
+"nombre_ru": "Ледяной дворец",
+"desc_ru": "Дом Софии и Романа на скале над фьордом. Он родился в тот день, когда Каменная хранительница развела руки и из горы хлынул золотой свет: сначала была одна комната с окном на фьорд, роялем и парящей в воздухе ледяной арфой Софии, потом галерея, лестница, башня и зал для музыки, где каждая нота звучит так, словно её повторяют звёзды. В нижних комнатах живут домовые, которые по ночам полируют, вырезают подоконники и оставляют светильники в форме снежинки. В третьей части, когда приходит тёплый восточный ветер и всё тает, дворец не тает: «это не обычный лёд, это наша музыка; музыка от тепла не тает». Только по утрам стены слегка запотевают, и домовые, ворча, протирают их тряпочками. Из большого северного окна София и Роман смотрят на сияние.",
+"apar": [
+{
+"n": "severnaya-lyubov-2",
+"c": [
+[
+"1",
+"Четыре четверти"
+],
+[
+"2",
+"Северное окно"
+],
+[
+"3",
+"Фатерпедия"
+],
+[
+"10",
+"Северное сияние"
+]
+]
+},
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"1",
+"Тёплый ветер"
+],
+[
+"3",
+"Слишком хорошо"
+],
+[
+"4",
+"Ледяной феникс"
+],
+[
+"8",
+"Стена"
+]
+]
+},
+{
+"n": "severnaya-lyubov",
+"c": [
+[
+"10",
+"Вечная оттепель"
+]
+]
+}
+],
+"res": [
+{
+"a": "Sveta",
+"ar": "Света",
+"s": 5,
+"es": "Las escaleras de hielo son perfectas para bajar corriendo. Los duendes se enojan. Igual vale la pena.",
+"ru": "Ледяные лестницы идеальны, чтобы сбегать вниз. Домовые сердятся. Всё равно стоит того."
+},
+{
+"a": "Un duende doméstico",
+"ar": "Домовой",
+"s": 4,
+"es": "Todas las mañanas las paredes se empañan y yo las seco. Nadie lo agradece. Igual las seco.",
+"ru": "Каждое утро стены запотевают, и я их протираю. Никто не благодарит. Всё равно протираю."
+},
+{
+"a": "Román",
+"ar": "Роман",
+"s": 5,
+"es": "Lo primero que hice cuando llegó el calor fue tocar cada columna. No se derritió. Es nuestra música.",
+"ru": "Первое, что я сделал, когда пришло тепло, — постучал по каждой колонне. Не растаял. Это наша музыка."
+}
+],
+"img": {
+"src": "img/lugares/fj-palacio.webp",
+"n": "severnaya-lyubov",
+"c": "10"
+}
+},
+{
+"id": "fj-torre",
+"nombre": "La torre de la cúpula",
+"cat": "misterio",
+"x": -205,
+"y": -115,
+"modelo": "ninguno",
+"desc": "La torre más alta del palacio, con una cúpula transparente desde donde de noche se ve todo el cielo del norte. Acá guarda Sofía la Faterpedia, la enciclopedia de la familia, y acá Sveta hace sus ejercicios de violín por las mañanas: desde su galería vio llegar a Iván Petróvich sin gorro. En la tercera parte Sofía canta una nota larga y helada y entre sus manos se arma un fénix de hielo, el pájaro centinela de sus bisabuelas, con un fuego azul donde late el corazón. La cúpula se abre sola y el fénix vuela al este, contra el viento: Sofía ve con sus ojos la estepa, miles de fogatas, tiendas grises y caballos, clanes con lobos, milanos y soles negros en los escudos. «Román, vienen para acá.» En el cielo brilla una chispa azul y se apaga: el calor se comió al fénix.",
+"nombre_ru": "Башня с куполом",
+"desc_ru": "Самая высокая башня дворца с прозрачным куполом, сквозь который ночью видно всё северное небо. Здесь София хранит Фатерпедию, семейную энциклопедию, и здесь Света по утрам занимается на скрипке: с её галереи она и увидела Ивана Петровича без шапки. В третьей части София поёт долгую ледяную ноту, и у неё в ладонях собирается ледяной феникс — птица-дозорный её прабабушек, с голубым огоньком на месте сердца. Купол раскрывается сам, и феникс улетает на восток, против ветра: София видит его глазами степь, тысячи костров, серые шатры и коней, кланы с волком, коршуном и чёрным солнцем на щитах. «Роман, они идут сюда». Над башней вспыхивает голубая искра и гаснет: тепло съело феникса.",
+"apar": [
+{
+"n": "severnaya-lyubov-2",
+"c": [
+[
+"2",
+"Северное окно"
+],
+[
+"3",
+"Фатерпедия"
+]
+]
+},
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"1",
+"Тёплый ветер"
+],
+[
+"4",
+"Ледяной феникс"
+]
+]
+}
+],
+"res": [
+{
+"a": "Sofía",
+"ar": "София",
+"s": 5,
+"es": "Desde la cúpula se ve todo el cielo del norte. Una mañana mandé un fénix al este y vi lo que no quería ver.",
+"ru": "Из-под купола видно всё северное небо. Однажды утром я отправила феникса на восток и увидела то, чего не хотела видеть."
+},
+{
+"a": "Sveta",
+"ar": "Света",
+"s": 4,
+"es": "Acá practico violín. Desde la galería vi llegar a Iván Petróvich sin gorro. ¡En febrero!",
+"ru": "Здесь я занимаюсь на скрипке. С галереи я увидела, как Иван Петрович приплыл без шапки. В феврале!"
+}
+],
+"img": {
+"src": "img/lugares/fj-torre.webp",
+"n": "severnaya-lyubov-2",
+"c": "2"
+}
+},
+{
+"id": "fj-muelle",
+"nombre": "El muelle y el puerto",
+"cat": "transporte",
+"x": -40,
+"y": -290,
+"modelo": "muelle",
+"desc": "Por acá se llega y se sale del Nuevo Nordholm: en lote por el fiordo, pasando el puertito de Iván Petróvich. A fines de febrero, cuando el fiordo tendría que estar bajo un hielo gris, el lote del viejo entra por agua negra y abierta, y él viene parado en la popa sin gorro: «¿Sienten? El viento. Del este. Cálido». Días después entra al puerto una ballena de lomo brillante como metal pulido, que da vueltas todo el día y mira a la gente con un ojo enorme mientras los chicos le hacen chau desde el muelle. Y de noche, en el fiordo, aparecen los anillos oscuros de la serpiente de mar, que nunca se acerca a los muelles… hasta la noche de los puentes.",
+"nombre_ru": "Причал и гавань",
+"desc_ru": "Отсюда приплывают в Новый Нордхольм и уплывают из него: на лодке по фьорду, мимо крошечного порта Ивана Петровича. В конце февраля, когда фьорд должен стоять под серым льдом, лодка старика входит в гавань по чёрной открытой воде, а сам он стоит на корме без шапки: «Чувствуете? Ветер. С востока. Тёплый». Через несколько дней в гавань заплывает кит со спиной, блестящей, как полированный металл; он весь день кружит вдоль причалов и разглядывает людей огромным глазом, а дети машут ему с причала. А по вечерам во фьорде поднимаются тёмные кольца морского змея, который никогда не подплывает к причалам… до ночи мостов.",
+"apar": [
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"1",
+"Тёплый ветер"
+],
+[
+"2",
+"Песня на лугу"
+],
+[
+"6",
+"Мосты"
+]
+]
+},
+{
+"n": "severnaya-lyubov-2",
+"c": [
+[
+"1",
+"Четыре четверти"
+]
+]
+}
+],
+"res": [
+{
+"a": "Iván Petróvich",
+"ar": "Иван Петрович",
+"s": 5,
+"es": "Sesenta años en este fiordo y nunca entré en febrero por agua abierta. El gorro ahora lo uso solo para el sol.",
+"ru": "Шестьдесят лет на этом фьорде — и ни разу не входил в феврале по открытой воде. Шапку теперь ношу только от солнца."
+},
+{
+"a": "Un chico del pueblo",
+"ar": "Мальчишка из города",
+"s": 5,
+"es": "¡Una ballena! Nos miró con un ojo enorme. Le hicimos chau todo el día.",
+"ru": "Кит! Он смотрел на нас огромным глазом. Мы махали ему весь день."
+},
+{
+"a": "Ilma",
+"ar": "Ильма",
+"s": 3,
+"es": "Una tarde vi anillos oscuros saliendo del agua. Nadie me creyó. Al día siguiente éramos veinte mirando.",
+"ru": "Однажды вечером я видела тёмные кольца над водой. Мне никто не поверил. На следующий вечер нас было двадцать."
+}
+],
+"img": {
+"src": "img/lugares/fj-muelle.webp",
+"n": "severnaya-lyubov-3",
+"c": "1"
+}
+},
+{
+"id": "fj-plaza",
+"nombre": "La plaza del Nuevo Nordholm",
+"cat": "plaza",
+"x": 0,
+"y": 0,
+"modelo": "ninguno",
+"desc": "Alrededor del palacio creció una ciudad: unas treinta casas de piedra y hielo, con balcones tallados y techos de tejas azules, como en el viejo Nordholm del otro lado del arcoíris. La construyeron entre todos: la gente de Nordholm, los duendes, Sofía y Román, y hasta los dragones, que de mañana traían de la montaña bloques de hielo azul. A Román y a Sofía los llaman rey y reina, aunque ellos se ríen y piden que los llamen por su nombre. En la tercera parte, la mañana en que Sofía ve a los jinetes, Román junta a todos en esta plaza. La gente escucha como quien escucha un cuento, hasta que Agna golpea las piedras con su bastón: «Basta de dormir. Ya vimos una vez cómo llega un ejército. La segunda vez no me escondo en el sótano».",
+"nombre_ru": "Площадь Нового Нордхольма",
+"desc_ru": "Вокруг дворца вырос город: около тридцати домов из камня и льда, с резными балконами и голубыми черепичными крышами, как в старом Нордхольме по ту сторону радуги. Его строили все вместе: люди из Нордхольма, домовые, Роман и София и даже драконы, которые по утрам приносили с гор глыбы голубого льда. Романа и Софию называют королём и королевой, хотя они смеются и просят звать их по имени. В третьей части, утром, когда София увидела всадников, Роман собирает всех на этой площади. Люди слушают, будто им рассказывают сказку, пока Агна не стучит палкой по камням: «Хватит спать. Мы один раз уже видели, как приходит войско. Второй раз я в погребе сидеть не буду».",
+"apar": [
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"1",
+"Тёплый ветер"
+],
+[
+"5",
+"Ров"
+]
+]
+},
+{
+"n": "severnaya-lyubov-2",
+"c": [
+[
+"10",
+"Северное сияние"
+]
+]
+}
+],
+"res": [
+{
+"a": "Agna",
+"ar": "Агна",
+"s": 5,
+"es": "Golpeé las piedras con el bastón y se despertaron todos. Una vez estuve en el sótano. No otra vez.",
+"ru": "Я стукнула палкой по камням, и все проснулись. Один раз я уже сидела в погребе. Больше не буду."
+},
+{
+"a": "Román",
+"ar": "Роман",
+"s": 4,
+"es": "Nos dicen rey y reina. Pedimos que no. Nadie hace caso. Los techos azules, igual, son lo más lindo.",
+"ru": "Нас называют королём и королевой. Мы просим не надо. Никто не слушает. Голубые крыши — всё равно лучшее."
+}
+],
+"img": {
+"src": "img/lugares/fj-plaza.webp",
+"n": "severnaya-lyubov-2",
+"c": "10"
+}
+},
+{
+"id": "fj-casa-agna",
+"nombre": "La casa de Agna",
+"cat": "casa",
+"x": 150,
+"y": 190,
+"modelo": "casa",
+"desc": "Agna, ochenta y dos años, la que de joven cantaba en el coro de Nordholm mejor que nadie, se sienta en el banco frente a su casa, por primera vez en su vida sin pañuelo de lana, y entrecierra los ojos al sol mientras los gorriones gritan en el cerco. «Mi abuela decía: si el Norte de pronto se vuelve bueno, no preguntes por qué. Solo decí gracias.» En el Día de la Hierba Verde vigila que nadie se coma todas las empanadas antes de la noche. Al final de la novela, con la nieve de vuelta, dice lo que todos piensan: «Está bien cuando todo se da gratis. Pero está mejor cuando sabés de dónde viene».",
+"nombre_ru": "Дом Агны",
+"desc_ru": "Агна, восемьдесят два года, та самая, что в молодости пела в городском хоре Нордхольма лучше всех, сидит на скамейке у своего дома, впервые в жизни без шерстяного платка, и щурится на солнце, пока воробьи перекрикиваются на заборе. «Моя бабушка говорила: если Север вдруг становится добрым, не спрашивай почему. Просто скажи спасибо». В День Зелёной Травы она строго следит, чтобы никто не съел все пироги до вечера. В конце романа, когда снова лёг снег, она говорит то, о чём думают все: «Хорошо, когда всё даётся даром. Но лучше, когда знаешь, откуда оно».",
+"apar": [
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"1",
+"Тёплый ветер"
+],
+[
+"2",
+"Песня на лугу"
+],
+[
+"5",
+"Ров"
+],
+[
+"8",
+"Стена"
+]
+]
+},
+{
+"n": "severnaya-lyubov-2",
+"c": [
+[
+"9",
+"Света"
+],
+[
+"10",
+"Северное сияние"
+]
+]
+}
+],
+"res": [
+{
+"a": "Agna",
+"ar": "Агна",
+"s": 5,
+"es": "Primera vez en ochenta y dos años sin pañuelo. Los gorriones gritan tanto que tengo que levantar la voz. No me quejo.",
+"ru": "Впервые за восемьдесят два года без платка. Воробьи кричат так, что приходится повышать голос. Не жалуюсь."
+},
+{
+"a": "Gris",
+"ar": "Серая",
+"s": 5,
+"es": "Prrrr. (Leche en el escalón todas las tardes. Recomiendo.)",
+"ru": "Мрррр. (Молоко на крыльце каждый вечер. Рекомендую.)"
+}
+]
+},
+{
+"id": "fj-escuela",
+"nombre": "La escuela de arpistas de Sigrid",
+"cat": "edificio",
+"x": -180,
+"y": 270,
+"modelo": "ninguno",
+"desc": "Sigrid, la anciana canosa que salió de Nordholm con una arpita apretada contra el pecho, abrió en el pueblo nuevo una escuela de arpistas; Ilma enseña flauta a los chicos y un viejo con gusli tiene un taller de instrumentos. En el verano interminable de la tercera parte los alumnos de Sigrid llegan al prado cada vez más tarde, traen las arpas y no tocan: se tiran en el pasto, mastican ramitas y miran el cielo. Cuando hay que cavar el foso, Sigrid, que pasa los setenta, lleva la tierra en el delantal.",
+"nombre_ru": "Школа арфистов Сигрид",
+"desc_ru": "Сигрид, седая старуха, которая вышла из Нордхольма, прижимая к груди маленькую арфу, открыла в новом городе школу для арфистов; Ильма учит детей играть на флейте, а старик с гуслями держит мастерскую музыкальных инструментов. Бесконечным летом третьей части ученики Сигрид приходят на луг всё позже, приносят арфы и не играют — лежат в траве, жуют травинки и смотрят в небо. Когда нужно копать ров, Сигрид, которой за семьдесят, носит землю в фартуке.",
+"apar": [
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"3",
+"Слишком хорошо"
+],
+[
+"5",
+"Ров"
+]
+]
+},
+{
+"n": "severnaya-lyubov-2",
+"c": [
+[
+"10",
+"Северное сияние"
+]
+]
+}
+],
+"res": [
+{
+"a": "Sigrid",
+"ar": "Сигрид",
+"s": 4,
+"es": "En verano mis alumnos traen las arpas y no tocan. En el foso, en cambio, cargué tierra en el delantal. A los setenta.",
+"ru": "Летом ученики приносят арфы и не играют. А на рву я носила землю в фартуке. В семьдесят с лишним."
+},
+{
+"a": "Ilma",
+"ar": "Ильма",
+"s": 5,
+"es": "Enseño flauta a los chicos. La flauta se me cortó una sola vez: cuando llegaron todos los animales al prado.",
+"ru": "Учу детей играть на флейте. Флейта сбилась у меня только раз — когда на луг пришли все звери."
+}
+]
+},
+{
+"id": "fj-huerta",
+"nombre": "La huerta del abuelo Torvald",
+"cat": "parque",
+"x": 430,
+"y": -80,
+"modelo": "ninguno",
+"desc": "Con el viento del este el Nuevo Nordholm se llena de huertas, cabras y manzanos que Iván Petróvich trae en plantines desde el sur. Fue acá donde empezó a notarse que algo andaba mal: un día el abuelo Torvald no fue al campo, se acostó bajo un manzano y durmió hasta la noche. Es él también quien, cuando llegan las noticias de la estepa, dice la palabra justa: «Un foso. Hondo. De lado a lado de la llanura, del fiordo a las rocas. Los caballos no saltan un foso». Al final vuelve a su campo, protesta porque los nabos salieron más chicos, y está muy contento.",
+"nombre_ru": "Огород Деда Торвальда",
+"desc_ru": "С восточным ветром Новый Нордхольм обзаводится огородами, козами и яблонями, которые Иван Петрович привозит саженцами с юга. Именно здесь стало заметно, что что-то не так: однажды Дед Торвальд не пошёл на поле, а лёг под яблоней и проспал до вечера. И это он, когда приходят вести из степи, говорит нужное слово: «Ров. Глубокий. Через всю равнину, от фьорда до скал. Кони через ров не прыгнут». В конце он возвращается на своё поле, ворчит, что репа стала мельче, — и очень доволен.",
+"apar": [
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"3",
+"Слишком хорошо"
+],
+[
+"5",
+"Ров"
+],
+[
+"8",
+"Стена"
+]
+]
+}
+],
+"res": [
+{
+"a": "Abuelo Torvald",
+"ar": "Дед Торвальд",
+"s": 4,
+"es": "Los nabos salieron más chicos que en verano. Así me gusta: con trabajo.",
+"ru": "Репа стала мельче, чем летом. Так мне и нравится: с трудом."
+},
+{
+"a": "Fueguito",
+"ar": "Огонёк",
+"s": 5,
+"es": "Gruñ. (Un balde de manzanas al borde del campo. Excelente servicio.)",
+"ru": "Хрю. (Ведро яблок у края поля. Отличное обслуживание.)"
+}
+]
+},
+{
+"id": "fj-prado",
+"nombre": "El prado de la Hierba Verde",
+"cat": "parque",
+"x": -650,
+"y": 760,
+"modelo": "ninguno",
+"desc": "Un prado sobre la loma, con el único abedul del cerro. A mediados de marzo, entre las piedras, asoman las primeras agujitas verdes («son blandas, están vivas», dice Sveta), y enseguida hay pasto, musgo esmeralda, florcitas blancas en forma de estrella, campanillas lilas y miles de pájaros. En el Día de la Hierba Verde todo el pueblo está acá: Ilma toca la flauta, los jóvenes bailan descalzos, Sveta, con una corona de flores amarillas torcida sobre una oreja, les da trébol a los unicornios. Entonces la flauta se corta: en el borde del prado están todos los animales a la vez, inquietos. Sofía cruza el prado descalza, con su vestido verde, levanta las manos, aparece en el aire el arpa de hielo y les canta, y los animales se calman. Al final de la novela, cuando Román vuelve a tocar en el prado, el mundo canta otra vez con él.",
+"nombre_ru": "Луг Зелёной Травы",
+"desc_ru": "Луг на холме, где растёт единственная на нём берёза. В середине марта между камнями пробиваются первые зелёные иголочки («они мягкие, они живые», — говорит Света), а вскоре здесь трава, изумрудный мох, белые звёздчатые цветы, лиловые колокольчики и тысячи птиц. В День Зелёной Травы здесь весь город: Ильма играет на флейте, молодёжь танцует босиком, Света в венке из жёлтых цветов, съехавшем на одно ухо, кормит единорогов клевером. И вдруг флейта сбивается: на краю луга стоят все звери сразу, и они неспокойны. София идёт через луг босиком, в простом зелёном платье, поднимает руки, в воздухе возникает ледяная арфа, и она поёт им, и звери успокаиваются. В конце романа, когда Роман снова играет на лугу, мир снова поёт вместе с ним.",
+"apar": [
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"1",
+"Тёплый ветер"
+],
+[
+"2",
+"Песня на лугу"
+],
+[
+"3",
+"Слишком хорошо"
+],
+[
+"8",
+"Стена"
+]
+]
+}
+],
+"res": [
+{
+"a": "Sveta",
+"ar": "Света",
+"s": 5,
+"es": "¡Pasto! Es blando y está vivo. Tenía una corona de flores amarillas y se me cayó sobre una oreja.",
+"ru": "Трава! Она мягкая и живая. У меня был венок из жёлтых цветов, и он съехал на одно ухо."
+},
+{
+"a": "Sofía",
+"ar": "София",
+"s": 5,
+"es": "Crucé el prado descalza y les canté. Estaban tristes, no enojados. Buscaban algo que nadie les podía dar.",
+"ru": "Я прошла через луг босиком и спела им. Они были не злыми, а растерянными. Искали то, что им никто не мог дать."
+},
+{
+"a": "Román",
+"ar": "Роман",
+"s": 4,
+"es": "En verano mi violín sonaba aparte del mundo. Cuando volvió la nieve, el prado volvió a cantar conmigo.",
+"ru": "Летом моя скрипка звучала отдельно от мира. Когда вернулся снег, луг снова запел вместе со мной."
+}
+],
+"img": {
+"src": "img/lugares/fj-prado.webp",
+"n": "severnaya-lyubov-3",
+"c": "2"
+}
+},
+{
+"id": "fj-bosque",
+"nombre": "El bosque del norte",
+"cat": "parque",
+"x": -450,
+"y": 1080,
+"modelo": "ninguno",
+"desc": "Detrás del palacio empieza un bosque ralo del norte: abedulitos enanos y torcidos, abetos cargados de nieve que en el verano de la tercera parte se enderezan y sacan hojitas pegajosas. En la segunda parte, al borde de este bosque, Sofía apoya en la nieve el arpa de viaje y toca, y de entre los abetos salen los unicornios: el más alto, de manchas plateadas y crin hasta las rodillas, le toca el pecho a Román con la punta del cuerno luminoso. Desde entonces Sveta los monta, y en el Día de la Hierba Verde les da trébol. Del bosque de más allá de las lomas salió también el jabalí de cerdas de oro.",
+"nombre_ru": "Северный лес",
+"desc_ru": "За дворцом начинается редкий северный лес — низкие кривые берёзки и засыпанные снегом ели, которые летом третьей части выпрямляются и выпускают клейкие листочки. Во второй части на краю этого леса София ставит на снег дорожную арфу и играет, и из-за елей выходят единороги: самый высокий, с серебристыми пятнами и гривой до колен, касается груди Романа кончиком светящегося рога. С тех пор Света катается на них, а в День Зелёной Травы кормит их клевером. Из леса за холмами вышел и вепрь с золотой щетиной.",
+"apar": [
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"2",
+"Песня на лугу"
+],
+[
+"8",
+"Стена"
+]
+]
+},
+{
+"n": "severnaya-lyubov-2",
+"c": [
+[
+"4",
+"Дорога единорогов"
+]
+]
+}
+],
+"res": [
+{
+"a": "Román",
+"ar": "Роман",
+"s": 5,
+"es": "Había visto dragones, duendes y zorras de luna. Unicornios, nunca. Uno me tocó el pecho con el cuerno.",
+"ru": "Я видел драконов, домовых и лунных лис. Единорогов — никогда. Один коснулся рогом моей груди."
+}
+],
+"img": {
+"src": "img/lugares/fj-bosque.webp",
+"n": "severnaya-lyubov-2",
+"c": "4"
+}
+},
+{
+"id": "fj-animales",
+"nombre": "Los animales del viento del este",
+"cat": "misterio",
+"x": 1000,
+"y": 820,
+"modelo": "ninguno",
+"desc": "Detrás del verano llegan huéspedes que no piden nada y no se van: el alce blanco de astas como la copa de un árbol, el Rey de las Nieves; el jabalí de cerdas de oro, Fueguito, que de noche brilla como una lucecita al borde de los campos; dos gatas grises con pinceles en las orejas, del tamaño de un caballo (Gris y Peluda, solo Sveta las distingue); dos cuervos que repiten palabras, Pensamiento y Memoria; un águila tan grande que su sombra tapa una calle; una zorra cuya cola, al rozar la nieve de las hondonadas, enciende una aurora chiquita; la ballena del puerto y la serpiente de mar. Andan en círculos, buscan algo, se juntan en una loma mirando al este. Cuando hay que cavar el foso, el alce parte la tierra de una patada, el jabalí cava con los colmillos y las gatas escarban como en la arena; la noche de los puentes, cada uno defiende uno.",
+"nombre_ru": "Звери восточного ветра",
+"desc_ru": "Вслед за летом приходят гости, которые ничего не просят и никуда не уходят: белый лось с рогами, похожими на крону дерева, — Снежный Король; вепрь с золотой щетиной Огонёк, что ночью светится у края полей, как тусклый огонёк; две серые кошки с кисточками на ушах, каждая размером с лошадь (Серая и Пушистая, различает их только Света); два ворона, которые повторяют слова, — Дума и Память; орёл, чья тень закрывает целую улицу; лиса, чей хвост, задевая снег в лощинах, зажигает маленькое сияние; кит в гавани и морской змей. Они бродят кругами, будто что-то ищут, и собираются на дальнем холме мордами на восток. Когда копают ров, лось раскалывает землю ударом копыта, вепрь роет клыками, кошки разгребают землю лапами, как песок; в ночь мостов каждый защищает свой.",
+"apar": [
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"2",
+"Песня на лугу"
+],
+[
+"5",
+"Ров"
+],
+[
+"6",
+"Мосты"
+],
+[
+"8",
+"Стена"
+]
+]
+}
+],
+"res": [
+{
+"a": "Pensamiento",
+"ar": "Дума",
+"s": 5,
+"es": "Vienen. Pronto.",
+"ru": "Идут. Скоро."
+},
+{
+"a": "Memoria",
+"ar": "Память",
+"s": 5,
+"es": "Pronto. Vienen.",
+"ru": "Скоро. Идут."
+},
+{
+"a": "Sveta",
+"ar": "Света",
+"s": 5,
+"es": "A las gatas las distingo solo yo. Una me dejó rascarla detrás de la oreja y ronroneó tan fuerte que temblaron los vidrios.",
+"ru": "Кошек различаю только я. Одна позволила почесать её за ухом и мурлыкала так, что дрожали стёкла."
+}
+]
+},
+{
+"id": "fj-foso",
+"nombre": "El foso y la noche de los puentes",
+"cat": "misterio",
+"x": 735,
+"y": 160,
+"modelo": "ninguno",
+"desc": "El Nuevo Nordholm no tenía muralla: lo habían construido para la música, no para la guerra, y desde el este llegaba una llanura verde «abierta como una palma». En nueve días cavaron de lado a lado, del fiordo a las rocas, un foso de tres alturas de hombre: hombres y mujeres, viejos y chicos, los duendes de noche, el alce, el jabalí, las gatas, y los dragones, que echaron fuego al fondo hasta cocer la tierra en piedra negra y lisa. Los jinetes de la estepa llegaron con aullidos y silbidos y frenaron en el borde. Talaron un bosque y tiraron puentes de troncos. Esa noche la serpiente de mar rodeó el primero y lo hizo astillas; los dragones quemaron dos más; el águila, con sus alas, hizo caer a los hombres del tercero; ante el alce de astas luminosas los caballos no dieron un paso; en el quinto esperaban el jabalí y las gatas de ojos verdes. Al amanecer todos los puentes estaban en el fondo. Pero por cada puente roto, los nómadas armaban dos.",
+"nombre_ru": "Ров и ночь мостов",
+"desc_ru": "У Нового Нордхольма не было стены: его строили для музыки, а не для войны, а с востока к нему вела широкая зелёная равнина, «открытая, как ладонь». За девять дней от фьорда до скал вырыли ров в три человеческих роста: мужчины и женщины, старики и дети, домовые по ночам, лось, вепрь, кошки — и драконы, которые выдыхали на дно пламя, пока земля не спеклась в гладкий чёрный камень. Всадники степи примчались с визгом и свистом и встали у края. Они вырубили лес и перекинули через ров мосты из брёвен. Той ночью морской змей обвил крайний мост и раздавил его, драконы сожгли ещё два, орёл ветром от крыльев сбрасывал людей с третьего, у четвёртого кони не смели ступить мимо светящегося лося, на пятом ждали вепрь и кошки с зелёными глазами. К рассвету все мосты лежали на дне. Но на месте каждого сломанного кочевники строили два.",
+"apar": [
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"5",
+"Ров"
+],
+[
+"6",
+"Мосты"
+]
+]
+}
+],
+"res": [
+{
+"a": "Abuelo Torvald",
+"ar": "Дед Торвальд",
+"s": 5,
+"es": "Dije «un foso» y en nueve días había un foso. Con dragones se cava más rápido.",
+"ru": "Я сказал «ров» — и через девять дней был ров. С драконами копается быстрее."
+},
+{
+"a": "Un nómada",
+"ar": "Кочевник",
+"s": 1,
+"es": "Llegamos al galope y se nos abrió la tierra. Después una serpiente se comió el puente. No vuelvo.",
+"ru": "Мы примчались галопом, а перед нами разверзлась земля. Потом змей сожрал мост. Не вернусь."
+}
+],
+"img": {
+"src": "img/lugares/fj-foso.webp",
+"n": "severnaya-lyubov-3",
+"c": "5"
+}
+},
+{
+"id": "fj-colina",
+"nombre": "La colina de la canción",
+"cat": "misterio",
+"x": 560,
+"y": 700,
+"modelo": "ninguno",
+"desc": "Al atardecer se juntan todos en la colina sobre el foso: Agna en su silla, Ilma con la flauta, Iván Petróvich con el gorro en las manos, los duendes en fila con cucharas y cacerolas, los dragones en las peñas. Sveta levanta su violincito y empiezan. Las voces se encuentran y se trenzan; el alce brama, las gatas ronronean hasta hacer temblar la colina, los cuervos gritan a compás y los dragones cantan, por primera vez. Sobre la colina se enciende la aurora, y en ella aparece Alguien: más alta que el alce y que las torres del palacio, hecha de luz y de nieve, con el pelo blanco lleno de estrellas, un manto de aurora, un arco de hielo y un escudo donde se refleja todo el cielo. Dispara una flecha blanca: la escarcha corre por la llanura como una ola y, por donde pasa, se termina el verano. Los jinetes huyen a la estepa. Ella mira a la gente, a Román le parece que sonríe, y se deshace en nieve.",
+"nombre_ru": "Холм песни",
+"desc_ru": "На закате все собираются на холме над рвом: Агна на своём стуле, Ильма с флейтой, Иван Петрович с шапкой в руках, домовые в ряд с ложками и кастрюльками, драконы на скалах. Света поднимает свою маленькую скрипку, и они начинают. Голоса находят друг друга и сплетаются; лось трубит, кошки мурлычут так, что дрожит холм, вороны кричат в такт, а драконы поют — впервые. Над холмом вспыхивает сияние, и в нём появляется Та: выше лося и дворцовых башен, сотканная из света и снега, с белыми волосами, в которых запутались звёзды, в плаще из северного сияния, с ледяным луком и щитом, в котором отражается всё небо. Она пускает белую стрелу: иней волной бежит по равнине, и там, где он проходит, кончается лето. Всадники бегут в степь. Она смотрит на людей, Роману кажется, что она улыбается, — и рассыпается снегом.",
+"apar": [
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"7",
+"Та, что пришла из сияния"
+]
+]
+}
+],
+"res": [
+{
+"a": "Iván Petróvich",
+"ar": "Иван Петрович",
+"s": 5,
+"es": "Canté con el gorro en las manos. Vi a Alguien hecha de nieve y de luz. No me lo van a creer en el puerto.",
+"ru": "Я пел, сжимая шапку. Видел Ту, что из снега и света. В порту мне не поверят."
+},
+{
+"a": "Un duende doméstico",
+"ar": "Домовой",
+"s": 5,
+"es": "Toqué la cacerola. Fue el mejor concierto de mi vida, y el primero.",
+"ru": "Я играл на кастрюльке. Это был лучший концерт в моей жизни. И первый."
+},
+{
+"a": "Sveta",
+"ar": "Света",
+"s": 5,
+"es": "Ella vino de la aurora. Me acordé de una canción de cuando era muy chiquita.",
+"ru": "Она пришла из сияния. Я вспомнила песню из совсем раннего детства."
+}
+],
+"img": {
+"src": "img/lugares/fj-colina.webp",
+"n": "severnaya-lyubov-3",
+"c": "7"
+}
+},
+{
+"id": "fj-muralla",
+"nombre": "La muralla y la campana",
+"cat": "monumento",
+"x": 730,
+"y": 600,
+"modelo": "muralla-norte",
+"desc": "El foso no lo taparon. A lo largo de él construyeron una muralla, entre todos, como antes la ciudad: gente, duendes, animales y dragones; piedra de las peñas y hielo de las montañas, que otra vez están blancas. Mientras Román tocaba, en la piedra aparecían dibujos: pentagramas, arpas, la aurora. La muralla va del fiordo a las rocas, alta, clara, con torres, y no solo protege de la gente: tapa la ciudad del viento del este. En la torre más alta colgaron una campana de cobre: si alguna vez vuelve a soplar el viento cálido del este, sonará sola. La última tarde del otoño, Román, Sofía y Sveta suben a esta torre; abajo, la llanura ya no es verde sino colorada, con la primera nieve en las hondonadas, y la campana calla.",
+"nombre_ru": "Стена и колокол",
+"desc_ru": "Ров засыпать не стали. Вместо этого вдоль него построили стену — все вместе, как когда-то строили город: люди, домовые, звери, драконы; камень — со скал, лёд — с гор, которые снова побелели. Роман играл, и на стене проступали узоры — нотные линейки, арфы, северное сияние. Стена протянулась от фьорда до скал, высокая, светлая, с башнями, и защищает она не только от людей — она закрывает город от восточного ветра. На самой высокой башне повесили медный колокол: если с востока снова подует тёплый ветер, колокол зазвонит сам. В последний вечер осени Роман, София и Света поднимаются на эту башню; внизу равнина уже не зелёная, а рыжая, с первым снегом в лощинах, и колокол молчит.",
+"apar": [
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"8",
+"Стена"
+]
+]
+}
+],
+"res": [
+{
+"a": "Román",
+"ar": "Роман",
+"s": 5,
+"es": "Mientras tocaba, en la piedra aparecían pentagramas. La campana calla. Que siga callando.",
+"ru": "Пока я играл, на камне проступали нотные линейки. Колокол молчит. Пусть молчит и дальше."
+},
+{
+"a": "Agna",
+"ar": "Агна",
+"s": 4,
+"es": "Está bien cuando todo se da gratis. Pero está mejor cuando sabés de dónde viene. Esta muralla, por ejemplo.",
+"ru": "Хорошо, когда всё даётся даром. Но лучше, когда знаешь, откуда оно. Вот эта стена, например."
+}
+],
+"img": {
+"src": "img/lugares/fj-muralla.webp",
+"n": "severnaya-lyubov-3",
+"c": "8"
+}
+},
+{
+"id": "fj-campamento",
+"nombre": "El campamento de los nómadas",
+"cat": "misterio",
+"x": 1750,
+"y": 450,
+"modelo": "campamento",
+"desc": "Más allá del foso, en la llanura, los nómadas de la estepa armaron su campamento: miles de fogatas de punta a punta, tiendas grises de cuero, carros, rebaños, banderas de crin de caballo; clanes con un lobo, un milano o un sol negro en los escudos. No construyen casas, no viven en ningún lado: van detrás del viento y del verde, y por donde pasan no queda nada, ni pasto ni árboles ni ríos limpios. Sveta, mirando las fogatas, se acuerda de algo de cuando era muy chiquita: «no hay que tenerles miedo, hay que…». Después de la flecha blanca huyen al este sin darse vuelta, y el viento solo agita las tiendas abandonadas bajo la nieve.",
+"nombre_ru": "Лагерь кочевников",
+"desc_ru": "За рвом, на равнине, кочевники степи разбили лагерь: тысячи костров от края до края, серые шатры из шкур, повозки, стада, флаги из конского волоса; кланы с волком, коршуном и чёрным солнцем на щитах. Они не строят домов и нигде не живут: идут за ветром и за зеленью, и там, где они прошли, не остаётся ничего — ни травы, ни деревьев, ни чистых рек. Света, глядя на костры, вспоминает что-то из совсем раннего детства: «их надо не бояться, их надо…». После белой стрелы они бегут на восток, не оглядываясь, и ветер треплет брошенные шатры под снегом.",
+"apar": [
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"4",
+"Ледяной феникс"
+],
+[
+"5",
+"Ров"
+],
+[
+"6",
+"Мосты"
+],
+[
+"7",
+"Та, что пришла из сияния"
+],
+[
+"8",
+"Стена"
+]
+]
+}
+],
+"res": [
+{
+"a": "Sveta",
+"ar": "Света",
+"s": 3,
+"es": "Miré las fogatas y me acordé: no hay que tenerles miedo, hay que… Todavía no me acuerdo del resto.",
+"ru": "Я смотрела на костры и вспомнила: их не надо бояться, их надо… Остальное пока не помню."
+}
+]
+},
+{
+"id": "fj-penas",
+"nombre": "Las peñas de los dragones",
+"cat": "misterio",
+"x": 1300,
+"y": 1380,
+"modelo": "ninguno",
+"desc": "Al nordeste, donde termina la llanura, se levantan las peñas: el foso y la muralla van del fiordo hasta acá. Ahí viven los dragones de escamas de nácar que planean sobre el fiordo y que ayudaron a levantar el pueblo trayendo bloques de hielo azul de las montañas. Bajaron a cocer el fondo del foso con su fuego, quemaron los puentes, y después de la noche de los puentes quedaron tendidos en sus peñas sin moverse, agotados. En la colina de la canción cantaron por primera vez, un sonido largo, tibio, zumbante; y de estas peñas salió la piedra de la muralla.",
+"nombre_ru": "Скалы драконов",
+"desc_ru": "На северо-востоке, где кончается равнина, поднимаются скалы: ров и стена тянутся от фьорда до них. Здесь живут драконы с перламутровой чешуёй, которые скользят в небе над фьордом и помогали строить город, принося с гор глыбы голубого льда. Они спускались, чтобы спечь своим пламенем дно рва, жгли мосты, а после ночи мостов лежали на своих скалах без сил. На холме песни они запели — впервые, долгим, тёплым, гудящим звуком; и из этих скал взяли камень для стены.",
+"apar": [
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"5",
+"Ров"
+],
+[
+"6",
+"Мосты"
+],
+[
+"7",
+"Та, что пришла из сияния"
+],
+[
+"8",
+"Стена"
+]
+]
+},
+{
+"n": "severnaya-lyubov-2",
+"c": [
+[
+"4",
+"Дорога единорогов"
+],
+[
+"10",
+"Северное сияние"
+]
+]
+}
+],
+"res": [
+{
+"a": "Un dragón",
+"ar": "Дракон",
+"s": 5,
+"es": "Cocimos el foso, quemamos puentes y después cantamos. No sabíamos que sabíamos cantar.",
+"ru": "Мы спекли ров, сожгли мосты, а потом запели. Мы не знали, что умеем петь."
+}
+]
+},
+{
+"id": "fj-isla",
+"nombre": "La isla de la Guardiana de Piedra",
+"cat": "monumento",
+"x": -1500,
+"y": -420,
+"modelo": "isla-guardiana",
+"desc": "En medio del agua negra del fiordo, una isla de rocas oscuras pulidas por el viento y la sal, «como una astilla de un mundo antiguo». En la cima, la Guardiana de Piedra. En la primera parte Román llega hasta acá siguiendo la melodía del norte, se esconde dos días en una cueva estrecha, la ve despertar con un rugido de glaciar que se parte y siente su soledad infinita; al tercer amanecer, cuando suena la música, la Guardiana abre los brazos y de la montaña brota la luz dorada. De ahí salen Sofía, el arpa de hielo y el palacio. Desde el lote, camino a casa, los dos siempre la miran.",
+"nombre_ru": "Остров Каменной хранительницы",
+"desc_ru": "Посреди чёрной воды фьорда — остров из тёмных скал, отполированных ветрами и солёной водой, «словно осколок древнего мира». На вершине — Каменная хранительница. В первой части Роман добирается сюда вслед за мелодией севера, два дня прячется в узкой пещере, видит, как она оживает с рёвом раскалывающегося ледника, и чувствует её бездонное одиночество; на рассвете третьего дня, когда звучит музыка, Хранительница разводит руки, и из горы хлещет золотой свет. Оттуда приходят София, ледяная арфа и дворец. По дороге домой, с лодки, они всегда смотрят на неё.",
+"apar": [
+{
+"n": "severnaya-lyubov",
+"c": [
+[
+"6",
+"Остров и песнь льда"
+],
+[
+"7",
+"Каменная хранительница"
+],
+[
+"8",
+"Ночь сомнения"
+],
+[
+"9",
+"Вздох великана"
+],
+[
+"10",
+"Вечная оттепель"
+]
+]
+},
+{
+"n": "severnaya-lyubov-2",
+"c": [
+[
+"1",
+"Четыре четверти"
+],
+[
+"7",
+"Над метелью"
+]
+]
+}
+],
+"res": [
+{
+"a": "Román",
+"ar": "Роман",
+"s": 5,
+"es": "Dos días en una cueva helada, muerto de miedo. Al tercer amanecer abrió los brazos. Ahí empezó todo.",
+"ru": "Два дня в ледяной пещере, до смерти напуганный. На рассвете третьего дня она развела руки. С этого всё началось."
+},
+{
+"a": "Sofía",
+"ar": "София",
+"s": 5,
+"es": "Cada vez que pasamos en lote la saludo. Ella no contesta. Pero sé que nos ve.",
+"ru": "Каждый раз, проплывая на лодке, я с ней здороваюсь. Она не отвечает. Но я знаю, что она нас видит."
+}
+],
+"img": {
+"src": "img/lugares/fj-isla.webp",
+"n": "severnaya-lyubov",
+"c": "9"
+}
+},
+{
+"id": "fj-puerto-ivan",
+"nombre": "El puertito de Iván Petróvich",
+"cat": "casa",
+"x": -1960,
+"y": -40,
+"modelo": "ninguno",
+"desc": "Un pueblito chiquito, apenas unas casas, un muelle de madera y algunos botes sobre el agua oscura, donde el fiordo se abre hacia el mar. En la primera parte Román llega hasta acá por caminos entre rocas y bahías heladas, y en la taberna escucha a los viejos: «Hay una isla». Uno de ellos era Iván Petróvich, que lleva sesenta años en este fiordo y que siempre sale al muelle a saludarlos con el gorro cuando pasan en lote. En la tercera parte es el primero en sentir el viento cálido: «en el puerto el hielo se fue en una sola noche». Después trae manzanas por lotes enteros desde el sur, se queda en el Nuevo Nordholm y canta en la colina con el gorro en las manos.",
+"nombre_ru": "Порт Ивана Петровича",
+"desc_ru": "Крошечный посёлок — всего несколько домов, деревянный причал и несколько лодок на тёмной воде — там, где фьорд открывается в море. В первой части Роман добирается сюда по дорогам между скалами и холодными заливами и в таверне слышит стариков: «Есть остров». Одним из них был Иван Петрович, который шестьдесят лет живёт на этом фьорде и всегда выходит на причал махать им шапкой, когда они проплывают мимо. В третьей части он первым чувствует тёплый ветер: «у нас в порту лёд сошёл за одну ночь». Потом он возит яблоки целыми лодками с юга, остаётся в Новом Нордхольме и поёт на холме, сжимая в руках шапку.",
+"apar": [
+{
+"n": "severnaya-lyubov",
+"c": [
+[
+"5",
+"Путешествие, которое становится музыкой"
+],
+[
+"6",
+"Остров и песнь льда"
+]
+]
+},
+{
+"n": "severnaya-lyubov-3",
+"c": [
+[
+"1",
+"Тёплый ветер"
+],
+[
+"2",
+"Песня на лугу"
+]
+]
+},
+{
+"n": "severnaya-lyubov-2",
+"c": [
+[
+"1",
+"Четыре четверти"
+]
+]
+}
+],
+"res": [
+{
+"a": "Iván Petróvich",
+"ar": "Иван Петрович",
+"s": 5,
+"es": "Yo ya lo sabía desde la taberna: allá no lleva un camino. Lleva la música.",
+"ru": "Я ещё тогда, в таверне, всё понял: туда ведёт не дорога. Туда ведёт музыка."
+},
+{
+"a": "Román",
+"ar": "Роман",
+"s": 4,
+"es": "Unas casas, un muelle de madera, botes sobre agua negra. Y unos viejos que hablaban de una isla.",
+"ru": "Несколько домов, деревянный причал, лодки на чёрной воде. И старики, которые говорили об острове."
+}
+]
+}
+],
 "secreta": [
 {
 "id": "cs-parque",
@@ -26321,31 +27305,13 @@ export const CIUDADES = {
 ]
 };
 export const NOVELAS = {
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
-},
-"dikij-chas-2": {
-"t": "Дикий час: Духи гор",
-"es": "La hora salvaje: Los espíritus de la montaña",
-"l": "ru",
-"y": null,
-"ru": "Дикий час: Духи гор",
-"p": "img/portadas/dikij-chas-2.webp",
-"tr": {}
-},
-"znak": {
-"t": "Знак",
-"es": "El signo",
-"l": "ru",
-"y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
+"ostrovy-nad-prahou": {
+"t": "Ostrovy nad Prahou",
+"es": "Las islas sobre Praga (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Острова над Прагой (чеш.)",
+"p": "img/portadas/ostrovy-nad-prahou.webp",
 "tr": {}
 },
 "la-reina-de-la-vendimia": {
@@ -26359,13 +27325,162 @@ export const NOVELAS = {
 "cs": "kralovna-vinobrani"
 }
 },
-"la-ciudad-secreta": {
-"t": "La ciudad secreta",
-"es": "La ciudad secreta",
+"ondas-de-amor": {
+"t": "Ondas de amor",
+"es": "Ondas de amor",
+"l": "es",
+"y": 2026,
+"ru": "Волны любви (исп.)",
+"p": "img/portadas/ondas-de-amor.webp",
+"tr": {
+"it": "onde-d-amore"
+}
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
 "l": "es",
 "y": null,
-"ru": "Тайный город (исп.)",
-"p": "img/portadas/la-ciudad-secreta.webp",
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"ladro-di-cuori-3": {
+"t": "Ladro di cuori 3",
+"es": "Ladrón de corazones 3 (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Похититель сердец 3 (ит.)",
+"p": "img/portadas/ladro-di-cuori-3.webp",
+"tr": {}
+},
+"kralovna-vinobrani": {
+"t": "Královna vinobraní",
+"es": "La reina de la Vendimia (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Королева Вендимии (чеш.)",
+"p": "img/portadas/kralovna-vinobrani.webp",
+"tr": {
+"es": "la-reina-de-la-vendimia"
+}
+},
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
+"l": "ru",
+"y": 2026,
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
+},
+"operacion-londres": {
+"t": "El misterio de los Fader: Operación Londres",
+"es": "El misterio de los Fader: Operación Londres",
+"l": "es",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
+"p": "img/portadas/operacion-londres.webp",
+"tr": {}
+},
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
+"tr": {
+"ru": "tikhaya-lyubov"
+}
+},
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"tr": {}
+},
+"27-ocak": {
+"t": "27 Ocak",
+"es": "27 de enero",
+"l": "tr",
+"y": 2026,
+"ru": "27 января",
+"p": "img/portadas/27-ocak.webp",
+"tr": {}
+},
+"pokhititel-serdec-portret-osnovatelya": {
+"t": "Похититель сердец: Портрет основателя",
+"es": "Ladrón de corazones: El retrato del fundador",
+"l": "ru",
+"y": 2026,
+"ru": "Похититель сердец: Портрет основателя",
+"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
+"tr": {}
+},
+"dikij-chas": {
+"t": "Дикий час",
+"es": "La hora salvaje",
+"l": "ru",
+"y": null,
+"ru": "Дикий час",
+"p": "img/portadas/dikij-chas.webp",
+"tr": {
+"sr": "divlji-chas"
+}
+},
+"la-citta-triste": {
+"t": "La città triste",
+"es": "La ciudad triste (it.)",
+"l": "it",
+"y": 2025,
+"ru": "Грустный город (ит.)",
+"p": "img/portadas/la-citta-triste.webp",
+"tr": {
+"ru": "grustnyj-gorod"
+}
+},
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
+"tr": {}
+},
+"la-voix": {
+"t": "La voix",
+"es": "La voz (fr.)",
+"l": "fr",
+"y": null,
+"ru": "Голос (фр.)",
+"p": "img/portadas/la-voix.webp",
+"tr": {
+"ru": "golos"
+}
+},
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
 "tr": {}
 },
 "el-tren-fantasma": {
@@ -26380,71 +27495,36 @@ export const NOVELAS = {
 "ru": "prizrachnyj-poezd"
 }
 },
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
+"severnaya-lyubov": {
+"t": "Северная любовь",
+"es": "Amor del Norte",
 "l": "ru",
-"y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
+"y": 2025,
+"ru": "Северная любовь",
+"p": "img/portadas/severnaya-lyubov.webp",
+"tr": {}
+},
+"el-misterio-de-los-fader": {
+"t": "El misterio de los Fader",
+"es": "El misterio de los Fader",
+"l": "es",
+"y": 2025,
+"ru": "Тайна семьи Фадер (исп.)",
+"p": "img/portadas/el-misterio-de-los-fader.webp",
 "tr": {
-"en": "the-date"
+"ru": "tajna-semi-fader"
 }
 },
-"podzemni-tajemstvi": {
-"t": "Podzemní tajemství",
-"es": "El secreto subterráneo (checo)",
-"l": "cs",
+"il-treno-fantasma": {
+"t": "Il treno fantasma",
+"es": "El tren fantasma (it.)",
+"l": "it",
 "y": null,
-"ru": "Подземная тайна (чеш.)",
-"p": "img/portadas/podzemni-tajemstvi.webp",
-"tr": {}
-},
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
-"l": "ru",
-"y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
-"tr": {}
-},
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
-"l": "ru",
-"y": 2026,
-"ru": "Карнавал Синеи",
-"p": "img/portadas/karnaval-sinei.webp",
-"tr": {}
-},
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
-"tr": {}
-},
-"ostrovy-nad-prahou": {
-"t": "Ostrovy nad Prahou",
-"es": "Las islas sobre Praga (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Острова над Прагой (чеш.)",
-"p": "img/portadas/ostrovy-nad-prahou.webp",
-"tr": {}
-},
-"golos": {
-"t": "Голос",
-"es": "La voz",
-"l": "ru",
-"y": 2026,
-"ru": "Голос",
-"p": "img/portadas/golos.webp",
+"ru": "Призрачный поезд (ит.)",
+"p": "img/portadas/il-treno-fantasma.webp",
 "tr": {
-"fr": "la-voix"
+"es": "el-tren-fantasma",
+"ru": "prizrachnyj-poezd"
 }
 },
 "tikhaya-lyubov": {
@@ -26458,59 +27538,70 @@ export const NOVELAS = {
 "it": "ti-amo-in-silenzio"
 }
 },
-"lluvia-de-meteoritos": {
-"t": "Lluvia de meteoritos",
-"es": "Lluvia de meteoritos",
-"l": "es",
-"y": null,
-"ru": "Метеоритный дождь (исп.)",
-"p": "img/portadas/lluvia-de-meteoritos.webp",
-"tr": {
-"ru": "meteoritnyj-dozhd"
-}
-},
-"la-voix": {
-"t": "La voix",
-"es": "La voz (fr.)",
-"l": "fr",
-"y": null,
-"ru": "Голос (фр.)",
-"p": "img/portadas/la-voix.webp",
-"tr": {
-"ru": "golos"
-}
-},
-"predtucha": {
-"t": "Předtucha",
-"es": "El presentimiento (checo)",
-"l": "cs",
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
 "y": 2026,
-"ru": "Предчувствие (чеш.)",
-"p": "img/portadas/predtucha.webp",
-"tr": {
-"fr": "reve-turquoise",
-"eo": "la-antausento",
-"it": "presentimento",
-"es": "la-corazonada",
-"isv": "predcutje",
-"tr": "col-gulu",
-"de": "vorahnung",
-"sr": "predosecaj",
-"vo": "fot-latik",
-"ia": "le-presentimento",
-"pt": "mundo-turquesa",
-"pl": "przeczucie",
-"ru": "predchuvstvie"
-}
-},
-"operacion-londres": {
-"t": "El misterio de los Fader: Operación Londres",
-"es": "El misterio de los Fader: Operación Londres",
-"l": "es",
-"y": 2026,
-"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
-"p": "img/portadas/operacion-londres.webp",
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
 "tr": {}
+},
+"predchuvstvie-2": {
+"t": "Предчувствие 2",
+"es": "El presentimiento 2",
+"l": "ru",
+"y": 2024,
+"ru": "Предчувствие 2",
+"p": "img/portadas/predchuvstvie-2.webp",
+"tr": {}
+},
+"tajna-v-biblioteke": {
+"t": "Тайна в библиотеке",
+"es": "El misterio de la biblioteca",
+"l": "ru",
+"y": 2026,
+"ru": "Тайна в библиотеке",
+"p": "img/portadas/tajna-v-biblioteke.webp",
+"tr": {}
+},
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
+"l": "ru",
+"y": 2026,
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
+"tr": {}
+},
+"dikij-chas-karnaval-razdora": {
+"t": "Дикий час: Карнавал раздора",
+"es": "La hora salvaje: El carnaval de la discordia",
+"l": "ru",
+"y": 2026,
+"ru": "Дикий час: Карнавал раздора",
+"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
+"tr": {}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
+"tr": {}
+},
+"tajna-semi-fader": {
+"t": "Тайна семьи Фадер",
+"es": "El misterio de los Fader (ru.)",
+"l": "ru",
+"y": null,
+"ru": "Тайна семьи Фадер",
+"p": "img/portadas/tajna-semi-fader.webp",
+"tr": {
+"es": "el-misterio-de-los-fader"
+}
 },
 "maschera-di-venezia": {
 "t": "Maschera di Venezia",
@@ -26523,31 +27614,195 @@ export const NOVELAS = {
 "ru": "venecianskaya-maska"
 }
 },
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
+"tr": {}
+},
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
+"l": "ru",
+"y": 2026,
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
+"tr": {}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"severnaya-lyubov-2": {
+"t": "Северная любовь: Плач с севера",
+"es": "Amor del Norte 2: Llanto del norte",
+"l": "ru",
+"y": 2025,
+"ru": "Северная любовь: Плач с севера",
+"p": "img/portadas/severnaya-lyubov-2.webp",
+"tr": {}
+},
+"grustnyj-gorod": {
+"t": "Грустный город",
+"es": "La ciudad triste",
+"l": "ru",
+"y": 2026,
+"ru": "Грустный город",
+"p": "img/portadas/grustnyj-gorod.webp",
+"tr": {
+"it": "la-citta-triste"
+}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
+"y": 2026,
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"la-ciudad-secreta": {
+"t": "La ciudad secreta",
+"es": "La ciudad secreta",
 "l": "es",
 "y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
+"ru": "Тайный город (исп.)",
+"p": "img/portadas/la-ciudad-secreta.webp",
 "tr": {}
 },
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"divlji-chas-malbec": {
+"t": "Дивљи час: Љубав укуса малбека",
+"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
+"p": "img/portadas/divlji-chas-malbec.webp",
 "tr": {}
 },
-"pokhititel-serdec-portret-osnovatelya": {
-"t": "Похититель сердец: Портрет основателя",
-"es": "Ladrón de corazones: El retrato del fundador",
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
+"l": "es",
+"y": 2026,
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
+"tr": {}
+},
+"prizrachnyj-poezd": {
+"t": "Призрачный поезд",
+"es": "El tren fantasma (ru.)",
 "l": "ru",
 "y": 2026,
-"ru": "Похититель сердец: Портрет основателя",
-"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
+"ru": "Призрачный поезд",
+"p": "img/portadas/prizrachnyj-poezd.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"it": "il-treno-fantasma"
+}
+},
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
+"l": "ru",
+"y": 2026,
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
+"tr": {}
+},
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
+"tr": {}
+},
+"dikij-chas-2": {
+"t": "Дикий час: Духи гор",
+"es": "La hora salvaje: Los espíritus de la montaña",
+"l": "ru",
+"y": null,
+"ru": "Дикий час: Духи гор",
+"p": "img/portadas/dikij-chas-2.webp",
+"tr": {}
+},
+"anomalia": {
+"t": "Anomalía",
+"es": "Anomalía",
+"l": "es",
+"y": null,
+"ru": "Аномалия (исп.)",
+"p": "img/portadas/anomalia.webp",
+"tr": {}
+},
+"divlji-chas": {
+"t": "Дивљи час",
+"es": "La hora salvaje (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час (серб.)",
+"p": "img/portadas/divlji-chas.webp",
+"tr": {
+"ru": "dikij-chas"
+}
+},
+"lluvia-de-meteoritos": {
+"t": "Lluvia de meteoritos",
+"es": "Lluvia de meteoritos",
+"l": "es",
+"y": null,
+"ru": "Метеоритный дождь (исп.)",
+"p": "img/portadas/lluvia-de-meteoritos.webp",
+"tr": {
+"ru": "meteoritnyj-dozhd"
+}
+},
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
+"tr": {
+"es": "ondas-de-amor"
+}
+},
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
+"tr": {}
+},
+"severnaya-lyubov-3": {
+"t": "Северная любовь: Восточный ветер",
+"es": "Amor del Norte 3: Viento del este",
+"l": "ru",
+"y": 2026,
+"ru": "Северная любовь: Восточный ветер",
+"p": "img/portadas/severnaya-lyubov-3.webp",
+"tr": {}
+},
+"rezonans-lyubvi": {
+"t": "Резонанс любви",
+"es": "Resonancia del amor",
+"l": "ru",
+"y": null,
+"ru": "Резонанс любви",
+"p": "img/portadas/rezonans-lyubvi.webp",
 "tr": {}
 },
 "predchuvstvie": {
@@ -26573,293 +27828,6 @@ export const NOVELAS = {
 "pl": "przeczucie"
 }
 },
-"predchuvstvie-2": {
-"t": "Предчувствие 2",
-"es": "El presentimiento 2",
-"l": "ru",
-"y": 2024,
-"ru": "Предчувствие 2",
-"p": "img/portadas/predchuvstvie-2.webp",
-"tr": {}
-},
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви (ит.)",
-"p": "img/portadas/onde-d-amore.webp",
-"tr": {
-"es": "ondas-de-amor"
-}
-},
-"dikij-chas": {
-"t": "Дикий час",
-"es": "La hora salvaje",
-"l": "ru",
-"y": null,
-"ru": "Дикий час",
-"p": "img/portadas/dikij-chas.webp",
-"tr": {
-"sr": "divlji-chas"
-}
-},
-"divlji-chas-malbec": {
-"t": "Дивљи час: Љубав укуса малбека",
-"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
-"p": "img/portadas/divlji-chas-malbec.webp",
-"tr": {}
-},
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
-"l": "it",
-"y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
-"tr": {}
-},
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"dikij-chas-karnaval-razdora": {
-"t": "Дикий час: Карнавал раздора",
-"es": "La hora salvaje: El carnaval de la discordia",
-"l": "ru",
-"y": 2026,
-"ru": "Дикий час: Карнавал раздора",
-"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
-"tr": {}
-},
-"prizrachnyj-poezd": {
-"t": "Призрачный поезд",
-"es": "El tren fantasma (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Призрачный поезд",
-"p": "img/portadas/prizrachnyj-poezd.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"it": "il-treno-fantasma"
-}
-},
-"rezonans-lyubvi": {
-"t": "Резонанс любви",
-"es": "Resonancia del amor",
-"l": "ru",
-"y": null,
-"ru": "Резонанс любви",
-"p": "img/portadas/rezonans-lyubvi.webp",
-"tr": {}
-},
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
-"y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
-"tr": {}
-},
-"divlji-chas": {
-"t": "Дивљи час",
-"es": "La hora salvaje (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час (серб.)",
-"p": "img/portadas/divlji-chas.webp",
-"tr": {
-"ru": "dikij-chas"
-}
-},
-"la-citta-triste": {
-"t": "La città triste",
-"es": "La ciudad triste (it.)",
-"l": "it",
-"y": 2025,
-"ru": "Грустный город (ит.)",
-"p": "img/portadas/la-citta-triste.webp",
-"tr": {
-"ru": "grustnyj-gorod"
-}
-},
-"tajna-semi-fader": {
-"t": "Тайна семьи Фадер",
-"es": "El misterio de los Fader (ru.)",
-"l": "ru",
-"y": null,
-"ru": "Тайна семьи Фадер",
-"p": "img/portadas/tajna-semi-fader.webp",
-"tr": {
-"es": "el-misterio-de-los-fader"
-}
-},
-"ondas-de-amor": {
-"t": "Ondas de amor",
-"es": "Ondas de amor",
-"l": "es",
-"y": 2026,
-"ru": "Волны любви (исп.)",
-"p": "img/portadas/ondas-de-amor.webp",
-"tr": {
-"it": "onde-d-amore"
-}
-},
-"kralovna-vinobrani": {
-"t": "Královna vinobraní",
-"es": "La reina de la Vendimia (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Королева Вендимии (чеш.)",
-"p": "img/portadas/kralovna-vinobrani.webp",
-"tr": {
-"es": "la-reina-de-la-vendimia"
-}
-},
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
-"l": "ru",
-"y": 2026,
-"ru": "Алмазный дождь",
-"p": "img/portadas/almaznyj-dozhd.webp",
-"tr": {}
-},
-"el-misterio-de-los-fader": {
-"t": "El misterio de los Fader",
-"es": "El misterio de los Fader",
-"l": "es",
-"y": 2025,
-"ru": "Тайна семьи Фадер (исп.)",
-"p": "img/portadas/el-misterio-de-los-fader.webp",
-"tr": {
-"ru": "tajna-semi-fader"
-}
-},
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
-"l": "ru",
-"y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
-"tr": {}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
-"l": "es",
-"y": 2026,
-"ru": "Любовь в космосе",
-"p": "img/portadas/amor-en-el-cosmos.webp",
-"tr": {}
-},
-"27-ocak": {
-"t": "27 Ocak",
-"es": "27 de enero",
-"l": "tr",
-"y": 2026,
-"ru": "27 января",
-"p": "img/portadas/27-ocak.webp",
-"tr": {}
-},
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
-"tr": {}
-},
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
-"tr": {}
-},
-"anomalia": {
-"t": "Anomalía",
-"es": "Anomalía",
-"l": "es",
-"y": null,
-"ru": "Аномалия (исп.)",
-"p": "img/portadas/anomalia.webp",
-"tr": {}
-},
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Люблю тебя молча (ит.)",
-"p": "img/portadas/ti-amo-in-silenzio.webp",
-"tr": {
-"ru": "tikhaya-lyubov"
-}
-},
-"predchuvstvie-2-2": {
-"t": "Предчувствие 2.2",
-"es": "El presentimiento 2.2",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.2",
-"p": "img/portadas/predchuvstvie-2-2.webp",
-"tr": {}
-},
-"il-treno-fantasma": {
-"t": "Il treno fantasma",
-"es": "El tren fantasma (it.)",
-"l": "it",
-"y": null,
-"ru": "Призрачный поезд (ит.)",
-"p": "img/portadas/il-treno-fantasma.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"grustnyj-gorod": {
-"t": "Грустный город",
-"es": "La ciudad triste",
-"l": "ru",
-"y": 2026,
-"ru": "Грустный город",
-"p": "img/portadas/grustnyj-gorod.webp",
-"tr": {
-"it": "la-citta-triste"
-}
-},
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви",
-"p": "img/portadas/volny-lyubvi.webp",
-"tr": {}
-},
 "predchuvstvie-2-4": {
 "t": "Предчувствие 2.4",
 "es": "El presentimiento 2.4",
@@ -26869,23 +27837,46 @@ export const NOVELAS = {
 "p": "img/portadas/predchuvstvie-2-4.webp",
 "tr": {}
 },
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
 "l": "es",
 "y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
 "tr": {}
 },
-"ladro-di-cuori-3": {
-"t": "Ladro di cuori 3",
-"es": "Ladrón de corazones 3 (it.)",
-"l": "it",
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
 "y": 2026,
-"ru": "Похититель сердец 3 (ит.)",
-"p": "img/portadas/ladro-di-cuori-3.webp",
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
 "tr": {}
+},
+"predtucha": {
+"t": "Předtucha",
+"es": "El presentimiento (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Предчувствие (чеш.)",
+"p": "img/portadas/predtucha.webp",
+"tr": {
+"fr": "reve-turquoise",
+"eo": "la-antausento",
+"it": "presentimento",
+"es": "la-corazonada",
+"isv": "predcutje",
+"tr": "col-gulu",
+"de": "vorahnung",
+"sr": "predosecaj",
+"vo": "fot-latik",
+"ia": "le-presentimento",
+"pt": "mundo-turquesa",
+"pl": "przeczucie",
+"ru": "predchuvstvie"
+}
 },
 "zvezdnyj-roman": {
 "t": "Звёздный роман",
@@ -26896,22 +27887,31 @@ export const NOVELAS = {
 "p": "img/portadas/zvezdnyj-roman.webp",
 "tr": {}
 },
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"predchuvstvie-2-3": {
-"t": "Предчувствие 2.3",
-"es": "El presentimiento 2.3",
+"predchuvstvie-2-2": {
+"t": "Предчувствие 2.2",
+"es": "El presentimiento 2.2",
 "l": "ru",
 "y": 2025,
-"ru": "Предчувствие 2.3",
-"p": "img/portadas/predchuvstvie-2-3.webp",
+"ru": "Предчувствие 2.2",
+"p": "img/portadas/predchuvstvie-2-2.webp",
+"tr": {}
+},
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
+"l": "ru",
+"y": 2026,
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
+"tr": {}
+},
+"podzemni-tajemstvi": {
+"t": "Podzemní tajemství",
+"es": "El secreto subterráneo (checo)",
+"l": "cs",
+"y": null,
+"ru": "Подземная тайна (чеш.)",
+"p": "img/portadas/podzemni-tajemstvi.webp",
 "tr": {}
 },
 "venecianskaya-maska": {
@@ -26925,13 +27925,24 @@ export const NOVELAS = {
 "it": "maschera-di-venezia"
 }
 },
-"tajna-v-biblioteke": {
-"t": "Тайна в библиотеке",
-"es": "El misterio de la biblioteca",
+"golos": {
+"t": "Голос",
+"es": "La voz",
 "l": "ru",
 "y": 2026,
-"ru": "Тайна в библиотеке",
-"p": "img/portadas/tajna-v-biblioteke.webp",
+"ru": "Голос",
+"p": "img/portadas/golos.webp",
+"tr": {
+"fr": "la-voix"
+}
+},
+"predchuvstvie-2-3": {
+"t": "Предчувствие 2.3",
+"es": "El presentimiento 2.3",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.3",
+"p": "img/portadas/predchuvstvie-2-3.webp",
 "tr": {}
 }
 };

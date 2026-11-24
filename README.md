@@ -1,8 +1,8 @@
 # Mapas de los mundos literarios de Robert Fader · Карты миров Роберта Фадера
 
-Sinea, Verdegrad, Nuestra Utopía, Mendoza, Venecia, Madrid, San Petersburgo, Belgrado, Praga, la Atlántida y la Ciudad Secreta en 3D, más el esquema del metro del Tren Fantasma. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
+Sinea, Verdegrad, Nuestra Utopía, Mendoza, Venecia, Madrid, San Petersburgo, Belgrado, Praga, la Atlántida, la Ciudad Secreta y el fiordo de Sofía y Román en 3D, más el esquema del metro del Tren Fantasma. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
 
-Once mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza | Venecia | Madrid | San Petersburgo | Belgrado | Praga | Atlántida | Ciudad Secreta** arriba (en el celular y en pantallas de menos de 1320 px, el botón «Mapas ▾» abre la lista):
+Doce mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza | Venecia | Madrid | San Petersburgo | Belgrado | Praga | Atlántida | Ciudad Secreta | Fiordo** arriba (en el celular y en pantallas de menos de 1320 px, el botón «Mapas ▾» abre la lista):
 
 - **Sinea**, la ciudad junto al mar: `index.html`
 - **Verdegrad**, el pueblo verde de Natalia, con su fortaleza en la penumbra: `index.html?ciudad=verdegrad` (o `verdegrad.html`)
@@ -15,6 +15,7 @@ Once mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Me
 - **Praga** (Прага), la ciudad real de «Podzemní tajemství», «Ostrovy nad Prahou», «Předtucha» y los capítulos praguenses de «La reina de la Vendimia»: `index.html?ciudad=praga` (o `praga.html`)
 - **Atlántida** (Атлантида), los dos mundos de «Звёздный роман»: `index.html?ciudad=atlantida` (o `atlantida.html`)
 - **La Ciudad Secreta** (Тайный город), de «La ciudad secreta»: `index.html?ciudad=secreta` (o `secreta.html`)
+- **El fiordo de Sofía y Román** (Фьорд Софии и Романа), de «Северная любовь» 3: `index.html?ciudad=fiordo` (o `fiordo.html`)
 - **Metro fantasma** (Метро-призрак), el esquema de «Призрачный поезд»: `metro.html`
 
 Los rótulos verdes en el borde del mapa también llevan de una ciudad a la otra («← Verdegrad · estación Nubecita» en Sinea; «← Antiguo camino a Sinea» en Verdegrad).
@@ -117,6 +118,10 @@ Mapa imaginado a partir de «Звёздный роман», con sus dos mundos: 
 ## La Ciudad Secreta
 
 Mapa imaginado a partir de «La ciudad secreta»: la ciudad blanca está «debajo de la tierra, dentro de las montañas», así que se ve como un valle cerrado por un anillo de picos con los cristales dorados del techo flotando encima. Afuera, al sureste, el pueblito de Martín, con el parque y la cafetería, y el camino hasta la roca de la llave. Configuración en `js/ciudades/secreta.js`; datos en `data/secreta/`.
+
+## El fiordo de Sofía y Román
+
+Mapa imaginado del Nuevo Nordholm tal como está en la tercera parte de «Северная любовь» («Восточный ветер»): el palacio de hielo sobre la roca, el pueblito de techos azules, el muelle, el prado con el único abedul y el bosque de los unicornios; al este, la llanura cerrada por el foso y la muralla de la campana, del fiordo a las peñas de los dragones, con el campamento abandonado de los nómadas detrás. Hacia el mar, el puertito de Iván Petróvich y la isla de la Guardiana de Piedra (primera parte). Andan sueltos los animales del viento del este, y de noche se enciende la aurora. Las partituras de la tercera parte sirven de ilustración. Configuración en `js/ciudades/fiordo.js`; datos en `data/fiordo/` (generados por fuera).
 
 ## Metro del Tren Fantasma
 

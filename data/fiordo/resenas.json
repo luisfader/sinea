@@ -1,0 +1,289 @@
+{
+ "_info": "Reseñas de los vecinos del Nuevo Nordholm.",
+ "fj-palacio": [
+  {
+   "a": "Sveta",
+   "ar": "Света",
+   "s": 5,
+   "es": "Las escaleras de hielo son perfectas para bajar corriendo. Los duendes se enojan. Igual vale la pena.",
+   "ru": "Ледяные лестницы идеальны, чтобы сбегать вниз. Домовые сердятся. Всё равно стоит того."
+  },
+  {
+   "a": "Un duende doméstico",
+   "ar": "Домовой",
+   "s": 4,
+   "es": "Todas las mañanas las paredes se empañan y yo las seco. Nadie lo agradece. Igual las seco.",
+   "ru": "Каждое утро стены запотевают, и я их протираю. Никто не благодарит. Всё равно протираю."
+  },
+  {
+   "a": "Román",
+   "ar": "Роман",
+   "s": 5,
+   "es": "Lo primero que hice cuando llegó el calor fue tocar cada columna. No se derritió. Es nuestra música.",
+   "ru": "Первое, что я сделал, когда пришло тепло, — постучал по каждой колонне. Не растаял. Это наша музыка."
+  }
+ ],
+ "fj-torre": [
+  {
+   "a": "Sofía",
+   "ar": "София",
+   "s": 5,
+   "es": "Desde la cúpula se ve todo el cielo del norte. Una mañana mandé un fénix al este y vi lo que no quería ver.",
+   "ru": "Из-под купола видно всё северное небо. Однажды утром я отправила феникса на восток и увидела то, чего не хотела видеть."
+  },
+  {
+   "a": "Sveta",
+   "ar": "Света",
+   "s": 4,
+   "es": "Acá practico violín. Desde la galería vi llegar a Iván Petróvich sin gorro. ¡En febrero!",
+   "ru": "Здесь я занимаюсь на скрипке. С галереи я увидела, как Иван Петрович приплыл без шапки. В феврале!"
+  }
+ ],
+ "fj-muelle": [
+  {
+   "a": "Iván Petróvich",
+   "ar": "Иван Петрович",
+   "s": 5,
+   "es": "Sesenta años en este fiordo y nunca entré en febrero por agua abierta. El gorro ahora lo uso solo para el sol.",
+   "ru": "Шестьдесят лет на этом фьорде — и ни разу не входил в феврале по открытой воде. Шапку теперь ношу только от солнца."
+  },
+  {
+   "a": "Un chico del pueblo",
+   "ar": "Мальчишка из города",
+   "s": 5,
+   "es": "¡Una ballena! Nos miró con un ojo enorme. Le hicimos chau todo el día.",
+   "ru": "Кит! Он смотрел на нас огромным глазом. Мы махали ему весь день."
+  },
+  {
+   "a": "Ilma",
+   "ar": "Ильма",
+   "s": 3,
+   "es": "Una tarde vi anillos oscuros saliendo del agua. Nadie me creyó. Al día siguiente éramos veinte mirando.",
+   "ru": "Однажды вечером я видела тёмные кольца над водой. Мне никто не поверил. На следующий вечер нас было двадцать."
+  }
+ ],
+ "fj-plaza": [
+  {
+   "a": "Agna",
+   "ar": "Агна",
+   "s": 5,
+   "es": "Golpeé las piedras con el bastón y se despertaron todos. Una vez estuve en el sótano. No otra vez.",
+   "ru": "Я стукнула палкой по камням, и все проснулись. Один раз я уже сидела в погребе. Больше не буду."
+  },
+  {
+   "a": "Román",
+   "ar": "Роман",
+   "s": 4,
+   "es": "Nos dicen rey y reina. Pedimos que no. Nadie hace caso. Los techos azules, igual, son lo más lindo.",
+   "ru": "Нас называют королём и королевой. Мы просим не надо. Никто не слушает. Голубые крыши — всё равно лучшее."
+  }
+ ],
+ "fj-casa-agna": [
+  {
+   "a": "Agna",
+   "ar": "Агна",
+   "s": 5,
+   "es": "Primera vez en ochenta y dos años sin pañuelo. Los gorriones gritan tanto que tengo que levantar la voz. No me quejo.",
+   "ru": "Впервые за восемьдесят два года без платка. Воробьи кричат так, что приходится повышать голос. Не жалуюсь."
+  },
+  {
+   "a": "Gris",
+   "ar": "Серая",
+   "s": 5,
+   "es": "Prrrr. (Leche en el escalón todas las tardes. Recomiendo.)",
+   "ru": "Мрррр. (Молоко на крыльце каждый вечер. Рекомендую.)"
+  }
+ ],
+ "fj-escuela": [
+  {
+   "a": "Sigrid",
+   "ar": "Сигрид",
+   "s": 4,
+   "es": "En verano mis alumnos traen las arpas y no tocan. En el foso, en cambio, cargué tierra en el delantal. A los setenta.",
+   "ru": "Летом ученики приносят арфы и не играют. А на рву я носила землю в фартуке. В семьдесят с лишним."
+  },
+  {
+   "a": "Ilma",
+   "ar": "Ильма",
+   "s": 5,
+   "es": "Enseño flauta a los chicos. La flauta se me cortó una sola vez: cuando llegaron todos los animales al prado.",
+   "ru": "Учу детей играть на флейте. Флейта сбилась у меня только раз — когда на луг пришли все звери."
+  }
+ ],
+ "fj-huerta": [
+  {
+   "a": "Abuelo Torvald",
+   "ar": "Дед Торвальд",
+   "s": 4,
+   "es": "Los nabos salieron más chicos que en verano. Así me gusta: con trabajo.",
+   "ru": "Репа стала мельче, чем летом. Так мне и нравится: с трудом."
+  },
+  {
+   "a": "Fueguito",
+   "ar": "Огонёк",
+   "s": 5,
+   "es": "Gruñ. (Un balde de manzanas al borde del campo. Excelente servicio.)",
+   "ru": "Хрю. (Ведро яблок у края поля. Отличное обслуживание.)"
+  }
+ ],
+ "fj-prado": [
+  {
+   "a": "Sveta",
+   "ar": "Света",
+   "s": 5,
+   "es": "¡Pasto! Es blando y está vivo. Tenía una corona de flores amarillas y se me cayó sobre una oreja.",
+   "ru": "Трава! Она мягкая и живая. У меня был венок из жёлтых цветов, и он съехал на одно ухо."
+  },
+  {
+   "a": "Sofía",
+   "ar": "София",
+   "s": 5,
+   "es": "Crucé el prado descalza y les canté. Estaban tristes, no enojados. Buscaban algo que nadie les podía dar.",
+   "ru": "Я прошла через луг босиком и спела им. Они были не злыми, а растерянными. Искали то, что им никто не мог дать."
+  },
+  {
+   "a": "Román",
+   "ar": "Роман",
+   "s": 4,
+   "es": "En verano mi violín sonaba aparte del mundo. Cuando volvió la nieve, el prado volvió a cantar conmigo.",
+   "ru": "Летом моя скрипка звучала отдельно от мира. Когда вернулся снег, луг снова запел вместе со мной."
+  }
+ ],
+ "fj-bosque": [
+  {
+   "a": "Román",
+   "ar": "Роман",
+   "s": 5,
+   "es": "Había visto dragones, duendes y zorras de luna. Unicornios, nunca. Uno me tocó el pecho con el cuerno.",
+   "ru": "Я видел драконов, домовых и лунных лис. Единорогов — никогда. Один коснулся рогом моей груди."
+  }
+ ],
+ "fj-animales": [
+  {
+   "a": "Pensamiento",
+   "ar": "Дума",
+   "s": 5,
+   "es": "Vienen. Pronto.",
+   "ru": "Идут. Скоро."
+  },
+  {
+   "a": "Memoria",
+   "ar": "Память",
+   "s": 5,
+   "es": "Pronto. Vienen.",
+   "ru": "Скоро. Идут."
+  },
+  {
+   "a": "Sveta",
+   "ar": "Света",
+   "s": 5,
+   "es": "A las gatas las distingo solo yo. Una me dejó rascarla detrás de la oreja y ronroneó tan fuerte que temblaron los vidrios.",
+   "ru": "Кошек различаю только я. Одна позволила почесать её за ухом и мурлыкала так, что дрожали стёкла."
+  }
+ ],
+ "fj-foso": [
+  {
+   "a": "Abuelo Torvald",
+   "ar": "Дед Торвальд",
+   "s": 5,
+   "es": "Dije «un foso» y en nueve días había un foso. Con dragones se cava más rápido.",
+   "ru": "Я сказал «ров» — и через девять дней был ров. С драконами копается быстрее."
+  },
+  {
+   "a": "Un nómada",
+   "ar": "Кочевник",
+   "s": 1,
+   "es": "Llegamos al galope y se nos abrió la tierra. Después una serpiente se comió el puente. No vuelvo.",
+   "ru": "Мы примчались галопом, а перед нами разверзлась земля. Потом змей сожрал мост. Не вернусь."
+  }
+ ],
+ "fj-colina": [
+  {
+   "a": "Iván Petróvich",
+   "ar": "Иван Петрович",
+   "s": 5,
+   "es": "Canté con el gorro en las manos. Vi a Alguien hecha de nieve y de luz. No me lo van a creer en el puerto.",
+   "ru": "Я пел, сжимая шапку. Видел Ту, что из снега и света. В порту мне не поверят."
+  },
+  {
+   "a": "Un duende doméstico",
+   "ar": "Домовой",
+   "s": 5,
+   "es": "Toqué la cacerola. Fue el mejor concierto de mi vida, y el primero.",
+   "ru": "Я играл на кастрюльке. Это был лучший концерт в моей жизни. И первый."
+  },
+  {
+   "a": "Sveta",
+   "ar": "Света",
+   "s": 5,
+   "es": "Ella vino de la aurora. Me acordé de una canción de cuando era muy chiquita.",
+   "ru": "Она пришла из сияния. Я вспомнила песню из совсем раннего детства."
+  }
+ ],
+ "fj-muralla": [
+  {
+   "a": "Román",
+   "ar": "Роман",
+   "s": 5,
+   "es": "Mientras tocaba, en la piedra aparecían pentagramas. La campana calla. Que siga callando.",
+   "ru": "Пока я играл, на камне проступали нотные линейки. Колокол молчит. Пусть молчит и дальше."
+  },
+  {
+   "a": "Agna",
+   "ar": "Агна",
+   "s": 4,
+   "es": "Está bien cuando todo se da gratis. Pero está mejor cuando sabés de dónde viene. Esta muralla, por ejemplo.",
+   "ru": "Хорошо, когда всё даётся даром. Но лучше, когда знаешь, откуда оно. Вот эта стена, например."
+  }
+ ],
+ "fj-campamento": [
+  {
+   "a": "Sveta",
+   "ar": "Света",
+   "s": 3,
+   "es": "Miré las fogatas y me acordé: no hay que tenerles miedo, hay que… Todavía no me acuerdo del resto.",
+   "ru": "Я смотрела на костры и вспомнила: их не надо бояться, их надо… Остальное пока не помню."
+  }
+ ],
+ "fj-penas": [
+  {
+   "a": "Un dragón",
+   "ar": "Дракон",
+   "s": 5,
+   "es": "Cocimos el foso, quemamos puentes y después cantamos. No sabíamos que sabíamos cantar.",
+   "ru": "Мы спекли ров, сожгли мосты, а потом запели. Мы не знали, что умеем петь."
+  }
+ ],
+ "fj-isla": [
+  {
+   "a": "Román",
+   "ar": "Роман",
+   "s": 5,
+   "es": "Dos días en una cueva helada, muerto de miedo. Al tercer amanecer abrió los brazos. Ahí empezó todo.",
+   "ru": "Два дня в ледяной пещере, до смерти напуганный. На рассвете третьего дня она развела руки. С этого всё началось."
+  },
+  {
+   "a": "Sofía",
+   "ar": "София",
+   "s": 5,
+   "es": "Cada vez que pasamos en lote la saludo. Ella no contesta. Pero sé que nos ve.",
+   "ru": "Каждый раз, проплывая на лодке, я с ней здороваюсь. Она не отвечает. Но я знаю, что она нас видит."
+  }
+ ],
+ "fj-puerto-ivan": [
+  {
+   "a": "Iván Petróvich",
+   "ar": "Иван Петрович",
+   "s": 5,
+   "es": "Yo ya lo sabía desde la taberna: allá no lleva un camino. Lleva la música.",
+   "ru": "Я ещё тогда, в таверне, всё понял: туда ведёт не дорога. Туда ведёт музыка."
+  },
+  {
+   "a": "Román",
+   "ar": "Роман",
+   "s": 4,
+   "es": "Unas casas, un muelle de madera, botes sobre agua negra. Y unos viejos que hablaban de una isla.",
+   "ru": "Несколько домов, деревянный причал, лодки на чёрной воде. И старики, которые говорили об острове."
+  }
+ ]
+}

@@ -1130,6 +1130,59 @@ const MODELOS = {
     }
     return { g, r: 40 };
   },
+  'palacio-hielo'() { // el palacio de hielo de Sofía y Román sobre el fiordo: galerías, torres con agujas y la torre de la cúpula
+    const g = new THREE.Group();
+    const hielo = new THREE.MeshPhysicalMaterial({ color: 0xcfeefa, transparent: true, opacity: .78, roughness: .08, metalness: .05, clearcoat: 1, emissive: 0x16384a, emissiveIntensity: .25 });
+    const hielo2 = new THREE.MeshPhysicalMaterial({ color: 0xe9f8ff, transparent: true, opacity: .9, roughness: .15, clearcoat: 1 });
+    const azul = new THREE.MeshStandardMaterial({ color: 0x8fd0ff, emissive: 0x2a7fd0, emissiveIntensity: .5, transparent: true, opacity: .85 });
+    g.add(caja(110, 6, 70, hielo2, 0, 0, 0));
+    g.add(caja(80, 26, 34, hielo, 0, 6, 0));                      // el cuerpo con la sala de música
+    for (const s of [-1, 1]) g.add(caja(26, 18, 60, hielo, s * 46, 6, 6)); // alas
+    g.add(caja(70, 10, 6, hielo2, 0, 32, -17));                   // galería sobre el fiordo
+    for (let i = 0; i < 8; i++) g.add(cil(1.2, 1.2, 10, hielo2, -32 + i * 9, 32, -19, 8));
+    // la gran ventana del norte, que mira a la llanura blanca
+    g.add(caja(16, 14, .6, azul, 0, 12, 17.4));
+    const torre = (x, z, h, r, punta) => { g.add(cil(r, r * 1.08, h, hielo, x, 6, z, 12)); const a = new THREE.Mesh(new THREE.ConeGeometry(r * 1.15, punta, 12), hielo2); a.position.set(x, 6 + h + punta / 2, z); g.add(a); };
+    torre(-46, -26, 34, 6, 22); torre(46, -26, 30, 6, 20); torre(-46, 34, 28, 5, 18); torre(46, 34, 26, 5, 18); torre(-20, 18, 40, 4, 16); torre(24, 18, 36, 4, 16);
+    // la torre más alta, con la cúpula transparente de donde salió el fénix
+    g.add(cil(9, 10, 58, hielo, 0, 6, -4, 16));
+    g.add(esfera(10, new THREE.MeshPhysicalMaterial({ color: 0xffffff, transparent: true, opacity: .35, roughness: 0, clearcoat: 1 }), 0, 64, -4, {}, [24, 12, 0, Math.PI * 2, 0, Math.PI / 2]));
+    const brillo1 = esfera(2.2, brillo(0xbfe8ff), 0, 68, -4); g.add(brillo1);
+    // escalinata de hielo hacia el muelle
+    for (let i = 0; i < 8; i++) g.add(caja(18, 1.4, 4, hielo2, 0, -i * 1.8, -38 - i * 4));
+    return { g, r: 70, anim(t, n) { brillo1.scale.setScalar(1 + Math.sin(t * 1.4) * .25); hielo.emissiveIntensity = .25 + n * .6; } };
+  },
+  'isla-guardiana'() { // la Guardiana de Piedra sobre su isla negra, con las manos abiertas
+    const g = new THREE.Group(), piedra = M(0x6c6a66), osc = M(0x45443f);
+    g.add(caja(10, 6, 8, osc, 0, 0, 0));
+    g.add(cil(3.6, 5, 16, piedra, 0, 6, 0, 10));               // falda
+    g.add(cil(2.6, 3.4, 9, piedra, 0, 22, 0, 10));             // torso
+    g.add(esfera(2.4, piedra, 0, 33, 0));                     // cabeza
+    for (const s of [-1, 1]) { const b = caja(8, 1.6, 1.6, piedra, s * 5.5, 28, 1); b.rotation.z = s * .5; g.add(b); }
+    g.add(esfera(1.3, brillo(0xffd27a), 0, 24, 3)); // la luz dorada que salió de la montaña
+    return { g, r: 0 };
+  },
+  'muralla-norte'() { // la muralla clara que va «del fiordo a las rocas», con su campanario y la campana de cobre
+    const g = new THREE.Group(), piedra = M(0xd9dde0), hielo = new THREE.MeshPhysicalMaterial({ color: 0xd8f2ff, transparent: true, opacity: .85, roughness: .1, clearcoat: 1 }), cobre = M(0xb87333, { metalness: .7, roughness: .35 });
+    const L0 = -850, L1 = 700; // de la orilla del fiordo a las peñas (relativo al marcador)
+    g.add(caja(8, 9, L1 - L0, piedra, 0, 0, -(L0 + L1) / 2));
+    for (let z = L0; z <= L1; z += 22) g.add(caja(8.6, 1.6, 6, piedra, 0, 9, -z));       // almenas
+    for (let z = L0 + 40; z < L1; z += 180) { g.add(cil(7, 7.5, 16, piedra, 0, 0, -z, 12)); const c = new THREE.Mesh(new THREE.ConeGeometry(8, 8, 12), hielo); c.position.set(0, 20, -z); g.add(c); }
+    // las líneas de notas y arpas que Román hizo aparecer en la piedra
+    for (let k = 0; k < 5; k++) g.add(caja(.4, .3, L1 - L0, brillo(0x9fd6ff), -4.3, 3 + k * .9, -(L0 + L1) / 2));
+    // el campanario, la torre más alta, con la campana que sonará sola si vuelve el viento cálido
+    g.add(cil(8, 9, 34, piedra, 0, 0, 0, 12)); g.add(caja(12, 7, 12, piedra, 0, 34, 0));
+    const campana = new THREE.Mesh(new THREE.CylinderGeometry(1.6, 3, 4, 16, 1, true), cobre); campana.position.set(0, 37, 0); g.add(campana);
+    const t = new THREE.Mesh(new THREE.ConeGeometry(9, 12, 12), hielo); t.position.set(0, 47, 0); g.add(t);
+    return { g, r: 0 };
+  },
+  campamento() { // el campamento abandonado de los nómadas en la llanura: tiendas de cuero, banderas de crin, fogatas apagadas
+    const g = new THREE.Group(), cuero = M(0x8a7a62), cuero2 = M(0x6e604d);
+    for (let i = 0; i < 46; i++) { const a = i * 2.39, r = 20 + Math.sqrt(i) * 34; const x = Math.cos(a) * r, z = Math.sin(a) * r * .8;
+      const t = new THREE.Mesh(new THREE.ConeGeometry(5 + (i % 3), 7 + (i % 2) * 2, 8), i % 2 ? cuero : cuero2); t.position.set(x, 3.5, z); t.rotation.z = (i % 5 - 2) * .08; g.add(t); }
+    for (let i = 0; i < 6; i++) { const a = i * 1.1; g.add(cil(.2, .2, 12, 0x3a2e22, Math.cos(a) * 120, 0, Math.sin(a) * 90, 5)); g.add(caja(3, 2, .1, M(0x2a2420), Math.cos(a) * 120 + 1.5, 10, Math.sin(a) * 90)); }
+    return { g, r: 0 };
+  },
   'tren-fantasma'() { return { g: new THREE.Group(), r: 0 }; }
 };
 
@@ -1151,7 +1204,7 @@ export function construirHitos(lugares, u) {
     grupo.add(m.g);
     if (m.anim) anims.push(m.anim);
     if (m.r) reservas.push([L.x, L.y, m.r]);
-    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, usina: 20, 'faro-ruina': 50, 'piedra-negra': 10, 'templo-corazon': 96, 'torres-caracola': 96, 'portal-azul': 34, 'nave-enemiga': 330, 'roca-llave': 28, 'torre-bandera': 80, 'mesas-trampa': 10, 'karluv-most': 22, 'hrad-praga': 92, tyn: 82, petrin: 64, vysehrad: 60, zizkov: 230, mikulas: 62, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
+    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, usina: 20, 'palacio-hielo': 72, 'isla-guardiana': 36, 'muralla-norte': 50, campamento: 12, 'faro-ruina': 50, 'piedra-negra': 10, 'templo-corazon': 96, 'torres-caracola': 96, 'portal-azul': 34, 'nave-enemiga': 330, 'roca-llave': 28, 'torre-bandera': 80, 'mesas-trampa': 10, 'karluv-most': 22, 'hrad-praga': 92, tyn: 82, petrin: 64, vysehrad: 60, zizkov: 230, mikulas: 62, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
   }
   // reserva extra: la plaza Dante entera y el puerto
   reservas.push(...RESERVAS);
@@ -1400,4 +1453,65 @@ export function crearCristalesTecho() {
   }
   const luz = new THREE.PointLight(0xffd27a, 1.2, 1800, 1.2); luz.position.set(0, 260, 0); g.add(luz);
   return { g, anim(t, noche) { for (const [c, i] of lista) c.rotation.y = t * .1 + i; mat.emissiveIntensity = noche ? 1.6 : 1.1; } };
+}
+
+// «Северная любовь 3»: los animales que llegaron con el viento del este y la aurora boreal sobre el fiordo
+export function crearNorte(altura) {
+  const g = new THREE.Group(), anim = [];
+  const M_ = (c, o = {}) => new THREE.MeshStandardMaterial({ color: c, roughness: .8, flatShading: true, ...o });
+  const h = (x, y) => Math.max(0, altura(x, y));
+  const cuadrupedo = (col, L, alto, cabeza = .3) => { const q = new THREE.Group(), m = M_(col);
+    q.add(caja(L, alto * .45, L * .38, m, 0, alto * .5, 0));
+    for (const [dx, dz] of [[-.35, -.13], [.35, -.13], [-.35, .13], [.35, .13]]) q.add(caja(L * .1, alto * .55, L * .1, m, dx * L, 0, dz * L));
+    q.add(caja(L * cabeza, alto * .3, L * .22, m, L * .55, alto * .78, 0)); return q; };
+  // el alce blanco, el Rey de las Nieves, con astas como la copa de un árbol
+  const alce = cuadrupedo(0xf4f6f8, 5, 4.6); for (let i = 0; i < 7; i++) { const a = caja(.25, 2.6, .25, M_(0xe8eef4), 2.9, 5, (i - 3) * .55); a.rotation.x = (i - 3) * .3; alce.add(a); }
+  alce.scale.setScalar(2.2); alce.position.set(560, h(560, 820), -820); g.add(alce);
+  // el jabalí de cerdas de oro, Fueguito
+  const jab = cuadrupedo(0x5a4330, 3.2, 2.2); jab.add(caja(2.6, .5, .4, new THREE.MeshStandardMaterial({ color: 0xffc94a, emissive: 0xffa020, emissiveIntensity: .9 }), 0, 2.2, 0));
+  jab.scale.setScalar(2); jab.position.set(600, h(600, -60), 60); g.add(jab);
+  // las dos gatas grises, del tamaño de un caballo
+  for (const [x, y] of [[230, 330], [270, 300]]) { const c = cuadrupedo(0x8f949a, 3.4, 2.6, .26); c.scale.setScalar(1.7); c.position.set(x, h(x, y), -y); c.rotation.y = x * .01; g.add(c); }
+  // los unicornios en el borde del bosque
+  for (let i = 0; i < 4; i++) { const x = -420 - i * 40, y = 920 + (i % 2) * 30; const u = cuadrupedo(0xf7f7ff, 3.6, 3.6); u.add(new THREE.Mesh(new THREE.ConeGeometry(.15, 1.4, 6), M_(0xfff0a0, { emissive: 0xfff0a0, emissiveIntensity: .6 }))); u.children[u.children.length - 1].position.set(2.4, 3.9, 0); u.children[u.children.length - 1].rotation.z = -1;
+    u.scale.setScalar(1.6); u.position.set(x, h(x, y), -y); u.rotation.y = i; g.add(u); }
+  // la zorra que enciende la aurora con la cola
+  const zorra = cuadrupedo(0xd8692a, 1.6, 1.1); zorra.add(caja(1.2, .35, .35, M_(0xffffff), -1.1, .9, 0)); zorra.scale.setScalar(2.4); g.add(zorra);
+  const chispas = []; for (let i = 0; i < 14; i++) { const c = esfera(.6, new THREE.MeshBasicMaterial({ color: i % 2 ? 0x7dffb0 : 0xff9ad8, transparent: true }), 0, 0, 0); g.add(c); chispas.push(c); }
+  // el águila enorme que da vueltas sobre el palacio
+  const aguila = new THREE.Group(); aguila.add(caja(4, 1.2, 1.4, M_(0x4a3a2a))); for (const s of [-1, 1]) { const al = caja(1.6, .3, 9, M_(0x5a4632), 0, 0, s * 5); aguila.add(al); }
+  aguila.scale.setScalar(2.4); g.add(aguila);
+  // los dos cuervos, Pensamiento y Memoria, en la torre más alta del palacio
+  for (const s of [-1, 1]) { const c = new THREE.Group(); c.add(caja(1.4, .8, .7, M_(0x111111))); c.add(caja(.5, .5, .5, M_(0x111111), .8, .5, 0)); c.position.set(-230 + s * 3, h(-230, -150) + 74, 150 + 4); g.add(c); }
+  // la ballena del puerto y la serpiente de mar del fiordo
+  const ballena = new THREE.Mesh(new THREE.SphereGeometry(6, 14, 8), M_(0x3c4a56, { metalness: .4, roughness: .3 })); ballena.scale.set(3.4, .8, 1.1); g.add(ballena);
+  const chorro = new THREE.Mesh(new THREE.ConeGeometry(2, 12, 8, 1, true), new THREE.MeshBasicMaterial({ color: 0xdff4ff, transparent: true, opacity: .55 })); g.add(chorro);
+  const serp = []; for (let i = 0; i < 6; i++) { const t = new THREE.Mesh(new THREE.TorusGeometry(7, 2.2, 8, 16, Math.PI), M_(0x1d3b3a, { metalness: .5, roughness: .3 })); g.add(t); serp.push(t); }
+  // los dragones de escamas de nácar sobre sus peñas
+  const dragones = [];
+  for (let i = 0; i < 3; i++) { const d = new THREE.Group(), m = M_(i % 2 ? 0xd9d2f0 : 0xc8e6e0, { metalness: .5, roughness: .25 });
+    d.add(caja(9, 3, 3, m)); d.add(caja(4, 2, 2, m, 6, 1.6, 0)); d.add(caja(8, .6, 1.4, m, -8, 0, 0));
+    for (const s of [-1, 1]) { const al = caja(5, .4, 11, m, 0, 1, s * 6.5); al.rotation.x = s * .3; d.add(al); }
+    d.scale.setScalar(2.2); g.add(d); dragones.push({ d, f: i * 2.1 }); }
+  // la aurora boreal: cintas verdes, lilas y doradas
+  const aurora = []; const colores = [0x6dffa8, 0xb48cff, 0x6dd8ff, 0xffd27a];
+  for (let i = 0; i < 4; i++) {
+    const geo = new THREE.PlaneGeometry(5200, 380, 80, 1), pos = geo.attributes.position;
+    for (let k = 0; k < pos.count; k++) { const x = pos.getX(k); pos.setZ(k, Math.sin(x * .0016 + i) * 420); }
+    const mat = new THREE.MeshBasicMaterial({ color: colores[i], transparent: true, opacity: .0, side: THREE.DoubleSide, depthWrite: false, blending: THREE.AdditiveBlending });
+    const m = new THREE.Mesh(geo, mat); m.position.set(0, 420 + i * 70, -1900 - i * 220); g.add(m); aurora.push(m);
+  }
+  const anim_ = (t, noche) => {
+    alce.position.x = 560 + Math.sin(t * .03) * 140; alce.position.y = h(alce.position.x, 820); alce.rotation.y = Math.cos(t * .03) > 0 ? Math.PI : 0;
+    jab.position.x = 600 + Math.sin(t * .05) * 90; jab.position.y = h(jab.position.x, -60);
+    const zx = 1300 + Math.sin(t * .08) * 700, zy = 420 + Math.sin(t * .13) * 260; zorra.position.set(zx, h(zx, zy), -zy); zorra.rotation.y = Math.cos(t * .08) > 0 ? Math.PI : 0;
+    chispas.forEach((c, i) => { const k = ((t * .9 + i / 14) % 1); c.position.set(zx - Math.cos(t * .08) * 8, h(zx, zy) + 3 + k * 60, -zy + Math.sin(i) * 4); c.material.opacity = 1 - k; });
+    aguila.position.set(-230 + Math.cos(t * .12) * 380, 260 + Math.sin(t * .3) * 20, 150 + Math.sin(t * .12) * 380); aguila.rotation.y = -t * .12;
+    const bx = -40 + Math.sin(t * .05) * 260; ballena.position.set(bx, -1 + Math.sin(t * .6), 470 + Math.cos(t * .05) * 40); ballena.rotation.y = Math.cos(t * .05) > 0 ? 0 : Math.PI;
+    chorro.position.set(bx, 6, 470 + Math.cos(t * .05) * 40); chorro.visible = Math.sin(t * .7) > .6;
+    serp.forEach((s, i) => { const x = -700 + i * 18 + Math.sin(t * .1) * 60; s.position.set(x, -2 + Math.sin(t * .8 + i) * 2, 470 + Math.sin(i) * 3); s.rotation.y = Math.PI / 2; });
+    dragones.forEach(({ d, f }, i) => { const a = t * .07 + f; d.position.set(1500 + Math.cos(a) * 520, 420 + Math.sin(t * .4 + f) * 30, -1450 + Math.sin(a) * 260); d.rotation.y = -a - Math.PI / 2; });
+    aurora.forEach((m, i) => { m.material.opacity = noche * (.22 + Math.sin(t * .4 + i) * .08) + (1 - noche) * .035; m.position.x = Math.sin(t * .05 + i) * 200; });
+  };
+  return { g, anim: anim_ };
 }
