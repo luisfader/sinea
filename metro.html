@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Metro del Tren Fantasma · Mapas de los mundos literarios de Robert Fader</title>
+<meta name="description" content="Esquema del Tren Fantasma y del metro anómalo de «Призрачный поезд» de Robert Fader: los vagones, las estaciones y la Estación Cero.">
+<link rel="stylesheet" href="css/sinea.css">
+<style>
+  html, body { background: #0d1320; }
+  #esquema { position: fixed; inset: 0; touch-action: none; cursor: grab; }
+  #esquema.arrastrando { cursor: grabbing; }
+  #esquema svg { width: 100%; height: 100%; display: block; }
+  .tit-metro { color: #e9eef7; margin-bottom: 8px; }
+  .tit-metro h1 { margin: 0; font-size: 18px; font-weight: 700; }
+  .tit-metro p { margin: 2px 0 0; font-size: 12.5px; color: #9fb0c8; line-height: 1.35; }
+  #barra-metro { position: fixed; top: 12px; left: 12px; z-index: 20; display: flex; gap: 8px; }
+  #barra-metro a, #barra-metro button { height: 40px; border-radius: 20px; border: 0; background: #fff; box-shadow: var(--sombra); padding: 0 14px; font-weight: 600; font-size: 13.5px; color: #33404b; display: inline-flex; align-items: center; text-decoration: none; cursor: pointer; }
+  #barra-metro .idi button { padding: 0 12px; box-shadow: none; background: none; height: 32px; }
+  #barra-metro .idi { display: flex; background: #fff; border-radius: 20px; padding: 4px; box-shadow: var(--sombra); }
+  #barra-metro .idi button.on { background: #1a73e8; color: #fff; }
+  #leyenda-caja { position: fixed; left: 12px; bottom: 34px; z-index: 5; background: rgba(18,26,42,.88); color: #dbe3ef; border-radius: 12px; padding: 10px 14px; font-size: 13px; line-height: 1.7; box-shadow: 0 4px 18px rgba(0,0,0,.4); max-width: 330px; }
+  #leyenda i { display: inline-block; width: 26px; height: 6px; border-radius: 3px; vertical-align: middle; margin-right: 8px; }
+  #leyenda .fan { background: repeating-linear-gradient(90deg, #8aa0bd 0 5px, transparent 5px 9px); height: 2px; }
+  #zoom { position: fixed; right: 12px; bottom: 34px; z-index: 5; display: flex; flex-direction: column; gap: 6px; }
+  #zoom button { width: 40px; height: 40px; border-radius: 50%; border: 0; background: #fff; box-shadow: var(--sombra); font-size: 18px; cursor: pointer; }
+  .est-g { cursor: pointer; }
+  .est-g:hover .ring, .est-g.sel .ring { stroke-width: 7; }
+  .est-g.sel .lbl { fill: #fff; font-weight: 700; }
+  .lbl { fill: #dce4f0; font-size: 15px; font-family: "Segoe UI", Roboto, Arial, sans-serif; paint-order: stroke; stroke: #0d1320; stroke-width: 5px; stroke-linejoin: round; }
+  .lbl.chico { font-size: 12.5px; fill: #93a4bd; }
+  .num { font-size: 11px; font-weight: 700; fill: #0d1320; font-family: Arial, sans-serif; pointer-events: none; }
+  #pie { color: #8fa0b8; background: linear-gradient(transparent, rgba(0,0,0,.5)); } #pie a { color: #b9c6d8; }
+  #panel { z-index: 30; }
+  @media (max-width: 720px) {
+    .tit-metro h1 { font-size: 15px; } .tit-metro p { display: none; }
+    #leyenda-caja { bottom: 30px; font-size: 11.5px; max-width: 230px; padding: 8px 10px; line-height: 1.5; }
+    #leyenda > div:last-child { display: none; }
+    #pie { display: none; }
+    #zoom { bottom: 30px; }
+  }
+</style>
+</head>
+<body>
+<div id="esquema"></div>
+
+<nav id="barra-metro">
+  <a id="volver" href="index.html" data-es="← Mapas" data-ru="← Карты">← Mapas</a>
+  <div class="idi"><button data-l="es">ES</button><button data-l="ru">RU</button></div>
+</nav>
+<div id="leyenda-caja"><div class="tit-metro"><h1 data-es="Metro del Tren Fantasma" data-ru="Метро Призрачного поезда">Metro del Tren Fantasma</h1>
+  <p data-es="«Призрачный поезд»: los vagones del tren y el metro anómalo de Sinea" data-ru="«Призрачный поезд»: вагоны поезда и аномальное метро Синеи">«Призрачный поезд»: los vagones del tren y el metro anómalo de Sinea</p></div><div id="leyenda"></div></div>
+<div id="zoom"><button id="z-mas" title="Acercar">+</button><button id="z-menos" title="Alejar">−</button><button id="z-todo" title="Todo el esquema">⤢</button></div>
+<aside id="panel" aria-live="polite">
+  <button class="cerrar" title="Cerrar">✕</button>
+  <div class="cuerpo"></div>
+</aside>
+<div id="pie"></div>
+<script type="module" src="js/metro.js"></script>
+</body>
+</html>

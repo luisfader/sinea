@@ -24374,6 +24374,1120 @@ export const CIUDADES = {
 ]
 }
 ],
+"metro": [
+{
+"id": "tf-central",
+"nombre": "Estación Central",
+"cat": "transporte",
+"x": 120,
+"y": 150,
+"modelo": "ninguno",
+"linea": "P",
+"num": "0",
+"desc": "Un andén en la niebla, tarde, «demasiado tarde para los pasajeros comunes». Marcos busca a Alicia, que desapareció en el tren que no figura en ningún horario. El jefe de estación, por doscientos francos, le dice la hora de llegada de un tren que no existe; a la vuelta de la esquina está el Barrio de los Locos. En el andén espera también un gordo: Marcos todavía no sabe que lo va a volver a encontrar. Doscientos francos es el primer pago de tres: el tren siempre cobra lo mismo, porque el miedo no regatea.",
+"nombre_ru": "Центральный вокзал",
+"desc_ru": "Перрон в тумане, поздно вечером — «слишком поздно для обычных пассажиров». Марк ищет Алисию, исчезнувшую в поезде, которого нет ни в одном расписании. Начальник вокзала за двести франков называет время прибытия несуществующего поезда; за углом — Квартал сумасшедших. На перроне ждёт и толстяк — Марк ещё не знает, что встретит его снова. Двести франков — первая плата из трёх: поезд всегда берёт одинаково, потому что страх не торгуется.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"2",
+"Тайна Центрального вокзала"
+],
+[
+"3",
+"Разговор с начальником вокзала"
+],
+[
+"4",
+"Квартал сумасшедших"
+]
+]
+}
+],
+"res": [
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 2,
+"es": "Doscientos francos por la hora de un tren que no existe. Llegó puntual.",
+"ru": "Двести франков за время прибытия поезда, которого нет. Пришёл минута в минуту."
+},
+{
+"a": "El jefe de estación",
+"ar": "Начальник вокзала",
+"s": 4,
+"es": "Yo no vendo horarios. Vendo certezas. Las certezas son caras.",
+"ru": "Я не продаю расписание. Я продаю уверенность. Уверенность стоит дорого."
+}
+],
+"img": {
+"src": "img/lugares/tf-central.webp",
+"n": "el-tren-fantasma",
+"c": "2"
+}
+},
+{
+"id": "tf-pasajeros",
+"nombre": "Vagón de pasajeros",
+"cat": "transporte",
+"x": 230,
+"y": 150,
+"modelo": "ninguno",
+"linea": "P",
+"num": "1",
+"desc": "Asientos gastados, pasamanos de bronce, lámparas pálidas, y pasajeros demasiado tranquilos, como si lo esperaran desde hace mucho. Una mujer de unos cincuenta y cinco años «necesita urgentemente un yerno»; otra, de ojos vacíos, tiene un yerno que «sabe mucho de mujeres». Marcos no tiene boleto. El controlador le cobra doscientos francos y le explica lo esencial: este tren es solo para pecadores. Las dos mujeres hablan, al parecer, del gordo de la estación: una es su suegra, y subió antes que Marcos.",
+"nombre_ru": "Пассажирский вагон",
+"desc_ru": "Потёртые сиденья, латунные поручни, тусклые лампы и слишком спокойные пассажиры, будто Марка давно ждали. Женщине лет пятидесяти пяти «очень нужен зять»; у второй, с пустыми глазами, зять «многое знает о женщинах». У Марка нет билета. Контролёр берёт с него двести франков и объясняет главное: этот поезд — только для грешников. Обе женщины говорят, похоже, о толстяке со станции: одна из них — его тёща, и вошла она в поезд раньше Марка.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"5",
+"Без билета"
+],
+[
+"6",
+"Грех и выбор"
+]
+]
+}
+],
+"res": [
+{
+"a": "La suegra",
+"ar": "Тёща",
+"s": 4,
+"es": "Viaje cómodo, compañía tranquila. Busco a mi yerno. Sé exactamente dónde está.",
+"ru": "Удобная поездка, спокойные попутчики. Ищу зятя. Я точно знаю, где он."
+}
+],
+"img": {
+"src": "img/lugares/tf-pasajeros.webp",
+"n": "el-tren-fantasma",
+"c": "5"
+}
+},
+{
+"id": "tf-biblioteca",
+"nombre": "Vagón biblioteca",
+"cat": "transporte",
+"x": 340,
+"y": 150,
+"modelo": "ninguno",
+"linea": "P",
+"num": "2",
+"desc": "Marcos lo elige porque las discotecas siempre le dieron miedo. Estantes hasta el techo, un olor que la bibliotecaria llama «a rata muerta», libros de los que caen arañas y cucarachas, «La hora salvaje» de Robert Fader y «10 maneras de preparar paella», del que saltan camarones vivos: uno trae una nota. La bibliotecaria mira exactamente dos segundos sin parpadear. La respuesta está en la página 23 de «El presentimiento»: veintitrés años tenía Marcos cuando conoció a Alicia. Es la estación de combinación: la misma bibliotecaria aparecerá en la boletería de la estación «Biblioteca» del metro anómalo.",
+"nombre_ru": "Вагон-библиотека",
+"desc_ru": "Марк выбирает его, потому что дискотеки всегда вызывали в нём страх. Полки до потолка, запах, который библиотекарша называет «мёртвой крысой», книги, из которых сыплются пауки и тараканы, «Дикий час» Роберта Фадера и «10 способов приготовить паэлью», из которой выпрыгивают живые креветки — одна приносит записку. Библиотекарша смотрит ровно две секунды, не моргая. Ответ — на странице 23 книги «Предчувствие»: столько лет было Марку, когда он впервые встретил Алисию. Это пересадочная станция: та же библиотекарша сидит за кассой станции «Библиотека» аномального метро.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"7",
+"Вагон-библиотека"
+]
+]
+}
+],
+"res": [
+{
+"a": "La bibliotecaria",
+"ar": "Библиотекарша",
+"s": 3,
+"es": "…",
+"ru": "…"
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 3,
+"es": "De un libro de cocina saltaron camarones vivos. Uno me trajo una nota. Página 23. Prefiero no hablar de eso.",
+"ru": "Из кулинарной книги выпрыгнули живые креветки. Одна принесла записку. Страница 23. Предпочитаю об этом не говорить."
+}
+],
+"img": {
+"src": "img/lugares/tf-biblioteca.webp",
+"n": "el-tren-fantasma",
+"c": "8"
+}
+},
+{
+"id": "tf-piscina",
+"nombre": "Vagón piscina",
+"cat": "transporte",
+"x": 450,
+"y": 150,
+"modelo": "ninguno",
+"linea": "P",
+"num": "3",
+"desc": "Piso mojado, aire caliente y pesado, una gran pileta de agua oscura y el miedo del que Marcos huyó toda su vida. Ahí nada como un pez Lucrecia Schmidt, con chaqueta de cocinera y delantal, y hay una sirena de mirada fría y cansada con un sobre. Lucrecia nunca fue prisionera del tren: tiene tarjeta de pasajera frecuente. Está acá porque su hermano se metió en problemas.",
+"nombre_ru": "Вагон-бассейн",
+"desc_ru": "Влажный пол, тяжёлый тёплый воздух, большая чаша тёмной воды — и тот страх, от которого Марк бежал всю жизнь. Здесь, как рыба, плавает Лукреция Шмидт в поварской куртке и фартуке, а русалка с холодным усталым взглядом держит конверт. Лукреция никогда не была пленницей поезда: у неё карточка постоянного пассажира. Она здесь, потому что в беду попал её брат.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"8",
+"Вагон-бассейн"
+],
+[
+"extra-2",
+"Досье: Лукреция Шмидт"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lucrecia Schmidt",
+"ar": "Лукреция Шмидт",
+"s": 5,
+"es": "El agua estaba perfecta. Tengo tarjeta de pasajera frecuente, así que no me molesten con boletos.",
+"ru": "Вода была идеальная. У меня карточка постоянного пассажира, так что с билетами ко мне не приставайте."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 1,
+"es": "Toda la vida le escapé al agua. El tren lo sabía.",
+"ru": "Всю жизнь я убегал от воды. Поезд это знал."
+}
+],
+"img": {
+"src": "img/lugares/tf-piscina.webp",
+"n": "el-tren-fantasma",
+"c": "9"
+}
+},
+{
+"id": "tf-mujeres",
+"nombre": "Vagón de las mujeres",
+"cat": "transporte",
+"x": 560,
+"y": 150,
+"modelo": "ninguno",
+"linea": "P",
+"num": "4",
+"desc": "Ruido, voces, miradas: demasiado de todo al mismo tiempo. Una adivina que ve «mucho, sobre todo lo malo», una abogada dispuesta a casar a Marcos y después divorciarlo, y una mujer tan hermosa que Marcos se puso a llorar. La más hermosa nunca habla, y después Marcos no podrá recordar su cara: era la cara que toda la vida tuvo miedo de mirar de frente, la de Alicia feliz sin él.",
+"nombre_ru": "Вагон женщин",
+"desc_ru": "Шум, голоса, взгляды — слишком много всего сразу. Гадалка, которая видит «многое, особенно плохое», юрист, готовая сначала женить Марка, а потом развести, и женщина такой красоты, что Марк просто заплакал. Самая красивая ни разу не заговорила, и её лицо Марк потом не сможет вспомнить: это было лицо, на которое он всю жизнь боялся посмотреть прямо, — лицо Алисии, счастливой без него.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"9",
+"Вагон женщин"
+]
+]
+}
+],
+"res": [
+{
+"a": "La adivina",
+"ar": "Гадалка",
+"s": 4,
+"es": "Veo mucho, sobre todo lo malo. A este muchacho le vi todo. Lloró igual.",
+"ru": "Вижу многое, особенно плохое. Этому парню я увидела всё. Он всё равно заплакал."
+}
+],
+"img": {
+"src": "img/lugares/tf-mujeres.webp",
+"n": "el-tren-fantasma",
+"c": "extra-6"
+}
+},
+{
+"id": "tf-discoteca",
+"nombre": "Vagón discoteca",
+"cat": "transporte",
+"x": 670,
+"y": 150,
+"modelo": "ninguno",
+"linea": "P",
+"num": "5",
+"desc": "Música con corazón propio, luces que parpadean, una pista de baile. Marcos entra dos veces: la primera para perder a Alicia, la segunda para bailar con ella. Ahí está el gordo de la estación, al que «obligan a bailar» si no quiere que ella lo convierta en flaco, y unos boy scouts zombis cantando «Viajar en tren es lo mejor». No vinieron por Alicia, sino por Marcos: en una foto vieja que después mostrará Lucrecia, el pequeño Marcos aparece entre ellos con el mismo uniforme.",
+"nombre_ru": "Вагон-дискотека",
+"desc_ru": "Музыка, у которой есть собственное сердце, мигающий свет, танцпол. Марк войдёт сюда дважды: в первый раз — чтобы потерять Алисию, во второй — чтобы с ней танцевать. Здесь толстяк со станции, которого «заставляют танцевать», иначе она превратит его в худого, и бойскауты-зомби с песней «Ехать в поезде — это лучше всего». Пришли они не за Алисией, а за Марком: на старой фотографии, которую потом покажет Лукреция, маленький Марк стоит среди них в той же форме.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"10",
+"Танец и исчезновение"
+],
+[
+"11",
+"Вагон бюрократии"
+],
+[
+"17",
+"Вагон школы"
+]
+]
+}
+],
+"res": [
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 5,
+"es": "Primero me perdió acá. Después bailamos acá. Recomiendo la segunda opción.",
+"ru": "Сначала он потерял меня здесь. Потом мы здесь танцевали. Рекомендую второй вариант."
+},
+{
+"a": "Robert",
+"ar": "Роберт",
+"s": 2,
+"es": "Me obligaron a bailar. Si no, me convertían en flaco. No sé qué era peor.",
+"ru": "Меня заставили танцевать. Иначе превратили бы в худого. Не знаю, что хуже."
+}
+],
+"img": {
+"src": "img/lugares/tf-discoteca.webp",
+"n": "el-tren-fantasma",
+"c": "10"
+}
+},
+{
+"id": "tf-burocracia",
+"nombre": "Vagón de la burocracia",
+"cat": "transporte",
+"x": 780,
+"y": 150,
+"modelo": "ninguno",
+"linea": "P",
+"num": "6",
+"desc": "Mesas, papeles, números. Una fila que se mueve pero no avanza, y en el camino un hombre con una pila enorme de calendarios del año pasado, «con descuento». Un controlador al que Marcos le dice, imprudente, «usted no está en forma». Una voz que llama todo el tiempo: «¡El siguiente!». Nadie oyó nunca que dijeran un número; dicen que el primero de la fila sigue siendo un hombre que vino a buscar un certificado de que no tiene miedo.",
+"nombre_ru": "Вагон бюрократии",
+"desc_ru": "Столы, бумаги, номерки. Очередь, которая движется, но не продвигается, а по дороге — человек с огромной стопкой календарей прошлого года, «со скидкой». Контролёр в форме, которому Марк неосторожно сказал «вы не в форме». Голос, который всё время зовёт: «Следующий!» Никто никогда не слышал, чтобы здесь назвали номер; говорят, первым в очереди до сих пор стоит человек, пришедший за справкой о том, что он не боится.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"11",
+"Вагон бюрократии"
+]
+]
+}
+],
+"res": [
+{
+"a": "El hombre de los calendarios",
+"ar": "Человек с календарями",
+"s": 3,
+"es": "Calendarios del año pasado, con descuento. Acá el tiempo no avanza, así que siguen sirviendo.",
+"ru": "Календари прошлого года, со скидкой. Здесь время не движется, так что они всё ещё годятся."
+}
+]
+},
+{
+"id": "tf-confesionario",
+"nombre": "Vagón confesionario",
+"cat": "transporte",
+"x": 890,
+"y": 150,
+"modelo": "ninguno",
+"linea": "P",
+"num": "7",
+"desc": "Silencio: hasta el sonido está prohibido. Olor a iglesia vieja y a polvo dulce; una mesa maciza, libros gruesos, sellos. El encargado llama «pecados muy graves» al azúcar de más en el té y a cenar después de las diez, y le pone a Marcos un diagnóstico oficial: «Realmente sos un tonto». Su sello va sobre un documento de una sola línea: «Dejar pasar». El pecado no decide nada; decide solo haberlo dicho en voz alta. Es el tercer pago de doscientos francos.",
+"nombre_ru": "Вагон-исповедальня",
+"desc_ru": "Тишина, под запретом даже звук. Запах старых церквей и сладкой пыли, массивный стол, толстые книги, печати. Заведующий называет «очень серьёзными грехами» лишний сахар в чае и ужин после десяти и ставит Марку официальный диагноз: «Ты действительно глупец». Его печать ставится на документ с одной-единственной строчкой: «Пропустить». Грех здесь ничего не решает; решает только то, что ты произнёс его вслух. Это третья плата в двести франков.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"12",
+"Вагон-исповедальня"
+]
+]
+}
+],
+"res": [
+{
+"a": "El encargado",
+"ar": "Заведующий",
+"s": 5,
+"es": "Diagnóstico oficial: tonto. Sello: dejar pasar. Siguiente pecador, y sin azúcar de más.",
+"ru": "Официальный диагноз: глупец. Печать: пропустить. Следующий грешник — и без лишнего сахара."
+}
+],
+"img": {
+"src": "img/lugares/tf-confesionario.webp",
+"n": "el-tren-fantasma",
+"c": "16"
+}
+},
+{
+"id": "tf-purgatorio",
+"nombre": "Vagón del purgatorio",
+"cat": "transporte",
+"x": 1000,
+"y": 150,
+"modelo": "ninguno",
+"linea": "P",
+"num": "8",
+"desc": "Nada. Ni música, ni olores, ni adornos: paredes grises como un acta sin terminar, ventanas turbias. La gente se presenta con su pecado en lugar del nombre: dos hombres descubren que «Svetlana, la del lunar en el cuello» era la mujer de uno y la amante del otro; una mujer confiesa «una corrupción muy chiquita»; un fiscal de abrigo gris largo lee la lista. Es el único vagón sin cartel de salida: de acá no se sale, solo te trasladan.",
+"nombre_ru": "Вагон чистилища",
+"desc_ru": "Ничего. Ни музыки, ни запахов, ни украшений: серые стены, как недописанный протокол, мутные окна. Люди представляются грехами вместо имён: двое мужчин выясняют, что «Светлана с родинкой на шее» была женой одного и любовницей другого; женщина признаётся в «очень мелкой коррупции»; прокурор в длинном сером пальто читает список. Это единственный вагон без таблички на выходе: его не покидают, из него только переводят.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"13",
+"Вагон чистилища"
+]
+]
+}
+],
+"res": [
+{
+"a": "El fiscal",
+"ar": "Прокурор",
+"s": 3,
+"es": "Leo la lista en voz alta porque de acá nadie sale. Solo los trasladan.",
+"ru": "Я читаю список вслух, потому что отсюда никто не выходит. Только переводят."
+}
+]
+},
+{
+"id": "tf-juicio",
+"nombre": "Vagón del Juicio Final",
+"cat": "transporte",
+"x": 1110,
+"y": 150,
+"modelo": "ninguno",
+"linea": "P",
+"num": "9",
+"desc": "Una sala enorme como un teatro: estrado alto, arañas de cristal, un público que se ríe cuando le hacen señas, un martillo que crece con cada golpe. El juez llora y se ríe a la vez. Causa número 777: Alicia Gómez Fernández, por «inmigración ilegal al espacio personal de los miedos ajenos». Es el único del tren que no le teme a Marcos, y desaparece solo cuando Marcos le dice: «Sos juez solo mientras nadie se anime a decirte: no juzgues».",
+"nombre_ru": "Вагон Страшного суда",
+"desc_ru": "Зал, огромный, как театр: высокий помост, люстры, публика, которая смеётся по сигналу, молоток, который растёт с каждым ударом. Судья в длинной мантии плачет и смеётся одновременно. Дело номер 777: Алисия Гомес Фернандес, «незаконная иммиграция в личное пространство чужих страхов». Судья — единственный в поезде, кто не боится Марка, и исчезает, только когда Марк говорит ему: «Ты судья только пока никто не осмелится сказать тебе: не суди».",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"14",
+"Вагон"
+]
+]
+}
+],
+"res": [
+{
+"a": "El juez",
+"ar": "Судья",
+"s": 2,
+"es": "Causa 777. El público se rió en los momentos correctos. El acusado me dijo «no juzgues». Me fui.",
+"ru": "Дело №777. Публика смеялась в нужных местах. Обвиняемый сказал мне «не суди». Я ушёл."
+}
+],
+"img": {
+"src": "img/lugares/tf-juicio.webp",
+"n": "el-tren-fantasma",
+"c": "12"
+}
+},
+{
+"id": "tf-cocina",
+"nombre": "Compartimiento de la cocina",
+"cat": "transporte",
+"x": 1210,
+"y": 215,
+"modelo": "ninguno",
+"linea": "P",
+"num": "10",
+"desc": "Una puerta de servicio desde la sala del juicio: hornallas, harina y un pesado palo de amasar de madera. Ahí está el gordo, Robert, condenado «a trabajos en la cocina», con Lucrecia armada con el palo de amasar y la suegra de Robert, de postura impecable y mirada fría. Acá Robert le dice «no» a su suegra por primera vez, y se descubre que Lucrecia es su hermana, que «por casualidad» siempre aparece cuando él se mete en líos.",
+"nombre_ru": "Кухонный отсек",
+"desc_ru": "Служебная дверь из зала суда: плиты, мука и тяжёлая деревянная скалка. Здесь толстяк — Роберт, приговорённый «к работам на кухне», Лукреция со скалкой и тёща Роберта с безупречной осанкой и холодным взглядом. Здесь Роберт впервые говорит тёще «нет», и выясняется, что Лукреция — его сестра, которая «случайно» оказывается рядом каждый раз, когда он вляпывается в беду.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"15",
+"Имя"
+]
+]
+}
+],
+"res": [
+{
+"a": "Robert",
+"ar": "Роберт",
+"s": 5,
+"es": "Acá le dije «no» a mi suegra por primera vez. La masa salió excelente.",
+"ru": "Здесь я впервые сказал тёще «нет». Тесто вышло отличное."
+},
+{
+"a": "Lucrecia Schmidt",
+"ar": "Лукреция Шмидт",
+"s": 4,
+"es": "Palo de amasar de madera, pesado, confiable. Mi hermanito siempre necesita uno cerca.",
+"ru": "Деревянная скалка, тяжёлая, надёжная. Моему братику она всегда нужна поблизости."
+}
+],
+"img": {
+"src": "img/lugares/tf-cocina.webp",
+"n": "el-tren-fantasma",
+"c": "extra-6"
+}
+},
+{
+"id": "tf-cabeza",
+"nombre": "La cabeza del tren",
+"cat": "transporte",
+"x": 1260,
+"y": 320,
+"modelo": "ninguno",
+"linea": "P",
+"num": "11",
+"desc": "Al final de un largo pasillo de metal, una puerta vieja y maciza, y detrás… nada. Ni cabina, ni instrumentos, ni palancas, ni ventanas. Marcos, Alicia, Lucrecia y Robert oyen la verdad que dice Alicia: este tren existe dentro de la conciencia de Marcos. No tiene locomotora porque lo lleva el propio Marcos; mientras sus pensamientos estén enredados, el tren avanza. Cuando deje de tener miedo, se detendrá solo.",
+"nombre_ru": "Голова поезда",
+"desc_ru": "В конце длинного металлического коридора — массивная старая дверь, а за ней… ничего. Ни кабины, ни приборов, ни рычагов, ни окон. Марк, Алисия, Лукреция и Роберт слышат правду, которую произносит Алисия: этот поезд существует внутри сознания Марка. У него нет локомотива, потому что его везёт сам Марк; пока его мысли перепутаны, поезд едет. Как только он перестанет бояться, состав остановится сам.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"16",
+"Поезд без локомотива"
+]
+]
+}
+],
+"res": [
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 5,
+"es": "Detrás de la puerta no había nada. Ni conductor. El conductor era él.",
+"ru": "За дверью ничего не было. Ни машиниста. Машинистом был он."
+}
+]
+},
+{
+"id": "tf-escuela",
+"nombre": "Vagón de la escuela",
+"cat": "transporte",
+"x": 1260,
+"y": 450,
+"modelo": "ninguno",
+"linea": "P",
+"num": "12",
+"desc": "Pupitres de madera, un mapa viejo en la pared, tiza y trapo junto al pizarrón, olor a polvo y a algo olvidado hace mucho. Están los chicos que alguna vez convirtieron la escuela en el lugar más desagradable del mundo, y el Marcos adulto en su viejo pupitre. El aula no se disuelve cuando desaparecen los abusadores, sino cuando Marcos dice: «Ustedes solo eran más ruidosos. Y yo los dejaba ser más ruidosos».",
+"nombre_ru": "Вагон школы",
+"desc_ru": "Деревянные парты, старая карта на стене, мел и тряпка у доски, запах пыли и чего-то давно забытого. Здесь мальчишки, которые когда-то сделали школу самым неприятным местом на свете, и взрослый Марк за своей старой партой. Класс растворяется не тогда, когда обидчики исчезают, а когда Марк говорит: «Вы просто были громче. И я позволял вам быть громче».",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"17",
+"Вагон школы"
+]
+]
+}
+],
+"res": [
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 4,
+"es": "Mismo pupitre, mismos chicos. Esta vez los dejé ser solo ruido.",
+"ru": "Та же парта, те же мальчишки. На этот раз я позволил им быть просто шумом."
+}
+]
+},
+{
+"id": "tf-sinea",
+"nombre": "Estación Sinea",
+"cat": "transporte",
+"x": 1260,
+"y": 600,
+"modelo": "ninguno",
+"linea": "P",
+"num": "∞",
+"desc": "El tren frena tan de golpe que el vagón se sacude. Un cartel viejo a la luz de un farol: «Синея». Entran los amigos: «Bueno, cumpleañero, hora de bajar». Aplausos, abrazos, un beso; y a la mañana, café, tostadas y algo dulce en la bandeja. Están todos, hasta los que hace poco parecían la encarnación de los miedos. Alicia sale al pasillo y manda un mensaje: «Salió todo perfecto. Está seguro de que fue un sueño». La novela no dice quién lo recibió, pero a Marcos le parece que el tren no desapareció. Días después, entre las casas de Sinea, aparece una entrada de metro.",
+"nombre_ru": "Станция Синея",
+"desc_ru": "Поезд останавливается так резко, что вагон качается. Старая табличка в свете фонаря: «Синея». В вагон входят друзья: «Ну что, именинник, пора выходить». Аплодисменты, объятия, поцелуй, а утром — кофе, тосты и что-то сладкое на подносе. Здесь все, даже те, кто ещё недавно казался воплощением страхов. Алисия выходит в коридор и отправляет сообщение: «Всё прошло идеально. Он уверен, что это был сон». Кто его получил, роман не говорит, но Марку кажется, что поезд никуда не исчез. Через несколько дней среди домов Синеи появляется вход в метро.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"18",
+"Это мой поезд!"
+],
+[
+"19",
+"Синеа"
+]
+]
+}
+],
+"res": [
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 5,
+"es": "Cartel viejo, un farol, mis amigos y una torta. Me dicen que fue un sueño. Yo todavía oigo el tren.",
+"ru": "Старая табличка, фонарь, друзья и торт. Мне говорят, что это был сон. А я до сих пор слышу поезд."
+},
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 5,
+"es": "Salió todo perfecto.",
+"ru": "Всё прошло идеально."
+}
+],
+"img": {
+"src": "img/lugares/tf-sinea.webp",
+"n": "el-tren-fantasma",
+"c": "18"
+}
+},
+{
+"id": "ma-biblioteca",
+"nombre": "Biblioteca",
+"cat": "transporte",
+"x": 340,
+"y": 290,
+"modelo": "ninguno",
+"linea": "A",
+"num": "1",
+"desc": "Una mañana, entre las casas de siempre, aparece una entrada de metro: barandas de metal, un cartel con el nombre de la estación. «En Sinea no hay metro. Nunca hubo.» El cartel dice «Biblioteca». Abajo, la luz parece salir de las paredes, y detrás del vidrio de la boletería está la misma bibliotecaria del tren: «¿Boletos?». El plano del metro está mal: las líneas se cruzan donde no deben y todas se juntan en un punto, la Estación Cero. «Hasta que no vayamos ahí, no vamos a entender nada.» «Estoy con vos, amor mío.»",
+"nombre_ru": "Библиотека",
+"desc_ru": "Однажды утром среди привычных домов появляется вход в метро: металлические перила, табличка с названием станции. «В Синее нет метро. Никогда не было». На табличке — «Библиотека». Внизу свет будто исходит от самих стен, а за стеклом кассы сидит та самая библиотекарша из поезда: «Билеты?» Схема метро неправильная: линии пересекаются там, где не должны, и все сходятся в одной точке — на Нулевой станции. «Пока мы не поедем туда, мы ничего не поймём». — «Я с тобой, любовь моя».",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"29",
+"Метро, которого не было"
+]
+]
+}
+],
+"res": [
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 3,
+"es": "En Sinea no hay metro. Hay una estación que se llama «Biblioteca» y una boletera que ya conozco.",
+"ru": "В Синее нет метро. Есть станция «Библиотека» и кассирша, которую я уже знаю."
+}
+]
+},
+{
+"id": "ma-tiempo",
+"nombre": "La estación donde el tiempo se detiene",
+"cat": "transporte",
+"x": 340,
+"y": 390,
+"modelo": "ninguno",
+"linea": "A",
+"num": "2",
+"desc": "Un tren que no llega sino que aparece, pasajeros pálidos que casi no parpadean. La estación es un salón solemne, hecho para contemplar más que para pasar: en nichos, estatuas de un hombre y una mujer que se estiran el uno hacia el otro sin llegar a tocarse («un momento que nunca termina») y bebés de piedra de caras serias. Un hombre de ojos casi transparentes dicta la regla del andén: a la Estación Cero «no se llega»; hay que viajar pero no bajar donde para el tren. «Cuando el tren pare donde nadie baja… entonces bajen.»",
+"nombre_ru": "Станция, где время задерживается",
+"desc_ru": "Поезд не прибывает, а просто возникает; пассажиры бледные и почти не моргают. Станция — торжественный зал, созданный не для движения, а для созерцания: в нишах мужчина и женщина из камня тянутся друг к другу, но их руки так и не соприкасаются («момент, который никогда не закончится»), и каменные младенцы с серьёзными лицами. Мужчина с почти прозрачными глазами называет правило платформы: до Нулевой станции «не доезжают»; нужно ехать, но не выходить там, где остановится поезд. «Когда поезд остановится там, где никто не выходит… тогда и выходите».",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"30",
+"Станция, где время задерживается"
+]
+]
+}
+],
+"res": [
+{
+"a": "El hombre de ojos transparentes",
+"ar": "Человек с прозрачными глазами",
+"s": 4,
+"es": "Bajen donde nadie baja. Si no, van a seguir de largo. Como todos.",
+"ru": "Выходите там, где никто не выходит. Иначе уедете дальше. Как все."
+}
+]
+},
+{
+"id": "ma-grito",
+"nombre": "La estación del grito",
+"cat": "transporte",
+"x": 430,
+"y": 470,
+"modelo": "ninguno",
+"linea": "A",
+"num": "3",
+"desc": "Un lugar donde el sonido no se detiene nunca: gritos de dolor, de furia y voces sin sentido, unos sobre otros. El espacio se deforma y las distancias se estiran. Con los ojos no se encuentra nada; Alicia propone escuchar, no los gritos, sino lo que hay debajo. Marcos encuentra un punto de silencio junto a una columna, y en el escondite está el primer objeto: algo chico y oscuro, con brillo metálico, que hace retroceder los gritos. Recién en la Estación Vacía sabrán qué es: un megáfono.",
+"nombre_ru": "Станция крика",
+"desc_ru": "Место, где звук не прекращается никогда: крики боли, ярости и просто бессмысленные голоса, наложенные друг на друга. Пространство искажается, расстояния растягиваются. Глазами здесь ничего не найти; Алисия предлагает слушать — не крики, а то, что под ними. Марк находит точку тишины у колонны, а в тайнике лежит первый предмет: небольшой тёмный, с металлическим отблеском, рядом с которым крики отступают на шаг. Что это мегафон, они поймут только на Пустой станции.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"31",
+"Станция крика"
+]
+]
+}
+],
+"res": [
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 3,
+"es": "No escuchen los gritos: escuchen lo que hay debajo. Junto a la columna hay silencio.",
+"ru": "Не слушайте крики — слушайте то, что под ними. У колонны тишина."
+}
+]
+},
+{
+"id": "ma-susurro",
+"nombre": "La estación del susurro",
+"cat": "transporte",
+"x": 540,
+"y": 470,
+"modelo": "ninguno",
+"linea": "A",
+"num": "4",
+"desc": "También la llaman la Estación de los Chismes: acá aprietan las palabras, no el ruido. Unas señoras cuchichean tapándose la boca y el susurro se mete directo en la cabeza: «Ella no es lo que parece…», «No sos el único…». Marcos cede y le exige respuestas a Alicia; ella se va, pero vuelve y da vuelta los chismes contra las chismosas, que terminan peleándose entre ellas. En el compartimiento que se abre está el segundo objeto: el libro «La hora salvaje 4. Brujería veneciana».",
+"nombre_ru": "Станция шёпота",
+"desc_ru": "Её ещё называют Станцией сплетен: здесь давят не звуком, а словами. Пожилые женщины шепчутся, прикрывая губы ладонями, и их шёпот попадает прямо в сознание: «Она не такая, как кажется…», «Ты не единственный…». Марк поддаётся и требует от Алисии ответа; она уходит, но возвращается и обращает сплетни против самих сплетниц, и шёпот превращается в ссору. В открывшемся отсеке лежит второй предмет — книга «Дикий час 4. Венецианское колдовство».",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"32",
+"Станция шёпота"
+]
+]
+}
+],
+"res": [
+{
+"a": "Una señora",
+"ar": "Пожилая дама",
+"s": 2,
+"es": "Dicen que ella no es lo que parece… Bueno, yo no dije nada.",
+"ru": "Говорят, она не такая, как кажется… Ну, я ничего не говорила."
+},
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 4,
+"es": "Los chismes se pueden dar vuelta. Terminaron peleándose entre ellas.",
+"ru": "Сплетни можно развернуть. В итоге они поссорились между собой."
+}
+]
+},
+{
+"id": "ma-tormenta",
+"nombre": "La estación de la tormenta",
+"cat": "transporte",
+"x": 650,
+"y": 470,
+"modelo": "ninguno",
+"linea": "A",
+"num": "5",
+"desc": "Bajo tierra llueve, directo desde la bóveda: la estación parece una gruta enorme. La gente no se cubre, ofrece la cara al agua: «Bajo tierra también tiene que caer algo de arriba; si no, la gente empieza a creer que está protegida». En una columna, con tiza: «La tormenta limpia la memoria». En un nicho seco hay un zorro de madera con el sello «ANOMALÍA»; en cuanto lo agarran deja de llover y la multitud exige «¡Devuelvan la tormenta!». Los salva el hechizo antiparaguas de Alicia.",
+"nombre_ru": "Станция бури",
+"desc_ru": "Под землёй идёт дождь — прямо со сводчатого потолка, и станция похожа на огромный грот. Люди не прячутся от воды, а подставляют ей лица: «Под землёй тоже должно что-то падать сверху, иначе люди начинают думать, что они защищены». На колонне мелом выведено: «Буря очищает память». В сухой нише стоит деревянный лис с печатью «АНОМАЛИЯ»; стоит взять его — дождь прекращается, и толпа требует: «Верните бурю! Верните темпесту!» Спасает антипогонное заклинание Алисии.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"33",
+"Станция бури"
+]
+]
+}
+],
+"res": [
+{
+"a": "El hombre del abrigo mojado",
+"ar": "Мужчина в мокром пальто",
+"s": 5,
+"es": "Bajo tierra también tiene que caer algo de arriba. ¡Devuelvan la tormenta!",
+"ru": "Под землёй тоже должно что-то падать сверху. Верните бурю!"
+}
+]
+},
+{
+"id": "ma-perdidos",
+"nombre": "La estación de los desorientados",
+"cat": "transporte",
+"x": 760,
+"y": 470,
+"modelo": "ninguno",
+"linea": "A",
+"num": "6",
+"desc": "Un paraíso subterráneo para los que no tienen apuro: parras, mosaicos, bancos y una siesta eterna. La pista del plano, «La señal siguiente está escondida en lo que se bebe, pero se toma con la mano», es una trampa. Un hombre de sombrero está tirado en el piso porque «la tierra igual sostiene perfecto»; tres que discuten en una mesa sueltan lo importante: «La bebida crea el clima, pero el juego muestra el carácter». El objeto está en una bolsa junto a la pata de la mesa: un mazo de naipes españoles. A Marcos esta estación lo pone más nervioso que todas: «demasiada paz, demasiado descanso».",
+"nombre_ru": "Станция растерянных",
+"desc_ru": "Подземный рай для тех, кто никуда не спешит: виноградные лозы, мозаики, скамейки и бесконечная сиеста. Подсказка карты — «Следующий знак скрыт в том, что пьют, но берут в руки» — оказывается ловушкой. Мужчина в шляпе лежит на полу, потому что «земля и так держит отлично»; трое спорщиков за столиком выдают главное: «Напиток создаёт настроение, а игра показывает характер». Предмет лежит в сумке у ножки стола — колода испанских карт. Марка эта станция нервирует сильнее всех: «слишком много мира, слишком много отдыха».",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"34",
+"Станция растерянных"
+]
+]
+}
+],
+"res": [
+{
+"a": "El hombre del sombrero",
+"ar": "Мужчина в шляпе",
+"s": 5,
+"es": "Estoy en el piso porque la tierra igual sostiene perfecto. Sin apuro.",
+"ru": "Я лежу на полу, потому что земля и так держит отлично. Без спешки."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 2,
+"es": "Demasiada paz. Demasiado descanso. Me puso nervioso.",
+"ru": "Слишком много мира. Слишком много отдыха. Меня это нервировало."
+}
+]
+},
+{
+"id": "ma-mitica",
+"nombre": "La estación mítica",
+"cat": "transporte",
+"x": 870,
+"y": 470,
+"modelo": "ninguno",
+"linea": "A",
+"num": "7",
+"desc": "Una exposición de folclore mundial en el metro y una pelea sobre qué mitología es mejor: vikingos contra sabios indios, espíritus japoneses contra héroes germánicos, un centauro, un dragoncito que estornuda chispas y una esfinge con cara de profesor cansado. El plano da la indicación más inútil de la historia: «Encuentren un buen objeto». Marcos propone resolver todo con un partido de fútbol; ponen al centauro al arco, no hay pelota, y en una columna aparece «No alimentar a los grifos después de medianoche». Al final la pelota aparece sola: la pelota de los dioses.",
+"nombre_ru": "Мифическая станция",
+"desc_ru": "Выставка мирового фольклора в метро — и спор о том, чья мифология лучше: викинги против индийских мудрецов, японские духи против германских героев, кентавр, маленький дракон, чихающий искрами, и сфинкс с лицом усталого преподавателя. Карта даёт самое бесполезное указание в истории: «Найдите хороший предмет». Марк предлагает решить спор футбольным матчем; кентавра ставят на ворота, мяча нет, а на колонне появляется надпись «Не кормить грифонов после полуночи». В итоге мяч появляется сам — мяч богов.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"35",
+"Мифическая станция"
+]
+]
+}
+],
+"res": [
+{
+"a": "La esfinge",
+"ar": "Сфинкс",
+"s": 3,
+"es": "Un partido sin pelota con un centauro al arco. Pregunté un enigma; nadie escuchó.",
+"ru": "Матч без мяча и кентавр на воротах. Я загадала загадку — никто не слушал."
+}
+]
+},
+{
+"id": "ma-graciosa",
+"nombre": "La estación graciosa",
+"cat": "transporte",
+"x": 960,
+"y": 550,
+"modelo": "ninguno",
+"linea": "A",
+"num": "8",
+"desc": "Máscaras de teatro en las paredes, luz acogedora y una risa que no para ni un segundo: se ríen del chiste viejo de Sócrates y de cualquier cosa. El chiste lento de Alicia solo echa más leña al fuego. Entonces ella agarra el megáfono y lee noticias: la ley contra estafadores de un diputado sospechoso de estafa, el departamento de simplificación del departamento de simplificaciones, el Comité de Lucha contra el Absurdo. La risa se rompe y la gente se va indignada: «¡Vinimos a reírnos, no a enterarnos de cómo están las cosas!». Detrás de una máscara está el espejo «RISA SIN MENTIRA». «No es una victoria, Marcos. Es un diagnóstico.»",
+"nombre_ru": "Смешная станция",
+"desc_ru": "Театральные маски на стенах, уютный свет и смех, который не прекращается ни на секунду: смеются над старым анекдотом про Сократа и над чем угодно. Неспешный анекдот Алисии только подливает масла в огонь. Тогда она берёт мегафон и читает новости: про закон о мошенниках от депутата, подозреваемого в мошенничестве, про отдел по упрощению работы отдела упрощений, про Комитет по борьбе с абсурдом. Смех ломается, люди уходят возмущённые: «Мы пришли смеяться, а не узнавать положение дел!» За маской на стене — зеркало «СМЕХ БЕЗ ЛЖИ». «Это не победа, Марк. Это диагноз».",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"36",
+"Смешная станция"
+]
+]
+}
+],
+"res": [
+{
+"a": "Un espectador",
+"ar": "Зритель",
+"s": 1,
+"es": "Vinimos a reírnos, no a enterarnos de cómo están las cosas.",
+"ru": "Мы пришли смеяться, а не узнавать положение дел."
+}
+]
+},
+{
+"id": "ma-vacia",
+"nombre": "La estación vacía",
+"cat": "transporte",
+"x": 960,
+"y": 650,
+"modelo": "ninguno",
+"linea": "A",
+"num": "9",
+"desc": "Andén gris, paredes desnudas y ni una pista: hasta el plano se calla. Acá no hay que buscar nada nuevo sino entender lo viejo: por fin descubren que el primer objeto es un megáfono. Después el plano ordena «Unan tres objetos». Los naipes no sirven ante el zorro; sirve la voz: Alicia lee un fragmento de «La hora salvaje 4», sobre el agua bajo la piedra, la luz de la luna y la máscara que conoce el camino antes que la persona, y el zorro de madera revive. «Señores pasajeros, felicitaciones. Vencieron al vacío.»",
+"nombre_ru": "Пустая станция",
+"desc_ru": "Серая платформа, голые стены и ни одной подсказки — даже карта молчит. Здесь не нужно искать новое, нужно понять старое: первый предмет наконец разгадан — это мегафон. Потом карта требует: «Соедините три предмета». Карты перед лисом не работают; работает голос: Алисия читает отрывок из «Дикого часа 4» — о воде под камнем, лунном свете и маске, которая знает путь раньше человека, — и деревянный лис оживает. «Уважаемые пассажиры, поздравляем. Вы победили пустоту».",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"37",
+"Пустая"
+]
+]
+}
+],
+"res": [
+{
+"a": "El zorro de madera",
+"ar": "Деревянный лис",
+"s": 5,
+"es": "Me despertó una voz que leía. El vacío no aguanta un buen texto.",
+"ru": "Меня разбудил голос, читавший вслух. Пустота не выдерживает хорошего текста."
+}
+]
+},
+{
+"id": "ma-miedo",
+"nombre": "La estación del miedo",
+"cat": "transporte",
+"x": 870,
+"y": 730,
+"modelo": "ninguno",
+"linea": "A",
+"num": "10",
+"desc": "Un andén silencioso y limpio, sin monstruos: solo una pared donde se refleja lo que no debería estar. Marcos se ve desde afuera, enojado, exigente, interrogando: el monstruo de esta estación es él. El espejo muestra a un chico sentado en un cuarto oscuro con miedo a que lo dejen. El plano dice solo «Mirá», y después: «Nombren el miedo, y perderá la cara». Marcos: «Tengo miedo de que me dejen. Y a veces por eso me vuelvo injusto». Alicia: «Tengo miedo de que me humille la desconfianza. Y a veces por eso elijo el frío en vez de hablar». Esta estación no da ningún objeto.",
+"nombre_ru": "Страшная станция",
+"desc_ru": "Тихая, чистая платформа. Никаких чудовищ — только стена, на которой отражается то, чего не должно быть. Марк видит себя со стороны: злого, требующего, допрашивающего; чудовищем на этой станции оказывается он сам. Зеркало показывает мальчика, который сидит в тёмной комнате и боится, что его оставят. Карта подсказывает одно слово — «Смотри», а потом: «Назовите страх — и он потеряет лицо». Марк: «Я боюсь быть оставленным. И иногда из-за этого становлюсь несправедливым». Алисия: «Я боюсь быть униженной недоверием. И иногда из-за этого выбираю холод вместо разговора». Нового предмета станция не даёт.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"38",
+"Страшная станция"
+]
+]
+}
+],
+"res": [
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 4,
+"es": "No había monstruos. Había un espejo. Era peor, y era necesario.",
+"ru": "Чудовищ не было. Было зеркало. Это было хуже — и было нужно."
+}
+]
+},
+{
+"id": "ma-casas",
+"nombre": "La estación de las casas olvidadas",
+"cat": "transporte",
+"x": 750,
+"y": 730,
+"modelo": "ninguno",
+"linea": "A",
+"num": "11",
+"desc": "Una calle subterránea hecha de puertas, balcones y pedazos de fachadas: el archivo de las casas perdidas. Arriba, en Sinea, las casas desaparecían una tras otra sin escombros, porque «las personas que vivían en ellas no terminaron… a sí mismas». Acá están: cocinas con té seco, pasillos con un abrigo colgado, un cuarto de chicos con un tren de juguete y el dibujo de una casa de ventanas amarillas. La radio anuncia: «Casa número siete recibida. Inquilinos ausentes. Memoria inestable». El plano dice «Una casa no desaparece mientras la recuerden», y la regla de salida: hay que recordar al menos una casa. Se llevan una libreta de casas olvidadas.",
+"nombre_ru": "Станция забытых домов",
+"desc_ru": "Подземная улица из дверей, балконов и обломков фасадов — архив утраченного жилья. Наверху, в Синее, дома исчезали один за другим без обломков, потому что «люди, которые в них жили… не закончили себя». Здесь они: кухни с засохшим чаем, коридоры с пальто на вешалке, детская с игрушечной железной дорогой и рисунком дома с жёлтыми окнами. Радио объявляет: «Дом номер семь принят. Жильцы отсутствуют. Память нестабильна». Карта говорит: «Дом не исчезает, пока его помнят», а правило выхода требует помнить хотя бы один дом. Они уносят записную книжку забытых домов.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"20",
+"Исчезающие дома"
+],
+[
+"21",
+"Дом, который ещё стоит"
+],
+[
+"22",
+"Дом, который остался"
+],
+[
+"23",
+"Весёлая соседка и подозрительные люди"
+],
+[
+"24",
+"Первый этаж и человек без света"
+],
+[
+"25",
+"Человек, который ничего не видел"
+],
+[
+"26",
+"То, чего больше нет"
+],
+[
+"27",
+"Карта, которая меняется"
+],
+[
+"39",
+"Станция забытых домов"
+]
+]
+}
+],
+"res": [
+{
+"a": "La radio de la estación",
+"ar": "Станционное радио",
+"s": 3,
+"es": "Casa número siete recibida. Inquilinos ausentes. Memoria inestable.",
+"ru": "Дом номер семь принят. Жильцы отсутствуют. Память нестабильна."
+},
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 5,
+"es": "Me acordé de un balcón con baranda verde. Alcanzó para salir.",
+"ru": "Я вспомнила балкон с зелёными перилами. Этого хватило, чтобы выйти."
+}
+]
+},
+{
+"id": "ma-eleccion",
+"nombre": "La estación de la elección",
+"cat": "transporte",
+"x": 630,
+"y": 730,
+"modelo": "ninguno",
+"linea": "A",
+"num": "12",
+"desc": "Una enorme sala de espera convertida en casa de juego: en el tablero, en lugar de horarios, brillan palabras como «si hubiera», «de otro modo», «después», «nunca». En cada mesa se juegan vidas posibles de Marcos y Alicia. El empleado de la elección reparte su mazo: el camino de la seguridad (olvidar casi todo), el de la fuerza (llegar solo), el de la dignidad (no dejar que nadie se acerque). «Es soledad disfrazada de corona», dice Alicia. Debajo del mazo hay una carta vacía que no promete nada: la carta «Cero». La eligen. En la pared queda escrito: «No todos los caminos están perdidos. Algunos simplemente no fueron elegidos».",
+"nombre_ru": "Станция выбора",
+"desc_ru": "Огромный зал ожидания, превращённый в игорный дом: вместо времени отправления на табло горят слова «если бы», «иначе», «позже», «никогда». На каждом столе разыгрываются возможные жизни Марка и Алисии. Служащий выбора раскладывает их колоду: дорога безопасности (забыть почти всё), дорога силы (дойти одному), дорога достоинства (никого не подпускать). «Это одиночество, переодетое в корону», — говорит Алисия. Под колодой лежит пустая карта, которая ничего не обещает, — карта «Ноль». Её и выбирают. На стене остаётся надпись: «Не все дороги потеряны. Некоторые просто не выбраны».",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"40",
+"Станция выбора"
+]
+]
+}
+],
+"res": [
+{
+"a": "El empleado de la elección",
+"ar": "Служащий выбора",
+"s": 3,
+"es": "Ofrecí seguridad, fuerza y dignidad. Eligieron la carta vacía. Nunca lo entenderé.",
+"ru": "Я предлагал безопасность, силу и достоинство. Они выбрали пустую карту. Никогда не пойму."
+}
+]
+},
+{
+"id": "ma-ruido",
+"nombre": "La estación del último ruido",
+"cat": "transporte",
+"x": 510,
+"y": 730,
+"modelo": "ninguno",
+"linea": "A",
+"num": "13",
+"desc": "Todas las estaciones a la vez: mármol mojado, puertas de casas olvidadas, mesas de naipes, máscaras y sombras de criaturas míticas. Gritos, susurros, lluvia, risas, discusiones y la voz del empleado de la elección suenan juntos y cada uno quiere ser el principal. «El caos es un orden que todavía no tiene nombre», dice el zorro. Al último ruido no se lo vence gritando más fuerte sino hablando claro: Marcos y Alicia, por turno, dicen sus miedos en el megáfono, y después juntos: «No vamos a la Estación Cero por una victoria. Vamos por la verdad». En medio del andén aparece una puerta blanca con un círculo: un cero.",
+"nombre_ru": "Станция последнего шума",
+"desc_ru": "Все станции сразу: мокрый мрамор, двери забытых домов, карточные столы, маски и тени мифических существ. Крики, шёпот, дождь, смех, споры и голос служащего выбора звучат одновременно, и каждый звук хочет стать главным. «Хаос — это порядок, который ещё не назвали», — говорит лис. Последний шум побеждают не громкостью, а ясностью: Марк и Алисия по очереди говорят в мегафон о своих страхах, а потом вместе: «Мы идём к Нулевой станции не за победой. Мы идём за правдой». Посреди платформы появляется белая дверь с кругом-нулём.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"41",
+"Станция последнего шума"
+]
+]
+}
+],
+"res": [
+{
+"a": "El zorro de madera",
+"ar": "Деревянный лис",
+"s": 5,
+"es": "El caos es un orden que todavía no tiene nombre. Ellos se lo pusieron.",
+"ru": "Хаос — это порядок, который ещё не назвали. Они его назвали."
+}
+]
+},
+{
+"id": "ma-cero",
+"nombre": "Estación Cero",
+"cat": "transporte",
+"x": 300,
+"y": 620,
+"modelo": "ninguno",
+"linea": "A",
+"num": "0",
+"desc": "El punto del plano donde se juntan todas las líneas. «A ella no se llega»: hay que «juntarse». Un andén blanco, una luz sin fuente y un silencio en el que se oye la propia respiración. En la pared aparece su pelea, todavía más clara y despiadada que en la Estación del Miedo: «No soy una cosa que haya que controlar, Marcos». Acá se piden perdón. «Cero no es el final», dice el zorro. «Cero es el lugar donde se deja de contar las viejas ofensas.» «Recorrido terminado. La Estación Cero cierra. Memoria devuelta. Ciclo anómalo terminado.» El andén se disuelve como un decorado después de la última escena, y ellos se quedan en Sinea. Juntos.",
+"nombre_ru": "Нулевая станция",
+"desc_ru": "Точка на схеме, в которой сходятся все линии. «До неё не доезжают»: к ней нужно «собраться». Белая платформа, ровный свет без источника и тишина, в которой слышно собственное дыхание. На стене появляется их ссора, ещё яснее и безжалостнее, чем на Страшной станции: «Я не вещь, которую нужно проверять, Марк». Здесь они просят друг у друга прощения. «Ноль — это не конец, — говорит лис. — Ноль — это место, где перестают считать старые обиды». «Маршрут завершён. Нулевая станция закрывается. Память возвращена. Аномальный цикл прекращён». Платформа растворяется мягко, как декорация после последней сцены, а они остаются в Синее. Вместе.",
+"apar": [
+{
+"n": "prizrachnyj-poezd",
+"c": [
+[
+"29",
+"Метро, которого не было"
+],
+[
+"31",
+"Станция крика"
+],
+[
+"42",
+"Нулевая станция"
+]
+]
+}
+],
+"res": [
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 5,
+"es": "Andén blanco, luz sin fuente. Acá dejamos de contar. Después, Sinea.",
+"ru": "Белая платформа, свет без источника. Здесь мы перестали считать. Потом — Синея."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 5,
+"es": "A la Estación Cero no se llega. Me junté.",
+"ru": "До Нулевой станции не доезжают. Я собрался."
+}
+]
+}
+],
 "secreta": [
 {
 "id": "cs-parque",
@@ -24913,6 +26027,482 @@ export const CIUDADES = {
 ]
 };
 export const NOVELAS = {
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
+"l": "ru",
+"y": 2026,
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
+"tr": {}
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
+},
+"predchuvstvie-2-4": {
+"t": "Предчувствие 2.4",
+"es": "El presentimiento 2.4",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.4",
+"p": "img/portadas/predchuvstvie-2-4.webp",
+"tr": {}
+},
+"anomalia": {
+"t": "Anomalía",
+"es": "Anomalía",
+"l": "es",
+"y": null,
+"ru": "Аномалия (исп.)",
+"p": "img/portadas/anomalia.webp",
+"tr": {}
+},
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
+"tr": {}
+},
+"dikij-chas-karnaval-razdora": {
+"t": "Дикий час: Карнавал раздора",
+"es": "La hora salvaje: El carnaval de la discordia",
+"l": "ru",
+"y": 2026,
+"ru": "Дикий час: Карнавал раздора",
+"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
+"tr": {}
+},
+"la-citta-triste": {
+"t": "La città triste",
+"es": "La ciudad triste (it.)",
+"l": "it",
+"y": 2025,
+"ru": "Грустный город (ит.)",
+"p": "img/portadas/la-citta-triste.webp",
+"tr": {
+"ru": "grustnyj-gorod"
+}
+},
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
+"tr": {}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
+"y": 2026,
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"kralovna-vinobrani": {
+"t": "Královna vinobraní",
+"es": "La reina de la Vendimia (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Королева Вендимии (чеш.)",
+"p": "img/portadas/kralovna-vinobrani.webp",
+"tr": {
+"es": "la-reina-de-la-vendimia"
+}
+},
+"la-ciudad-secreta": {
+"t": "La ciudad secreta",
+"es": "La ciudad secreta",
+"l": "es",
+"y": null,
+"ru": "Тайный город (исп.)",
+"p": "img/portadas/la-ciudad-secreta.webp",
+"tr": {}
+},
+"operacion-londres": {
+"t": "El misterio de los Fader: Operación Londres",
+"es": "El misterio de los Fader: Operación Londres",
+"l": "es",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
+"p": "img/portadas/operacion-londres.webp",
+"tr": {}
+},
+"lluvia-de-meteoritos": {
+"t": "Lluvia de meteoritos",
+"es": "Lluvia de meteoritos",
+"l": "es",
+"y": null,
+"ru": "Метеоритный дождь (исп.)",
+"p": "img/portadas/lluvia-de-meteoritos.webp",
+"tr": {
+"ru": "meteoritnyj-dozhd"
+}
+},
+"il-treno-fantasma": {
+"t": "Il treno fantasma",
+"es": "El tren fantasma (it.)",
+"l": "it",
+"y": null,
+"ru": "Призрачный поезд (ит.)",
+"p": "img/portadas/il-treno-fantasma.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
+"l": "ru",
+"y": 2026,
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
+"tr": {}
+},
+"predchuvstvie-2": {
+"t": "Предчувствие 2",
+"es": "El presentimiento 2",
+"l": "ru",
+"y": 2024,
+"ru": "Предчувствие 2",
+"p": "img/portadas/predchuvstvie-2.webp",
+"tr": {}
+},
+"tajna-semi-fader": {
+"t": "Тайна семьи Фадер",
+"es": "El misterio de los Fader (ru.)",
+"l": "ru",
+"y": null,
+"ru": "Тайна семьи Фадер",
+"p": "img/portadas/tajna-semi-fader.webp",
+"tr": {
+"es": "el-misterio-de-los-fader"
+}
+},
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
+"tr": {
+"ru": "tikhaya-lyubov"
+}
+},
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
+"tr": {}
+},
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"tr": {}
+},
+"27-ocak": {
+"t": "27 Ocak",
+"es": "27 de enero",
+"l": "tr",
+"y": 2026,
+"ru": "27 января",
+"p": "img/portadas/27-ocak.webp",
+"tr": {}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"el-tren-fantasma": {
+"t": "El tren fantasma",
+"es": "El tren fantasma",
+"l": "es",
+"y": null,
+"ru": "Призрачный поезд (исп.)",
+"p": "img/portadas/el-tren-fantasma.webp",
+"tr": {
+"it": "il-treno-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
+"tr": {
+"es": "ondas-de-amor"
+}
+},
+"pokhititel-serdec-portret-osnovatelya": {
+"t": "Похититель сердец: Портрет основателя",
+"es": "Ladrón de corazones: El retrato del fundador",
+"l": "ru",
+"y": 2026,
+"ru": "Похититель сердец: Портрет основателя",
+"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
+"tr": {}
+},
+"el-misterio-de-los-fader": {
+"t": "El misterio de los Fader",
+"es": "El misterio de los Fader",
+"l": "es",
+"y": 2025,
+"ru": "Тайна семьи Фадер (исп.)",
+"p": "img/portadas/el-misterio-de-los-fader.webp",
+"tr": {
+"ru": "tajna-semi-fader"
+}
+},
+"dikij-chas-2": {
+"t": "Дикий час: Духи гор",
+"es": "La hora salvaje: Los espíritus de la montaña",
+"l": "ru",
+"y": null,
+"ru": "Дикий час: Духи гор",
+"p": "img/portadas/dikij-chas-2.webp",
+"tr": {}
+},
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"tr": {}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
+"tr": {}
+},
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
+"l": "es",
+"y": 2026,
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
+"tr": {}
+},
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
+"l": "ru",
+"y": 2026,
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
+"tr": {}
+},
+"zvezdnyj-roman": {
+"t": "Звёздный роман",
+"es": "Novela estelar",
+"l": "ru",
+"y": null,
+"ru": "Звёздный роман",
+"p": "img/portadas/zvezdnyj-roman.webp",
+"tr": {}
+},
+"tajna-v-biblioteke": {
+"t": "Тайна в библиотеке",
+"es": "El misterio de la biblioteca",
+"l": "ru",
+"y": 2026,
+"ru": "Тайна в библиотеке",
+"p": "img/portadas/tajna-v-biblioteke.webp",
+"tr": {}
+},
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
+"l": "es",
+"y": null,
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
+"tr": {}
+},
+"la-voix": {
+"t": "La voix",
+"es": "La voz (fr.)",
+"l": "fr",
+"y": null,
+"ru": "Голос (фр.)",
+"p": "img/portadas/la-voix.webp",
+"tr": {
+"ru": "golos"
+}
+},
+"ostrovy-nad-prahou": {
+"t": "Ostrovy nad Prahou",
+"es": "Las islas sobre Praga (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Острова над Прагой (чеш.)",
+"p": "img/portadas/ostrovy-nad-prahou.webp",
+"tr": {}
+},
+"grustnyj-gorod": {
+"t": "Грустный город",
+"es": "La ciudad triste",
+"l": "ru",
+"y": 2026,
+"ru": "Грустный город",
+"p": "img/portadas/grustnyj-gorod.webp",
+"tr": {
+"it": "la-citta-triste"
+}
+},
+"prizrachnyj-poezd": {
+"t": "Призрачный поезд",
+"es": "El tren fantasma (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Призрачный поезд",
+"p": "img/portadas/prizrachnyj-poezd.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"it": "il-treno-fantasma"
+}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
+"l": "ru",
+"y": 2026,
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
+"tr": {}
+},
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
+"l": "ru",
+"y": 2026,
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
+"tr": {
+"it": "ti-amo-in-silenzio"
+}
+},
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
+"tr": {}
+},
+"predchuvstvie-2-3": {
+"t": "Предчувствие 2.3",
+"es": "El presentimiento 2.3",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.3",
+"p": "img/portadas/predchuvstvie-2-3.webp",
+"tr": {}
+},
+"divlji-chas": {
+"t": "Дивљи час",
+"es": "La hora salvaje (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час (серб.)",
+"p": "img/portadas/divlji-chas.webp",
+"tr": {
+"ru": "dikij-chas"
+}
+},
+"venecianskaya-maska": {
+"t": "Венецианская маска",
+"es": "La máscara de Venecia (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Венецианская маска",
+"p": "img/portadas/venecianskaya-maska.webp",
+"tr": {
+"it": "maschera-di-venezia"
+}
+},
+"golos": {
+"t": "Голос",
+"es": "La voz",
+"l": "ru",
+"y": 2026,
+"ru": "Голос",
+"p": "img/portadas/golos.webp",
+"tr": {
+"fr": "la-voix"
+}
+},
+"rezonans-lyubvi": {
+"t": "Резонанс любви",
+"es": "Resonancia del amor",
+"l": "ru",
+"y": null,
+"ru": "Резонанс любви",
+"p": "img/portadas/rezonans-lyubvi.webp",
+"tr": {}
+},
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
+"tr": {}
+},
 "podzemni-tajemstvi": {
 "t": "Podzemní tajemství",
 "es": "El secreto subterráneo (checo)",
@@ -24933,25 +26523,16 @@ export const NOVELAS = {
 "it": "onde-d-amore"
 }
 },
-"golos": {
-"t": "Голос",
-"es": "La voz",
-"l": "ru",
-"y": 2026,
-"ru": "Голос",
-"p": "img/portadas/golos.webp",
+"maschera-di-venezia": {
+"t": "Maschera di Venezia",
+"es": "La máscara de Venecia (it.)",
+"l": "it",
+"y": null,
+"ru": "Венецианская маска (ит.)",
+"p": "img/portadas/maschera-di-venezia.webp",
 "tr": {
-"fr": "la-voix"
+"ru": "venecianskaya-maska"
 }
-},
-"ostrovy-nad-prahou": {
-"t": "Ostrovy nad Prahou",
-"es": "Las islas sobre Praga (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Острова над Прагой (чеш.)",
-"p": "img/portadas/ostrovy-nad-prahou.webp",
-"tr": {}
 },
 "predtucha": {
 "t": "Předtucha",
@@ -24974,215 +26555,6 @@ export const NOVELAS = {
 "pt": "mundo-turquesa",
 "pl": "przeczucie",
 "ru": "predchuvstvie"
-}
-},
-"pokhititel-serdec-portret-osnovatelya": {
-"t": "Похититель сердец: Портрет основателя",
-"es": "Ladrón de corazones: El retrato del fundador",
-"l": "ru",
-"y": 2026,
-"ru": "Похититель сердец: Портрет основателя",
-"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
-"tr": {}
-},
-"tajna-semi-fader": {
-"t": "Тайна семьи Фадер",
-"es": "El misterio de los Fader (ru.)",
-"l": "ru",
-"y": null,
-"ru": "Тайна семьи Фадер",
-"p": "img/portadas/tajna-semi-fader.webp",
-"tr": {
-"es": "el-misterio-de-los-fader"
-}
-},
-"dikij-chas-2": {
-"t": "Дикий час: Духи гор",
-"es": "La hora salvaje: Los espíritus de la montaña",
-"l": "ru",
-"y": null,
-"ru": "Дикий час: Духи гор",
-"p": "img/portadas/dikij-chas-2.webp",
-"tr": {}
-},
-"zvezdnyj-roman": {
-"t": "Звёздный роман",
-"es": "Novela estelar",
-"l": "ru",
-"y": null,
-"ru": "Звёздный роман",
-"p": "img/portadas/zvezdnyj-roman.webp",
-"tr": {}
-},
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
-"tr": {}
-},
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Люблю тебя молча (ит.)",
-"p": "img/portadas/ti-amo-in-silenzio.webp",
-"tr": {
-"ru": "tikhaya-lyubov"
-}
-},
-"predchuvstvie-2-3": {
-"t": "Предчувствие 2.3",
-"es": "El presentimiento 2.3",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.3",
-"p": "img/portadas/predchuvstvie-2-3.webp",
-"tr": {}
-},
-"la-citta-triste": {
-"t": "La città triste",
-"es": "La ciudad triste (it.)",
-"l": "it",
-"y": 2025,
-"ru": "Грустный город (ит.)",
-"p": "img/portadas/la-citta-triste.webp",
-"tr": {
-"ru": "grustnyj-gorod"
-}
-},
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
-},
-"el-tren-fantasma": {
-"t": "El tren fantasma",
-"es": "El tren fantasma",
-"l": "es",
-"y": null,
-"ru": "Призрачный поезд (исп.)",
-"p": "img/portadas/el-tren-fantasma.webp",
-"tr": {
-"it": "il-treno-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"divlji-chas": {
-"t": "Дивљи час",
-"es": "La hora salvaje (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час (серб.)",
-"p": "img/portadas/divlji-chas.webp",
-"tr": {
-"ru": "dikij-chas"
-}
-},
-"la-ciudad-secreta": {
-"t": "La ciudad secreta",
-"es": "La ciudad secreta",
-"l": "es",
-"y": null,
-"ru": "Тайный город (исп.)",
-"p": "img/portadas/la-ciudad-secreta.webp",
-"tr": {}
-},
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
-"tr": {}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви (ит.)",
-"p": "img/portadas/onde-d-amore.webp",
-"tr": {
-"es": "ondas-de-amor"
-}
-},
-"la-reina-de-la-vendimia": {
-"t": "La reina de la Vendimia",
-"es": "La reina de la Vendimia",
-"l": "es",
-"y": 2026,
-"ru": "Королева Вендимии (исп.)",
-"p": "img/portadas/la-reina-de-la-vendimia.webp",
-"tr": {
-"cs": "kralovna-vinobrani"
-}
-},
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
-"l": "ru",
-"y": 2026,
-"ru": "Алмазный дождь",
-"p": "img/portadas/almaznyj-dozhd.webp",
-"tr": {}
-},
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
-"l": "ru",
-"y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
-"tr": {}
-},
-"prizrachnyj-poezd": {
-"t": "Призрачный поезд",
-"es": "El tren fantasma (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Призрачный поезд",
-"p": "img/portadas/prizrachnyj-poezd.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"it": "il-treno-fantasma"
-}
-},
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
-"kralovna-vinobrani": {
-"t": "Královna vinobraní",
-"es": "La reina de la Vendimia (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Королева Вендимии (чеш.)",
-"p": "img/portadas/kralovna-vinobrani.webp",
-"tr": {
-"es": "la-reina-de-la-vendimia"
 }
 },
 "predchuvstvie": {
@@ -25208,51 +26580,6 @@ export const NOVELAS = {
 "pl": "przeczucie"
 }
 },
-"anomalia": {
-"t": "Anomalía",
-"es": "Anomalía",
-"l": "es",
-"y": null,
-"ru": "Аномалия (исп.)",
-"p": "img/portadas/anomalia.webp",
-"tr": {}
-},
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
-"l": "ru",
-"y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
-"tr": {}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
-"y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
-"tr": {}
-},
-"dikij-chas-karnaval-razdora": {
-"t": "Дикий час: Карнавал раздора",
-"es": "La hora salvaje: El carnaval de la discordia",
-"l": "ru",
-"y": 2026,
-"ru": "Дикий час: Карнавал раздора",
-"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
-"tr": {}
-},
-"27-ocak": {
-"t": "27 Ocak",
-"es": "27 de enero",
-"l": "tr",
-"y": 2026,
-"ru": "27 января",
-"p": "img/portadas/27-ocak.webp",
-"tr": {}
-},
 "dikij-chas": {
 "t": "Дикий час",
 "es": "La hora salvaje",
@@ -25264,34 +26591,36 @@ export const NOVELAS = {
 "sr": "divlji-chas"
 }
 },
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
-"tr": {}
-},
-"lluvia-de-meteoritos": {
-"t": "Lluvia de meteoritos",
-"es": "Lluvia de meteoritos",
-"l": "es",
-"y": null,
-"ru": "Метеоритный дождь (исп.)",
-"p": "img/portadas/lluvia-de-meteoritos.webp",
-"tr": {
-"ru": "meteoritnyj-dozhd"
-}
-},
-"predchuvstvie-2-4": {
-"t": "Предчувствие 2.4",
-"es": "El presentimiento 2.4",
+"predchuvstvie-2-2": {
+"t": "Предчувствие 2.2",
+"es": "El presentimiento 2.2",
 "l": "ru",
 "y": 2025,
-"ru": "Предчувствие 2.4",
-"p": "img/portadas/predchuvstvie-2-4.webp",
+"ru": "Предчувствие 2.2",
+"p": "img/portadas/predchuvstvie-2-2.webp",
 "tr": {}
+},
+"la-reina-de-la-vendimia": {
+"t": "La reina de la Vendimia",
+"es": "La reina de la Vendimia",
+"l": "es",
+"y": 2026,
+"ru": "Королева Вендимии (исп.)",
+"p": "img/portadas/la-reina-de-la-vendimia.webp",
+"tr": {
+"cs": "kralovna-vinobrani"
+}
+},
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
+"l": "ru",
+"y": 2026,
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
 },
 "ladro-di-cuori-3": {
 "t": "Ladro di cuori 3",
@@ -25310,221 +26639,6 @@ export const NOVELAS = {
 "ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
 "p": "img/portadas/divlji-chas-malbec.webp",
 "tr": {}
-},
-"maschera-di-venezia": {
-"t": "Maschera di Venezia",
-"es": "La máscara de Venecia (it.)",
-"l": "it",
-"y": null,
-"ru": "Венецианская маска (ит.)",
-"p": "img/portadas/maschera-di-venezia.webp",
-"tr": {
-"ru": "venecianskaya-maska"
-}
-},
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
-"l": "es",
-"y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
-"tr": {}
-},
-"znak": {
-"t": "Знак",
-"es": "El signo",
-"l": "ru",
-"y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
-"tr": {}
-},
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
-"l": "ru",
-"y": 2026,
-"ru": "Карнавал Синеи",
-"p": "img/portadas/karnaval-sinei.webp",
-"tr": {}
-},
-"venecianskaya-maska": {
-"t": "Венецианская маска",
-"es": "La máscara de Venecia (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Венецианская маска",
-"p": "img/portadas/venecianskaya-maska.webp",
-"tr": {
-"it": "maschera-di-venezia"
-}
-},
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
-"l": "ru",
-"y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
-"tr": {
-"en": "the-date"
-}
-},
-"rezonans-lyubvi": {
-"t": "Резонанс любви",
-"es": "Resonancia del amor",
-"l": "ru",
-"y": null,
-"ru": "Резонанс любви",
-"p": "img/portadas/rezonans-lyubvi.webp",
-"tr": {}
-},
-"predchuvstvie-2": {
-"t": "Предчувствие 2",
-"es": "El presentimiento 2",
-"l": "ru",
-"y": 2024,
-"ru": "Предчувствие 2",
-"p": "img/portadas/predchuvstvie-2.webp",
-"tr": {}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
-"l": "es",
-"y": 2026,
-"ru": "Любовь в космосе",
-"p": "img/portadas/amor-en-el-cosmos.webp",
-"tr": {}
-},
-"operacion-londres": {
-"t": "El misterio de los Fader: Operación Londres",
-"es": "El misterio de los Fader: Operación Londres",
-"l": "es",
-"y": 2026,
-"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
-"p": "img/portadas/operacion-londres.webp",
-"tr": {}
-},
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
-"l": "it",
-"y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
-"tr": {}
-},
-"il-treno-fantasma": {
-"t": "Il treno fantasma",
-"es": "El tren fantasma (it.)",
-"l": "it",
-"y": null,
-"ru": "Призрачный поезд (ит.)",
-"p": "img/portadas/il-treno-fantasma.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"tajna-v-biblioteke": {
-"t": "Тайна в библиотеке",
-"es": "El misterio de la biblioteca",
-"l": "ru",
-"y": 2026,
-"ru": "Тайна в библиотеке",
-"p": "img/portadas/tajna-v-biblioteke.webp",
-"tr": {}
-},
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
-"l": "ru",
-"y": 2026,
-"ru": "Тихая любовь",
-"p": "img/portadas/tikhaya-lyubov.webp",
-"tr": {
-"it": "ti-amo-in-silenzio"
-}
-},
-"predchuvstvie-2-2": {
-"t": "Предчувствие 2.2",
-"es": "El presentimiento 2.2",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.2",
-"p": "img/portadas/predchuvstvie-2-2.webp",
-"tr": {}
-},
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
-"l": "es",
-"y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
-"tr": {}
-},
-"el-misterio-de-los-fader": {
-"t": "El misterio de los Fader",
-"es": "El misterio de los Fader",
-"l": "es",
-"y": 2025,
-"ru": "Тайна семьи Фадер (исп.)",
-"p": "img/portadas/el-misterio-de-los-fader.webp",
-"tr": {
-"ru": "tajna-semi-fader"
-}
-},
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви",
-"p": "img/portadas/volny-lyubvi.webp",
-"tr": {}
-},
-"grustnyj-gorod": {
-"t": "Грустный город",
-"es": "La ciudad triste",
-"l": "ru",
-"y": 2026,
-"ru": "Грустный город",
-"p": "img/portadas/grustnyj-gorod.webp",
-"tr": {
-"it": "la-citta-triste"
-}
-},
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
-"tr": {}
-},
-"la-voix": {
-"t": "La voix",
-"es": "La voz (fr.)",
-"l": "fr",
-"y": null,
-"ru": "Голос (фр.)",
-"p": "img/portadas/la-voix.webp",
-"tr": {
-"ru": "golos"
-}
 }
 };
 export const IDIOMAS = {"ru": "ruso", "es": "español", "it": "italiano", "fr": "francés", "en": "inglés", "tr": "turco", "cs": "checo", "sr": "serbio"};

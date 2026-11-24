@@ -90,6 +90,8 @@ CIUDADES = {
         'podzemni-tajemstvi', 'ostrovy-nad-prahou', 'predtucha', 'la-reina-de-la-vendimia', 'kralovna-vinobrani'],
      'rangos': {'la-reina-de-la-vendimia': [(1, 2), (49, 50)], 'kralovna-vinobrani': [(1, 2), (30, 30)]}},
     'atlantida': {'dir': os.path.join('data', 'atlantida'), 'novelas': ['zvezdnyj-roman']},
+    # el esquema del metro: solo la versión rusa de «El tren fantasma»
+    'metro': {'dir': os.path.join('data', 'metro'), 'novelas': ['prizrachnyj-poezd'], 'rangos': {'prizrachnyj-poezd': [(1, 46)]}},
     'secreta': {'dir': os.path.join('data', 'secreta'), 'novelas': ['la-ciudad-secreta'], 'rangos': {'la-ciudad-secreta': [(1, 8)]}},
 }
 
@@ -233,7 +235,7 @@ def procesar(cfg, textos, titulos, seg, usadas):
             img = {'src': r, 'n': sl, 'c': seg_of(sl, cap + '.md')} if r else None
         else:
             img = elegir_ilustracion(L['id'], apar, hits, primera, textos)
-        o = {k: L[k] for k in ('id', 'nombre', 'otros', 'cat', 'x', 'y', 'modelo', 'borde', 'desc') if k in L}
+        o = {k: L[k] for k in ('id', 'nombre', 'otros', 'cat', 'x', 'y', 'modelo', 'borde', 'linea', 'num', 'desc') if k in L}
         if L['id'] in ru:
             o['nombre_ru'] = ru[L['id']]['nombre']; o['desc_ru'] = ru[L['id']]['desc']
         else:

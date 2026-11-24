@@ -538,7 +538,7 @@ function urlCon(hash) {
   const q = new URLSearchParams(); if (CIUDAD !== 'sinea') q.set('ciudad', CIUDAD); if (lang === 'ru') q.set('lang', 'ru');
   const qs = q.toString(); return location.pathname.replace(/(verdegrad|utopia|mendoza|venezia|madrid|petersburgo|belgrado|praga|atlantida|secreta)\.html$/, 'index.html') + (qs ? '?' + qs : '') + hash;
 }
-function irCiudad(c) { const q = new URLSearchParams(); if (c !== 'sinea') q.set('ciudad', c); if (lang === 'ru') q.set('lang', 'ru'); location.href = location.pathname.replace(/(verdegrad|utopia|mendoza|venezia|madrid|petersburgo|belgrado|praga|atlantida|secreta)\.html$/, 'index.html') + (q.toString() ? '?' + q : ''); }
+function irCiudad(c) { if (c === 'metro') { location.href = 'metro.html' + (lang === 'ru' ? '?lang=ru' : ''); return; } const q = new URLSearchParams(); if (c !== 'sinea') q.set('ciudad', c); if (lang === 'ru') q.set('lang', 'ru'); location.href = location.pathname.replace(/(verdegrad|utopia|mendoza|venezia|madrid|petersburgo|belgrado|praga|atlantida|secreta)\.html$/, 'index.html') + (q.toString() ? '?' + q : ''); }
 document.querySelectorAll('#ciudad button[data-c]').forEach(b => { b.classList.toggle('on', b.dataset.c === CIUDAD); b.onclick = () => { if (b.dataset.c !== CIUDAD) irCiudad(b.dataset.c); else hojaMapas(false); }; });
 // móvil: el selector de mapas es una hoja que se abre con el botón «Mapas»
 const hojaMapas = (v) => { document.body.classList.toggle('hoja-mapas', v); $('#mapas-btn').setAttribute('aria-expanded', v ? 'true' : 'false'); };

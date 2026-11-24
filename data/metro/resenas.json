@@ -1,0 +1,325 @@
+{
+ "_info": "Reseñas de los pasajeros del Tren Fantasma y del metro anómalo.",
+ "tf-central": [
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 2,
+   "es": "Doscientos francos por la hora de un tren que no existe. Llegó puntual.",
+   "ru": "Двести франков за время прибытия поезда, которого нет. Пришёл минута в минуту."
+  },
+  {
+   "a": "El jefe de estación",
+   "ar": "Начальник вокзала",
+   "s": 4,
+   "es": "Yo no vendo horarios. Vendo certezas. Las certezas son caras.",
+   "ru": "Я не продаю расписание. Я продаю уверенность. Уверенность стоит дорого."
+  }
+ ],
+ "tf-pasajeros": [
+  {
+   "a": "La suegra",
+   "ar": "Тёща",
+   "s": 4,
+   "es": "Viaje cómodo, compañía tranquila. Busco a mi yerno. Sé exactamente dónde está.",
+   "ru": "Удобная поездка, спокойные попутчики. Ищу зятя. Я точно знаю, где он."
+  }
+ ],
+ "tf-biblioteca": [
+  {
+   "a": "La bibliotecaria",
+   "ar": "Библиотекарша",
+   "s": 3,
+   "es": "…",
+   "ru": "…"
+  },
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 3,
+   "es": "De un libro de cocina saltaron camarones vivos. Uno me trajo una nota. Página 23. Prefiero no hablar de eso.",
+   "ru": "Из кулинарной книги выпрыгнули живые креветки. Одна принесла записку. Страница 23. Предпочитаю об этом не говорить."
+  }
+ ],
+ "tf-piscina": [
+  {
+   "a": "Lucrecia Schmidt",
+   "ar": "Лукреция Шмидт",
+   "s": 5,
+   "es": "El agua estaba perfecta. Tengo tarjeta de pasajera frecuente, así que no me molesten con boletos.",
+   "ru": "Вода была идеальная. У меня карточка постоянного пассажира, так что с билетами ко мне не приставайте."
+  },
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 1,
+   "es": "Toda la vida le escapé al agua. El tren lo sabía.",
+   "ru": "Всю жизнь я убегал от воды. Поезд это знал."
+  }
+ ],
+ "tf-mujeres": [
+  {
+   "a": "La adivina",
+   "ar": "Гадалка",
+   "s": 4,
+   "es": "Veo mucho, sobre todo lo malo. A este muchacho le vi todo. Lloró igual.",
+   "ru": "Вижу многое, особенно плохое. Этому парню я увидела всё. Он всё равно заплакал."
+  }
+ ],
+ "tf-discoteca": [
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 5,
+   "es": "Primero me perdió acá. Después bailamos acá. Recomiendo la segunda opción.",
+   "ru": "Сначала он потерял меня здесь. Потом мы здесь танцевали. Рекомендую второй вариант."
+  },
+  {
+   "a": "Robert",
+   "ar": "Роберт",
+   "s": 2,
+   "es": "Me obligaron a bailar. Si no, me convertían en flaco. No sé qué era peor.",
+   "ru": "Меня заставили танцевать. Иначе превратили бы в худого. Не знаю, что хуже."
+  }
+ ],
+ "tf-burocracia": [
+  {
+   "a": "El hombre de los calendarios",
+   "ar": "Человек с календарями",
+   "s": 3,
+   "es": "Calendarios del año pasado, con descuento. Acá el tiempo no avanza, así que siguen sirviendo.",
+   "ru": "Календари прошлого года, со скидкой. Здесь время не движется, так что они всё ещё годятся."
+  }
+ ],
+ "tf-confesionario": [
+  {
+   "a": "El encargado",
+   "ar": "Заведующий",
+   "s": 5,
+   "es": "Diagnóstico oficial: tonto. Sello: dejar pasar. Siguiente pecador, y sin azúcar de más.",
+   "ru": "Официальный диагноз: глупец. Печать: пропустить. Следующий грешник — и без лишнего сахара."
+  }
+ ],
+ "tf-purgatorio": [
+  {
+   "a": "El fiscal",
+   "ar": "Прокурор",
+   "s": 3,
+   "es": "Leo la lista en voz alta porque de acá nadie sale. Solo los trasladan.",
+   "ru": "Я читаю список вслух, потому что отсюда никто не выходит. Только переводят."
+  }
+ ],
+ "tf-juicio": [
+  {
+   "a": "El juez",
+   "ar": "Судья",
+   "s": 2,
+   "es": "Causa 777. El público se rió en los momentos correctos. El acusado me dijo «no juzgues». Me fui.",
+   "ru": "Дело №777. Публика смеялась в нужных местах. Обвиняемый сказал мне «не суди». Я ушёл."
+  }
+ ],
+ "tf-cocina": [
+  {
+   "a": "Robert",
+   "ar": "Роберт",
+   "s": 5,
+   "es": "Acá le dije «no» a mi suegra por primera vez. La masa salió excelente.",
+   "ru": "Здесь я впервые сказал тёще «нет». Тесто вышло отличное."
+  },
+  {
+   "a": "Lucrecia Schmidt",
+   "ar": "Лукреция Шмидт",
+   "s": 4,
+   "es": "Palo de amasar de madera, pesado, confiable. Mi hermanito siempre necesita uno cerca.",
+   "ru": "Деревянная скалка, тяжёлая, надёжная. Моему братику она всегда нужна поблизости."
+  }
+ ],
+ "tf-cabeza": [
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 5,
+   "es": "Detrás de la puerta no había nada. Ni conductor. El conductor era él.",
+   "ru": "За дверью ничего не было. Ни машиниста. Машинистом был он."
+  }
+ ],
+ "tf-escuela": [
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 4,
+   "es": "Mismo pupitre, mismos chicos. Esta vez los dejé ser solo ruido.",
+   "ru": "Та же парта, те же мальчишки. На этот раз я позволил им быть просто шумом."
+  }
+ ],
+ "tf-sinea": [
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 5,
+   "es": "Cartel viejo, un farol, mis amigos y una torta. Me dicen que fue un sueño. Yo todavía oigo el tren.",
+   "ru": "Старая табличка, фонарь, друзья и торт. Мне говорят, что это был сон. А я до сих пор слышу поезд."
+  },
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 5,
+   "es": "Salió todo perfecto.",
+   "ru": "Всё прошло идеально."
+  }
+ ],
+ "ma-biblioteca": [
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 3,
+   "es": "En Sinea no hay metro. Hay una estación que se llama «Biblioteca» y una boletera que ya conozco.",
+   "ru": "В Синее нет метро. Есть станция «Библиотека» и кассирша, которую я уже знаю."
+  }
+ ],
+ "ma-tiempo": [
+  {
+   "a": "El hombre de ojos transparentes",
+   "ar": "Человек с прозрачными глазами",
+   "s": 4,
+   "es": "Bajen donde nadie baja. Si no, van a seguir de largo. Como todos.",
+   "ru": "Выходите там, где никто не выходит. Иначе уедете дальше. Как все."
+  }
+ ],
+ "ma-grito": [
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 3,
+   "es": "No escuchen los gritos: escuchen lo que hay debajo. Junto a la columna hay silencio.",
+   "ru": "Не слушайте крики — слушайте то, что под ними. У колонны тишина."
+  }
+ ],
+ "ma-susurro": [
+  {
+   "a": "Una señora",
+   "ar": "Пожилая дама",
+   "s": 2,
+   "es": "Dicen que ella no es lo que parece… Bueno, yo no dije nada.",
+   "ru": "Говорят, она не такая, как кажется… Ну, я ничего не говорила."
+  },
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 4,
+   "es": "Los chismes se pueden dar vuelta. Terminaron peleándose entre ellas.",
+   "ru": "Сплетни можно развернуть. В итоге они поссорились между собой."
+  }
+ ],
+ "ma-tormenta": [
+  {
+   "a": "El hombre del abrigo mojado",
+   "ar": "Мужчина в мокром пальто",
+   "s": 5,
+   "es": "Bajo tierra también tiene que caer algo de arriba. ¡Devuelvan la tormenta!",
+   "ru": "Под землёй тоже должно что-то падать сверху. Верните бурю!"
+  }
+ ],
+ "ma-perdidos": [
+  {
+   "a": "El hombre del sombrero",
+   "ar": "Мужчина в шляпе",
+   "s": 5,
+   "es": "Estoy en el piso porque la tierra igual sostiene perfecto. Sin apuro.",
+   "ru": "Я лежу на полу, потому что земля и так держит отлично. Без спешки."
+  },
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 2,
+   "es": "Demasiada paz. Demasiado descanso. Me puso nervioso.",
+   "ru": "Слишком много мира. Слишком много отдыха. Меня это нервировало."
+  }
+ ],
+ "ma-mitica": [
+  {
+   "a": "La esfinge",
+   "ar": "Сфинкс",
+   "s": 3,
+   "es": "Un partido sin pelota con un centauro al arco. Pregunté un enigma; nadie escuchó.",
+   "ru": "Матч без мяча и кентавр на воротах. Я загадала загадку — никто не слушал."
+  }
+ ],
+ "ma-graciosa": [
+  {
+   "a": "Un espectador",
+   "ar": "Зритель",
+   "s": 1,
+   "es": "Vinimos a reírnos, no a enterarnos de cómo están las cosas.",
+   "ru": "Мы пришли смеяться, а не узнавать положение дел."
+  }
+ ],
+ "ma-vacia": [
+  {
+   "a": "El zorro de madera",
+   "ar": "Деревянный лис",
+   "s": 5,
+   "es": "Me despertó una voz que leía. El vacío no aguanta un buen texto.",
+   "ru": "Меня разбудил голос, читавший вслух. Пустота не выдерживает хорошего текста."
+  }
+ ],
+ "ma-miedo": [
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 4,
+   "es": "No había monstruos. Había un espejo. Era peor, y era necesario.",
+   "ru": "Чудовищ не было. Было зеркало. Это было хуже — и было нужно."
+  }
+ ],
+ "ma-casas": [
+  {
+   "a": "La radio de la estación",
+   "ar": "Станционное радио",
+   "s": 3,
+   "es": "Casa número siete recibida. Inquilinos ausentes. Memoria inestable.",
+   "ru": "Дом номер семь принят. Жильцы отсутствуют. Память нестабильна."
+  },
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 5,
+   "es": "Me acordé de un balcón con baranda verde. Alcanzó para salir.",
+   "ru": "Я вспомнила балкон с зелёными перилами. Этого хватило, чтобы выйти."
+  }
+ ],
+ "ma-eleccion": [
+  {
+   "a": "El empleado de la elección",
+   "ar": "Служащий выбора",
+   "s": 3,
+   "es": "Ofrecí seguridad, fuerza y dignidad. Eligieron la carta vacía. Nunca lo entenderé.",
+   "ru": "Я предлагал безопасность, силу и достоинство. Они выбрали пустую карту. Никогда не пойму."
+  }
+ ],
+ "ma-ruido": [
+  {
+   "a": "El zorro de madera",
+   "ar": "Деревянный лис",
+   "s": 5,
+   "es": "El caos es un orden que todavía no tiene nombre. Ellos se lo pusieron.",
+   "ru": "Хаос — это порядок, который ещё не назвали. Они его назвали."
+  }
+ ],
+ "ma-cero": [
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 5,
+   "es": "Andén blanco, luz sin fuente. Acá dejamos de contar. Después, Sinea.",
+   "ru": "Белая платформа, свет без источника. Здесь мы перестали считать. Потом — Синея."
+  },
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 5,
+   "es": "A la Estación Cero no se llega. Me junté.",
+   "ru": "До Нулевой станции не доезжают. Я собрался."
+  }
+ ]
+}

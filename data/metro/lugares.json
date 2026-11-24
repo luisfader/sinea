@@ -1,0 +1,640 @@
+{
+ "_info": "Esquema del Tren Fantasma y del metro anómalo de «Призрачный поезд». x, y: coordenadas del esquema (no son metros).",
+ "lugares": [
+  {
+   "id": "tf-central",
+   "nombre": "Estación Central",
+   "cat": "transporte",
+   "x": 120,
+   "y": 150,
+   "modelo": "ninguno",
+   "linea": "P",
+   "num": "0",
+   "desc": "Un andén en la niebla, tarde, «demasiado tarde para los pasajeros comunes». Marcos busca a Alicia, que desapareció en el tren que no figura en ningún horario. El jefe de estación, por doscientos francos, le dice la hora de llegada de un tren que no existe; a la vuelta de la esquina está el Barrio de los Locos. En el andén espera también un gordo: Marcos todavía no sabe que lo va a volver a encontrar. Doscientos francos es el primer pago de tres: el tren siempre cobra lo mismo, porque el miedo no regatea.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     2,
+     3,
+     4
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "ilustracion": [
+    "el-tren-fantasma",
+    "03-1.jpg"
+   ]
+  },
+  {
+   "id": "tf-pasajeros",
+   "nombre": "Vagón de pasajeros",
+   "cat": "transporte",
+   "x": 230,
+   "y": 150,
+   "modelo": "ninguno",
+   "linea": "P",
+   "num": "1",
+   "desc": "Asientos gastados, pasamanos de bronce, lámparas pálidas, y pasajeros demasiado tranquilos, como si lo esperaran desde hace mucho. Una mujer de unos cincuenta y cinco años «necesita urgentemente un yerno»; otra, de ojos vacíos, tiene un yerno que «sabe mucho de mujeres». Marcos no tiene boleto. El controlador le cobra doscientos francos y le explica lo esencial: este tren es solo para pecadores. Las dos mujeres hablan, al parecer, del gordo de la estación: una es su suegra, y subió antes que Marcos.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     6,
+     7
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "ilustracion": [
+    "el-tren-fantasma",
+    "06-1.jpg"
+   ]
+  },
+  {
+   "id": "tf-biblioteca",
+   "nombre": "Vagón biblioteca",
+   "cat": "transporte",
+   "x": 340,
+   "y": 150,
+   "modelo": "ninguno",
+   "linea": "P",
+   "num": "2",
+   "desc": "Marcos lo elige porque las discotecas siempre le dieron miedo. Estantes hasta el techo, un olor que la bibliotecaria llama «a rata muerta», libros de los que caen arañas y cucarachas, «La hora salvaje» de Robert Fader y «10 maneras de preparar paella», del que saltan camarones vivos: uno trae una nota. La bibliotecaria mira exactamente dos segundos sin parpadear. La respuesta está en la página 23 de «El presentimiento»: veintitrés años tenía Marcos cuando conoció a Alicia. Es la estación de combinación: la misma bibliotecaria aparecerá en la boletería de la estación «Biblioteca» del metro anómalo.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     8
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "ilustracion": [
+    "el-tren-fantasma",
+    "09-1.jpg"
+   ]
+  },
+  {
+   "id": "tf-piscina",
+   "nombre": "Vagón piscina",
+   "cat": "transporte",
+   "x": 450,
+   "y": 150,
+   "modelo": "ninguno",
+   "linea": "P",
+   "num": "3",
+   "desc": "Piso mojado, aire caliente y pesado, una gran pileta de agua oscura y el miedo del que Marcos huyó toda su vida. Ahí nada como un pez Lucrecia Schmidt, con chaqueta de cocinera y delantal, y hay una sirena de mirada fría y cansada con un sobre. Lucrecia nunca fue prisionera del tren: tiene tarjeta de pasajera frecuente. Está acá porque su hermano se metió en problemas.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     9,
+     10
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "ilustracion": [
+    "el-tren-fantasma",
+    "10-1.jpg"
+   ]
+  },
+  {
+   "id": "tf-mujeres",
+   "nombre": "Vagón de las mujeres",
+   "cat": "transporte",
+   "x": 560,
+   "y": 150,
+   "modelo": "ninguno",
+   "linea": "P",
+   "num": "4",
+   "desc": "Ruido, voces, miradas: demasiado de todo al mismo tiempo. Una adivina que ve «mucho, sobre todo lo malo», una abogada dispuesta a casar a Marcos y después divorciarlo, y una mujer tan hermosa que Marcos se puso a llorar. La más hermosa nunca habla, y después Marcos no podrá recordar su cara: era la cara que toda la vida tuvo miedo de mirar de frente, la de Alicia feliz sin él.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     11
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "ilustracion": [
+    "el-tren-fantasma",
+    "20-4.jpg"
+   ]
+  },
+  {
+   "id": "tf-discoteca",
+   "nombre": "Vagón discoteca",
+   "cat": "transporte",
+   "x": 670,
+   "y": 150,
+   "modelo": "ninguno",
+   "linea": "P",
+   "num": "5",
+   "desc": "Música con corazón propio, luces que parpadean, una pista de baile. Marcos entra dos veces: la primera para perder a Alicia, la segunda para bailar con ella. Ahí está el gordo de la estación, al que «obligan a bailar» si no quiere que ella lo convierta en flaco, y unos boy scouts zombis cantando «Viajar en tren es lo mejor». No vinieron por Alicia, sino por Marcos: en una foto vieja que después mostrará Lucrecia, el pequeño Marcos aparece entre ellos con el mismo uniforme.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     12,
+     13,
+     19
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "ilustracion": [
+    "el-tren-fantasma",
+    "11-1.jpg"
+   ]
+  },
+  {
+   "id": "tf-burocracia",
+   "nombre": "Vagón de la burocracia",
+   "cat": "transporte",
+   "x": 780,
+   "y": 150,
+   "modelo": "ninguno",
+   "linea": "P",
+   "num": "6",
+   "desc": "Mesas, papeles, números. Una fila que se mueve pero no avanza, y en el camino un hombre con una pila enorme de calendarios del año pasado, «con descuento». Un controlador al que Marcos le dice, imprudente, «usted no está en forma». Una voz que llama todo el tiempo: «¡El siguiente!». Nadie oyó nunca que dijeran un número; dicen que el primero de la fila sigue siendo un hombre que vino a buscar un certificado de que no tiene miedo.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     13
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "tf-confesionario",
+   "nombre": "Vagón confesionario",
+   "cat": "transporte",
+   "x": 890,
+   "y": 150,
+   "modelo": "ninguno",
+   "linea": "P",
+   "num": "7",
+   "desc": "Silencio: hasta el sonido está prohibido. Olor a iglesia vieja y a polvo dulce; una mesa maciza, libros gruesos, sellos. El encargado llama «pecados muy graves» al azúcar de más en el té y a cenar después de las diez, y le pone a Marcos un diagnóstico oficial: «Realmente sos un tonto». Su sello va sobre un documento de una sola línea: «Dejar pasar». El pecado no decide nada; decide solo haberlo dicho en voz alta. Es el tercer pago de doscientos francos.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     14
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "ilustracion": [
+    "el-tren-fantasma",
+    "17-1.jpg"
+   ]
+  },
+  {
+   "id": "tf-purgatorio",
+   "nombre": "Vagón del purgatorio",
+   "cat": "transporte",
+   "x": 1000,
+   "y": 150,
+   "modelo": "ninguno",
+   "linea": "P",
+   "num": "8",
+   "desc": "Nada. Ni música, ni olores, ni adornos: paredes grises como un acta sin terminar, ventanas turbias. La gente se presenta con su pecado en lugar del nombre: dos hombres descubren que «Svetlana, la del lunar en el cuello» era la mujer de uno y la amante del otro; una mujer confiesa «una corrupción muy chiquita»; un fiscal de abrigo gris largo lee la lista. Es el único vagón sin cartel de salida: de acá no se sale, solo te trasladan.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     15
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "tf-juicio",
+   "nombre": "Vagón del Juicio Final",
+   "cat": "transporte",
+   "x": 1110,
+   "y": 150,
+   "modelo": "ninguno",
+   "linea": "P",
+   "num": "9",
+   "desc": "Una sala enorme como un teatro: estrado alto, arañas de cristal, un público que se ríe cuando le hacen señas, un martillo que crece con cada golpe. El juez llora y se ríe a la vez. Causa número 777: Alicia Gómez Fernández, por «inmigración ilegal al espacio personal de los miedos ajenos». Es el único del tren que no le teme a Marcos, y desaparece solo cuando Marcos le dice: «Sos juez solo mientras nadie se anime a decirte: no juzgues».",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     16
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "ilustracion": [
+    "el-tren-fantasma",
+    "13-1.jpg"
+   ]
+  },
+  {
+   "id": "tf-cocina",
+   "nombre": "Compartimiento de la cocina",
+   "cat": "transporte",
+   "x": 1210,
+   "y": 215,
+   "modelo": "ninguno",
+   "linea": "P",
+   "num": "10",
+   "desc": "Una puerta de servicio desde la sala del juicio: hornallas, harina y un pesado palo de amasar de madera. Ahí está el gordo, Robert, condenado «a trabajos en la cocina», con Lucrecia armada con el palo de amasar y la suegra de Robert, de postura impecable y mirada fría. Acá Robert le dice «no» a su suegra por primera vez, y se descubre que Lucrecia es su hermana, que «por casualidad» siempre aparece cuando él se mete en líos.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     17
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "ilustracion": [
+    "el-tren-fantasma",
+    "20-1.jpg"
+   ]
+  },
+  {
+   "id": "tf-cabeza",
+   "nombre": "La cabeza del tren",
+   "cat": "transporte",
+   "x": 1260,
+   "y": 320,
+   "modelo": "ninguno",
+   "linea": "P",
+   "num": "11",
+   "desc": "Al final de un largo pasillo de metal, una puerta vieja y maciza, y detrás… nada. Ni cabina, ni instrumentos, ni palancas, ni ventanas. Marcos, Alicia, Lucrecia y Robert oyen la verdad que dice Alicia: este tren existe dentro de la conciencia de Marcos. No tiene locomotora porque lo lleva el propio Marcos; mientras sus pensamientos estén enredados, el tren avanza. Cuando deje de tener miedo, se detendrá solo.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     18
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "tf-escuela",
+   "nombre": "Vagón de la escuela",
+   "cat": "transporte",
+   "x": 1260,
+   "y": 450,
+   "modelo": "ninguno",
+   "linea": "P",
+   "num": "12",
+   "desc": "Pupitres de madera, un mapa viejo en la pared, tiza y trapo junto al pizarrón, olor a polvo y a algo olvidado hace mucho. Están los chicos que alguna vez convirtieron la escuela en el lugar más desagradable del mundo, y el Marcos adulto en su viejo pupitre. El aula no se disuelve cuando desaparecen los abusadores, sino cuando Marcos dice: «Ustedes solo eran más ruidosos. Y yo los dejaba ser más ruidosos».",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     19
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "tf-sinea",
+   "nombre": "Estación Sinea",
+   "cat": "transporte",
+   "x": 1260,
+   "y": 600,
+   "modelo": "ninguno",
+   "linea": "P",
+   "num": "∞",
+   "desc": "El tren frena tan de golpe que el vagón se sacude. Un cartel viejo a la luz de un farol: «Синея». Entran los amigos: «Bueno, cumpleañero, hora de bajar». Aplausos, abrazos, un beso; y a la mañana, café, tostadas y algo dulce en la bandeja. Están todos, hasta los que hace poco parecían la encarnación de los miedos. Alicia sale al pasillo y manda un mensaje: «Salió todo perfecto. Está seguro de que fue un sueño». La novela no dice quién lo recibió, pero a Marcos le parece que el tren no desapareció. Días después, entre las casas de Sinea, aparece una entrada de metro.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     20,
+     21
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "ilustracion": [
+    "el-tren-fantasma",
+    "19-1.jpg"
+   ]
+  },
+  {
+   "id": "ma-biblioteca",
+   "nombre": "Biblioteca",
+   "cat": "transporte",
+   "x": 340,
+   "y": 290,
+   "modelo": "ninguno",
+   "linea": "A",
+   "num": "1",
+   "desc": "Una mañana, entre las casas de siempre, aparece una entrada de metro: barandas de metal, un cartel con el nombre de la estación. «En Sinea no hay metro. Nunca hubo.» El cartel dice «Biblioteca». Abajo, la luz parece salir de las paredes, y detrás del vidrio de la boletería está la misma bibliotecaria del tren: «¿Boletos?». El plano del metro está mal: las líneas se cruzan donde no deben y todas se juntan en un punto, la Estación Cero. «Hasta que no vayamos ahí, no vamos a entender nada.» «Estoy con vos, amor mío.»",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     32
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "ma-tiempo",
+   "nombre": "La estación donde el tiempo se detiene",
+   "cat": "transporte",
+   "x": 340,
+   "y": 390,
+   "modelo": "ninguno",
+   "linea": "A",
+   "num": "2",
+   "desc": "Un tren que no llega sino que aparece, pasajeros pálidos que casi no parpadean. La estación es un salón solemne, hecho para contemplar más que para pasar: en nichos, estatuas de un hombre y una mujer que se estiran el uno hacia el otro sin llegar a tocarse («un momento que nunca termina») y bebés de piedra de caras serias. Un hombre de ojos casi transparentes dicta la regla del andén: a la Estación Cero «no se llega»; hay que viajar pero no bajar donde para el tren. «Cuando el tren pare donde nadie baja… entonces bajen.»",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     33
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "ma-grito",
+   "nombre": "La estación del grito",
+   "cat": "transporte",
+   "x": 430,
+   "y": 470,
+   "modelo": "ninguno",
+   "linea": "A",
+   "num": "3",
+   "desc": "Un lugar donde el sonido no se detiene nunca: gritos de dolor, de furia y voces sin sentido, unos sobre otros. El espacio se deforma y las distancias se estiran. Con los ojos no se encuentra nada; Alicia propone escuchar, no los gritos, sino lo que hay debajo. Marcos encuentra un punto de silencio junto a una columna, y en el escondite está el primer objeto: algo chico y oscuro, con brillo metálico, que hace retroceder los gritos. Recién en la Estación Vacía sabrán qué es: un megáfono.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     34
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "ma-susurro",
+   "nombre": "La estación del susurro",
+   "cat": "transporte",
+   "x": 540,
+   "y": 470,
+   "modelo": "ninguno",
+   "linea": "A",
+   "num": "4",
+   "desc": "También la llaman la Estación de los Chismes: acá aprietan las palabras, no el ruido. Unas señoras cuchichean tapándose la boca y el susurro se mete directo en la cabeza: «Ella no es lo que parece…», «No sos el único…». Marcos cede y le exige respuestas a Alicia; ella se va, pero vuelve y da vuelta los chismes contra las chismosas, que terminan peleándose entre ellas. En el compartimiento que se abre está el segundo objeto: el libro «La hora salvaje 4. Brujería veneciana».",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     35
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "ma-tormenta",
+   "nombre": "La estación de la tormenta",
+   "cat": "transporte",
+   "x": 650,
+   "y": 470,
+   "modelo": "ninguno",
+   "linea": "A",
+   "num": "5",
+   "desc": "Bajo tierra llueve, directo desde la bóveda: la estación parece una gruta enorme. La gente no se cubre, ofrece la cara al agua: «Bajo tierra también tiene que caer algo de arriba; si no, la gente empieza a creer que está protegida». En una columna, con tiza: «La tormenta limpia la memoria». En un nicho seco hay un zorro de madera con el sello «ANOMALÍA»; en cuanto lo agarran deja de llover y la multitud exige «¡Devuelvan la tormenta!». Los salva el hechizo antiparaguas de Alicia.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     36
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "ma-perdidos",
+   "nombre": "La estación de los desorientados",
+   "cat": "transporte",
+   "x": 760,
+   "y": 470,
+   "modelo": "ninguno",
+   "linea": "A",
+   "num": "6",
+   "desc": "Un paraíso subterráneo para los que no tienen apuro: parras, mosaicos, bancos y una siesta eterna. La pista del plano, «La señal siguiente está escondida en lo que se bebe, pero se toma con la mano», es una trampa. Un hombre de sombrero está tirado en el piso porque «la tierra igual sostiene perfecto»; tres que discuten en una mesa sueltan lo importante: «La bebida crea el clima, pero el juego muestra el carácter». El objeto está en una bolsa junto a la pata de la mesa: un mazo de naipes españoles. A Marcos esta estación lo pone más nervioso que todas: «demasiada paz, demasiado descanso».",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     37
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "ma-mitica",
+   "nombre": "La estación mítica",
+   "cat": "transporte",
+   "x": 870,
+   "y": 470,
+   "modelo": "ninguno",
+   "linea": "A",
+   "num": "7",
+   "desc": "Una exposición de folclore mundial en el metro y una pelea sobre qué mitología es mejor: vikingos contra sabios indios, espíritus japoneses contra héroes germánicos, un centauro, un dragoncito que estornuda chispas y una esfinge con cara de profesor cansado. El plano da la indicación más inútil de la historia: «Encuentren un buen objeto». Marcos propone resolver todo con un partido de fútbol; ponen al centauro al arco, no hay pelota, y en una columna aparece «No alimentar a los grifos después de medianoche». Al final la pelota aparece sola: la pelota de los dioses.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     38
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "ma-graciosa",
+   "nombre": "La estación graciosa",
+   "cat": "transporte",
+   "x": 960,
+   "y": 550,
+   "modelo": "ninguno",
+   "linea": "A",
+   "num": "8",
+   "desc": "Máscaras de teatro en las paredes, luz acogedora y una risa que no para ni un segundo: se ríen del chiste viejo de Sócrates y de cualquier cosa. El chiste lento de Alicia solo echa más leña al fuego. Entonces ella agarra el megáfono y lee noticias: la ley contra estafadores de un diputado sospechoso de estafa, el departamento de simplificación del departamento de simplificaciones, el Comité de Lucha contra el Absurdo. La risa se rompe y la gente se va indignada: «¡Vinimos a reírnos, no a enterarnos de cómo están las cosas!». Detrás de una máscara está el espejo «RISA SIN MENTIRA». «No es una victoria, Marcos. Es un diagnóstico.»",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     39
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "ma-vacia",
+   "nombre": "La estación vacía",
+   "cat": "transporte",
+   "x": 960,
+   "y": 650,
+   "modelo": "ninguno",
+   "linea": "A",
+   "num": "9",
+   "desc": "Andén gris, paredes desnudas y ni una pista: hasta el plano se calla. Acá no hay que buscar nada nuevo sino entender lo viejo: por fin descubren que el primer objeto es un megáfono. Después el plano ordena «Unan tres objetos». Los naipes no sirven ante el zorro; sirve la voz: Alicia lee un fragmento de «La hora salvaje 4», sobre el agua bajo la piedra, la luz de la luna y la máscara que conoce el camino antes que la persona, y el zorro de madera revive. «Señores pasajeros, felicitaciones. Vencieron al vacío.»",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     40
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "ma-miedo",
+   "nombre": "La estación del miedo",
+   "cat": "transporte",
+   "x": 870,
+   "y": 730,
+   "modelo": "ninguno",
+   "linea": "A",
+   "num": "10",
+   "desc": "Un andén silencioso y limpio, sin monstruos: solo una pared donde se refleja lo que no debería estar. Marcos se ve desde afuera, enojado, exigente, interrogando: el monstruo de esta estación es él. El espejo muestra a un chico sentado en un cuarto oscuro con miedo a que lo dejen. El plano dice solo «Mirá», y después: «Nombren el miedo, y perderá la cara». Marcos: «Tengo miedo de que me dejen. Y a veces por eso me vuelvo injusto». Alicia: «Tengo miedo de que me humille la desconfianza. Y a veces por eso elijo el frío en vez de hablar». Esta estación no da ningún objeto.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     42
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "ma-casas",
+   "nombre": "La estación de las casas olvidadas",
+   "cat": "transporte",
+   "x": 750,
+   "y": 730,
+   "modelo": "ninguno",
+   "linea": "A",
+   "num": "11",
+   "desc": "Una calle subterránea hecha de puertas, balcones y pedazos de fachadas: el archivo de las casas perdidas. Arriba, en Sinea, las casas desaparecían una tras otra sin escombros, porque «las personas que vivían en ellas no terminaron… a sí mismas». Acá están: cocinas con té seco, pasillos con un abrigo colgado, un cuarto de chicos con un tren de juguete y el dibujo de una casa de ventanas amarillas. La radio anuncia: «Casa número siete recibida. Inquilinos ausentes. Memoria inestable». El plano dice «Una casa no desaparece mientras la recuerden», y la regla de salida: hay que recordar al menos una casa. Se llevan una libreta de casas olvidadas.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     23,
+     24,
+     25,
+     26,
+     27,
+     28,
+     29,
+     30,
+     43
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "ma-eleccion",
+   "nombre": "La estación de la elección",
+   "cat": "transporte",
+   "x": 630,
+   "y": 730,
+   "modelo": "ninguno",
+   "linea": "A",
+   "num": "12",
+   "desc": "Una enorme sala de espera convertida en casa de juego: en el tablero, en lugar de horarios, brillan palabras como «si hubiera», «de otro modo», «después», «nunca». En cada mesa se juegan vidas posibles de Marcos y Alicia. El empleado de la elección reparte su mazo: el camino de la seguridad (olvidar casi todo), el de la fuerza (llegar solo), el de la dignidad (no dejar que nadie se acerque). «Es soledad disfrazada de corona», dice Alicia. Debajo del mazo hay una carta vacía que no promete nada: la carta «Cero». La eligen. En la pared queda escrito: «No todos los caminos están perdidos. Algunos simplemente no fueron elegidos».",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     44
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "ma-ruido",
+   "nombre": "La estación del último ruido",
+   "cat": "transporte",
+   "x": 510,
+   "y": 730,
+   "modelo": "ninguno",
+   "linea": "A",
+   "num": "13",
+   "desc": "Todas las estaciones a la vez: mármol mojado, puertas de casas olvidadas, mesas de naipes, máscaras y sombras de criaturas míticas. Gritos, susurros, lluvia, risas, discusiones y la voz del empleado de la elección suenan juntos y cada uno quiere ser el principal. «El caos es un orden que todavía no tiene nombre», dice el zorro. Al último ruido no se lo vence gritando más fuerte sino hablando claro: Marcos y Alicia, por turno, dicen sus miedos en el megáfono, y después juntos: «No vamos a la Estación Cero por una victoria. Vamos por la verdad». En medio del andén aparece una puerta blanca con un círculo: un cero.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     45
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  },
+  {
+   "id": "ma-cero",
+   "nombre": "Estación Cero",
+   "cat": "transporte",
+   "x": 300,
+   "y": 620,
+   "modelo": "ninguno",
+   "linea": "A",
+   "num": "0",
+   "desc": "El punto del plano donde se juntan todas las líneas. «A ella no se llega»: hay que «juntarse». Un andén blanco, una luz sin fuente y un silencio en el que se oye la propia respiración. En la pared aparece su pelea, todavía más clara y despiadada que en la Estación del Miedo: «No soy una cosa que haya que controlar, Marcos». Acá se piden perdón. «Cero no es el final», dice el zorro. «Cero es el lugar donde se deja de contar las viejas ofensas.» «Recorrido terminado. La Estación Cero cierra. Memoria devuelta. Ciclo anómalo terminado.» El andén se disuelve como un decorado después de la última escena, y ellos se quedan en Sinea. Juntos.",
+   "buscar": "(?!x)x",
+   "extra": {
+    "prizrachnyj-poezd": [
+     32,
+     34,
+     46
+    ]
+   },
+   "solo": [
+    "prizrachnyj-poezd"
+   ],
+   "sin_ilustracion": true
+  }
+ ]
+}

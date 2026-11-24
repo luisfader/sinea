@@ -1,8 +1,8 @@
 # Mapas de los mundos literarios de Robert Fader · Карты миров Роберта Фадера
 
-Sinea, Verdegrad, Nuestra Utopía, Mendoza, Venecia, Madrid, San Petersburgo, Belgrado, Praga, la Atlántida y la Ciudad Secreta en 3D. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
+Sinea, Verdegrad, Nuestra Utopía, Mendoza, Venecia, Madrid, San Petersburgo, Belgrado, Praga, la Atlántida y la Ciudad Secreta en 3D, más el esquema del metro del Tren Fantasma. La página principal (`index.html`) abre siempre Sinea; las demás se eligen arriba.
 
-Once mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza | Venecia | Madrid | San Petersburgo | Belgrado | Praga | Atlántida | Ciudad Secreta** arriba (en el celular y en pantallas de menos de 1180 px, el botón «Mapas ▾» abre la lista):
+Once mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Mendoza | Venecia | Madrid | San Petersburgo | Belgrado | Praga | Atlántida | Ciudad Secreta** arriba (en el celular y en pantallas de menos de 1320 px, el botón «Mapas ▾» abre la lista):
 
 - **Sinea**, la ciudad junto al mar: `index.html`
 - **Verdegrad**, el pueblo verde de Natalia, con su fortaleza en la penumbra: `index.html?ciudad=verdegrad` (o `verdegrad.html`)
@@ -15,6 +15,7 @@ Once mapas en el mismo sitio, con el selector **Sinea | Verdegrad | Utopía | Me
 - **Praga** (Прага), la ciudad real de «Podzemní tajemství», «Ostrovy nad Prahou», «Předtucha» y los capítulos praguenses de «La reina de la Vendimia»: `index.html?ciudad=praga` (o `praga.html`)
 - **Atlántida** (Атлантида), los dos mundos de «Звёздный роман»: `index.html?ciudad=atlantida` (o `atlantida.html`)
 - **La Ciudad Secreta** (Тайный город), de «La ciudad secreta»: `index.html?ciudad=secreta` (o `secreta.html`)
+- **Metro fantasma** (Метро-призрак), el esquema de «Призрачный поезд»: `metro.html`
 
 Los rótulos verdes en el borde del mapa también llevan de una ciudad a la otra («← Verdegrad · estación Nubecita» en Sinea; «← Antiguo camino a Sinea» en Verdegrad).
 
@@ -116,6 +117,10 @@ Mapa imaginado a partir de «Звёздный роман», con sus dos mundos: 
 ## La Ciudad Secreta
 
 Mapa imaginado a partir de «La ciudad secreta»: la ciudad blanca está «debajo de la tierra, dentro de las montañas», así que se ve como un valle cerrado por un anillo de picos con los cristales dorados del techo flotando encima. Afuera, al sureste, el pueblito de Martín, con el parque y la cafetería, y el camino hasta la roca de la llave. Configuración en `js/ciudades/secreta.js`; datos en `data/secreta/`.
+
+## Metro del Tren Fantasma
+
+`metro.html` es un esquema de metro en 2D (no un mapa 3D) de la versión rusa de «El tren fantasma», «Призрачный поезд»: la línea roja son los vagones del tren en el orden en que Marcos los recorre, desde la Estación Central hasta la Estación Sinea; la violeta, el metro anómalo que aparece en Sinea, desde «Biblioteca» hasta la Estación Cero. Se combinan en la biblioteca (la misma bibliotecaria) y las líneas punteadas «que se cruzan donde no deben» van todas a la Estación Cero. Cada estación abre su ficha con capítulos, reseñas e ilustraciones. Código en `js/metro.js`; datos en `data/metro/` (x, y son coordenadas del esquema).
 
 ## Añadir o corregir un lugar
 
