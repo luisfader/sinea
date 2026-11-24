@@ -175,6 +175,27 @@
    "s": 3,
    "es": "En Sinea no hay metro. Hay una estación que se llama «Biblioteca» y una boletera que ya conozco.",
    "ru": "В Синее нет метро. Есть станция «Библиотека» и кассирша, которую я уже знаю."
+  },
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 4,
+   "es": "Me llevé el plano de la boletería. Las líneas se movían en mi mano. Nunca un mapa me había mirado de vuelta.",
+   "ru": "Я взяла схему в кассе. Линии шевелились у меня в руке. Ни одна карта ещё не смотрела на меня в ответ."
+  },
+  {
+   "a": "La bibliotecaria",
+   "ar": "Библиотекарша",
+   "s": 3,
+   "es": "¿Boletos?",
+   "ru": "Билеты?"
+  },
+  {
+   "a": "Una vecina de Sinea",
+   "ar": "Соседка из Синеи",
+   "s": 2,
+   "es": "Ayer acá había una panadería. Hoy hay una escalera que baja. Nadie me pidió opinión.",
+   "ru": "Вчера тут была булочная. Сегодня — лестница вниз. Моего мнения никто не спросил."
   }
  ],
  "ma-tiempo": [
@@ -184,6 +205,27 @@
    "s": 4,
    "es": "Bajen donde nadie baja. Si no, van a seguir de largo. Como todos.",
    "ru": "Выходите там, где никто не выходит. Иначе уедете дальше. Как все."
+  },
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 4,
+   "es": "Las estatuas se estiran una hacia la otra y no llegan. Me quedé mirando demasiado tiempo. O el tiempo se quedó mirándome a mí.",
+   "ru": "Статуи тянутся друг к другу и не дотягиваются. Я смотрела слишком долго. Или это время смотрело на меня."
+  },
+  {
+   "a": "Un pasajero pálido",
+   "ar": "Бледный пассажир",
+   "s": 3,
+   "es": "Viajo desde hace mucho. No sé cuánto. Acá eso no se pregunta.",
+   "ru": "Я еду давно. Не знаю сколько. Здесь об этом не спрашивают."
+  },
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 3,
+   "es": "Los bebés de piedra tienen cara de jueces. No me gustó cómo me miraban.",
+   "ru": "У каменных младенцев лица судей. Мне не понравилось, как они на меня смотрели."
   }
  ],
  "ma-grito": [
@@ -193,6 +235,27 @@
    "s": 3,
    "es": "No escuchen los gritos: escuchen lo que hay debajo. Junto a la columna hay silencio.",
    "ru": "Не слушайте крики — слушайте то, что под ними. У колонны тишина."
+  },
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 2,
+   "es": "Todavía me zumban los oídos. Junto a la columna había silencio, y en el silencio, el primer objeto.",
+   "ru": "У меня до сих пор звенит в ушах. У колонны была тишина, а в тишине — первый предмет."
+  },
+  {
+   "a": "Un hombre que grita",
+   "ar": "Кричащий мужчина",
+   "s": 1,
+   "es": "¡¿QUÉ?! ¡NO TE ESCUCHO! ¡ACÁ NADIE ESCUCHA A NADIE!",
+   "ru": "ЧТО?! НЕ СЛЫШУ! ЗДЕСЬ НИКТО НИКОГО НЕ СЛЫШИТ!"
+  },
+  {
+   "a": "El zorro de madera",
+   "ar": "Деревянный лис",
+   "s": 4,
+   "es": "No estuve, pero me contaron. Gritar es la forma más larga de no decir nada.",
+   "ru": "Меня там не было, но мне рассказали. Кричать — самый долгий способ ничего не сказать."
   }
  ],
  "ma-susurro": [
@@ -209,6 +272,27 @@
    "s": 4,
    "es": "Los chismes se pueden dar vuelta. Terminaron peleándose entre ellas.",
    "ru": "Сплетни можно развернуть. В итоге они поссорились между собой."
+  },
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 1,
+   "es": "Escuché lo que no tenía que escuchar y le creí. Error mío. Ella volvió igual.",
+   "ru": "Я услышал то, чего не должен был слышать, и поверил. Моя ошибка. Она всё равно вернулась."
+  },
+  {
+   "a": "Otra señora",
+   "ar": "Другая дама",
+   "s": 3,
+   "es": "Yo no chismeo, informo. Bueno, informaba, hasta que esa chica nos hizo pelear entre nosotras.",
+   "ru": "Я не сплетничаю, я сообщаю. Ну, сообщала — пока эта девушка не поссорила нас между собой."
+  },
+  {
+   "a": "El libro «La hora salvaje 4»",
+   "ar": "Книга «Дикий час 4»",
+   "s": 5,
+   "es": "Me encontraron en un compartimiento secreto. Desde entonces escucho todo lo que pasa a mi alrededor.",
+   "ru": "Меня нашли в тайном отсеке. С тех пор я прислушиваюсь ко всему, что происходит вокруг."
   }
  ],
  "ma-tormenta": [
@@ -218,6 +302,27 @@
    "s": 5,
    "es": "Bajo tierra también tiene que caer algo de arriba. ¡Devuelvan la tormenta!",
    "ru": "Под землёй тоже должно что-то падать сверху. Верните бурю!"
+  },
+  {
+   "a": "La guarda",
+   "ar": "Кондукторша",
+   "s": 4,
+   "es": "Cuando llueve, nadie oye sus propios pensamientos demasiado fuerte. Para eso existe esta estación.",
+   "ru": "Когда идёт дождь, никто не слышит собственных мыслей слишком громко. Для этого и существует эта станция."
+  },
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 5,
+   "es": "Hechizo antiparaguas: funcionó a la primera. Me mojé igual, pero con estilo.",
+   "ru": "Антипогонное заклинание сработало с первого раза. Я всё равно промокла, но со стилем."
+  },
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 3,
+   "es": "Llueve bajo tierra. Me llevé un zorro de madera y la gente se enojó porque paró la lluvia. Lógica de metro.",
+   "ru": "Под землёй идёт дождь. Я взял деревянного лиса, и люди разозлились, что дождь кончился. Логика метро."
   }
  ],
  "ma-perdidos": [
@@ -234,6 +339,27 @@
    "s": 2,
    "es": "Demasiada paz. Demasiado descanso. Me puso nervioso.",
    "ru": "Слишком много мира. Слишком много отдыха. Меня это нервировало."
+  },
+  {
+   "a": "La mujer del vestido floreado",
+   "ar": "Женщина в цветастом платье",
+   "s": 5,
+   "es": "Buscá la bebida donde discuten sobre ella. Y quedate un rato, que no hay apuro.",
+   "ru": "Ищите напиток там, где о нём спорят. И посидите немного, спешить некуда."
+  },
+  {
+   "a": "Uno de los que discuten",
+   "ar": "Один из спорщиков",
+   "s": 4,
+   "es": "La bebida crea el clima, el juego muestra el carácter. Ese muchacho hace trampa hasta cuando no juega.",
+   "ru": "Напиток создаёт настроение, игра показывает характер. Этот парень жульничает, даже когда не играет."
+  },
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 4,
+   "es": "Parras, mosaicos, siesta eterna. Me hubiera quedado. Por eso nos fuimos rápido.",
+   "ru": "Лозы, мозаики, вечная сиеста. Я бы осталась. Поэтому мы ушли быстро."
   }
  ],
  "ma-mitica": [
@@ -243,6 +369,27 @@
    "s": 3,
    "es": "Un partido sin pelota con un centauro al arco. Pregunté un enigma; nadie escuchó.",
    "ru": "Матч без мяча и кентавр на воротах. Я загадала загадку — никто не слушал."
+  },
+  {
+   "a": "El centauro",
+   "ar": "Кентавр",
+   "s": 2,
+   "es": "Me pusieron al arco sin pelota. Atajé tres tiros imaginarios. Nadie aplaudió.",
+   "ru": "Меня поставили на ворота без мяча. Я отбил три воображаемых удара. Никто не хлопал."
+  },
+  {
+   "a": "El dragoncito",
+   "ar": "Маленький дракон",
+   "s": 4,
+   "es": "¡Atchís! Perdón. ¡Atchís! Se me prendió fuego la bufanda del vikingo.",
+   "ru": "Апчхи! Простите. Апчхи! У викинга загорелся шарф."
+  },
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 4,
+   "es": "Resolver una guerra de mitologías con un partido de fútbol: idea mía. La pelota de los dioses apareció sola. Cuento la victoria.",
+   "ru": "Решить войну мифологий футбольным матчем — моя идея. Мяч богов появился сам. Записываю победу на себя."
   }
  ],
  "ma-graciosa": [
@@ -252,6 +399,27 @@
    "s": 1,
    "es": "Vinimos a reírnos, no a enterarnos de cómo están las cosas.",
    "ru": "Мы пришли смеяться, а не узнавать положение дел."
+  },
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 4,
+   "es": "Leí las noticias por megáfono y se dejaron de reír. No es una victoria. Es un diagnóstico.",
+   "ru": "Я прочитала новости в мегафон, и все перестали смеяться. Это не победа. Это диагноз."
+  },
+  {
+   "a": "Un señor con careta",
+   "ar": "Господин в маске",
+   "s": 3,
+   "es": "Me reí del chiste de Sócrates durante tres años. Ahora no sé de qué reírme.",
+   "ru": "Я три года смеялся над анекдотом про Сократа. Теперь не знаю, над чем смеяться."
+  },
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 3,
+   "es": "Nunca había tenido miedo de una carcajada. Ahora sí.",
+   "ru": "Я никогда не боялся хохота. Теперь боюсь."
   }
  ],
  "ma-vacia": [
@@ -261,6 +429,27 @@
    "s": 5,
    "es": "Me despertó una voz que leía. El vacío no aguanta un buen texto.",
    "ru": "Меня разбудил голос, читавший вслух. Пустота не выдерживает хорошего текста."
+  },
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 2,
+   "es": "Ni pasajeros, ni carteles, ni luz de más. Me abroché el abrigo hasta arriba. El vacío asusta más que la multitud.",
+   "ru": "Ни пассажиров, ни вывесок, ни лишнего света. Я застегнул пальто до самого верха. Пустота пугает сильнее толпы."
+  },
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 5,
+   "es": "Leí en voz alta y el zorro abrió los ojos. A veces lo que falta es solo una voz.",
+   "ru": "Я прочитала вслух — и лис открыл глаза. Иногда не хватает только голоса."
+  },
+  {
+   "a": "La voz de los altavoces",
+   "ar": "Голос из динамиков",
+   "s": 5,
+   "es": "Señores pasajeros, felicitaciones. Vencieron al vacío.",
+   "ru": "Уважаемые пассажиры, поздравляем. Вы победили пустоту."
   }
  ],
  "ma-miedo": [
@@ -270,6 +459,27 @@
    "s": 4,
    "es": "No había monstruos. Había un espejo. Era peor, y era necesario.",
    "ru": "Чудовищ не было. Было зеркало. Это было хуже — и было нужно."
+  },
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 4,
+   "es": "Dije mi miedo en voz alta y perdió la cara. Él dijo el suyo. Desde entonces hablamos de otra manera.",
+   "ru": "Я назвала свой страх вслух, и он потерял лицо. Он назвал свой. С тех пор мы разговариваем по-другому."
+  },
+  {
+   "a": "El zorro de madera",
+   "ar": "Деревянный лис",
+   "s": 5,
+   "es": "El miedo es un inquilino que no paga. Hay que decirle el nombre para echarlo.",
+   "ru": "Страх — жилец, который не платит. Чтобы выгнать его, надо назвать его по имени."
+  },
+  {
+   "a": "El chico del cuarto oscuro",
+   "ar": "Мальчик из тёмной комнаты",
+   "s": 3,
+   "es": "Esperé mucho que alguien prendiera la luz. Al final la prendí yo. Bueno, él.",
+   "ru": "Я долго ждал, что кто-нибудь включит свет. В конце концов я включил сам. Ну, то есть он."
   }
  ],
  "ma-casas": [
@@ -286,6 +496,27 @@
    "s": 5,
    "es": "Me acordé de un balcón con baranda verde. Alcanzó para salir.",
    "ru": "Я вспомнила балкон с зелёными перилами. Этого хватило, чтобы выйти."
+  },
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 4,
+   "es": "Una pieza de chicos con un tren de juguete y un dibujo de ventanas amarillas. Me acordé. La casa no se fue.",
+   "ru": "Детская с игрушечной железной дорогой и рисунком жёлтых окон. Я вспомнил. Дом не ушёл."
+  },
+  {
+   "a": "La señora del balcón verde",
+   "ar": "Хозяйка зелёного балкона",
+   "s": 5,
+   "es": "Me olvidaron todos menos dos. Gracias a ellos tengo otra vez barandas.",
+   "ru": "Меня забыли все, кроме двоих. Благодаря им у меня снова есть перила."
+  },
+  {
+   "a": "El zorro de madera",
+   "ar": "Деревянный лис",
+   "s": 4,
+   "es": "Sello «ANOMALÍA» en la primera puerta. Lo reconozco: es mi apellido.",
+   "ru": "Печать «АНОМАЛИЯ» на первой двери. Узнаю: это моя фамилия."
   }
  ],
  "ma-eleccion": [
@@ -295,6 +526,27 @@
    "s": 3,
    "es": "Ofrecí seguridad, fuerza y dignidad. Eligieron la carta vacía. Nunca lo entenderé.",
    "ru": "Я предлагал безопасность, силу и достоинство. Они выбрали пустую карту. Никогда не пойму."
+  },
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 5,
+   "es": "Nos ofrecieron seguridad, fuerza y dignidad. Era soledad disfrazada de corona. Elegimos la carta vacía.",
+   "ru": "Нам предлагали безопасность, силу и достоинство. Это было одиночество, переодетое в корону. Мы выбрали пустую карту."
+  },
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 4,
+   "es": "El tablero decía «si hubiera», «después», «nunca». Por primera vez no aposté a lo seguro.",
+   "ru": "На табло горело «если бы», «позже», «никогда». Впервые я не поставил на надёжное."
+  },
+  {
+   "a": "Un jugador de otra mesa",
+   "ar": "Игрок за соседним столом",
+   "s": 2,
+   "es": "Jugué mi vida tres veces y perdí las tres. Me quedo una más, por las dudas.",
+   "ru": "Я трижды разыграл свою жизнь и трижды проиграл. Останусь ещё на одну — на всякий случай."
   }
  ],
  "ma-ruido": [
@@ -304,6 +556,27 @@
    "s": 5,
    "es": "El caos es un orden que todavía no tiene nombre. Ellos se lo pusieron.",
    "ru": "Хаос — это порядок, который ещё не назвали. Они его назвали."
+  },
+  {
+   "a": "Alicia",
+   "ar": "Алисия",
+   "s": 5,
+   "es": "No ganamos gritando. Ganamos diciendo claro lo que teníamos miedo de decir. Después apareció una puerta blanca.",
+   "ru": "Мы победили не криком. Мы победили, сказав ясно то, что боялись сказать. Потом появилась белая дверь."
+  },
+  {
+   "a": "Marcos",
+   "ar": "Марк",
+   "s": 4,
+   "es": "Todas las estaciones a la vez: lluvia, chismes, risas, naipes. Agarré el megáfono y por fin hablé bajo.",
+   "ru": "Все станции сразу: дождь, сплетни, смех, карты. Я взял мегафон и наконец заговорил тихо."
+  },
+  {
+   "a": "El empleado de la elección",
+   "ar": "Служащий выбора",
+   "s": 3,
+   "es": "Me colé en la última estación para seguir ofreciendo caminos. Nadie me escuchó. Buena señal.",
+   "ru": "Я пробрался на последнюю станцию, чтобы и дальше предлагать дороги. Никто меня не слушал. Хороший знак."
   }
  ],
  "ma-cero": [
@@ -320,6 +593,27 @@
    "s": 5,
    "es": "A la Estación Cero no se llega. Me junté.",
    "ru": "До Нулевой станции не доезжают. Я собрался."
+  },
+  {
+   "a": "El zorro de madera",
+   "ar": "Деревянный лис",
+   "s": 5,
+   "es": "Cero no es el final. Cero es el lugar donde se deja de contar las viejas ofensas.",
+   "ru": "Ноль — это не конец. Ноль — это место, где перестают считать старые обиды."
+  },
+  {
+   "a": "La voz de la estación",
+   "ar": "Голос станции",
+   "s": 5,
+   "es": "Recorrido terminado. La Estación Cero cierra. Memoria devuelta.",
+   "ru": "Маршрут завершён. Нулевая станция закрывается. Память возвращена."
+  },
+  {
+   "a": "El hombre de ojos transparentes",
+   "ar": "Человек с прозрачными глазами",
+   "s": 4,
+   "es": "Les dije que a la Estación Cero no se llega. No me equivoqué: se juntaron.",
+   "ru": "Я сказал им, что до Нулевой станции не доезжают. Я не ошибся: они собрались."
   }
  ]
 }

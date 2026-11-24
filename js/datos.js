@@ -24987,6 +24987,27 @@ export const CIUDADES = {
 "s": 3,
 "es": "En Sinea no hay metro. Hay una estación que se llama «Biblioteca» y una boletera que ya conozco.",
 "ru": "В Синее нет метро. Есть станция «Библиотека» и кассирша, которую я уже знаю."
+},
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 4,
+"es": "Me llevé el plano de la boletería. Las líneas se movían en mi mano. Nunca un mapa me había mirado de vuelta.",
+"ru": "Я взяла схему в кассе. Линии шевелились у меня в руке. Ни одна карта ещё не смотрела на меня в ответ."
+},
+{
+"a": "La bibliotecaria",
+"ar": "Библиотекарша",
+"s": 3,
+"es": "¿Boletos?",
+"ru": "Билеты?"
+},
+{
+"a": "Una vecina de Sinea",
+"ar": "Соседка из Синеи",
+"s": 2,
+"es": "Ayer acá había una panadería. Hoy hay una escalera que baja. Nadie me pidió opinión.",
+"ru": "Вчера тут была булочная. Сегодня — лестница вниз. Моего мнения никто не спросил."
 }
 ]
 },
@@ -25020,6 +25041,27 @@ export const CIUDADES = {
 "s": 4,
 "es": "Bajen donde nadie baja. Si no, van a seguir de largo. Como todos.",
 "ru": "Выходите там, где никто не выходит. Иначе уедете дальше. Как все."
+},
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 4,
+"es": "Las estatuas se estiran una hacia la otra y no llegan. Me quedé mirando demasiado tiempo. O el tiempo se quedó mirándome a mí.",
+"ru": "Статуи тянутся друг к другу и не дотягиваются. Я смотрела слишком долго. Или это время смотрело на меня."
+},
+{
+"a": "Un pasajero pálido",
+"ar": "Бледный пассажир",
+"s": 3,
+"es": "Viajo desde hace mucho. No sé cuánto. Acá eso no se pregunta.",
+"ru": "Я еду давно. Не знаю сколько. Здесь об этом не спрашивают."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 3,
+"es": "Los bebés de piedra tienen cara de jueces. No me gustó cómo me miraban.",
+"ru": "У каменных младенцев лица судей. Мне не понравилось, как они на меня смотрели."
 }
 ]
 },
@@ -25053,6 +25095,27 @@ export const CIUDADES = {
 "s": 3,
 "es": "No escuchen los gritos: escuchen lo que hay debajo. Junto a la columna hay silencio.",
 "ru": "Не слушайте крики — слушайте то, что под ними. У колонны тишина."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 2,
+"es": "Todavía me zumban los oídos. Junto a la columna había silencio, y en el silencio, el primer objeto.",
+"ru": "У меня до сих пор звенит в ушах. У колонны была тишина, а в тишине — первый предмет."
+},
+{
+"a": "Un hombre que grita",
+"ar": "Кричащий мужчина",
+"s": 1,
+"es": "¡¿QUÉ?! ¡NO TE ESCUCHO! ¡ACÁ NADIE ESCUCHA A NADIE!",
+"ru": "ЧТО?! НЕ СЛЫШУ! ЗДЕСЬ НИКТО НИКОГО НЕ СЛЫШИТ!"
+},
+{
+"a": "El zorro de madera",
+"ar": "Деревянный лис",
+"s": 4,
+"es": "No estuve, pero me contaron. Gritar es la forma más larga de no decir nada.",
+"ru": "Меня там не было, но мне рассказали. Кричать — самый долгий способ ничего не сказать."
 }
 ]
 },
@@ -25093,6 +25156,27 @@ export const CIUDADES = {
 "s": 4,
 "es": "Los chismes se pueden dar vuelta. Terminaron peleándose entre ellas.",
 "ru": "Сплетни можно развернуть. В итоге они поссорились между собой."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 1,
+"es": "Escuché lo que no tenía que escuchar y le creí. Error mío. Ella volvió igual.",
+"ru": "Я услышал то, чего не должен был слышать, и поверил. Моя ошибка. Она всё равно вернулась."
+},
+{
+"a": "Otra señora",
+"ar": "Другая дама",
+"s": 3,
+"es": "Yo no chismeo, informo. Bueno, informaba, hasta que esa chica nos hizo pelear entre nosotras.",
+"ru": "Я не сплетничаю, я сообщаю. Ну, сообщала — пока эта девушка не поссорила нас между собой."
+},
+{
+"a": "El libro «La hora salvaje 4»",
+"ar": "Книга «Дикий час 4»",
+"s": 5,
+"es": "Me encontraron en un compartimiento secreto. Desde entonces escucho todo lo que pasa a mi alrededor.",
+"ru": "Меня нашли в тайном отсеке. С тех пор я прислушиваюсь ко всему, что происходит вокруг."
 }
 ]
 },
@@ -25126,6 +25210,27 @@ export const CIUDADES = {
 "s": 5,
 "es": "Bajo tierra también tiene que caer algo de arriba. ¡Devuelvan la tormenta!",
 "ru": "Под землёй тоже должно что-то падать сверху. Верните бурю!"
+},
+{
+"a": "La guarda",
+"ar": "Кондукторша",
+"s": 4,
+"es": "Cuando llueve, nadie oye sus propios pensamientos demasiado fuerte. Para eso existe esta estación.",
+"ru": "Когда идёт дождь, никто не слышит собственных мыслей слишком громко. Для этого и существует эта станция."
+},
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 5,
+"es": "Hechizo antiparaguas: funcionó a la primera. Me mojé igual, pero con estilo.",
+"ru": "Антипогонное заклинание сработало с первого раза. Я всё равно промокла, но со стилем."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 3,
+"es": "Llueve bajo tierra. Me llevé un zorro de madera y la gente se enojó porque paró la lluvia. Lógica de metro.",
+"ru": "Под землёй идёт дождь. Я взял деревянного лиса, и люди разозлились, что дождь кончился. Логика метро."
 }
 ]
 },
@@ -25166,6 +25271,27 @@ export const CIUDADES = {
 "s": 2,
 "es": "Demasiada paz. Demasiado descanso. Me puso nervioso.",
 "ru": "Слишком много мира. Слишком много отдыха. Меня это нервировало."
+},
+{
+"a": "La mujer del vestido floreado",
+"ar": "Женщина в цветастом платье",
+"s": 5,
+"es": "Buscá la bebida donde discuten sobre ella. Y quedate un rato, que no hay apuro.",
+"ru": "Ищите напиток там, где о нём спорят. И посидите немного, спешить некуда."
+},
+{
+"a": "Uno de los que discuten",
+"ar": "Один из спорщиков",
+"s": 4,
+"es": "La bebida crea el clima, el juego muestra el carácter. Ese muchacho hace trampa hasta cuando no juega.",
+"ru": "Напиток создаёт настроение, игра показывает характер. Этот парень жульничает, даже когда не играет."
+},
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 4,
+"es": "Parras, mosaicos, siesta eterna. Me hubiera quedado. Por eso nos fuimos rápido.",
+"ru": "Лозы, мозаики, вечная сиеста. Я бы осталась. Поэтому мы ушли быстро."
 }
 ]
 },
@@ -25199,6 +25325,27 @@ export const CIUDADES = {
 "s": 3,
 "es": "Un partido sin pelota con un centauro al arco. Pregunté un enigma; nadie escuchó.",
 "ru": "Матч без мяча и кентавр на воротах. Я загадала загадку — никто не слушал."
+},
+{
+"a": "El centauro",
+"ar": "Кентавр",
+"s": 2,
+"es": "Me pusieron al arco sin pelota. Atajé tres tiros imaginarios. Nadie aplaudió.",
+"ru": "Меня поставили на ворота без мяча. Я отбил три воображаемых удара. Никто не хлопал."
+},
+{
+"a": "El dragoncito",
+"ar": "Маленький дракон",
+"s": 4,
+"es": "¡Atchís! Perdón. ¡Atchís! Se me prendió fuego la bufanda del vikingo.",
+"ru": "Апчхи! Простите. Апчхи! У викинга загорелся шарф."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 4,
+"es": "Resolver una guerra de mitologías con un partido de fútbol: idea mía. La pelota de los dioses apareció sola. Cuento la victoria.",
+"ru": "Решить войну мифологий футбольным матчем — моя идея. Мяч богов появился сам. Записываю победу на себя."
 }
 ]
 },
@@ -25232,6 +25379,27 @@ export const CIUDADES = {
 "s": 1,
 "es": "Vinimos a reírnos, no a enterarnos de cómo están las cosas.",
 "ru": "Мы пришли смеяться, а не узнавать положение дел."
+},
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 4,
+"es": "Leí las noticias por megáfono y se dejaron de reír. No es una victoria. Es un diagnóstico.",
+"ru": "Я прочитала новости в мегафон, и все перестали смеяться. Это не победа. Это диагноз."
+},
+{
+"a": "Un señor con careta",
+"ar": "Господин в маске",
+"s": 3,
+"es": "Me reí del chiste de Sócrates durante tres años. Ahora no sé de qué reírme.",
+"ru": "Я три года смеялся над анекдотом про Сократа. Теперь не знаю, над чем смеяться."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 3,
+"es": "Nunca había tenido miedo de una carcajada. Ahora sí.",
+"ru": "Я никогда не боялся хохота. Теперь боюсь."
 }
 ]
 },
@@ -25265,6 +25433,27 @@ export const CIUDADES = {
 "s": 5,
 "es": "Me despertó una voz que leía. El vacío no aguanta un buen texto.",
 "ru": "Меня разбудил голос, читавший вслух. Пустота не выдерживает хорошего текста."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 2,
+"es": "Ni pasajeros, ni carteles, ni luz de más. Me abroché el abrigo hasta arriba. El vacío asusta más que la multitud.",
+"ru": "Ни пассажиров, ни вывесок, ни лишнего света. Я застегнул пальто до самого верха. Пустота пугает сильнее толпы."
+},
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 5,
+"es": "Leí en voz alta y el zorro abrió los ojos. A veces lo que falta es solo una voz.",
+"ru": "Я прочитала вслух — и лис открыл глаза. Иногда не хватает только голоса."
+},
+{
+"a": "La voz de los altavoces",
+"ar": "Голос из динамиков",
+"s": 5,
+"es": "Señores pasajeros, felicitaciones. Vencieron al vacío.",
+"ru": "Уважаемые пассажиры, поздравляем. Вы победили пустоту."
 }
 ]
 },
@@ -25298,6 +25487,27 @@ export const CIUDADES = {
 "s": 4,
 "es": "No había monstruos. Había un espejo. Era peor, y era necesario.",
 "ru": "Чудовищ не было. Было зеркало. Это было хуже — и было нужно."
+},
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 4,
+"es": "Dije mi miedo en voz alta y perdió la cara. Él dijo el suyo. Desde entonces hablamos de otra manera.",
+"ru": "Я назвала свой страх вслух, и он потерял лицо. Он назвал свой. С тех пор мы разговариваем по-другому."
+},
+{
+"a": "El zorro de madera",
+"ar": "Деревянный лис",
+"s": 5,
+"es": "El miedo es un inquilino que no paga. Hay que decirle el nombre para echarlo.",
+"ru": "Страх — жилец, который не платит. Чтобы выгнать его, надо назвать его по имени."
+},
+{
+"a": "El chico del cuarto oscuro",
+"ar": "Мальчик из тёмной комнаты",
+"s": 3,
+"es": "Esperé mucho que alguien prendiera la luz. Al final la prendí yo. Bueno, él.",
+"ru": "Я долго ждал, что кто-нибудь включит свет. В конце концов я включил сам. Ну, то есть он."
 }
 ]
 },
@@ -25370,6 +25580,27 @@ export const CIUDADES = {
 "s": 5,
 "es": "Me acordé de un balcón con baranda verde. Alcanzó para salir.",
 "ru": "Я вспомнила балкон с зелёными перилами. Этого хватило, чтобы выйти."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 4,
+"es": "Una pieza de chicos con un tren de juguete y un dibujo de ventanas amarillas. Me acordé. La casa no se fue.",
+"ru": "Детская с игрушечной железной дорогой и рисунком жёлтых окон. Я вспомнил. Дом не ушёл."
+},
+{
+"a": "La señora del balcón verde",
+"ar": "Хозяйка зелёного балкона",
+"s": 5,
+"es": "Me olvidaron todos menos dos. Gracias a ellos tengo otra vez barandas.",
+"ru": "Меня забыли все, кроме двоих. Благодаря им у меня снова есть перила."
+},
+{
+"a": "El zorro de madera",
+"ar": "Деревянный лис",
+"s": 4,
+"es": "Sello «ANOMALÍA» en la primera puerta. Lo reconozco: es mi apellido.",
+"ru": "Печать «АНОМАЛИЯ» на первой двери. Узнаю: это моя фамилия."
 }
 ]
 },
@@ -25403,6 +25634,27 @@ export const CIUDADES = {
 "s": 3,
 "es": "Ofrecí seguridad, fuerza y dignidad. Eligieron la carta vacía. Nunca lo entenderé.",
 "ru": "Я предлагал безопасность, силу и достоинство. Они выбрали пустую карту. Никогда не пойму."
+},
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 5,
+"es": "Nos ofrecieron seguridad, fuerza y dignidad. Era soledad disfrazada de corona. Elegimos la carta vacía.",
+"ru": "Нам предлагали безопасность, силу и достоинство. Это было одиночество, переодетое в корону. Мы выбрали пустую карту."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 4,
+"es": "El tablero decía «si hubiera», «después», «nunca». Por primera vez no aposté a lo seguro.",
+"ru": "На табло горело «если бы», «позже», «никогда». Впервые я не поставил на надёжное."
+},
+{
+"a": "Un jugador de otra mesa",
+"ar": "Игрок за соседним столом",
+"s": 2,
+"es": "Jugué mi vida tres veces y perdí las tres. Me quedo una más, por las dudas.",
+"ru": "Я трижды разыграл свою жизнь и трижды проиграл. Останусь ещё на одну — на всякий случай."
 }
 ]
 },
@@ -25436,6 +25688,27 @@ export const CIUDADES = {
 "s": 5,
 "es": "El caos es un orden que todavía no tiene nombre. Ellos se lo pusieron.",
 "ru": "Хаос — это порядок, который ещё не назвали. Они его назвали."
+},
+{
+"a": "Alicia",
+"ar": "Алисия",
+"s": 5,
+"es": "No ganamos gritando. Ganamos diciendo claro lo que teníamos miedo de decir. Después apareció una puerta blanca.",
+"ru": "Мы победили не криком. Мы победили, сказав ясно то, что боялись сказать. Потом появилась белая дверь."
+},
+{
+"a": "Marcos",
+"ar": "Марк",
+"s": 4,
+"es": "Todas las estaciones a la vez: lluvia, chismes, risas, naipes. Agarré el megáfono y por fin hablé bajo.",
+"ru": "Все станции сразу: дождь, сплетни, смех, карты. Я взял мегафон и наконец заговорил тихо."
+},
+{
+"a": "El empleado de la elección",
+"ar": "Служащий выбора",
+"s": 3,
+"es": "Me colé en la última estación para seguir ofreciendo caminos. Nadie me escuchó. Buena señal.",
+"ru": "Я пробрался на последнюю станцию, чтобы и дальше предлагать дороги. Никто меня не слушал. Хороший знак."
 }
 ]
 },
@@ -25484,6 +25757,27 @@ export const CIUDADES = {
 "s": 5,
 "es": "A la Estación Cero no se llega. Me junté.",
 "ru": "До Нулевой станции не доезжают. Я собрался."
+},
+{
+"a": "El zorro de madera",
+"ar": "Деревянный лис",
+"s": 5,
+"es": "Cero no es el final. Cero es el lugar donde se deja de contar las viejas ofensas.",
+"ru": "Ноль — это не конец. Ноль — это место, где перестают считать старые обиды."
+},
+{
+"a": "La voz de la estación",
+"ar": "Голос станции",
+"s": 5,
+"es": "Recorrido terminado. La Estación Cero cierra. Memoria devuelta.",
+"ru": "Маршрут завершён. Нулевая станция закрывается. Память возвращена."
+},
+{
+"a": "El hombre de ojos transparentes",
+"ar": "Человек с прозрачными глазами",
+"s": 4,
+"es": "Les dije que a la Estación Cero no se llega. No me equivoqué: se juntaron.",
+"ru": "Я сказал им, что до Нулевой станции не доезжают. Я не ошибся: они собрались."
 }
 ]
 }
@@ -26027,98 +26321,42 @@ export const CIUDADES = {
 ]
 };
 export const NOVELAS = {
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
-"l": "ru",
-"y": 2026,
-"ru": "Алмазный дождь",
-"p": "img/portadas/almaznyj-dozhd.webp",
-"tr": {}
-},
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
-"l": "es",
-"y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
-"tr": {}
-},
-"predchuvstvie-2-4": {
-"t": "Предчувствие 2.4",
-"es": "El presentimiento 2.4",
-"l": "ru",
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
 "y": 2025,
-"ru": "Предчувствие 2.4",
-"p": "img/portadas/predchuvstvie-2-4.webp",
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
 "tr": {}
 },
-"anomalia": {
-"t": "Anomalía",
-"es": "Anomalía",
-"l": "es",
+"dikij-chas-2": {
+"t": "Дикий час: Духи гор",
+"es": "La hora salvaje: Los espíritus de la montaña",
+"l": "ru",
 "y": null,
-"ru": "Аномалия (исп.)",
-"p": "img/portadas/anomalia.webp",
+"ru": "Дикий час: Духи гор",
+"p": "img/portadas/dikij-chas-2.webp",
 "tr": {}
 },
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
+"znak": {
+"t": "Знак",
+"es": "El signo",
 "l": "ru",
-"y": 2026,
-"ru": "Волны любви",
-"p": "img/portadas/volny-lyubvi.webp",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
 "tr": {}
 },
-"dikij-chas-karnaval-razdora": {
-"t": "Дикий час: Карнавал раздора",
-"es": "La hora salvaje: El carnaval de la discordia",
-"l": "ru",
-"y": 2026,
-"ru": "Дикий час: Карнавал раздора",
-"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
-"tr": {}
-},
-"la-citta-triste": {
-"t": "La città triste",
-"es": "La ciudad triste (it.)",
-"l": "it",
-"y": 2025,
-"ru": "Грустный город (ит.)",
-"p": "img/portadas/la-citta-triste.webp",
-"tr": {
-"ru": "grustnyj-gorod"
-}
-},
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
-"tr": {}
-},
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
+"la-reina-de-la-vendimia": {
+"t": "La reina de la Vendimia",
+"es": "La reina de la Vendimia",
 "l": "es",
 "y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
-"kralovna-vinobrani": {
-"t": "Královna vinobraní",
-"es": "La reina de la Vendimia (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Королева Вендимии (чеш.)",
-"p": "img/portadas/kralovna-vinobrani.webp",
+"ru": "Королева Вендимии (исп.)",
+"p": "img/portadas/la-reina-de-la-vendimia.webp",
 "tr": {
-"es": "la-reina-de-la-vendimia"
+"cs": "kralovna-vinobrani"
 }
 },
 "la-ciudad-secreta": {
@@ -26128,123 +26366,6 @@ export const NOVELAS = {
 "y": null,
 "ru": "Тайный город (исп.)",
 "p": "img/portadas/la-ciudad-secreta.webp",
-"tr": {}
-},
-"operacion-londres": {
-"t": "El misterio de los Fader: Operación Londres",
-"es": "El misterio de los Fader: Operación Londres",
-"l": "es",
-"y": 2026,
-"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
-"p": "img/portadas/operacion-londres.webp",
-"tr": {}
-},
-"lluvia-de-meteoritos": {
-"t": "Lluvia de meteoritos",
-"es": "Lluvia de meteoritos",
-"l": "es",
-"y": null,
-"ru": "Метеоритный дождь (исп.)",
-"p": "img/portadas/lluvia-de-meteoritos.webp",
-"tr": {
-"ru": "meteoritnyj-dozhd"
-}
-},
-"il-treno-fantasma": {
-"t": "Il treno fantasma",
-"es": "El tren fantasma (it.)",
-"l": "it",
-"y": null,
-"ru": "Призрачный поезд (ит.)",
-"p": "img/portadas/il-treno-fantasma.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
-"l": "ru",
-"y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
-"tr": {}
-},
-"predchuvstvie-2": {
-"t": "Предчувствие 2",
-"es": "El presentimiento 2",
-"l": "ru",
-"y": 2024,
-"ru": "Предчувствие 2",
-"p": "img/portadas/predchuvstvie-2.webp",
-"tr": {}
-},
-"tajna-semi-fader": {
-"t": "Тайна семьи Фадер",
-"es": "El misterio de los Fader (ru.)",
-"l": "ru",
-"y": null,
-"ru": "Тайна семьи Фадер",
-"p": "img/portadas/tajna-semi-fader.webp",
-"tr": {
-"es": "el-misterio-de-los-fader"
-}
-},
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Люблю тебя молча (ит.)",
-"p": "img/portadas/ti-amo-in-silenzio.webp",
-"tr": {
-"ru": "tikhaya-lyubov"
-}
-},
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
-"tr": {}
-},
-"27-ocak": {
-"t": "27 Ocak",
-"es": "27 de enero",
-"l": "tr",
-"y": 2026,
-"ru": "27 января",
-"p": "img/portadas/27-ocak.webp",
-"tr": {}
-},
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
-"l": "it",
-"y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
-"tr": {}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
 "tr": {}
 },
 "el-tren-fantasma": {
@@ -26259,71 +26380,24 @@ export const NOVELAS = {
 "ru": "prizrachnyj-poezd"
 }
 },
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви (ит.)",
-"p": "img/portadas/onde-d-amore.webp",
-"tr": {
-"es": "ondas-de-amor"
-}
-},
-"pokhititel-serdec-portret-osnovatelya": {
-"t": "Похититель сердец: Портрет основателя",
-"es": "Ladrón de corazones: El retrato del fundador",
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
 "l": "ru",
 "y": 2026,
-"ru": "Похититель сердец: Портрет основателя",
-"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
-"tr": {}
-},
-"el-misterio-de-los-fader": {
-"t": "El misterio de los Fader",
-"es": "El misterio de los Fader",
-"l": "es",
-"y": 2025,
-"ru": "Тайна семьи Фадер (исп.)",
-"p": "img/portadas/el-misterio-de-los-fader.webp",
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
 "tr": {
-"ru": "tajna-semi-fader"
+"en": "the-date"
 }
 },
-"dikij-chas-2": {
-"t": "Дикий час: Духи гор",
-"es": "La hora salvaje: Los espíritus de la montaña",
-"l": "ru",
+"podzemni-tajemstvi": {
+"t": "Podzemní tajemství",
+"es": "El secreto subterráneo (checo)",
+"l": "cs",
 "y": null,
-"ru": "Дикий час: Духи гор",
-"p": "img/portadas/dikij-chas-2.webp",
-"tr": {}
-},
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
-"tr": {}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
-"y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
-"tr": {}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
-"l": "es",
-"y": 2026,
-"ru": "Любовь в космосе",
-"p": "img/portadas/amor-en-el-cosmos.webp",
+"ru": "Подземная тайна (чеш.)",
+"p": "img/portadas/podzemni-tajemstvi.webp",
 "tr": {}
 },
 "mashina-snov": {
@@ -26335,85 +26409,6 @@ export const NOVELAS = {
 "p": "img/portadas/mashina-snov.webp",
 "tr": {}
 },
-"zvezdnyj-roman": {
-"t": "Звёздный роман",
-"es": "Novela estelar",
-"l": "ru",
-"y": null,
-"ru": "Звёздный роман",
-"p": "img/portadas/zvezdnyj-roman.webp",
-"tr": {}
-},
-"tajna-v-biblioteke": {
-"t": "Тайна в библиотеке",
-"es": "El misterio de la biblioteca",
-"l": "ru",
-"y": 2026,
-"ru": "Тайна в библиотеке",
-"p": "img/portadas/tajna-v-biblioteke.webp",
-"tr": {}
-},
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
-"l": "es",
-"y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
-"tr": {}
-},
-"la-voix": {
-"t": "La voix",
-"es": "La voz (fr.)",
-"l": "fr",
-"y": null,
-"ru": "Голос (фр.)",
-"p": "img/portadas/la-voix.webp",
-"tr": {
-"ru": "golos"
-}
-},
-"ostrovy-nad-prahou": {
-"t": "Ostrovy nad Prahou",
-"es": "Las islas sobre Praga (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Острова над Прагой (чеш.)",
-"p": "img/portadas/ostrovy-nad-prahou.webp",
-"tr": {}
-},
-"grustnyj-gorod": {
-"t": "Грустный город",
-"es": "La ciudad triste",
-"l": "ru",
-"y": 2026,
-"ru": "Грустный город",
-"p": "img/portadas/grustnyj-gorod.webp",
-"tr": {
-"it": "la-citta-triste"
-}
-},
-"prizrachnyj-poezd": {
-"t": "Призрачный поезд",
-"es": "El tren fantasma (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Призрачный поезд",
-"p": "img/portadas/prizrachnyj-poezd.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"it": "il-treno-fantasma"
-}
-},
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
-"tr": {}
-},
 "karnaval-sinei": {
 "t": "Карнавал Синеи",
 "es": "El Carnaval de Sinea",
@@ -26423,56 +26418,23 @@ export const NOVELAS = {
 "p": "img/portadas/karnaval-sinei.webp",
 "tr": {}
 },
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
 "l": "ru",
 "y": 2026,
-"ru": "Тихая любовь",
-"p": "img/portadas/tikhaya-lyubov.webp",
-"tr": {
-"it": "ti-amo-in-silenzio"
-}
-},
-"znak": {
-"t": "Знак",
-"es": "El signo",
-"l": "ru",
-"y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
 "tr": {}
 },
-"predchuvstvie-2-3": {
-"t": "Предчувствие 2.3",
-"es": "El presentimiento 2.3",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.3",
-"p": "img/portadas/predchuvstvie-2-3.webp",
-"tr": {}
-},
-"divlji-chas": {
-"t": "Дивљи час",
-"es": "La hora salvaje (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час (серб.)",
-"p": "img/portadas/divlji-chas.webp",
-"tr": {
-"ru": "dikij-chas"
-}
-},
-"venecianskaya-maska": {
-"t": "Венецианская маска",
-"es": "La máscara de Venecia (ru.)",
-"l": "ru",
+"ostrovy-nad-prahou": {
+"t": "Ostrovy nad Prahou",
+"es": "Las islas sobre Praga (checo)",
+"l": "cs",
 "y": 2026,
-"ru": "Венецианская маска",
-"p": "img/portadas/venecianskaya-maska.webp",
-"tr": {
-"it": "maschera-di-venezia"
-}
+"ru": "Острова над Прагой (чеш.)",
+"p": "img/portadas/ostrovy-nad-prahou.webp",
+"tr": {}
 },
 "golos": {
 "t": "Голос",
@@ -26485,53 +26447,37 @@ export const NOVELAS = {
 "fr": "la-voix"
 }
 },
-"rezonans-lyubvi": {
-"t": "Резонанс любви",
-"es": "Resonancia del amor",
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
 "l": "ru",
-"y": null,
-"ru": "Резонанс любви",
-"p": "img/portadas/rezonans-lyubvi.webp",
-"tr": {}
-},
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
-},
-"podzemni-tajemstvi": {
-"t": "Podzemní tajemství",
-"es": "El secreto subterráneo (checo)",
-"l": "cs",
-"y": null,
-"ru": "Подземная тайна (чеш.)",
-"p": "img/portadas/podzemni-tajemstvi.webp",
-"tr": {}
-},
-"ondas-de-amor": {
-"t": "Ondas de amor",
-"es": "Ondas de amor",
-"l": "es",
 "y": 2026,
-"ru": "Волны любви (исп.)",
-"p": "img/portadas/ondas-de-amor.webp",
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
 "tr": {
-"it": "onde-d-amore"
+"it": "ti-amo-in-silenzio"
 }
 },
-"maschera-di-venezia": {
-"t": "Maschera di Venezia",
-"es": "La máscara de Venecia (it.)",
-"l": "it",
+"lluvia-de-meteoritos": {
+"t": "Lluvia de meteoritos",
+"es": "Lluvia de meteoritos",
+"l": "es",
 "y": null,
-"ru": "Венецианская маска (ит.)",
-"p": "img/portadas/maschera-di-venezia.webp",
+"ru": "Метеоритный дождь (исп.)",
+"p": "img/portadas/lluvia-de-meteoritos.webp",
 "tr": {
-"ru": "venecianskaya-maska"
+"ru": "meteoritnyj-dozhd"
+}
+},
+"la-voix": {
+"t": "La voix",
+"es": "La voz (fr.)",
+"l": "fr",
+"y": null,
+"ru": "Голос (фр.)",
+"p": "img/portadas/la-voix.webp",
+"tr": {
+"ru": "golos"
 }
 },
 "predtucha": {
@@ -26557,6 +26503,53 @@ export const NOVELAS = {
 "ru": "predchuvstvie"
 }
 },
+"operacion-londres": {
+"t": "El misterio de los Fader: Operación Londres",
+"es": "El misterio de los Fader: Operación Londres",
+"l": "es",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
+"p": "img/portadas/operacion-londres.webp",
+"tr": {}
+},
+"maschera-di-venezia": {
+"t": "Maschera di Venezia",
+"es": "La máscara de Venecia (it.)",
+"l": "it",
+"y": null,
+"ru": "Венецианская маска (ит.)",
+"p": "img/portadas/maschera-di-venezia.webp",
+"tr": {
+"ru": "venecianskaya-maska"
+}
+},
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
+"l": "es",
+"y": null,
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
+"tr": {}
+},
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"tr": {}
+},
+"pokhititel-serdec-portret-osnovatelya": {
+"t": "Похититель сердец: Портрет основателя",
+"es": "Ladrón de corazones: El retrato del fundador",
+"l": "ru",
+"y": 2026,
+"ru": "Похититель сердец: Портрет основателя",
+"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
+"tr": {}
+},
 "predchuvstvie": {
 "t": "Предчувствие",
 "es": "El presentimiento",
@@ -26580,6 +26573,26 @@ export const NOVELAS = {
 "pl": "przeczucie"
 }
 },
+"predchuvstvie-2": {
+"t": "Предчувствие 2",
+"es": "El presentimiento 2",
+"l": "ru",
+"y": 2024,
+"ru": "Предчувствие 2",
+"p": "img/portadas/predchuvstvie-2.webp",
+"tr": {}
+},
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
+"tr": {
+"es": "ondas-de-amor"
+}
+},
 "dikij-chas": {
 "t": "Дикий час",
 "es": "La hora salvaje",
@@ -26591,6 +26604,221 @@ export const NOVELAS = {
 "sr": "divlji-chas"
 }
 },
+"divlji-chas-malbec": {
+"t": "Дивљи час: Љубав укуса малбека",
+"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
+"p": "img/portadas/divlji-chas-malbec.webp",
+"tr": {}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
+"tr": {}
+},
+"dikij-chas-karnaval-razdora": {
+"t": "Дикий час: Карнавал раздора",
+"es": "La hora salvaje: El carnaval de la discordia",
+"l": "ru",
+"y": 2026,
+"ru": "Дикий час: Карнавал раздора",
+"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
+"tr": {}
+},
+"prizrachnyj-poezd": {
+"t": "Призрачный поезд",
+"es": "El tren fantasma (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Призрачный поезд",
+"p": "img/portadas/prizrachnyj-poezd.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"it": "il-treno-fantasma"
+}
+},
+"rezonans-lyubvi": {
+"t": "Резонанс любви",
+"es": "Resonancia del amor",
+"l": "ru",
+"y": null,
+"ru": "Резонанс любви",
+"p": "img/portadas/rezonans-lyubvi.webp",
+"tr": {}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
+"y": 2026,
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
+"tr": {}
+},
+"divlji-chas": {
+"t": "Дивљи час",
+"es": "La hora salvaje (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час (серб.)",
+"p": "img/portadas/divlji-chas.webp",
+"tr": {
+"ru": "dikij-chas"
+}
+},
+"la-citta-triste": {
+"t": "La città triste",
+"es": "La ciudad triste (it.)",
+"l": "it",
+"y": 2025,
+"ru": "Грустный город (ит.)",
+"p": "img/portadas/la-citta-triste.webp",
+"tr": {
+"ru": "grustnyj-gorod"
+}
+},
+"tajna-semi-fader": {
+"t": "Тайна семьи Фадер",
+"es": "El misterio de los Fader (ru.)",
+"l": "ru",
+"y": null,
+"ru": "Тайна семьи Фадер",
+"p": "img/portadas/tajna-semi-fader.webp",
+"tr": {
+"es": "el-misterio-de-los-fader"
+}
+},
+"ondas-de-amor": {
+"t": "Ondas de amor",
+"es": "Ondas de amor",
+"l": "es",
+"y": 2026,
+"ru": "Волны любви (исп.)",
+"p": "img/portadas/ondas-de-amor.webp",
+"tr": {
+"it": "onde-d-amore"
+}
+},
+"kralovna-vinobrani": {
+"t": "Královna vinobraní",
+"es": "La reina de la Vendimia (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Королева Вендимии (чеш.)",
+"p": "img/portadas/kralovna-vinobrani.webp",
+"tr": {
+"es": "la-reina-de-la-vendimia"
+}
+},
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
+"l": "ru",
+"y": 2026,
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
+"tr": {}
+},
+"el-misterio-de-los-fader": {
+"t": "El misterio de los Fader",
+"es": "El misterio de los Fader",
+"l": "es",
+"y": 2025,
+"ru": "Тайна семьи Фадер (исп.)",
+"p": "img/portadas/el-misterio-de-los-fader.webp",
+"tr": {
+"ru": "tajna-semi-fader"
+}
+},
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
+"l": "ru",
+"y": 2026,
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
+"tr": {}
+},
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
+"l": "es",
+"y": 2026,
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
+"tr": {}
+},
+"27-ocak": {
+"t": "27 Ocak",
+"es": "27 de enero",
+"l": "tr",
+"y": 2026,
+"ru": "27 января",
+"p": "img/portadas/27-ocak.webp",
+"tr": {}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"tr": {}
+},
+"anomalia": {
+"t": "Anomalía",
+"es": "Anomalía",
+"l": "es",
+"y": null,
+"ru": "Аномалия (исп.)",
+"p": "img/portadas/anomalia.webp",
+"tr": {}
+},
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
+"tr": {
+"ru": "tikhaya-lyubov"
+}
+},
 "predchuvstvie-2-2": {
 "t": "Предчувствие 2.2",
 "es": "El presentimiento 2.2",
@@ -26600,27 +26828,55 @@ export const NOVELAS = {
 "p": "img/portadas/predchuvstvie-2-2.webp",
 "tr": {}
 },
-"la-reina-de-la-vendimia": {
-"t": "La reina de la Vendimia",
-"es": "La reina de la Vendimia",
-"l": "es",
-"y": 2026,
-"ru": "Королева Вендимии (исп.)",
-"p": "img/portadas/la-reina-de-la-vendimia.webp",
+"il-treno-fantasma": {
+"t": "Il treno fantasma",
+"es": "El tren fantasma (it.)",
+"l": "it",
+"y": null,
+"ru": "Призрачный поезд (ит.)",
+"p": "img/portadas/il-treno-fantasma.webp",
 "tr": {
-"cs": "kralovna-vinobrani"
+"es": "el-tren-fantasma",
+"ru": "prizrachnyj-poezd"
 }
 },
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
+"grustnyj-gorod": {
+"t": "Грустный город",
+"es": "La ciudad triste",
 "l": "ru",
 "y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
+"ru": "Грустный город",
+"p": "img/portadas/grustnyj-gorod.webp",
 "tr": {
-"en": "the-date"
+"it": "la-citta-triste"
 }
+},
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
+"tr": {}
+},
+"predchuvstvie-2-4": {
+"t": "Предчувствие 2.4",
+"es": "El presentimiento 2.4",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.4",
+"p": "img/portadas/predchuvstvie-2-4.webp",
+"tr": {}
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
 },
 "ladro-di-cuori-3": {
 "t": "Ladro di cuori 3",
@@ -26631,13 +26887,51 @@ export const NOVELAS = {
 "p": "img/portadas/ladro-di-cuori-3.webp",
 "tr": {}
 },
-"divlji-chas-malbec": {
-"t": "Дивљи час: Љубав укуса малбека",
-"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
-"l": "sr",
+"zvezdnyj-roman": {
+"t": "Звёздный роман",
+"es": "Novela estelar",
+"l": "ru",
 "y": null,
-"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
-"p": "img/portadas/divlji-chas-malbec.webp",
+"ru": "Звёздный роман",
+"p": "img/portadas/zvezdnyj-roman.webp",
+"tr": {}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"predchuvstvie-2-3": {
+"t": "Предчувствие 2.3",
+"es": "El presentimiento 2.3",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.3",
+"p": "img/portadas/predchuvstvie-2-3.webp",
+"tr": {}
+},
+"venecianskaya-maska": {
+"t": "Венецианская маска",
+"es": "La máscara de Venecia (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Венецианская маска",
+"p": "img/portadas/venecianskaya-maska.webp",
+"tr": {
+"it": "maschera-di-venezia"
+}
+},
+"tajna-v-biblioteke": {
+"t": "Тайна в библиотеке",
+"es": "El misterio de la biblioteca",
+"l": "ru",
+"y": 2026,
+"ru": "Тайна в библиотеке",
+"p": "img/portadas/tajna-v-biblioteke.webp",
 "tr": {}
 }
 };
