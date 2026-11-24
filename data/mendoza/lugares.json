@@ -305,7 +305,12 @@
     -68.84467
    ],
    "modelo": "museo",
-   "desc": "La Escuela Provincial de Bellas Artes, en la esquina de Patricias Mendocinas y Pedro Molina. Nació en 1933 como Academia Provincial de Bellas Artes y hoy es la escuela n.º 4-024 «Bellas Artes»: pintura, escultura, grabado, talleres que huelen a trementina y murales pintados por sus ex alumnos en las paredes de afuera. De acá salieron generaciones de artistas mendocinos. Acá estudió Luis Fader, el que escribe estas novelas.",
+   "desc": "La Escuela Provincial de Bellas Artes, en la esquina de Patricias Mendocinas y Pedro Molina. Nació en 1933 como Academia Provincial de Bellas Artes y hoy es la escuela n.º 4-024 «Bellas Artes»: pintura, escultura, grabado, talleres que huelen a trementina y murales pintados por sus ex alumnos en las paredes de afuera. De acá salieron generaciones de artistas mendocinos. Acá estudió Luis Fader, el que escribe estas novelas. En «La reina de la Vendimia», camino al asado de Estela, la Ford de Sergio dobla por Pedro Molina y Luis, sentado en la caja sobre la leña, le señala a Jana la esquina: «Ahí aprendí a mirar». La Ford no frena.",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     48
+    ]
+   },
    "sin_ilustracion": true
   },
   {
