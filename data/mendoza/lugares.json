@@ -250,6 +250,53 @@
    "sin_ilustracion": true
   },
   {
+   "id": "md-terminal",
+   "nombre": "Terminal de Ómnibus del Sol",
+   "cat": "transporte",
+   "ll": [
+    -32.8946844,
+    -68.8302139
+   ],
+   "modelo": "terminal",
+   "desc": "La terminal de ómnibus de Mendoza, sobre la avenida Gobernador Videla, al lado de la Costanera y del nudo donde empieza el Acceso Este. Por acá entra y sale la provincia en micro: a Buenos Aires, a San Juan, a San Rafael, a los pueblos de la montaña y, cruzando la cordillera por el Cristo Redentor, a Santiago de Chile. Nave larga, dársenas con micros de todos los colores, mochileros durmiendo sobre la mochila y vendedores de sándwiches de miga.",
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-condor",
+   "nombre": "El Cóndor del Acceso Este",
+   "cat": "monumento",
+   "ll": [
+    -32.897322,
+    -68.819553
+   ],
+   "modelo": "condor-acceso",
+   "desc": "El cóndor que da la bienvenida a Mendoza a todos los que entran por la ruta 7, en el nudo del Acceso Este y el Acceso Sur, en Guaymallén. Un cóndor realista del escultor Juan José Cardona, con las alas abiertas, posado sobre un cóndor abstracto de hormigón colocado ahí en 1958. En la tormenta de granizo del 23 de febrero de 2022 se quedó sin cabeza; Orlando Leytes lo restauró y volvió a su lugar en 2023, y hoy es patrimonio de Mendoza. En «La reina de la Vendimia», cuando cae la calma rara que precede a la hora salvaje, una chica cuenta que iba manejando por el Acceso Este y se despertó frenada en la banquina, con el motor apagado y todos los autos alrededor «frenados, ordenaditos»; y Julieta, ese día, tiene ganas de manejar el Fiat a doscientos por el mismo Acceso.",
+   "buscar": "Acceso Este",
+   "extra": {
+    "la-reina-de-la-vendimia": [
+     10,
+     27
+    ],
+    "kralovna-vinobrani": [
+     10,
+     27
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "md-casa-maipu",
+   "nombre": "La otra casa de Luis Fader (Maipú)",
+   "cat": "casa",
+   "ll": [
+    -32.942,
+    -68.813
+   ],
+   "modelo": "monobloc",
+   "desc": "La otra casa de Luis Fader, en Mendoza: barrio 7 de Julio, monobloc 1, en Luzuriaga, Maipú, la tierra de las bodegas y los olivares, a pocas cuadras del metrotranvía. No es un lugar de las novelas sino del que las escribe.",
+   "sin_ilustracion": true
+  },
+  {
    "id": "md-patricias",
    "nombre": "Calle Patricias Mendocinas",
    "cat": "calle",
@@ -715,16 +762,18 @@
    "nombre": "La casa de la infancia de Luis (Las Heras)",
    "cat": "casa",
    "ll": [
-    -32.8447,
-    -68.8203
+    -32.84353,
+    -68.82175
    ],
    "modelo": "hogar",
-   "desc": "La casa donde creció Luis, en Las Heras, «el departamento más trabajador y más pobre de Mendoza», a doscientos metros del Campo Histórico El Plumerillo. En «El misterio de los Fader: Operación Londres» empieza acá, el 2 de abril de 1992: la sala en silencio, el televisor encendido y la madre de Luis que recuerda la guerra de Malvinas, «los milicos mandaron a esos pibes a una batalla imposible»; Luis, chico, piensa «yo no quiero ser soldado» y se refugia en la música clásica, que comparte con su mamá. En octubre de ese año, en la escuela Juan Martínez de Rosas, con guardapolvo blanco, no entiende por qué al Día de la Raza le pusieron ese nombre. Según su padre, de chico fue boy scout y nunca terminó de encajar en ningún lado. En «Дикий час: Духи гор», con la ciudad tomada, Luis lleva a todos a El Plumerillo y le dice a Natasha: «A doscientos metros de acá está la casa donde viví de chico. Acá aprendí a pararme derecho». Esa misma tarde, en un departamento de Las Heras, su mamá Mónica mira la Vía Blanca por televisión y se ríe: «Qué suerte tiene Luis». La casa es de la novela; el barrio es real.",
+   "desc": "La casa donde creció Luis, en Las Heras, «el departamento más trabajador y más pobre de Mendoza», a doscientos metros del portón del Campo Histórico El Plumerillo, del otro lado de la calle Lisandro Moyano. En «El misterio de los Fader: Operación Londres» empieza acá, el 2 de abril de 1992: la sala en silencio, el televisor encendido y la madre de Luis, Olga, que recuerda la guerra de Malvinas, «los milicos mandaron a esos pibes a una batalla imposible»; Luis, chico, piensa «yo no quiero ser soldado» y se refugia en la música clásica, que comparte con su mamá. En octubre de ese año, en la escuela Juan Martínez de Rosas, con guardapolvo blanco, no entiende por qué al Día de la Raza le pusieron ese nombre. Según su padre, de chico fue boy scout y nunca terminó de encajar en ningún lado. En «Дикий час: Духи гор», con la ciudad tomada, Luis lleva a todos a El Plumerillo y le dice a Natasha: «A doscientos metros de acá está la casa donde viví de chico. Acá aprendí a pararme derecho». Esa misma tarde, en un departamento de Las Heras, Mónica, la esposa de Sergio, mira la Vía Blanca por televisión y se ríe: «Qué suerte tiene Luis». Y al final de la novela, en la montaña, Luis por fin puede abrazar a su mamá, Olga, liberada del demonio por la mano de Natasha; ella no quiere volver a la ciudad: «Mi lugar está en las montañas». La casa es de la novela; el barrio es real.",
    "buscar": "Casa familiar, Las Heras|дом, где я жил в детстве",
    "extra": {
     "dikij-chas-2": [
      8,
-     50
+     50,
+     53,
+     54
     ],
     "tajna-semi-fader": [
      46

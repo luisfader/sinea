@@ -674,11 +674,11 @@
    "ru": "В двухстах метрах от Эль-Плумерильо. Здесь я научился держаться прямо. И не хотеть быть солдатом — этому тоже учатся."
   },
   {
-   "a": "Mónica",
-   "ar": "Моника",
+   "a": "Olga",
+   "ar": "Ольга",
    "s": 5,
-   "es": "Ponía música clásica y él se sentaba en el piso a escuchar. Los demás chicos querían a Madonna. El mío, a Chaikovski.",
-   "ru": "Я ставила классику, и он садился на пол слушать. Другие дети хотели Мадонну. Мой — Чайковского."
+   "es": "Ponía música clásica y él se sentaba en el piso a escuchar. Los demás chicos querían a Madonna. El mío, a Chaikovski. Ahora lo escucho desde la montaña.",
+   "ru": "Я ставила классику, и он садился на пол слушать. Другие дети хотели Мадонну. Мой — Чайковского. Теперь я слушаю его из гор."
   },
   {
    "a": "Sergio",
@@ -691,8 +691,8 @@
    "a": "Natasha",
    "ar": "Наташа",
    "s": 5,
-   "es": "Me la mostró desde el campo histórico, con la ciudad tomada y la cumbia sonando. Salté de alegría. Después bailé. No pude evitarlo.",
-   "ru": "Он показал мне его с исторического поля, когда город был захвачен и играла кумбия. Я подпрыгнула от радости. Потом танцевала. Не могла удержаться."
+   "es": "Me la mostró desde el portón del campo histórico, con la ciudad tomada y la cumbia sonando. Salté de alegría. Después bailé. No pude evitarlo.",
+   "ru": "Он показал мне его от ворот исторического поля, когда город был захвачен и играла кумбия. Я подпрыгнула от радости. Потом танцевала. Не могла удержаться."
   },
   {
    "a": "Señorita Silvia",
@@ -714,6 +714,13 @@
    "s": 5,
    "es": "El chico de los Fader dibujaba la cordillera en la vereda con tiza. Ahora sale en la tele con una reina. Yo siempre dije.",
    "ru": "Мальчишка Фадеров рисовал мелом Кордильеру на тротуаре. А теперь он по телевизору с королевой. Я всегда говорила."
+  },
+  {
+   "a": "Mónica",
+   "ar": "Моника",
+   "s": 4,
+   "es": "No es mi casa ni mi hijo, pero lo vi crecer de lejos. Cuando lo vi en la tele con la reina, me reí sola en el sillón.",
+   "ru": "Это не мой дом и не мой сын, но я видела, как он растёт, издалека. Когда увидела его по телевизору с королевой, смеялась одна на диване."
   }
  ],
  "md-plaza-san-martin": [
@@ -869,6 +876,75 @@
    "s": 4,
    "es": "En la tele dijeron «dron gigante con forma de dragón». Mi nuera le enseñó el nombre a todo Las Heras. Eso no lo dijeron en la tele.",
    "ru": "По телевизору сказали «гигантский дрон в форме дракона». Моя невестка научила его имени весь Лас-Эрас. Этого по телевизору не сказали."
+  }
+ ],
+ "md-terminal": [
+  {
+   "a": "Marina",
+   "ar": "Марина",
+   "s": 4,
+   "es": "Llegamos en micro desde Buenos Aires: diecisiete horas, dos películas repetidas y un alfajor. La cordillera desde la dársena compensa todo.",
+   "ru": "Приехали на автобусе из Буэнос-Айреса: семнадцать часов, два повторяющихся фильма и один альфахор. Кордильеры с платформы окупают всё."
+  },
+  {
+   "a": "Katarina",
+   "ar": "Катарина",
+   "s": 3,
+   "es": "Pregunté por el micro a Uspallata en serbio, en ruso y en inglés. Me contestó un señor en mendocino. Lo entendí igual.",
+   "ru": "Спросила про автобус до Успальяты по-сербски, по-русски и по-английски. Ответил сеньор по-мендосски. Я всё равно поняла."
+  },
+  {
+   "a": "Sergio",
+   "ar": "Серхио",
+   "s": 4,
+   "es": "Vine a buscar a unos amigos de mi hijo con el Gacel. No entraron todos. El Gacel no se presta.",
+   "ru": "Приехал встречать друзей сына на «Гасель». Все не поместились. «Гасель» не одалживаю."
+  }
+ ],
+ "md-condor": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Cada vez que vuelvo a Mendoza por tierra, lo primero que veo es el cóndor. Cuando se quedó sin cabeza me pareció un mal presagio. Ya la tiene de nuevo.",
+   "ru": "Каждый раз, когда возвращаюсь в Мендосу по земле, первым вижу кондора. Когда он остался без головы, мне это показалось дурным знаком. Голова снова на месте."
+  },
+  {
+   "a": "Julieta",
+   "ar": "Хулиета",
+   "s": 4,
+   "es": "Tenía ganas de pasar por acá a doscientos con el Fiat. Pasé a sesenta. Le hice chau al cóndor igual.",
+   "ru": "Хотелось промчаться тут на «фиате» под двести. Проехала на шестидесяти. Кондору всё равно помахала."
+  },
+  {
+   "a": "Un cóndor de Las Heras",
+   "ar": "Кондор из Лас-Эраса",
+   "s": 5,
+   "es": "Lo conozco de arriba. Es el único que no se mueve cuando paso volando. Respeto.",
+   "ru": "Знаю его сверху. Единственный, кто не шевелится, когда я пролетаю. Уважаю."
+  },
+  {
+   "a": "Natasha",
+   "ar": "Наташа",
+   "s": 5,
+   "es": "Le dije a Luis que en Serbia pondríamos un dragón. Me contestó que Mendoza ya tiene uno, que lo llamé yo.",
+   "ru": "Я сказала Луису, что в Сербии поставили бы дракона. Он ответил, что у Мендосы дракон уже есть — я сама его позвала."
+  }
+ ],
+ "md-casa-maipu": [
+  {
+   "a": "Sergio",
+   "ar": "Серхио",
+   "s": 4,
+   "es": "Mi hijo tiene una casa en Las Heras en los recuerdos y otra en Maipú en serio. Y yo sigo esperando que me invite a comer.",
+   "ru": "У моего сына один дом в Лас-Эрасе — в воспоминаниях, и другой в Майпу — по-настоящему. А я всё жду, когда он позовёт меня на обед."
+  },
+  {
+   "a": "El zorro",
+   "ar": "Лис",
+   "s": 5,
+   "es": "Monobloc 1. Olivos cerca, vino cerca, metrotranvía cerca. Buen lugar para escribir novelas con zorros.",
+   "ru": "Монобллок 1. Оливы рядом, вино рядом, метротрамвай рядом. Хорошее место, чтобы писать романы с лисами."
   }
  ]
 }

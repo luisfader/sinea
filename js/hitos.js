@@ -291,6 +291,19 @@ const MODELOS = {
   observatorio() { const g = new THREE.Group(); g.add(cil(6, 6.5, 14, 0xe6ddc8)); g.add(esfera(6, M(0xc9cfd2, { metalness: .5 }), 0, 14, 0, {}, [20, 10, 0, Math.PI * 2, 0, Math.PI / 2])); return { g, r: 12 }; },
   puertas() { const g = new THREE.Group(), p = M(0x8f8a80); g.add(caja(2, 9, 2, p, -6)); g.add(caja(2, 9, 2, p, 6)); g.add(caja(14, 2, 2, p, 0, 9)); g.add(caja(.4, 1, 10, 0x222222, -3, 0, 0)); return { g, r: 10 }; },
   redondo(u) { const g = new THREE.Group(); const m = new THREE.MeshStandardMaterial({ color: 0xf2f2ee }); const c = new THREE.Mesh(new THREE.CylinderGeometry(22, 22, 30, 40), m); c.position.y = 15; c.castShadow = true; g.add(c); const vm = new THREE.MeshStandardMaterial({ color: 0x31475a, emissive: 0xffd28a, emissiveIntensity: 0 }); for (let k = 0; k < 3; k++) for (let i = 0; i < 18; i++) { const a = i / 18 * Math.PI * 2; const o = new THREE.Mesh(new THREE.CircleGeometry(1.6, 16), vm); o.position.set(Math.cos(a) * 22.05, 7 + k * 8, Math.sin(a) * 22.05); o.lookAt(Math.cos(a) * 40, 7 + k * 8, Math.sin(a) * 40); g.add(o); } return { g, r: 28, anim(t, n) { vm.emissiveIntensity = n * 1.2; } }; },
+  monobloc() { // monobloc de barrio: bloque de tres pisos con balcones, escalera y un patio con árboles
+    const g = new THREE.Group(), pared = M(0xece4d6), vid = M(0x9cc9e6), bal = M(0x8a8f96);
+    g.add(caja(40, .4, 26, 0xb9c49a));
+    g.add(caja(30, 12, 11, pared, 0, 0, -3)); g.add(caja(31, .8, 12, 0xb6aea2, 0, 12, -3));
+    for (let p = 0; p < 3; p++) for (let i = 0; i < 6; i++) {
+      const x = -12.5 + i * 5; g.add(caja(2.4, 2, .3, vid, x, 1.2 + p * 3.8, 2.6));
+      if (p > 0) g.add(caja(3.6, .3, 1.4, bal, x, .9 + p * 3.8, 3.2));
+    }
+    g.add(caja(4, 12.6, 3, 0xd8cfc0, 0, 0, 3.6)); g.add(caja(2, 2.6, .3, 0x5a3a28, 0, 0, 5.2)); // escalera
+    g.add(caja(1.2, 2, 1.2, 0x1a5fa8, 11, 12.8, -3)); // tanque de agua
+    for (const [x, z] of [[-16, 9], [16, 9], [-8, 11]]) { g.add(cil(.4, .5, 3, 0x6b4a2f, x, 0, z, 6)); g.add(esfera(2.2, 0x6c9a4c, x, 4.4, z)); }
+    return { g, r: 22 };
+  },
   hogar() {
     const g = new THREE.Group();
     g.add(caja(14, 11, 11, 0xf3c98b)); const t = new THREE.Mesh(prismaGeo(), M(0xb5482f)); t.scale.set(15, 5.5, 12); t.position.y = 11; t.castShadow = true; g.add(t);
@@ -1183,6 +1196,39 @@ const MODELOS = {
     for (let i = 0; i < 6; i++) { const a = i * 1.1; g.add(cil(.2, .2, 12, 0x3a2e22, Math.cos(a) * 120, 0, Math.sin(a) * 90, 5)); g.add(caja(3, 2, .1, M(0x2a2420), Math.cos(a) * 120 + 1.5, 10, Math.sin(a) * 90)); }
     return { g, r: 0 };
   },
+  'condor-acceso'() { // el Cóndor del Acceso Este: cóndor realista de Cardona sobre el cóndor abstracto de hormigón
+    const g = new THREE.Group(), horm = M(0xd8d2c6), negro = M(0x26262a, { roughness: .6 }), blanco = M(0xf2efe8);
+    g.add(cil(16, 17, 1.2, 0x9fb07a, 0, 0, 0, 24)); // el predio con césped
+    g.add(caja(10, 3, 6, horm, 0, 1.2)); // pedestal
+    // el cóndor abstracto: dos planos inclinados de hormigón como alas
+    for (const sx of [-1, 1]) { const a = caja(14, 2.4, 5, horm, sx * 6, 7, 0); a.rotation.z = sx * .55; g.add(a); }
+    g.add(caja(4, 9, 4.5, horm, 0, 4.2));
+    // el cóndor realista posado arriba, con las alas abiertas
+    const cuerpo = esfera(2.6, negro, 0, 15.5); cuerpo.scale.set(1, .9, 1.7); g.add(cuerpo);
+    g.add(esfera(1.5, blanco, 0, 16.6, 3.2)); // collar blanco
+    const cab = esfera(1.1, 0x7a4a3c, 0, 17.4, 4.6); g.add(cab);
+    g.add(caja(.6, .5, 1.3, 0xd9c6a0, 0, 17.1, 5.8));
+    for (const sx of [-1, 1]) {
+      const ala = caja(13, .6, 4.6, negro, sx * 7.6, 16.4, -.3); ala.rotation.z = sx * .16; g.add(ala);
+      const pl = caja(4.5, .62, 4.2, blanco, sx * 5.2, 16.5, .1); pl.rotation.z = sx * .16; g.add(pl);
+      for (let i = 0; i < 4; i++) { const pd = caja(2.6, .4, .8, negro, sx * (14.6 + i * .2), 17.6 + i * .15, -2 + i * 1.3); pd.rotation.z = sx * .35; g.add(pd); }
+    }
+    return { g, r: 22 };
+  },
+  terminal() { // la Terminal del Sol: nave larga de techo curvo y dársenas con micros
+    const g = new THREE.Group();
+    g.add(caja(150, .5, 70, 0xb9b3a8));
+    g.add(caja(130, 9, 26, 0xe2ddd2, 0, 0, -14));
+    const bg = new THREE.CylinderGeometry(15, 15, 132, 20, 1, true, 0, Math.PI); bg.rotateZ(Math.PI / 2);
+    const techo = new THREE.Mesh(bg, new THREE.MeshStandardMaterial({ color: 0xb8c4cc, metalness: .35, roughness: .4, side: THREE.DoubleSide }));
+    techo.scale.y = .35; techo.position.set(0, 9, -14); techo.castShadow = true; g.add(techo);
+    g.add(caja(132, 1, 18, 0x8f969c, 0, 8, 14)); // alero de las dársenas
+    for (let i = 0; i < 12; i++) g.add(cil(.5, .5, 8, 0x6c737a, -60 + i * 11, 0, 21, 6));
+    const col = [0xc8372d, 0x2f6fb5, 0xe8b23a, 0x3c8a4e, 0xf0f0f0, 0x7a3e9d];
+    for (let i = 0; i < 9; i++) { const c = col[i % col.length]; g.add(caja(4, 4.2, 14, c, -52 + i * 13, 0, 27)); g.add(caja(4.1, 1.1, 13, 0x2a3440, -52 + i * 13, 2.4, 27)); }
+    g.add(caja(26, 3, .6, 0x1f5f9c, 0, 11, -.6)); // cartel «Terminal del Sol»
+    return { g, r: 75 };
+  },
   'tren-fantasma'() { return { g: new THREE.Group(), r: 0 }; }
 };
 
@@ -1204,7 +1250,7 @@ export function construirHitos(lugares, u) {
     grupo.add(m.g);
     if (m.anim) anims.push(m.anim);
     if (m.r) reservas.push([L.x, L.y, m.r]);
-    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, usina: 20, 'palacio-hielo': 72, 'isla-guardiana': 36, 'muralla-norte': 50, campamento: 12, 'faro-ruina': 50, 'piedra-negra': 10, 'templo-corazon': 96, 'torres-caracola': 96, 'portal-azul': 34, 'nave-enemiga': 330, 'roca-llave': 28, 'torre-bandera': 80, 'mesas-trampa': 10, 'karluv-most': 22, 'hrad-praga': 92, tyn: 82, petrin: 64, vysehrad: 60, zizkov: 230, mikulas: 62, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
+    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, usina: 20, 'condor-acceso': 20, terminal: 16, monobloc: 16, 'palacio-hielo': 72, 'isla-guardiana': 36, 'muralla-norte': 50, campamento: 12, 'faro-ruina': 50, 'piedra-negra': 10, 'templo-corazon': 96, 'torres-caracola': 96, 'portal-azul': 34, 'nave-enemiga': 330, 'roca-llave': 28, 'torre-bandera': 80, 'mesas-trampa': 10, 'karluv-most': 22, 'hrad-praga': 92, tyn: 82, petrin: 64, vysehrad: 60, zizkov: 230, mikulas: 62, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
   }
   // reserva extra: la plaza Dante entera y el puerto
   reservas.push(...RESERVAS);
