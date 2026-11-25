@@ -15865,7 +15865,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/md-godoy-cruz.webp",
 "n": "el-misterio-de-los-fader",
-"c": "8"
+"c": "6"
 }
 },
 {
@@ -17548,7 +17548,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/md-aconcagua.webp",
 "n": "el-misterio-de-los-fader",
-"c": "3"
+"c": "4"
 }
 },
 {
@@ -18421,7 +18421,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-campanile.webp",
 "n": "maschera-di-venezia",
-"c": "10"
+"c": "8"
 }
 },
 {
@@ -18477,7 +18477,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-basilica.webp",
 "n": "maschera-di-venezia",
-"c": "12"
+"c": "9"
 }
 },
 {
@@ -18545,7 +18545,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-ducale.webp",
 "n": "maschera-di-venezia",
-"c": "20"
+"c": "2"
 }
 },
 {
@@ -18669,7 +18669,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-casa-roberto.webp",
 "n": "maschera-di-venezia",
-"c": "7"
+"c": "5"
 }
 },
 {
@@ -18879,7 +18879,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-cannaregio.webp",
 "n": "maschera-di-venezia",
-"c": "22"
+"c": "1"
 }
 },
 {
@@ -18946,7 +18946,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-arsenale.webp",
 "n": "maschera-di-venezia",
-"c": "2"
+"c": "1"
 }
 },
 {
@@ -19034,7 +19034,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-san-giorgio.webp",
 "n": "maschera-di-venezia",
-"c": "23"
+"c": "21"
 }
 },
 {
@@ -19094,7 +19094,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-san-michele.webp",
 "n": "maschera-di-venezia",
-"c": "16"
+"c": "21"
 }
 },
 {
@@ -19158,7 +19158,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-laguna.webp",
 "n": "maschera-di-venezia",
-"c": "17"
+"c": "12"
 }
 },
 {
@@ -19239,7 +19239,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-perduta.webp",
 "n": "maschera-di-venezia",
-"c": "19"
+"c": "29"
 }
 },
 {
@@ -19290,7 +19290,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-segrete.webp",
 "n": "maschera-di-venezia",
-"c": "8"
+"c": "6"
 }
 },
 {
@@ -19370,7 +19370,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-abisso.webp",
 "n": "maschera-di-venezia",
-"c": "15"
+"c": "21"
 }
 },
 {
@@ -19466,7 +19466,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/vz-rifugio.webp",
 "n": "maschera-di-venezia",
-"c": "14"
+"c": "9"
 }
 },
 {
@@ -22673,7 +22673,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/pr-karluv-most.webp",
 "n": "ostrovy-nad-prahou",
-"c": "14"
+"c": "5"
 }
 },
 {
@@ -22740,7 +22740,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/pr-nepomuk.webp",
 "n": "ostrovy-nad-prahou",
-"c": "7"
+"c": "2"
 }
 },
 {
@@ -23333,7 +23333,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/pr-byt-jany.webp",
 "n": "ostrovy-nad-prahou",
-"c": "8"
+"c": "2"
 }
 },
 {
@@ -23460,7 +23460,7 @@ export const CIUDADES = {
 "img": {
 "src": "img/lugares/pr-malostranske.webp",
 "n": "ostrovy-nad-prahou",
-"c": "12"
+"c": "5"
 }
 },
 {
@@ -24254,6 +24254,687 @@ export const CIUDADES = {
 "n": "ostrovy-nad-prahou",
 "c": "1"
 }
+}
+],
+"londres": [
+{
+"id": "lo-residencia",
+"nombre": "Residencia del Embajador Argentino (Belgrave Square)",
+"cat": "edificio",
+"x": -2188,
+"y": -137,
+"modelo": "residencia-belgrave",
+"desc": "La casa de piedra blanca de Belgrave Square donde todo empieza dos veces. En mayo de 1933, bajo la lluvia, el vicepresidente Julio Argentino Pascual Roca recibe a Sir Alistair Thorne, del Foreign Office, el mismo agente que en 1916 robó el frasco de Rasputín a orillas del Moika. Thorne le pone delante una foto del frasco ámbar y lo chantajea con el secreto de su familia: el viejo general Roca le debía su poder a unas gotas del hidromiel de Karl Fader. Roca firma el Pacto Roca-Runciman mientras, al fondo, dos empleados cuelgan «La Mañana Triste», de Fernando Fader, pintada con óleos mezclados con el hidromiel supremo. Noventa y dos años después, el embajador Damián Roca recibe a Luis, Natalia y Heinrich con sonrisa de campaña, les muestra «La Mañana Triste» y «Caballo Blanco» en el salón de seda crema, y a los pocos minutos cinco hombres de negro con pasamontañas duermen a Heinrich con un dardo, golpean a Luis y se llevan los dos cuadros con guantes de algodón por el ventanal del jardín. Una cámara de un comercio del callejón de atrás grabará la furgoneta negra y la cara de uno de ellos.",
+"nombre_ru": "Резиденция посла Аргентины (Белгрейв-сквер)",
+"desc_ru": "Белый каменный дом на Белгрейв-сквер, где всё начинается дважды. В мае 1933 года, под дождём, вице-президент Хулио Архентино Паскуаль Рока принимает сэра Алистера Торна из Форин-офиса — того самого агента, который в 1916 году украл флакон Распутина на берегу Мойки. Торн кладёт перед ним фотографию янтарного флакона и шантажирует семейной тайной: старый генерал Рока был обязан своей властью нескольким каплям медовухи Карла Фадера. Рока подписывает пакт Рока — Ренсимена, а в глубине зала двое служащих вешают «Грустное утро» Фернандо Фадера, написанное маслом, смешанным с высшей медовухой. Девяносто два года спустя посол Дамиан Рока встречает Луиса, Наталью и Генриха предвыборной улыбкой, показывает им «Грустное утро» и «Белого коня» в зале с кремовым шёлком, и через несколько минут пятеро в чёрном и в балаклавах усыпляют Генриха дротиком, бьют Луиса и уносят обе картины в хлопковых перчатках через окно в сад. Камера магазина в переулке позади запишет чёрный фургон и лицо одного из них.",
+"apar": [
+{
+"n": "operacion-londres",
+"c": [
+[
+"4",
+"El Rastro en Londres"
+],
+[
+"5",
+"El Pacto de la Sumisión"
+],
+[
+"9",
+"La audiencia"
+],
+[
+"10",
+"Confrontación"
+],
+[
+"11",
+"El café de Lucy"
+],
+[
+"13",
+"La reconstrucción"
+],
+[
+"15",
+"El intercambio"
+]
+]
+}
+],
+"res": [
+{
+"a": "Julio A. Pascual Roca",
+"ar": "Хулио А. Паскуаль Рока",
+"s": 1,
+"es": "Vine a negociar carne y firmé una rendición. Al fondo colgaron un cuadro con un álamo que me miraba. Todavía me mira.",
+"ru": "Приехал договариваться о мясе, а подписал капитуляцию. В глубине повесили картину с тополем, который на меня смотрел. До сих пор смотрит."
+},
+{
+"a": "Sir Alistair Thorne",
+"ar": "Сэр Алистер Торн",
+"s": 5,
+"es": "Excelente chimenea, mesa de caoba, anfitrión dócil. Londres agradece su cooperación.",
+"ru": "Отличный камин, стол красного дерева, сговорчивый хозяин. Лондон благодарит за сотрудничество."
+},
+{
+"a": "Heinrich",
+"ar": "Генрих",
+"s": 2,
+"es": "Me dormí con un dardo en el cuello antes de terminar de mirar «La Mañana Triste». Había visto a Fernando pintar sus primeros árboles.",
+"ru": "Я уснул с дротиком в шее, не досмотрев «Грустное утро». А ведь я видел, как Фернандо писал свои первые деревья."
+},
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 1,
+"es": "El embajador miró el reloj tres veces y se le quedaron quietas las manos al oír un nombre. Después nos asaltaron. Casualidad, seguro.",
+"ru": "Посол трижды посмотрел на часы, и у него замерли руки, когда прозвучало одно имя. Потом на нас напали. Совпадение, конечно."
+},
+{
+"a": "Damián Roca",
+"ar": "Дамиан Рока",
+"s": 4,
+"es": "Tenemos dos Fader originales en el salón. Teníamos.",
+"ru": "У нас в зале два подлинника Фадера. Было."
+}
+],
+"img": {
+"src": "img/lugares/lo-residencia.webp",
+"n": "operacion-londres",
+"c": "9"
+}
+},
+{
+"id": "lo-embankment",
+"nombre": "Victoria Embankment: los retratos de Lucy",
+"cat": "misterio",
+"x": 189,
+"y": 319,
+"modelo": "lucy-caballete",
+"desc": "La orilla del Támesis frente al Big Ben, con la bruma de la mañana pegada al río. Luis y Natalia caminan por acá el primer día cuando ven a una mujer rubia de ojos celestes, abrigo mostaza y boina negra pintando acuarelas en un caballete: «Lucy — Portraits by the river». No les ofrece nada: les habla primero, como si los esperara. Diez libras el retrato con el Big Ben de fondo. Su paleta tiene los azules profundos y los púrpuras que Luis solo había visto en Fernando Fader. «Tengan cuidado con la niebla. Aquí esconde muchas cosas.» Esa noche, en el hotel, el agua pintada del Támesis se mueve un segundo, y atrás de la hoja hay una nota a lápiz: «Los Thorne saben que están en Londres. No confíen en nadie de la embajada. — L.».",
+"nombre_ru": "Набережная Виктории: портреты Люси",
+"desc_ru": "Берег Темзы напротив Биг-Бена, с утренним туманом, прилипшим к реке. В первый день Луис и Наталья идут здесь и видят блондинку с прозрачно-голубыми глазами, в горчичном пальто и чёрном берете, которая пишет акварелью за мольбертом: «Lucy — Portraits by the river». Она ничего не предлагает — заговаривает первой, будто ждала их. Десять фунтов за портрет на фоне Биг-Бена. В её палитре те глубокие синие и пурпурные, которые Луис видел только у Фернандо Фадера. «Осторожнее с туманом. Он здесь многое прячет». Вечером в гостинице нарисованная Темза на секунду шевелится, а на обороте листа — записка карандашом: «Торны знают, что вы в Лондоне. Не доверяйте никому в посольстве. — Л.».",
+"apar": [
+{
+"n": "operacion-londres",
+"c": [
+[
+"8",
+"Pinceladas en la niebla"
+],
+[
+"10",
+"Confrontación"
+],
+[
+"11",
+"El café de Lucy"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lucy",
+"ar": "Люси",
+"s": 5,
+"es": "Diez libras el retrato con el Big Ben de fondo. Los vuelto la nota gratis. Y si el agua se mueve, no es culpa mía.",
+"ru": "Десять фунтов за портрет на фоне Биг-Бена. Записка в подарок. А если вода шевелится — я не виновата."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Le pagué con veinte y le dije keep the change. Me dio el retrato, una advertencia y la mejor aliada de la novela.",
+"ru": "Я дал ей двадцать и сказал keep the change. Она дала мне портрет, предупреждение и лучшую союзницу в романе."
+},
+{
+"a": "Un turista japonés",
+"ar": "Японский турист",
+"s": 4,
+"es": "La pintora no me quiso hacer el retrato. Esperaba a otros. Muy rara. Muy linda la boina.",
+"ru": "Художница не захотела меня рисовать. Ждала кого-то другого. Очень странная. Очень красивый берет."
+}
+],
+"img": {
+"src": "img/lugares/lo-embankment.webp",
+"n": "operacion-londres",
+"c": "8"
+}
+},
+{
+"id": "lo-big-ben",
+"nombre": "El Big Ben y Westminster",
+"cat": "monumento",
+"x": 0,
+"y": 0,
+"modelo": "big-ben",
+"desc": "La torre del reloj sobre el Támesis, que Luis ve recortada contra un cielo plomizo el primer día en Londres, «una ciudad que siempre había sido sinónimo de poder ajeno», y que queda de fondo en el retrato de Lucy. La noche de la huida pasa por acá algo que el Big Ben nunca había visto: el Aston Martin DB5 plateado que Lucy dibujó con carboncillo en la pared de la cocina, con alas de viento en las ruedas, despega sobre las chimeneas de Pimlico, gira sobre el río y pasa tan cerca de la torre que Natalia ve la hora en la esfera iluminada: las nueve y cuarto. «¡Yo sé manejar, no pilotar!», grita Lucy. Desde arriba, Luis llama a su padre, el presidente: «Viejo, arriba de Londres, en un auto volador. Después te explico».",
+"nombre_ru": "Биг-Бен и Вестминстер",
+"desc_ru": "Часовая башня над Темзой, которую Луис видит на фоне свинцового неба в первый день в Лондоне, «городе, который всегда означал чужую власть», и которая остаётся фоном на портрете Люси. В ночь побега здесь пролетает то, чего Биг-Бен никогда не видел: серебристый Aston Martin DB5, который Люси нарисовала углём на стене кухни, с крыльями из ветра у колёс, взлетает над трубами Пимлико, разворачивается над рекой и проходит так близко от башни, что Наталья видит время на освещённом циферблате: четверть десятого. «Я умею водить, а не пилотировать!» — кричит Люси. Сверху Луис звонит отцу, президенту: «Папа, я над Лондоном, в летающей машине. Потом объясню».",
+"apar": [
+{
+"n": "operacion-londres",
+"c": [
+[
+"8",
+"Pinceladas en la niebla"
+],
+[
+"17",
+"La magia de la necesidad"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Pasamos tan cerca que vi la hora: las nueve y cuarto. Nunca vas a mirar un reloj igual después de pasarle al lado en un auto dibujado.",
+"ru": "Пролетели так близко, что я увидела время: четверть десятого. После того как пролетишь мимо часов в нарисованной машине, никогда не будешь смотреть на них так же."
+},
+{
+"a": "Sergio",
+"ar": "Серхио",
+"s": 4,
+"es": "Mi hijo me llamó desde arriba de Londres «en un auto volador». Anoté la dirección igual. Soy el presidente, pero primero soy el padre.",
+"ru": "Сын позвонил мне «из летающей машины над Лондоном». Адрес я всё равно записал. Я президент, но прежде всего отец."
+},
+{
+"a": "El Aston Martin",
+"ar": "Aston Martin",
+"s": 5,
+"es": "Brrrm. (Sin ruedas en el piso, sin tránsito, con vista al río. Solo me quedaba una hora de vida, pero qué hora.)",
+"ru": "Брррм. (Колёса не касаются земли, пробок нет, вид на реку. Жить мне оставался час, но какой час.)"
+}
+],
+"img": {
+"src": "img/lugares/lo-big-ben.webp",
+"n": "operacion-londres",
+"c": "17"
+}
+},
+{
+"id": "lo-scotland-yard",
+"nombre": "New Scotland Yard",
+"cat": "edificio",
+"x": 54,
+"y": 181,
+"modelo": "ministerio",
+"desc": "La sede de la Policía Metropolitana, sobre el Victoria Embankment. «¡Ya llamé a Scotland Yard!», dice el embajador Roca después del asalto, demasiado tranquilo. El inspector a cargo del robo, un hombre paciente con cara de no haber dormido, les manda por correo la secuencia de la cámara del callejón: ahí Luis reconoce a su primo Matías. Y es a ese inspector a quien el presidente Sergio Fader le pasa, desde Mendoza, la dirección de la iglesia de los Cotswolds que Luis le dicta desde un auto volador.",
+"nombre_ru": "Новый Скотленд-Ярд",
+"desc_ru": "Штаб-квартира столичной полиции на набережной Виктории. «Я уже позвонил в Скотленд-Ярд!» — говорит посол Рока после нападения, слишком спокойно. Инспектор, ведущий дело о краже, терпеливый человек с лицом того, кто не спал, присылает им по почте запись камеры из переулка: на ней Луис узнаёт своего двоюродного брата Матиаса. И именно этому инспектору президент Серхио Фадер из Мендосы передаёт адрес церкви в Котсуолдсе, который Луис диктует ему из летающей машины.",
+"apar": [
+{
+"n": "operacion-londres",
+"c": [
+[
+"10",
+"Confrontación"
+],
+[
+"13",
+"La reconstrucción"
+],
+[
+"17",
+"La magia de la necesidad"
+]
+]
+}
+],
+"res": [
+{
+"a": "El inspector",
+"ar": "Инспектор",
+"s": 3,
+"es": "Un testigo me pidió las imágenes de la cámara. Después el presidente de la Argentina me llamó con una dirección dictada desde un auto volador. No pregunté. Fuimos.",
+"ru": "Свидетель попросил записи с камеры. Потом президент Аргентины позвонил с адресом, продиктованным из летающей машины. Я не стал спрашивать. Мы поехали."
+},
+{
+"a": "Damián Roca",
+"ar": "Дамиан Рока",
+"s": 2,
+"es": "Dije que los había llamado. Al final me llamaron ellos a mí. Con esposas.",
+"ru": "Я сказал, что звонил им. В итоге это они меня вызвали. В наручниках."
+}
+]
+},
+{
+"id": "lo-museo",
+"nombre": "Anglo-Argentine Historical Society (Bloomsbury)",
+"cat": "edificio",
+"x": -386,
+"y": 2099,
+"modelo": "museo",
+"desc": "Un museíto de fachada neoclásica y placa discreta cerca de Bloomsbury, que huele a polvo y a cera. En las vitrinas, uniformes británicos y banderas capturadas en las invasiones de 1806 y 1807, y una espada, un peine de carey y medallas de plata del Cabildo de Buenos Aires. «Tendríamos que robarnos esto», murmura Luis. «Primero recuperemos nuestros cuadros. Después, si querés, probamos con el Louvre», le contesta Heinrich. Al fondo, una foto de los años treinta: Pascual Roca y Alistair Thorne de frac, y en la solapa de Thorne un broche esmaltado, un sol de mayo dentro de una rosa inglesa, el emblema de La Herencia del Sur. Acá Luis vuelve a olvidarse de la pregunta que quería hacerle a Heinrich. El museo es inventado; el barrio, real.",
+"nombre_ru": "Англо-аргентинское историческое общество (Блумсбери)",
+"desc_ru": "Маленький музей с неоклассическим фасадом и скромной табличкой недалеко от Блумсбери, пахнущий пылью и воском. В витринах — британские мундиры и знамёна, захваченные во время вторжений 1806 и 1807 годов, а также шпага, черепаховый гребень и серебряные медали кабильдо Буэнос-Айреса. «Надо бы это украсть», — бормочет Луис. «Сначала вернём наши картины. Потом, если хочешь, займёмся Лувром», — отвечает Генрих. В глубине — фотография тридцатых годов: Паскуаль Рока и Алистер Торн во фраках, а на лацкане Торна эмалевая брошь — майское солнце внутри английской розы, эмблема «Наследия Юга». Здесь Луис снова забывает вопрос, который хотел задать Генриху. Музей выдуман, район настоящий.",
+"apar": [
+{
+"n": "operacion-londres",
+"c": [
+[
+"8",
+"Pinceladas en la niebla"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 3,
+"es": "Banderas de 1806, un peine de carey y medallas del Cabildo. Me dio una ira sorda. Y otra vez se me olvidó la pregunta.",
+"ru": "Знамёна 1806 года, черепаховый гребень и медали кабильдо. Меня охватила глухая злость. И я опять забыл вопрос."
+},
+{
+"a": "Heinrich",
+"ar": "Генрих",
+"s": 4,
+"es": "Lo importante no estaba en las vitrinas, sino en la solapa de un hombre en una foto: un sol dentro de una rosa.",
+"ru": "Главное было не в витринах, а на лацкане человека на фотографии: солнце внутри розы."
+}
+]
+},
+{
+"id": "lo-amber-brush",
+"nombre": "The Amber Brush (Pimlico)",
+"cat": "misterio",
+"x": -1065,
+"y": -1138,
+"modelo": "amber-brush",
+"desc": "El café de Lucy, a dos calles de un semáforo de Pimlico donde ella los espera bajo un paraguas negro: una esquina con la fachada verde botella y un letrero dorado, «The Amber Brush — Coffee & Art». Adentro huele a café recién molido y a óleo, y en las paredes cuelgan sus cuadros del Támesis bajo la lluvia, Hyde Park en otoño y un zorro cruzando una calle de noche. Acá Lucy les dice quién es (Lucy Thorne, bisnieta de Alistair y sobrina de Cedric) y baja de un estante el frasco ámbar de Karl, vacío. En el sótano pinta toda la noche las copias de los cuadros, con Heinrich sosteniéndole la lámpara; ahí empiezan a sacar, gota a gota, el hidromiel de las sombras violetas del álamo, hasta que entran Roca, Matías y los hombres armados, y baja Cedric. Luis y Heinrich quedan encadenados a la caldera; arriba, en el estudio, Lucy despierta sus dibujos: dos escobas que muelen a escobazos a los guardias y un Aston Martin dibujado en la pared de la cocina que aparece en el patio. Al final, Heinrich se queda acá, «como caballero de esta doncella», y Lucy le pinta sus recuerdos uno por uno.",
+"nombre_ru": "The Amber Brush (Пимлико)",
+"desc_ru": "Кафе Люси в двух кварталах от светофора в Пимлико, где она ждёт их под чёрным зонтом: угловой дом с фасадом цвета бутылочного стекла и золотой вывеской «The Amber Brush — Coffee & Art». Внутри пахнет свежемолотым кофе и маслом, а на стенах висят её картины: Темза под дождём, осенний Гайд-парк, лиса, перебегающая ночную улицу. Здесь Люси рассказывает, кто она (Люси Торн, правнучка Алистера и племянница Седрика), и снимает с полки пустой янтарный флакон Карла. В подвале она всю ночь пишет копии картин, а Генрих держит ей лампу; там же они начинают по капле извлекать медовуху из фиолетовых теней тополя, пока не входят Рока, Матиас и вооружённые люди, а следом спускается Седрик. Луиса и Генриха приковывают к котлу; наверху, в мастерской, Люси оживляет свои рисунки: две метлы, которые лупят охранников, и Aston Martin, нарисованный на стене кухни, который появляется во дворе. В конце Генрих остаётся здесь «рыцарем этой дамы», а Люси пишет его воспоминания одно за другим.",
+"apar": [
+{
+"n": "operacion-londres",
+"c": [
+[
+"10",
+"Confrontación"
+],
+[
+"11",
+"El café de Lucy"
+],
+[
+"13",
+"La reconstrucción"
+],
+[
+"15",
+"El intercambio"
+],
+[
+"16",
+"La emboscada"
+],
+[
+"17",
+"La magia de la necesidad"
+],
+[
+"19",
+"La decisión"
+]
+]
+}
+],
+"res": [
+{
+"a": "Heinrich",
+"ar": "Генрих",
+"s": 5,
+"es": "Le sostuve la lámpara toda la noche, le lavé los pinceles y me puse colorado. A los ciento sesenta. Me quedo a vivir.",
+"ru": "Я всю ночь держал ей лампу, мыл кисти и краснел. В сто шестьдесят. Остаюсь здесь жить."
+},
+{
+"a": "Lucy",
+"ar": "Люси",
+"s": 5,
+"es": "Café recién molido, óleo, un sótano con caldera y escobas muy bravas. Cerramos a las seis. Salvo invasiones.",
+"ru": "Свежемолотый кофе, масляные краски, подвал с котлом и очень злые мётлы. Закрываемся в шесть. Кроме случаев вторжения."
+},
+{
+"a": "Un guardia de Thorne",
+"ar": "Охранник Торна",
+"s": 1,
+"es": "Me atacaron dos escobas. Dibujadas. No pienso explicarlo en el informe.",
+"ru": "На меня напали две метлы. Нарисованные. В отчёте объяснять не буду."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 4,
+"es": "Dos inmortales encadenados a una caldera: no es la mejor vista del café. Igual volvería. Por el té, por Lucy y por el viejo enamorado.",
+"ru": "Двое бессмертных, прикованных к котлу, — не лучший вид в кафе. Но я бы вернулся. Ради чая, ради Люси и ради влюблённого старика."
+},
+{
+"a": "Cedric Thorne",
+"ar": "Седрик Торн",
+"s": 2,
+"es": "Mi sobrina siempre fue la artista de la familia. El negocio nunca lo entendió. El café tampoco es negocio.",
+"ru": "Моя племянница всегда была художницей в семье. Бизнеса она не понимала. Кафе — тоже не бизнес."
+}
+],
+"img": {
+"src": "img/lugares/lo-amber-brush.webp",
+"n": "operacion-londres",
+"c": "11"
+}
+},
+{
+"id": "lo-hotel",
+"nombre": "El hotel de Pimlico",
+"cat": "casa",
+"x": -1321,
+"y": -960,
+"modelo": "hotelito",
+"desc": "El hotel donde se alojan los tres. La primera noche Luis desata la cinta del retrato de Lucy y el agua pintada se mueve. Otra noche, Natalia no puede dormir: Luis se olvida de cosas, y ella las cuenta. Golpean la puerta de Heinrich, que sigue vestido, con la carpeta de Karl abierta y papelitos pegados en el marco del espejo: «Luis. Natalia. Sergio. Lucy». Ahí les lee lo que Karl escribió antes de morir: el hidromiel común no deja morir, pero cada año se lleva un recuerdo, y cuando se va el último, el propio nombre, el cuerpo se apaga. «Lo que el hidromiel común ata, solo el supremo lo desata.» «Escribime tu nombre en el espejo, por las dudas», le dice Luis a Natalia.",
+"nombre_ru": "Гостиница в Пимлико",
+"desc_ru": "Гостиница, где живут трое. В первую ночь Луис развязывает ленту портрета Люси, и нарисованная вода шевелится. В другую ночь Наталья не может уснуть: Луис всё забывает, и она считает эти случаи. Они стучат к Генриху, который ещё одет, с открытой папкой Карла и бумажками, приклеенными к раме зеркала: «Луис. Наталья. Серхио. Люси». Там он читает им то, что Карл написал перед смертью: обычная медовуха не даёт умереть, но каждый год забирает одно воспоминание, а когда уходит последнее — собственное имя, — тело гаснет. «То, что связывает обычная медовуха, развязывает только высшая». «Напиши своё имя на зеркале, на всякий случай», — говорит Луис Наталье.",
+"apar": [
+{
+"n": "operacion-londres",
+"c": [
+[
+"8",
+"Pinceladas en la niebla"
+],
+[
+"12",
+"Lo que Karl no dijo"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 4,
+"es": "No pude dormir. Él tampoco. Fuimos a golpearle la puerta a Heinrich y salimos sabiendo lo que le pasó a Karl. Escribí mi nombre en el espejo.",
+"ru": "Я не могла уснуть. Он тоже. Мы постучали к Генриху и вышли, зная, что случилось с Карлом. Я написала своё имя на зеркале."
+},
+{
+"a": "Heinrich",
+"ar": "Генрих",
+"s": 4,
+"es": "Habitación cómoda, espejo grande. Ideal para pegar los nombres de la gente que uno no quiere olvidar.",
+"ru": "Удобный номер, большое зеркало. Идеально, чтобы приклеить имена тех, кого не хочешь забыть."
+}
+]
+},
+{
+"id": "lo-faders-relics",
+"nombre": "Fader's Relics (Portobello Road)",
+"cat": "misterio",
+"x": -5500,
+"y": 1588,
+"modelo": "faders-relics",
+"desc": "La tienda de Matías Fader, el primo de Luis, entre los puestos de antigüedades de Portobello Road: «Fader's Relics — Latin American Art & Antiques». Huele a cuero viejo, a plata pulida y a yerba mate; hay ponchos colgados de las vigas, una montura criolla, mates, rebenques y fotos sepia de estancias pampeanas, «un pedazo de Argentina embalsamado en el corazón de Londres». Lucy entra primero, haciéndose pasar por pintora, y oye que los cuadros salen al día siguiente a las seis. Luis vuelve solo y se entera de la pelea por la herencia: Karl le negó la finca al abuelo Ernesto, que murió en un dos ambientes de Constitución hablando de la parra de Luján. A las cinco de la tarde siguiente, mientras Luis fuma en el patio con su primo, Lucy cambia los originales por sus copias en el cuarto del fondo; el guardia de la cicatriz la ve, Heinrich tira un perchero de ponchos y empieza la persecución entre puestos de discos viejos y vajilla inglesa, hasta la furgoneta negra de los hombres de Thorne.",
+"nombre_ru": "Fader's Relics (Портобелло-роуд)",
+"desc_ru": "Лавка Матиаса Фадера, двоюродного брата Луиса, среди антикварных прилавков Портобелло-роуд: «Fader's Relics — Latin American Art & Antiques». Пахнет старой кожей, начищенным серебром и мате; с балок свисают пончо, стоит креольское седло, мате, плети и сепийные фотографии пампасских эстансий — «кусочек Аргентины, забальзамированный в самом сердце Лондона». Первой заходит Люси, выдавая себя за художницу, и слышит, что картины уходят завтра в шесть. Луис возвращается один и узнаёт о ссоре из-за наследства: Карл отказал в доле деду Эрнесто, и тот умер в двухкомнатной квартирке в Конститусьоне, до последнего дня говоря о лозе в Лухане. На следующий день в пять, пока Луис курит с братом во дворе, Люси в задней комнате подменяет оригиналы копиями; охранник со шрамом замечает её, Генрих опрокидывает вешалку с пончо, и начинается погоня между прилавками со старыми пластинками и английской посудой — до чёрного фургона людей Торна.",
+"apar": [
+{
+"n": "operacion-londres",
+"c": [
+[
+"13",
+"La reconstrucción"
+],
+[
+"14",
+"Primos"
+],
+[
+"15",
+"El intercambio"
+]
+]
+}
+],
+"res": [
+{
+"a": "Matías",
+"ar": "Матиас",
+"s": 3,
+"es": "Vendo mates, ponchos y, alguna vez, cuadros de la familia. Mi primo me usó, una pintora me engañó y terminé declarando. Cinco estrellas para la acequia; tres para el negocio.",
+"ru": "Продаю мате, пончо и иногда семейные картины. Брат меня использовал, художница обманула, и я дал показания. Пять звёзд арыку, три — бизнесу."
+},
+{
+"a": "Lucy",
+"ar": "Люси",
+"s": 5,
+"es": "Le mostré mis acuarelas y casi se le cae el café. Después le cambié dos Fader por dos Thorne. Muy buena atención.",
+"ru": "Я показала ему свои акварели, и он чуть не уронил кофе. Потом я подменила двух Фадеров двумя Торнами. Отличное обслуживание."
+},
+{
+"a": "Heinrich",
+"ar": "Генрих",
+"s": 4,
+"es": "Tiré un perchero lleno de ponchos y pedí disculpas. Después corrí como si tuviera cien años menos.",
+"ru": "Я опрокинул вешалку с пончо и извинился. Потом бежал так, будто мне на сто лет меньше."
+}
+]
+},
+{
+"id": "lo-notting-hill-gate",
+"nombre": "Notting Hill Gate: la persecución",
+"cat": "transporte",
+"x": -4987,
+"y": 920,
+"modelo": "ninguno",
+"desc": "Con los originales en el portafolios, se suben a la furgoneta negra de los hombres de Thorne, que estaba con la puerta abierta y el motor encendido. Luis al volante, una moto en el espejo retrovisor, dos semáforos en rojo, y en Notting Hill Gate se mete entre dos autobuses rojos de dos pisos: la moto queda atrás, atrapada en el tránsito. Entonces Natalia ve la lucecita roja bajo el tablero: «¡El GPS! ¡Nos están siguiendo con eso!».",
+"nombre_ru": "Ноттинг-Хилл-Гейт: погоня",
+"desc_ru": "С оригиналами в папке они прыгают в чёрный фургон людей Торна, стоявший с открытой дверью и включённым мотором. Луис за рулём, мотоцикл в зеркале заднего вида, два красных светофора, и на Ноттинг-Хилл-Гейт он протискивается между двумя красными двухэтажными автобусами: мотоцикл застревает в пробке. И тут Наталья замечает красный огонёк под приборной панелью: «GPS! Нас по нему ведут!».",
+"apar": [
+{
+"n": "operacion-londres",
+"c": [
+[
+"15",
+"El intercambio"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Dos semáforos en rojo y un sándwich de autobuses rojos. La moto se quedó en el tránsito. Le pido perdón a Londres.",
+"ru": "Два красных светофора и бутерброд из красных автобусов. Мотоцикл застрял в пробке. Прошу прощения у Лондона."
+},
+{
+"a": "Un chofer de autobús",
+"ar": "Водитель автобуса",
+"s": 2,
+"es": "Una furgoneta negra se me metió entre el mío y el de adelante. Cuarenta años manejando y nunca vi algo así. Hasta esa noche, cuando vi un auto volando.",
+"ru": "Чёрный фургон влез между моим автобусом и передним. Сорок лет за рулём — такого не видел. До той ночи, когда увидел летающую машину."
+}
+]
+},
+{
+"id": "lo-buckingham",
+"nombre": "Palacio de Buckingham",
+"cat": "monumento",
+"x": -1197,
+"y": 75,
+"modelo": "buckingham",
+"desc": "Abandonan la furgoneta con el GPS en una calle lateral cerca del palacio de Buckingham, se mezclan con los turistas que esperan el cambio de guardia y siguen en dos taxis distintos hasta The Amber Brush, con Natalia aferrada al asa del portafolios hasta que se le entumecen los dedos.",
+"nombre_ru": "Букингемский дворец",
+"desc_ru": "Фургон с GPS они бросают в переулке у Букингемского дворца, смешиваются с туристами, ждущими смены караула, и на двух разных такси добираются до The Amber Brush; Наталья так вцепилась в ручку папки, что у неё онемели пальцы.",
+"apar": [
+{
+"n": "operacion-londres",
+"c": [
+[
+"15",
+"El intercambio"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 4,
+"es": "Cambio de guardia, turistas, sombreros de piel y nosotros con dos cuadros robados en un portafolios. Nadie nos miró. Perfecto.",
+"ru": "Смена караула, туристы, меховые шапки, а мы с двумя украденными картинами в папке. Никто на нас не посмотрел. Идеально."
+},
+{
+"a": "Un guardia real",
+"ar": "Королевский гвардеец",
+"s": 5,
+"es": "(No puedo hablar en servicio. Pero vi a una señora apretando un portafolios como si adentro hubiera un corazón.)",
+"ru": "(На посту говорить нельзя. Но я видел даму, которая сжимала папку так, будто внутри было сердце.)"
+}
+]
+},
+{
+"id": "lo-hyde-park",
+"nombre": "Hyde Park",
+"cat": "parque",
+"x": -2846,
+"y": 731,
+"modelo": "ninguno",
+"desc": "El gran parque de Londres, con el lago Serpentine. En «Operación Londres» aparece en las paredes de The Amber Brush: Lucy lo pintó en otoño con los mismos azules y púrpuras de Fernando Fader que Luis empieza a conocer demasiado bien.",
+"nombre_ru": "Гайд-парк",
+"desc_ru": "Большой лондонский парк с озером Серпентайн. В «Операции „Лондон“» он висит на стенах The Amber Brush: Люси написала его осенью теми же синими и пурпурными, что у Фернандо Фадера, которые Луис начинает узнавать слишком хорошо.",
+"apar": [
+{
+"n": "operacion-londres",
+"c": [
+[
+"11",
+"El café de Lucy"
+]
+]
+}
+],
+"res": [
+{
+"a": "Lucy",
+"ar": "Люси",
+"s": 5,
+"es": "Lo pinté en otoño. Una vez un gorrión mío salió volando por la ventana; el de este cuadro, por suerte, se quedó quieto.",
+"ru": "Я написала его осенью. Однажды мой воробей вылетел в окно; а этот, к счастью, остался на месте."
+}
+]
+},
+{
+"id": "lo-castillo",
+"nombre": "«El castillo»: la iglesia de los Thorne (Cotswolds)",
+"cat": "misterio",
+"x": -108476,
+"y": 36631,
+"modelo": "iglesia-cotswolds",
+"borde": true,
+"desc": "Una iglesia normanda de piedra color miel en medio de un bosque de robles de los Cotswolds, con un ala del siglo XVII de muros gruesos y una torre almenada: por eso le dicen el castillo. Lucy aterriza el Aston Martin en un claro, con el resplandor de sus dedos ya enfriándose. Adentro, dos restauradores atados a la mesa sacan el hidromiel de los cuadros, Cedric saca de la caja fuerte la ampolla turbia de «la reserva del fundador» y Roca habla por teléfono junto a la chimenea. Roca le dispara a Lucy y Luis se pone delante: la bala le entra en el corazón, y se levanta. «Eso mismo dijeron en el palacio Yusúpov», dice Heinrich. Matías se tira encima de Roca; Lucy dibuja un lazo de luz que le arranca la ampolla a Cedric, y Natalia la atrapa en el aire como en el vóley del colegio. Cedric se escapa por la cripta y deja un guante. La ampolla, al día siguiente, ya no está en la bolsa de pruebas.",
+"nombre_ru": "«Замок»: церковь Торнов (Котсуолдс)",
+"desc_ru": "Нормандская церковь из камня медового цвета посреди дубового леса в Котсуолдсе, с толстостенным крылом XVII века и зубчатой башней — поэтому её и называют замком. Люси сажает Aston Martin на поляне, а сияние её пальцев уже остывает. Внутри двое привязанных к столу реставраторов извлекают медовуху из картин, Седрик достаёт из сейфа мутную ампулу «запаса основателя», а Рока говорит по телефону у камина. Рока стреляет в Люси, и Луис закрывает её собой: пуля входит ему в сердце, а он встаёт. «То же самое говорили во дворце Юсуповых», — замечает Генрих. Матиас бросается на Року; Люси рисует светящееся лассо, которое вырывает ампулу у Седрика, и Наталья ловит её в воздухе, как в школьном волейболе. Седрик уходит через крипту, оставив перчатку. На следующий день ампулы в пакете с уликами уже нет.",
+"apar": [
+{
+"n": "operacion-londres",
+"c": [
+[
+"16",
+"La emboscada"
+],
+[
+"17",
+"La magia de la necesidad"
+],
+[
+"18",
+"El castillo de los Thorne"
+],
+[
+"19",
+"La decisión"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Me pegaron un tiro en el corazón y me levanté. Era la única forma de que valiera la pena ser inmortal. Una vez, aunque sea.",
+"ru": "Мне выстрелили в сердце, а я встал. Это был единственный способ, чтобы бессмертие того стоило. Хотя бы раз."
+},
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Atrapé la ampolla en el aire, como en el vóley del colegio. Después lloré. Las dos cosas, de verdad.",
+"ru": "Я поймала ампулу в воздухе, как в школьном волейболе. Потом расплакалась. И то и другое — по-настоящему."
+},
+{
+"a": "Una restauradora",
+"ar": "Реставратор",
+"s": 2,
+"es": "Me ataron a la pata de la mesa para sacar miel de un álamo pintado. Me liberó una señora con cortaplumas. Recomiendo a la señora; la iglesia, no.",
+"ru": "Меня привязали к ножке стола, чтобы извлекать мёд из нарисованного тополя. Освободила дама с перочинным ножом. Даму рекомендую, церковь — нет."
+},
+{
+"a": "Cedric Thorne",
+"ar": "Седрик Торн",
+"s": 1,
+"es": "Perdí el frasco, la ampolla y un guante. La ampolla… bueno. Eso ya se verá.",
+"ru": "Потерял флакон, ампулу и перчатку. Ампула… ну, это мы ещё посмотрим."
+}
+],
+"img": {
+"src": "img/lugares/lo-castillo.webp",
+"n": "operacion-londres",
+"c": "18"
+}
+},
+{
+"id": "lo-oxford",
+"nombre": "El hospital de Oxford",
+"cat": "edificio",
+"x": -78519,
+"y": 27954,
+"modelo": "ninguno",
+"desc": "Hacia Oxford les indica Heinrich a Lucy desde el auto volador: «Siga la autopista M40. Desde arriba no debería haber mucho tránsito». Después del castillo, la herida de Luis tarda una semana en cerrarse, y los médicos del hospital de Oxford no encuentran explicación para una bala que le atravesó el corazón sin matarlo. Luis decide que la mejor respuesta es sonreír mucho y firmar el alta lo antes posible.",
+"nombre_ru": "Больница в Оксфорде",
+"desc_ru": "«На Оксфорд», — подсказывает Генрих Люси из летающей машины. — «Держитесь трассы M40. Сверху движения быть не должно». После замка рана Луиса заживает неделю, и врачи оксфордской больницы не могут объяснить, как пуля прошла сквозь сердце и не убила его. Луис решает, что лучший ответ — побольше улыбаться и поскорее подписать выписку.",
+"apar": [
+{
+"n": "operacion-londres",
+"c": [
+[
+"17",
+"La magia de la necesidad"
+],
+[
+"19",
+"La decisión"
+]
+]
+}
+],
+"res": [
+{
+"a": "Un médico",
+"ar": "Врач",
+"s": 3,
+"es": "La bala le atravesó el corazón y el paciente quería firmar el alta. Sonreía mucho. Demasiado.",
+"ru": "Пуля прошла сквозь сердце, а пациент хотел подписать выписку. Много улыбался. Слишком."
+}
+]
 }
 ],
 "atlantida": [
@@ -27958,136 +28639,6 @@ export const CIUDADES = {
 ]
 };
 export const NOVELAS = {
-"operacion-londres": {
-"t": "El misterio de los Fader: Operación Londres",
-"es": "El misterio de los Fader: Operación Londres",
-"l": "es",
-"y": 2026,
-"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
-"p": "img/portadas/operacion-londres.webp",
-"tr": {}
-},
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви",
-"p": "img/portadas/volny-lyubvi.webp",
-"tr": {}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
-"y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
-"tr": {}
-},
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
-"l": "ru",
-"y": 2026,
-"ru": "Тихая любовь",
-"p": "img/portadas/tikhaya-lyubov.webp",
-"tr": {
-"it": "ti-amo-in-silenzio"
-}
-},
-"anomalia": {
-"t": "Anomalía",
-"es": "Anomalía",
-"l": "es",
-"y": null,
-"ru": "Аномалия (исп.)",
-"p": "img/portadas/anomalia.webp",
-"tr": {}
-},
-"predchuvstvie-2-3": {
-"t": "Предчувствие 2.3",
-"es": "El presentimiento 2.3",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.3",
-"p": "img/portadas/predchuvstvie-2-3.webp",
-"tr": {}
-},
-"la-ciudad-secreta": {
-"t": "La ciudad secreta",
-"es": "La ciudad secreta",
-"l": "es",
-"y": null,
-"ru": "Тайный город (исп.)",
-"p": "img/portadas/la-ciudad-secreta.webp",
-"tr": {}
-},
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
-"tr": {}
-},
-"la-reina-de-la-vendimia": {
-"t": "La reina de la Vendimia",
-"es": "La reina de la Vendimia",
-"l": "es",
-"y": 2026,
-"ru": "Королева Вендимии (исп.)",
-"p": "img/portadas/la-reina-de-la-vendimia.webp",
-"tr": {
-"cs": "kralovna-vinobrani"
-}
-},
-"ladro-di-cuori-3": {
-"t": "Ladro di cuori 3",
-"es": "Ladrón de corazones 3 (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Похититель сердец 3 (ит.)",
-"p": "img/portadas/ladro-di-cuori-3.webp",
-"tr": {}
-},
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
-"tr": {}
-},
-"znak": {
-"t": "Знак",
-"es": "El signo",
-"l": "ru",
-"y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
-"tr": {}
-},
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
-"l": "ru",
-"y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
-"tr": {}
-},
-"zvezdnyj-roman": {
-"t": "Звёздный роман",
-"es": "Novela estelar",
-"l": "ru",
-"y": null,
-"ru": "Звёздный роман",
-"p": "img/portadas/zvezdnyj-roman.webp",
-"tr": {}
-},
 "almaznyj-dozhd": {
 "t": "Алмазный дождь",
 "es": "Lluvia de diamantes",
@@ -28097,126 +28648,33 @@ export const NOVELAS = {
 "p": "img/portadas/almaznyj-dozhd.webp",
 "tr": {}
 },
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
+"dikij-chas": {
+"t": "Дикий час",
+"es": "La hora salvaje",
 "l": "ru",
-"y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
-"tr": {}
-},
-"pokhititel-serdec-portret-osnovatelya": {
-"t": "Похититель сердец: Портрет основателя",
-"es": "Ladrón de corazones: El retrato del fundador",
-"l": "ru",
-"y": 2026,
-"ru": "Похититель сердец: Портрет основателя",
-"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
-"tr": {}
-},
-"predchuvstvie-2-4": {
-"t": "Предчувствие 2.4",
-"es": "El presentimiento 2.4",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.4",
-"p": "img/portadas/predchuvstvie-2-4.webp",
-"tr": {}
-},
-"divlji-chas": {
-"t": "Дивљи час",
-"es": "La hora salvaje (serbio)",
-"l": "sr",
 "y": null,
-"ru": "Дикий час (серб.)",
-"p": "img/portadas/divlji-chas.webp",
+"ru": "Дикий час",
+"p": "img/portadas/dikij-chas.webp",
 "tr": {
-"ru": "dikij-chas"
+"sr": "divlji-chas"
 }
 },
-"predchuvstvie": {
-"t": "Предчувствие",
-"es": "El presentimiento",
+"severnaya-lyubov-3": {
+"t": "Северная любовь: Восточный ветер",
+"es": "Amor del Norte 3: Viento del este",
 "l": "ru",
-"y": 2023,
-"ru": "Предчувствие",
-"p": "img/portadas/predchuvstvie.webp",
-"tr": {
-"fr": "reve-turquoise",
-"eo": "la-antausento",
-"it": "presentimento",
-"es": "la-corazonada",
-"isv": "predcutje",
-"tr": "col-gulu",
-"de": "vorahnung",
-"sr": "predosecaj",
-"vo": "fot-latik",
-"ia": "le-presentimento",
-"pt": "mundo-turquesa",
-"cs": "predtucha",
-"pl": "przeczucie"
-}
-},
-"severnaya-lyubov": {
-"t": "Северная любовь",
-"es": "Amor del Norte",
-"l": "ru",
-"y": 2025,
-"ru": "Северная любовь",
-"p": "img/portadas/severnaya-lyubov.webp",
+"y": 2026,
+"ru": "Северная любовь: Восточный ветер",
+"p": "img/portadas/severnaya-lyubov-3.webp",
 "tr": {}
 },
-"kralovna-vinobrani": {
-"t": "Královna vinobraní",
-"es": "La reina de la Vendimia (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Королева Вендимии (чеш.)",
-"p": "img/portadas/kralovna-vinobrani.webp",
-"tr": {
-"es": "la-reina-de-la-vendimia"
-}
-},
-"el-tren-fantasma": {
-"t": "El tren fantasma",
-"es": "El tren fantasma",
+"amor-en-el-cosmos": {
+"t": "Amor en el cosmos",
+"es": "Amor en el cosmos",
 "l": "es",
-"y": null,
-"ru": "Призрачный поезд (исп.)",
-"p": "img/portadas/el-tren-fantasma.webp",
-"tr": {
-"it": "il-treno-fantasma",
-"ru": "prizrachnyj-poezd"
-}
-},
-"golos": {
-"t": "Голос",
-"es": "La voz",
-"l": "ru",
 "y": 2026,
-"ru": "Голос",
-"p": "img/portadas/golos.webp",
-"tr": {
-"fr": "la-voix"
-}
-},
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
-"tr": {}
-},
-"dikij-chas-karnaval-razdora": {
-"t": "Дикий час: Карнавал раздора",
-"es": "La hora salvaje: El carnaval de la discordia",
-"l": "ru",
-"y": 2026,
-"ru": "Дикий час: Карнавал раздора",
-"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
+"ru": "Любовь в космосе",
+"p": "img/portadas/amor-en-el-cosmos.webp",
 "tr": {}
 },
 "predtucha": {
@@ -28242,113 +28700,35 @@ export const NOVELAS = {
 "ru": "predchuvstvie"
 }
 },
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Люблю тебя молча (ит.)",
-"p": "img/portadas/ti-amo-in-silenzio.webp",
-"tr": {
-"ru": "tikhaya-lyubov"
-}
-},
-"severnaya-lyubov-3": {
-"t": "Северная любовь: Восточный ветер",
-"es": "Amor del Norte 3: Viento del este",
-"l": "ru",
-"y": 2026,
-"ru": "Северная любовь: Восточный ветер",
-"p": "img/portadas/severnaya-lyubov-3.webp",
-"tr": {}
-},
-"rezonans-lyubvi": {
-"t": "Резонанс любви",
-"es": "Resonancia del amor",
-"l": "ru",
-"y": null,
-"ru": "Резонанс любви",
-"p": "img/portadas/rezonans-lyubvi.webp",
-"tr": {}
-},
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
+"lluvia-de-meteoritos": {
+"t": "Lluvia de meteoritos",
+"es": "Lluvia de meteoritos",
 "l": "es",
 "y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
-"tr": {}
-},
-"il-treno-fantasma": {
-"t": "Il treno fantasma",
-"es": "El tren fantasma (it.)",
-"l": "it",
-"y": null,
-"ru": "Призрачный поезд (ит.)",
-"p": "img/portadas/il-treno-fantasma.webp",
+"ru": "Метеоритный дождь (исп.)",
+"p": "img/portadas/lluvia-de-meteoritos.webp",
 "tr": {
-"es": "el-tren-fantasma",
-"ru": "prizrachnyj-poezd"
+"ru": "meteoritnyj-dozhd"
 }
 },
-"severnaya-lyubov-2": {
-"t": "Северная любовь: Плач с севера",
-"es": "Amor del Norte 2: Llanto del norte",
+"severnaya-lyubov": {
+"t": "Северная любовь",
+"es": "Amor del Norte",
 "l": "ru",
 "y": 2025,
-"ru": "Северная любовь: Плач с севера",
-"p": "img/portadas/severnaya-lyubov-2.webp",
+"ru": "Северная любовь",
+"p": "img/portadas/severnaya-lyubov.webp",
 "tr": {}
 },
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"podzemni-tajemstvi": {
-"t": "Podzemní tajemství",
-"es": "El secreto subterráneo (checo)",
-"l": "cs",
-"y": null,
-"ru": "Подземная тайна (чеш.)",
-"p": "img/portadas/podzemni-tajemstvi.webp",
-"tr": {}
-},
-"dikij-chas": {
-"t": "Дикий час",
-"es": "La hora salvaje",
+"tajna-semi-fader": {
+"t": "Тайна семьи Фадер",
+"es": "El misterio de los Fader (ru.)",
 "l": "ru",
 "y": null,
-"ru": "Дикий час",
-"p": "img/portadas/dikij-chas.webp",
+"ru": "Тайна семьи Фадер",
+"p": "img/portadas/tajna-semi-fader.webp",
 "tr": {
-"sr": "divlji-chas"
-}
-},
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
-"l": "es",
-"y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
-"tr": {}
-},
-"prizrachnyj-poezd": {
-"t": "Призрачный поезд",
-"es": "El tren fantasma (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Призрачный поезд",
-"p": "img/portadas/prizrachnyj-poezd.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"it": "il-treno-fantasma"
+"es": "el-misterio-de-los-fader"
 }
 },
 "predchuvstvie-2-2": {
@@ -28360,87 +28740,111 @@ export const NOVELAS = {
 "p": "img/portadas/predchuvstvie-2-2.webp",
 "tr": {}
 },
-"27-ocak": {
-"t": "27 Ocak",
-"es": "27 de enero",
-"l": "tr",
+"golos": {
+"t": "Голос",
+"es": "La voz",
+"l": "ru",
 "y": 2026,
-"ru": "27 января",
-"p": "img/portadas/27-ocak.webp",
-"tr": {}
-},
-"maschera-di-venezia": {
-"t": "Maschera di Venezia",
-"es": "La máscara de Venecia (it.)",
-"l": "it",
-"y": null,
-"ru": "Венецианская маска (ит.)",
-"p": "img/portadas/maschera-di-venezia.webp",
+"ru": "Голос",
+"p": "img/portadas/golos.webp",
 "tr": {
-"ru": "venecianskaya-maska"
+"fr": "la-voix"
 }
 },
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
-"l": "it",
-"y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
-"tr": {}
-},
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
-"tr": {}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"amor-en-el-cosmos": {
-"t": "Amor en el cosmos",
-"es": "Amor en el cosmos",
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
 "l": "es",
 "y": 2026,
-"ru": "Любовь в космосе",
-"p": "img/portadas/amor-en-el-cosmos.webp",
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
 "tr": {}
 },
-"divlji-chas-malbec": {
-"t": "Дивљи час: Љубав укуса малбека",
-"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
-"l": "sr",
+"grustnyj-gorod": {
+"t": "Грустный город",
+"es": "La ciudad triste",
+"l": "ru",
+"y": 2026,
+"ru": "Грустный город",
+"p": "img/portadas/grustnyj-gorod.webp",
+"tr": {
+"it": "la-citta-triste"
+}
+},
+"operacion-londres": {
+"t": "El misterio de los Fader: Operación Londres",
+"es": "El misterio de los Fader: Operación Londres",
+"l": "es",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
+"p": "img/portadas/operacion-londres.webp",
+"tr": {}
+},
+"predchuvstvie-2-3": {
+"t": "Предчувствие 2.3",
+"es": "El presentimiento 2.3",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.3",
+"p": "img/portadas/predchuvstvie-2-3.webp",
+"tr": {}
+},
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
+"tr": {}
+},
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
+"tr": {
+"es": "ondas-de-amor"
+}
+},
+"dikij-chas-karnaval-razdora": {
+"t": "Дикий час: Карнавал раздора",
+"es": "La hora salvaje: El carnaval de la discordia",
+"l": "ru",
+"y": 2026,
+"ru": "Дикий час: Карнавал раздора",
+"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
+"tr": {}
+},
+"predchuvstvie-2-4": {
+"t": "Предчувствие 2.4",
+"es": "El presentimiento 2.4",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.4",
+"p": "img/portadas/predchuvstvie-2-4.webp",
+"tr": {}
+},
+"la-voix": {
+"t": "La voix",
+"es": "La voz (fr.)",
+"l": "fr",
 "y": null,
-"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
-"p": "img/portadas/divlji-chas-malbec.webp",
-"tr": {}
+"ru": "Голос (фр.)",
+"p": "img/portadas/la-voix.webp",
+"tr": {
+"ru": "golos"
+}
 },
-"dikij-chas-2": {
-"t": "Дикий час: Духи гор",
-"es": "La hora salvaje: Los espíritus de la montaña",
+"rezonans-lyubvi": {
+"t": "Резонанс любви",
+"es": "Resonancia del amor",
 "l": "ru",
 "y": null,
-"ru": "Дикий час: Духи гор",
-"p": "img/portadas/dikij-chas-2.webp",
-"tr": {}
-},
-"ostrovy-nad-prahou": {
-"t": "Ostrovy nad Prahou",
-"es": "Las islas sobre Praga (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Острова над Прагой (чеш.)",
-"p": "img/portadas/ostrovy-nad-prahou.webp",
+"ru": "Резонанс любви",
+"p": "img/portadas/rezonans-lyubvi.webp",
 "tr": {}
 },
 "ondas-de-amor": {
@@ -28454,28 +28858,6 @@ export const NOVELAS = {
 "it": "onde-d-amore"
 }
 },
-"tajna-semi-fader": {
-"t": "Тайна семьи Фадер",
-"es": "El misterio de los Fader (ru.)",
-"l": "ru",
-"y": null,
-"ru": "Тайна семьи Фадер",
-"p": "img/portadas/tajna-semi-fader.webp",
-"tr": {
-"es": "el-misterio-de-los-fader"
-}
-},
-"venecianskaya-maska": {
-"t": "Венецианская маска",
-"es": "La máscara de Venecia (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Венецианская маска",
-"p": "img/portadas/venecianskaya-maska.webp",
-"tr": {
-"it": "maschera-di-venezia"
-}
-},
 "tajna-v-biblioteke": {
 "t": "Тайна в библиотеке",
 "es": "El misterio de la biblioteca",
@@ -28485,95 +28867,24 @@ export const NOVELAS = {
 "p": "img/portadas/tajna-v-biblioteke.webp",
 "tr": {}
 },
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
+"dikij-chas-2": {
+"t": "Дикий час: Духи гор",
+"es": "La hora salvaje: Los espíritus de la montaña",
 "l": "ru",
-"y": 2026,
-"ru": "Карнавал Синеи",
-"p": "img/portadas/karnaval-sinei.webp",
-"tr": {}
-},
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
-"tr": {}
-},
-"lluvia-de-meteoritos": {
-"t": "Lluvia de meteoritos",
-"es": "Lluvia de meteoritos",
-"l": "es",
 "y": null,
-"ru": "Метеоритный дождь (исп.)",
-"p": "img/portadas/lluvia-de-meteoritos.webp",
-"tr": {
-"ru": "meteoritnyj-dozhd"
-}
-},
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
-"l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
+"ru": "Дикий час: Духи гор",
+"p": "img/portadas/dikij-chas-2.webp",
 "tr": {}
 },
-"predchuvstvie-2": {
-"t": "Предчувствие 2",
-"es": "El presentimiento 2",
-"l": "ru",
-"y": 2024,
-"ru": "Предчувствие 2",
-"p": "img/portadas/predchuvstvie-2.webp",
-"tr": {}
-},
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
 "l": "ru",
 "y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
 "tr": {
-"en": "the-date"
-}
-},
-"el-misterio-de-los-fader": {
-"t": "El misterio de los Fader",
-"es": "El misterio de los Fader",
-"l": "es",
-"y": 2025,
-"ru": "Тайна семьи Фадер (исп.)",
-"p": "img/portadas/el-misterio-de-los-fader.webp",
-"tr": {
-"ru": "tajna-semi-fader"
-}
-},
-"la-voix": {
-"t": "La voix",
-"es": "La voz (fr.)",
-"l": "fr",
-"y": null,
-"ru": "Голос (фр.)",
-"p": "img/portadas/la-voix.webp",
-"tr": {
-"ru": "golos"
-}
-},
-"grustnyj-gorod": {
-"t": "Грустный город",
-"es": "La ciudad triste",
-"l": "ru",
-"y": 2026,
-"ru": "Грустный город",
-"p": "img/portadas/grustnyj-gorod.webp",
-"tr": {
-"it": "la-citta-triste"
+"it": "ti-amo-in-silenzio"
 }
 },
 "la-citta-triste": {
@@ -28587,15 +28898,385 @@ export const NOVELAS = {
 "ru": "grustnyj-gorod"
 }
 },
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
+"el-misterio-de-los-fader": {
+"t": "El misterio de los Fader",
+"es": "El misterio de los Fader",
+"l": "es",
+"y": 2025,
+"ru": "Тайна семьи Фадер (исп.)",
+"p": "img/portadas/el-misterio-de-los-fader.webp",
+"tr": {
+"ru": "tajna-semi-fader"
+}
+},
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
+"tr": {}
+},
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
 "l": "it",
 "y": 2026,
-"ru": "Волны любви (ит.)",
-"p": "img/portadas/onde-d-amore.webp",
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
+"tr": {}
+},
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
+"l": "ru",
+"y": 2026,
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
+"tr": {}
+},
+"divlji-chas-malbec": {
+"t": "Дивљи час: Љубав укуса малбека",
+"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
+"p": "img/portadas/divlji-chas-malbec.webp",
+"tr": {}
+},
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
+"l": "ru",
+"y": 2026,
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
+"tr": {}
+},
+"27-ocak": {
+"t": "27 Ocak",
+"es": "27 de enero",
+"l": "tr",
+"y": 2026,
+"ru": "27 января",
+"p": "img/portadas/27-ocak.webp",
+"tr": {}
+},
+"ostrovy-nad-prahou": {
+"t": "Ostrovy nad Prahou",
+"es": "Las islas sobre Praga (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Острова над Прагой (чеш.)",
+"p": "img/portadas/ostrovy-nad-prahou.webp",
+"tr": {}
+},
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
+"l": "es",
+"y": null,
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
+"tr": {}
+},
+"severnaya-lyubov-2": {
+"t": "Северная любовь: Плач с севера",
+"es": "Amor del Norte 2: Llanto del norte",
+"l": "ru",
+"y": 2025,
+"ru": "Северная любовь: Плач с севера",
+"p": "img/portadas/severnaya-lyubov-2.webp",
+"tr": {}
+},
+"pokhititel-serdec-portret-osnovatelya": {
+"t": "Похититель сердец: Портрет основателя",
+"es": "Ladrón de corazones: El retrato del fundador",
+"l": "ru",
+"y": 2026,
+"ru": "Похититель сердец: Портрет основателя",
+"p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
+"tr": {}
+},
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
+},
+"ladro-di-cuori-3": {
+"t": "Ladro di cuori 3",
+"es": "Ladrón de corazones 3 (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Похититель сердец 3 (ит.)",
+"p": "img/portadas/ladro-di-cuori-3.webp",
+"tr": {}
+},
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
+"tr": {}
+},
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
+"l": "ru",
+"y": null,
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
+"tr": {}
+},
+"venecianskaya-maska": {
+"t": "Венецианская маска",
+"es": "La máscara de Venecia (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Венецианская маска",
+"p": "img/portadas/venecianskaya-maska.webp",
 "tr": {
-"es": "ondas-de-amor"
+"it": "maschera-di-venezia"
+}
+},
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
+"tr": {}
+},
+"anomalia": {
+"t": "Anomalía",
+"es": "Anomalía",
+"l": "es",
+"y": null,
+"ru": "Аномалия (исп.)",
+"p": "img/portadas/anomalia.webp",
+"tr": {}
+},
+"predchuvstvie": {
+"t": "Предчувствие",
+"es": "El presentimiento",
+"l": "ru",
+"y": 2023,
+"ru": "Предчувствие",
+"p": "img/portadas/predchuvstvie.webp",
+"tr": {
+"fr": "reve-turquoise",
+"eo": "la-antausento",
+"it": "presentimento",
+"es": "la-corazonada",
+"isv": "predcutje",
+"tr": "col-gulu",
+"de": "vorahnung",
+"sr": "predosecaj",
+"vo": "fot-latik",
+"ia": "le-presentimento",
+"pt": "mundo-turquesa",
+"cs": "predtucha",
+"pl": "przeczucie"
+}
+},
+"prizrachnyj-poezd": {
+"t": "Призрачный поезд",
+"es": "El tren fantasma (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Призрачный поезд",
+"p": "img/portadas/prizrachnyj-poezd.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"it": "il-treno-fantasma"
+}
+},
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
+"tr": {}
+},
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"tr": {}
+},
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
+"tr": {
+"ru": "tikhaya-lyubov"
+}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"kralovna-vinobrani": {
+"t": "Královna vinobraní",
+"es": "La reina de la Vendimia (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Королева Вендимии (чеш.)",
+"p": "img/portadas/kralovna-vinobrani.webp",
+"tr": {
+"es": "la-reina-de-la-vendimia"
+}
+},
+"la-ciudad-secreta": {
+"t": "La ciudad secreta",
+"es": "La ciudad secreta",
+"l": "es",
+"y": null,
+"ru": "Тайный город (исп.)",
+"p": "img/portadas/la-ciudad-secreta.webp",
+"tr": {}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
+"maschera-di-venezia": {
+"t": "Maschera di Venezia",
+"es": "La máscara de Venecia (it.)",
+"l": "it",
+"y": null,
+"ru": "Венецианская маска (ит.)",
+"p": "img/portadas/maschera-di-venezia.webp",
+"tr": {
+"ru": "venecianskaya-maska"
+}
+},
+"divlji-chas": {
+"t": "Дивљи час",
+"es": "La hora salvaje (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час (серб.)",
+"p": "img/portadas/divlji-chas.webp",
+"tr": {
+"ru": "dikij-chas"
+}
+},
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
+"l": "ru",
+"y": 2026,
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
+},
+"il-treno-fantasma": {
+"t": "Il treno fantasma",
+"es": "El tren fantasma (it.)",
+"l": "it",
+"y": null,
+"ru": "Призрачный поезд (ит.)",
+"p": "img/portadas/il-treno-fantasma.webp",
+"tr": {
+"es": "el-tren-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"podzemni-tajemstvi": {
+"t": "Podzemní tajemství",
+"es": "El secreto subterráneo (checo)",
+"l": "cs",
+"y": null,
+"ru": "Подземная тайна (чеш.)",
+"p": "img/portadas/podzemni-tajemstvi.webp",
+"tr": {}
+},
+"predchuvstvie-2": {
+"t": "Предчувствие 2",
+"es": "El presentimiento 2",
+"l": "ru",
+"y": 2024,
+"ru": "Предчувствие 2",
+"p": "img/portadas/predchuvstvie-2.webp",
+"tr": {}
+},
+"zvezdnyj-roman": {
+"t": "Звёздный роман",
+"es": "Novela estelar",
+"l": "ru",
+"y": null,
+"ru": "Звёздный роман",
+"p": "img/portadas/zvezdnyj-roman.webp",
+"tr": {}
+},
+"el-tren-fantasma": {
+"t": "El tren fantasma",
+"es": "El tren fantasma",
+"l": "es",
+"y": null,
+"ru": "Призрачный поезд (исп.)",
+"p": "img/portadas/el-tren-fantasma.webp",
+"tr": {
+"it": "il-treno-fantasma",
+"ru": "prizrachnyj-poezd"
+}
+},
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
+"l": "ru",
+"y": 2026,
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
+"tr": {}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
+"tr": {}
+},
+"la-reina-de-la-vendimia": {
+"t": "La reina de la Vendimia",
+"es": "La reina de la Vendimia",
+"l": "es",
+"y": 2026,
+"ru": "Королева Вендимии (исп.)",
+"p": "img/portadas/la-reina-de-la-vendimia.webp",
+"tr": {
+"cs": "kralovna-vinobrani"
 }
 }
 };

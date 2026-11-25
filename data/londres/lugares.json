@@ -1,0 +1,270 @@
+{
+ "_info": "Lugares de Londres en «El misterio de los Fader: Operación Londres».",
+ "lugares": [
+  {
+   "id": "lo-residencia",
+   "nombre": "Residencia del Embajador Argentino (Belgrave Square)",
+   "cat": "edificio",
+   "ll": [
+    51.4995,
+    -0.1562
+   ],
+   "modelo": "residencia-belgrave",
+   "desc": "La casa de piedra blanca de Belgrave Square donde todo empieza dos veces. En mayo de 1933, bajo la lluvia, el vicepresidente Julio Argentino Pascual Roca recibe a Sir Alistair Thorne, del Foreign Office, el mismo agente que en 1916 robó el frasco de Rasputín a orillas del Moika. Thorne le pone delante una foto del frasco ámbar y lo chantajea con el secreto de su familia: el viejo general Roca le debía su poder a unas gotas del hidromiel de Karl Fader. Roca firma el Pacto Roca-Runciman mientras, al fondo, dos empleados cuelgan «La Mañana Triste», de Fernando Fader, pintada con óleos mezclados con el hidromiel supremo. Noventa y dos años después, el embajador Damián Roca recibe a Luis, Natalia y Heinrich con sonrisa de campaña, les muestra «La Mañana Triste» y «Caballo Blanco» en el salón de seda crema, y a los pocos minutos cinco hombres de negro con pasamontañas duermen a Heinrich con un dardo, golpean a Luis y se llevan los dos cuadros con guantes de algodón por el ventanal del jardín. Una cámara de un comercio del callejón de atrás grabará la furgoneta negra y la cara de uno de ellos.",
+   "buscar": "Belgrave|[Rr]esidencia del Embajador",
+   "extra": {
+    "operacion-londres": [
+     7,
+     11,
+     12,
+     15
+    ]
+   },
+   "ilustracion": [
+    "operacion-londres",
+    "11-01.jpg"
+   ]
+  },
+  {
+   "id": "lo-embankment",
+   "nombre": "Victoria Embankment: los retratos de Lucy",
+   "cat": "misterio",
+   "ll": [
+    51.5036,
+    -0.1219
+   ],
+   "modelo": "lucy-caballete",
+   "desc": "La orilla del Támesis frente al Big Ben, con la bruma de la mañana pegada al río. Luis y Natalia caminan por acá el primer día cuando ven a una mujer rubia de ojos celestes, abrigo mostaza y boina negra pintando acuarelas en un caballete: «Lucy — Portraits by the river». No les ofrece nada: les habla primero, como si los esperara. Diez libras el retrato con el Big Ben de fondo. Su paleta tiene los azules profundos y los púrpuras que Luis solo había visto en Fernando Fader. «Tengan cuidado con la niebla. Aquí esconde muchas cosas.» Esa noche, en el hotel, el agua pintada del Támesis se mueve un segundo, y atrás de la hoja hay una nota a lápiz: «Los Thorne saben que están en Londres. No confíen en nadie de la embajada. — L.».",
+   "buscar": "Embankment|Portraits by the river",
+   "extra": {
+    "operacion-londres": [
+     10,
+     12,
+     13
+    ]
+   },
+   "ilustracion": [
+    "operacion-londres",
+    "10-01.jpg"
+   ]
+  },
+  {
+   "id": "lo-big-ben",
+   "nombre": "El Big Ben y Westminster",
+   "cat": "monumento",
+   "ll": [
+    51.50073,
+    -0.12463
+   ],
+   "modelo": "big-ben",
+   "desc": "La torre del reloj sobre el Támesis, que Luis ve recortada contra un cielo plomizo el primer día en Londres, «una ciudad que siempre había sido sinónimo de poder ajeno», y que queda de fondo en el retrato de Lucy. La noche de la huida pasa por acá algo que el Big Ben nunca había visto: el Aston Martin DB5 plateado que Lucy dibujó con carboncillo en la pared de la cocina, con alas de viento en las ruedas, despega sobre las chimeneas de Pimlico, gira sobre el río y pasa tan cerca de la torre que Natalia ve la hora en la esfera iluminada: las nueve y cuarto. «¡Yo sé manejar, no pilotar!», grita Lucy. Desde arriba, Luis llama a su padre, el presidente: «Viejo, arriba de Londres, en un auto volador. Después te explico».",
+   "buscar": "Big Ben",
+   "extra": {
+    "operacion-londres": [
+     10,
+     19
+    ]
+   },
+   "ilustracion": [
+    "operacion-londres",
+    "17-01.jpg"
+   ]
+  },
+  {
+   "id": "lo-scotland-yard",
+   "nombre": "New Scotland Yard",
+   "cat": "edificio",
+   "ll": [
+    51.50236,
+    -0.12385
+   ],
+   "modelo": "ministerio",
+   "desc": "La sede de la Policía Metropolitana, sobre el Victoria Embankment. «¡Ya llamé a Scotland Yard!», dice el embajador Roca después del asalto, demasiado tranquilo. El inspector a cargo del robo, un hombre paciente con cara de no haber dormido, les manda por correo la secuencia de la cámara del callejón: ahí Luis reconoce a su primo Matías. Y es a ese inspector a quien el presidente Sergio Fader le pasa, desde Mendoza, la dirección de la iglesia de los Cotswolds que Luis le dicta desde un auto volador.",
+   "buscar": "Scotland Yard|el inspector|al inspector",
+   "extra": {
+    "operacion-londres": [
+     12,
+     15,
+     19
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "lo-museo",
+   "nombre": "Anglo-Argentine Historical Society (Bloomsbury)",
+   "cat": "edificio",
+   "ll": [
+    51.5196,
+    -0.1302
+   ],
+   "modelo": "museo",
+   "desc": "Un museíto de fachada neoclásica y placa discreta cerca de Bloomsbury, que huele a polvo y a cera. En las vitrinas, uniformes británicos y banderas capturadas en las invasiones de 1806 y 1807, y una espada, un peine de carey y medallas de plata del Cabildo de Buenos Aires. «Tendríamos que robarnos esto», murmura Luis. «Primero recuperemos nuestros cuadros. Después, si querés, probamos con el Louvre», le contesta Heinrich. Al fondo, una foto de los años treinta: Pascual Roca y Alistair Thorne de frac, y en la solapa de Thorne un broche esmaltado, un sol de mayo dentro de una rosa inglesa, el emblema de La Herencia del Sur. Acá Luis vuelve a olvidarse de la pregunta que quería hacerle a Heinrich. El museo es inventado; el barrio, real.",
+   "buscar": "Anglo-Argentine|Bloomsbury",
+   "extra": {
+    "operacion-londres": [
+     10
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "lo-amber-brush",
+   "nombre": "The Amber Brush (Pimlico)",
+   "cat": "misterio",
+   "ll": [
+    51.4905,
+    -0.14
+   ],
+   "modelo": "amber-brush",
+   "desc": "El café de Lucy, a dos calles de un semáforo de Pimlico donde ella los espera bajo un paraguas negro: una esquina con la fachada verde botella y un letrero dorado, «The Amber Brush — Coffee & Art». Adentro huele a café recién molido y a óleo, y en las paredes cuelgan sus cuadros del Támesis bajo la lluvia, Hyde Park en otoño y un zorro cruzando una calle de noche. Acá Lucy les dice quién es (Lucy Thorne, bisnieta de Alistair y sobrina de Cedric) y baja de un estante el frasco ámbar de Karl, vacío. En el sótano pinta toda la noche las copias de los cuadros, con Heinrich sosteniéndole la lámpara; ahí empiezan a sacar, gota a gota, el hidromiel de las sombras violetas del álamo, hasta que entran Roca, Matías y los hombres armados, y baja Cedric. Luis y Heinrich quedan encadenados a la caldera; arriba, en el estudio, Lucy despierta sus dibujos: dos escobas que muelen a escobazos a los guardias y un Aston Martin dibujado en la pared de la cocina que aparece en el patio. Al final, Heinrich se queda acá, «como caballero de esta doncella», y Lucy le pinta sus recuerdos uno por uno.",
+   "buscar": "Amber Brush",
+   "extra": {
+    "operacion-londres": [
+     12,
+     13,
+     15,
+     17,
+     18,
+     19,
+     21
+    ]
+   },
+   "ilustracion": [
+    "operacion-londres",
+    "13-01.jpg"
+   ]
+  },
+  {
+   "id": "lo-hotel",
+   "nombre": "El hotel de Pimlico",
+   "cat": "casa",
+   "ll": [
+    51.4921,
+    -0.1437
+   ],
+   "modelo": "hotelito",
+   "desc": "El hotel donde se alojan los tres. La primera noche Luis desata la cinta del retrato de Lucy y el agua pintada se mueve. Otra noche, Natalia no puede dormir: Luis se olvida de cosas, y ella las cuenta. Golpean la puerta de Heinrich, que sigue vestido, con la carpeta de Karl abierta y papelitos pegados en el marco del espejo: «Luis. Natalia. Sergio. Lucy». Ahí les lee lo que Karl escribió antes de morir: el hidromiel común no deja morir, pero cada año se lleva un recuerdo, y cuando se va el último, el propio nombre, el cuerpo se apaga. «Lo que el hidromiel común ata, solo el supremo lo desata.» «Escribime tu nombre en el espejo, por las dudas», le dice Luis a Natalia.",
+   "buscar": "Hotel en Pimlico|en el hotel",
+   "extra": {
+    "operacion-londres": [
+     10,
+     14
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "lo-faders-relics",
+   "nombre": "Fader's Relics (Portobello Road)",
+   "cat": "misterio",
+   "ll": [
+    51.515,
+    -0.204
+   ],
+   "modelo": "faders-relics",
+   "desc": "La tienda de Matías Fader, el primo de Luis, entre los puestos de antigüedades de Portobello Road: «Fader's Relics — Latin American Art & Antiques». Huele a cuero viejo, a plata pulida y a yerba mate; hay ponchos colgados de las vigas, una montura criolla, mates, rebenques y fotos sepia de estancias pampeanas, «un pedazo de Argentina embalsamado en el corazón de Londres». Lucy entra primero, haciéndose pasar por pintora, y oye que los cuadros salen al día siguiente a las seis. Luis vuelve solo y se entera de la pelea por la herencia: Karl le negó la finca al abuelo Ernesto, que murió en un dos ambientes de Constitución hablando de la parra de Luján. A las cinco de la tarde siguiente, mientras Luis fuma en el patio con su primo, Lucy cambia los originales por sus copias en el cuarto del fondo; el guardia de la cicatriz la ve, Heinrich tira un perchero de ponchos y empieza la persecución entre puestos de discos viejos y vajilla inglesa, hasta la furgoneta negra de los hombres de Thorne.",
+   "buscar": "Fader's Relics|Portobello",
+   "extra": {
+    "operacion-londres": [
+     15,
+     16,
+     17
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "lo-notting-hill-gate",
+   "nombre": "Notting Hill Gate: la persecución",
+   "cat": "transporte",
+   "ll": [
+    51.509,
+    -0.1966
+   ],
+   "modelo": "ninguno",
+   "desc": "Con los originales en el portafolios, se suben a la furgoneta negra de los hombres de Thorne, que estaba con la puerta abierta y el motor encendido. Luis al volante, una moto en el espejo retrovisor, dos semáforos en rojo, y en Notting Hill Gate se mete entre dos autobuses rojos de dos pisos: la moto queda atrás, atrapada en el tránsito. Entonces Natalia ve la lucecita roja bajo el tablero: «¡El GPS! ¡Nos están siguiendo con eso!».",
+   "buscar": "Notting Hill",
+   "extra": {
+    "operacion-londres": [
+     17
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "lo-buckingham",
+   "nombre": "Palacio de Buckingham",
+   "cat": "monumento",
+   "ll": [
+    51.5014,
+    -0.1419
+   ],
+   "modelo": "buckingham",
+   "desc": "Abandonan la furgoneta con el GPS en una calle lateral cerca del palacio de Buckingham, se mezclan con los turistas que esperan el cambio de guardia y siguen en dos taxis distintos hasta The Amber Brush, con Natalia aferrada al asa del portafolios hasta que se le entumecen los dedos.",
+   "buscar": "Buckingham",
+   "extra": {
+    "operacion-londres": [
+     17
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "lo-hyde-park",
+   "nombre": "Hyde Park",
+   "cat": "parque",
+   "ll": [
+    51.5073,
+    -0.1657
+   ],
+   "modelo": "ninguno",
+   "desc": "El gran parque de Londres, con el lago Serpentine. En «Operación Londres» aparece en las paredes de The Amber Brush: Lucy lo pintó en otoño con los mismos azules y púrpuras de Fernando Fader que Luis empieza a conocer demasiado bien.",
+   "buscar": "Hyde Park",
+   "sin_ilustracion": true
+  },
+  {
+   "id": "lo-castillo",
+   "nombre": "«El castillo»: la iglesia de los Thorne (Cotswolds)",
+   "cat": "misterio",
+   "ll": [
+    51.83,
+    -1.69
+   ],
+   "modelo": "iglesia-cotswolds",
+   "desc": "Una iglesia normanda de piedra color miel en medio de un bosque de robles de los Cotswolds, con un ala del siglo XVII de muros gruesos y una torre almenada: por eso le dicen el castillo. Lucy aterriza el Aston Martin en un claro, con el resplandor de sus dedos ya enfriándose. Adentro, dos restauradores atados a la mesa sacan el hidromiel de los cuadros, Cedric saca de la caja fuerte la ampolla turbia de «la reserva del fundador» y Roca habla por teléfono junto a la chimenea. Roca le dispara a Lucy y Luis se pone delante: la bala le entra en el corazón, y se levanta. «Eso mismo dijeron en el palacio Yusúpov», dice Heinrich. Matías se tira encima de Roca; Lucy dibuja un lazo de luz que le arranca la ampolla a Cedric, y Natalia la atrapa en el aire como en el vóley del colegio. Cedric se escapa por la cripta y deja un guante. La ampolla, al día siguiente, ya no está en la bolsa de pruebas.",
+   "buscar": "Cotswolds|el castillo|[Aa]l castillo",
+   "extra": {
+    "operacion-londres": [
+     18,
+     19,
+     20
+    ]
+   },
+   "ilustracion": [
+    "operacion-londres",
+    "18-01.jpg"
+   ],
+   "borde": true
+  },
+  {
+   "id": "lo-oxford",
+   "nombre": "El hospital de Oxford",
+   "cat": "edificio",
+   "ll": [
+    51.752,
+    -1.2577
+   ],
+   "modelo": "ninguno",
+   "desc": "Hacia Oxford les indica Heinrich a Lucy desde el auto volador: «Siga la autopista M40. Desde arriba no debería haber mucho tránsito». Después del castillo, la herida de Luis tarda una semana en cerrarse, y los médicos del hospital de Oxford no encuentran explicación para una bala que le atravesó el corazón sin matarlo. Luis decide que la mejor respuesta es sonreír mucho y firmar el alta lo antes posible.",
+   "buscar": "Oxford",
+   "extra": {
+    "operacion-londres": [
+     19,
+     21
+    ]
+   },
+   "sin_ilustracion": true
+  }
+ ]
+}

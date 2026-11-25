@@ -2,7 +2,7 @@
 
 Sinea, Verdegrad, Nuestra Utopía, Mendoza, Venecia, Madrid, San Petersburgo, Belgrado, Praga, la Atlántida, la Ciudad Secreta y el fiordo de Sofía y Román en 3D, más el esquema del metro del Tren Fantasma. La página principal (`index.html`) abre una portada con una ilustración de cada historia, desde donde se elige el mapa sin cargar ninguno antes (`index.html?portada` vuelve a ella). Dentro de cada mapa, el botón «Mapas ▾» abre el panel con todos los mundos.
 
-Doce mapas en el mismo sitio, que se eligen en la portada o con el botón «Mapas ▾» (un panel con imágenes; en el celular, una hoja desde abajo):
+Trece mapas en el mismo sitio, que se eligen en la portada o con el botón «Mapas ▾» (un panel con imágenes; en el celular, una hoja desde abajo):
 
 - **Sinea**, la ciudad junto al mar: `index.html`
 - **Verdegrad**, el pueblo verde de Natalia, con su fortaleza en la penumbra: `index.html?ciudad=verdegrad` (o `verdegrad.html`)
@@ -15,6 +15,7 @@ Doce mapas en el mismo sitio, que se eligen en la portada o con el botón «Mapa
 - **Praga** (Прага), la ciudad real de «Podzemní tajemství», «Ostrovy nad Prahou», «Předtucha» y los capítulos praguenses de «La reina de la Vendimia»: `index.html?ciudad=praga` (o `praga.html`)
 - **Atlántida** (Атлантида), los dos mundos de «Звёздный роман»: `index.html?ciudad=atlantida` (o `atlantida.html`)
 - **La Ciudad Secreta** (Тайный город), de «La ciudad secreta»: `index.html?ciudad=secreta` (o `secreta.html`)
+- **Londres** (Лондон), de «El misterio de los Fader: Operación Londres»: `index.html?ciudad=londres` (o `londres.html`)
 - **El fiordo de Sofía y Román** (Фьорд Софии и Романа), de «Северная любовь» 3: `index.html?ciudad=fiordo` (o `fiordo.html`)
 - **Metro fantasma** (Метро-призрак), el esquema de «Призрачный поезд»: `metro.html`
 
@@ -118,6 +119,10 @@ Mapa imaginado a partir de «Звёздный роман», con sus dos mundos: 
 ## La Ciudad Secreta
 
 Mapa imaginado a partir de «La ciudad secreta»: la ciudad blanca está «debajo de la tierra, dentro de las montañas», así que se ve como un valle cerrado por un anillo de picos con los cristales dorados del techo flotando encima. Afuera, al sureste, el pueblito de Martín, con el parque y la cafetería, y el camino hasta la roca de la llave. Configuración en `js/ciudades/secreta.js`; datos en `data/secreta/`.
+
+## Londres
+
+La ciudad real de «El misterio de los Fader: Operación Londres», sobre el mapa de OpenStreetMap (© colaboradores de OpenStreetMap): la residencia del embajador argentino en Belgrave Square (el Pacto Roca-Runciman de 1933 y el robo de «La Mañana Triste» y «Caballo Blanco»), los retratos de Lucy en el Victoria Embankment, The Amber Brush en Pimlico, Fader's Relics en Portobello Road, la persecución por Notting Hill Gate, Buckingham, el Big Ben y, en el borde, la iglesia de los Thorne en los Cotswolds y el hospital de Oxford. Sobre la ciudad vuela el Aston Martin que Lucy dibujó, y por Bayswater y Oxford Street andan los autobuses rojos. Configuración en `js/ciudades/londres.js`; suelo y edificios generados con `tools/mapa_osm.py`; datos en `data/londres/`.
 
 ## El fiordo de Sofía y Román
 

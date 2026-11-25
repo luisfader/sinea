@@ -1,0 +1,274 @@
+{
+ "_info": "Reseñas de los personajes de «Operación Londres».",
+ "lo-residencia": [
+  {
+   "a": "Julio A. Pascual Roca",
+   "ar": "Хулио А. Паскуаль Рока",
+   "s": 1,
+   "es": "Vine a negociar carne y firmé una rendición. Al fondo colgaron un cuadro con un álamo que me miraba. Todavía me mira.",
+   "ru": "Приехал договариваться о мясе, а подписал капитуляцию. В глубине повесили картину с тополем, который на меня смотрел. До сих пор смотрит."
+  },
+  {
+   "a": "Sir Alistair Thorne",
+   "ar": "Сэр Алистер Торн",
+   "s": 5,
+   "es": "Excelente chimenea, mesa de caoba, anfitrión dócil. Londres agradece su cooperación.",
+   "ru": "Отличный камин, стол красного дерева, сговорчивый хозяин. Лондон благодарит за сотрудничество."
+  },
+  {
+   "a": "Heinrich",
+   "ar": "Генрих",
+   "s": 2,
+   "es": "Me dormí con un dardo en el cuello antes de terminar de mirar «La Mañana Triste». Había visto a Fernando pintar sus primeros árboles.",
+   "ru": "Я уснул с дротиком в шее, не досмотрев «Грустное утро». А ведь я видел, как Фернандо писал свои первые деревья."
+  },
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 1,
+   "es": "El embajador miró el reloj tres veces y se le quedaron quietas las manos al oír un nombre. Después nos asaltaron. Casualidad, seguro.",
+   "ru": "Посол трижды посмотрел на часы, и у него замерли руки, когда прозвучало одно имя. Потом на нас напали. Совпадение, конечно."
+  },
+  {
+   "a": "Damián Roca",
+   "ar": "Дамиан Рока",
+   "s": 4,
+   "es": "Tenemos dos Fader originales en el salón. Teníamos.",
+   "ru": "У нас в зале два подлинника Фадера. Было."
+  }
+ ],
+ "lo-embankment": [
+  {
+   "a": "Lucy",
+   "ar": "Люси",
+   "s": 5,
+   "es": "Diez libras el retrato con el Big Ben de fondo. Los vuelto la nota gratis. Y si el agua se mueve, no es culpa mía.",
+   "ru": "Десять фунтов за портрет на фоне Биг-Бена. Записка в подарок. А если вода шевелится — я не виновата."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Le pagué con veinte y le dije keep the change. Me dio el retrato, una advertencia y la mejor aliada de la novela.",
+   "ru": "Я дал ей двадцать и сказал keep the change. Она дала мне портрет, предупреждение и лучшую союзницу в романе."
+  },
+  {
+   "a": "Un turista japonés",
+   "ar": "Японский турист",
+   "s": 4,
+   "es": "La pintora no me quiso hacer el retrato. Esperaba a otros. Muy rara. Muy linda la boina.",
+   "ru": "Художница не захотела меня рисовать. Ждала кого-то другого. Очень странная. Очень красивый берет."
+  }
+ ],
+ "lo-big-ben": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "Pasamos tan cerca que vi la hora: las nueve y cuarto. Nunca vas a mirar un reloj igual después de pasarle al lado en un auto dibujado.",
+   "ru": "Пролетели так близко, что я увидела время: четверть десятого. После того как пролетишь мимо часов в нарисованной машине, никогда не будешь смотреть на них так же."
+  },
+  {
+   "a": "Sergio",
+   "ar": "Серхио",
+   "s": 4,
+   "es": "Mi hijo me llamó desde arriba de Londres «en un auto volador». Anoté la dirección igual. Soy el presidente, pero primero soy el padre.",
+   "ru": "Сын позвонил мне «из летающей машины над Лондоном». Адрес я всё равно записал. Я президент, но прежде всего отец."
+  },
+  {
+   "a": "El Aston Martin",
+   "ar": "Aston Martin",
+   "s": 5,
+   "es": "Brrrm. (Sin ruedas en el piso, sin tránsito, con vista al río. Solo me quedaba una hora de vida, pero qué hora.)",
+   "ru": "Брррм. (Колёса не касаются земли, пробок нет, вид на реку. Жить мне оставался час, но какой час.)"
+  }
+ ],
+ "lo-scotland-yard": [
+  {
+   "a": "El inspector",
+   "ar": "Инспектор",
+   "s": 3,
+   "es": "Un testigo me pidió las imágenes de la cámara. Después el presidente de la Argentina me llamó con una dirección dictada desde un auto volador. No pregunté. Fuimos.",
+   "ru": "Свидетель попросил записи с камеры. Потом президент Аргентины позвонил с адресом, продиктованным из летающей машины. Я не стал спрашивать. Мы поехали."
+  },
+  {
+   "a": "Damián Roca",
+   "ar": "Дамиан Рока",
+   "s": 2,
+   "es": "Dije que los había llamado. Al final me llamaron ellos a mí. Con esposas.",
+   "ru": "Я сказал, что звонил им. В итоге это они меня вызвали. В наручниках."
+  }
+ ],
+ "lo-museo": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 3,
+   "es": "Banderas de 1806, un peine de carey y medallas del Cabildo. Me dio una ira sorda. Y otra vez se me olvidó la pregunta.",
+   "ru": "Знамёна 1806 года, черепаховый гребень и медали кабильдо. Меня охватила глухая злость. И я опять забыл вопрос."
+  },
+  {
+   "a": "Heinrich",
+   "ar": "Генрих",
+   "s": 4,
+   "es": "Lo importante no estaba en las vitrinas, sino en la solapa de un hombre en una foto: un sol dentro de una rosa.",
+   "ru": "Главное было не в витринах, а на лацкане человека на фотографии: солнце внутри розы."
+  }
+ ],
+ "lo-amber-brush": [
+  {
+   "a": "Heinrich",
+   "ar": "Генрих",
+   "s": 5,
+   "es": "Le sostuve la lámpara toda la noche, le lavé los pinceles y me puse colorado. A los ciento sesenta. Me quedo a vivir.",
+   "ru": "Я всю ночь держал ей лампу, мыл кисти и краснел. В сто шестьдесят. Остаюсь здесь жить."
+  },
+  {
+   "a": "Lucy",
+   "ar": "Люси",
+   "s": 5,
+   "es": "Café recién molido, óleo, un sótano con caldera y escobas muy bravas. Cerramos a las seis. Salvo invasiones.",
+   "ru": "Свежемолотый кофе, масляные краски, подвал с котлом и очень злые мётлы. Закрываемся в шесть. Кроме случаев вторжения."
+  },
+  {
+   "a": "Un guardia de Thorne",
+   "ar": "Охранник Торна",
+   "s": 1,
+   "es": "Me atacaron dos escobas. Dibujadas. No pienso explicarlo en el informe.",
+   "ru": "На меня напали две метлы. Нарисованные. В отчёте объяснять не буду."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "Dos inmortales encadenados a una caldera: no es la mejor vista del café. Igual volvería. Por el té, por Lucy y por el viejo enamorado.",
+   "ru": "Двое бессмертных, прикованных к котлу, — не лучший вид в кафе. Но я бы вернулся. Ради чая, ради Люси и ради влюблённого старика."
+  },
+  {
+   "a": "Cedric Thorne",
+   "ar": "Седрик Торн",
+   "s": 2,
+   "es": "Mi sobrina siempre fue la artista de la familia. El negocio nunca lo entendió. El café tampoco es negocio.",
+   "ru": "Моя племянница всегда была художницей в семье. Бизнеса она не понимала. Кафе — тоже не бизнес."
+  }
+ ],
+ "lo-hotel": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 4,
+   "es": "No pude dormir. Él tampoco. Fuimos a golpearle la puerta a Heinrich y salimos sabiendo lo que le pasó a Karl. Escribí mi nombre en el espejo.",
+   "ru": "Я не могла уснуть. Он тоже. Мы постучали к Генриху и вышли, зная, что случилось с Карлом. Я написала своё имя на зеркале."
+  },
+  {
+   "a": "Heinrich",
+   "ar": "Генрих",
+   "s": 4,
+   "es": "Habitación cómoda, espejo grande. Ideal para pegar los nombres de la gente que uno no quiere olvidar.",
+   "ru": "Удобный номер, большое зеркало. Идеально, чтобы приклеить имена тех, кого не хочешь забыть."
+  }
+ ],
+ "lo-faders-relics": [
+  {
+   "a": "Matías",
+   "ar": "Матиас",
+   "s": 3,
+   "es": "Vendo mates, ponchos y, alguna vez, cuadros de la familia. Mi primo me usó, una pintora me engañó y terminé declarando. Cinco estrellas para la acequia; tres para el negocio.",
+   "ru": "Продаю мате, пончо и иногда семейные картины. Брат меня использовал, художница обманула, и я дал показания. Пять звёзд арыку, три — бизнесу."
+  },
+  {
+   "a": "Lucy",
+   "ar": "Люси",
+   "s": 5,
+   "es": "Le mostré mis acuarelas y casi se le cae el café. Después le cambié dos Fader por dos Thorne. Muy buena atención.",
+   "ru": "Я показала ему свои акварели, и он чуть не уронил кофе. Потом я подменила двух Фадеров двумя Торнами. Отличное обслуживание."
+  },
+  {
+   "a": "Heinrich",
+   "ar": "Генрих",
+   "s": 4,
+   "es": "Tiré un perchero lleno de ponchos y pedí disculpas. Después corrí como si tuviera cien años menos.",
+   "ru": "Я опрокинул вешалку с пончо и извинился. Потом бежал так, будто мне на сто лет меньше."
+  }
+ ],
+ "lo-notting-hill-gate": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Dos semáforos en rojo y un sándwich de autobuses rojos. La moto se quedó en el tránsito. Le pido perdón a Londres.",
+   "ru": "Два красных светофора и бутерброд из красных автобусов. Мотоцикл застрял в пробке. Прошу прощения у Лондона."
+  },
+  {
+   "a": "Un chofer de autobús",
+   "ar": "Водитель автобуса",
+   "s": 2,
+   "es": "Una furgoneta negra se me metió entre el mío y el de adelante. Cuarenta años manejando y nunca vi algo así. Hasta esa noche, cuando vi un auto volando.",
+   "ru": "Чёрный фургон влез между моим автобусом и передним. Сорок лет за рулём — такого не видел. До той ночи, когда увидел летающую машину."
+  }
+ ],
+ "lo-buckingham": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 4,
+   "es": "Cambio de guardia, turistas, sombreros de piel y nosotros con dos cuadros robados en un portafolios. Nadie nos miró. Perfecto.",
+   "ru": "Смена караула, туристы, меховые шапки, а мы с двумя украденными картинами в папке. Никто на нас не посмотрел. Идеально."
+  },
+  {
+   "a": "Un guardia real",
+   "ar": "Королевский гвардеец",
+   "s": 5,
+   "es": "(No puedo hablar en servicio. Pero vi a una señora apretando un portafolios como si adentro hubiera un corazón.)",
+   "ru": "(На посту говорить нельзя. Но я видел даму, которая сжимала папку так, будто внутри было сердце.)"
+  }
+ ],
+ "lo-hyde-park": [
+  {
+   "a": "Lucy",
+   "ar": "Люси",
+   "s": 5,
+   "es": "Lo pinté en otoño. Una vez un gorrión mío salió volando por la ventana; el de este cuadro, por suerte, se quedó quieto.",
+   "ru": "Я написала его осенью. Однажды мой воробей вылетел в окно; а этот, к счастью, остался на месте."
+  }
+ ],
+ "lo-castillo": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Me pegaron un tiro en el corazón y me levanté. Era la única forma de que valiera la pena ser inmortal. Una vez, aunque sea.",
+   "ru": "Мне выстрелили в сердце, а я встал. Это был единственный способ, чтобы бессмертие того стоило. Хотя бы раз."
+  },
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "Atrapé la ampolla en el aire, como en el vóley del colegio. Después lloré. Las dos cosas, de verdad.",
+   "ru": "Я поймала ампулу в воздухе, как в школьном волейболе. Потом расплакалась. И то и другое — по-настоящему."
+  },
+  {
+   "a": "Una restauradora",
+   "ar": "Реставратор",
+   "s": 2,
+   "es": "Me ataron a la pata de la mesa para sacar miel de un álamo pintado. Me liberó una señora con cortaplumas. Recomiendo a la señora; la iglesia, no.",
+   "ru": "Меня привязали к ножке стола, чтобы извлекать мёд из нарисованного тополя. Освободила дама с перочинным ножом. Даму рекомендую, церковь — нет."
+  },
+  {
+   "a": "Cedric Thorne",
+   "ar": "Седрик Торн",
+   "s": 1,
+   "es": "Perdí el frasco, la ampolla y un guante. La ampolla… bueno. Eso ya se verá.",
+   "ru": "Потерял флакон, ампулу и перчатку. Ампула… ну, это мы ещё посмотрим."
+  }
+ ],
+ "lo-oxford": [
+  {
+   "a": "Un médico",
+   "ar": "Врач",
+   "s": 3,
+   "es": "La bala le atravesó el corazón y el paciente quería firmar el alta. Sonreía mucho. Demasiado.",
+   "ru": "Пуля прошла сквозь сердце, а пациент хотел подписать выписку. Много улыбался. Слишком."
+  }
+ ]
+}

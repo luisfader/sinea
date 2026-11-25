@@ -9,11 +9,12 @@ import * as MADRID from './ciudades/madrid.js';
 import * as PETERSBURGO from './ciudades/petersburgo.js';
 import * as BELGRADO from './ciudades/belgrado.js';
 import * as PRAGA from './ciudades/praga.js';
+import * as LONDRES from './ciudades/londres.js';
 import * as ATLANTIDA from './ciudades/atlantida.js';
 import * as SECRETA from './ciudades/secreta.js';
 import * as FIORDO from './ciudades/fiordo.js';
 
-const TODAS = { sinea: SINEA, verdegrad: VERDEGRAD, utopia: UTOPIA, mendoza: MENDOZA, venezia: VENEZIA, madrid: MADRID, petersburgo: PETERSBURGO, belgrado: BELGRADO, praga: PRAGA, atlantida: ATLANTIDA, secreta: SECRETA, fiordo: FIORDO };
+const TODAS = { sinea: SINEA, verdegrad: VERDEGRAD, utopia: UTOPIA, mendoza: MENDOZA, venezia: VENEZIA, madrid: MADRID, petersburgo: PETERSBURGO, belgrado: BELGRADO, praga: PRAGA, londres: LONDRES, atlantida: ATLANTIDA, secreta: SECRETA, fiordo: FIORDO };
 export const CIUDAD = TODAS[globalThis.CIUDAD] ? globalThis.CIUDAD : 'sinea';
 const C = TODAS[CIUDAD];
 export const ARROYO = C.ARROYO || [], LAGOS = C.LAGOS || [];

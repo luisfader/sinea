@@ -1229,6 +1229,84 @@ const MODELOS = {
     g.add(caja(26, 3, .6, 0x1f5f9c, 0, 11, -.6)); // cartel «Terminal del Sol»
     return { g, r: 75 };
   },
+  'big-ben'() { // el Palacio de Westminster junto al Támesis, con la torre Elizabeth (Big Ben) en la punta norte
+    const g = new THREE.Group(), pie = M(0xc9b48a), osc = M(0x8f7a55), techo = M(0x5d6670), oro = M(0xd9b44a, { metalness: .6, roughness: .35 });
+    g.add(caja(70, 2, 270, 0xb8ad98, -10, 0, 135));
+    g.add(caja(46, 26, 250, pie, -8, 0, 140)); { const t = new THREE.Mesh(prismaGeo(), techo); t.scale.set(250, 9, 46); t.rotation.y = Math.PI / 2; t.position.set(-8, 26, 140); g.add(t); }
+    for (let i = 0; i < 22; i++) { g.add(caja(1.4, 30, 1.4, osc, 15.6, 0, 22 + i * 11)); const a = new THREE.Mesh(new THREE.ConeGeometry(1.2, 6, 4), osc); a.position.set(15.6, 33, 22 + i * 11); g.add(a); }
+    for (let i = 0; i < 22; i++) g.add(caja(.4, 14, 5, brillo(0x2a3138), 15.2, 8, 22 + i * 11 + 5));
+    g.add(caja(20, 40, 20, pie, -20, 0, 120)); { const c = new THREE.Mesh(new THREE.ConeGeometry(12, 26, 8), techo); c.position.set(-20, 53, 120); g.add(c); } // torre central
+    g.add(caja(26, 82, 26, pie, -14, 0, 262)); for (const [dx, dz] of [[-1, -1], [1, -1], [-1, 1], [1, 1]]) g.add(cil(1.6, 1.6, 12, osc, -14 + dx * 12, 82, 262 + dz * 12, 6)); // torre Victoria
+    // la torre Elizabeth: fuste, esferas del reloj en las cuatro caras, campanario y aguja
+    g.add(caja(12, 56, 12, pie, 0, 0, 0)); g.add(caja(14, 10, 14, osc, 0, 56, 0));
+    for (const [rx, x, z] of [[0, 0, 7.1], [0, 0, -7.1], [Math.PI / 2, 7.1, 0], [Math.PI / 2, -7.1, 0]]) { const c = new THREE.Mesh(new THREE.CircleGeometry(4.6, 24), brillo(0xf3ecd2)); c.position.set(x, 61, z); c.rotation.y = rx + (z < 0 || x < 0 ? Math.PI : 0); g.add(c); }
+    g.add(caja(12, 8, 12, pie, 0, 66, 0)); g.add(caja(9, 6, 9, osc, 0, 74, 0));
+    const ag = new THREE.Mesh(new THREE.ConeGeometry(6.6, 18, 4), techo); ag.rotation.y = Math.PI / 4; ag.position.set(0, 89, 0); g.add(ag); g.add(esfera(.9, oro, 0, 99, 0));
+    return { g, r: 60 };
+  },
+  buckingham() { // el palacio de Buckingham con el Victoria Memorial delante, donde la furgoneta quedó abandonada
+    const g = new THREE.Group(), pie = M(0xe4dccb), techo = M(0x8a8f92), oro = M(0xe2bb4a, { metalness: .7, roughness: .3 }), roja = M(0xb3262b);
+    g.add(caja(150, 24, 34, pie, 0, 0, 0)); g.add(caja(34, 24, 120, pie, -58, 0, 0)); g.add(caja(34, 24, 120, pie, 58, 0, 0)); g.add(caja(150, 24, 30, pie, 0, 0, -48));
+    for (let i = 0; i < 6; i++) g.add(cil(1.3, 1.3, 16, pie, -25 + i * 10, 5, 18, 10)); g.add(caja(62, 6, 4, pie, 0, 21, 18)); { const fr = new THREE.Mesh(prismaGeo(), M(0xd8cfbd)); fr.scale.set(40, 6, 5); fr.position.set(0, 27, 18); g.add(fr); }
+    for (let i = 0; i < 18; i++) for (let f = 0; f < 3; f++) g.add(caja(3.2, 4.2, .4, brillo(0x2b2e33), -68 + i * 8, 3 + f * 7, 17.3));
+    g.add(cil(.4, .4, 18, 0x555555, 0, 30, 0, 6)); g.add(caja(8, 5, .3, roja, 4, 42, 0));
+    g.rotation.y = -Math.PI / 2; // la fachada mira al este, hacia el Mall
+    const mem = new THREE.Group(); mem.add(cil(22, 24, 3, 0xd9d3c4, 0, 0, 0, 24)); mem.add(caja(10, 16, 10, 0xece6d8, 0, 3, 0)); mem.add(cil(3, 4, 8, 0xece6d8, 0, 19, 0, 8)); mem.add(esfera(2.6, oro, 0, 29, 0));
+    for (let i = 0; i < 8; i++) { const a = i * Math.PI / 4; mem.add(esfera(.8, 0xc0352f, Math.cos(a) * 30, 1.6, Math.sin(a) * 30)); mem.add(cil(.25, .25, 2.2, 0x101010, Math.cos(a) * 30, 0, Math.sin(a) * 30, 5)); } // la guardia
+    mem.position.set(120, 0, 0); g.add(mem);
+    return { g, r: 70 };
+  },
+  'residencia-belgrave'() { // la residencia del embajador argentino: casa de estuco blanco con pórtico, bandera y el jardín del ventanal
+    const g = new THREE.Group(), blanco = M(0xf2efe8), gris = M(0x6d7278), celeste = M(0x75aadb), sol = M(0xf2c14e, { emissive: 0x6b4a00 });
+    g.add(caja(46, 22, 26, blanco, 0, 0, 0)); g.add(caja(47, 1.2, 27, 0xdcd6ca, 0, 22, 0)); g.add(caja(44, 4, 24, gris, 0, 23.2, 0));
+    for (let f = 0; f < 4; f++) for (let i = 0; i < 7; i++) g.add(caja(2.6, f ? 3.2 : 4.4, .4, f === 1 ? brillo(0xffe2a8) : brillo(0x3a3f45), -18 + i * 6, 2 + f * 5.2, 13.2));
+    for (let i = 0; i < 4; i++) g.add(cil(.8, .8, 9, blanco, -6 + i * 4, 0, 16, 10)); g.add(caja(16, 1.4, 6, blanco, 0, 9, 15.5));
+    g.add(cil(.25, .25, 12, 0x444444, 0, 27, 0, 6));
+    g.add(caja(.2, 1.4, 6, celeste, 0, 37, 3)); g.add(caja(.2, 1.4, 6, M(0xffffff), 0, 35.6, 3)); g.add(caja(.2, 1.4, 6, celeste, 0, 34.2, 3)); g.add(esfera(.45, sol, .15, 36.3, 3));
+    g.add(caja(46, .4, 22, 0x86a96a, 0, 0, -24)); g.add(caja(10, 7, .3, brillo(0x9bc0d8), 0, 1, -13.2)); // el jardín y el ventanal por donde salieron los cuadros
+    for (const [x, z] of [[-16, -28], [14, -30], [-4, -34]]) { g.add(cil(.4, .5, 3, 0x6b4a2f, x, 0, z, 6)); g.add(esfera(3, 0x5f8f4c, x, 5, z)); }
+    return { g, r: 30 };
+  },
+  'amber-brush'() { // The Amber Brush: café de esquina verde botella con letrero dorado, el estudio arriba y el sótano de la caldera
+    const g = new THREE.Group(), verde = M(0x1f4a35), ladr = M(0xb9a68a), oro = M(0xd9ad3c, { metalness: .6, roughness: .35, emissive: 0x3d2a00 });
+    g.add(caja(18, 13, 14, ladr, 0, 4, 0)); g.add(caja(18.4, 4.2, 14.4, verde, 0, 0, 0));
+    g.add(caja(12, 1.1, .3, oro, 0, 4.4, 7.3)); g.add(caja(.3, 1.1, 9, oro, 9.3, 4.4, 0));
+    for (const [x, z, ry] of [[-4, 7.25, 0], [3, 7.25, 0], [9.25, -2, Math.PI / 2]]) { const v = caja(4, 2.6, .2, brillo(0xffc979), x, .7, z); v.rotation.y = ry; g.add(v); }
+    for (let f = 0; f < 2; f++) for (let i = 0; i < 3; i++) g.add(caja(2.4, 2.8, .2, f ? brillo(0x343b40) : brillo(0xf1d7a2), -5 + i * 5, 6.2 + f * 5, 7.1));
+    g.add(caja(19, .6, 15, 0x4a4f55, 0, 17, 0)); g.add(cil(.6, .6, 3, 0x7a5a48, 6, 17.6, -3, 8));
+    // el caballete en la vereda y la boina mostaza de Lucy en el perchero de la puerta
+    g.add(cil(.12, .12, 4, 0x6b4a2f, -9, 0, 9, 4)); g.add(caja(2.2, 1.6, .15, M(0xfaf6ea), -9, 2.4, 9.1));
+    g.scale.setScalar(1.6);
+    return { g, r: 26 };
+  },
+  'faders-relics'() { // Fader's Relics en Portobello Road: casas de colores, la tienda de antigüedades y los puestos
+    const g = new THREE.Group(), cols = [0xe9a3b8, 0x9fd0e0, 0xf3dd8a, 0xb6d8a8, 0xd9c2ea, 0xf2b98a];
+    cols.forEach((c, i) => { g.add(caja(7.6, 12 + (i % 2) * 1.5, 12, c, -22 + i * 8, 0, 0)); g.add(caja(7.8, .5, 12.2, 0xf4f1ea, -22 + i * 8, 12 + (i % 2) * 1.5, 0)); for (let f = 0; f < 2; f++) g.add(caja(2.2, 2.4, .2, brillo(f ? 0x3b4248 : 0xf3dcab), -22 + i * 8, 5 + f * 3.8, 6.1)); });
+    g.add(caja(7.8, 3.6, .3, M(0x3a2a20), -6, 0, 6.2)); g.add(caja(6.6, .9, .3, M(0xd8b04a, { emissive: 0x3a2a00 }), -6, 3.7, 6.3)); // la vidriera y el cartel
+    for (let i = 0; i < 5; i++) { const x = -20 + i * 9, aw = [0xc0392b, 0x2e6da4, 0x2f8a52, 0xd9a400, 0x7b3f9d][i]; g.add(caja(4, 1.4, 2.2, 0x8a6a4a, x, 0, 11)); g.add(caja(4.4, .2, 2.8, aw, x, 2.6, 11)); for (const dx of [-2, 2]) g.add(cil(.08, .08, 2.6, 0x333333, x + dx, 0, 12.2, 4)); }
+    g.scale.setScalar(1.4);
+    return { g, r: 36 };
+  },
+  'lucy-caballete'() { // la orilla del Támesis donde Lucy pinta retratos: caballete, banco y faroles de delfines
+    const g = new THREE.Group(), mostaza = M(0xc9962e), negro = M(0x1d1d1f);
+    for (const dx of [-.8, .8]) { const p = cil(.07, .07, 3.4, 0x6b4a2f, dx, 0, 0, 4); p.rotation.z = dx * -.12; g.add(p); }
+    g.add(caja(2.4, 1.8, .1, M(0xfdfbf3), 0, 1.8, .15)); g.add(caja(2.2, .5, .12, M(0x5f7fb8), 0, 2.1, .2)); g.add(caja(2.2, .3, .12, M(0x7d5aa6), 0, 2.6, .2));
+    g.add(cil(.35, .45, 1.5, mostaza, 1.8, 0, .8, 8)); g.add(esfera(.32, M(0xf2d5bf), 1.8, 1.8, .8)); g.add(cil(.36, .36, .12, negro, 1.8, 2.05, .8, 10));
+    g.add(caja(3, .5, .8, 0x4b3a2a, -3.5, .4, 1));
+    for (const x of [-8, 8]) { g.add(cil(.15, .22, 4.5, 0x2a3a35, x, 0, -1.5, 6)); g.add(esfera(.45, brillo(0xffe2a0), x, 4.8, -1.5)); }
+    return { g, r: 6 };
+  },
+  'iglesia-cotswolds'() { // «el castillo»: iglesia normanda de piedra color miel con el ala fortificada y la torre almenada, entre robles
+    const g = new THREE.Group(), miel = M(0xc9a66b), osc = M(0x6f5a3c);
+    g.add(caja(34, 12, 14, miel, 0, 0, 0)); { const t = new THREE.Mesh(prismaGeo(), M(0x6d6458)); t.scale.set(34, 6, 15); t.position.set(0, 12, 0); g.add(t); }
+    g.add(cil(7, 7, 11, miel, 17, 0, 0, 12));
+    g.add(caja(16, 15, 22, miel, -24, 0, 4)); for (let i = 0; i < 6; i++) g.add(caja(2, 2, 2, miel, -31 + i * 2.8, 15, -7)); // el ala del siglo XVII
+    g.add(caja(10, 26, 10, miel, -36, 0, -6)); for (const [dx, dz] of [[-1, -1], [1, -1], [-1, 1], [1, 1], [0, -1], [0, 1], [-1, 0], [1, 0]]) g.add(caja(2, 2.4, 2, miel, -36 + dx * 4, 26, -6 + dz * 4));
+    for (let i = 0; i < 4; i++) g.add(caja(.6, 3, 1.2, brillo(0xffd28a), -16.8, 4 + (i % 2) * 5, -2 + i * 3));
+    for (let i = 0; i < 9; i++) g.add(caja(1, 1.5 + (i % 3) * .3, .3, M(0x8a8f86), 6 + (i % 3) * 4, 0, 12 + Math.floor(i / 3) * 4)); // lápidas con musgo
+    for (let i = 0; i < 9; i++) { const a = i * .7, r = 46 + (i % 3) * 8; g.add(cil(.8, 1.1, 6, 0x5a4330, Math.cos(a) * r, 0, Math.sin(a) * r, 6)); g.add(esfera(7 + (i % 2) * 2, 0x4f6e3a, Math.cos(a) * r, 11, Math.sin(a) * r)); }
+    return { g, r: 50 };
+  },
   'tren-fantasma'() { return { g: new THREE.Group(), r: 0 }; }
 };
 
@@ -1250,7 +1328,7 @@ export function construirHitos(lugares, u) {
     grupo.add(m.g);
     if (m.anim) anims.push(m.anim);
     if (m.r) reservas.push([L.x, L.y, m.r]);
-    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, usina: 20, 'condor-acceso': 20, terminal: 16, monobloc: 16, 'palacio-hielo': 72, 'isla-guardiana': 36, 'muralla-norte': 50, campamento: 12, 'faro-ruina': 50, 'piedra-negra': 10, 'templo-corazon': 96, 'torres-caracola': 96, 'portal-azul': 34, 'nave-enemiga': 330, 'roca-llave': 28, 'torre-bandera': 80, 'mesas-trampa': 10, 'karluv-most': 22, 'hrad-praga': 92, tyn: 82, petrin: 64, vysehrad: 60, zizkov: 230, mikulas: 62, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
+    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, usina: 20, 'big-ben': 100, buckingham: 34, 'residencia-belgrave': 34, 'amber-brush': 32, 'faders-relics': 22, 'lucy-caballete': 6, 'iglesia-cotswolds': 30, 'condor-acceso': 20, terminal: 16, monobloc: 16, 'palacio-hielo': 72, 'isla-guardiana': 36, 'muralla-norte': 50, campamento: 12, 'faro-ruina': 50, 'piedra-negra': 10, 'templo-corazon': 96, 'torres-caracola': 96, 'portal-azul': 34, 'nave-enemiga': 330, 'roca-llave': 28, 'torre-bandera': 80, 'mesas-trampa': 10, 'karluv-most': 22, 'hrad-praga': 92, tyn: 82, petrin: 64, vysehrad: 60, zizkov: 230, mikulas: 62, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
   }
   // reserva extra: la plaza Dante entera y el puerto
   reservas.push(...RESERVAS);
@@ -1560,4 +1638,32 @@ export function crearNorte(altura) {
     aurora.forEach((m, i) => { m.material.opacity = noche * (.22 + Math.sin(t * .4 + i) * .08) + (1 - noche) * .035; m.position.x = Math.sin(t * .05 + i) * 200; });
   };
   return { g, anim: anim_ };
+}
+
+// «Operación Londres»: el Aston Martin DB5 plateado que Lucy dibujó en la pared, volando sobre Pimlico, el Támesis y el Big Ben hacia el oeste;
+// y los autobuses rojos de dos pisos de Notting Hill Gate, entre los que Luis perdió a la moto
+export function crearLondres() {
+  const g = new THREE.Group();
+  const auto = new THREE.Group(), plata = new THREE.MeshStandardMaterial({ color: 0xc9ced3, metalness: .85, roughness: .25 });
+  const luzOro = new THREE.MeshBasicMaterial({ color: 0xffc94a, transparent: true, opacity: .85 });
+  auto.add(caja(4.6, 1, 1.8, plata, 0, .4, 0)); auto.add(caja(2.2, .8, 1.6, plata, -.3, 1.4, 0)); auto.add(caja(2, .65, 1.62, brillo(0x2b3440), -.3, 1.45, 0));
+  for (const x of [-1.5, 1.5]) for (const z of [-.95, .95]) { const r = new THREE.Mesh(new THREE.TorusGeometry(.42, .14, 8, 16), luzOro); r.position.set(x, .4, z); auto.add(r); const ala = new THREE.Mesh(new THREE.PlaneGeometry(1.8, .5), new THREE.MeshBasicMaterial({ color: 0xffe08a, transparent: true, opacity: .45, side: THREE.DoubleSide })); ala.position.set(x - .6, .2, z * 1.35); ala.rotation.x = Math.PI / 2; auto.add(ala); }
+  for (const z of [-.6, .6]) auto.add(esfera(.16, brillo(0xfff2c0), 2.32, .6, z));
+  auto.scale.setScalar(13); g.add(auto);
+  const halo = new THREE.Mesh(new THREE.SphereGeometry(40, 12, 8), new THREE.MeshBasicMaterial({ color: 0xffcf5a, transparent: true, opacity: .12, depthWrite: false })); g.add(halo);
+  const estela = [], polvo = new THREE.MeshBasicMaterial({ color: 0xffd36b, transparent: true, opacity: .7, depthWrite: false });
+  for (let i = 0; i < 26; i++) { const p = new THREE.Mesh(new THREE.SphereGeometry(5, 6, 4), polvo.clone()); g.add(p); estela.push(p); }
+  const ruta = new THREE.CatmullRomCurve3([[-1065, -1138], [-300, -950], [150, -300], [40, 120], [-700, 520], [-2400, 380], [-4300, -150], [-3100, -1150], [-1900, -1350]].map(([x, y]) => new THREE.Vector3(x, 0, -y)), true);
+  // autobuses de dos pisos, de ida y vuelta por Notting Hill Gate, Bayswater Road y Oxford Street
+  const linea = [[-5431, 931], [-3900, 1030], [-2451, 1176], [-2382, 1365], [-441, 1699]], buses = [], roja = new THREE.MeshStandardMaterial({ color: 0xc8102e, roughness: .5 });
+  const LL = [0]; for (let i = 1; i < linea.length; i++) LL.push(LL[i - 1] + Math.hypot(linea[i][0] - linea[i - 1][0], linea[i][1] - linea[i - 1][1]));
+  for (let k = 0; k < 7; k++) { const b = new THREE.Group(); b.add(caja(11, 4.4, 2.6, roja, 0, .5, 0)); for (const y of [1.6, 3.6]) b.add(caja(10.4, .9, 2.65, brillo(0x2a3138), 0, y, 0)); b.scale.setScalar(1.6); g.add(b); buses.push({ b, s0: k * LL[LL.length - 1] / 7, dir: k % 2 ? 1 : -1 }); }
+  const enLinea = (s) => { const T = LL[LL.length - 1]; s = ((s % (2 * T)) + 2 * T) % (2 * T); if (s > T) s = 2 * T - s; let i = 1; while (i < LL.length - 1 && LL[i] < s) i++; const a = linea[i - 1], b = linea[i], k = (s - LL[i - 1]) / (LL[i] - LL[i - 1]); return [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, Math.atan2(b[1] - a[1], b[0] - a[0])]; };
+  return { g, anim(t, n) {
+    const u = (t * .006) % 1, p = ruta.getPointAt(u), q = ruta.getPointAt((u + .002) % 1), alto = 110 + Math.sin(t * .7) * 8;
+    auto.position.set(p.x, alto, p.z); auto.lookAt(q.x, alto, q.z); auto.rotateY(-Math.PI / 2); auto.rotation.z += Math.sin(t * 1.3) * .05;
+    halo.position.copy(auto.position); halo.material.opacity = .14 + .3 * n;
+    estela.forEach((e, i) => { const v = ruta.getPointAt(((u - (i + 1) * .0016) % 1 + 1) % 1); e.position.set(v.x, alto - i * .4, v.z); e.material.opacity = .6 * (1 - i / estela.length); e.scale.setScalar(1 - i / estela.length * .7); });
+    for (const o of buses) { const [x, y, a] = enLinea(o.s0 + t * 9 * o.dir); o.b.position.set(x, altura(x, y) + .2, -y); o.b.rotation.y = a; }
+  } };
 }
