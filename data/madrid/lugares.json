@@ -1,5 +1,5 @@
 {
- "_info": "Lugares de «Дикий час: Карнавал раздора» en Madrid. «ll» = [lat, lon] reales.",
+ "_info": "Lugares de Madrid en «Дикий час: Карнавал раздора», «Тайна семьи Фадер: Вторая половина» y «Резонанс любви: Волшебные струны». «ll» = [lat, lon] reales.",
  "lugares": [
   {
    "id": "mad-espana",
@@ -68,13 +68,19 @@
     -3.70095
    ],
    "modelo": "fuente",
-   "desc": "El barrio viejo y popular con la fuente en la plaza. Huyendo del toro, Luis y Natasha llegan acá, y acá cobran vida todas las estatuas, que bajan despacio de sus pedestales; Luis literalmente toma al toro por los cuernos. Más tarde, junto a la fuente, Natasha se compra zapatos nuevos. Las margaritas con dientes muerden a todo el mundo en Lavapiés, pero a Luis lo esquivan, y Natasha lo nota. Y fue un jugador de cartas de Lavapiés el que, casi cien años antes, dejó en el tren fantasma la baraja que decidirá la suerte de Madrid.",
+   "desc": "El barrio viejo y popular con la fuente en la plaza. Huyendo del toro, Luis y Natasha llegan acá, y acá cobran vida todas las estatuas, que bajan despacio de sus pedestales; Luis literalmente toma al toro por los cuernos. Más tarde, junto a la fuente, Natasha se compra zapatos nuevos. Las margaritas con dientes muerden a todo el mundo en Lavapiés, pero a Luis lo esquivan, y Natasha lo nota. Y fue un jugador de cartas de Lavapiés el que, casi cien años antes, dejó en el tren fantasma la baraja que decidirá la suerte de Madrid. En «La otra mitad», Luis «corta camino» y los pierde: una margarita en una maceta le muerde el dedo y una señora con ruleros le tira una cuchara de madera desde el balcón; al irse, Natalia oye a un hombre con acento argentino gritar «¡NO PASARÁN!», y la calle está vacía. Y en «Cuerdas mágicas», en un café de paredes amarillas que sube de Lavapiés hacia el norte, la Natalia del agente L se cruza con el Luis de «La otra mitad», que moja churros en chocolate y habla de un tal Karl.",
    "buscar": "Лавапьес\\w*",
    "extra": {
     "dikij-chas-karnaval-razdora": [
      6,
      28,
      31
+    ],
+    "tajna-semi-fader-2": [
+     7
+    ],
+    "rezonans-lyubvi-volshebnye-struny": [
+     7
     ]
    }
   },
@@ -87,13 +93,20 @@
     -3.69008
    ],
    "modelo": "biblioteca-nacional",
-   "desc": "Sobre el Paseo de Recoletos, junto a la Plaza de Colón. Acá se guarda el único manuscrito que habla de los siete signos celestes, del culto al toro y de la sumisión de la mente humana. En una de sus páginas está dibujado Taurán, el antiguo dios toro ibérico, y el toro dibujado abre los ojos y sale de la página. Luis salta sobre el dios toro y lo toma por los cuernos: Taurán se calma, y en todo Madrid la luz dorada se va de los ojos de los toreros contagiados. Antes de irse, Natasha vuelve sola y devuelve la hoja que arrancó el primer día.",
+   "desc": "Sobre el Paseo de Recoletos, junto a la Plaza de Colón. Acá se guarda el único manuscrito que habla de los siete signos celestes, del culto al toro y de la sumisión de la mente humana. En una de sus páginas está dibujado Taurán, el antiguo dios toro ibérico, y el toro dibujado abre los ojos y sale de la página. Luis salta sobre el dios toro y lo toma por los cuernos: Taurán se calma, y en todo Madrid la luz dorada se va de los ojos de los toreros contagiados. Antes de irse, Natasha vuelve sola y devuelve la hoja que arrancó el primer día. En «El misterio de los Fader: La otra mitad», Luis y Natalia buscan acá «el lugar donde la reina puso la primera piedra» (Isabel II, el 21 de abril de 1866). En la sala de lectura una mujer de vestido bordado grita lo que en una biblioteca no se grita, arranca una página y mira a Luis cinco segundos a los ojos; de un estante cae una revista vieja con el mismo grabado que tiene Karl, y en el margen, a lápiz: «K. F. — Unter den Büchern». Remedios, archivista desde hace cuarenta y un años, baja con «los sobrinos de Buenos Aires» a los cimientos: en un bloque de granito hay un panalito y las letras K. F., y adentro un cilindro de latón sellado con cera que huele a hidromiel. Al salir, un ser de abrigo gris con un cráneo de toro por cabeza se lo arranca a Natalia de las manos. Y en «Resonancia del amor: Cuerdas mágicas», el agente L para aquí al toro de piedra antiguo con un acorde de su guitarra española, mientras la otra Natalia, la médica de Moscú, mira escondida detrás de un plátano.",
    "buscar": "Национальн\\w+ библиотек\\w*",
    "extra": {
     "dikij-chas-karnaval-razdora": [
      10,
      11,
      40
+    ],
+    "tajna-semi-fader-2": [
+     8,
+     9
+    ],
+    "rezonans-lyubvi-volshebnye-struny": [
+     8
     ]
    },
    "ilustracion": [
@@ -129,7 +142,7 @@
     -3.6892
    ],
    "modelo": "metro",
-   "desc": "Línea 4. Miles de madrileños se esconden en los andenes, los túneles y los pasillos, y Natasha, con un megáfono, pone orden: el perro sí, la heladera de cerveza no. Los espíritus golpean las rejas de las entradas pero no pueden entrar: bajo Madrid nace una fortaleza. Entre la multitud aparece una pelirroja disfrazada de carnaval —«Déjenme pasar, soy médica»— con un acento que a Natasha le suena demasiado. La herida de sable de Luis no cierra; lo salva el elixir que «simplemente Karl» le dio al agente L. Y en una línea sin ningún tren, de repente, suena una bocina.",
+   "desc": "Línea 4. Miles de madrileños se esconden en los andenes, los túneles y los pasillos, y Natasha, con un megáfono, pone orden: el perro sí, la heladera de cerveza no. Los espíritus golpean las rejas de las entradas pero no pueden entrar: bajo Madrid nace una fortaleza. Entre la multitud aparece una pelirroja disfrazada de carnaval —«Déjenme pasar, soy médica»— con un acento que a Natasha le suena demasiado. La herida de sable de Luis no cierra; lo salva el elixir que «simplemente Karl» le dio al agente L. Y en una línea sin ningún tren, de repente, suena una bocina. En «Resonancia del amor: Cuerdas mágicas» la estación se llena de gente bajo la vieja mosaica, y Natalia, la médica de Moscú del agente L, cose de rodillas la herida que la saber del rey fantasma le abrió a Luis en el pecho, con la serbia de la diadema dorada al lado. La herida no cierra: tira de sus fuerzas. Entonces el agente L, después de un suspiro teatral, saca de su capa un frasquito de vidrio oscuro: «Un elixir. Me lo dio un tal Karl».",
    "buscar": "станци\\w* «Колон»",
    "extra": {
     "dikij-chas-karnaval-razdora": [
@@ -137,6 +150,11 @@
      16,
      17,
      18
+    ],
+    "rezonans-lyubvi-volshebnye-struny": [
+     9,
+     10,
+     11
     ]
    },
    "ilustracion": [
@@ -153,7 +171,7 @@
     -3.70318
    ],
    "modelo": "oso-madrono",
-   "desc": "La plaza del kilómetro cero, con el Oso y el Madroño, el símbolo de Madrid. En la novela está vacía, y en las salidas a Preciados, Arenal, Mayor y Alcalá hay espíritus de guardia. Natasha le da saludos de parte del abuelo de la Estación Mítica, Luis le dibuja la libertad al oso con la tiza del centauro, y el oso de bronce baja las patas; de los portales salen domovói, kikímoras y un léshi. Después el pedestal queda vacío —el oso se instaló en el cuartel de Natasha— y en las ramas del madroño cuelga la estampita que el viento se llevó de Colón. Debajo de la plaza, en un andén abandonado de la estación Sol revestido de azulejos blancos, los vuelve a esperar el tren fantasma.",
+   "desc": "La plaza del kilómetro cero, con el Oso y el Madroño, el símbolo de Madrid. En la novela está vacía, y en las salidas a Preciados, Arenal, Mayor y Alcalá hay espíritus de guardia. Natasha le da saludos de parte del abuelo de la Estación Mítica, Luis le dibuja la libertad al oso con la tiza del centauro, y el oso de bronce baja las patas; de los portales salen domovói, kikímoras y un léshi. Después el pedestal queda vacío —el oso se instaló en el cuartel de Natasha— y en las ramas del madroño cuelga la estampita que el viento se llevó de Colón. Debajo de la plaza, en un andén abandonado de la estación Sol revestido de azulejos blancos, los vuelve a esperar el tren fantasma. En «La otra mitad», Karl escribe: «El siguiente paso lo vas a encontrar donde empiezan todos los caminos de España. Donde está el cero. La abeja sabe dónde posarse», y Natalia entiende enseguida: la Puerta del Sol, el kilómetro cero.",
    "buscar": "Пуэрта-дель-Соль|земляничн\\w+ дерев\\w*",
    "extra": {
     "dikij-chas-karnaval-razdora": [
@@ -161,6 +179,9 @@
      21,
      30,
      31
+    ],
+    "tajna-semi-fader-2": [
+     12
     ]
    },
    "ilustracion": [
@@ -177,11 +198,14 @@
     -3.7178
    ],
    "modelo": "debod",
-   "desc": "El templo egipcio sobre la colina, encima de la Plaza de España: dos arcos de piedra, el santuario y el agua quieta. Hasta acá trae Zmaj a Luis, que todavía habla con las palabras del rey. Natasha no discute: lo besa, y la luz blanca de sus ojos se apaga. Lo que pasó después lo saben solo las piedras antiguas del templo; abajo, en la Plaza de España, los faroles dejan de parpadear uno tras otro.",
+   "desc": "El templo egipcio sobre la colina, encima de la Plaza de España: dos arcos de piedra, el santuario y el agua quieta. Hasta acá trae Zmaj a Luis, que todavía habla con las palabras del rey. Natasha no discute: lo besa, y la luz blanca de sus ojos se apaga. Lo que pasó después lo saben solo las piedras antiguas del templo; abajo, en la Plaza de España, los faroles dejan de parpadear uno tras otro. En «La otra mitad» es el lugar de una promesa: «Es el lugar más lindo de la ciudad. Siempre quise ver este atardecer acompañada». «Entonces lo vamos a ver. En cuanto encontremos el antídoto».",
    "buscar": "Дебод",
    "extra": {
     "dikij-chas-karnaval-razdora": [
      27
+    ],
+    "tajna-semi-fader-2": [
+     6
     ]
    }
   },
@@ -278,6 +302,182 @@
     "dikij-chas-karnaval-razdora",
     "34-1.jpg"
    ]
+  },
+  {
+   "id": "mad-hotel-duende",
+   "nombre": "Hotel El Duende (calle de Atocha)",
+   "cat": "casa",
+   "ll": [
+    40.4129,
+    -3.6996
+   ],
+   "modelo": "hotelito",
+   "desc": "El hotel de Luis y Natalia en «El misterio de los Fader: La otra mitad», inventado para la novela en la calle de Atocha. El taxista se niega a seguir («Más allá Madrid se volvió loco») y ellos llegan a pie, escondiéndose en los zaguanes de las procesiones de la sardina y de los toreros. Un balconcito, una cama angosta que «se hace pasar por doble», y Natalia que cuenta cuántas veces estuvo en Madrid soñando con venir con alguien que quisiera: «Te quiero, rusa». Abajo Madrid enloquece y ellos no se enteran. A la mañana, la recepcionista Pilar, con los ojos desorbitados: «¡El agua de la canilla de Madrid es mucho más madrileña que la de Mendoza!». Natalia decide saltearse el desayuno continental. Desde el balcón se ve el Reina Sofía.",
+   "extra": {
+    "tajna-semi-fader-2": [
+     5,
+     6,
+     7
+    ]
+   },
+   "sin_ilustracion": true,
+   "buscar": "Эль Дуэнде"
+  },
+  {
+   "id": "mad-hostal-arenal",
+   "nombre": "Hostal Arenal",
+   "cat": "casa",
+   "ll": [
+    40.4176,
+    -3.7083
+   ],
+   "modelo": "hotelito",
+   "desc": "La pensión de la calle Arenal donde se aloja el agente L en «Resonancia del amor: Cuerdas mágicas»: cartel azul, tercer piso, ventana de la izquierda. Natalia, la médica de Moscú que vino a verlo sin avisar, toma una piecita enfrente, con una máscara de plumas colgada sobre la puerta y una dueña que le explica al gato que el gobierno volvió a subir los impuestos. A la mañana lo ve salir de capa, con el estuche de la guitarra y una soga al hombro, discutiendo con una chica de campera de cuero: un toro de bronce se escapó en Carabanchel y en el Retiro el Ángel Caído quiere volarse con fuente y todo. «Vos al Retiro. Yo, al toro.»",
+   "extra": {
+    "rezonans-lyubvi-volshebnye-struny": [
+     5,
+     6
+    ]
+   },
+   "sin_ilustracion": true,
+   "buscar": "Hostal Arenal|улиц\\w* Аренал"
+  },
+  {
+   "id": "mad-cibeles",
+   "nombre": "Plaza de Cibeles",
+   "cat": "plaza",
+   "ll": [
+    40.4193,
+    -3.69313
+   ],
+   "modelo": "cibeles",
+   "desc": "La diosa Cibeles en su carro tirado por leones (1782), con el blanco Palacio de Comunicaciones detrás. En «El misterio de los Fader: La otra mitad» el ser de cráneo de toro camina entre los autos y un colectivo lo atraviesa; Luis y Natalia, en cambio, tienen que esperar el semáforo. «Si estuviera el taxista de ayer, habría que darle propina.»",
+   "extra": {
+    "tajna-semi-fader-2": [
+     10
+    ]
+   },
+   "sin_ilustracion": true,
+   "buscar": "Сибелес"
+  },
+  {
+   "id": "mad-alcala",
+   "nombre": "Puerta de Alcalá",
+   "cat": "monumento",
+   "ll": [
+    40.42,
+    -3.68874
+   ],
+   "modelo": "puerta-alcala",
+   "desc": "La puerta triunfal de cinco arcos que Sabatini levantó para Carlos III en 1778. «La construyeron en tiempos de Carlos III», dice Natalia en «La otra mitad». «¡Nati, en esta ciudad hay demasiados Carlos!» El ser de cráneo de toro los mira por primera vez, y Natalia siente unos dedos fríos dentro de sus pensamientos.",
+   "extra": {
+    "tajna-semi-fader-2": [
+     10
+    ]
+   },
+   "sin_ilustracion": true,
+   "buscar": "Ворот\\w* Алькала"
+  },
+  {
+   "id": "mad-retiro",
+   "nombre": "Parque del Retiro",
+   "cat": "parque",
+   "ll": [
+    40.4136,
+    -3.682
+   ],
+   "modelo": "palacio-cristal",
+   "desc": "El gran parque, con el estanque, las barcas, el monumento a Alfonso XII y, al fondo, el Palacio de Cristal (1887). Es el primero en la lista de «los lugares de Natalia» en «La otra mitad»: el Palacio de Cristal, «como estar adentro de una pompa de jabón». El ser de cráneo de toro se les escapa caminando por el agua entre las barcas («Un animador», le explica un chico a su novia), y junto a Alfonso XII Luis hace su segunda promesa. En «Cuerdas mágicas», la chica de la campera de cuero corre hacia acá porque el Ángel Caído quiere volarse con fuente y todo.",
+   "extra": {
+    "tajna-semi-fader-2": [
+     6,
+     10
+    ],
+    "rezonans-lyubvi-volshebnye-struny": [
+     6
+    ]
+   },
+   "sin_ilustracion": true,
+   "buscar": "Ретиро"
+  },
+  {
+   "id": "mad-prado",
+   "nombre": "Museo del Prado",
+   "cat": "edificio",
+   "ll": [
+    40.41378,
+    -3.69212
+   ],
+   "modelo": "museo",
+   "desc": "Abierto en 1819, con «Las meninas» de Velázquez y las «Pinturas negras» de Goya. En «La otra mitad» el ser de cráneo de toro pasa el detector sin entrada mientras Luis y Natalia hacen quince minutos de cola detrás de un grupo japonés. Frente a «Las meninas» se mira en el espejo del fondo: por primera vez alguien lo mira a él. «Señor, no se puede tocar», frena una celadora a Luis. Y frente al «Saturno» de Goya el cilindro se enciende y los dedos grises del ser se aclaran: «El hidromiel lo está procesando», entiende Natalia.",
+   "extra": {
+    "tajna-semi-fader-2": [
+     11
+    ]
+   },
+   "sin_ilustracion": true,
+   "buscar": "Прадо"
+  },
+  {
+   "id": "mad-reina-sofia",
+   "nombre": "Museo Reina Sofía: el «Guernica»",
+   "cat": "edificio",
+   "ll": [
+    40.408,
+    -3.69454
+   ],
+   "modelo": "museo",
+   "desc": "El museo de arte moderno en el antiguo hospital de San Carlos, donde cuelga el «Guernica» de Picasso, que volvió a España recién en 1981. En «La otra mitad» se ve desde el balcón del hotel: «¿Para ella trabajaba Karl?». «No. Karl trabajaba para Isabel.» Frente al «Guernica», Luis cuenta de su bisabuelo, miliciano madrileño muerto en un bombardeo, y entiende cómo nació de verdad el cuadro. Ahí el ser le devuelve el cilindro y se deshace en polvo dorado; del polvo sale volando una abeja, y adentro del cilindro hay una abeja de latón con los números «0,0».",
+   "extra": {
+    "tajna-semi-fader-2": [
+     6,
+     12
+    ]
+   },
+   "sin_ilustracion": true,
+   "buscar": "Герник\\w*|Королев\\w* Софии"
+  },
+  {
+   "id": "mad-barajas",
+   "nombre": "Aeropuerto de Barajas",
+   "cat": "transporte",
+   "ll": [
+    40.4719,
+    -3.5626
+   ],
+   "modelo": "ninguno",
+   "desc": "Por acá entran todos. En «La otra mitad» el agente de frontera grita «¡Olé!» sobre cada pasaporte, en la cinta de equipajes un «torero» pelea con un «toro» de cuernos de plástico, y el taxista cobra propina por el semáforo en verde; Luis le da la mejor propina de Rusia, doscientos rublos, y él los guarda en el parasol como una reliquia. En «Cuerdas mágicas» llega el agente L a la una de la mañana, con la guitarra, entre sardinas de carnaval y una señora de mantilla dormida sobre la valija; y después la Natalia de Moscú, a quien el de migraciones le pregunta muy serio si alguna vez pensó que las palomas son dinosaurios muy chiquitos.",
+   "extra": {
+    "tajna-semi-fader-2": [
+     5
+    ],
+    "rezonans-lyubvi-volshebnye-struny": [
+     3,
+     5
+    ]
+   },
+   "sin_ilustracion": true,
+   "buscar": "Барахас",
+   "borde": true
+  },
+  {
+   "id": "mad-vistalegre",
+   "nombre": "Carabanchel: el toro de Vistalegre",
+   "cat": "misterio",
+   "ll": [
+    40.388,
+    -3.7395
+   ],
+   "modelo": "ninguno",
+   "desc": "En «Resonancia del amor: Cuerdas mágicas», uno de los toros de bronce del Palacio de Vistalegre se escapa de noche y atropella tres autos. «Toro hay uno. Yo soy uno. Duelo limpio», dice el agente L, y se va en taxi; la Natalia de Moscú lo sigue en otro, con un taxista de bigotes que lleva treinta y ocho años esperando que alguien le diga «¡Siga a ese auto!».",
+   "extra": {
+    "rezonans-lyubvi-volshebnye-struny": [
+     6
+    ]
+   },
+   "sin_ilustracion": true,
+   "buscar": "Висталегре|Карабанчел\\w*",
+   "borde": true
   }
  ]
 }

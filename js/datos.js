@@ -1232,6 +1232,15 @@ export const CIUDADES = {
 "Щит и тени"
 ]
 ]
+},
+{
+"n": "tajna-semi-fader-2",
+"c": [
+[
+"10",
+"Сибелес, ворота и пруд"
+]
+]
 }
 ],
 "img": {
@@ -2140,6 +2149,15 @@ export const CIUDADES = {
 [
 "34",
 "Кабинет с широким окном"
+]
+]
+},
+{
+"n": "mashina-snov",
+"c": [
+[
+"12",
+"Надо уезжать"
 ]
 ]
 }
@@ -4220,6 +4238,27 @@ export const CIUDADES = {
 ]
 },
 {
+"n": "mashina-snov",
+"c": [
+[
+"6",
+"Предчувствие"
+],
+[
+"7",
+"Встреча с автором"
+],
+[
+"8",
+"Не только литература"
+],
+[
+"12",
+"Надо уезжать"
+]
+]
+},
+{
 "n": "el-tren-fantasma",
 "c": [
 [
@@ -4263,15 +4302,6 @@ export const CIUDADES = {
 [
 "4",
 "Квартал сумасшедших"
-]
-]
-},
-{
-"n": "mashina-snov",
-"c": [
-[
-"6",
-"Предчувствие"
 ]
 ]
 }
@@ -5870,19 +5900,6 @@ export const CIUDADES = {
 "desc_ru": "Прогулочная улица вдоль моря с акациями, киосками и закрытыми на зиму аттракционами. Ирина, психолог из «Машины снов», проходит здесь каждое утро, одинаково ненавидя запах моря, мокрого асфальта и свежего хлеба; в её снах по бульвару поднимаются от моря четыре всадника. Беппе часами играет вальсы на набережной, когда Синея снова смеётся.",
 "apar": [
 {
-"n": "volny-lyubvi-gorod-bez-ulybok",
-"c": [
-[
-"32",
-"Последняя башня"
-],
-[
-"41",
-"Песня для Синеи"
-]
-]
-},
-{
 "n": "mashina-snov",
 "c": [
 [
@@ -5892,6 +5909,27 @@ export const CIUDADES = {
 [
 "4",
 "Конь бледный"
+],
+[
+"9",
+"Лаборатория"
+],
+[
+"11",
+"Повелитель снов"
+]
+]
+},
+{
+"n": "volny-lyubvi-gorod-bez-ulybok",
+"c": [
+[
+"32",
+"Последняя башня"
+],
+[
+"41",
+"Песня для Синеи"
 ]
 ]
 },
@@ -5958,6 +5996,14 @@ export const CIUDADES = {
 [
 "6",
 "Предчувствие"
+],
+[
+"7",
+"Встреча с автором"
+],
+[
+"12",
+"Надо уезжать"
 ]
 ]
 }
@@ -6019,6 +6065,10 @@ export const CIUDADES = {
 [
 "5",
 "Онейрос"
+],
+[
+"11",
+"Повелитель снов"
 ]
 ]
 }
@@ -7275,6 +7325,43 @@ export const CIUDADES = {
 ]
 },
 {
+"n": "mashina-snov",
+"c": [
+[
+"1",
+"Люди"
+],
+[
+"2",
+"Четыре всадника"
+],
+[
+"3",
+"Ливия"
+],
+[
+"4",
+"Конь бледный"
+],
+[
+"6",
+"Предчувствие"
+],
+[
+"7",
+"Встреча с автором"
+],
+[
+"9",
+"Лаборатория"
+],
+[
+"11",
+"Повелитель снов"
+]
+]
+},
+{
 "n": "znak",
 "c": [
 [
@@ -7300,31 +7387,6 @@ export const CIUDADES = {
 [
 "16",
 "Третий день"
-]
-]
-},
-{
-"n": "mashina-snov",
-"c": [
-[
-"1",
-"Люди"
-],
-[
-"2",
-"Четыре всадника"
-],
-[
-"3",
-"Ливия"
-],
-[
-"4",
-"Конь бледный"
-],
-[
-"6",
-"Предчувствие"
 ]
 ]
 },
@@ -19626,6 +19688,15 @@ export const CIUDADES = {
 "Тёмная комната"
 ]
 ]
+},
+{
+"n": "rezonans-lyubvi-volshebnye-struny",
+"c": [
+[
+"4",
+"Росинант на верёвке"
+]
+]
 }
 ],
 "res": [
@@ -19712,6 +19783,15 @@ export const CIUDADES = {
 "Эскоба"
 ]
 ]
+},
+{
+"n": "rezonans-lyubvi-volshebnye-struny",
+"c": [
+[
+"4",
+"Росинант на верёвке"
+]
+]
 }
 ],
 "res": [
@@ -19735,6 +19815,27 @@ export const CIUDADES = {
 "nombre_ru": "Улица Аточа",
 "desc_ru": "Улица от Пуэрта-дель-Соль на юго-восток, к вокзалу Аточа. Первое столкновение с аномалией: по улице несётся толпа в карнавальных костюмах и нарядах тореадоров, а за ней — ожившая бронзовая статуя быка. Бык пробивает рекламный щит и сдвигает рогами машины.",
 "apar": [
+{
+"n": "tajna-semi-fader-2",
+"c": [
+[
+"5",
+"Барахас"
+],
+[
+"6",
+"Медовушный месяц"
+],
+[
+"7",
+"Вода из-под крана"
+],
+[
+"12",
+"Герника"
+]
+]
+},
 {
 "n": "dikij-chas-karnaval-razdora",
 "c": [
@@ -19762,9 +19863,9 @@ export const CIUDADES = {
 "x": 223,
 "y": -889,
 "modelo": "fuente",
-"desc": "El barrio viejo y popular con la fuente en la plaza. Huyendo del toro, Luis y Natasha llegan acá, y acá cobran vida todas las estatuas, que bajan despacio de sus pedestales; Luis literalmente toma al toro por los cuernos. Más tarde, junto a la fuente, Natasha se compra zapatos nuevos. Las margaritas con dientes muerden a todo el mundo en Lavapiés, pero a Luis lo esquivan, y Natasha lo nota. Y fue un jugador de cartas de Lavapiés el que, casi cien años antes, dejó en el tren fantasma la baraja que decidirá la suerte de Madrid.",
+"desc": "El barrio viejo y popular con la fuente en la plaza. Huyendo del toro, Luis y Natasha llegan acá, y acá cobran vida todas las estatuas, que bajan despacio de sus pedestales; Luis literalmente toma al toro por los cuernos. Más tarde, junto a la fuente, Natasha se compra zapatos nuevos. Las margaritas con dientes muerden a todo el mundo en Lavapiés, pero a Luis lo esquivan, y Natasha lo nota. Y fue un jugador de cartas de Lavapiés el que, casi cien años antes, dejó en el tren fantasma la baraja que decidirá la suerte de Madrid. En «La otra mitad», Luis «corta camino» y los pierde: una margarita en una maceta le muerde el dedo y una señora con ruleros le tira una cuchara de madera desde el balcón; al irse, Natalia oye a un hombre con acento argentino gritar «¡NO PASARÁN!», y la calle está vacía. Y en «Cuerdas mágicas», en un café de paredes amarillas que sube de Lavapiés hacia el norte, la Natalia del agente L se cruza con el Luis de «La otra mitad», que moja churros en chocolate y habla de un tal Karl.",
 "nombre_ru": "Лавапьес",
-"desc_ru": "Старый народный квартал с фонтаном на площади. Убегая от быка, Луис и Наташа попадают сюда — и здесь оживают уже все статуи, медленно сходя с пьедесталов; Луис буквально берёт быка за рога. Позже у фонтана Наташа покупает новые туфли. Зубастые маргаритки кусают в Лавапьесе всех подряд, но Луиса облетают стороной — и Наташа это замечает. А колоду, которая решит судьбу Мадрида, почти сто лет назад оставил в призрачном поезде картёжник из Лавапьеса.",
+"desc_ru": "Старый народный квартал с фонтаном на площади. Убегая от быка, Луис и Наташа попадают сюда — и здесь оживают уже все статуи, медленно сходя с пьедесталов; Луис буквально берёт быка за рога. Позже у фонтана Наташа покупает новые туфли. Зубастые маргаритки кусают в Лавапьесе всех подряд, но Луиса облетают стороной — и Наташа это замечает. А колоду, которая решит судьбу Мадрида, почти сто лет назад оставил в призрачном поезде картёжник из Лавапьеса. Во «Второй половине» Луис «срезает» и уводит их не туда: маргаритка в горшке кусает его за палец, а сеньора в бигуди бросает с балкона деревянную ложку; уходя, Наталья слышит, как мужчина с аргентинским выговором кричит «¡NO PASARÁN!», а улица пуста. А в «Волшебных струнах» в кафе с жёлтыми стенами на улице, что поднимается от Лавапьеса на север, Наталья агента Л встречает Луиса из «Второй половины», который макает чуррос в шоколад и говорит о каком-то Карле.",
 "apar": [
 {
 "n": "dikij-chas-karnaval-razdora",
@@ -19794,6 +19895,36 @@ export const CIUDADES = {
 "Колода из вагона"
 ]
 ]
+},
+{
+"n": "rezonans-lyubvi-volshebnye-struny",
+"c": [
+[
+"6",
+"Бык из Карабанчеля"
+],
+[
+"7",
+"Рыжий лис"
+],
+[
+"9",
+"Кто здесь хвастун?"
+]
+]
+},
+{
+"n": "tajna-semi-fader-2",
+"c": [
+[
+"7",
+"Вода из-под крана"
+],
+[
+"12",
+"Герника"
+]
+]
 }
 ],
 "res": [
@@ -19810,6 +19941,13 @@ export const CIUDADES = {
 "s": 4,
 "es": "Tomé un toro por los cuernos, literal. Las estatuas del barrio tienen mucha vida, demasiada.",
 "ru": "Взял быка за рога — буквально. У статуй в этом квартале очень много жизни, даже слишком."
+},
+{
+"a": "Una señora con ruleros",
+"ar": "Сеньора в бигуди",
+"s": 2,
+"es": "Mis margaritas no muerden a la gente decente. A ese argentino le tiré la cuchara y volvería a tirársela.",
+"ru": "Мои маргаритки не кусают порядочных людей. Этому аргентинцу я бросила ложку и брошу ещё раз."
 }
 ],
 "img": {
@@ -19825,9 +19963,9 @@ export const CIUDADES = {
 "x": 1144,
 "y": 740,
 "modelo": "biblioteca-nacional",
-"desc": "Sobre el Paseo de Recoletos, junto a la Plaza de Colón. Acá se guarda el único manuscrito que habla de los siete signos celestes, del culto al toro y de la sumisión de la mente humana. En una de sus páginas está dibujado Taurán, el antiguo dios toro ibérico, y el toro dibujado abre los ojos y sale de la página. Luis salta sobre el dios toro y lo toma por los cuernos: Taurán se calma, y en todo Madrid la luz dorada se va de los ojos de los toreros contagiados. Antes de irse, Natasha vuelve sola y devuelve la hoja que arrancó el primer día.",
+"desc": "Sobre el Paseo de Recoletos, junto a la Plaza de Colón. Acá se guarda el único manuscrito que habla de los siete signos celestes, del culto al toro y de la sumisión de la mente humana. En una de sus páginas está dibujado Taurán, el antiguo dios toro ibérico, y el toro dibujado abre los ojos y sale de la página. Luis salta sobre el dios toro y lo toma por los cuernos: Taurán se calma, y en todo Madrid la luz dorada se va de los ojos de los toreros contagiados. Antes de irse, Natasha vuelve sola y devuelve la hoja que arrancó el primer día. En «El misterio de los Fader: La otra mitad», Luis y Natalia buscan acá «el lugar donde la reina puso la primera piedra» (Isabel II, el 21 de abril de 1866). En la sala de lectura una mujer de vestido bordado grita lo que en una biblioteca no se grita, arranca una página y mira a Luis cinco segundos a los ojos; de un estante cae una revista vieja con el mismo grabado que tiene Karl, y en el margen, a lápiz: «K. F. — Unter den Büchern». Remedios, archivista desde hace cuarenta y un años, baja con «los sobrinos de Buenos Aires» a los cimientos: en un bloque de granito hay un panalito y las letras K. F., y adentro un cilindro de latón sellado con cera que huele a hidromiel. Al salir, un ser de abrigo gris con un cráneo de toro por cabeza se lo arranca a Natalia de las manos. Y en «Resonancia del amor: Cuerdas mágicas», el agente L para aquí al toro de piedra antiguo con un acorde de su guitarra española, mientras la otra Natalia, la médica de Moscú, mira escondida detrás de un plátano.",
 "nombre_ru": "Национальная библиотека",
-"desc_ru": "На бульваре Реколетос, рядом с площадью Колумба. Здесь хранится единственная рукопись, где упоминаются семь небесных знаков, культ быка и подчинение человеческого сознания. На её странице нарисован Тауран — древний иберийский бог-бык, и нарисованный бык открывает глаза и выходит со страницы. Луис прыгает на бога-быка и берёт его за рога: Тауран смиряется, и по всему Мадриду из глаз заражённых тореадоров уходит золотой свет. Перед отъездом Наташа приходит сюда одна и возвращает лист, который вырвала из рукописи в первый день.",
+"desc_ru": "На бульваре Реколетос, рядом с площадью Колумба. Здесь хранится единственная рукопись, где упоминаются семь небесных знаков, культ быка и подчинение человеческого сознания. На её странице нарисован Тауран — древний иберийский бог-бык, и нарисованный бык открывает глаза и выходит со страницы. Луис прыгает на бога-быка и берёт его за рога: Тауран смиряется, и по всему Мадриду из глаз заражённых тореадоров уходит золотой свет. Перед отъездом Наташа приходит сюда одна и возвращает лист, который вырвала из рукописи в первый день. В «Тайне семьи Фадер: Второй половине» Луис и Наталья ищут здесь «место, где королева положила первый камень» (Изабелла II, 21 апреля 1866 года). В читальном зале женщина в вышитом платье громко говорит то, чего в библиотеке не говорят, вырывает страницу и пять секунд смотрит Луису в глаза; с полки падает старый журнал с той же гравюрой, что висит у Карла, а на полях карандашом: «K. F. — Unter den Büchern». Архивистка Ремедиос, сорок один год в этом здании, ведёт «племянников из Буэнос-Айреса» в фундамент: на гранитной глыбе — крошечные соты и буквы K. F., внутри — латунный цилиндр, запечатанный воском с запахом медовухи. На выходе существо в сером пальто с черепом быка вместо головы выхватывает цилиндр из рук Натальи. А в «Резонансе любви: Волшебных струнах» агент Л останавливает здесь древнего каменного быка аккордом испанской гитары, пока другая Наталья, московский врач, смотрит из-за платана.",
 "apar": [
 {
 "n": "dikij-chas-karnaval-razdora",
@@ -19865,6 +20003,36 @@ export const CIUDADES = {
 "Кто здесь главный?"
 ]
 ]
+},
+{
+"n": "tajna-semi-fader-2",
+"c": [
+[
+"5",
+"Барахас"
+],
+[
+"7",
+"Вода из-под крана"
+],
+[
+"8",
+"Читальный зал"
+],
+[
+"9",
+"Под книгами"
+]
+]
+},
+{
+"n": "rezonans-lyubvi-volshebnye-struny",
+"c": [
+[
+"8",
+"Струны у библиотеки"
+]
+]
 }
 ],
 "res": [
@@ -19881,6 +20049,20 @@ export const CIUDADES = {
 "s": 4,
 "es": "Lindo libro para vivir. Volví a casa, a mi página. Un hombre me tomó por los cuernos y no me molestó tanto.",
 "ru": "Хорошая книга, чтобы в ней жить. Вернулся домой, на свою страницу. Один человек взял меня за рога — и мне это почти не мешало."
+},
+{
+"a": "Remedios",
+"ar": "Ремедиос",
+"s": 5,
+"es": "Cuarenta y un años en este edificio y nunca había bajado a los cimientos con unos sobrinos de Buenos Aires que hablan ruso. Huele a hidromiel. Lo anoté en el registro.",
+"ru": "Сорок один год в этом здании — и ни разу не спускалась в фундамент с племянниками из Буэнос-Айреса, которые говорят по-русски. Пахнет медовухой. Записала в журнал."
+},
+{
+"a": "Agente L",
+"ar": "Агент Л",
+"s": 4,
+"es": "Un acorde en re menor y el toro retrocedió medio paso. Para un toro más viejo que España, es bastante.",
+"ru": "Один аккорд ре минор — и бык отступил на полшага. Для быка старше Испании это немало."
 }
 ],
 "img": {
@@ -19940,6 +20122,15 @@ export const CIUDADES = {
 "Кто здесь главный?"
 ]
 ]
+},
+{
+"n": "rezonans-lyubvi-volshebnye-struny",
+"c": [
+[
+"8",
+"Струны у библиотеки"
+]
+]
 }
 ],
 "res": [
@@ -19971,9 +20162,9 @@ export const CIUDADES = {
 "x": 1219,
 "y": 867,
 "modelo": "metro",
-"desc": "Línea 4. Miles de madrileños se esconden en los andenes, los túneles y los pasillos, y Natasha, con un megáfono, pone orden: el perro sí, la heladera de cerveza no. Los espíritus golpean las rejas de las entradas pero no pueden entrar: bajo Madrid nace una fortaleza. Entre la multitud aparece una pelirroja disfrazada de carnaval —«Déjenme pasar, soy médica»— con un acento que a Natasha le suena demasiado. La herida de sable de Luis no cierra; lo salva el elixir que «simplemente Karl» le dio al agente L. Y en una línea sin ningún tren, de repente, suena una bocina.",
+"desc": "Línea 4. Miles de madrileños se esconden en los andenes, los túneles y los pasillos, y Natasha, con un megáfono, pone orden: el perro sí, la heladera de cerveza no. Los espíritus golpean las rejas de las entradas pero no pueden entrar: bajo Madrid nace una fortaleza. Entre la multitud aparece una pelirroja disfrazada de carnaval —«Déjenme pasar, soy médica»— con un acento que a Natasha le suena demasiado. La herida de sable de Luis no cierra; lo salva el elixir que «simplemente Karl» le dio al agente L. Y en una línea sin ningún tren, de repente, suena una bocina. En «Resonancia del amor: Cuerdas mágicas» la estación se llena de gente bajo la vieja mosaica, y Natalia, la médica de Moscú del agente L, cose de rodillas la herida que la saber del rey fantasma le abrió a Luis en el pecho, con la serbia de la diadema dorada al lado. La herida no cierra: tira de sus fuerzas. Entonces el agente L, después de un suspiro teatral, saca de su capa un frasquito de vidrio oscuro: «Un elixir. Me lo dio un tal Karl».",
 "nombre_ru": "Станция метро «Колон»",
-"desc_ru": "Линия 4. Тысячи мадридцев прячутся на платформах, в тоннелях и переходах, а Наташа с мегафоном держит порядок: собаку можно, холодильник для пива — нельзя. Духи бьют в решётки входов, но войти не могут — под Мадридом образовалась крепость. Сквозь толпу пробирается рыжая женщина в карнавальном костюме: «Пропустите, я врач», — и её акцент Наташе очень знаком. Рана от сабли не заживает; Луиса спасает эликсир, который агенту Л дал «просто Карл». А на линии, где нет ни одного поезда, вдруг раздаётся гудок.",
+"desc_ru": "Линия 4. Тысячи мадридцев прячутся на платформах, в тоннелях и переходах, а Наташа с мегафоном держит порядок: собаку можно, холодильник для пива — нельзя. Духи бьют в решётки входов, но войти не могут — под Мадридом образовалась крепость. Сквозь толпу пробирается рыжая женщина в карнавальном костюме: «Пропустите, я врач», — и её акцент Наташе очень знаком. Рана от сабли не заживает; Луиса спасает эликсир, который агенту Л дал «просто Карл». А на линии, где нет ни одного поезда, вдруг раздаётся гудок. В «Резонансе любви: Волшебных струнах» станция заполняется людьми под старой мозаикой, и Наталья, московский врач агента Л, на коленях зашивает рану, которую сабля призрачного короля оставила на груди Луиса; рядом — сербка с золотым обручем. Рана не заживает: она тянет из него силы. Тогда агент Л с театральным вздохом достаёт из плаща флакон тёмного стекла: «Эликсир. Мне его дал один человек. Его зовут Карл».",
 "apar": [
 {
 "n": "dikij-chas-karnaval-razdora",
@@ -20011,6 +20202,23 @@ export const CIUDADES = {
 "Храм Дебод"
 ]
 ]
+},
+{
+"n": "rezonans-lyubvi-volshebnye-struny",
+"c": [
+[
+"9",
+"Кто здесь хвастун?"
+],
+[
+"10",
+"Имя — это роскошь"
+],
+[
+"11",
+"Три капли"
+]
+]
 }
 ],
 "res": [
@@ -20034,6 +20242,13 @@ export const CIUDADES = {
 "s": 5,
 "es": "El elixir de «simplemente Karl» funcionó. La guitarra sobrevivió. El agente también.",
 "ru": "Эликсир «просто Карла» сработал. Гитара уцелела. Агент тоже."
+},
+{
+"a": "Natalia (Moscú)",
+"ar": "Наталья (Москва)",
+"s": 5,
+"es": "Cosí una herida de sable sobre un andén, bajo una mosaica, con una canaria mirando. Las suturas aguantaron. Lo demás, el frasquito de un tal Karl.",
+"ru": "Зашила сабельную рану на платформе, под мозаикой, под взглядом канарейки. Швы держались. Остальное — флакон какого-то Карла."
 }
 ],
 "img": {
@@ -20049,9 +20264,9 @@ export const CIUDADES = {
 "x": 34,
 "y": 10,
 "modelo": "oso-madrono",
-"desc": "La plaza del kilómetro cero, con el Oso y el Madroño, el símbolo de Madrid. En la novela está vacía, y en las salidas a Preciados, Arenal, Mayor y Alcalá hay espíritus de guardia. Natasha le da saludos de parte del abuelo de la Estación Mítica, Luis le dibuja la libertad al oso con la tiza del centauro, y el oso de bronce baja las patas; de los portales salen domovói, kikímoras y un léshi. Después el pedestal queda vacío —el oso se instaló en el cuartel de Natasha— y en las ramas del madroño cuelga la estampita que el viento se llevó de Colón. Debajo de la plaza, en un andén abandonado de la estación Sol revestido de azulejos blancos, los vuelve a esperar el tren fantasma.",
+"desc": "La plaza del kilómetro cero, con el Oso y el Madroño, el símbolo de Madrid. En la novela está vacía, y en las salidas a Preciados, Arenal, Mayor y Alcalá hay espíritus de guardia. Natasha le da saludos de parte del abuelo de la Estación Mítica, Luis le dibuja la libertad al oso con la tiza del centauro, y el oso de bronce baja las patas; de los portales salen domovói, kikímoras y un léshi. Después el pedestal queda vacío —el oso se instaló en el cuartel de Natasha— y en las ramas del madroño cuelga la estampita que el viento se llevó de Colón. Debajo de la plaza, en un andén abandonado de la estación Sol revestido de azulejos blancos, los vuelve a esperar el tren fantasma. En «La otra mitad», Karl escribe: «El siguiente paso lo vas a encontrar donde empiezan todos los caminos de España. Donde está el cero. La abeja sabe dónde posarse», y Natalia entiende enseguida: la Puerta del Sol, el kilómetro cero.",
 "nombre_ru": "Пуэрта-дель-Соль: Медведь и земляничное дерево",
-"desc_ru": "Площадь нулевого километра с Медведем и земляничным деревом — символом Мадрида. В романе она пуста, а на выходах к Пресиадос, Ареналь, Майор и Алькала стоят духи. Наташа передаёт привет от дедушки с Мифической станции, Луис рисует медведю свободу мелом кентавра — и бронзовый медведь опускает лапы; из подъездов выходят домовые, кикиморы и леший. Потом постамент пуст — медведь сидит у Наташи в штабе, а на ветвях земляничного дерева висит эстампита, которую ветер унёс с площади Колумба. Под площадью, на заброшенной платформе станции «Соль», облицованной белой плиткой, их снова ждёт призрачный поезд.",
+"desc_ru": "Площадь нулевого километра с Медведем и земляничным деревом — символом Мадрида. В романе она пуста, а на выходах к Пресиадос, Ареналь, Майор и Алькала стоят духи. Наташа передаёт привет от дедушки с Мифической станции, Луис рисует медведю свободу мелом кентавра — и бронзовый медведь опускает лапы; из подъездов выходят домовые, кикиморы и леший. Потом постамент пуст — медведь сидит у Наташи в штабе, а на ветвях земляничного дерева висит эстампита, которую ветер унёс с площади Колумба. Под площадью, на заброшенной платформе станции «Соль», облицованной белой плиткой, их снова ждёт призрачный поезд. Во «Второй половине» Карл пишет: «Следующий шаг ты найдёшь там, где начинаются все дороги Испании. Там, где ноль. Пчела знает, куда сесть», — и Наталья сразу понимает: Пуэрта-дель-Соль, нулевой километр.",
 "apar": [
 {
 "n": "dikij-chas-karnaval-razdora",
@@ -20079,6 +20294,28 @@ export const CIUDADES = {
 [
 "38",
 "Прощание с Мадридом"
+]
+]
+},
+{
+"n": "rezonans-lyubvi-volshebnye-struny",
+"c": [
+[
+"4",
+"Росинант на верёвке"
+],
+[
+"6",
+"Бык из Карабанчеля"
+]
+]
+},
+{
+"n": "tajna-semi-fader-2",
+"c": [
+[
+"12",
+"Герника"
 ]
 ]
 }
@@ -20112,9 +20349,9 @@ export const CIUDADES = {
 "x": -1205,
 "y": 789,
 "modelo": "debod",
-"desc": "El templo egipcio sobre la colina, encima de la Plaza de España: dos arcos de piedra, el santuario y el agua quieta. Hasta acá trae Zmaj a Luis, que todavía habla con las palabras del rey. Natasha no discute: lo besa, y la luz blanca de sus ojos se apaga. Lo que pasó después lo saben solo las piedras antiguas del templo; abajo, en la Plaza de España, los faroles dejan de parpadear uno tras otro.",
+"desc": "El templo egipcio sobre la colina, encima de la Plaza de España: dos arcos de piedra, el santuario y el agua quieta. Hasta acá trae Zmaj a Luis, que todavía habla con las palabras del rey. Natasha no discute: lo besa, y la luz blanca de sus ojos se apaga. Lo que pasó después lo saben solo las piedras antiguas del templo; abajo, en la Plaza de España, los faroles dejan de parpadear uno tras otro. En «La otra mitad» es el lugar de una promesa: «Es el lugar más lindo de la ciudad. Siempre quise ver este atardecer acompañada». «Entonces lo vamos a ver. En cuanto encontremos el antídoto».",
 "nombre_ru": "Храм Дебод",
-"desc_ru": "Египетский храм на холме над площадью Испании: две каменные арки, святилище и неподвижная вода. Сюда Змай приносит Луиса, всё ещё говорящего словами короля. Наташа не спорит — она целует его, и белый свет в его глазах гаснет. Что было дальше, знают только древние камни храма Дебод, а внизу, на площади Испании, один за другим перестают мигать фонари.",
+"desc_ru": "Египетский храм на холме над площадью Испании: две каменные арки, святилище и неподвижная вода. Сюда Змай приносит Луиса, всё ещё говорящего словами короля. Наташа не спорит — она целует его, и белый свет в его глазах гаснет. Что было дальше, знают только древние камни храма Дебод, а внизу, на площади Испании, один за другим перестают мигать фонари. Во «Второй половине» это место обещания: «Это самое красивое место в городе. Я всегда хотела посмотреть на этот закат не одна». — «Значит, посмотрим. Как только найдём противоядие».",
 "apar": [
 {
 "n": "dikij-chas-karnaval-razdora",
@@ -20138,6 +20375,19 @@ export const CIUDADES = {
 [
 "39",
 "Дом"
+]
+]
+},
+{
+"n": "tajna-semi-fader-2",
+"c": [
+[
+"6",
+"Медовушный месяц"
+],
+[
+"10",
+"Сибелес, ворота и пруд"
 ]
 ]
 }
@@ -20197,6 +20447,28 @@ export const CIUDADES = {
 [
 "36",
 "Аргумент поубедительнее"
+]
+]
+},
+{
+"n": "rezonans-lyubvi-volshebnye-struny",
+"c": [
+[
+"4",
+"Росинант на верёвке"
+],
+[
+"5",
+"Два окна на третьем этаже"
+]
+]
+},
+{
+"n": "tajna-semi-fader-2",
+"c": [
+[
+"6",
+"Медовушный месяц"
 ]
 ]
 }
@@ -20428,6 +20700,432 @@ export const CIUDADES = {
 "n": "dikij-chas-karnaval-razdora",
 "c": "33"
 }
+},
+{
+"id": "mad-hotel-duende",
+"nombre": "Hotel El Duende (calle de Atocha)",
+"cat": "casa",
+"x": 337,
+"y": -443,
+"modelo": "hotelito",
+"desc": "El hotel de Luis y Natalia en «El misterio de los Fader: La otra mitad», inventado para la novela en la calle de Atocha. El taxista se niega a seguir («Más allá Madrid se volvió loco») y ellos llegan a pie, escondiéndose en los zaguanes de las procesiones de la sardina y de los toreros. Un balconcito, una cama angosta que «se hace pasar por doble», y Natalia que cuenta cuántas veces estuvo en Madrid soñando con venir con alguien que quisiera: «Te quiero, rusa». Abajo Madrid enloquece y ellos no se enteran. A la mañana, la recepcionista Pilar, con los ojos desorbitados: «¡El agua de la canilla de Madrid es mucho más madrileña que la de Mendoza!». Natalia decide saltearse el desayuno continental. Desde el balcón se ve el Reina Sofía.",
+"nombre_ru": "Отель «Эль Дуэнде» (улица Аточа)",
+"desc_ru": "Отель Луиса и Натальи в «Тайне семьи Фадер: Второй половине», придуманный для романа, на улице Аточа. Таксист отказывается ехать дальше («Дальше Мадрид сошёл с ума»), и они пробираются пешком, прячась в подъездах от процессий с сардиной и тореадоров. Крошечный балкон, узкая кровать, которая «притворяется двуспальной», и Наталья рассказывает, сколько раз бывала в Мадриде и мечтала приехать сюда с тем, кого любит. «Te quiero, rusa». Внизу Мадрид сходит с ума, а они этого не замечают. Утром портье Пилар с выпученными глазами: «Мадридская вода из-под крана гораздо более мадридская, чем вода Мендосы!» Наталья решает пропустить завтрак. С балкона виден музей Королевы Софии.",
+"apar": [
+{
+"n": "tajna-semi-fader-2",
+"c": [
+[
+"5",
+"Барахас"
+],
+[
+"6",
+"Медовушный месяц"
+],
+[
+"7",
+"Вода из-под крана"
+]
+]
+}
+],
+"res": [
+{
+"a": "Pilar",
+"ar": "Пилар",
+"s": 5,
+"es": "¡El agua de la canilla de Madrid es mucho más madrileña que la de Mendoza! La señora rusa no tomó el desayuno. Una pena.",
+"ru": "Мадридская вода из-под крана гораздо более мадридская, чем вода Мендосы! Русская сеньора не стала завтракать. Жаль."
+},
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "Una cama que se hace pasar por doble y un balcón chiquito. Abajo, Madrid enloquecía. Nosotros no nos enteramos.",
+"ru": "Кровать, которая притворяется двуспальной, и крошечный балкон. Внизу Мадрид сходил с ума. Мы этого не заметили."
+},
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 4,
+"es": "Te quiero, rusa. El hotel también está bien.",
+"ru": "Te quiero, rusa. Отель тоже ничего."
+}
+]
+},
+{
+"id": "mad-hostal-arenal",
+"nombre": "Hostal Arenal",
+"cat": "casa",
+"x": -400,
+"y": 79,
+"modelo": "hotelito",
+"desc": "La pensión de la calle Arenal donde se aloja el agente L en «Resonancia del amor: Cuerdas mágicas»: cartel azul, tercer piso, ventana de la izquierda. Natalia, la médica de Moscú que vino a verlo sin avisar, toma una piecita enfrente, con una máscara de plumas colgada sobre la puerta y una dueña que le explica al gato que el gobierno volvió a subir los impuestos. A la mañana lo ve salir de capa, con el estuche de la guitarra y una soga al hombro, discutiendo con una chica de campera de cuero: un toro de bronce se escapó en Carabanchel y en el Retiro el Ángel Caído quiere volarse con fuente y todo. «Vos al Retiro. Yo, al toro.»",
+"nombre_ru": "Хостел «Аренал»",
+"desc_ru": "Хостел на улице Аренал, где живёт агент Л в «Резонансе любви: Волшебных струнах»: синяя вывеска, третий этаж, левое окно. Наталья, московский врач, прилетевшая к нему без предупреждения, снимает комнатку напротив — с карнавальной маской из перьев над дверью и хозяйкой, которая объясняет коту, что правительство опять повысило налоги. Утром она видит, как он выходит в плаще, с футляром гитары и верёвкой через плечо, и спорит с девушкой в кожаной куртке: в Карабанчеле ушёл бронзовый бык, а в Ретиро Падший ангел пытается улететь вместе с фонтаном. «Ты — в Ретиро. Я — за быком».",
+"apar": [
+{
+"n": "rezonans-lyubvi-volshebnye-struny",
+"c": [
+[
+"5",
+"Два окна на третьем этаже"
+],
+[
+"6",
+"Бык из Карабанчеля"
+]
+]
+},
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"20",
+"Медведь и земляничное дерево"
+]
+]
+}
+],
+"res": [
+{
+"a": "La dueña",
+"ar": "Хозяйка",
+"s": 4,
+"es": "El gobierno volvió a subir los impuestos. El gato está de acuerdo conmigo. La rusa de la piecita de enfrente sale corriendo cada mañana detrás del de la guitarra.",
+"ru": "Правительство опять повысило налоги. Кот со мной согласен. Русская из комнатки напротив каждое утро выбегает за тем, что с гитарой."
+},
+{
+"a": "Natalia (Moscú)",
+"ar": "Наталья (Москва)",
+"s": 4,
+"es": "Tercer piso, ventana de la izquierda. Me disfrazaron de espía sin preguntarme. Lindo balcón para vigilar.",
+"ru": "Третий этаж, левое окно. Меня сделали шпионкой, не спросив. Хороший балкон, чтобы следить."
+}
+]
+},
+{
+"id": "mad-cibeles",
+"nombre": "Plaza de Cibeles",
+"cat": "plaza",
+"x": 886,
+"y": 268,
+"modelo": "cibeles",
+"desc": "La diosa Cibeles en su carro tirado por leones (1782), con el blanco Palacio de Comunicaciones detrás. En «El misterio de los Fader: La otra mitad» el ser de cráneo de toro camina entre los autos y un colectivo lo atraviesa; Luis y Natalia, en cambio, tienen que esperar el semáforo. «Si estuviera el taxista de ayer, habría que darle propina.»",
+"nombre_ru": "Площадь Сибелес",
+"desc_ru": "Богиня Кибела на колеснице со львами (1782), за ней — белый Дворец связи. Во «Второй половине» существо с черепом быка идёт между машинами, и автобус проезжает сквозь него; а Луису и Наталье приходится ждать светофора. «Если бы здесь был вчерашний таксист, ему пришлось бы дать на чай».",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"30",
+"Колода из вагона"
+],
+[
+"31",
+"Банк Испании"
+]
+]
+},
+{
+"n": "tajna-semi-fader-2",
+"c": [
+[
+"9",
+"Под книгами"
+],
+[
+"10",
+"Сибелес, ворота и пруд"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 3,
+"es": "Al bicho lo atravesó un colectivo. Nosotros esperamos el semáforo. Así es la justicia.",
+"ru": "Чудище проехал насквозь автобус. А мы ждали светофора. Вот она, справедливость."
+}
+]
+},
+{
+"id": "mad-alcala",
+"nombre": "Puerta de Alcalá",
+"cat": "monumento",
+"x": 1258,
+"y": 345,
+"modelo": "puerta-alcala",
+"desc": "La puerta triunfal de cinco arcos que Sabatini levantó para Carlos III en 1778. «La construyeron en tiempos de Carlos III», dice Natalia en «La otra mitad». «¡Nati, en esta ciudad hay demasiados Carlos!» El ser de cráneo de toro los mira por primera vez, y Natalia siente unos dedos fríos dentro de sus pensamientos.",
+"nombre_ru": "Ворота Алькала",
+"desc_ru": "Триумфальные ворота с пятью проёмами, построенные Сабатини при Карлосе III в 1778 году. «Их построили при Карлосе Третьем», — говорит Наталья во «Второй половине». — «Нати, в этом городе слишком много Карлов!» Существо впервые смотрит на них, и Наталья чувствует холодные пальцы в своих мыслях.",
+"apar": [
+{
+"n": "tajna-semi-fader-2",
+"c": [
+[
+"10",
+"Сибелес, ворота и пруд"
+],
+[
+"11",
+"Прадо"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 4,
+"es": "Carlos III, Karl Fader, Carlos el de la otra puerta… Nati, en esta ciudad hay demasiados Carlos.",
+"ru": "Карлос III, Карл Фадер, Карлос с соседних ворот… Нати, в этом городе слишком много Карлов."
+}
+]
+},
+{
+"id": "mad-retiro",
+"nombre": "Parque del Retiro",
+"cat": "parque",
+"x": 1829,
+"y": -365,
+"modelo": "palacio-cristal",
+"desc": "El gran parque, con el estanque, las barcas, el monumento a Alfonso XII y, al fondo, el Palacio de Cristal (1887). Es el primero en la lista de «los lugares de Natalia» en «La otra mitad»: el Palacio de Cristal, «como estar adentro de una pompa de jabón». El ser de cráneo de toro se les escapa caminando por el agua entre las barcas («Un animador», le explica un chico a su novia), y junto a Alfonso XII Luis hace su segunda promesa. En «Cuerdas mágicas», la chica de la campera de cuero corre hacia acá porque el Ángel Caído quiere volarse con fuente y todo.",
+"nombre_ru": "Парк Ретиро",
+"desc_ru": "Огромный парк с прудом, лодками, памятником Альфонсо XII и Хрустальным дворцом (1887) в глубине. Во «Второй половине» Ретиро — первый в списке «мест Натальи»: Хрустальный дворец, «будто стоишь внутри мыльного пузыря». Существо с черепом быка уходит от них прямо по воде между лодками («Аниматор», — объясняет парень своей девушке), а у памятника Альфонсо XII Луис даёт второе обещание. В «Волшебных струнах» сюда бежит девушка в кожаной куртке: Падший ангел пытается улететь вместе с фонтаном.",
+"apar": [
+{
+"n": "tajna-semi-fader-2",
+"c": [
+[
+"6",
+"Медовушный месяц"
+],
+[
+"10",
+"Сибелес, ворота и пруд"
+]
+]
+},
+{
+"n": "rezonans-lyubvi-volshebnye-struny",
+"c": [
+[
+"6",
+"Бык из Карабанчеля"
+]
+]
+}
+],
+"res": [
+{
+"a": "Natalia",
+"ar": "Наталья",
+"s": 5,
+"es": "El Palacio de Cristal es como estar adentro de una pompa de jabón. Luis me lo prometió dos veces. Lo anoto.",
+"ru": "Хрустальный дворец — будто стоишь внутри мыльного пузыря. Луис обещал мне его дважды. Записываю."
+},
+{
+"a": "Un chico en una barca",
+"ar": "Парень в лодке",
+"s": 4,
+"es": "Un tipo con cráneo de toro caminó por el agua al lado nuestro. Le dije a mi novia que era un animador. Me creyó.",
+"ru": "Мимо нас по воде прошёл тип с черепом быка. Я сказал девушке, что это аниматор. Она поверила."
+}
+]
+},
+{
+"id": "mad-prado",
+"nombre": "Museo del Prado",
+"cat": "edificio",
+"x": 971,
+"y": -345,
+"modelo": "museo",
+"desc": "Abierto en 1819, con «Las meninas» de Velázquez y las «Pinturas negras» de Goya. En «La otra mitad» el ser de cráneo de toro pasa el detector sin entrada mientras Luis y Natalia hacen quince minutos de cola detrás de un grupo japonés. Frente a «Las meninas» se mira en el espejo del fondo: por primera vez alguien lo mira a él. «Señor, no se puede tocar», frena una celadora a Luis. Y frente al «Saturno» de Goya el cilindro se enciende y los dedos grises del ser se aclaran: «El hidromiel lo está procesando», entiende Natalia.",
+"nombre_ru": "Музей Прадо",
+"desc_ru": "Открыт в 1819 году, здесь «Менины» Веласкеса и «Чёрные картины» Гойи. Во «Второй половине» существо проходит рамку без билета, а Луис и Наталья пятнадцать минут стоят в очереди за японской группой. Перед «Менинами» оно смотрит в зеркало: впервые кто-то смотрит на него. «Señor, no se puede tocar», — останавливает Луиса смотрительница. Перед «Сатурном» Гойи цилиндр начинает светиться, и серые пальцы существа светлеют. «Медовуха его перерабатывает», — понимает Наталья.",
+"apar": [
+{
+"n": "tajna-semi-fader-2",
+"c": [
+[
+"10",
+"Сибелес, ворота и пруд"
+],
+[
+"11",
+"Прадо"
+],
+[
+"12",
+"Герника"
+]
+]
+}
+],
+"res": [
+{
+"a": "Una celadora",
+"ar": "Смотрительница",
+"s": 3,
+"es": "Señor, no se puede tocar. Se lo dije tres veces. Al de la cabeza de toro no le dije nada: no tenía entrada, pero no tocó.",
+"ru": "Señor, no se puede tocar. Я сказала ему трижды. Тому, что с головой быка, ничего не сказала: билета у него не было, но он ничего не трогал."
+}
+]
+},
+{
+"id": "mad-reina-sofia",
+"nombre": "Museo Reina Sofía: el «Guernica»",
+"cat": "edificio",
+"x": 766,
+"y": -987,
+"modelo": "museo",
+"desc": "El museo de arte moderno en el antiguo hospital de San Carlos, donde cuelga el «Guernica» de Picasso, que volvió a España recién en 1981. En «La otra mitad» se ve desde el balcón del hotel: «¿Para ella trabajaba Karl?». «No. Karl trabajaba para Isabel.» Frente al «Guernica», Luis cuenta de su bisabuelo, miliciano madrileño muerto en un bombardeo, y entiende cómo nació de verdad el cuadro. Ahí el ser le devuelve el cilindro y se deshace en polvo dorado; del polvo sale volando una abeja, y adentro del cilindro hay una abeja de latón con los números «0,0».",
+"nombre_ru": "Музей королевы Софии: «Герника»",
+"desc_ru": "Музей современного искусства в здании бывшей больницы Сан-Карлос, где висит «Герника» Пикассо, вернувшаяся в Испанию только в 1981 году. Во «Второй половине» его видно с балкона отеля: «Так это на неё работал Карл?» — «Нет. Карл работал на Изабеллу». Перед «Герникой» Луис рассказывает о прадеде — мадридском милисиано, погибшем при бомбёжке, — и понимает, как на самом деле родилась картина. Здесь существо возвращает цилиндр и рассыпается золотой пылью; из пыли вылетает пчела, а внутри цилиндра — латунная пчела с цифрами «0,0».",
+"apar": [
+{
+"n": "tajna-semi-fader-2",
+"c": [
+[
+"6",
+"Медовушный месяц"
+],
+[
+"11",
+"Прадо"
+],
+[
+"12",
+"Герника"
+]
+]
+}
+],
+"res": [
+{
+"a": "Luis",
+"ar": "Луис",
+"s": 5,
+"es": "Frente al «Guernica» pensé en mi bisabuelo, el miliciano. Después el bicho se volvió polvo de oro y salió una abeja. No le pidan más a un museo.",
+"ru": "Перед «Герникой» я думал о прадеде-милисиано. Потом чудище рассыпалось золотой пылью, и вылетела пчела. Большего от музея не требуйте."
+}
+]
+},
+{
+"id": "mad-barajas",
+"nombre": "Aeropuerto de Barajas",
+"cat": "transporte",
+"x": 11949,
+"y": 6108,
+"modelo": "ninguno",
+"borde": true,
+"desc": "Por acá entran todos. En «La otra mitad» el agente de frontera grita «¡Olé!» sobre cada pasaporte, en la cinta de equipajes un «torero» pelea con un «toro» de cuernos de plástico, y el taxista cobra propina por el semáforo en verde; Luis le da la mejor propina de Rusia, doscientos rublos, y él los guarda en el parasol como una reliquia. En «Cuerdas mágicas» llega el agente L a la una de la mañana, con la guitarra, entre sardinas de carnaval y una señora de mantilla dormida sobre la valija; y después la Natalia de Moscú, a quien el de migraciones le pregunta muy serio si alguna vez pensó que las palomas son dinosaurios muy chiquitos.",
+"nombre_ru": "Аэропорт Барахас",
+"desc_ru": "Сюда прилетают все. Во «Второй половине» пограничник кричит «¡Olé!» над каждым паспортом, у ленты с багажом «тореадор» сражается с «быком» в пластиковых рогах, а таксист просит чаевые за зелёный свет; Луис даёт ему лучшие чаевые в России — двести рублей, и тот кладёт их за козырёк, как святыню. В «Волшебных струнах» в начале второго ночи прилетает агент Л с гитарой, среди карнавальных сардин и сеньоры в мантилье, спящей на чемодане; а потом московская Наталья, которую пограничник очень серьёзно спрашивает, думала ли она, что голуби — это очень маленькие динозавры.",
+"apar": [
+{
+"n": "rezonans-lyubvi-volshebnye-struny",
+"c": [
+[
+"3",
+"Мад… рид"
+],
+[
+"5",
+"Два окна на третьем этаже"
+]
+]
+},
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"4",
+"Испания"
+]
+]
+},
+{
+"n": "tajna-semi-fader-2",
+"c": [
+[
+"5",
+"Барахас"
+]
+]
+}
+],
+"res": [
+{
+"a": "Un agente de frontera",
+"ar": "Пограничник",
+"s": 5,
+"es": "¡Olé! ¡Olé! ¡Olé! Y a la señorita rusa le pregunté por las palomas. Son dinosaurios. Nos miran. Se acuerdan.",
+"ru": "¡Olé! ¡Olé! ¡Olé! А русскую сеньориту я спросил про голубей. Это динозавры. Они смотрят. Они помнят."
+},
+{
+"a": "Un taxista",
+"ar": "Таксист",
+"s": 5,
+"es": "Doscientos rublos de propina. Los tengo en el parasol. No sé cuánto son, pero son míos.",
+"ru": "Двести рублей чаевых. Держу за козырьком. Не знаю, сколько это, но это мои."
+}
+]
+},
+{
+"id": "mad-vistalegre",
+"nombre": "Carabanchel: el toro de Vistalegre",
+"cat": "misterio",
+"x": -3044,
+"y": -3208,
+"modelo": "ninguno",
+"borde": true,
+"desc": "En «Resonancia del amor: Cuerdas mágicas», uno de los toros de bronce del Palacio de Vistalegre se escapa de noche y atropella tres autos. «Toro hay uno. Yo soy uno. Duelo limpio», dice el agente L, y se va en taxi; la Natalia de Moscú lo sigue en otro, con un taxista de bigotes que lleva treinta y ocho años esperando que alguien le diga «¡Siga a ese auto!».",
+"nombre_ru": "Карабанчель: бык Висталегре",
+"desc_ru": "В «Резонансе любви: Волшебных струнах» один из бронзовых быков у дворца Висталегре уходит ночью и сбивает три машины. «Бык один. Я один. Честный поединок», — говорит агент Л и уезжает на такси; московская Наталья едет следом на другом, с усатым таксистом, который тридцать восемь лет ждал, чтобы кто-нибудь сказал ему: «За той машиной!».",
+"apar": [
+{
+"n": "dikij-chas-karnaval-razdora",
+"c": [
+[
+"5",
+"Бык"
+],
+[
+"36",
+"Аргумент поубедительнее"
+]
+]
+},
+{
+"n": "rezonans-lyubvi-volshebnye-struny",
+"c": [
+[
+"6",
+"Бык из Карабанчеля"
+],
+[
+"8",
+"Струны у библиотеки"
+]
+]
+}
+],
+"res": [
+{
+"a": "El taxista de bigotes",
+"ar": "Усатый таксист",
+"s": 5,
+"es": "¡Treinta y ocho años esperando que alguien me dijera «siga a ese auto»! Crucé el río, subí a la vereda, espanté palomas. El mejor día de mi vida.",
+"ru": "Тридцать восемь лет ждал, чтобы кто-нибудь сказал «за той машиной»! Пересёк реку, заехал на тротуар, распугал голубей. Лучший день моей жизни."
+}
+]
 }
 ],
 "petersburgo": [
@@ -21525,6 +22223,27 @@ export const CIUDADES = {
 "desc_ru": "Главная пешеходная улица Белграда от площади Республики к Калемегдану, её дома XIX века охраняются как памятник. Здесь всё началось: Луис идёт и разглядывает дома, чтобы потом нарисовать их по памяти, и сбоку в него врезается электросамокат. «Я Наташа. С ударением на первый слог». Раз уж она в него врезалась — это её ответственность показать ему Белград.",
 "apar": [
 {
+"n": "divlji-chas-bestijarijum",
+"c": [
+[
+"2",
+"Пут кроз град"
+],
+[
+"11",
+"Пет кругова"
+],
+[
+"16",
+"Вучји пастир"
+],
+[
+"21",
+"Златорога кошута"
+]
+]
+},
+{
 "n": "divlji-chas",
 "c": [
 [
@@ -21576,9 +22295,9 @@ export const CIUDADES = {
 "x": -584,
 "y": 700,
 "modelo": "pobednik",
-"desc": "La fortaleza y el parque sobre el promontorio donde el Sava desemboca en el Danubio, con el «Vencedor» de Ivan Meštrović (1928) mirando el agua. Natasha trae a Luis al atardecer: «Belgrado no quiere a los débiles. Pero si te acepta… ya no te vas siendo el mismo». Es el primer punto del mapa de las piedras: acá ella le toma la mano y le dice «Sos mío», acá muerde a la pelirroja que se acerca a Luis, y acá él encuentra la primera piedra con el amuleto de Zark. Meses después, en Kalemegdan se hace la boda simbólica, sin altar ni cura, con Zmaj volando tranquilo sobre la fortaleza.",
+"desc": "La fortaleza y el parque sobre el promontorio donde el Sava desemboca en el Danubio, con el «Vencedor» de Ivan Meštrović (1928) mirando el agua. Natasha trae a Luis al atardecer: «Belgrado no quiere a los débiles. Pero si te acepta… ya no te vas siendo el mismo». Es el primer punto del mapa de las piedras: acá ella le toma la mano y le dice «Sos mío», acá muerde a la pelirroja que se acerca a Luis, y acá él encuentra la primera piedra con el amuleto de Zark. Meses después, en Kalemegdan se hace la boda simbólica, sin altar ni cura, con Zmaj volando tranquilo sobre la fortaleza. En «Bestiario», al final de la séptima noche, la cierva Zora de cuernos de oro corre por los techos hasta el borde del parque, al final de Knez Mihailova, bajo los castaños, y no entra: adentro de las murallas otro defiende el centro. La cierva y el dragón de fuego se miran por encima de Kalemegdan y ella inclina la cabeza hasta el suelo, «como una reina ante un rey, o una hermana ante un hermano». En otoño los castaños vuelven a caer, como todos los años, sobre la cabeza de los turistas.",
 "nombre_ru": "Калемегдан и «Победитель»",
-"desc_ru": "Крепость и парк на высоком мысу, где Сава впадает в Дунай, с «Победителем» Ивана Мештровича (1928), смотрящим на воду. Наташа приводит Луиса сюда на закате: «Белград не любит слабых. Но если он тебя примет… ты уже не уйдёшь прежним». Это первая точка на карте камней: здесь она берёт его за руку — «Ты мой», здесь кусает рыжеволосую, которая бросается к Луису, и здесь он находит первый камень с амулетом Зарка. Через несколько месяцев на Калемегдане проходит символическая свадьба — без алтаря и священника, а над крепостью спокойно пролетает Змай.",
+"desc_ru": "Крепость и парк на высоком мысу, где Сава впадает в Дунай, с «Победителем» Ивана Мештровича (1928), смотрящим на воду. Наташа приводит Луиса сюда на закате: «Белград не любит слабых. Но если он тебя примет… ты уже не уйдёшь прежним». Это первая точка на карте камней: здесь она берёт его за руку — «Ты мой», здесь кусает рыжеволосую, которая бросается к Луису, и здесь он находит первый камень с амулетом Зарка. Через несколько месяцев на Калемегдане проходит символическая свадьба — без алтаря и священника, а над крепостью спокойно пролетает Змай. В «Бестиарии» в конце седьмой ночи лань Зора с золотыми рогами бежит по крышам до края парка, в конце Кнез-Михайловой, под старыми каштанами, и не входит: за стенами середину защищает кто-то другой. Лань и огненный змей смотрят друг на друга через весь Калемегдан, и она склоняет голову до земли, «как королева перед королём, или сестра перед братом». Осенью каштаны снова падают, как каждый год, на головы туристов.",
 "apar": [
 {
 "n": "divlji-chas",
@@ -21673,6 +22392,47 @@ export const CIUDADES = {
 "Интервью с Наташей"
 ]
 ]
+},
+{
+"n": "divlji-chas-bestijarijum",
+"c": [
+[
+"11",
+"Пет кругова"
+],
+[
+"16",
+"Вучји пастир"
+],
+[
+"17",
+"Празна страница"
+],
+[
+"18",
+"Вила бродарица"
+],
+[
+"19",
+"Оригинал"
+],
+[
+"20",
+"Зора"
+],
+[
+"21",
+"Златорога кошута"
+],
+[
+"22",
+"Јутро после"
+],
+[
+"23",
+"За мене јесте"
+]
+]
 }
 ],
 "res": [
@@ -21711,10 +22471,47 @@ export const CIUDADES = {
 "x": -513,
 "y": 1011,
 "modelo": "nebojsa",
-"desc": "La torre medieval del siglo XV en la Ciudad Baja, junto al Danubio; con los turcos fue cárcel. Es el cuartel de la conspiración: de noche, Artan, Sofía y John se sientan a una mesa maciza a esperar la Hora Salvaje. Acá termina el ritual: «Hace años que hago visitas guiadas acá», dice Natasha, y conoce un pasadizo que no está en ningún plano. Desde arriba de la torre ella aparta los misiles como en 1999, de las piedras nace Zmaj, y al pie de la torre Luis-gigante pelea con Ala, el demonio de las tormentas.",
+"desc": "La torre medieval del siglo XV en la Ciudad Baja, junto al Danubio; con los turcos fue cárcel. Es el cuartel de la conspiración: de noche, Artan, Sofía y John se sientan a una mesa maciza a esperar la Hora Salvaje. Acá termina el ritual: «Hace años que hago visitas guiadas acá», dice Natasha, y conoce un pasadizo que no está en ningún plano. Desde arriba de la torre ella aparta los misiles como en 1999, de las piedras nace Zmaj, y al pie de la torre Luis-gigante pelea con Ala, el demonio de las tormentas. En «La hora salvaje: Bestiario», la séptima noche todos los círculos del mapa de alfileres de Milena se escurren hacia acá: el Danubio hierve al pie de la torre, sale vapor como de una olla y desde el fondo una voz de hombre, honda, grita como quien ya se cree vencedor. Desde la colina sobre la Nebojša se levanta un dragón de fuego y choca con algo enorme, oscuro y mojado, de mil brazos, que sube del río. Milena, desde una azotea de Dorćol, siente que adentro del fuego está Natasha saludándola.",
 "nombre_ru": "Башня Небойша",
-"desc_ru": "Средневековая башня XV века в Нижнем городе у самого Дуная; при турках здесь была тюрьма. Штаб заговора: ночью Артан, София и Джон сидят за массивным столом и ждут Дикого часа. Здесь завершается ритуал: «Я годами водила здесь экскурсии», — говорит Наташа и знает тайный ход, которого нет ни в одном плане. С вершины башни она отводит ракеты, как в 1999 году, из камней рождается Змай, а у подножия Луис-великан бьётся с Алой, демоном бурь.",
+"desc_ru": "Средневековая башня XV века в Нижнем городе у самого Дуная; при турках здесь была тюрьма. Штаб заговора: ночью Артан, София и Джон сидят за массивным столом и ждут Дикого часа. Здесь завершается ритуал: «Я годами водила здесь экскурсии», — говорит Наташа и знает тайный ход, которого нет ни в одном плане. С вершины башни она отводит ракеты, как в 1999 году, из камней рождается Змай, а у подножия Луис-великан бьётся с Алой, демоном бурь. В «Диком часе: Бестиарии» седьмой ночью все круги на карте с булавками Милены стекаются сюда: у подножия башни кипит Дунай, пар валит, как из котла, и из глубины кричит мужской голос, низкий, как у того, кто уже считает себя победителем. С холма над Небойшей поднимается огненный змей и сталкивается с чем-то огромным, тёмным и мокрым, с тысячей рук, что поднимается из реки. Милена с крыши на Дорчоле чувствует, что внутри огня стоит Наташа и машет ей.",
 "apar": [
+{
+"n": "divlji-chas-bestijarijum",
+"c": [
+[
+"2",
+"Пут кроз град"
+],
+[
+"11",
+"Пет кругова"
+],
+[
+"16",
+"Вучји пастир"
+],
+[
+"17",
+"Празна страница"
+],
+[
+"18",
+"Вила бродарица"
+],
+[
+"19",
+"Оригинал"
+],
+[
+"20",
+"Зора"
+],
+[
+"21",
+"Златорога кошута"
+]
+]
+},
 {
 "n": "dikij-chas",
 "c": [
@@ -21799,6 +22596,13 @@ export const CIUDADES = {
 "s": 5,
 "es": "Años haciendo visitas guiadas acá y por fin usé el pasadizo secreto para algo útil.",
 "ru": "Годами водила здесь экскурсии — и наконец использовала тайный ход с пользой."
+},
+{
+"a": "Milena",
+"ar": "Милена",
+"s": 5,
+"es": "Desde la azotea vi un dragón de fuego sobre la torre. Sentí que mi hermana estaba adentro, saludándome.",
+"ru": "С крыши я видела огненного змея над башней. Мне казалось, что внутри — моя сестра и машет мне."
 }
 ],
 "img": {
@@ -21814,10 +22618,83 @@ export const CIUDADES = {
 "x": -24,
 "y": 1167,
 "modelo": "ninguno",
-"desc": "El Danubio recibe al Sava bajo la fortaleza y gira al este. «Natasha está con nosotros. Orilla del Danubio. Vení solo.» Artan cree el mensaje, y en la orilla oscura John le dispara dos veces con silenciador; la corriente se lo lleva. En la Hora Salvaje uno de los misiles cae al Danubio sin llegar a la orilla, y del río sale Ala, el demonio de las tormentas… con la cara de Artan.",
+"desc": "El Danubio recibe al Sava bajo la fortaleza y gira al este. «Natasha está con nosotros. Orilla del Danubio. Vení solo.» Artan cree el mensaje, y en la orilla oscura John le dispara dos veces con silenciador; la corriente se lo lleva. En la Hora Salvaje uno de los misiles cae al Danubio sin llegar a la orilla, y del río sale Ala, el demonio de las tormentas… con la cara de Artan. En «Bestiario», la séptima noche salen del Danubio, por decenas y por cientos, unos seres de barro y agua sin cara, y el río empieza a subir hacia Dorćol, el barrio más bajo, donde en los sótanos se esconden chicos, viejos y la señora Ružica con su gallo. Milena y Milica bajan al muelle y despiertan a una vila brodarica: en medio del río levanta el remo y el agua se retira, obediente, «como un perro que vuelve a la cucha». Después las saluda con el remo, en señal de despedida o de bendición.",
 "nombre_ru": "Берег Дуная",
-"desc_ru": "Под крепостью Дунай принимает Саву и поворачивает на восток. «Наташа у нас. Берег Дуная. Приходи один». Артан верит сразу, и на тёмном берегу Джон дважды стреляет из пистолета с глушителем; течение уносит Артана. В Дикий час одна из ракет падает в Дунай, не долетев до берега, а из реки поднимается Ала — демон бурь… с лицом Артана.",
+"desc_ru": "Под крепостью Дунай принимает Саву и поворачивает на восток. «Наташа у нас. Берег Дуная. Приходи один». Артан верит сразу, и на тёмном берегу Джон дважды стреляет из пистолета с глушителем; течение уносит Артана. В Дикий час одна из ракет падает в Дунай, не долетев до берега, а из реки поднимается Ала — демон бурь… с лицом Артана. В «Бестиарии» седьмой ночью из Дуная десятками и сотнями выходят безликие существа из грязи и воды, и река начинает подниматься к Дорчолу, самому низкому кварталу, где в подвалах прячутся дети, старики и госпожа Ружица со своим петухом. Милена и Милица спускаются к набережной и будят вилу-бродарицу: посреди реки она поднимает весло, и вода послушно отступает, «как пёс, который возвращается в будку». Потом вила поднимает весло им вслед — в знак прощания или благословения.",
 "apar": [
+{
+"n": "divlji-chas-bestijarijum",
+"c": [
+[
+"2",
+"Пут кроз град"
+],
+[
+"3",
+"Звери и бајалице"
+],
+[
+"4",
+"Змија чуваркућа"
+],
+[
+"5",
+"Прва ноћ"
+],
+[
+"6",
+"Из нужде, не из радозналости"
+],
+[
+"7",
+"Здухач"
+],
+[
+"8",
+"Ала над Земуном"
+],
+[
+"11",
+"Пет кругова"
+],
+[
+"12",
+"Караконџула на Сави"
+],
+[
+"13",
+"Петао госпође Ружице"
+],
+[
+"14",
+"Здухачев сан"
+],
+[
+"16",
+"Вучји пастир"
+],
+[
+"17",
+"Празна страница"
+],
+[
+"18",
+"Вила бродарица"
+],
+[
+"19",
+"Оригинал"
+],
+[
+"21",
+"Златорога кошута"
+],
+[
+"22",
+"Јутро после"
+]
+]
+},
 {
 "n": "dikij-chas",
 "c": [
@@ -21888,6 +22765,13 @@ export const CIUDADES = {
 "s": 3,
 "es": "Un río que vio todo y no cuenta nada. Profesional.",
 "ru": "Река, которая видела всё и ничего не рассказывает. Профессионально."
+},
+{
+"a": "Una vila brodarica",
+"ar": "Вила-бродарица",
+"s": 5,
+"es": "Levanté el remo y el agua volvió a su cauce. Las chicas del muelle, valientes. Las saludé.",
+"ru": "Я подняла весло, и вода вернулась в русло. Девушки на набережной — храбрые. Я их поприветствовала."
 }
 ],
 "img": {
@@ -21968,6 +22852,23 @@ export const CIUDADES = {
 [
 "extra-1",
 "Завршни тест"
+]
+]
+},
+{
+"n": "divlji-chas-bestijarijum",
+"c": [
+[
+"2",
+"Пут кроз град"
+],
+[
+"20",
+"Зора"
+],
+[
+"21",
+"Златорога кошута"
 ]
 ]
 },
@@ -22229,10 +23130,39 @@ export const CIUDADES = {
 "x": -1224,
 "y": -111,
 "modelo": "puente-branko",
-"desc": "Uno de los grandes puentes sobre el Sava, entre la Ciudad Vieja y Nuevo Belgrado. En la Hora Salvaje los autos se detienen en el puente; los conductores bajan y golpean la cabeza contra el metal, como si quisieran sacarse de adentro lo que se les escapa. La ciudad pierde la razón.",
+"desc": "Uno de los grandes puentes sobre el Sava, entre la Ciudad Vieja y Nuevo Belgrado. En la Hora Salvaje los autos se detienen en el puente; los conductores bajan y golpean la cabeza contra el metal, como si quisieran sacarse de adentro lo que se les escapa. La ciudad pierde la razón. En «Bestiario», la cuarta noche, sobre el puente la gente se pone en fila contra la baranda cantando una canción de cuna sin palabras, y algunos ya pasaron una pierna por encima. Abajo, en la orilla de Karađorđeva, otros entran al Sava cantando, hasta que Milena despierta al konj vodenjak, el caballo de agua de crin de pasto, que galopa bajo el puente y los va sacando uno por uno.",
 "nombre_ru": "Бранков мост",
-"desc_ru": "Один из главных мостов через Саву, между Старым городом и Новым Белградом. В Дикий час машины на мосту встают; водители выходят и бьются лбами о металл, будто хотят выбить из себя то, что рвётся наружу. Город сходит с ума.",
+"desc_ru": "Один из главных мостов через Саву, между Старым городом и Новым Белградом. В Дикий час машины на мосту встают; водители выходят и бьются лбами о металл, будто хотят выбить из себя то, что рвётся наружу. Город сходит с ума. В «Бестиарии» четвёртой ночью на мосту люди стоят в ряд у ограды и поют колыбельную без слов, а некоторые уже перекинули ногу через перила. Внизу, у набережной на Карагеоргиевой, другие с песней входят в Саву, пока Милена не будит коня-водяного с гривой из травы: он скачет под мостом и выводит певцов одного за другим.",
 "apar": [
+{
+"n": "divlji-chas-bestijarijum",
+"c": [
+[
+"7",
+"Здухач"
+],
+[
+"11",
+"Пет кругова"
+],
+[
+"12",
+"Караконџула на Сави"
+],
+[
+"16",
+"Вучји пастир"
+],
+[
+"18",
+"Вила бродарица"
+],
+[
+"21",
+"Златорога кошута"
+]
+]
+},
 {
 "n": "dikij-chas",
 "c": [
@@ -22264,6 +23194,91 @@ export const CIUDADES = {
 "nombre_ru": "Авала",
 "desc_ru": "Гора высотой 511 метров к югу от Белграда с Памятником Неизвестному герою и телебашней, разрушенной бомбами в 1999 году. Одна из пяти точек на карте Наташи. Мотоцикл мчится через леса, и Наташа впервые отдаёт руль: «Ты мой. Мой король». На вершине место пустое, а под камнем лежит записка: «Дикий час близок. Если хотите остановить хаос — найдите нас».",
 "apar": [
+{
+"n": "divlji-chas-bestijarijum",
+"c": [
+[
+"1",
+"Књига иза новина"
+],
+[
+"2",
+"Пут кроз град"
+],
+[
+"3",
+"Звери и бајалице"
+],
+[
+"5",
+"Прва ноћ"
+],
+[
+"6",
+"Из нужде, не из радозналости"
+],
+[
+"7",
+"Здухач"
+],
+[
+"8",
+"Ала над Земуном"
+],
+[
+"9",
+"Краљица магије"
+],
+[
+"10",
+"Бабарога"
+],
+[
+"11",
+"Пет кругова"
+],
+[
+"12",
+"Караконџула на Сави"
+],
+[
+"13",
+"Петао госпође Ружице"
+],
+[
+"14",
+"Здухачев сан"
+],
+[
+"15",
+"Јелен-буба"
+],
+[
+"16",
+"Вучји пастир"
+],
+[
+"18",
+"Вила бродарица"
+],
+[
+"20",
+"Зора"
+],
+[
+"21",
+"Златорога кошута"
+],
+[
+"22",
+"Јутро после"
+],
+[
+"23",
+"За мене јесте"
+]
+]
+},
 {
 "n": "dikij-chas",
 "c": [
@@ -22503,6 +23518,423 @@ export const CIUDADES = {
 "n": "dikij-chas",
 "c": "3"
 }
+},
+{
+"id": "bg-univerzitetska",
+"nombre": "Biblioteca Universitaria: el «Bestiario»",
+"cat": "edificio",
+"x": 1374,
+"y": -1189,
+"modelo": "museo",
+"desc": "La Biblioteca Universitaria «Svetozar Marković», frente a Tašmajdan. Un sábado que huele a papel viejo y a cera, Milena Petrović, la hermana menor de Natasha (trece años menor, la que lee en un rincón y habla tres idiomas, «cada uno con su cuarto y su lámpara»), y su amiga Milica Stojković, del Departamento de Libro Antiguo y Raro, que entrena jiu-jitsu en un sótano de Voždovac, abren un códice: «Yo, Todor, escriba de Belgrado, anoté las bestias que viven entre nuestro mundo y el otro… porque cuando llegue la Hora salvaje, la ciudad tendrá solo a las que no olvide». Abajo, con letra de otra mano, las notas en italiano del fraile Giacomo («la ala es la peor bestia del libro: vi dos, en Novi Pazar, y las dos se comieron mi almuerzo»). En otoño Milena vuelve los sábados a la sala de lectura, a la ventana que da a Tašmajdan, para traducir el Bestiario «a una lengua normal», y Milica guarda el libro en una caja de madera con un dragón en la tapa, en el estante más alto, al que nadie llega.",
+"nombre_ru": "Университетская библиотека: «Бестиарий»",
+"desc_ru": "Университетская библиотека имени Светозара Марковича напротив Ташмайдана. В субботу, пахнущую старой бумагой и воском, Милена Петрович, младшая сестра Наташи (на тринадцать лет младше, та, что читает в углу и знает три языка — «у каждого своя комната и своя лампа»), и её подруга Милица Стойкович из отдела старых и редких книг, которая тренирует джиу-джитсу в подвале на Вождоваце, открывают кодекс: «Я, Тодор, писарь белградский, записал зверей, что живут между нашим миром и тем… чтобы, когда придёт Час дикарей, у города были те, кого он не забыл». Ниже, другой рукой, — итальянские заметки фра Джакомо («ала — худший зверь в книге: я видел двух, в Нови-Пазаре, и обе съели мой обед»). Осенью Милена по субботам снова сидит в читальном зале у окна на Ташмайдан и переводит Бестиарий «на нормальный язык», а Милица прячет книгу в деревянную шкатулку с драконом на крышке, на самую верхнюю полку, до которой никто не добирается.",
+"apar": [
+{
+"n": "divlji-chas-bestijarijum",
+"c": [
+[
+"1",
+"Књига иза новина"
+],
+[
+"3",
+"Звери и бајалице"
+],
+[
+"9",
+"Краљица магије"
+],
+[
+"23",
+"За мене јесте"
+]
+]
+}
+],
+"res": [
+{
+"a": "Milica",
+"ar": "Милица",
+"s": 5,
+"es": "Sábados sin estudiantes, olor a cera, y un códice con bestias que se comen el almuerzo de los frailes. Mejor que el jiu-jitsu. Casi.",
+"ru": "Субботы без студентов, запах воска и кодекс со зверями, которые съедают обед монахов. Лучше, чем джиу-джитсу. Почти."
+},
+{
+"a": "Milena",
+"ar": "Милена",
+"s": 5,
+"es": "Cada idioma tiene su cuarto en mí. Acá, en la ventana que da a Tašmajdan, los tres tienen la lámpara prendida.",
+"ru": "У каждого языка во мне своя комната. Здесь, у окна на Ташмайдан, во всех трёх горит лампа."
+},
+{
+"a": "Fra Giacomo",
+"ar": "Фра Джакомо",
+"s": 2,
+"es": "La ala me comió el almuerzo. Dos veces. En Novi Pazar. Dejo constancia.",
+"ru": "Ала съела мой обед. Дважды. В Нови-Пазаре. Фиксирую для потомков."
+}
+]
+},
+{
+"id": "bg-cara-dusana",
+"nombre": "La buhardilla y la azotea de la calle Cara Dušana",
+"cat": "casa",
+"x": 450,
+"y": 578,
+"modelo": "hogar",
+"desc": "La buhardilla de Milica en Dorćol, en un edificio viejo de escalera de madera que cruje en cada escalón, y su azotea plana de brea y canto rodado, con una puerta de hierro pintada de verde que nadie cierra: desde ahí se ve todo Dorćol, el Danubio, Karaburma y los puentes. La primera noche, en el umbral, Milica dibuja con tiza un círculo con sal, una vela y un hilo rojo, Milena lee la conjura y aparece la zmija čuvarkuća, la serpiente guardiana de la casa, que se corre a un lado para dejarlas pasar. Abajo, el señor Đurić levanta el bastón y Milica lo calma con solo tocarle el hombro. En la azotea duerme Dušan, el mozo nacido «en camisa», un zduhač: mientras duerme, su sombra con espada sale a pelear contra la ala que vuelve sobre Karaburma, y nadie lo puede tocar ni dar vuelta. La séptima noche, desde acá, Milena escribe en la última hoja una bestia que nunca estuvo en el libro, la cierva Zora, y para despertarla le da sus tres idiomas; a la mañana siguiente los recupera leyendo en voz alta una sola línea: «Mia luce. My home. Mi tierra querida».",
+"nombre_ru": "Мансарда и крыша на улице Цара Душана",
+"desc_ru": "Мансарда Милицы на Дорчоле, в старом доме с деревянной лестницей, которая скрипит на каждой ступеньке, и плоская крыша из гудрона и гальки с железной дверью, выкрашенной в зелёный, которую никто не запирает: оттуда виден весь Дорчол, Дунай, Карабурма и мосты. В первую ночь Милица чертит мелом на пороге круг с солью, свечой и красной нитью, Милена читает заговор, и появляется змея-чуваркуча, хранительница дома, которая отползает в сторону, пропуская их. Внизу господин Джурич поднимает трость, и Милица успокаивает его одним прикосновением к плечу. На крыше спит Душан, официант, родившийся «в рубашке», — здухач: пока он спит, его тень с мечом вылетает биться с алой над Карабурмой, и его нельзя ни трогать, ни переворачивать. Седьмой ночью отсюда Милена вписывает на последний лист зверя, которого в книге никогда не было, — лань Зору, и чтобы её разбудить, отдаёт свои три языка; наутро они возвращаются, когда она читает вслух одну-единственную строку: «Mia luce. My home. Mi tierra querida».",
+"apar": [
+{
+"n": "divlji-chas-bestijarijum",
+"c": [
+[
+"2",
+"Пут кроз град"
+],
+[
+"4",
+"Змија чуваркућа"
+],
+[
+"5",
+"Прва ноћ"
+],
+[
+"9",
+"Краљица магије"
+],
+[
+"12",
+"Караконџула на Сави"
+],
+[
+"13",
+"Петао госпође Ружице"
+],
+[
+"14",
+"Здухачев сан"
+],
+[
+"18",
+"Вила бродарица"
+],
+[
+"19",
+"Оригинал"
+],
+[
+"20",
+"Зора"
+],
+[
+"21",
+"Златорога кошута"
+],
+[
+"22",
+"Јутро после"
+]
+]
+}
+],
+"res": [
+{
+"a": "Dušan",
+"ar": "Душан",
+"s": 5,
+"es": "Dormí en la azotea con un termo de té. Soñé que peleaba con las nubes. No era un sueño.",
+"ru": "Я спал на крыше с термосом чая. Снилось, что дерусь с облаками. Это был не сон."
+},
+{
+"a": "La zmija čuvarkuća",
+"ar": "Змея-чуваркуча",
+"s": 5,
+"es": "Ssss. (Cuido la casa. A las chicas las dejé pasar.)",
+"ru": "Ссс. (Я стерегу дом. Девушек пропустила.)"
+},
+{
+"a": "El señor Đurić",
+"ar": "Господин Джурич",
+"s": 4,
+"es": "Una semana con la puerta cerrada con llave. Después vi una luz dorada en el cielo y me saqué el sombrero que no tengo.",
+"ru": "Неделю сидел за запертой дверью. Потом увидел золотой свет в небе и снял шляпу, которой у меня нет."
+},
+{
+"a": "Milena",
+"ar": "Милена",
+"s": 5,
+"es": "Me quedé sin italiano, sin inglés y sin español una mañana entera. Volvieron con una sola línea. Mia luce.",
+"ru": "Целое утро я была без итальянского, английского и испанского. Они вернулись с одной строчкой. Mia luce."
+}
+]
+},
+{
+"id": "bg-ruzica",
+"nombre": "El patio de la señora Ružica y su gallo",
+"cat": "casa",
+"x": 884,
+"y": 734,
+"modelo": "casa",
+"desc": "Un patio de la calle Braće Baruh, en Dorćol, «más viejo que todos sus cafés juntos», con tres gallinas, un gallo y la señora Ružica, de noventa y un años. La cuarta noche, en el muelle, una karakondžula salta como un sapo sobre la espalda de Milica («¡Arre, caballito mío!») y la va llevando hacia el agua; Dušan sube corriendo, le «toma prestado» el gallo a la señora Ružica a las dos de la mañana, lo levanta sobre su cabeza y el gallo canta: la karakondžula chilla y desaparece. A la mañana se lo devuelven bañado, con una caja de masas y una disculpa. «Mi abuela decía: cuando los gallos cantan a medianoche, Belgrado se defiende. Noventa años tuve un gallo en este patio y todos los vecinos me odiaron por eso. Pensé que mi abuela estaba loca. Parece que no.»",
+"nombre_ru": "Двор госпожи Ружицы и её петух",
+"desc_ru": "Двор на улице Браче Барух на Дорчоле, «старше всех ваших кафе вместе взятых», с тремя курами, петухом и госпожой Ружицей, которой девяносто один год. Четвёртой ночью на набережной караконджула прыгает, как жаба, Милице на спину («Но-о, лошадка моя!») и ведёт её к воде; Душан взбегает наверх, в два часа ночи «одалживает» у госпожи Ружицы петуха, поднимает его над головой, и петух кричит: караконджула визжит и исчезает. Утром петуха возвращают умытым, с коробкой пирожных и извинением. «Моя бабушка говорила: когда петухи поют в полночь, Белград защищается. Девяносто лет я держала петуха в этом дворе, и все соседи меня за это ненавидели. Думала, бабушка была сумасшедшая. Выходит, нет».",
+"apar": [
+{
+"n": "divlji-chas-bestijarijum",
+"c": [
+[
+"12",
+"Караконџула на Сави"
+],
+[
+"13",
+"Петао госпође Ружице"
+],
+[
+"18",
+"Вила бродарица"
+],
+[
+"21",
+"Златорога кошута"
+]
+]
+}
+],
+"res": [
+{
+"a": "La señora Ružica",
+"ar": "Госпожа Ружица",
+"s": 5,
+"es": "Me robaron el gallo a las dos de la mañana para una karakondžula. Me lo devolvieron bañado y con masas. Mi abuela tenía razón.",
+"ru": "В два часа ночи у меня украли петуха ради караконджулы. Вернули умытым и с пирожными. Бабушка была права."
+},
+{
+"a": "El gallo",
+"ar": "Петух",
+"s": 5,
+"es": "¡Kikirikí! (Me levantaron sobre una cabeza en medio de la noche. Ofendidísimo. Funcionó.)",
+"ru": "Кукареку! (Меня подняли над головой посреди ночи. Глубоко оскорблён. Сработало.)"
+}
+]
+},
+{
+"id": "bg-gardos",
+"nombre": "La torre de Gardoš (Zemun)",
+"cat": "misterio",
+"x": -3672,
+"y": 3479,
+"modelo": "nebojsa",
+"borde": true,
+"desc": "La torre del Milenio sobre la colina de Gardoš, en Zemun. La segunda noche llega una nube con cara, la ala, que tira granizo negro del tamaño de avellanas y huele a trigo quemado. Arriba de todo, Milena tiene que gritar una conjura que se canta en voz baja, y cuando se le quiebra la voz empieza a cantarla; Dušan le abre su campera de cuero vieja sobre la cabeza como un techo, y Milica, arrodillada junto al círculo de tiza, saca de sus palmas una bruma plateada que esa noche hierve como una olla y le quema las manos.",
+"nombre_ru": "Башня Гардош (Земун)",
+"desc_ru": "Башня Тысячелетия на холме Гардош в Земуне. Во вторую ночь приходит облако с лицом — ала, она сыплет чёрный град размером с лесной орех, пахнущий горелым зерном. На самой вершине Милена вынуждена кричать заговор, который положено шептать, а когда голос срывается, начинает его петь; Душан раскрывает над её головой свою старую кожаную куртку, как крышу, а Милица, стоя на коленях у мелового круга, выпускает из ладоней серебряный туман, который этой ночью кипит, как котёл, и обжигает ей руки.",
+"apar": [
+{
+"n": "divlji-chas-bestijarijum",
+"c": [
+[
+"6",
+"Из нужде, не из радозналости"
+],
+[
+"7",
+"Здухач"
+],
+[
+"8",
+"Ала над Земуном"
+],
+[
+"9",
+"Краљица магије"
+],
+[
+"10",
+"Бабарога"
+],
+[
+"11",
+"Пет кругова"
+],
+[
+"15",
+"Јелен-буба"
+],
+[
+"21",
+"Златорога кошута"
+]
+]
+},
+{
+"n": "divlji-chas",
+"c": [
+[
+"10",
+"Мапа и страст"
+],
+[
+"19",
+"Сладолед и логика"
+],
+[
+"23",
+"Артанова судбина"
+],
+[
+"24",
+"Трагање за четвртим каменом"
+],
+[
+"25",
+"Заробљени"
+]
+]
+}
+],
+"res": [
+{
+"a": "Milena",
+"ar": "Милена",
+"s": 4,
+"es": "Una conjura no se grita. La tuve que gritar. Después la canté. El granizo olía a trigo quemado.",
+"ru": "Заговор не кричат. Мне пришлось кричать. Потом я его спела. Град пах горелым зерном."
+},
+{
+"a": "Dušan",
+"ar": "Душан",
+"s": 4,
+"es": "Mi campera de cuero vieja sirvió de techo. Quedó llena de abolladuras. Lo volvería a hacer.",
+"ru": "Моя старая кожаная куртка послужила крышей. Вся во вмятинах. Сделал бы это снова."
+}
+]
+},
+{
+"id": "bg-vozdovac",
+"nombre": "Voždovac: el jardín «Cvrčak» y la babaroga",
+"cat": "misterio",
+"x": 1635,
+"y": -4668,
+"modelo": "ninguno",
+"borde": true,
+"desc": "Entre cuatro torres grises de los setenta, detrás de la calle Vojvode Stepe, frente al jardín de infantes «Cvrčak», Jovana, la compañera de entrenamiento de Milica, cuida a veintitrés chicos en pijama que los padres echaron a la calle. Milica, con las manos vendadas, se planta delante igual; Milena lee la conjura más corta y más vieja del libro, «Abuela, abuela, que llevás la bolsa, vení a buscar a los chicos que nadie cuida», y a cambio le da su voz. La babaroga se lleva a los chicos a salvo y le deja en el bolsillo un panecillo de miel en forma de luna, tibio, que huele a tilo: con él se le curan las manos a Milica.",
+"nombre_ru": "Вождовац: детский сад «Цврчак» и бабарога",
+"desc_ru": "Между четырьмя серыми башнями семидесятых, за улицей Воеводы Степы, перед детским садом «Цврчак», Йована, подруга Милицы по тренировкам, сторожит двадцать три ребёнка в пижамах, которых родители выгнали на улицу. Милица с забинтованными руками всё равно встаёт перед ними; Милена читает самый короткий и самый старый заговор в книге — «Баба, баба, что носишь мешок, приди за детьми, которых никто не бережёт» — и отдаёт за это свой голос. Бабарога уводит детей в безопасность и оставляет у неё в кармане медовый пряник в форме луны, тёплый, пахнущий липой: от него у Милицы заживают руки.",
+"apar": [
+{
+"n": "divlji-chas-bestijarijum",
+"c": [
+[
+"10",
+"Бабарога"
+],
+[
+"11",
+"Пет кругова"
+],
+[
+"21",
+"Златорога кошута"
+]
+]
+}
+],
+"res": [
+{
+"a": "Jovana",
+"ar": "Йована",
+"s": 5,
+"es": "Veintitrés chicos en pijama bajo el único farol prendido. Llegaron tres locos y se fueron. Después vino una abuela con una bolsa.",
+"ru": "Двадцать три ребёнка в пижамах под единственным горящим фонарём. Пришли трое сумасшедших — и ушли. Потом пришла бабушка с мешком."
+},
+{
+"a": "La babaroga",
+"ar": "Бабарога",
+"s": 5,
+"es": "Bien dado, no te lamentes. Tu voz vuelve cuando cante el gallo.",
+"ru": "Хорошо отдала, не жалей. Голос вернётся, когда запоёт петух."
+}
+]
+},
+{
+"id": "bg-kosutnjak",
+"nombre": "Košutnjak: el ciervo volante",
+"cat": "misterio",
+"x": -2124,
+"y": -5713,
+"modelo": "ninguno",
+"borde": true,
+"desc": "El gran bosque del sur. La quinta noche «llama el bosque»: miles de personas caminan calladas, en pantuflas o descalzas, por Slavija y Banjica, y entran entre los árboles; desde el fondo llega un grito como de un chico en una casa que se quema. Milena encuentra en un rincón del libro un dibujito que había tomado por adorno: el jelen-buba, el ciervo volante guardián de Košutnjak, chiquito, que cuando se despierta «crece lo que haga falta». Tiene una mancha blanca en el caparazón con forma de dedito: Milica, de nueve años, había encontrado en este bosque un ciervo volante muerto y le había susurrado las palabras de su abuela. «Era tan chiquito. Me cabía en la palma.» «Ahora cabe en un colectivo.»",
+"nombre_ru": "Кошутняк: жук-олень",
+"desc_ru": "Большой лес на юге. В пятую ночь «зовёт лес»: тысячи людей молча идут в тапочках и босиком через Славию и Баницу и уходят между деревьями; из глубины доносится крик, как у ребёнка в горящем доме. Милена находит в уголке книги крошечный рисунок, который сначала приняла за украшение: жук-олень, хранитель Кошутняка, маленький, но когда просыпается, «вырастает настолько, насколько нужно». На его панцире белое пятно в форме детского пальчика: девятилетняя Милица когда-то нашла в этом лесу мёртвого жука-оленя и шепнула ему бабушкины слова. «Он был такой маленький. Помещался на ладошке». — «Теперь помещается на автобус».",
+"apar": [
+{
+"n": "divlji-chas-bestijarijum",
+"c": [
+[
+"3",
+"Звери и бајалице"
+],
+[
+"14",
+"Здухачев сан"
+],
+[
+"15",
+"Јелен-буба"
+],
+[
+"16",
+"Вучји пастир"
+],
+[
+"17",
+"Празна страница"
+],
+[
+"18",
+"Вила бродарица"
+],
+[
+"19",
+"Оригинал"
+],
+[
+"20",
+"Зора"
+],
+[
+"21",
+"Златорога кошута"
+],
+[
+"23",
+"За мене јесте"
+]
+]
+}
+],
+"res": [
+{
+"a": "El jelen-buba",
+"ar": "Жук-олень",
+"s": 5,
+"es": "(Chiquito en la palma de una nena, grande como un colectivo para el bosque. Me acuerdo de ella.)",
+"ru": "(Крошечный на ладони девочки, большой, как автобус, для леса. Я её помню.)"
+},
+{
+"a": "Milena",
+"ar": "Милена",
+"s": 3,
+"es": "Dos horas a pie por Slavija y Banjica entre gente callada. Volví helada. Todavía no me puedo calentar.",
+"ru": "Два часа пешком через Славию и Баницу среди молчаливых людей. Вернулась ледяная. До сих пор не могу согреться."
+}
+]
 }
 ],
 "praga": [
@@ -28639,33 +30071,13 @@ export const CIUDADES = {
 ]
 };
 export const NOVELAS = {
-"almaznyj-dozhd": {
-"t": "Алмазный дождь",
-"es": "Lluvia de diamantes",
+"karnaval-sinei": {
+"t": "Карнавал Синеи",
+"es": "El Carnaval de Sinea",
 "l": "ru",
 "y": 2026,
-"ru": "Алмазный дождь",
-"p": "img/portadas/almaznyj-dozhd.webp",
-"tr": {}
-},
-"dikij-chas": {
-"t": "Дикий час",
-"es": "La hora salvaje",
-"l": "ru",
-"y": null,
-"ru": "Дикий час",
-"p": "img/portadas/dikij-chas.webp",
-"tr": {
-"sr": "divlji-chas"
-}
-},
-"severnaya-lyubov-3": {
-"t": "Северная любовь: Восточный ветер",
-"es": "Amor del Norte 3: Viento del este",
-"l": "ru",
-"y": 2026,
-"ru": "Северная любовь: Восточный ветер",
-"p": "img/portadas/severnaya-lyubov-3.webp",
+"ru": "Карнавал Синеи",
+"p": "img/portadas/karnaval-sinei.webp",
 "tr": {}
 },
 "amor-en-el-cosmos": {
@@ -28676,6 +30088,38 @@ export const NOVELAS = {
 "ru": "Любовь в космосе",
 "p": "img/portadas/amor-en-el-cosmos.webp",
 "tr": {}
+},
+"la-reina-de-la-vendimia": {
+"t": "La reina de la Vendimia",
+"es": "La reina de la Vendimia",
+"l": "es",
+"y": 2026,
+"ru": "Королева Вендимии (исп.)",
+"p": "img/portadas/la-reina-de-la-vendimia.webp",
+"tr": {
+"cs": "kralovna-vinobrani"
+}
+},
+"the-immigrant": {
+"t": "The Immigrant",
+"es": "El inmigrante",
+"l": "en",
+"y": 2025,
+"ru": "Иммигрант",
+"p": "img/portadas/the-immigrant.webp",
+"tr": {}
+},
+"el-tren-fantasma": {
+"t": "El tren fantasma",
+"es": "El tren fantasma",
+"l": "es",
+"y": null,
+"ru": "Призрачный поезд (исп.)",
+"p": "img/portadas/el-tren-fantasma.webp",
+"tr": {
+"it": "il-treno-fantasma",
+"ru": "prizrachnyj-poezd"
+}
 },
 "predtucha": {
 "t": "Předtucha",
@@ -28700,24 +30144,36 @@ export const NOVELAS = {
 "ru": "predchuvstvie"
 }
 },
-"lluvia-de-meteoritos": {
-"t": "Lluvia de meteoritos",
-"es": "Lluvia de meteoritos",
-"l": "es",
-"y": null,
-"ru": "Метеоритный дождь (исп.)",
-"p": "img/portadas/lluvia-de-meteoritos.webp",
+"prizrachnyj-poezd": {
+"t": "Призрачный поезд",
+"es": "El tren fantasma (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Призрачный поезд",
+"p": "img/portadas/prizrachnyj-poezd.webp",
 "tr": {
-"ru": "meteoritnyj-dozhd"
+"es": "el-tren-fantasma",
+"it": "il-treno-fantasma"
 }
 },
-"severnaya-lyubov": {
-"t": "Северная любовь",
-"es": "Amor del Norte",
+"opasnoe-svidanie": {
+"t": "Опасное свидание",
+"es": "Una cita peligrosa",
 "l": "ru",
-"y": 2025,
-"ru": "Северная любовь",
-"p": "img/portadas/severnaya-lyubov.webp",
+"y": 2026,
+"ru": "Опасное свидание",
+"p": "img/portadas/opasnoe-svidanie.webp",
+"tr": {
+"en": "the-date"
+}
+},
+"predchuvstvie-2": {
+"t": "Предчувствие 2",
+"es": "El presentimiento 2",
+"l": "ru",
+"y": 2024,
+"ru": "Предчувствие 2",
+"p": "img/portadas/predchuvstvie-2.webp",
 "tr": {}
 },
 "tajna-semi-fader": {
@@ -28731,120 +30187,31 @@ export const NOVELAS = {
 "es": "el-misterio-de-los-fader"
 }
 },
-"predchuvstvie-2-2": {
-"t": "Предчувствие 2.2",
-"es": "El presentimiento 2.2",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.2",
-"p": "img/portadas/predchuvstvie-2-2.webp",
-"tr": {}
-},
-"golos": {
-"t": "Голос",
-"es": "La voz",
+"strateg": {
+"t": "Стратег",
+"es": "El estratega",
 "l": "ru",
 "y": 2026,
-"ru": "Голос",
-"p": "img/portadas/golos.webp",
-"tr": {
-"fr": "la-voix"
-}
+"ru": "Стратег",
+"p": "img/portadas/strateg.webp",
+"tr": {}
 },
-"el-tren": {
-"t": "El tren",
-"es": "El tren",
+"anomalia": {
+"t": "Anomalía",
+"es": "Anomalía",
 "l": "es",
-"y": 2026,
-"ru": "Поезд",
-"p": "img/portadas/el-tren.webp",
-"tr": {}
-},
-"grustnyj-gorod": {
-"t": "Грустный город",
-"es": "La ciudad triste",
-"l": "ru",
-"y": 2026,
-"ru": "Грустный город",
-"p": "img/portadas/grustnyj-gorod.webp",
-"tr": {
-"it": "la-citta-triste"
-}
-},
-"operacion-londres": {
-"t": "El misterio de los Fader: Operación Londres",
-"es": "El misterio de los Fader: Operación Londres",
-"l": "es",
-"y": 2026,
-"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
-"p": "img/portadas/operacion-londres.webp",
-"tr": {}
-},
-"predchuvstvie-2-3": {
-"t": "Предчувствие 2.3",
-"es": "El presentimiento 2.3",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.3",
-"p": "img/portadas/predchuvstvie-2-3.webp",
-"tr": {}
-},
-"volny-lyubvi-narisovannyj-mir": {
-"t": "Волны любви: Нарисованный мир",
-"es": "Ondas de amor: El mundo dibujado",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви: Нарисованный мир",
-"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
-"tr": {}
-},
-"onde-d-amore": {
-"t": "Onde d'amore",
-"es": "Ondas de amor (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви (ит.)",
-"p": "img/portadas/onde-d-amore.webp",
-"tr": {
-"es": "ondas-de-amor"
-}
-},
-"dikij-chas-karnaval-razdora": {
-"t": "Дикий час: Карнавал раздора",
-"es": "La hora salvaje: El carnaval de la discordia",
-"l": "ru",
-"y": 2026,
-"ru": "Дикий час: Карнавал раздора",
-"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
-"tr": {}
-},
-"predchuvstvie-2-4": {
-"t": "Предчувствие 2.4",
-"es": "El presentimiento 2.4",
-"l": "ru",
-"y": 2025,
-"ru": "Предчувствие 2.4",
-"p": "img/portadas/predchuvstvie-2-4.webp",
-"tr": {}
-},
-"la-voix": {
-"t": "La voix",
-"es": "La voz (fr.)",
-"l": "fr",
 "y": null,
-"ru": "Голос (фр.)",
-"p": "img/portadas/la-voix.webp",
-"tr": {
-"ru": "golos"
-}
+"ru": "Аномалия (исп.)",
+"p": "img/portadas/anomalia.webp",
+"tr": {}
 },
-"rezonans-lyubvi": {
-"t": "Резонанс любви",
-"es": "Resonancia del amor",
+"almaznyj-dozhd": {
+"t": "Алмазный дождь",
+"es": "Lluvia de diamantes",
 "l": "ru",
-"y": null,
-"ru": "Резонанс любви",
-"p": "img/portadas/rezonans-lyubvi.webp",
+"y": 2026,
+"ru": "Алмазный дождь",
+"p": "img/portadas/almaznyj-dozhd.webp",
 "tr": {}
 },
 "ondas-de-amor": {
@@ -28858,6 +30225,80 @@ export const NOVELAS = {
 "it": "onde-d-amore"
 }
 },
+"la-chica-del-retrato": {
+"t": "La chica del retrato",
+"es": "La chica del retrato",
+"l": "es",
+"y": null,
+"ru": "Девушка с портрета",
+"p": "img/portadas/la-chica-del-retrato.webp",
+"tr": {}
+},
+"la-ciudad-secreta": {
+"t": "La ciudad secreta",
+"es": "La ciudad secreta",
+"l": "es",
+"y": null,
+"ru": "Тайный город (исп.)",
+"p": "img/portadas/la-ciudad-secreta.webp",
+"tr": {}
+},
+"rezonans-lyubvi": {
+"t": "Резонанс любви",
+"es": "Resonancia del amor",
+"l": "ru",
+"y": null,
+"ru": "Резонанс любви",
+"p": "img/portadas/rezonans-lyubvi.webp",
+"tr": {}
+},
+"lluvia-de-meteoritos": {
+"t": "Lluvia de meteoritos",
+"es": "Lluvia de meteoritos",
+"l": "es",
+"y": null,
+"ru": "Метеоритный дождь (исп.)",
+"p": "img/portadas/lluvia-de-meteoritos.webp",
+"tr": {
+"ru": "meteoritnyj-dozhd"
+}
+},
+"bezumie-v-poezde": {
+"t": "Безумие в поезде",
+"es": "Locura en el tren",
+"l": "ru",
+"y": 2026,
+"ru": "Безумие в поезде",
+"p": "img/portadas/bezumie-v-poezde.webp",
+"tr": {}
+},
+"divlji-chas-malbec": {
+"t": "Дивљи час: Љубав укуса малбека",
+"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
+"p": "img/portadas/divlji-chas-malbec.webp",
+"tr": {}
+},
+"predchuvstvie-2-2": {
+"t": "Предчувствие 2.2",
+"es": "El presentimiento 2.2",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.2",
+"p": "img/portadas/predchuvstvie-2-2.webp",
+"tr": {}
+},
+"chi-ha-visto-sasha": {
+"t": "Chi ha visto Sasha?",
+"es": "¿Quién ha visto a Sasha?",
+"l": "it",
+"y": 2026,
+"ru": "Кто видел Сашу?",
+"p": "img/portadas/chi-ha-visto-sasha.webp",
+"tr": {}
+},
 "tajna-v-biblioteke": {
 "t": "Тайна в библиотеке",
 "es": "El misterio de la biblioteca",
@@ -28867,25 +30308,52 @@ export const NOVELAS = {
 "p": "img/portadas/tajna-v-biblioteke.webp",
 "tr": {}
 },
-"dikij-chas-2": {
-"t": "Дикий час: Духи гор",
-"es": "La hora salvaje: Los espíritus de la montaña",
+"sny-i-zver": {
+"t": "Сны и Зверь",
+"es": "Los sueños y la Bestia",
 "l": "ru",
 "y": null,
-"ru": "Дикий час: Духи гор",
-"p": "img/portadas/dikij-chas-2.webp",
+"ru": "Сны и Зверь",
+"p": "img/portadas/sny-i-zver.webp",
 "tr": {}
 },
-"tikhaya-lyubov": {
-"t": "Тихая любовь",
-"es": "Amor en silencio",
-"l": "ru",
-"y": 2026,
-"ru": "Тихая любовь",
-"p": "img/portadas/tikhaya-lyubov.webp",
+"maschera-di-venezia": {
+"t": "Maschera di Venezia",
+"es": "La máscara de Venecia (it.)",
+"l": "it",
+"y": null,
+"ru": "Венецианская маска (ит.)",
+"p": "img/portadas/maschera-di-venezia.webp",
 "tr": {
-"it": "ti-amo-in-silenzio"
+"ru": "venecianskaya-maska"
 }
+},
+"predchuvstvie-2-4": {
+"t": "Предчувствие 2.4",
+"es": "El presentimiento 2.4",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.4",
+"p": "img/portadas/predchuvstvie-2-4.webp",
+"tr": {}
+},
+"znak": {
+"t": "Знак",
+"es": "El signo",
+"l": "ru",
+"y": 2024,
+"ru": "Знак",
+"p": "img/portadas/znak.webp",
+"tr": {}
+},
+"onde-d-amore-3": {
+"t": "Onde d'amore 3: Il viso del male",
+"es": "Ondas de amor 3: El rostro del mal",
+"l": "it",
+"y": 2026,
+"ru": "Волны любви 3: Лицо зла (ит.)",
+"p": "img/portadas/onde-d-amore-3.webp",
+"tr": {}
 },
 "la-citta-triste": {
 "t": "La città triste",
@@ -28898,96 +30366,13 @@ export const NOVELAS = {
 "ru": "grustnyj-gorod"
 }
 },
-"el-misterio-de-los-fader": {
-"t": "El misterio de los Fader",
-"es": "El misterio de los Fader",
-"l": "es",
-"y": 2025,
-"ru": "Тайна семьи Фадер (исп.)",
-"p": "img/portadas/el-misterio-de-los-fader.webp",
-"tr": {
-"ru": "tajna-semi-fader"
-}
-},
-"volny-lyubvi-gorod-bez-ulybok": {
-"t": "Волны любви: Город без улыбок",
-"es": "Ondas de amor: La ciudad sin sonrisas",
+"volny-lyubvi-labirint-zabveniya": {
+"t": "Волны любви: Лабиринт забвения",
+"es": "Ondas de amor: El laberinto del olvido",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви: Город без улыбок",
-"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
-"tr": {}
-},
-"onde-d-amore-3": {
-"t": "Onde d'amore 3: Il viso del male",
-"es": "Ondas de amor 3: El rostro del mal",
-"l": "it",
-"y": 2026,
-"ru": "Волны любви 3: Лицо зла (ит.)",
-"p": "img/portadas/onde-d-amore-3.webp",
-"tr": {}
-},
-"strateg": {
-"t": "Стратег",
-"es": "El estratega",
-"l": "ru",
-"y": 2026,
-"ru": "Стратег",
-"p": "img/portadas/strateg.webp",
-"tr": {}
-},
-"divlji-chas-malbec": {
-"t": "Дивљи час: Љубав укуса малбека",
-"es": "La hora salvaje: El amor con sabor a malbec (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час: Любовь со вкусом мальбека (серб.)",
-"p": "img/portadas/divlji-chas-malbec.webp",
-"tr": {}
-},
-"mashina-snov": {
-"t": "Машина снов",
-"es": "La máquina de los sueños",
-"l": "ru",
-"y": 2026,
-"ru": "Машина снов",
-"p": "img/portadas/mashina-snov.webp",
-"tr": {}
-},
-"27-ocak": {
-"t": "27 Ocak",
-"es": "27 de enero",
-"l": "tr",
-"y": 2026,
-"ru": "27 января",
-"p": "img/portadas/27-ocak.webp",
-"tr": {}
-},
-"ostrovy-nad-prahou": {
-"t": "Ostrovy nad Prahou",
-"es": "Las islas sobre Praga (checo)",
-"l": "cs",
-"y": 2026,
-"ru": "Острова над Прагой (чеш.)",
-"p": "img/portadas/ostrovy-nad-prahou.webp",
-"tr": {}
-},
-"el-impostor": {
-"t": "El impostor",
-"es": "El impostor",
-"l": "es",
-"y": null,
-"ru": "Самозванец",
-"p": "img/portadas/el-impostor.webp",
-"tr": {}
-},
-"severnaya-lyubov-2": {
-"t": "Северная любовь: Плач с севера",
-"es": "Amor del Norte 2: Llanto del norte",
-"l": "ru",
-"y": 2025,
-"ru": "Северная любовь: Плач с севера",
-"p": "img/portadas/severnaya-lyubov-2.webp",
+"ru": "Волны любви: Лабиринт забвения",
+"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
 "tr": {}
 },
 "pokhititel-serdec-portret-osnovatelya": {
@@ -28999,70 +30384,34 @@ export const NOVELAS = {
 "p": "img/portadas/pokhititel-serdec-portret-osnovatelya.webp",
 "tr": {}
 },
-"la-chica-del-retrato": {
-"t": "La chica del retrato",
-"es": "La chica del retrato",
+"operacion-londres": {
+"t": "El misterio de los Fader: Operación Londres",
+"es": "El misterio de los Fader: Operación Londres",
+"l": "es",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Операция «Лондон» (исп.)",
+"p": "img/portadas/operacion-londres.webp",
+"tr": {}
+},
+"el-impostor": {
+"t": "El impostor",
+"es": "El impostor",
 "l": "es",
 "y": null,
-"ru": "Девушка с портрета",
-"p": "img/portadas/la-chica-del-retrato.webp",
+"ru": "Самозванец",
+"p": "img/portadas/el-impostor.webp",
 "tr": {}
 },
-"ladro-di-cuori-3": {
-"t": "Ladro di cuori 3",
-"es": "Ladrón de corazones 3 (it.)",
-"l": "it",
-"y": 2026,
-"ru": "Похититель сердец 3 (ит.)",
-"p": "img/portadas/ladro-di-cuori-3.webp",
-"tr": {}
-},
-"znak": {
-"t": "Знак",
-"es": "El signo",
-"l": "ru",
-"y": 2024,
-"ru": "Знак",
-"p": "img/portadas/znak.webp",
-"tr": {}
-},
-"sny-i-zver": {
-"t": "Сны и Зверь",
-"es": "Los sueños y la Bestia",
-"l": "ru",
-"y": null,
-"ru": "Сны и Зверь",
-"p": "img/portadas/sny-i-zver.webp",
-"tr": {}
-},
-"venecianskaya-maska": {
-"t": "Венецианская маска",
-"es": "La máscara de Venecia (ru.)",
+"golos": {
+"t": "Голос",
+"es": "La voz",
 "l": "ru",
 "y": 2026,
-"ru": "Венецианская маска",
-"p": "img/portadas/venecianskaya-maska.webp",
+"ru": "Голос",
+"p": "img/portadas/golos.webp",
 "tr": {
-"it": "maschera-di-venezia"
+"fr": "la-voix"
 }
-},
-"volny-lyubvi": {
-"t": "Волны любви",
-"es": "Ondas de amor (ru.)",
-"l": "ru",
-"y": 2026,
-"ru": "Волны любви",
-"p": "img/portadas/volny-lyubvi.webp",
-"tr": {}
-},
-"anomalia": {
-"t": "Anomalía",
-"es": "Anomalía",
-"l": "es",
-"y": null,
-"ru": "Аномалия (исп.)",
-"p": "img/portadas/anomalia.webp",
-"tr": {}
 },
 "predchuvstvie": {
 "t": "Предчувствие",
@@ -29087,54 +30436,98 @@ export const NOVELAS = {
 "pl": "przeczucie"
 }
 },
-"prizrachnyj-poezd": {
-"t": "Призрачный поезд",
-"es": "El tren fantasma (ru.)",
+"severnaya-lyubov-3": {
+"t": "Северная любовь: Восточный ветер",
+"es": "Amor del Norte 3: Viento del este",
 "l": "ru",
 "y": 2026,
-"ru": "Призрачный поезд",
-"p": "img/portadas/prizrachnyj-poezd.webp",
-"tr": {
-"es": "el-tren-fantasma",
-"it": "il-treno-fantasma"
-}
-},
-"the-immigrant": {
-"t": "The Immigrant",
-"es": "El inmigrante",
-"l": "en",
-"y": 2025,
-"ru": "Иммигрант",
-"p": "img/portadas/the-immigrant.webp",
+"ru": "Северная любовь: Восточный ветер",
+"p": "img/portadas/severnaya-lyubov-3.webp",
 "tr": {}
 },
-"volny-lyubvi-labirint-zabveniya": {
-"t": "Волны любви: Лабиринт забвения",
-"es": "Ondas de amor: El laberinto del olvido",
+"mashina-snov": {
+"t": "Машина снов",
+"es": "La máquina de los sueños",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви: Лабиринт забвения",
-"p": "img/portadas/volny-lyubvi-labirint-zabveniya.webp",
+"ru": "Машина снов",
+"p": "img/portadas/mashina-snov.webp",
 "tr": {}
 },
-"ti-amo-in-silenzio": {
-"t": "Ti amo in silenzio",
-"es": "Te amo en silencio (it.)",
+"podzemni-tajemstvi": {
+"t": "Podzemní tajemství",
+"es": "El secreto subterráneo (checo)",
+"l": "cs",
+"y": null,
+"ru": "Подземная тайна (чеш.)",
+"p": "img/portadas/podzemni-tajemstvi.webp",
+"tr": {}
+},
+"27-ocak": {
+"t": "27 Ocak",
+"es": "27 de enero",
+"l": "tr",
+"y": 2026,
+"ru": "27 января",
+"p": "img/portadas/27-ocak.webp",
+"tr": {}
+},
+"dikij-chas-2": {
+"t": "Дикий час: Духи гор",
+"es": "La hora salvaje: Los espíritus de la montaña",
+"l": "ru",
+"y": null,
+"ru": "Дикий час: Духи гор",
+"p": "img/portadas/dikij-chas-2.webp",
+"tr": {}
+},
+"rezonans-lyubvi-volshebnye-struny": {
+"t": "Резонанс любви: Волшебные струны",
+"es": "Resonancia del amor: Cuerdas mágicas",
+"l": "ru",
+"y": 2026,
+"ru": "Резонанс любви: Волшебные струны",
+"p": null,
+"tr": {}
+},
+"onde-d-amore": {
+"t": "Onde d'amore",
+"es": "Ondas de amor (it.)",
 "l": "it",
 "y": 2026,
-"ru": "Люблю тебя молча (ит.)",
-"p": "img/portadas/ti-amo-in-silenzio.webp",
+"ru": "Волны любви (ит.)",
+"p": "img/portadas/onde-d-amore.webp",
 "tr": {
-"ru": "tikhaya-lyubov"
+"es": "ondas-de-amor"
 }
 },
-"volny-lyubvi-krepost": {
-"t": "Волны любви: Крепость в полумраке",
-"es": "Ondas de amor: La fortaleza en la penumbra",
+"severnaya-lyubov-2": {
+"t": "Северная любовь: Плач с севера",
+"es": "Amor del Norte 2: Llanto del norte",
+"l": "ru",
+"y": 2025,
+"ru": "Северная любовь: Плач с севера",
+"p": "img/portadas/severnaya-lyubov-2.webp",
+"tr": {}
+},
+"divlji-chas": {
+"t": "Дивљи час",
+"es": "La hora salvaje (serbio)",
+"l": "sr",
+"y": null,
+"ru": "Дикий час (серб.)",
+"p": "img/portadas/divlji-chas.webp",
+"tr": {
+"ru": "dikij-chas"
+}
+},
+"volny-lyubvi-gorod-bez-ulybok": {
+"t": "Волны любви: Город без улыбок",
+"es": "Ondas de amor: La ciudad sin sonrisas",
 "l": "ru",
 "y": 2026,
-"ru": "Волны любви: Крепость в полумраке",
-"p": "img/portadas/volny-lyubvi-krepost.webp",
+"ru": "Волны любви: Город без улыбок",
+"p": "img/portadas/volny-lyubvi-gorod-bez-ulybok.webp",
 "tr": {}
 },
 "kralovna-vinobrani": {
@@ -29148,55 +30541,169 @@ export const NOVELAS = {
 "es": "la-reina-de-la-vendimia"
 }
 },
-"la-ciudad-secreta": {
-"t": "La ciudad secreta",
-"es": "La ciudad secreta",
-"l": "es",
-"y": null,
-"ru": "Тайный город (исп.)",
-"p": "img/portadas/la-ciudad-secreta.webp",
-"tr": {}
-},
-"chi-ha-visto-sasha": {
-"t": "Chi ha visto Sasha?",
-"es": "¿Quién ha visto a Sasha?",
-"l": "it",
-"y": 2026,
-"ru": "Кто видел Сашу?",
-"p": "img/portadas/chi-ha-visto-sasha.webp",
-"tr": {}
-},
-"maschera-di-venezia": {
-"t": "Maschera di Venezia",
-"es": "La máscara de Venecia (it.)",
-"l": "it",
-"y": null,
-"ru": "Венецианская маска (ит.)",
-"p": "img/portadas/maschera-di-venezia.webp",
-"tr": {
-"ru": "venecianskaya-maska"
-}
-},
-"divlji-chas": {
-"t": "Дивљи час",
-"es": "La hora salvaje (serbio)",
-"l": "sr",
-"y": null,
-"ru": "Дикий час (серб.)",
-"p": "img/portadas/divlji-chas.webp",
-"tr": {
-"ru": "dikij-chas"
-}
-},
-"opasnoe-svidanie": {
-"t": "Опасное свидание",
-"es": "Una cita peligrosa",
+"volny-lyubvi": {
+"t": "Волны любви",
+"es": "Ondas de amor (ru.)",
 "l": "ru",
 "y": 2026,
-"ru": "Опасное свидание",
-"p": "img/portadas/opasnoe-svidanie.webp",
+"ru": "Волны любви",
+"p": "img/portadas/volny-lyubvi.webp",
+"tr": {}
+},
+"volny-lyubvi-krepost": {
+"t": "Волны любви: Крепость в полумраке",
+"es": "Ondas de amor: La fortaleza en la penumbra",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Крепость в полумраке",
+"p": "img/portadas/volny-lyubvi-krepost.webp",
+"tr": {}
+},
+"ti-amo-in-silenzio": {
+"t": "Ti amo in silenzio",
+"es": "Te amo en silencio (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Люблю тебя молча (ит.)",
+"p": "img/portadas/ti-amo-in-silenzio.webp",
 "tr": {
-"en": "the-date"
+"ru": "tikhaya-lyubov"
+}
+},
+"dikij-chas-karnaval-razdora": {
+"t": "Дикий час: Карнавал раздора",
+"es": "La hora salvaje: El carnaval de la discordia",
+"l": "ru",
+"y": 2026,
+"ru": "Дикий час: Карнавал раздора",
+"p": "img/portadas/dikij-chas-karnaval-razdora.webp",
+"tr": {}
+},
+"el-tren": {
+"t": "El tren",
+"es": "El tren",
+"l": "es",
+"y": 2026,
+"ru": "Поезд",
+"p": "img/portadas/el-tren.webp",
+"tr": {}
+},
+"el-misterio-de-los-fader": {
+"t": "El misterio de los Fader",
+"es": "El misterio de los Fader",
+"l": "es",
+"y": 2025,
+"ru": "Тайна семьи Фадер (исп.)",
+"p": "img/portadas/el-misterio-de-los-fader.webp",
+"tr": {
+"ru": "tajna-semi-fader"
+}
+},
+"ostrovy-nad-prahou": {
+"t": "Ostrovy nad Prahou",
+"es": "Las islas sobre Praga (checo)",
+"l": "cs",
+"y": 2026,
+"ru": "Острова над Прагой (чеш.)",
+"p": "img/portadas/ostrovy-nad-prahou.webp",
+"tr": {}
+},
+"zvezdnyj-roman": {
+"t": "Звёздный роман",
+"es": "Novela estelar",
+"l": "ru",
+"y": null,
+"ru": "Звёздный роман",
+"p": "img/portadas/zvezdnyj-roman.webp",
+"tr": {}
+},
+"tajna-semi-fader-2": {
+"t": "Тайна семьи Фадер: Вторая половина",
+"es": "El misterio de los Fader: La otra mitad",
+"l": "ru",
+"y": 2026,
+"ru": "Тайна семьи Фадер: Вторая половина",
+"p": "img/portadas/tajna-semi-fader-2.webp",
+"tr": {}
+},
+"divlji-chas-bestijarijum": {
+"t": "Дивљи час: Бестијаријум",
+"es": "La hora salvaje: Bestiario",
+"l": "sr",
+"y": 2026,
+"ru": "Дикий час: Бестиарий (серб.)",
+"p": null,
+"tr": {}
+},
+"tikhaya-lyubov": {
+"t": "Тихая любовь",
+"es": "Amor en silencio",
+"l": "ru",
+"y": 2026,
+"ru": "Тихая любовь",
+"p": "img/portadas/tikhaya-lyubov.webp",
+"tr": {
+"it": "ti-amo-in-silenzio"
+}
+},
+"ladro-di-cuori-3": {
+"t": "Ladro di cuori 3",
+"es": "Ladrón de corazones 3 (it.)",
+"l": "it",
+"y": 2026,
+"ru": "Похититель сердец 3 (ит.)",
+"p": "img/portadas/ladro-di-cuori-3.webp",
+"tr": {}
+},
+"volny-lyubvi-narisovannyj-mir": {
+"t": "Волны любви: Нарисованный мир",
+"es": "Ondas de amor: El mundo dibujado",
+"l": "ru",
+"y": 2026,
+"ru": "Волны любви: Нарисованный мир",
+"p": "img/portadas/volny-lyubvi-narisovannyj-mir.webp",
+"tr": {}
+},
+"predchuvstvie-2-3": {
+"t": "Предчувствие 2.3",
+"es": "El presentimiento 2.3",
+"l": "ru",
+"y": 2025,
+"ru": "Предчувствие 2.3",
+"p": "img/portadas/predchuvstvie-2-3.webp",
+"tr": {}
+},
+"venecianskaya-maska": {
+"t": "Венецианская маска",
+"es": "La máscara de Venecia (ru.)",
+"l": "ru",
+"y": 2026,
+"ru": "Венецианская маска",
+"p": "img/portadas/venecianskaya-maska.webp",
+"tr": {
+"it": "maschera-di-venezia"
+}
+},
+"dikij-chas": {
+"t": "Дикий час",
+"es": "La hora salvaje",
+"l": "ru",
+"y": null,
+"ru": "Дикий час",
+"p": "img/portadas/dikij-chas.webp",
+"tr": {
+"sr": "divlji-chas"
+}
+},
+"la-voix": {
+"t": "La voix",
+"es": "La voz (fr.)",
+"l": "fr",
+"y": null,
+"ru": "Голос (фр.)",
+"p": "img/portadas/la-voix.webp",
+"tr": {
+"ru": "golos"
 }
 },
 "il-treno-fantasma": {
@@ -29211,73 +30718,25 @@ export const NOVELAS = {
 "ru": "prizrachnyj-poezd"
 }
 },
-"podzemni-tajemstvi": {
-"t": "Podzemní tajemství",
-"es": "El secreto subterráneo (checo)",
-"l": "cs",
-"y": null,
-"ru": "Подземная тайна (чеш.)",
-"p": "img/portadas/podzemni-tajemstvi.webp",
-"tr": {}
-},
-"predchuvstvie-2": {
-"t": "Предчувствие 2",
-"es": "El presentimiento 2",
+"grustnyj-gorod": {
+"t": "Грустный город",
+"es": "La ciudad triste",
 "l": "ru",
-"y": 2024,
-"ru": "Предчувствие 2",
-"p": "img/portadas/predchuvstvie-2.webp",
-"tr": {}
-},
-"zvezdnyj-roman": {
-"t": "Звёздный роман",
-"es": "Novela estelar",
-"l": "ru",
-"y": null,
-"ru": "Звёздный роман",
-"p": "img/portadas/zvezdnyj-roman.webp",
-"tr": {}
-},
-"el-tren-fantasma": {
-"t": "El tren fantasma",
-"es": "El tren fantasma",
-"l": "es",
-"y": null,
-"ru": "Призрачный поезд (исп.)",
-"p": "img/portadas/el-tren-fantasma.webp",
+"y": 2026,
+"ru": "Грустный город",
+"p": "img/portadas/grustnyj-gorod.webp",
 "tr": {
-"it": "il-treno-fantasma",
-"ru": "prizrachnyj-poezd"
+"it": "la-citta-triste"
 }
 },
-"karnaval-sinei": {
-"t": "Карнавал Синеи",
-"es": "El Carnaval de Sinea",
+"severnaya-lyubov": {
+"t": "Северная любовь",
+"es": "Amor del Norte",
 "l": "ru",
-"y": 2026,
-"ru": "Карнавал Синеи",
-"p": "img/portadas/karnaval-sinei.webp",
+"y": 2025,
+"ru": "Северная любовь",
+"p": "img/portadas/severnaya-lyubov.webp",
 "tr": {}
-},
-"bezumie-v-poezde": {
-"t": "Безумие в поезде",
-"es": "Locura en el tren",
-"l": "ru",
-"y": 2026,
-"ru": "Безумие в поезде",
-"p": "img/portadas/bezumie-v-poezde.webp",
-"tr": {}
-},
-"la-reina-de-la-vendimia": {
-"t": "La reina de la Vendimia",
-"es": "La reina de la Vendimia",
-"l": "es",
-"y": 2026,
-"ru": "Королева Вендимии (исп.)",
-"p": "img/portadas/la-reina-de-la-vendimia.webp",
-"tr": {
-"cs": "kralovna-vinobrani"
-}
 }
 };
 export const IDIOMAS = {"ru": "ruso", "es": "español", "it": "italiano", "fr": "francés", "en": "inglés", "tr": "turco", "cs": "checo", "sr": "serbio"};

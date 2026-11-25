@@ -55,6 +55,13 @@
    "s": 4,
    "es": "Tomé un toro por los cuernos, literal. Las estatuas del barrio tienen mucha vida, demasiada.",
    "ru": "Взял быка за рога — буквально. У статуй в этом квартале очень много жизни, даже слишком."
+  },
+  {
+   "a": "Una señora con ruleros",
+   "ar": "Сеньора в бигуди",
+   "s": 2,
+   "es": "Mis margaritas no muerden a la gente decente. A ese argentino le tiré la cuchara y volvería a tirársela.",
+   "ru": "Мои маргаритки не кусают порядочных людей. Этому аргентинцу я бросила ложку и брошу ещё раз."
   }
  ],
  "mad-biblioteca": [
@@ -71,6 +78,20 @@
    "s": 4,
    "es": "Lindo libro para vivir. Volví a casa, a mi página. Un hombre me tomó por los cuernos y no me molestó tanto.",
    "ru": "Хорошая книга, чтобы в ней жить. Вернулся домой, на свою страницу. Один человек взял меня за рога — и мне это почти не мешало."
+  },
+  {
+   "a": "Remedios",
+   "ar": "Ремедиос",
+   "s": 5,
+   "es": "Cuarenta y un años en este edificio y nunca había bajado a los cimientos con unos sobrinos de Buenos Aires que hablan ruso. Huele a hidromiel. Lo anoté en el registro.",
+   "ru": "Сорок один год в этом здании — и ни разу не спускалась в фундамент с племянниками из Буэнос-Айреса, которые говорят по-русски. Пахнет медовухой. Записала в журнал."
+  },
+  {
+   "a": "Agente L",
+   "ar": "Агент Л",
+   "s": 4,
+   "es": "Un acorde en re menor y el toro retrocedió medio paso. Para un toro más viejo que España, es bastante.",
+   "ru": "Один аккорд ре минор — и бык отступил на полшага. Для быка старше Испании это немало."
   }
  ],
  "mad-colon": [
@@ -110,6 +131,13 @@
    "s": 5,
    "es": "El elixir de «simplemente Karl» funcionó. La guitarra sobrevivió. El agente también.",
    "ru": "Эликсир «просто Карла» сработал. Гитара уцелела. Агент тоже."
+  },
+  {
+   "a": "Natalia (Moscú)",
+   "ar": "Наталья (Москва)",
+   "s": 5,
+   "es": "Cosí una herida de sable sobre un andén, bajo una mosaica, con una canaria mirando. Las suturas aguantaron. Lo demás, el frasquito de un tal Karl.",
+   "ru": "Зашила сабельную рану на платформе, под мозаикой, под взглядом канарейки. Швы держались. Остальное — флакон какого-то Карла."
   }
  ],
  "mad-sol": [
@@ -213,6 +241,122 @@
    "s": 5,
    "es": "Oí un ruido raro arriba y subí. Bien que subí.",
    "ru": "Услышала странный звук сверху и поднялась. И правильно сделала."
+  }
+ ],
+ "mad-hotel-duende": [
+  {
+   "a": "Pilar",
+   "ar": "Пилар",
+   "s": 5,
+   "es": "¡El agua de la canilla de Madrid es mucho más madrileña que la de Mendoza! La señora rusa no tomó el desayuno. Una pena.",
+   "ru": "Мадридская вода из-под крана гораздо более мадридская, чем вода Мендосы! Русская сеньора не стала завтракать. Жаль."
+  },
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "Una cama que se hace pasar por doble y un balcón chiquito. Abajo, Madrid enloquecía. Nosotros no nos enteramos.",
+   "ru": "Кровать, которая притворяется двуспальной, и крошечный балкон. Внизу Мадрид сходил с ума. Мы этого не заметили."
+  },
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "Te quiero, rusa. El hotel también está bien.",
+   "ru": "Te quiero, rusa. Отель тоже ничего."
+  }
+ ],
+ "mad-hostal-arenal": [
+  {
+   "a": "La dueña",
+   "ar": "Хозяйка",
+   "s": 4,
+   "es": "El gobierno volvió a subir los impuestos. El gato está de acuerdo conmigo. La rusa de la piecita de enfrente sale corriendo cada mañana detrás del de la guitarra.",
+   "ru": "Правительство опять повысило налоги. Кот со мной согласен. Русская из комнатки напротив каждое утро выбегает за тем, что с гитарой."
+  },
+  {
+   "a": "Natalia (Moscú)",
+   "ar": "Наталья (Москва)",
+   "s": 4,
+   "es": "Tercer piso, ventana de la izquierda. Me disfrazaron de espía sin preguntarme. Lindo balcón para vigilar.",
+   "ru": "Третий этаж, левое окно. Меня сделали шпионкой, не спросив. Хороший балкон, чтобы следить."
+  }
+ ],
+ "mad-cibeles": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 3,
+   "es": "Al bicho lo atravesó un colectivo. Nosotros esperamos el semáforo. Así es la justicia.",
+   "ru": "Чудище проехал насквозь автобус. А мы ждали светофора. Вот она, справедливость."
+  }
+ ],
+ "mad-alcala": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 4,
+   "es": "Carlos III, Karl Fader, Carlos el de la otra puerta… Nati, en esta ciudad hay demasiados Carlos.",
+   "ru": "Карлос III, Карл Фадер, Карлос с соседних ворот… Нати, в этом городе слишком много Карлов."
+  }
+ ],
+ "mad-retiro": [
+  {
+   "a": "Natalia",
+   "ar": "Наталья",
+   "s": 5,
+   "es": "El Palacio de Cristal es como estar adentro de una pompa de jabón. Luis me lo prometió dos veces. Lo anoto.",
+   "ru": "Хрустальный дворец — будто стоишь внутри мыльного пузыря. Луис обещал мне его дважды. Записываю."
+  },
+  {
+   "a": "Un chico en una barca",
+   "ar": "Парень в лодке",
+   "s": 4,
+   "es": "Un tipo con cráneo de toro caminó por el agua al lado nuestro. Le dije a mi novia que era un animador. Me creyó.",
+   "ru": "Мимо нас по воде прошёл тип с черепом быка. Я сказал девушке, что это аниматор. Она поверила."
+  }
+ ],
+ "mad-prado": [
+  {
+   "a": "Una celadora",
+   "ar": "Смотрительница",
+   "s": 3,
+   "es": "Señor, no se puede tocar. Se lo dije tres veces. Al de la cabeza de toro no le dije nada: no tenía entrada, pero no tocó.",
+   "ru": "Señor, no se puede tocar. Я сказала ему трижды. Тому, что с головой быка, ничего не сказала: билета у него не было, но он ничего не трогал."
+  }
+ ],
+ "mad-reina-sofia": [
+  {
+   "a": "Luis",
+   "ar": "Луис",
+   "s": 5,
+   "es": "Frente al «Guernica» pensé en mi bisabuelo, el miliciano. Después el bicho se volvió polvo de oro y salió una abeja. No le pidan más a un museo.",
+   "ru": "Перед «Герникой» я думал о прадеде-милисиано. Потом чудище рассыпалось золотой пылью, и вылетела пчела. Большего от музея не требуйте."
+  }
+ ],
+ "mad-barajas": [
+  {
+   "a": "Un agente de frontera",
+   "ar": "Пограничник",
+   "s": 5,
+   "es": "¡Olé! ¡Olé! ¡Olé! Y a la señorita rusa le pregunté por las palomas. Son dinosaurios. Nos miran. Se acuerdan.",
+   "ru": "¡Olé! ¡Olé! ¡Olé! А русскую сеньориту я спросил про голубей. Это динозавры. Они смотрят. Они помнят."
+  },
+  {
+   "a": "Un taxista",
+   "ar": "Таксист",
+   "s": 5,
+   "es": "Doscientos rublos de propina. Los tengo en el parasol. No sé cuánto son, pero son míos.",
+   "ru": "Двести рублей чаевых. Держу за козырьком. Не знаю, сколько это, но это мои."
+  }
+ ],
+ "mad-vistalegre": [
+  {
+   "a": "El taxista de bigotes",
+   "ar": "Усатый таксист",
+   "s": 5,
+   "es": "¡Treinta y ocho años esperando que alguien me dijera «siga a ese auto»! Crucé el río, subí a la vereda, espanté palomas. El mejor día de mi vida.",
+   "ru": "Тридцать восемь лет ждал, чтобы кто-нибудь сказал «за той машиной»! Пересёк реку, заехал на тротуар, распугал голубей. Лучший день моей жизни."
   }
  ]
 }

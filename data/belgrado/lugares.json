@@ -31,7 +31,7 @@
     20.4499
    ],
    "modelo": "pobednik",
-   "desc": "La fortaleza y el parque sobre el promontorio donde el Sava desemboca en el Danubio, con el «Vencedor» de Ivan Meštrović (1928) mirando el agua. Natasha trae a Luis al atardecer: «Belgrado no quiere a los débiles. Pero si te acepta… ya no te vas siendo el mismo». Es el primer punto del mapa de las piedras: acá ella le toma la mano y le dice «Sos mío», acá muerde a la pelirroja que se acerca a Luis, y acá él encuentra la primera piedra con el amuleto de Zark. Meses después, en Kalemegdan se hace la boda simbólica, sin altar ni cura, con Zmaj volando tranquilo sobre la fortaleza.",
+   "desc": "La fortaleza y el parque sobre el promontorio donde el Sava desemboca en el Danubio, con el «Vencedor» de Ivan Meštrović (1928) mirando el agua. Natasha trae a Luis al atardecer: «Belgrado no quiere a los débiles. Pero si te acepta… ya no te vas siendo el mismo». Es el primer punto del mapa de las piedras: acá ella le toma la mano y le dice «Sos mío», acá muerde a la pelirroja que se acerca a Luis, y acá él encuentra la primera piedra con el amuleto de Zark. Meses después, en Kalemegdan se hace la boda simbólica, sin altar ni cura, con Zmaj volando tranquilo sobre la fortaleza. En «Bestiario», al final de la séptima noche, la cierva Zora de cuernos de oro corre por los techos hasta el borde del parque, al final de Knez Mihailova, bajo los castaños, y no entra: adentro de las murallas otro defiende el centro. La cierva y el dragón de fuego se miran por encima de Kalemegdan y ella inclina la cabeza hasta el suelo, «como una reina ante un rey, o una hermana ante un hermano». En otoño los castaños vuelven a caer, como todos los años, sobre la cabeza de los turistas.",
    "buscar": "Калемегдан\\w*",
    "extra": {
     "dikij-chas": [
@@ -41,6 +41,10 @@
      26,
      35,
      36
+    ],
+    "divlji-chas-bestijarijum": [
+     21,
+     23
     ]
    },
    "ilustracion": [
@@ -57,7 +61,7 @@
     20.4508
    ],
    "modelo": "nebojsa",
-   "desc": "La torre medieval del siglo XV en la Ciudad Baja, junto al Danubio; con los turcos fue cárcel. Es el cuartel de la conspiración: de noche, Artan, Sofía y John se sientan a una mesa maciza a esperar la Hora Salvaje. Acá termina el ritual: «Hace años que hago visitas guiadas acá», dice Natasha, y conoce un pasadizo que no está en ningún plano. Desde arriba de la torre ella aparta los misiles como en 1999, de las piedras nace Zmaj, y al pie de la torre Luis-gigante pelea con Ala, el demonio de las tormentas.",
+   "desc": "La torre medieval del siglo XV en la Ciudad Baja, junto al Danubio; con los turcos fue cárcel. Es el cuartel de la conspiración: de noche, Artan, Sofía y John se sientan a una mesa maciza a esperar la Hora Salvaje. Acá termina el ritual: «Hace años que hago visitas guiadas acá», dice Natasha, y conoce un pasadizo que no está en ningún plano. Desde arriba de la torre ella aparta los misiles como en 1999, de las piedras nace Zmaj, y al pie de la torre Luis-gigante pelea con Ala, el demonio de las tormentas. En «La hora salvaje: Bestiario», la séptima noche todos los círculos del mapa de alfileres de Milena se escurren hacia acá: el Danubio hierve al pie de la torre, sale vapor como de una olla y desde el fondo una voz de hombre, honda, grita como quien ya se cree vencedor. Desde la colina sobre la Nebojša se levanta un dragón de fuego y choca con algo enorme, oscuro y mojado, de mil brazos, que sube del río. Milena, desde una azotea de Dorćol, siente que adentro del fuego está Natasha saludándola.",
    "buscar": "Небойш\\w*|Небојш\\w*",
    "extra": {
     "dikij-chas": [
@@ -68,6 +72,13 @@
      29,
      30,
      32
+    ],
+    "divlji-chas-bestijarijum": [
+     16,
+     18,
+     19,
+     20,
+     21
     ]
    },
    "ilustracion": [
@@ -84,13 +95,16 @@
     20.457
    ],
    "modelo": "ninguno",
-   "desc": "El Danubio recibe al Sava bajo la fortaleza y gira al este. «Natasha está con nosotros. Orilla del Danubio. Vení solo.» Artan cree el mensaje, y en la orilla oscura John le dispara dos veces con silenciador; la corriente se lo lleva. En la Hora Salvaje uno de los misiles cae al Danubio sin llegar a la orilla, y del río sale Ala, el demonio de las tormentas… con la cara de Artan.",
+   "desc": "El Danubio recibe al Sava bajo la fortaleza y gira al este. «Natasha está con nosotros. Orilla del Danubio. Vení solo.» Artan cree el mensaje, y en la orilla oscura John le dispara dos veces con silenciador; la corriente se lo lleva. En la Hora Salvaje uno de los misiles cae al Danubio sin llegar a la orilla, y del río sale Ala, el demonio de las tormentas… con la cara de Artan. En «Bestiario», la séptima noche salen del Danubio, por decenas y por cientos, unos seres de barro y agua sin cara, y el río empieza a subir hacia Dorćol, el barrio más bajo, donde en los sótanos se esconden chicos, viejos y la señora Ružica con su gallo. Milena y Milica bajan al muelle y despiertan a una vila brodarica: en medio del río levanta el remo y el agua se retira, obediente, «como un perro que vuelve a la cucha». Después las saluda con el remo, en señal de despedida o de bendición.",
    "buscar": "Дуна[йяюев]\\w*|Дунав\\w*",
    "extra": {
     "dikij-chas": [
      23,
      30,
      31
+    ],
+    "divlji-chas-bestijarijum": [
+     18
     ]
    },
    "ilustracion": [
@@ -158,6 +172,9 @@
    "ilustracion": [
     "dikij-chas",
     "07-stena.jpg"
+   ],
+   "excluir": [
+    "divlji-chas-bestijarijum"
    ]
   },
   {
@@ -181,6 +198,9 @@
    "ilustracion": [
     "dikij-chas",
     "09-stranica.jpg"
+   ],
+   "excluir": [
+    "divlji-chas-bestijarijum"
    ]
   },
   {
@@ -210,11 +230,15 @@
     20.4418
    ],
    "modelo": "puente-branko",
-   "desc": "Uno de los grandes puentes sobre el Sava, entre la Ciudad Vieja y Nuevo Belgrado. En la Hora Salvaje los autos se detienen en el puente; los conductores bajan y golpean la cabeza contra el metal, como si quisieran sacarse de adentro lo que se les escapa. La ciudad pierde la razón.",
+   "desc": "Uno de los grandes puentes sobre el Sava, entre la Ciudad Vieja y Nuevo Belgrado. En la Hora Salvaje los autos se detienen en el puente; los conductores bajan y golpean la cabeza contra el metal, como si quisieran sacarse de adentro lo que se les escapa. La ciudad pierde la razón. En «Bestiario», la cuarta noche, sobre el puente la gente se pone en fila contra la baranda cantando una canción de cuna sin palabras, y algunos ya pasaron una pierna por encima. Abajo, en la orilla de Karađorđeva, otros entran al Sava cantando, hasta que Milena despierta al konj vodenjak, el caballo de agua de crin de pasto, que galopa bajo el puente y los va sacando uno por uno.",
    "buscar": "Бранков\\w* мост\\w*",
    "extra": {
     "dikij-chas": [
      30
+    ],
+    "divlji-chas-bestijarijum": [
+     12,
+     18
     ]
    },
    "sin_ilustracion": true
@@ -289,6 +313,139 @@
     "dikij-chas",
     "03-platje.jpg"
    ]
+  },
+  {
+   "id": "bg-univerzitetska",
+   "nombre": "Biblioteca Universitaria: el «Bestiario»",
+   "cat": "edificio",
+   "ll": [
+    44.8063,
+    20.4747
+   ],
+   "modelo": "museo",
+   "desc": "La Biblioteca Universitaria «Svetozar Marković», frente a Tašmajdan. Un sábado que huele a papel viejo y a cera, Milena Petrović, la hermana menor de Natasha (trece años menor, la que lee en un rincón y habla tres idiomas, «cada uno con su cuarto y su lámpara»), y su amiga Milica Stojković, del Departamento de Libro Antiguo y Raro, que entrena jiu-jitsu en un sótano de Voždovac, abren un códice: «Yo, Todor, escriba de Belgrado, anoté las bestias que viven entre nuestro mundo y el otro… porque cuando llegue la Hora salvaje, la ciudad tendrá solo a las que no olvide». Abajo, con letra de otra mano, las notas en italiano del fraile Giacomo («la ala es la peor bestia del libro: vi dos, en Novi Pazar, y las dos se comieron mi almuerzo»). En otoño Milena vuelve los sábados a la sala de lectura, a la ventana que da a Tašmajdan, para traducir el Bestiario «a una lengua normal», y Milica guarda el libro en una caja de madera con un dragón en la tapa, en el estante más alto, al que nadie llega.",
+   "buscar": "Универзитетск\\w+ библиотек\\w*",
+   "extra": {
+    "divlji-chas-bestijarijum": [
+     1,
+     3,
+     9,
+     23
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "bg-cara-dusana",
+   "nombre": "La buhardilla y la azotea de la calle Cara Dušana",
+   "cat": "casa",
+   "ll": [
+    44.8222,
+    20.463
+   ],
+   "modelo": "hogar",
+   "desc": "La buhardilla de Milica en Dorćol, en un edificio viejo de escalera de madera que cruje en cada escalón, y su azotea plana de brea y canto rodado, con una puerta de hierro pintada de verde que nadie cierra: desde ahí se ve todo Dorćol, el Danubio, Karaburma y los puentes. La primera noche, en el umbral, Milica dibuja con tiza un círculo con sal, una vela y un hilo rojo, Milena lee la conjura y aparece la zmija čuvarkuća, la serpiente guardiana de la casa, que se corre a un lado para dejarlas pasar. Abajo, el señor Đurić levanta el bastón y Milica lo calma con solo tocarle el hombro. En la azotea duerme Dušan, el mozo nacido «en camisa», un zduhač: mientras duerme, su sombra con espada sale a pelear contra la ala que vuelve sobre Karaburma, y nadie lo puede tocar ni dar vuelta. La séptima noche, desde acá, Milena escribe en la última hoja una bestia que nunca estuvo en el libro, la cierva Zora, y para despertarla le da sus tres idiomas; a la mañana siguiente los recupera leyendo en voz alta una sola línea: «Mia luce. My home. Mi tierra querida».",
+   "buscar": "Цара Душана",
+   "extra": {
+    "divlji-chas-bestijarijum": [
+     2,
+     4,
+     5,
+     9,
+     13,
+     14,
+     18,
+     19,
+     20,
+     21,
+     22
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "bg-ruzica",
+   "nombre": "El patio de la señora Ružica y su gallo",
+   "cat": "casa",
+   "ll": [
+    44.8236,
+    20.4685
+   ],
+   "modelo": "casa",
+   "desc": "Un patio de la calle Braće Baruh, en Dorćol, «más viejo que todos sus cafés juntos», con tres gallinas, un gallo y la señora Ružica, de noventa y un años. La cuarta noche, en el muelle, una karakondžula salta como un sapo sobre la espalda de Milica («¡Arre, caballito mío!») y la va llevando hacia el agua; Dušan sube corriendo, le «toma prestado» el gallo a la señora Ružica a las dos de la mañana, lo levanta sobre su cabeza y el gallo canta: la karakondžula chilla y desaparece. A la mañana se lo devuelven bañado, con una caja de masas y una disculpa. «Mi abuela decía: cuando los gallos cantan a medianoche, Belgrado se defiende. Noventa años tuve un gallo en este patio y todos los vecinos me odiaron por eso. Pensé que mi abuela estaba loca. Parece que no.»",
+   "buscar": "Браће Барух|Ружиц\\w*",
+   "extra": {
+    "divlji-chas-bestijarijum": [
+     12,
+     13,
+     21
+    ]
+   },
+   "sin_ilustracion": true
+  },
+  {
+   "id": "bg-gardos",
+   "nombre": "La torre de Gardoš (Zemun)",
+   "cat": "misterio",
+   "ll": [
+    44.8483,
+    20.4108
+   ],
+   "modelo": "nebojsa",
+   "desc": "La torre del Milenio sobre la colina de Gardoš, en Zemun. La segunda noche llega una nube con cara, la ala, que tira granizo negro del tamaño de avellanas y huele a trigo quemado. Arriba de todo, Milena tiene que gritar una conjura que se canta en voz baja, y cuando se le quiebra la voz empieza a cantarla; Dušan le abre su campera de cuero vieja sobre la cabeza como un techo, y Milica, arrodillada junto al círculo de tiza, saca de sus palmas una bruma plateada que esa noche hierve como una olla y le quema las manos.",
+   "buscar": "Гардош\\w*|Земун\\w*",
+   "extra": {
+    "divlji-chas-bestijarijum": [
+     6,
+     7,
+     8,
+     10,
+     15
+    ]
+   },
+   "sin_ilustracion": true,
+   "borde": true
+  },
+  {
+   "id": "bg-vozdovac",
+   "nombre": "Voždovac: el jardín «Cvrčak» y la babaroga",
+   "cat": "misterio",
+   "ll": [
+    44.775,
+    20.478
+   ],
+   "modelo": "ninguno",
+   "desc": "Entre cuatro torres grises de los setenta, detrás de la calle Vojvode Stepe, frente al jardín de infantes «Cvrčak», Jovana, la compañera de entrenamiento de Milica, cuida a veintitrés chicos en pijama que los padres echaron a la calle. Milica, con las manos vendadas, se planta delante igual; Milena lee la conjura más corta y más vieja del libro, «Abuela, abuela, que llevás la bolsa, vení a buscar a los chicos que nadie cuida», y a cambio le da su voz. La babaroga se lleva a los chicos a salvo y le deja en el bolsillo un panecillo de miel en forma de luna, tibio, que huele a tilo: con él se le curan las manos a Milica.",
+   "buscar": "Вождовац\\w*|Цврчак",
+   "extra": {
+    "divlji-chas-bestijarijum": [
+     10,
+     11
+    ]
+   },
+   "sin_ilustracion": true,
+   "borde": true
+  },
+  {
+   "id": "bg-kosutnjak",
+   "nombre": "Košutnjak: el ciervo volante",
+   "cat": "misterio",
+   "ll": [
+    44.7656,
+    20.4304
+   ],
+   "modelo": "ninguno",
+   "desc": "El gran bosque del sur. La quinta noche «llama el bosque»: miles de personas caminan calladas, en pantuflas o descalzas, por Slavija y Banjica, y entran entre los árboles; desde el fondo llega un grito como de un chico en una casa que se quema. Milena encuentra en un rincón del libro un dibujito que había tomado por adorno: el jelen-buba, el ciervo volante guardián de Košutnjak, chiquito, que cuando se despierta «crece lo que haga falta». Tiene una mancha blanca en el caparazón con forma de dedito: Milica, de nueve años, había encontrado en este bosque un ciervo volante muerto y le había susurrado las palabras de su abuela. «Era tan chiquito. Me cabía en la palma.» «Ahora cabe en un colectivo.»",
+   "buscar": "Кошутњак\\w*",
+   "extra": {
+    "divlji-chas-bestijarijum": [
+     15,
+     16,
+     17
+    ]
+   },
+   "sin_ilustracion": true,
+   "borde": true
   }
  ]
 }

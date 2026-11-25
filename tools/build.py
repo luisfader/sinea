@@ -42,6 +42,8 @@ NOVELAS = {
     'dikij-chas-2': 'La hora salvaje: Los espíritus de la montaña', 'divlji-chas-malbec': 'La hora salvaje: El amor con sabor a malbec (serbio)',
     'ladro-di-cuori-3': 'Ladrón de corazones 3 (it.)', 'anomalia': None,
     'dikij-chas-karnaval-razdora': 'La hora salvaje: El carnaval de la discordia',
+    'tajna-semi-fader-2': 'El misterio de los Fader: La otra mitad', 'rezonans-lyubvi-volshebnye-struny': 'Resonancia del amor: Cuerdas mágicas',
+    'divlji-chas-bestijarijum': 'La hora salvaje: Bestiario',
     'rezonans-lyubvi': 'Resonancia del amor',
     'dikij-chas': 'La hora salvaje', 'divlji-chas': 'La hora salvaje (serbio)',
     'maschera-di-venezia': 'La máscara de Venecia (it.)', 'venecianskaya-maska': 'La máscara de Venecia (ru.)',
@@ -59,7 +61,8 @@ NOVELAS_RU = {
     'el-misterio-de-los-fader': 'Тайна семьи Фадер (исп.)', 'operacion-londres': 'Тайна семьи Фадер: Операция «Лондон» (исп.)',
     'divlji-chas-malbec': 'Дикий час: Любовь со вкусом мальбека (серб.)', 'ladro-di-cuori-3': 'Похититель сердец 3 (ит.)', 'anomalia': 'Аномалия (исп.)',
     'maschera-di-venezia': 'Венецианская маска (ит.)',
-    'divlji-chas': 'Дикий час (серб.)',
+    'divlji-chas': 'Дикий час (серб.)', 'divlji-chas-bestijarijum': 'Дикий час: Бестиарий (серб.)',
+    'tajna-semi-fader-2': 'Тайна семьи Фадер: Вторая половина', 'rezonans-lyubvi-volshebnye-struny': 'Резонанс любви: Волшебные струны',
     'la-ciudad-secreta': 'Тайный город (исп.)',
     'podzemni-tajemstvi': 'Подземная тайна (чеш.)', 'ostrovy-nad-prahou': 'Острова над Прагой (чеш.)', 'predtucha': 'Предчувствие (чеш.)',
 }
@@ -82,9 +85,9 @@ CIUDADES = {
         'dikij-chas-2', 'divlji-chas-malbec', 'ladro-di-cuori-3', 'anomalia']},
     # Venecia: «Maschera di Venezia» y su versión rusa «Венецианская маска»
     'venezia': {'dir': os.path.join('data', 'venezia'), 'geo': 'venezia', 'novelas': ['maschera-di-venezia', 'venecianskaya-maska']},
-    'madrid': {'dir': os.path.join('data', 'madrid'), 'geo': 'madrid', 'novelas': ['dikij-chas-karnaval-razdora']},
+    'madrid': {'dir': os.path.join('data', 'madrid'), 'geo': 'madrid', 'novelas': ['dikij-chas-karnaval-razdora', 'tajna-semi-fader-2', 'rezonans-lyubvi-volshebnye-struny']},
     'petersburgo': {'dir': os.path.join('data', 'petersburgo'), 'geo': 'petersburgo', 'novelas': ['rezonans-lyubvi']},
-    'belgrado': {'dir': os.path.join('data', 'belgrado'), 'geo': 'belgrado', 'novelas': ['dikij-chas', 'divlji-chas']},
+    'belgrado': {'dir': os.path.join('data', 'belgrado'), 'geo': 'belgrado', 'novelas': ['dikij-chas', 'divlji-chas', 'divlji-chas-bestijarijum']},
     # Praga: la serie checa de Luis y Jana y los capítulos praguenses de «La reina de la Vendimia»
     'praga': {'dir': os.path.join('data', 'praga'), 'geo': 'praga', 'novelas': [
         'podzemni-tajemstvi', 'ostrovy-nad-prahou', 'predtucha', 'la-reina-de-la-vendimia', 'kralovna-vinobrani'],

@@ -83,6 +83,13 @@
    "s": 5,
    "es": "Años haciendo visitas guiadas acá y por fin usé el pasadizo secreto para algo útil.",
    "ru": "Годами водила здесь экскурсии — и наконец использовала тайный ход с пользой."
+  },
+  {
+   "a": "Milena",
+   "ar": "Милена",
+   "s": 5,
+   "es": "Desde la azotea vi un dragón de fuego sobre la torre. Sentí que mi hermana estaba adentro, saludándome.",
+   "ru": "С крыши я видела огненного змея над башней. Мне казалось, что внутри — моя сестра и машет мне."
   }
  ],
  "bg-dunav": [
@@ -92,6 +99,13 @@
    "s": 3,
    "es": "Un río que vio todo y no cuenta nada. Profesional.",
    "ru": "Река, которая видела всё и ничего не рассказывает. Профессионально."
+  },
+  {
+   "a": "Una vila brodarica",
+   "ar": "Вила-бродарица",
+   "s": 5,
+   "es": "Levanté el remo y el agua volvió a su cauce. Las chicas del muelle, valientes. Las saludé.",
+   "ru": "Я подняла весло, и вода вернулась в русло. Девушки на набережной — храбрые. Я их поприветствовала."
   }
  ],
  "bg-republika": [
@@ -199,6 +213,123 @@
    "s": 2,
    "es": "Me mordió otra vez. Pero cumplimos la misión.",
    "ru": "Она снова меня укусила. Но задание мы выполнили."
+  }
+ ],
+ "bg-univerzitetska": [
+  {
+   "a": "Milica",
+   "ar": "Милица",
+   "s": 5,
+   "es": "Sábados sin estudiantes, olor a cera, y un códice con bestias que se comen el almuerzo de los frailes. Mejor que el jiu-jitsu. Casi.",
+   "ru": "Субботы без студентов, запах воска и кодекс со зверями, которые съедают обед монахов. Лучше, чем джиу-джитсу. Почти."
+  },
+  {
+   "a": "Milena",
+   "ar": "Милена",
+   "s": 5,
+   "es": "Cada idioma tiene su cuarto en mí. Acá, en la ventana que da a Tašmajdan, los tres tienen la lámpara prendida.",
+   "ru": "У каждого языка во мне своя комната. Здесь, у окна на Ташмайдан, во всех трёх горит лампа."
+  },
+  {
+   "a": "Fra Giacomo",
+   "ar": "Фра Джакомо",
+   "s": 2,
+   "es": "La ala me comió el almuerzo. Dos veces. En Novi Pazar. Dejo constancia.",
+   "ru": "Ала съела мой обед. Дважды. В Нови-Пазаре. Фиксирую для потомков."
+  }
+ ],
+ "bg-cara-dusana": [
+  {
+   "a": "Dušan",
+   "ar": "Душан",
+   "s": 5,
+   "es": "Dormí en la azotea con un termo de té. Soñé que peleaba con las nubes. No era un sueño.",
+   "ru": "Я спал на крыше с термосом чая. Снилось, что дерусь с облаками. Это был не сон."
+  },
+  {
+   "a": "La zmija čuvarkuća",
+   "ar": "Змея-чуваркуча",
+   "s": 5,
+   "es": "Ssss. (Cuido la casa. A las chicas las dejé pasar.)",
+   "ru": "Ссс. (Я стерегу дом. Девушек пропустила.)"
+  },
+  {
+   "a": "El señor Đurić",
+   "ar": "Господин Джурич",
+   "s": 4,
+   "es": "Una semana con la puerta cerrada con llave. Después vi una luz dorada en el cielo y me saqué el sombrero que no tengo.",
+   "ru": "Неделю сидел за запертой дверью. Потом увидел золотой свет в небе и снял шляпу, которой у меня нет."
+  },
+  {
+   "a": "Milena",
+   "ar": "Милена",
+   "s": 5,
+   "es": "Me quedé sin italiano, sin inglés y sin español una mañana entera. Volvieron con una sola línea. Mia luce.",
+   "ru": "Целое утро я была без итальянского, английского и испанского. Они вернулись с одной строчкой. Mia luce."
+  }
+ ],
+ "bg-ruzica": [
+  {
+   "a": "La señora Ružica",
+   "ar": "Госпожа Ружица",
+   "s": 5,
+   "es": "Me robaron el gallo a las dos de la mañana para una karakondžula. Me lo devolvieron bañado y con masas. Mi abuela tenía razón.",
+   "ru": "В два часа ночи у меня украли петуха ради караконджулы. Вернули умытым и с пирожными. Бабушка была права."
+  },
+  {
+   "a": "El gallo",
+   "ar": "Петух",
+   "s": 5,
+   "es": "¡Kikirikí! (Me levantaron sobre una cabeza en medio de la noche. Ofendidísimo. Funcionó.)",
+   "ru": "Кукареку! (Меня подняли над головой посреди ночи. Глубоко оскорблён. Сработало.)"
+  }
+ ],
+ "bg-gardos": [
+  {
+   "a": "Milena",
+   "ar": "Милена",
+   "s": 4,
+   "es": "Una conjura no se grita. La tuve que gritar. Después la canté. El granizo olía a trigo quemado.",
+   "ru": "Заговор не кричат. Мне пришлось кричать. Потом я его спела. Град пах горелым зерном."
+  },
+  {
+   "a": "Dušan",
+   "ar": "Душан",
+   "s": 4,
+   "es": "Mi campera de cuero vieja sirvió de techo. Quedó llena de abolladuras. Lo volvería a hacer.",
+   "ru": "Моя старая кожаная куртка послужила крышей. Вся во вмятинах. Сделал бы это снова."
+  }
+ ],
+ "bg-vozdovac": [
+  {
+   "a": "Jovana",
+   "ar": "Йована",
+   "s": 5,
+   "es": "Veintitrés chicos en pijama bajo el único farol prendido. Llegaron tres locos y se fueron. Después vino una abuela con una bolsa.",
+   "ru": "Двадцать три ребёнка в пижамах под единственным горящим фонарём. Пришли трое сумасшедших — и ушли. Потом пришла бабушка с мешком."
+  },
+  {
+   "a": "La babaroga",
+   "ar": "Бабарога",
+   "s": 5,
+   "es": "Bien dado, no te lamentes. Tu voz vuelve cuando cante el gallo.",
+   "ru": "Хорошо отдала, не жалей. Голос вернётся, когда запоёт петух."
+  }
+ ],
+ "bg-kosutnjak": [
+  {
+   "a": "El jelen-buba",
+   "ar": "Жук-олень",
+   "s": 5,
+   "es": "(Chiquito en la palma de una nena, grande como un colectivo para el bosque. Me acuerdo de ella.)",
+   "ru": "(Крошечный на ладони девочки, большой, как автобус, для леса. Я её помню.)"
+  },
+  {
+   "a": "Milena",
+   "ar": "Милена",
+   "s": 3,
+   "es": "Dos horas a pie por Slavija y Banjica entre gente callada. Volví helada. Todavía no me puedo calentar.",
+   "ru": "Два часа пешком через Славию и Баницу среди молчаливых людей. Вернулась ледяная. До сих пор не могу согреться."
   }
  ]
 }

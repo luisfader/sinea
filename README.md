@@ -9,9 +9,9 @@ Trece mapas en el mismo sitio, que se eligen en la portada o con el botón «Map
 - **Nuestra Utopía** (Наша Утопия), la fortaleza de Robert en «Предчувствие»: `index.html?ciudad=utopia` (o `utopia.html`)
 - **Mendoza** (Мендоса), la ciudad real de «La reina de la Vendimia», «El misterio de los Fader», «Дикий час: Духи гор» y otras: `index.html?ciudad=mendoza` (o `mendoza.html`)
 - **Venecia** (Венеция), la ciudad real de «Maschera di Venezia» / «Венецианская маска»: `index.html?ciudad=venezia` (o `venezia.html`)
-- **Madrid** (Мадрид), la ciudad real de «Дикий час: Карнавал раздора»: `index.html?ciudad=madrid` (o `madrid.html`)
+- **Madrid** (Мадрид), la ciudad real de «Дикий час: Карнавал раздора», «Тайна семьи Фадер: Вторая половина» y «Резонанс любви: Волшебные струны»: `index.html?ciudad=madrid` (o `madrid.html`)
 - **San Petersburgo** (Санкт-Петербург), la ciudad real de «Резонанс любви»: `index.html?ciudad=petersburgo` (o `petersburgo.html`)
-- **Belgrado** (Белград), la ciudad real de «Дикий час» y de su versión serbia «Дивљи час»: `index.html?ciudad=belgrado` (o `belgrado.html`)
+- **Belgrado** (Белград), la ciudad real de «Дикий час», de su versión serbia «Дивљи час» y de «Дивљи час: Бестијаријум»: `index.html?ciudad=belgrado` (o `belgrado.html`)
 - **Praga** (Прага), la ciudad real de «Podzemní tajemství», «Ostrovy nad Prahou», «Předtucha» y los capítulos praguenses de «La reina de la Vendimia»: `index.html?ciudad=praga` (o `praga.html`)
 - **Atlántida** (Атлантида), los dos mundos de «Звёздный роман»: `index.html?ciudad=atlantida` (o `atlantida.html`)
 - **La Ciudad Secreta** (Тайный город), de «La ciudad secreta»: `index.html?ciudad=secreta` (o `secreta.html`)
@@ -98,7 +98,7 @@ El mapa de «Maschera di Venezia» (y de su versión rusa, «Венецианс�
 
 ## Madrid
 
-El Madrid de «Дикий час: Карнавал раздора», del Templo de Debod al Retiro y de Colón a Atocha. El suelo es el mapa real de OpenStreetMap reclasificado (calles, manzanas, parques, el Manzanares) en `img/madrid-suelo.png`, a 3,64 m por píxel; los edificios salen de ese mismo mapa: uno cada 12 m donde OSM dibuja edificios (`js/ciudades/madrid-lotes.js`), con alturas inventadas. Modelados a mano: el monumento a Cervantes, la Torre de Madrid, el Templo de Debod, el Oso y el Madroño, la Plaza Mayor, el Mercado de la Cebada, la Biblioteca Nacional, la columna de Colón con la bandera, el Banco de España y una boca de metro. Datos: `data/madrid/`.
+El Madrid de «Дикий час: Карнавал раздора», del Templo de Debod al Retiro y de Colón a Atocha, con los lugares de «Тайна семьи Фадер: Вторая половина» (el hotel El Duende, Cibeles, la Puerta de Alcalá, el Retiro, el Prado, el Reina Sofía, Barajas) y de «Резонанс любви: Волшебные струны» (el Hostal Arenal, Carabanchel), que pasan en el mismo carnaval. El suelo es el mapa real de OpenStreetMap reclasificado (calles, manzanas, parques, el Manzanares) en `img/madrid-suelo.png`, a 3,64 m por píxel; los edificios salen de ese mismo mapa: uno cada 12 m donde OSM dibuja edificios (`js/ciudades/madrid-lotes.js`), con alturas inventadas. Modelados a mano: el monumento a Cervantes, la Torre de Madrid, el Templo de Debod, el Oso y el Madroño, la Plaza Mayor, el Mercado de la Cebada, la Biblioteca Nacional, la columna de Colón con la bandera, el Banco de España, una boca de metro, la Puerta de Alcalá, la fuente de Cibeles y el Palacio de Cristal del Retiro. Datos: `data/madrid/`.
 
 ## San Petersburgo
 
@@ -106,7 +106,7 @@ El Petersburgo de «Резонанс любви», de la isla Vasílievski a la 
 
 ## Belgrado
 
-El Belgrado de «Дикий час» (ruso) y «Дивљи час» (serbio): cada lugar muestra los capítulos de las dos versiones. Suelo, ríos y edificios del mapa de OpenStreetMap a 6,78 m por píxel (`img/bg-suelo.png`, `img/bg-tierra.png`, `js/ciudades/bg-lotes.js`), generados con `tools/mapa_osm.py` a partir de las teselas. Modelados a mano: el Pobednik sobre Kalemegdan, la torre Nebojša, el príncipe Mihailo y el Museo Nacional, el edificio bombardeado del Estado Mayor, el templo de San Sava con su cruz ortodoxa y el Puente Branko. Datos: `data/belgrado/`.
+El Belgrado de «Дикий час» (ruso) y «Дивљи час» (serbio): cada lugar muestra los capítulos de las dos versiones. «Дивљи час: Бестијаријум» agrega las siete noches de Milena, Milica y Dušan: la Biblioteca Universitaria, la buhardilla y la azotea de Cara Dušana, el patio de la señora Ružica, Gardoš, Voždovac y Košutnjak. Suelo, ríos y edificios del mapa de OpenStreetMap a 6,78 m por píxel (`img/bg-suelo.png`, `img/bg-tierra.png`, `js/ciudades/bg-lotes.js`), generados con `tools/mapa_osm.py` a partir de las teselas. Modelados a mano: el Pobednik sobre Kalemegdan, la torre Nebojša, el príncipe Mihailo y el Museo Nacional, el edificio bombardeado del Estado Mayor, el templo de San Sava con su cruz ortodoxa y el Puente Branko. Datos: `data/belgrado/`.
 
 ## Praga
 

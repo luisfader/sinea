@@ -1307,6 +1307,33 @@ const MODELOS = {
     for (let i = 0; i < 9; i++) { const a = i * .7, r = 46 + (i % 3) * 8; g.add(cil(.8, 1.1, 6, 0x5a4330, Math.cos(a) * r, 0, Math.sin(a) * r, 6)); g.add(esfera(7 + (i % 2) * 2, 0x4f6e3a, Math.cos(a) * r, 11, Math.sin(a) * r)); }
     return { g, r: 50 };
   },
+  'puerta-alcala'() { // la Puerta de Alcalá de Sabatini (1778): cinco vanos, tres arcos y dos adintelados, con el ático y los trofeos
+    const g = new THREE.Group(), gran = M(0xd9cfbd), osc = M(0xb5a990);
+    g.add(caja(46, 1, 12, 0xbdb3a1, 0, 0, 0));
+    for (let i = 0; i < 6; i++) g.add(caja(3.4, 15, 8, gran, -20 + i * 8, 1, 0));
+    for (let i = 0; i < 5; i++) { const x = -16 + i * 8; if (i > 0 && i < 4) { const ar = new THREE.Mesh(new THREE.TorusGeometry(2.4, .7, 6, 12, Math.PI), osc); ar.position.set(x, 11, 4.1); g.add(ar); const b = ar.clone(); b.position.z = -4.1; g.add(b); } }
+    g.add(caja(44, 4, 8.4, gran, 0, 16, 0)); g.add(caja(16, 5, 8, gran, 0, 20, 0)); g.add(caja(46, .8, 9, osc, 0, 15.8, 0));
+    for (const x of [-18, -6, 6, 18]) g.add(esfera(1.2, osc, x, 21, 0));
+    g.add(caja(8, 3, 3, osc, 0, 25, 0));
+    return { g, r: 26 };
+  },
+  cibeles() { // la fuente de Cibeles: la diosa en su carro tirado por dos leones
+    const g = new THREE.Group(), marm = M(0xe8e2d6), agua = new THREE.MeshStandardMaterial({ color: 0x7fb7d4, roughness: .15, metalness: .1 });
+    g.add(cil(16, 17, 1.4, marm, 0, 0, 0, 28)); g.add(cil(15, 15, .3, agua, 0, 1.2, 0, 28));
+    g.add(caja(8, 3, 5, marm, 0, 1.2, 0)); g.add(caja(5, 4, 4, marm, 1, 4.2, 0));
+    const diosa = cil(.9, 1.4, 4, marm, 1.5, 8.2, 0, 10); g.add(diosa); g.add(esfera(.8, marm, 1.5, 12.8, 0)); g.add(cil(.9, .7, .8, M(0xcfc6b4), 1.5, 13.3, 0, 8));
+    for (const z of [-1.5, 1.5]) { const le = caja(5, 2.6, 1.6, marm, -5, 3.2, z); g.add(le); g.add(esfera(1.2, marm, -7.6, 6.2, z)); }
+    for (const [x, z] of [[-1, 1], [1, 1], [-1, -1], [1, -1]]) g.add(cil(.1, .25, 3.5, new THREE.MeshBasicMaterial({ color: 0xd6eefa, transparent: true, opacity: .6 }), x * 9, 1.4, z * 9, 6));
+    return { g, r: 18 };
+  },
+  'palacio-cristal'() { // el Palacio de Cristal del Retiro (1887): pabellón de hierro y vidrio junto a su estanque
+    const g = new THREE.Group(), vid = new THREE.MeshStandardMaterial({ color: 0xcfe6ef, transparent: true, opacity: .45, metalness: .3, roughness: .1 }), hierro = M(0x3b4a52);
+    g.add(caja(60, .3, 46, 0x6f9a5a, 0, 0, 0)); g.add(caja(34, .4, 12, new THREE.MeshStandardMaterial({ color: 0x5c93ad, roughness: .15 }), 0, .1, 20));
+    g.add(caja(34, 1.6, 20, M(0xd8c9a8), 0, 0, -4)); g.add(caja(32, 9, 18, vid, 0, 1.6, -4)); g.add(caja(16, 6, 22, vid, 0, 10.6, -4));
+    const cup = new THREE.Mesh(new THREE.SphereGeometry(7, 16, 8, 0, Math.PI * 2, 0, Math.PI / 2), vid); cup.position.set(0, 16.6, -4); g.add(cup);
+    for (let i = 0; i <= 8; i++) g.add(caja(.3, 10.6, .3, hierro, -16 + i * 4, 1.6, 5)); g.add(caja(32.4, .4, .4, hierro, 0, 10.6, 5));
+    return { g, r: 30 };
+  },
   'tren-fantasma'() { return { g: new THREE.Group(), r: 0 }; }
 };
 
@@ -1328,7 +1355,7 @@ export function construirHitos(lugares, u) {
     grupo.add(m.g);
     if (m.anim) anims.push(m.anim);
     if (m.r) reservas.push([L.x, L.y, m.r]);
-    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, usina: 20, 'big-ben': 100, buckingham: 34, 'residencia-belgrave': 34, 'amber-brush': 32, 'faders-relics': 22, 'lucy-caballete': 6, 'iglesia-cotswolds': 30, 'condor-acceso': 20, terminal: 16, monobloc: 16, 'palacio-hielo': 72, 'isla-guardiana': 36, 'muralla-norte': 50, campamento: 12, 'faro-ruina': 50, 'piedra-negra': 10, 'templo-corazon': 96, 'torres-caracola': 96, 'portal-azul': 34, 'nave-enemiga': 330, 'roca-llave': 28, 'torre-bandera': 80, 'mesas-trampa': 10, 'karluv-most': 22, 'hrad-praga': 92, tyn: 82, petrin: 64, vysehrad: 60, zizkov: 230, mikulas: 62, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
+    L._h = h + ({ pobednik: 24, nebojsa: 33, 'knez-mihailo': 12, 'ruina-bombas': 32, 'hram-sava': 95, 'puente-branko': 18, singer: 55, atlantes: 16, 'columna-alejandro': 45, ermitazh: 28, esfinges: 9, grifones: 6, isaakiy: 90, anichkov: 8, 'museo-ruso': 26, mariinski: 42, 'puente-palacio': 8, poceluev: 8, fundador: 12, cervantes: 36, debod: 14, 'torre-madrid': 144, 'oso-madrono': 10, 'plaza-mayor': 26, cebada: 20, 'biblioteca-nacional': 28, colon: 52, 'banco-espana': 38, metro: 8, 'campanile-sm': 98, 'basilica-sm': 42, ducale: 34, 'ponte-sospiri': 14, rialto: 16, salute: 62, 'san-giorgio': 76, arsenale: 32, anfiteatro: 24, 'monumento-andes': 40, ruinas: 14, usina: 20, 'puerta-alcala': 28, cibeles: 15, 'palacio-cristal': 24, 'big-ben': 100, buckingham: 34, 'residencia-belgrave': 34, 'amber-brush': 32, 'faders-relics': 22, 'lucy-caballete': 6, 'iglesia-cotswolds': 30, 'condor-acceso': 20, terminal: 16, monobloc: 16, 'palacio-hielo': 72, 'isla-guardiana': 36, 'muralla-norte': 50, campamento: 12, 'faro-ruina': 50, 'piedra-negra': 10, 'templo-corazon': 96, 'torres-caracola': 96, 'portal-azul': 34, 'nave-enemiga': 330, 'roca-llave': 28, 'torre-bandera': 80, 'mesas-trampa': 10, 'karluv-most': 22, 'hrad-praga': 92, tyn: 82, petrin: 64, vysehrad: 60, zizkov: 230, mikulas: 62, bodega: 20, aeropuerto: 42, santuario: 46, huertas: 8, invernadero: 12, 'utopia-fortaleza': 82, 'muro-cantor': 22, salon: 16, acacia: 14, 'taller-motos': 12, bunker: 10, campanario: 44, fortaleza: 34, 'puertas-oeste': 20, 'estacion-chica': 14, glorieta: 11, panaderia: 16, cocheras: 12, hotelito: 18, hogar: 18, faro: 50, 'torre-tv': 200, ayuntamiento: 72, rascacielos: 170, estacion: 34, central: 70, planetario: 38, laberinto: 56, iglesia: 46, molino: 24, aerogenerador: 90, 'torre-agua': 42, museo: 24, hotel: 32, ministerio: 40, obelisco: 26, atracciones: 56 }[L.modelo] || 14);
   }
   // reserva extra: la plaza Dante entera y el puerto
   reservas.push(...RESERVAS);
